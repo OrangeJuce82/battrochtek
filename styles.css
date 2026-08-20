@@ -1717,3 +1717,43 @@ button.bt-button { appearance:none; -webkit-appearance:none; cursor:pointer; }
 
 /* Icône Play visible avant l'initialisation Alpine, sans conserver fa-play pendant Pause. */
 #play-pause-icon:not(.fa-play):not(.fa-pause)::before { content: "\f04b"; }
+
+
+/* ===== Battrochtek v14 — transport states + toolbar/grid alignment ===== */
+.instrument-toolbar {
+    justify-content: flex-end;
+}
+
+/* Les LEDs reprennent exactement l'origine et la largeur de la grille. */
+.bt-leds,
+#leds.bt-leds {
+    float: left;
+    clear: none !important;
+    width: 80.5% !important;
+    margin: 10px 0 8px 10.5% !important;
+    padding: 0;
+    display: grid !important;
+    grid-template-columns: repeat(var(--step-count, 16), minmax(0, 1fr));
+    gap: 0 !important;
+    box-sizing: border-box;
+}
+.bt-led.beat-led {
+    width: auto !important;
+    margin-left: .1vw;
+    margin-right: .1vw;
+}
+
+/* États persistants : lecture, métronome, escalier et chaîne. */
+#play-button.bt-buttondown,
+#play-button[aria-pressed="true"],
+#metronome-button.bt-buttondown,
+#metronome-button[aria-pressed="true"],
+#tempo-ramp.bt-buttondown,
+#tempo-ramp[aria-pressed="true"],
+#chain.bt-buttondown,
+#chain[aria-pressed="true"] {
+    background: var(--bt-control-bg-active) !important;
+    color: #07110f !important;
+    border-color: var(--bt-control-bg-active) !important;
+    box-shadow: 0 0 0 1px rgba(159,255,224,.18), 0 0 10px rgba(159,255,224,.12);
+}

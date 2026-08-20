@@ -754,8 +754,9 @@
         buildGrid() {
             this.dom.grid.innerHTML = ""; this.dom.leds.innerHTML = ""; this.cells = [];
             const { steps, group } = this.seq.signature;
+            this.dom.leds.style.setProperty("--step-count", String(steps));
             for (let i = 0; i < steps; i++) {
-                const led = document.createElement("div"); led.className = "bt-led beat-led"; led.style.width = `${100/steps - 0.2}%`;
+                const led = document.createElement("div"); led.className = "bt-led beat-led";
                 if (i % group === 0) led.classList.add("beat-accent"); if (i === 0) led.classList.add("bar-accent"); this.dom.leds.appendChild(led);
             }
             const width = (100 - 0.2 * steps) / steps;
@@ -979,8 +980,11 @@
         }
         renderButtons() {
             this.dom.metro.setAttribute("aria-pressed", String(this.seq.metronomeEnabled));
+            this.dom.metro.classList.toggle("bt-buttondown", this.seq.metronomeEnabled);
             this.dom.chain.setAttribute("aria-pressed", String(this.seq.chainEnabled));
+            this.dom.chain.classList.toggle("bt-buttondown", this.seq.chainEnabled);
             this.dom.tempoRamp?.setAttribute("aria-pressed", String(this.seq.tempoRampEnabled));
+            this.dom.tempoRamp?.classList.toggle("bt-buttondown", this.seq.tempoRampEnabled);
             this.dom.undo?.setAttribute("aria-disabled", String(this.undoStack.length === 0));
             this.dom.redo?.setAttribute("aria-disabled", String(this.redoStack.length === 0));
             this.syncUiStore();
@@ -1034,6 +1038,11 @@
         setPlaying(value) {
             this.dom.play.setAttribute("aria-label", value ? "Pause" : "Lecture");
             this.dom.play.setAttribute("aria-pressed", String(value));
+            this.dom.play.classList.toggle("bt-buttondown", value);
+            if (this.dom.icon) {
+                this.dom.icon.classList.toggle("fa-play", !value);
+                this.dom.icon.classList.toggle("fa-pause", value);
+            }
             this.syncUiStore();
         }
         clearPlayhead() { this.playheadTimeouts.forEach(clearTimeout); this.playheadTimeouts=[]; this.cells.forEach(c=>c.classList.remove("ticked")); this.dom.leds.querySelectorAll(".beat-led").forEach(l=>l.classList.remove("is-playing")); }

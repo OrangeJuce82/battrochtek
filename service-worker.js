@@ -1,4 +1,4 @@
-const CACHE_NAME = "battrochtek-v13";
+const CACHE_NAME = "battrochtek-v14";
 const AUDIO_CACHE = "battrochtek-audio-v1";
 const APP_SHELL = [
   "./", "./index.html", "./styles.css", "./app.js", "./manifest.webmanifest",

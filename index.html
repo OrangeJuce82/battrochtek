@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1.0, minimum-scale=1.0">
-        <title>🥁 Battrochtek</title>
+        <title>Battrochtek</title>
         <meta name="description" content="Battrochtek drum machine and pattern sequencer.">
-        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f1f1f'/%3E%3Cpath d='M20 18h8v28h-8zM36 18h8v28h-8z' fill='%23f80'/%3E%3C/svg%3E">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="theme-color" content="#ffffff">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="manifest" href="manifest.webmanifest">
+        <meta name="msapplication-TileColor" content="#111a23">
+        <meta name="theme-color" content="#111a23">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="Battrochtek">
         <meta property="og:url" content="./">
         <meta property="og:type" content="website">
         <meta property="og:title" content="Battrochtek">
         <meta property="og:description" content="Battrochtek drum machine and pattern sequencer.">
-        <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f1f1f'/%3E%3Cpath d='M18 24h28v16H18z' fill='%23f80'/%3E%3Cpath d='M22 20h20v6H22z' fill='%23fff'/%3E%3Cpath d='M22 42h20v2H22z' fill='%23fff'/%3E%3C/svg%3E">
+        <meta property="og:image" content="logo.png">
         <meta name="HandheldFriendly" content="true">
         <meta name="format-detection" content="telephone=no">
                 <link rel="stylesheet" href="styles.css">
@@ -22,7 +26,8 @@
         <div class="drum-machine-container" id="Drum-Machine-Online-Sequencer">
             <header>
                 <div class="bt-header" aria-label="Battrochtek">
-                    <h1>🥁 Battrochtek</h1>
+                    <h1><img src="logo.png" alt="" class="bt-header-logo"> <span>Battrochtek</span></h1>
+                                    <div class="vu-meter-wrap" title="Niveau de sortie audio"><span class="vu-label">OUTPUT</span><div id="vu-meter" class="vu-meter" aria-label="VU-mètre de sortie"></div></div>
                 </div>
             </header>
             <div class="bt">
@@ -51,10 +56,9 @@
                         <p>CLEAR</p>
                     </div>
                     <div class="bt-spacer"></div>
-                    <div class="bt-button" id="signature-button" title="Change the time signature">
-                        <div class="bt-label left"></div>
-                        <div id="signature">
-                            <span>4/4</span>
+                    <div class="bt-button signature-control" id="signature-button" title="Signature : numérateur / dénominateur">
+                        <div id="signature" class="signature-editor">
+                            <select id="signature-numerator" aria-label="Numérateur de signature"><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select><span>/</span><select id="signature-denominator" aria-label="Dénominateur de signature"><option value="4" selected>4</option><option value="8">8</option><option value="16">16</option></select>
                         </div>
                     </div>
                     <div class="bt-button" id="metronome-button" title="Toggle metronome options and playback">
@@ -62,10 +66,6 @@
                             <span3>OPTIONS</span3>
                         </div>
                         <p>METRO</p>
-                    </div>
-                    <div class="bt-button" id="chain" title="Chain patterns together">
-                        <div class="bt-label right"></div>
-                        <p>CHAIN</p>
                     </div>
                     <div class="bt-spacer"></div>
                     <div class="bt-button large" id="play-button" title="Play or pause the sequence">
@@ -81,31 +81,17 @@
                     <div class="bt-button small" id="plus-button" title="Increase tempo">
                         <span1>+</span1>
                     </div>
-                    <div class="bt-spacer"></div>
-                    <div class="bt-button style" title="Load the rock preset">
-                        <div class="bt-label left"></div>
-                        <div class="preset-drum-beats">
-                            <p>ROCK</p>
-                        </div>
+                    <div class="bt-button tap" id="tap-tempo" title="Tap tempo : clique plusieurs fois au rythme voulu">
+                        <p>TAP</p>
                     </div>
-                    <div class="bt-button style" title="Load the hip-hop preset">
-                        <div class="bt-label center">
-                            <span3>PRESET</span3>
-                        </div>
-                        <div class="preset-drum-beats">
-                            <p>HIPHOP</p>
-                        </div>
+                    <div class="bt-spacer transport-spacer"></div>
+                    <div class="preset-selector" id="preset-selector" aria-label="Sélection des grooves">
+                        <label class="preset-field"><span>FAMILY</span><select id="preset-family" title="Famille de groove"></select></label>
+                        <label class="preset-field groove"><span>GROOVE</span><select id="preset-groove" title="Groove"></select></label>
+                        <div class="bt-button preset-icon" id="groove-refresh" title="Recharger le groove original (tempo, swing, signature et pattern)" aria-label="Recharger le groove original"><span aria-hidden="true">↻</span></div>
+                        <div class="bt-button preset-icon" id="random" title="Créer une variation musicale du groove courant" aria-label="Créer une variation"><span aria-hidden="true">⤨</span></div>
                     </div>
-                    <div class="bt-button style" title="Load the latin preset">
-                        <div class="bt-label right"></div>
-                        <div class="preset-drum-beats">
-                            <p>LATIN</p>
-                        </div>
-                    </div>
-                    <div class="bt-spacer"></div>
-                    <div class="bt-button" id="random" title="Generate a random pattern">
-                        <p>RANDOM</p>
-                    </div>
+
                 </div>
                 <div class="drum-machine-clear"></div>
                 <div class="bt-left">
@@ -118,17 +104,22 @@
                     <div class="bt-button" id="copy-paste" title="Copy or paste the selected pattern">
                         <p>COPY</p>
                     </div>
+                    <div class="bt-button" id="chain" title="Chaîner les slots mémoire sauvegardés">
+                        <p>CHAIN</p>
+                    </div>
                     <div class="bt-spacer"></div>
                 </div>
                 <div class="drum-machine-clear"></div>
-                <div class="bt-left">
-                    <div class="bt-line sounds">MASTER</div>
+                <div class="bottom-controls">
+                    <div class="bottom-control swing-control">
+                        <div class="bt-line sounds">SWING <output id="swing-value" class="swing-value" for="swing">0%</output></div>
+                        <div class="bt-sliders bt-swing" id="swing"></div>
+                    </div>
+                    <div class="bottom-control master-control-block">
+                        <div class="bt-line sounds">MASTER</div>
+                        <div class="bt-sliders" id="master"></div>
+                    </div>
                 </div>
-                <div class="bt-sliders" id="master"></div>
-                <div class="bt-left">
-                    <div class="bt-line sounds">HUMAN</div>
-                </div>
-                <div class="bt-sliders" id="dynamics"></div>
                 <div class="drum-machine-clear"></div>
             </div>
             <div class="bt-help" id="bt-help" aria-live="polite">
@@ -190,6 +181,15 @@
                     if (button) setHelp();
                 });
             })();
+        </script>
+        <script>
+            if ("serviceWorker" in navigator && location.protocol !== "file:") {
+                window.addEventListener("load", function () {
+                    navigator.serviceWorker.register("service-worker.js").catch(function (error) {
+                        console.warn("Service worker non enregistré :", error);
+                    });
+                });
+            }
         </script>
     </body>
 </html>

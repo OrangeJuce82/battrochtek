@@ -5,59 +5,53 @@
 (function () {
     "use strict";
 
+    const COMMON_SIGNATURES = [
+        [4,4],[3,4],[12,8],
+        ...[4,8,16].flatMap(d => Array.from({length:11},(_,i)=>[i+2,d]))
+            .filter(([n,d]) => !((n===4&&d===4)||(n===3&&d===4)||(n===12&&d===8)))
+    ];
+    const SIGNATURES = COMMON_SIGNATURES.map(([numerator, denominator]) => {
+        const barSteps = numerator * (16 / denominator);
+        const compound = denominator === 8 && numerator >= 6 && numerator % 3 === 0;
+        const group = compound ? 6 : Math.max(1, 16 / denominator);
+        return Object.freeze({ numerator, denominator, label:`${numerator}/${denominator}`, barSteps, steps:barSteps*2, group });
+    });
+    const signatureIndexOf = (numerator, denominator) => SIGNATURES.findIndex(s => s.numerator===Number(numerator) && s.denominator===Number(denominator));
+
     const CONFIG = Object.freeze({
-        SIGNATURES: Object.freeze([
-            Object.freeze({ label: "4/4", steps: 32, group: 4 }),
-            Object.freeze({ label: "3/4", steps: 24, group: 4 }),
-            Object.freeze({ label: "12/8", steps: 24, group: 3 })
-        ]),
-        TRACK_COUNT: 10,
-        MEMORY_SLOTS: 10,
+        SIGNATURES: Object.freeze(SIGNATURES),
+        SIGNATURE_DENOMINATORS: Object.freeze([4,8,16]),
+        TRACK_COUNT: 8,
+        METRONOME_TRACK_INDEX: 8,
+        LEGACY_TRACK_COUNT: 10,
+        MEMORY_SLOTS: 8,
         TEMPO: Object.freeze({ min: 40, max: 240, default: 120 }),
+        SWING: Object.freeze({ min: 0, max: 100, default: 0, maxDelayRatio: 0.28 }),
+        VELOCITY_GAIN: Object.freeze({ ghost:0.30, soft:0.48, normal:0.72, strong:0.92, accent:1.15 }),
         SCHEDULER: Object.freeze({ lookAheadMs: 25, scheduleAheadSec: 0.1 }),
         STORAGE_KEY: "patternStore",
         SAMPLE_MAP: Object.freeze({
-            crash1: ["sounds/crash1.wav", "CRASH"],
-            china1: ["sounds/china1.wav", "CHINA"],
-            ride1: ["sounds/ride1.wav", "RIDE"],
-            bell1: ["sounds/bell1.wav", "BELL"],
-            open2: ["sounds/open2.wav", "OPEN"],
-            hihat2: ["sounds/hihat2.wav", "HIHAT"],
-            cowbell: ["sounds/cowbell.wav", "BELL"],
-            rim: ["sounds/rim.wav", "RIM"],
-            pad2: ["sounds/pad2.wav", "PAD"],
-            ride3: ["sounds/ride3.wav", "RIDE"],
-            s01a: ["sounds/01snare1.wav", "SNARE"], s01b: ["sounds/01snare2.wav", "SNARE"],
-            t01a: ["sounds/01tom1.wav", "TOM"], t01b: ["sounds/01tom2.wav", "TOM"],
-            k01a: ["sounds/01kick1.wav", "KICK"], k01b: ["sounds/01kick2.wav", "KICK"],
-            s02a: ["sounds/02snare1.wav", "SNARE"], s02b: ["sounds/02snare2.wav", "SNARE"],
-            t02a: ["sounds/02tom1.wav", "TOM"], t02b: ["sounds/02tom2.wav", "TOM"],
-            k02a: ["sounds/02kick1.wav", "KICK"], k02b: ["sounds/02kick2.wav", "KICK"],
-            s03a: ["sounds/03snare1.wav", "SNARE"], t03a: ["sounds/03tom1.wav", "TOM"], t03b: ["sounds/03tom2.wav", "TOM"],
-            s04a: ["sounds/04snare1.wav", "SNARE"], k04a: ["sounds/04kick1.wav", "KICK"], k04b: ["sounds/04kick2.wav", "KICK"],
-            s05a: ["sounds/05snare1.wav", "SNARE"], s05b: ["sounds/05snare2.wav", "SNARE"],
-            t05a: ["sounds/05tom1.wav", "TOM"], t05b: ["sounds/05tom2.wav", "TOM"],
-            k05a: ["sounds/05kick1.wav", "KICK"], k05b: ["sounds/05kick2.wav", "KICK"],
-            s06a: ["sounds/06snare1.wav", "SNARE"], s06b: ["sounds/06snare2.wav", "SNARE"],
-            t06a: ["sounds/06tom1.wav", "TOM"], t06b: ["sounds/06tom2.wav", "TOM"],
-            k06a: ["sounds/06kick1.wav", "KICK"], k06b: ["sounds/06kick2.wav", "KICK"],
-            s07a: ["sounds/07snare1.wav", "SNARE"], s07b: ["sounds/07snare2.wav", "SNARE"],
-            t07a: ["sounds/07tom1.wav", "TOM"], t07b: ["sounds/07tom2.wav", "TOM"],
-            k07a: ["sounds/07kick1.wav", "KICK"], k07b: ["sounds/07kick2.wav", "KICK"],
-            s08a: ["sounds/08snare1.wav", "SNARE"], s08b: ["sounds/08snare2.wav", "SNARE"],
-            t08a: ["sounds/08tom1.wav", "TOM"], t08b: ["sounds/08tom2.wav", "TOM"],
-            k08a: ["sounds/08kick1.wav", "KICK"], k08b: ["sounds/08kick2.wav", "KICK"],
-            tick: ["sounds/tick.wav", "METRO"]
+            crash1: ["sounds/crash1.wav", "CRASH"], china1: ["sounds/china1.wav", "CHINA"], ride1: ["sounds/ride1.wav", "RIDE"], bell1: ["sounds/bell1.wav", "BELL"],
+            open2: ["sounds/open2.wav", "OPEN"], hihat2: ["sounds/hihat2.wav", "HIHAT"], cowbell: ["sounds/cowbell.wav", "BELL"], rim: ["sounds/rim.wav", "RIM"], pad2: ["sounds/pad2.wav", "PAD"], ride3: ["sounds/ride3.wav", "RIDE"],
+            s01a:["sounds/01snare1.wav","SNARE"], t01a:["sounds/01tom1.wav","TOM 1"], t01b:["sounds/01tom2.wav","TOM 2"], k01a:["sounds/01kick1.wav","KICK"],
+            s02a:["sounds/02snare1.wav","SNARE"], t02a:["sounds/02tom1.wav","TOM 1"], t02b:["sounds/02tom2.wav","TOM 2"], k02a:["sounds/02kick1.wav","KICK"],
+            s03a:["sounds/03snare1.wav","SNARE"], t03a:["sounds/03tom1.wav","TOM 1"], t03b:["sounds/03tom2.wav","TOM 2"],
+            s04a:["sounds/04snare1.wav","SNARE"], k04a:["sounds/04kick1.wav","KICK"],
+            s05a:["sounds/05snare1.wav","SNARE"], t05a:["sounds/05tom1.wav","TOM 1"], t05b:["sounds/05tom2.wav","TOM 2"], k05a:["sounds/05kick1.wav","KICK"],
+            s06a:["sounds/06snare1.wav","SNARE"], t06a:["sounds/06tom1.wav","TOM 1"], t06b:["sounds/06tom2.wav","TOM 2"], k06a:["sounds/06kick1.wav","KICK"],
+            s07a:["sounds/07snare1.wav","SNARE"], t07a:["sounds/07tom1.wav","TOM 1"], t07b:["sounds/07tom2.wav","TOM 2"], k07a:["sounds/07kick1.wav","KICK"],
+            s08a:["sounds/08snare1.wav","SNARE"], t08a:["sounds/08tom1.wav","TOM 1"], t08b:["sounds/08tom2.wav","TOM 2"], k08a:["sounds/08kick1.wav","KICK"],
+            tick:["sounds/tick.wav","METRO"]
         }),
         KITS: Object.freeze([
-            Object.freeze({ name: "POWER KIT", tracks: ["crash1","ride1","open2","hihat2","s01a","s01b","t01a","t01b","k01a","k01b","tick"] }),
-            Object.freeze({ name: "SHOCK KIT", tracks: ["china1","bell1","open2","hihat2","s02a","s02b","t02a","t02b","k02a","k02b","tick"] }),
-            Object.freeze({ name: "RUDE KIT", tracks: ["crash1","ride3","open2","hihat2","s03a","s01b","t03a","t03b","k01a","k01b","tick"] }),
-            Object.freeze({ name: "COOL KIT", tracks: ["crash1","ride1","open2","hihat2","s04a","s01b","t01a","t01b","k04a","k04b","tick"] }),
-            Object.freeze({ name: "HYBRID KIT", tracks: ["crash1","pad2","open2","hihat2","s05a","s05b","t05a","t05b","k05a","k05b","tick"] }),
-            Object.freeze({ name: "ETHNIC KIT", tracks: ["china1","cowbell","open2","hihat2","s06a","s06b","t06a","t06b","k06a","k06b","tick"] }),
-            Object.freeze({ name: "WILD KIT", tracks: ["crash1","bell1","open2","hihat2","s07a","s07b","t07a","t07b","k07a","k07b","tick"] }),
-            Object.freeze({ name: "LARGE KIT", tracks: ["china1","ride3","open2","hihat2","s08a","s08b","t08a","t08b","k08a","k08b","tick"] })
+            Object.freeze({ name:"POWER KIT", tracks:["crash1","ride1","open2","hihat2","s01a","t01a","t01b","k01a","tick"] }),
+            Object.freeze({ name:"SHOCK KIT", tracks:["china1","bell1","open2","hihat2","s02a","t02a","t02b","k02a","tick"] }),
+            Object.freeze({ name:"RUDE KIT", tracks:["crash1","ride3","open2","hihat2","s03a","t03a","t03b","k01a","tick"] }),
+            Object.freeze({ name:"COOL KIT", tracks:["crash1","ride1","open2","hihat2","s04a","t01a","t01b","k04a","tick"] }),
+            Object.freeze({ name:"HYBRID KIT", tracks:["crash1","pad2","open2","hihat2","s05a","t05a","t05b","k05a","tick"] }),
+            Object.freeze({ name:"ETHNIC KIT", tracks:["china1","cowbell","open2","hihat2","s06a","t06a","t06b","k06a","tick"] }),
+            Object.freeze({ name:"WILD KIT", tracks:["crash1","bell1","open2","hihat2","s07a","t07a","t07b","k07a","tick"] }),
+            Object.freeze({ name:"LARGE KIT", tracks:["china1","ride3","open2","hihat2","s08a","t08a","t08b","k08a","tick"] })
         ])
     });
 
@@ -73,1113 +67,118 @@
     });
 
     function createFactoryPresets() {
-        let rockPatterns = [[], [], []];
-        let hipHopPatterns = [[], [], []];
-        let latinPatterns = [[], [], []];
-        rockPatterns[0][0] = [];
-        rockPatterns[0][0][0] = [
-            96, 98, 100, 102, 104, 106, 108, 110,
-            112, 114, 116, 118, 120, 122, 124, 126,
-            132, 140, 148, 156,
-            256, 264, 272, 280
-        ];
-
-        rockPatterns[0][1] = [];
-        rockPatterns[0][1][0] = [
-            96, 98, 100, 102, 104, 108, 110, 112,
-            114, 116, 118, 120, 124, 126,
-            132, 140, 148, 156,
-            256, 264, 272, 280,
-            298, 314, 318
-        ];
-
-        rockPatterns[0][2] = [];
-        rockPatterns[0][2][0] = [
-            92, 96, 98, 100, 102, 104, 106, 108,
-            110, 112, 114, 116, 118, 120, 122, 126,
-            132, 140, 148, 156,
-            256, 262, 272, 278,
-            302, 314
-        ];
-
-        rockPatterns[0][3] = [];
-        rockPatterns[0][3][0] = [
-            84, 94, 96, 100, 102, 104, 108, 110,
-            112, 114, 118, 120, 122, 124,
-            132, 140, 148, 156,
-            256, 264, 272, 278,
-            290, 298, 306, 314, 318
-        ];
-
-        rockPatterns[0][4] = [];
-        rockPatterns[0][4][0] = [
-            74, 90, 94, 96, 98, 100, 104, 108,
-            110, 112, 114, 116, 120, 124,
-            132, 138, 148, 154,
-            256, 264, 272, 280,
-            294, 310, 318
-        ];
-
-        rockPatterns[0][5] = [];
-        rockPatterns[0][5][0] = [
-            92, 96, 99, 100, 102, 104, 106, 108,
-            110, 112, 115, 116, 118, 120, 122, 126,
-            140, 156,
-            256, 262, 272, 278,
-            296, 314
-        ];
-
-        rockPatterns[0][6] = [];
-        rockPatterns[0][6][0] = [
-            92, 96, 98, 100, 102, 104, 106, 108,
-            110, 112, 114, 116, 118, 120, 122, 126,
-            132, 140, 148, 156, 166, 182,
-            256, 264, 272, 280,
-            295, 298, 311, 314, 318
-        ];
-
-        rockPatterns[0][7] = [];
-        rockPatterns[0][7][0] = [
-            90, 96, 98, 100, 102, 104, 106, 108,
-            110, 112, 114, 116, 118, 120, 124, 126,
-            132, 140, 148, 151, 156,
-            167, 169, 185, 191,
-            256, 264, 272, 280,
-            298, 302, 310, 314, 318
-        ];
-
-        rockPatterns[0][8] = [];
-        rockPatterns[0][8][0] = [
-            68, 84, 96, 98, 102, 104, 106, 108,
-            110, 112, 114, 118, 120, 122, 124, 126,
-            132, 140, 148, 156,
-            256, 262, 266, 272, 278, 282,
-            295, 297, 302, 311, 313, 318
-        ];
-
-        rockPatterns[0][9] = [];
-        rockPatterns[0][9][0] = [
-            96, 98, 100, 102, 104, 106, 108, 110,
-            112, 114, 116, 118, 120, 122, 124, 126,
-            132, 140, 148, 156,
-            167, 175, 182, 183, 185, 190, 191,
-            256, 264, 272, 280,
-            290, 298, 299, 301, 303,
-            306, 314, 315, 317, 319
-        ];
-
         /*
-         * Paramètres communs aux presets ROCK en 4/4.
+         * 200 grooves (25 x 8 familles), uniquement inspirés de morceaux connus.
+         * Ce sont des adaptations pédagogiques pour une grille 1/16, pas des transcriptions intégrales.
+         * Chaque groove transporte sa signature : la sélection du groove met à jour la grille.
          */
-        for (var presetIndex = 0;
-             presetIndex < rockPatterns[0].length;
-             presetIndex++) {
-
-            rockPatterns[0][presetIndex][1] = 0;
-
-            rockPatterns[0][presetIndex][2] = [
-                1, 1, 1, 1, 1,
-                1, 1, 1, 1, 1
-            ];
-
-            rockPatterns[0][presetIndex][3] = 120;
-        }
-
-
-        /*
-         * ------------------------------------------------------------------------
-         * ROCK - signature suivante
-         * ------------------------------------------------------------------------
-         */
-
-        rockPatterns[1][0] = [];
-        rockPatterns[1][0][0] = [
-            72, 74, 76, 78, 80, 82, 84, 86,
-            88, 90, 92, 94,
-            100, 104, 112, 116,
-            192, 204
-        ];
-
-        rockPatterns[1][1] = [];
-        rockPatterns[1][1][0] = [
-            68, 72, 74, 76, 78, 80, 82, 84,
-            86, 88, 90, 94,
-            100, 112, 116,
-            192, 204,
-            226, 234, 238
-        ];
-
-        rockPatterns[1][2] = [];
-        rockPatterns[1][2][0] = [
-            72, 74, 76, 78, 80, 82, 84, 86,
-            88, 90, 92, 94,
-            104, 116,
-            192, 196, 204, 208, 238
-        ];
-
-        rockPatterns[1][3] = [];
-        rockPatterns[1][3][0] = [
-            70, 72, 74, 76, 78, 80, 82, 84,
-            86, 88, 90, 92,
-            100, 112,
-            192, 204,
-            226, 234, 238
-        ];
-
-        rockPatterns[1][4] = [];
-        rockPatterns[1][4][0] = [
-            64, 72, 74, 76, 78, 80, 82, 84,
-            86, 90, 92, 94,
-            102, 112, 116,
-            192, 204,
-            218, 230, 238
-        ];
-
-        rockPatterns[1][5] = [];
-        rockPatterns[1][5][0] = [
-            68, 72, 74, 75, 78, 80, 82, 84,
-            86, 88, 90, 94, 95,
-            102, 112, 116,
-            122, 134,
-            192, 204,
-            220, 226, 234
-        ];
-
-        rockPatterns[1][6] = [];
-        rockPatterns[1][6][0] = [
-            70, 72, 74, 76, 78, 80, 82, 84,
-            86, 88, 90, 92,
-            104, 116, 120, 124, 132, 136,
-            192, 204,
-            218, 222, 226, 230, 234
-        ];
-
-        rockPatterns[1][7] = [];
-        rockPatterns[1][7][0] = [
-            68, 72, 75, 76, 78, 80, 82, 84,
-            87, 88, 90, 94,
-            104, 116, 124, 138,
-            192, 204,
-            218, 222, 226, 232, 238
-        ];
-
-        rockPatterns[1][8] = [];
-        rockPatterns[1][8][0] = [
-            72, 74, 76, 78, 79, 80, 82, 84,
-            86, 88, 90, 91, 92, 94, 95,
-            104, 116, 122, 134,
-            192, 196, 204, 208,
-            222, 234, 238
-        ];
-
-        rockPatterns[1][9] = [];
-        rockPatterns[1][9][0] = [
-            56, 68, 72, 74, 76, 78,
-            82, 83, 84, 86, 87, 88,
-            90, 94, 95,
-            104, 116,
-            192, 196, 204, 208,
-            222, 223, 226, 234, 235, 238
-        ];
-
-        for (var presetIndex = 0;
-             presetIndex < rockPatterns[1].length;
-             presetIndex++) {
-
-            rockPatterns[1][presetIndex][1] = 0;
-
-            rockPatterns[1][presetIndex][2] = [
-                1, 1, 1, 1, 1,
-                1, 1, 1, 1, 1
-            ];
-
-            rockPatterns[1][presetIndex][3] = 120;
-        }
-            /*
-         * ------------------------------------------------------------------------
-         * ROCK - troisième signature
-         * ------------------------------------------------------------------------
-         */
-
-        rockPatterns[2][0] = [];
-        rockPatterns[2][0][0] = [
-            72, 75, 77, 78, 81, 83, 84, 87,
-            89, 90, 93, 95,
-            99, 105, 111, 117,
-            192, 197, 204, 209
-        ];
-
-        rockPatterns[2][1] = [];
-        rockPatterns[2][1][0] = [
-            72, 74, 75, 77, 78, 81, 83, 84,
-            86, 87, 89, 90, 93, 95,
-            99, 105, 111, 117,
-            192, 197, 204, 209,
-            227, 236, 239
-        ];
-
-        rockPatterns[2][2] = [];
-        rockPatterns[2][2][0] = [
-            71, 72, 75, 77, 78, 81, 83, 84,
-            87, 89, 90, 93, 94,
-            99, 105, 111, 117,
-            192, 198, 204, 210,
-            221, 233, 239
-        ];
-
-        rockPatterns[2][3] = [];
-        rockPatterns[2][3][0] = [
-            71, 72, 75, 77, 78, 81, 83, 84,
-            87, 89, 90, 93,
-            99, 105, 111, 117,
-            131, 143,
-            192, 198, 204, 210,
-            218, 224, 230, 232
-        ];
-
-        rockPatterns[2][4] = [];
-        rockPatterns[2][4][0] = [
-            72, 75, 77, 78, 81, 83, 84, 87,
-            89, 90, 93, 95,
-            99, 105, 111, 117,
-            122, 125, 128, 131, 134, 137, 140, 143,
-            192, 198, 204, 210,
-            227, 239
-        ];
-
-        rockPatterns[2][5] = [];
-        rockPatterns[2][5][0] = [
-            72, 75, 77, 78, 81, 83, 84, 87,
-            89, 90, 93, 95,
-            99, 105, 111, 117,
-            121, 127, 133, 139, 143,
-            192, 198, 204, 210,
-            218, 224, 227, 230, 236
-        ];
-
-        rockPatterns[2][6] = [];
-        rockPatterns[2][6][0] = [
-            54, 66,
-            72, 75, 77, 80, 81, 83, 84,
-            87, 89, 92, 93, 95,
-            102, 114,
-            131, 143,
-            192, 204,
-            218, 220, 230, 232, 235, 237
-        ];
-
-        rockPatterns[2][7] = [];
-        rockPatterns[2][7][0] = [
-            72, 74, 75, 77, 79, 81, 83, 84,
-            85, 87, 89, 91, 93, 95,
-            99, 104, 111, 116,
-            131, 143,
-            192, 198, 204, 210,
-            221, 230, 233
-        ];
-
-        rockPatterns[2][8] = [];
-        rockPatterns[2][8][0] = [
-            72, 74, 75, 77, 78, 80, 81, 83,
-            84, 86, 87, 89, 90, 92, 93, 95,
-            102, 114, 124,
-            131, 136, 143,
-            192, 204,
-            219, 221, 224, 230, 233, 236
-        ];
-
-        rockPatterns[2][9] = [];
-        rockPatterns[2][9][0] = [
-            72, 74, 75, 77, 78, 80, 81, 83,
-            84, 86, 87, 89, 90, 92, 93, 95,
-            99, 105, 111, 117,
-            127, 133, 139, 142,
-            192, 200, 204, 212,
-            220, 221, 223, 227,
-            230, 232, 233, 235, 239
-        ];
-
-        /*
-         * Tous les presets ROCK de cette signature utilisent :
-         *
-         * - le kit 0 par défaut ;
-         * - toutes les pistes à volume maximum ;
-         * - 120 BPM.
-         */
-        for (
-            var presetIndex = 0;
-            presetIndex < rockPatterns[2].length;
-            presetIndex++
-        ) {
-            rockPatterns[2][presetIndex][1] = 0;
-
-            rockPatterns[2][presetIndex][2] = [
-                1, 1, 1, 1, 1,
-                1, 1, 1, 1, 1
-            ];
-
-            rockPatterns[2][presetIndex][3] = 120;
-        }
-
-
-        /*
-         * ========================================================================
-         * PRESETS HIPHOP
-         * ========================================================================
-         *
-         * Même structure que les presets ROCK.
-         *
-         * La différence importante dans la version originale est le tempo :
-         * les patterns HIPHOP sont initialisés à 100 BPM.
-         */
-
-        hipHopPatterns[0][0] = [];
-        hipHopPatterns[0][0][0] = [
-            96, 98, 100, 102, 104, 108,
-            112, 114, 116, 118, 120, 124,
-            132, 140, 148, 156,
-            256, 262, 272, 278
-        ];
-
-        hipHopPatterns[0][1] = [];
-        hipHopPatterns[0][1][0] = [
-            96, 98, 100, 102, 104, 106, 108,
-            112, 114, 116, 118, 120, 122, 124,
-            132, 140, 148, 156,
-            256, 262, 272, 278,
-            291, 307, 314
-        ];
-
-        hipHopPatterns[0][2] = [];
-        hipHopPatterns[0][2][0] = [
-            66, 82,
-            96, 100, 102, 104, 108, 110,
-            112, 116, 118, 120, 124, 126,
-            132, 140, 148, 156,
-            256, 272, 278,
-            290, 303, 306, 317, 319
-        ];
-
-        hipHopPatterns[0][3] = [];
-        hipHopPatterns[0][3][0] = [
-            92, 96, 98, 100, 104, 106,
-            108, 110, 112, 114, 116,
-            120, 122, 126,
-            132, 140, 148, 156,
-            256, 272,
-            291, 294, 297, 298,
-            307, 310, 313, 314, 318
-        ];
-
-        hipHopPatterns[0][4] = [];
-        hipHopPatterns[0][4][0] = [
-            66, 82,
-            96, 100, 102, 104, 106, 108,
-            110, 112, 116, 118, 120, 122, 124, 126,
-            132, 140, 148, 156, 191,
-            256, 262, 272, 278,
-            289, 295, 305, 311, 314, 318
-        ];
-
-        hipHopPatterns[0][5] = [];
-        hipHopPatterns[0][5][0] = [
-            96, 98, 100, 104, 106, 108,
-            110, 112, 114, 116, 120, 122,
-            124, 126, 131, 140, 147, 156,
-            256, 262, 272, 278,
-            297, 298, 302,
-            313, 314, 317, 319
-        ];
-
-        hipHopPatterns[0][6] = [];
-        hipHopPatterns[0][6][0] = [
-            90,
-            96, 98, 100, 102, 104, 106, 108,
-            112, 114, 116, 118, 120, 124,
-            132, 140, 148, 156, 186,
-            256, 262, 272, 278,
-            291, 301, 302, 306,
-            313, 317, 318
-        ];
-
-        hipHopPatterns[0][7] = [];
-        hipHopPatterns[0][7][0] = [
-            97, 98, 100, 101, 102, 104, 106, 108,
-            110, 111, 113, 114, 116, 117, 118,
-            120, 122, 124, 126, 127,
-            132, 135, 140, 148, 151, 156,
-            171, 187, 190, 191,
-            256, 262, 272, 278,
-            291, 297, 302, 307, 313, 318
-        ];
-
-        hipHopPatterns[0][8] = [];
-        hipHopPatterns[0][8][0] = [
-            66, 82,
-            96, 100, 102, 104, 108, 110,
-            112, 116, 118, 120, 124, 126,
-            132, 140, 148, 156,
-            169, 171, 175, 183, 185, 187, 191,
-            256, 262, 272, 278,
-            289, 290, 295, 298,
-            301, 305, 306, 314, 317
-        ];
-
-        hipHopPatterns[0][9] = [];
-        hipHopPatterns[0][9][0] = [
-            96, 99, 102, 104, 106, 108,
-            110, 112, 115, 118, 120,
-            122, 124, 126,
-            132, 140, 148, 156,
-            161, 167, 171, 177, 181, 183, 187, 190,
-            256, 262, 272, 278,
-            290, 297, 298, 303,
-            306, 313, 314, 319
-        ];
-
-        /*
-         * Initialisation commune des patterns HIPHOP en 4/4.
-         */
-        for (
-            var presetIndex = 0;
-            presetIndex < hipHopPatterns[0].length;
-            presetIndex++
-        ) {
-            hipHopPatterns[0][presetIndex][1] = 0;
-
-            hipHopPatterns[0][presetIndex][2] = [
-                1, 1, 1, 1, 1,
-                1, 1, 1, 1, 1
-            ];
-
-            hipHopPatterns[0][presetIndex][3] = 100;
-        }
-
-
-        /*
-         * ------------------------------------------------------------------------
-         * HIPHOP - deuxième signature
-         * ------------------------------------------------------------------------
-         */
-
-        hipHopPatterns[1][0] = [];
-        hipHopPatterns[1][0][0] = [
-            72, 74, 76, 78, 80, 82, 84, 86,
-            88, 90, 92, 94,
-            100, 104, 112, 116,
-            192, 198, 204, 210
-        ];
-
-        hipHopPatterns[1][1] = [];
-        hipHopPatterns[1][1][0] = [
-            72, 74, 76, 78, 80, 82, 84, 86,
-            88, 90, 92, 94,
-            104, 116,
-            192, 198, 204, 210,
-            219, 231, 238
-        ];
-
-        hipHopPatterns[1][2] = [];
-        hipHopPatterns[1][2][0] = [
-            72, 74, 76, 78, 80, 82, 84, 86,
-            88, 90, 92, 94,
-            100, 112,
-            192, 198, 200, 204, 210, 212,
-            219, 231
-        ];
-
-        hipHopPatterns[1][3] = [];
-        hipHopPatterns[1][3][0] = [
-            70,
-            72, 74, 76, 78, 80, 82, 84,
-            86, 88, 90, 92,
-            100, 104, 112, 116,
-            192, 198, 204, 210,
-            225, 231, 237, 238
-        ];
-
-        hipHopPatterns[1][4] = [];
-        hipHopPatterns[1][4][0] = [
-            72, 74, 76, 78, 80, 82, 84, 86,
-            88, 90, 92, 94,
-            104, 116,
-            131, 141, 143,
-            192, 198, 204, 210,
-            219, 221, 231, 233, 238
-        ];
-
-        hipHopPatterns[1][5] = [];
-        hipHopPatterns[1][5][0] = [
-            72, 74, 76, 78, 80, 82, 84, 86,
-            88, 90, 92, 94,
-            100, 104, 112, 116,
-            127, 130, 139, 143,
-            192, 198, 204, 210,
-            219, 227, 231, 237, 238
-        ];
-
-        hipHopPatterns[1][6] = [];
-        hipHopPatterns[1][6][0] = [
-            68,
-            72, 74, 76, 78, 80, 82, 84,
-            86, 88, 90, 94,
-            104, 116,
-            122, 125, 134, 137, 142, 143,
-            192, 198, 204, 210,
-            219, 231, 237
-        ];
-
-        hipHopPatterns[1][7] = [];
-        hipHopPatterns[1][7][0] = [
-            72, 74, 76, 78, 80, 82, 83, 84,
-            86, 88, 90, 91, 92, 94,
-            104, 116,
-            123, 125, 130, 135, 137, 142,
-            192, 198, 204, 210, 237
-        ];
-
-        hipHopPatterns[1][8] = [];
-        hipHopPatterns[1][8][0] = [
-            58, 70,
-            72, 74, 76, 78, 80, 81, 84,
-            86, 88, 90, 92, 93,
-            104, 116,
-            125, 127, 137, 139, 141, 143,
-            192, 198, 204, 210,
-            217, 219, 229, 231
-        ];
-
-        hipHopPatterns[1][9] = [];
-        hipHopPatterns[1][9][0] = [
-            50, 62,
-            72, 73, 76, 78, 80, 81, 82,
-            84, 85, 88, 90, 92, 94,
-            100, 112,
-            121, 127, 131, 133, 139, 142, 143,
-            192, 194, 198, 204, 206, 210,
-            219, 231, 237
-        ];
-
-        for (
-            var presetIndex = 0;
-            presetIndex < hipHopPatterns[1].length;
-            presetIndex++
-        ) {
-            hipHopPatterns[1][presetIndex][1] = 0;
-
-            hipHopPatterns[1][presetIndex][2] = [
-                1, 1, 1, 1, 1,
-                1, 1, 1, 1, 1
-            ];
-
-            hipHopPatterns[1][presetIndex][3] = 100;
-        }
-            /*
-         * ------------------------------------------------------------------------
-         * HIPHOP - troisième signature
-         * ------------------------------------------------------------------------
-         */
-
-        hipHopPatterns[2][0] = [];
-        hipHopPatterns[2][0][0] = [
-            72, 74, 75, 77, 78, 80, 81, 83,
-            84, 86, 87, 89, 90, 92, 93, 95,
-            99, 105, 111, 117,
-            192, 197, 204, 209
-        ];
-
-        hipHopPatterns[2][1] = [];
-        hipHopPatterns[2][1][0] = [
-            72, 73, 74, 75, 77, 78, 81, 82,
-            83, 84, 85, 86, 87, 89, 90,
-            93, 94, 95,
-            99, 105, 111, 117,
-            192, 197, 204, 209,
-            227, 239
-        ];
-
-        hipHopPatterns[2][2] = [];
-        hipHopPatterns[2][2][0] = [
-            72, 74, 75, 77, 78, 80, 81, 83,
-            84, 86, 87, 89, 90, 92, 93, 95,
-            99, 105, 111, 117,
-            192, 198, 204, 210,
-            221, 230, 232
-        ];
-
-        hipHopPatterns[2][3] = [];
-        hipHopPatterns[2][3][0] = [
-            50,
-            72, 73, 75, 76, 77, 78, 79,
-            80, 81, 82, 83, 84, 85, 86,
-            87, 88, 89, 90, 91, 92, 93,
-            94, 95,
-            99, 105, 111, 117,
-            142,
-            192, 197, 204, 209,
-            218, 227, 239
-        ];
-
-        hipHopPatterns[2][4] = [];
-        hipHopPatterns[2][4][0] = [
-            72, 74, 75, 77, 78, 80, 82, 83,
-            84, 86, 87, 89, 90, 92, 94, 95,
-            99, 105, 111, 117,
-            125, 137, 142,
-            192, 204,
-            218, 220, 226, 230, 232
-        ];
-
-        hipHopPatterns[2][5] = [];
-        hipHopPatterns[2][5][0] = [
-            57, 69,
-            72, 73, 74, 75, 77, 78, 80,
-            83, 84, 85, 86, 87, 89, 90,
-            92, 95,
-            99, 105, 111, 117,
-            192, 204,
-            223, 224, 232, 233, 235
-        ];
-
-        hipHopPatterns[2][6] = [];
-        hipHopPatterns[2][6][0] = [
-            56, 68,
-            72, 73, 74, 75, 77, 78,
-            81, 83, 84, 85, 86, 87,
-            89, 90, 93, 95,
-            99, 104, 111, 116,
-            131, 141, 143,
-            192, 197, 204, 209,
-            217, 226, 229, 238
-        ];
-
-        hipHopPatterns[2][7] = [];
-        hipHopPatterns[2][7][0] = [
-            72, 74, 75, 77, 78, 80, 81, 83,
-            84, 86, 87, 89, 90, 92, 93, 95,
-            99, 106, 111, 118,
-            124, 131, 136, 143,
-            192, 198, 201, 204, 210, 213,
-            221, 230, 233
-        ];
-
-        hipHopPatterns[2][8] = [];
-        hipHopPatterns[2][8][0] = [
-            71, 72, 74, 75, 76, 77, 78,
-            80, 81, 82, 83, 84,
-            86, 87, 88, 89, 90,
-            92, 93, 94,
-            99, 105, 111, 117,
-            131, 142,
-            192, 200, 204, 212,
-            217, 218, 229, 230, 239
-        ];
-
-        hipHopPatterns[2][9] = [];
-        hipHopPatterns[2][9][0] = [
-            68,
-            72, 73, 75, 77, 78, 80, 81,
-            83, 84, 85, 87, 89, 90,
-            93, 95,
-            99, 105, 111, 117,
-            122, 130, 131, 134, 142, 143,
-            192, 197, 204,
-            223, 224, 232, 233, 235, 236, 239
-        ];
-
-        for (
-            var presetIndex = 0;
-            presetIndex < hipHopPatterns[2].length;
-            presetIndex++
-        ) {
-            hipHopPatterns[2][presetIndex][1] = 0;
-
-            hipHopPatterns[2][presetIndex][2] = [
-                1, 1, 1, 1, 1,
-                1, 1, 1, 1, 1
-            ];
-
-            hipHopPatterns[2][presetIndex][3] = 100;
-        }
-
-
-        /*
-         * ========================================================================
-         * PRESETS LATIN
-         * ========================================================================
-         *
-         * La troisième banque de grooves est nettement plus rapide :
-         * tempo par défaut = 150 BPM.
-         */
-
-        latinPatterns[0][0] = [];
-        latinPatterns[0][0][0] = [
-            96, 100, 102, 104, 108, 110,
-            112, 116, 118, 120, 124, 126,
-            134, 140, 150, 156,
-            256, 264, 272, 280
-        ];
-
-        latinPatterns[0][1] = [];
-        latinPatterns[0][1][0] = [
-            96, 98, 102, 104, 108, 110,
-            112, 114, 118, 120, 124, 126,
-            134, 140, 150, 156,
-            164, 174, 180, 190,
-            256, 264, 272, 280,
-            300, 316, 318
-        ];
-
-        latinPatterns[0][2] = [];
-        latinPatterns[0][2][0] = [
-            96, 98, 100, 102, 104,
-            108, 110, 112, 114, 116,
-            118, 120, 124, 126,
-            140, 156,
-            160, 166, 176, 182,
-            256, 264, 272, 280,
-            294, 302, 310, 318
-        ];
-
-        latinPatterns[0][3] = [];
-        latinPatterns[0][3][0] = [
-            76, 90,
-            96, 98, 100, 102, 104,
-            110, 112, 114, 116, 118,
-            124, 126,
-            140, 154, 160, 166, 180,
-            256, 264, 272, 280,
-            294, 302, 310, 318
-        ];
-
-        latinPatterns[0][4] = [];
-        latinPatterns[0][4][0] = [
-            96, 98, 102, 104, 108,
-            112, 114, 118, 120, 124, 126,
-            134, 140, 150, 154,
-            164, 170, 180, 188,
-            256, 272, 284,
-            294, 300, 310
-        ];
-
-        latinPatterns[0][5] = [];
-        latinPatterns[0][5][0] = [
-            92, 96, 98, 100, 104, 106, 108,
-            112, 114, 116, 120, 122, 126,
-            134, 140, 150, 156,
-            160, 163, 176, 178, 179, 181,
-            256, 264, 272, 280,
-            302, 318
-        ];
-
-        latinPatterns[0][6] = [];
-        latinPatterns[0][6][0] = [
-            96, 99, 100, 102, 104,
-            108, 110, 112, 113, 115,
-            116, 118, 120, 124, 126,
-            134, 140, 150, 156,
-            164, 168, 176, 180, 184,
-            256, 264, 272, 280,
-            291, 294, 307, 310
-        ];
-
-        latinPatterns[0][7] = [];
-        latinPatterns[0][7][0] = [
-            96, 97, 100, 102, 104,
-            108, 110, 112, 113,
-            116, 118, 120, 124, 126,
-            134, 140, 150, 156,
-            160, 163, 170, 176, 178, 186, 189,
-            256, 264, 272, 280,
-            303, 319
-        ];
-
-        latinPatterns[0][8] = [];
-        latinPatterns[0][8][0] = [
-            96, 99, 102, 104, 107,
-            108, 110, 112, 115,
-            118, 120, 123, 124, 126,
-            134, 150, 156,
-            160, 163, 170, 172, 176, 179, 186,
-            260, 268, 276, 284,
-            288, 302, 318
-        ];
-
-        latinPatterns[0][9] = [];
-        latinPatterns[0][9][0] = [
-            86,
-            96, 97, 100, 102, 104, 107,
-            108, 110, 112, 113, 116,
-            120, 123, 124, 126,
-            134, 140, 150, 156,
-            162, 170, 178, 186, 190,
-            256, 264, 272, 280,
-            299, 302, 315, 318
-        ];
-
-        /*
-         * Il existe exceptionnellement un onzième preset dans ce groupe.
-         */
-        latinPatterns[0][10] = [];
-        latinPatterns[0][10][0] = [
-            67, 80, 85,
-            96, 101, 104, 108, 109,
-            116, 120, 127,
-            142, 143, 146, 149,
-            161, 168, 172, 179,
-            184, 186, 188, 189, 190,
-            198, 227, 231, 235, 251,
-            256, 259, 260, 279, 287,
-            294, 296, 300, 307, 308
-        ];
-
-        for (
-            var presetIndex = 0;
-            presetIndex < latinPatterns[0].length;
-            presetIndex++
-        ) {
-            latinPatterns[0][presetIndex][1] = 0;
-
-            latinPatterns[0][presetIndex][2] = [
-                1, 1, 1, 1, 1,
-                1, 1, 1, 1, 1
-            ];
-
-            latinPatterns[0][presetIndex][3] = 150;
-        }
-
-
-        /*
-         * ------------------------------------------------------------------------
-         * LATIN - deuxième signature
-         * ------------------------------------------------------------------------
-         */
-
-        latinPatterns[1][0] = [];
-        latinPatterns[1][0][0] = [
-            72, 76, 78, 80, 82, 84,
-            88, 90, 92, 94,
-            104, 116, 124, 136,
-            192, 204, 222, 234
-        ];
-
-        latinPatterns[1][1] = [];
-        latinPatterns[1][1][0] = [
-            72, 74, 76, 78, 80, 82, 84,
-            86, 88, 90, 92, 94,
-            104, 116, 124, 136,
-            192, 204,
-            222, 226, 234, 238
-        ];
-
-        latinPatterns[1][2] = [];
-        latinPatterns[1][2][0] = [
-            72, 76, 78, 82, 84,
-            88, 90, 94,
-            104, 116, 122, 134,
-            192, 204, 222, 234, 238
-        ];
-
-        latinPatterns[1][3] = [];
-        latinPatterns[1][3][0] = [
-            66,
-            72, 74, 76, 78, 80, 82, 84, 86,
-            88, 92, 94,
-            104, 114, 124, 134,
-            192, 204, 222, 226, 238
-        ];
-
-        latinPatterns[1][4] = [];
-        latinPatterns[1][4][0] = [
-            72, 75, 76, 78, 80, 82, 84,
-            87, 88, 90, 92, 94,
-            104, 116, 124, 134, 138,
-            192, 204, 226, 238
-        ];
-
-        latinPatterns[1][5] = [];
-        latinPatterns[1][5][0] = [
-            56,
-            72, 74, 78, 82, 84, 86,
-            88, 92, 94,
-            104, 116, 142,
-            192, 204,
-            220, 231, 234
-        ];
-
-        latinPatterns[1][6] = [];
-        latinPatterns[1][6][0] = [
-            72, 74, 76, 78, 80, 84,
-            86, 88, 90, 92,
-            100, 112,
-            128, 130, 140, 142,
-            192, 204,
-            218, 230, 234
-        ];
-
-        latinPatterns[1][7] = [];
-        latinPatterns[1][7][0] = [
-            66,
-            72, 74, 76, 80, 82, 84,
-            88, 92,
-            102, 108, 118,
-            122, 136, 140,
-            192, 226, 230, 234
-        ];
-
-        latinPatterns[1][8] = [];
-        latinPatterns[1][8][0] = [
-            72, 73, 75, 76, 79, 80, 82, 84,
-            85, 87, 88, 91, 92, 94,
-            102, 114,
-            123, 135, 140, 142,
-            192, 204,
-            220, 224, 232, 236
-        ];
-
-        latinPatterns[1][9] = [];
-        latinPatterns[1][9][0] = [
-            72, 74, 75, 78, 80, 82, 84,
-            87, 88, 90, 92, 94,
-            100, 114, 120,
-            128, 132, 134, 142,
-            192, 204,
-            222, 226, 233, 236
-        ];
-
-        for (
-            var presetIndex = 0;
-            presetIndex < latinPatterns[1].length;
-            presetIndex++
-        ) {
-            latinPatterns[1][presetIndex][1] = 0;
-
-            latinPatterns[1][presetIndex][2] = [
-                1, 1, 1, 1, 1,
-                1, 1, 1, 1, 1
-            ];
-
-            latinPatterns[1][presetIndex][3] = 150;
-        }
-
-
-        /*
-         * ------------------------------------------------------------------------
-         * LATIN - troisième signature
-         * ------------------------------------------------------------------------
-         */
-
-        latinPatterns[2][0] = [];
-        latinPatterns[2][0][0] = [
-            72, 75, 77, 78, 81, 83, 84,
-            87, 89, 90, 93, 95,
-            101, 105, 113, 117,
-            192, 204, 222, 234
-        ];
-
-        latinPatterns[2][1] = [];
-        latinPatterns[2][1][0] = [
-            72, 75, 77, 78, 80, 81,
-            84, 87, 89, 90, 92, 93,
-            101, 105, 111, 116,
-            192, 204, 222, 234, 237
-        ];
-
-        latinPatterns[2][2] = [];
-        latinPatterns[2][2][0] = [
-            65,
-            72, 74, 75, 77, 81, 83, 84,
-            86, 87, 93, 95,
-            101, 113,
-            128, 140,
-            192, 204, 225, 237
-        ];
-
-        latinPatterns[2][3] = [];
-        latinPatterns[2][3][0] = [
-            69,
-            72, 74, 75, 77, 80, 81,
-            84, 86, 87, 89, 92,
-            105, 117,
-            125, 134, 137,
-            192, 204, 222, 234
-        ];
-
-        latinPatterns[2][4] = [];
-        latinPatterns[2][4][0] = [
-            72, 75, 77, 78, 81, 83, 84,
-            87, 89, 90, 93, 95,
-            99, 105, 111, 117,
-            125, 137, 140,
-            192, 204, 222, 234
-        ];
-
-        latinPatterns[2][5] = [];
-        latinPatterns[2][5][0] = [
-            56, 68,
-            72, 74, 75, 77, 78, 81, 83,
-            84, 86, 87, 89, 90, 93, 95,
-            101, 113,
-            129, 141,
-            192, 204,
-            225, 230, 237
-        ];
-
-        latinPatterns[2][6] = [];
-        latinPatterns[2][6][0] = [
-            72, 74, 76, 77, 79, 81, 83, 84,
-            86, 88, 89, 91, 93, 95,
-            99, 111,
-            128, 130, 140, 142, 143,
-            192, 204, 222, 234
-        ];
-
-        latinPatterns[2][7] = [];
-        latinPatterns[2][7][0] = [
-            57, 67, 69,
-            72, 74, 76, 77, 79,
-            83, 84, 86, 88, 89, 95,
-            101, 113,
-            122, 128, 134, 139, 141,
-            192, 204,
-            222, 225, 234, 237
-        ];
-
-        latinPatterns[2][8] = [];
-        latinPatterns[2][8][0] = [
-            71, 72, 74, 76, 77, 79, 81, 83,
-            84, 86, 88, 89, 91, 93,
-            105, 117,
-            124, 136, 143,
-            192, 204,
-            218, 221, 222, 230, 233, 234
-        ];
-
-        latinPatterns[2][9] = [];
-        latinPatterns[2][9][0] = [
-            72, 74, 76, 77, 79, 81, 83, 84,
-            86, 88, 89, 91, 93, 95,
-            99, 111,
-            125, 128, 137, 140, 141,
-            192, 204,
-            221, 222, 225, 233, 234, 237
-        ];
-
-        for (
-            var presetIndex = 0;
-            presetIndex < latinPatterns[2].length;
-            presetIndex++
-        ) {
-            latinPatterns[2][presetIndex][1] = 0;
-
-            latinPatterns[2][presetIndex][2] = [
-                1, 1, 1, 1, 1,
-                1, 1, 1, 1, 1
-            ];
-
-            latinPatterns[2][presetIndex][3] = 150;
-        }
-        return [rockPatterns, hipHopPatterns, latinPatterns];
+        const T = Object.freeze({ crash:0, ride:1, open:2, hat:3, snare:4, tom1:5, tom2:6, kick:7 });
+        const families = [{name:"Rock / Pop" , grooves:[{name:"Billie Jean – Michael Jackson",bpm:117,signature:[4,4],swing:0,kit:3},{name:"Back In Black – AC/DC",bpm:94,signature:[4,4],swing:0,kit:0},{name:"When The Levee Breaks – Led Zeppelin",bpm:72,signature:[4,4],swing:0,kit:0},{name:"Come Together – The Beatles",bpm:84,signature:[4,4],swing:0,kit:0},{name:"Sunday Bloody Sunday – U2",bpm:103,signature:[4,4],swing:0,kit:0},{name:"Smells Like Teen Spirit – Nirvana",bpm:117,signature:[4,4],swing:0,kit:0},{name:"We Will Rock You – Queen",bpm:81,signature:[4,4],swing:0,kit:0},{name:"Walk This Way – Aerosmith",bpm:108,signature:[4,4],swing:3,kit:4},{name:"Dreams – Fleetwood Mac",bpm:120,signature:[4,4],swing:0,kit:3},{name:"Rosanna – Toto",bpm:82,signature:[4,4],swing:10,kit:0},{name:"In The Air Tonight – Phil Collins",bpm:95,signature:[4,4],swing:0,kit:3},{name:"Every Breath You Take – The Police",bpm:117,signature:[4,4],swing:0,kit:3},{name:"Locked Out Of Heaven – Bruno Mars",bpm:144,signature:[4,4],swing:0,kit:3},{name:"Seven Nation Army – The White Stripes",bpm:124,signature:[4,4],swing:0,kit:0},{name:"Supermassive Black Hole – Muse",bpm:120,signature:[4,4],swing:0,kit:2},{name:"Money – Pink Floyd",bpm:124,signature:[7,4],swing:0,kit:0},{name:"Solsbury Hill – Peter Gabriel",bpm:102,signature:[7,4],swing:0,kit:3},{name:"Tom Sawyer (7/8 section) – Rush",bpm:88,signature:[7,8],swing:0,kit:2},{name:"Use Somebody – Kings Of Leon",bpm:138,signature:[4,4],swing:0,kit:0},{name:"Take Me Out – Franz Ferdinand",bpm:104,signature:[4,4],swing:0,kit:2},{name:"Baba O’Riley – The Who",bpm:117,signature:[4,4],swing:0,kit:0},{name:"Rebel Rebel – David Bowie",bpm:126,signature:[4,4],swing:0,kit:3},{name:"Sledgehammer – Peter Gabriel",bpm:96,signature:[4,4],swing:3,kit:3},{name:"Everybody Wants To Rule The World – Tears for Fears",bpm:112,signature:[12,8],swing:0,kit:3},{name:"Message in a Bottle – The Police",bpm:151,signature:[4,4],swing:0,kit:3}]},{name:"Funk / Soul" , grooves:[{name:"Funky Drummer – James Brown",bpm:100,signature:[4,4],swing:8,kit:3},{name:"Cissy Strut – The Meters",bpm:90,signature:[4,4],swing:4,kit:3},{name:"Superstition – Stevie Wonder",bpm:100,signature:[4,4],swing:6,kit:3},{name:"Cold Sweat – James Brown",bpm:112,signature:[4,4],swing:4,kit:3},{name:"Use Me – Bill Withers",bpm:78,signature:[4,4],swing:6,kit:3},{name:"Chameleon – Herbie Hancock",bpm:112,signature:[4,4],swing:4,kit:4},{name:"Pick Up The Pieces – Average White Band",bpm:108,signature:[4,4],swing:3,kit:3},{name:"The Chicken – Jaco Pastorius",bpm:104,signature:[4,4],swing:4,kit:3},{name:"Get Up (I Feel Like Being A) Sex Machine – James Brown",bpm:108,signature:[4,4],swing:6,kit:3},{name:"Just Kissed My Baby – The Meters",bpm:96,signature:[4,4],swing:4,kit:3},{name:"I Got The Feelin' – James Brown",bpm:112,signature:[4,4],swing:4,kit:3},{name:"Soul Man – Sam & Dave",bpm:112,signature:[4,4],swing:0,kit:3},{name:"I Heard It Through The Grapevine – Marvin Gaye",bpm:117,signature:[4,4],swing:0,kit:3},{name:"Let's Stay Together – Al Green",bpm:102,signature:[4,4],swing:2,kit:3},{name:"Ain't Too Proud To Beg – The Temptations",bpm:118,signature:[4,4],swing:0,kit:3},{name:"Papa Was A Rollin' Stone – The Temptations",bpm:122,signature:[4,4],swing:2,kit:4},{name:"Brick House – Commodores",bpm:108,signature:[4,4],swing:4,kit:3},{name:"Le Freak – Chic",bpm:119,signature:[4,4],swing:0,kit:3},{name:"Good Times – Chic",bpm:111,signature:[4,4],swing:0,kit:3},{name:"Kiss – Prince",bpm:112,signature:[4,4],swing:2,kit:4},{name:"Kissing My Love – Bill Withers",bpm:103,signature:[4,4],swing:3,kit:3},{name:"Rock Steady – Aretha Franklin",bpm:104,signature:[4,4],swing:4,kit:3},{name:"What Is Hip? – Tower of Power",bpm:106,signature:[4,4],swing:2,kit:3},{name:"I Want You Back – The Jackson 5",bpm:98,signature:[4,4],swing:0,kit:3},{name:"Outstanding – The Gap Band",bpm:100,signature:[4,4],swing:4,kit:4}]},{name:"Blues / Shuffle" , grooves:[{name:"Pride And Joy – Stevie Ray Vaughan",bpm:126,signature:[4,4],swing:18,kit:3},{name:"Texas Flood – Stevie Ray Vaughan",bpm:62,signature:[12,8],swing:0,kit:3},{name:"Cold Shot – Stevie Ray Vaughan",bpm:110,signature:[4,4],swing:14,kit:3},{name:"Sweet Home Chicago – Blues Brothers",bpm:116,signature:[4,4],swing:16,kit:3},{name:"Stormy Monday – T-Bone Walker",bpm:66,signature:[12,8],swing:0,kit:3},{name:"Before You Accuse Me – Eric Clapton",bpm:112,signature:[4,4],swing:14,kit:3},{name:"Tush – ZZ Top",bpm:145,signature:[4,4],swing:12,kit:0},{name:"La Grange – ZZ Top",bpm:82,signature:[4,4],swing:18,kit:0},{name:"Crossroads – Cream",bpm:132,signature:[4,4],swing:8,kit:0},{name:"Red House – Jimi Hendrix",bpm:70,signature:[12,8],swing:0,kit:0},{name:"Fool In The Rain – Led Zeppelin",bpm:92,signature:[4,4],swing:18,kit:0},{name:"Rosanna – Toto",bpm:82,signature:[4,4],swing:16,kit:0},{name:"Home At Last – Steely Dan",bpm:94,signature:[4,4],swing:18,kit:3},{name:"Babylon Sisters – Steely Dan",bpm:74,signature:[4,4],swing:16,kit:3},{name:"The Thrill Is Gone – B.B. King",bpm:91,signature:[4,4],swing:8,kit:3},{name:"Hoochie Coochie Man – Muddy Waters",bpm:72,signature:[12,8],swing:0,kit:3},{name:"I'd Rather Go Blind – Etta James",bpm:76,signature:[12,8],swing:0,kit:3},{name:"Still Got The Blues – Gary Moore",bpm:67,signature:[12,8],swing:0,kit:0},{name:"Since I've Been Loving You – Led Zeppelin",bpm:64,signature:[12,8],swing:0,kit:0},{name:"Black Velvet – Alannah Myles",bpm:92,signature:[4,4],swing:10,kit:3},{name:"Pride and Joy (Live Feel) – Stevie Ray Vaughan",bpm:128,signature:[4,4],swing:15,kit:3},{name:"Roadhouse Blues – The Doors",bpm:121,signature:[4,4],swing:8,kit:0},{name:"Boom Boom – John Lee Hooker",bpm:158,signature:[4,4],swing:10,kit:3},{name:"I’m Tore Down – Freddie King",bpm:108,signature:[4,4],swing:12,kit:3},{name:"Hide Away – Freddie King",bpm:132,signature:[4,4],swing:10,kit:3}]},{name:"Jazz" , grooves:[{name:"Take Five – Dave Brubeck Quartet",bpm:174,signature:[5,4],swing:10,kit:3},{name:"So What – Miles Davis",bpm:136,signature:[4,4],swing:10,kit:3},{name:"Moanin' – Art Blakey & The Jazz Messengers",bpm:126,signature:[4,4],swing:10,kit:3},{name:"Freddie Freeloader – Miles Davis",bpm:124,signature:[4,4],swing:10,kit:3},{name:"Cantaloupe Island – Herbie Hancock",bpm:116,signature:[4,4],swing:0,kit:4},{name:"Mercy, Mercy, Mercy – Cannonball Adderley",bpm:110,signature:[4,4],swing:0,kit:4},{name:"Sing, Sing, Sing – Benny Goodman",bpm:112,signature:[4,4],swing:12,kit:3},{name:"My Favorite Things – John Coltrane",bpm:132,signature:[3,4],swing:8,kit:3},{name:"All Blues – Miles Davis",bpm:120,signature:[6,8],swing:0,kit:3},{name:"Footprints – Wayne Shorter",bpm:108,signature:[6,8],swing:0,kit:3},{name:"Blue Rondo à la Turk – Dave Brubeck",bpm:126,signature:[9,8],swing:0,kit:3},{name:"Mission: Impossible Theme – Lalo Schifrin",bpm:112,signature:[5,4],swing:0,kit:3},{name:"A Night In Tunisia – Dizzy Gillespie",bpm:138,signature:[4,4],swing:6,kit:3},{name:"Song For My Father – Horace Silver",bpm:124,signature:[4,4],swing:0,kit:4},{name:"The Sidewinder – Lee Morgan",bpm:126,signature:[4,4],swing:2,kit:4},{name:"Watermelon Man – Herbie Hancock",bpm:116,signature:[4,4],swing:0,kit:4},{name:"St. Thomas – Sonny Rollins",bpm:152,signature:[4,4],swing:0,kit:5},{name:"Caravan – Duke Ellington",bpm:136,signature:[4,4],swing:4,kit:5},{name:"Autumn Leaves – Cannonball Adderley",bpm:124,signature:[4,4],swing:8,kit:3},{name:"Chitlins Con Carne – Kenny Burrell",bpm:110,signature:[4,4],swing:4,kit:3},{name:"Cucumber Slumber – Weather Report",bpm:104,signature:[4,4],swing:0,kit:4},{name:"Actual Proof – Herbie Hancock",bpm:122,signature:[4,4],swing:2,kit:4},{name:"The Chicken (Live) – Jaco Pastorius",bpm:112,signature:[4,4],swing:2,kit:3},{name:"Strasbourg / St. Denis – Roy Hargrove",bpm:112,signature:[4,4],swing:0,kit:4},{name:"Red Clay – Freddie Hubbard",bpm:122,signature:[4,4],swing:2,kit:4}]},{name:"Hip-Hop" , grooves:[{name:"Amen, Brother – The Winstons",bpm:136,signature:[4,4],swing:0,kit:4},{name:"Impeach The President – The Honey Drippers",bpm:96,signature:[4,4],swing:2,kit:4},{name:"Apache – Incredible Bongo Band",bpm:114,signature:[4,4],swing:0,kit:4},{name:"Synthetic Substitution – Melvin Bliss",bpm:92,signature:[4,4],swing:2,kit:4},{name:"Funky Drummer – James Brown",bpm:100,signature:[4,4],swing:6,kit:3},{name:"Think (About It) – Lyn Collins",bpm:102,signature:[4,4],swing:2,kit:4},{name:"Ashley's Roachclip – The Soul Searchers",bpm:92,signature:[4,4],swing:2,kit:4},{name:"Hihache – Lafayette Afro Rock Band",bpm:110,signature:[4,4],swing:0,kit:5},{name:"God Make Me Funky – The Headhunters",bpm:104,signature:[4,4],swing:2,kit:4},{name:"It's A New Day – Skull Snaps",bpm:100,signature:[4,4],swing:2,kit:4},{name:"Nuthin' But A 'G' Thang – Dr. Dre",bpm:94,signature:[4,4],swing:4,kit:4},{name:"C.R.E.A.M. – Wu-Tang Clan",bpm:91,signature:[4,4],swing:6,kit:4},{name:"Shook Ones, Pt. II – Mobb Deep",bpm:94,signature:[4,4],swing:4,kit:4},{name:"The Message – Grandmaster Flash",bpm:100,signature:[4,4],swing:0,kit:4},{name:"Rapper's Delight – Sugarhill Gang",bpm:112,signature:[4,4],swing:0,kit:4},{name:"Paid In Full – Eric B. & Rakim",bpm:100,signature:[4,4],swing:4,kit:4},{name:"Hip Hop Hooray – Naughty By Nature",bpm:99,signature:[4,4],swing:4,kit:4},{name:"Juicy – The Notorious B.I.G.",bpm:96,signature:[4,4],swing:4,kit:4},{name:"Still D.R.E. – Dr. Dre",bpm:93,signature:[4,4],swing:2,kit:4},{name:"The Next Episode – Dr. Dre",bpm:95,signature:[4,4],swing:2,kit:4},{name:"Scenario – A Tribe Called Quest",bpm:102,signature:[4,4],swing:5,kit:4},{name:"They Reminisce Over You (T.R.O.Y.) – Pete Rock & CL Smooth",bpm:102,signature:[4,4],swing:4,kit:4},{name:"Mass Appeal – Gang Starr",bpm:96,signature:[4,4],swing:3,kit:4},{name:"93 ’til Infinity – Souls of Mischief",bpm:93,signature:[4,4],swing:5,kit:4},{name:"Electric Relaxation – A Tribe Called Quest",bpm:98,signature:[4,4],swing:6,kit:4}]},{name:"Reggae / Ska" , grooves:[{name:"One Drop – Bob Marley & The Wailers",bpm:76,signature:[4,4],swing:1,kit:5},{name:"Exodus – Bob Marley & The Wailers",bpm:74,signature:[4,4],swing:0,kit:5},{name:"Jamming – Bob Marley & The Wailers",bpm:78,signature:[4,4],swing:0,kit:5},{name:"Is This Love – Bob Marley & The Wailers",bpm:76,signature:[4,4],swing:0,kit:5},{name:"Legalize It – Peter Tosh",bpm:74,signature:[4,4],swing:0,kit:5},{name:"Marcus Garvey – Burning Spear",bpm:80,signature:[4,4],swing:0,kit:5},{name:"Police And Thieves – Junior Murvin",bpm:78,signature:[4,4],swing:0,kit:5},{name:"War Ina Babylon – Max Romeo",bpm:78,signature:[4,4],swing:0,kit:5},{name:"Satta Massagana – The Abyssinians",bpm:76,signature:[4,4],swing:0,kit:5},{name:"Pressure Drop – Toots & The Maytals",bpm:90,signature:[4,4],swing:0,kit:5},{name:"54-46 That's My Number – Toots & The Maytals",bpm:88,signature:[4,4],swing:0,kit:5},{name:"The Harder They Come – Jimmy Cliff",bpm:92,signature:[4,4],swing:0,kit:5},{name:"Rivers Of Babylon – The Melodians",bpm:86,signature:[4,4],swing:0,kit:5},{name:"Israelites – Desmond Dekker",bpm:84,signature:[4,4],swing:1,kit:5},{name:"A Message To You Rudy – The Specials",bpm:104,signature:[4,4],swing:0,kit:5},{name:"Ghost Town – The Specials",bpm:75,signature:[4,4],swing:2,kit:5},{name:"One Step Beyond – Madness",bpm:156,signature:[4,4],swing:0,kit:2},{name:"Mirror In The Bathroom – The Beat",bpm:160,signature:[4,4],swing:0,kit:2},{name:"Guns Of Navarone – The Skatalites",bpm:132,signature:[4,4],swing:1,kit:5},{name:"Gangsters – The Specials",bpm:148,signature:[4,4],swing:0,kit:2},{name:"Walking On The Moon – The Police",bpm:146,signature:[4,4],swing:0,kit:3},{name:"Red Red Wine – UB40",bpm:89,signature:[4,4],swing:0,kit:5},{name:"Kingston Town – UB40",bpm:82,signature:[4,4],swing:0,kit:5},{name:"Pass The Dutchie – Musical Youth",bpm:150,signature:[4,4],swing:0,kit:5},{name:"Here I Come – Barrington Levy",bpm:86,signature:[4,4],swing:1,kit:5}]},{name:"Latin" , grooves:[{name:"The Girl From Ipanema – Getz/Gilberto",bpm:124,signature:[4,4],swing:0,kit:5},{name:"Mas Que Nada – Jorge Ben Jor",bpm:148,signature:[4,4],swing:0,kit:5},{name:"Oye Como Va – Santana",bpm:126,signature:[4,4],swing:0,kit:5},{name:"Manteca – Dizzy Gillespie",bpm:132,signature:[4,4],swing:0,kit:5},{name:"Watermelon Man – Mongo Santamaría",bpm:112,signature:[4,4],swing:0,kit:5},{name:"Soul Bossa Nova – Quincy Jones",bpm:156,signature:[4,4],swing:0,kit:5},{name:"Corcovado – Antônio Carlos Jobim",bpm:104,signature:[4,4],swing:0,kit:5},{name:"Wave – Antônio Carlos Jobim",bpm:126,signature:[4,4],swing:0,kit:5},{name:"Desafinado – Stan Getz & Charlie Byrd",bpm:132,signature:[4,4],swing:0,kit:5},{name:"Água de Beber – Antônio Carlos Jobim",bpm:126,signature:[4,4],swing:0,kit:5},{name:"Brazil – Ary Barroso",bpm:144,signature:[4,4],swing:0,kit:5},{name:"Ran Kan Kan – Tito Puente",bpm:168,signature:[4,4],swing:0,kit:5},{name:"Mambo Gozón – Tito Puente",bpm:172,signature:[4,4],swing:0,kit:5},{name:"Quimbara – Celia Cruz",bpm:176,signature:[4,4],swing:0,kit:5},{name:"Pedro Navaja – Rubén Blades",bpm:104,signature:[4,4],swing:0,kit:5},{name:"Chan Chan – Buena Vista Social Club",bpm:82,signature:[4,4],swing:0,kit:5},{name:"El Cuarto de Tula – Buena Vista Social Club",bpm:100,signature:[4,4],swing:0,kit:5},{name:"Black Orpheus – Luiz Bonfá",bpm:132,signature:[4,4],swing:0,kit:5},{name:"Afro Blue – Mongo Santamaría",bpm:126,signature:[6,8],swing:0,kit:5},{name:"Spain – Chick Corea",bpm:126,signature:[4,4],swing:0,kit:5},{name:"A Night in Tunisia – Chano Pozo / Dizzy Gillespie",bpm:138,signature:[4,4],swing:0,kit:5},{name:"Chega de Saudade – João Gilberto",bpm:126,signature:[4,4],swing:0,kit:5},{name:"Samba de Uma Nota Só – Antônio Carlos Jobim",bpm:132,signature:[4,4],swing:0,kit:5},{name:"El Cantante – Héctor Lavoe",bpm:102,signature:[4,4],swing:0,kit:5},{name:"Vivir Mi Vida – Marc Anthony",bpm:105,signature:[4,4],swing:0,kit:5}]},{name:"Afro / World" , grooves:[{name:"Water No Get Enemy – Fela Kuti",bpm:102,signature:[4,4],swing:4,kit:5},{name:"Zombie – Fela Kuti",bpm:110,signature:[4,4],swing:4,kit:5},{name:"Expensive Shit – Fela Kuti",bpm:104,signature:[4,4],swing:4,kit:5},{name:"Shakara – Fela Kuti",bpm:106,signature:[4,4],swing:4,kit:5},{name:"Sorrow Tears And Blood – Fela Kuti",bpm:108,signature:[4,4],swing:4,kit:5},{name:"Gentleman – Fela Kuti",bpm:104,signature:[4,4],swing:4,kit:5},{name:"Lady – Fela Kuti",bpm:108,signature:[4,4],swing:4,kit:5},{name:"Roforofo Fight – Fela Kuti",bpm:106,signature:[4,4],swing:4,kit:5},{name:"Opposite People – Fela Kuti",bpm:112,signature:[4,4],swing:4,kit:5},{name:"ITT – Fela Kuti",bpm:104,signature:[4,4],swing:4,kit:5},{name:"Soul Makossa – Manu Dibango",bpm:118,signature:[4,4],swing:2,kit:5},{name:"Pata Pata – Miriam Makeba",bpm:126,signature:[4,4],swing:0,kit:5},{name:"Yéké Yéké – Mory Kanté",bpm:124,signature:[4,4],swing:0,kit:5},{name:"Sweet Mother – Prince Nico Mbarga",bpm:118,signature:[4,4],swing:0,kit:5},{name:"Agolo – Angélique Kidjo",bpm:116,signature:[4,4],swing:0,kit:5},{name:"Jerusalema – Master KG",bpm:124,signature:[4,4],swing:0,kit:5},{name:"Waka Waka – Shakira",bpm:128,signature:[4,4],swing:0,kit:5},{name:"Homeless – Ladysmith Black Mambazo",bpm:92,signature:[6,8],swing:0,kit:5},{name:"Malaika – Miriam Makeba",bpm:96,signature:[6,8],swing:0,kit:5},{name:"Jingo – Santana",bpm:116,signature:[6,8],swing:0,kit:5},{name:"Ye Ye De Smell – Fela Kuti",bpm:108,signature:[4,4],swing:3,kit:5},{name:"African Woman – The Funkees",bpm:112,signature:[4,4],swing:2,kit:5},{name:"New Bell – Manu Dibango",bpm:116,signature:[4,4],swing:2,kit:5},{name:"Lady (Hear Me Tonight) – Modjo / Chic-influenced world-dance",bpm:126,signature:[4,4],swing:0,kit:4},{name:"Premier Gaou – Magic System",bpm:126,signature:[4,4],swing:0,kit:5}]}];
+        const uniq=a=>Array.from(new Set(a.filter(Number.isInteger))).sort((x,y)=>x-y);
+        const add=(obj,key,values)=>{ if(!obj[key])obj[key]=[]; obj[key].push(...values); };
+        const makeDefinition = (familyIndex, grooveIndex, meta) => {
+            const sigIndex = signatureIndexOf(meta.signature[0], meta.signature[1]);
+            const sig = CONFIG.SIGNATURES[sigIndex];
+            const b = sig.barSteps, q=4, e=2;
+            const tracks={}, ghost={}, soft={}, strong={}, accent={};
+            const every=(step,start=0,end=b)=>{const a=[];for(let i=start;i<end;i+=step)a.push(i);return a;};
+            const beat=(n)=>Math.min(b-1,n*q);
+            const back=[]; for(let p=q;p<b;p+=2*q) back.push(p);
+            const family = familyIndex;
+            const v = grooveIndex % 5;
+            if (family===0) { // rock/pop
+                add(tracks,'hat',every(e)); add(tracks,'snare',back); add(strong,'snare',back);
+                add(tracks,'kick',uniq([0, beat(2), Math.max(0,b-2-v%2), ...(v===1?[6]:[]), ...(v===2?[3,10]:[])]));
+                add(accent,'kick',[0]); if(v===3)add(tracks,'open',[Math.max(0,b-2)]); add(accent,'snare',back.slice(0,1)); if(v===4){add(tracks,'crash',[0]);add(accent,'crash',[0]);}
+            } else if (family===1) { // funk/soul
+                add(tracks,'hat',every(1)); add(soft,'hat',every(2,1)); add(tracks,'snare',back); add(strong,'snare',back);
+                add(tracks,'kick',uniq([0,3,Math.min(b-1,7),Math.min(b-1,10+v%2),Math.max(0,b-2)]));
+                add(tracks,'snare',uniq([2,Math.min(b-1,7),Math.max(0,b-1)])); add(ghost,'snare',uniq([2,Math.min(b-1,7),Math.max(0,b-1)]));
+                add(accent,'kick',[0]); if(v%2===0)add(tracks,'open',[Math.max(0,b-1)]);
+            } else if (family===2) { // blues / shuffle
+                const trip = meta.signature[1]===8 ? every(2) : every(4).flatMap(x=>[x,Math.min(b-1,x+3)]);
+                add(tracks,'hat',uniq(trip)); add(tracks,'snare',back.length?back:[Math.floor(b/2)]); add(strong,'snare',back.length?back:[Math.floor(b/2)]);
+                add(tracks,'kick',uniq([0,Math.floor(b/2),Math.max(0,b-2)]));
+                add(ghost,'snare',uniq(trip.filter((_,i)=>i%2===1))); add(accent,'snare',back.length?[back[0]]:[Math.floor(b/2)]);
+            } else if (family===3) { // jazz
+                const group=sig.group; const ride=[]; for(let x=0;x<b;x+=group){ride.push(x); if(x+Math.max(1,group-2)<b)ride.push(x+Math.max(1,group-2));}
+                add(tracks,'ride',uniq(ride)); add(strong,'ride',every(group)); add(tracks,'kick',[0]); add(soft,'kick',[0]);
+                const comps=uniq([Math.min(b-1,3+v),Math.min(b-1,Math.floor(b*.62)),Math.max(0,b-2)]); add(tracks,'snare',comps); add(ghost,'snare',comps); add(accent,'ride',[0]);
+            } else if (family===4) { // hip-hop / breaks
+                add(tracks,'hat',every(e)); if(v===2)add(tracks,'hat',every(1)); add(soft,'hat',every(4,2));
+                add(tracks,'snare',back); add(strong,'snare',back);
+                add(tracks,'kick',uniq([0,3+v%2,Math.min(b-1,7),Math.min(b-1,10+v),Math.max(0,b-2)]));
+                add(tracks,'snare',uniq([Math.min(b-1,9),Math.max(0,b-1)])); add(ghost,'snare',uniq([Math.min(b-1,9),Math.max(0,b-1)])); add(accent,'snare',back.slice(0,1));
+            } else if (family===5) { // reggae / ska — 25 empreintes réellement distinctes
+                // 0 one-drop, 1-3 steppers, 4-8 roots/rockers, 9-13 early reggae/rocksteady,
+                // 14-19 ska/2-tone, 20 reggae-rock, 21-24 lovers/rub-a-dub/dancehall.
+                const P = [
+                    {h:[0,2,4,6,8,10,12,14], k:[8], s:[8], o:[14], gh:[6,15]},
+                    {h:[0,2,4,6,8,10,12,14], k:[0,4,8,12], s:[8], o:[6,14], gh:[7]},
+                    {h:[0,2,4,6,8,10,12,14], k:[0,4,8,12,15], s:[8], o:[10,14], gh:[3,11]},
+                    {h:[0,2,4,6,8,10,12,14], k:[0,4,7,8,12], s:[8], o:[6], gh:[14]},
+                    {h:[2,6,10,14], k:[0,8], s:[8], o:[14], gh:[7,15]},
+                    {h:[0,2,4,6,8,10,12,14], k:[0,7,8,14], s:[8], o:[6,14], gh:[3,11]},
+                    {h:[2,6,10,14], k:[3,8,11], s:[8], o:[14], gh:[6,15]},
+                    {h:[0,2,4,6,8,10,12,14], k:[0,6,8,13], s:[8], o:[2,10], gh:[7,15]},
+                    {h:[2,6,10,14], k:[8,14], s:[8], o:[6,14], gh:[3,11]},
+                    {h:[0,2,4,6,8,10,12,14], k:[0,6,8,12], s:[4,12], o:[14], gh:[7]},
+                    {h:[0,2,4,6,8,10,12,14], k:[0,3,8,11], s:[4,12], o:[6,14], gh:[15]},
+                    {h:[2,6,10,14], k:[0,7,10], s:[4,12], o:[14], gh:[3,11]},
+                    {h:[0,2,4,6,8,10,12,14], k:[0,8,14], s:[4,12], o:[6], gh:[7,15]},
+                    {h:[1,3,5,7,9,11,13,15], k:[0,6,10], s:[4,12], o:[7,15], gh:[2,14]},
+                    {h:[2,6,10,14], k:[0,6,8,14], s:[4,12], o:[6,14], gh:[3,11]},
+                    {h:[0,2,4,6,8,10,12,14], k:[0,7,10], s:[4,12], o:[2,14], gh:[6,15]},
+                    {h:[0,2,4,6,8,10,12,14], k:[0,4,8,12], s:[4,12], o:[2,6,10,14], gh:[]},
+                    {h:[0,2,4,6,8,10,12,14], k:[0,3,8,11,14], s:[4,12], o:[6,14], gh:[7,15]},
+                    {h:[1,3,5,7,9,11,13,15], k:[0,4,8,12], s:[4,12], o:[3,11], gh:[6,14]},
+                    {h:[0,2,4,6,8,10,12,14], k:[0,6,8,14], s:[4,12], o:[2,10], gh:[7]},
+                    {h:[2,6,10,14], k:[0,10], s:[4,12], o:[14], gh:[3,7,15]},
+                    {h:[0,2,4,6,8,10,12,14], k:[0,8,11], s:[8], o:[6,14], gh:[3,15]},
+                    {h:[2,6,10,14], k:[0,8,13], s:[8], o:[10], gh:[7,15]},
+                    {h:[0,2,4,6,8,10,12,14], k:[0,3,8,10,14], s:[4,12], o:[6], gh:[7,15]},
+                    {h:[1,3,5,7,9,11,13,15], k:[0,6,8,11], s:[8], o:[7,15], gh:[3,13]}
+                ][grooveIndex % 25];
+                add(tracks,'hat',P.h); add(soft,'hat',P.h.filter(x=>x%4===2 || x%4===3));
+                add(tracks,'kick',P.k); add(tracks,'snare',P.s); add(strong,'snare',P.s);
+                add(tracks,'open',P.o); add(tracks,'snare',P.gh); add(ghost,'snare',P.gh);
+                if (grooveIndex>=14 && grooveIndex<=19) { add(accent,'hat',P.h.filter(x=>x%4===2)); }
+                if (grooveIndex===18) { add(tracks,'ride',[0,3,6,9,12,15]); add(strong,'ride',[0,6,12]); }
+                if (grooveIndex===20) { add(tracks,'tom1',[7,15]); add(soft,'tom1',[7,15]); }
+                add(accent,'snare',P.s.slice(0,1));
+            } else if (family===6) { // latin
+                add(tracks,'hat',every(e)); add(tracks,'ride',uniq([0,3,6,Math.min(b-1,10),Math.min(b-1,12)])); add(strong,'ride',[0,Math.min(b-1,8)]);
+                add(tracks,'kick',uniq([0,3,Math.floor(b/2),Math.min(b-1,Math.floor(b/2)+3)]));
+                add(tracks,'snare',uniq([3,6,Math.min(b-1,11),Math.max(0,b-2)])); add(soft,'snare',uniq([3,Math.min(b-1,11)]));
+                add(accent,'ride',[0]); if(v>=3)add(tracks,'tom1',[Math.min(b-1,5),Math.min(b-1,13)]);
+            } else { // afro/world
+                add(tracks,'hat',every(1)); add(soft,'hat',every(2,1)); add(tracks,'snare',uniq([4,Math.min(b-1,11),Math.min(b-1,12)]));
+                add(strong,'snare',uniq([4,Math.min(b-1,12)])); add(tracks,'kick',uniq([0,3,Math.min(b-1,7),Math.min(b-1,10),Math.max(0,b-2)]));
+                add(tracks,'open',[Math.max(0,b-1)]); add(tracks,'tom1',[Math.min(b-1,6)]); add(accent,'kick',[0]); add(ghost,'snare',uniq([2,Math.min(b-1,7),Math.max(0,b-1)]));
+            }
+            // Empreinte légère propre à chaque morceau : évite les doublons exacts tout en gardant le feel principal.
+            // Les modifications restent secondaires (ghosts, hat, kick de liaison) et sont déterministes.
+            let seed=0; for (const ch of meta.name) seed=(seed*33+ch.charCodeAt(0))>>>0;
+            const pick=(salt)=> Math.abs((seed ^ (salt*2654435761))>>>0) % Math.max(1,b);
+            const h1=pick(1), h2=pick(2), k1=pick(3), s1=pick(4);
+            if (family!==2 && family!==3 && family!==5 && h1%2===1) { add(tracks,'hat',[h1]); add(soft,'hat',[h1]); }
+            if (family===1 || family===4 || family===7) { add(tracks,'snare',[s1]); add(ghost,'snare',[s1]); }
+            if (![2,3,5].includes(family) && k1!==0 && !back.includes(k1)) { add(tracks,'kick',[k1]); if ((seed&3)===0) add(soft,'kick',[k1]); }
+            if ((seed&7)===1 && h2>b/2) { add(tracks,'open',[h2]); add(accent,'open',[h2]); }
+            return {...meta, signatureIndex:sigIndex, tracks, ghost, soft, strong, accent};
+        };
+        const defs=families.map((f,fi)=>f.grooves.map((m,gi)=>makeDefinition(fi,gi,m)));
+        const buildPattern=(def)=>{
+            const sig=CONFIG.SIGNATURES[def.signatureIndex], cells=[], ghost=[], soft=[], strong=[], accent=[];
+            const push=(src,target)=>Object.entries(src||{}).forEach(([voice,pos])=>{const track=T[voice];if(!Number.isInteger(track))return;pos.forEach(p=>{if(p<0||p>=sig.barSteps)return;for(let bar=0;bar<2;bar++)target.push(track*sig.steps+p+bar*sig.barSteps);});});
+            push(def.tracks,cells);push(def.ghost,ghost);push(def.soft,soft);push(def.strong,strong);push(def.accent,accent);
+            const active=uniq(cells); const keep=a=>uniq(a).filter(x=>active.includes(x));
+            return [active,def.kit,Array(CONFIG.TRACK_COUNT).fill(1),def.bpm,1,def.swing,keep(accent),keep(soft),keep(strong),keep(ghost)];
+        };
+        const banks=families.map(()=>Array.from({length:CONFIG.SIGNATURES.length},()=>[]));
+        defs.forEach((family,fi)=>family.forEach((def,gi)=>{banks[fi][def.signatureIndex][gi]=buildPattern(def);}));
+        banks.meta=families.map((f,fi)=>({name:f.name,grooves:defs[fi].map(d=>({name:d.name,signatureIndex:d.signatureIndex,signature:CONFIG.SIGNATURES[d.signatureIndex].label,bpm:d.bpm}))}));
+        return banks;
     }
 
     class PatternStore {
@@ -1189,28 +188,53 @@
             this.banks = this.storage.load(this.createDefaults(presets));
         }
         createDefaults(presets) {
-            const banks = Array.from({ length: 3 }, () => Array(CONFIG.MEMORY_SLOTS));
-            banks[0][0] = this.normalizePattern(presets[1][0][8], 0);
-            banks[0][0][3] = 100;
-            banks[1][0] = this.normalizePattern([[72,74,76,80,82,84,86,88,92,94,100,112,116,192,204,226,238],0,Array(10).fill(1),120],1);
-            banks[2][0] = this.normalizePattern([[72,75,77,78,81,83,84,86,87,89,90,92,93,95,99,105,111,117,192,198,204,210,227,236,239],0,Array(10).fill(1),120],2);
+            const banks = Array.from({ length: CONFIG.SIGNATURES.length }, () => Array(CONFIG.MEMORY_SLOTS));
+            const first = presets[4]?.[signatureIndexOf(4,4)]?.find(Boolean);
+            if (first) banks[signatureIndexOf(4,4)][0] = this.normalizePattern(first, signatureIndexOf(4,4));
             return banks;
         }
         normalizePattern(pattern, signatureIndex = 0) {
             if (!Array.isArray(pattern)) return null;
-            const maxCells = CONFIG.SIGNATURES[signatureIndex].steps * CONFIG.TRACK_COUNT;
-            const cells = Array.isArray(pattern[0]) ? pattern[0].map(Number).filter(n => Number.isInteger(n) && n >= 0 && n < maxCells) : [];
-            const kit = Math.round(Util.clamp(pattern[1], 0, CONFIG.KITS.length - 1, 0));
+            const steps = CONFIG.SIGNATURES[signatureIndex].steps;
+            const trackMap = [0, 1, 2, 3, 4, 4, 5, 6, 7, 7];
             const rawVolumes = Array.isArray(pattern[2]) ? pattern[2] : [];
-            const volumes = Array.from({ length: CONFIG.TRACK_COUNT }, (_, i) => Util.clamp(rawVolumes[i], 0, 1, 1));
+            const legacy = rawVolumes.length >= CONFIG.LEGACY_TRACK_COUNT;
+            const remapCells = source => {
+                const input = Array.isArray(source) ? source.map(Number).filter(Number.isInteger) : [];
+                if (!legacy) return input.filter(n => n >= 0 && n < steps * CONFIG.TRACK_COUNT);
+                return Array.from(new Set(input.map(index => {
+                    const oldTrack = Math.floor(index / steps);
+                    const step = index % steps;
+                    const newTrack = trackMap[oldTrack];
+                    return Number.isInteger(newTrack) ? newTrack * steps + step : null;
+                }).filter(Number.isInteger))).sort((a,b)=>a-b);
+            };
+            const cells = remapCells(pattern[0]);
+            const kit = Math.round(Util.clamp(pattern[1], 0, CONFIG.KITS.length - 1, 0));
+            const migratedVolumes = legacy ? [
+                rawVolumes[0], rawVolumes[1], rawVolumes[2], rawVolumes[3],
+                Math.max(rawVolumes[4] ?? 1, rawVolumes[5] ?? 1), rawVolumes[6], rawVolumes[7],
+                Math.max(rawVolumes[8] ?? 1, rawVolumes[9] ?? 1)
+            ] : rawVolumes;
+            const volumes = Array.from({ length: CONFIG.TRACK_COUNT }, (_, i) => Util.clamp(migratedVolumes[i], 0, 1, 1));
             const tempo = Math.round(Util.clamp(pattern[3], CONFIG.TEMPO.min, CONFIG.TEMPO.max, CONFIG.TEMPO.default));
             const master = Util.clamp(pattern[4], 0, 1, 1);
-            const human = Util.clamp(pattern[5], 0, 1, 0);
-            return [cells, kit, volumes, tempo, master, human];
+            const isV5 = pattern.length >= 10;
+            const swingIndex = 5;
+            const accentIndex = 6;
+            const weakIndex = 7;
+            const strongIndex = isV5 ? 8 : -1;
+            const ghostIndex = isV5 ? 9 : -1;
+            const swing = Math.round(Util.clamp(pattern[swingIndex], CONFIG.SWING.min, CONFIG.SWING.max, CONFIG.SWING.default));
+            const accents = remapCells(pattern[accentIndex]).filter(n => cells.includes(n));
+            const weak = remapCells(pattern[weakIndex]).filter(n => cells.includes(n) && !accents.includes(n));
+            const strong = strongIndex >= 0 ? remapCells(pattern[strongIndex]).filter(n => cells.includes(n) && !accents.includes(n)) : [];
+            const ghost = ghostIndex >= 0 ? remapCells(pattern[ghostIndex]).filter(n => cells.includes(n) && !accents.includes(n) && !weak.includes(n)) : [];
+            return [cells, kit, volumes, tempo, master, swing, accents, weak, strong, ghost];
         }
         normalizeBanks(raw, defaults) {
-            const out = Array.from({ length: 3 }, () => Array(CONFIG.MEMORY_SLOTS));
-            for (let s = 0; s < 3; s++) {
+            const out = Array.from({ length: CONFIG.SIGNATURES.length }, () => Array(CONFIG.MEMORY_SLOTS));
+            for (let s = 0; s < CONFIG.SIGNATURES.length; s++) {
                 const sourceBank = Array.isArray(raw?.[s]) ? raw[s] : [];
                 for (let slot = 0; slot < CONFIG.MEMORY_SLOTS; slot++) {
                     const p = sourceBank[slot];
@@ -1235,12 +259,19 @@
             this.context = null;
             this.buffers = new Map();
             this.loading = new Map();
+            this.analyser = null;
+            this.meterData = null;
         }
         ensureContext() {
             if (this.context) return this.context;
             const Ctx = window.AudioContext || window.webkitAudioContext;
             if (!Ctx) throw new Error("Web Audio API non supportée par ce navigateur.");
             this.context = new Ctx();
+            this.analyser = this.context.createAnalyser();
+            this.analyser.fftSize = 256;
+            this.analyser.smoothingTimeConstant = 0.72;
+            this.analyser.connect(this.context.destination);
+            this.meterData = new Uint8Array(this.analyser.fftSize);
             window.audioContext = this.context;
             return this.context;
         }
@@ -1266,21 +297,33 @@
             const kit = CONFIG.KITS[Math.round(Util.clamp(kitIndex, 0, CONFIG.KITS.length - 1, 0))];
             return Promise.all(kit.tracks.map(key => this.loadSample(key)));
         }
-        async play({ kitIndex, trackIndex, time, trackVolume = 1, masterVolume = 1, human = 0 }) {
+        async play({ kitIndex, trackIndex, time, trackVolume = 1, masterVolume = 1, velocity = "normal" }) {
             const ctx = this.ensureContext();
             const kit = CONFIG.KITS[Math.round(Util.clamp(kitIndex, 0, CONFIG.KITS.length - 1, 0))] || CONFIG.KITS[0];
-            const safeTrack = Math.round(Util.clamp(trackIndex, 0, 10, 0));
+            const safeTrack = Math.round(Util.clamp(trackIndex, 0, CONFIG.METRONOME_TRACK_INDEX, 0));
             const sampleKey = kit.tracks[safeTrack];
             const buffer = await this.loadSample(sampleKey);
             if (!buffer) return;
             const source = ctx.createBufferSource();
             const gainNode = ctx.createGain();
             source.buffer = buffer;
-            const variation = safeTrack === 10 ? 1 : 1 - Math.random() * Util.clamp(human, 0, 1, 0) * 0.8;
-            const gain = Util.clamp(Util.finite(trackVolume, 1) * Util.finite(masterVolume, 1) * Util.finite(variation, 1), 0, 1, 0);
-            gainNode.gain.setValueAtTime(gain, Math.max(ctx.currentTime, Util.finite(time, ctx.currentTime)));
-            source.connect(gainNode).connect(ctx.destination);
-            source.start(Math.max(ctx.currentTime, Util.finite(time, ctx.currentTime)));
+            const level = CONFIG.VELOCITY_GAIN[velocity] ?? CONFIG.VELOCITY_GAIN.normal;
+            const gain = Util.clamp(Util.finite(trackVolume, 1) * Util.finite(masterVolume, 1) * level, 0, 1.5, 0);
+            const startTime = Math.max(ctx.currentTime, Util.finite(time, ctx.currentTime));
+            gainNode.gain.setValueAtTime(gain, startTime);
+            source.connect(gainNode).connect(this.analyser || ctx.destination);
+            source.start(startTime);
+        }
+        getOutputLevel() {
+            if (!this.analyser || !this.meterData) return 0;
+            this.analyser.getByteTimeDomainData(this.meterData);
+            let sum = 0;
+            for (const sample of this.meterData) {
+                const x = (sample - 128) / 128;
+                sum += x * x;
+            }
+            const rms = Math.sqrt(sum / this.meterData.length);
+            return Util.clamp(rms * 3.2, 0, 1, 0);
         }
         suspend() {
             if (this.context && this.context.state !== "closed") return this.context.suspend();
@@ -1295,15 +338,21 @@
             this.kitIndex = 0;
             this.trackVolumes = Array(CONFIG.TRACK_COUNT).fill(1);
             this.masterVolume = 1;
-            this.human = 0;
+            this.swing = CONFIG.SWING.default;
             this.tempo = CONFIG.TEMPO.default;
             this.activeCells = new Set();
+            this.accentCells = new Set();
+            this.weakCells = new Set();
+            this.strongCells = new Set();
+            this.ghostCells = new Set();
+            this.trackMuted = Array(CONFIG.TRACK_COUNT).fill(false);
+            this.trackSolo = Array(CONFIG.TRACK_COUNT).fill(false);
             this.chainEnabled = false;
             this.metronomeEnabled = false;
         }
         get signature() { return CONFIG.SIGNATURES[this.signatureIndex]; }
         snapshot() {
-            return [Array.from(this.activeCells).sort((a,b)=>a-b), this.kitIndex, this.trackVolumes.slice(), this.tempo, this.masterVolume, this.human];
+            return [Array.from(this.activeCells).sort((a,b)=>a-b), this.kitIndex, this.trackVolumes.slice(), this.tempo, this.masterVolume, this.swing, Array.from(this.accentCells).sort((a,b)=>a-b), Array.from(this.weakCells).sort((a,b)=>a-b), Array.from(this.strongCells).sort((a,b)=>a-b), Array.from(this.ghostCells).sort((a,b)=>a-b)];
         }
         apply(pattern) {
             const p = this.store.normalizePattern(pattern, this.signatureIndex);
@@ -1313,29 +362,74 @@
             this.trackVolumes = p[2];
             this.tempo = p[3];
             this.masterVolume = p[4];
-            this.human = p[5];
+            this.swing = p[5];
+            this.accentCells = new Set(p[6]);
+            this.weakCells = new Set(p[7]);
+            this.strongCells = new Set(p[8] || []);
+            this.ghostCells = new Set(p[9] || []);
             return true;
         }
         loadSlot(slot) {
             this.memorySlot = Math.round(Util.clamp(slot, 0, CONFIG.MEMORY_SLOTS - 1, 0));
             const p = this.store.get(this.signatureIndex, this.memorySlot);
             if (p) this.apply(p);
-            else this.activeCells.clear();
+            else { this.activeCells.clear(); this.accentCells.clear(); this.weakCells.clear(); this.strongCells.clear(); this.ghostCells.clear(); }
         }
         saveSlot() { this.store.set(this.signatureIndex, this.memorySlot, this.snapshot()); }
-        toggleCell(index) { this.activeCells.has(index) ? this.activeCells.delete(index) : this.activeCells.add(index); }
-        clear() { this.activeCells.clear(); }
-        cycleSignature() {
-            this.signatureIndex = (this.signatureIndex + 1) % CONFIG.SIGNATURES.length;
-            const slots = this.store.populated(this.signatureIndex);
-            this.memorySlot = slots[0] ?? 0;
-            this.loadSlot(this.memorySlot);
+        cycleCell(index) {
+            const clearVelocity = () => { this.accentCells.delete(index); this.weakCells.delete(index); this.strongCells.delete(index); this.ghostCells.delete(index); };
+            if (!this.activeCells.has(index)) { this.activeCells.add(index); clearVelocity(); return "normal"; }
+            if (![this.accentCells,this.weakCells,this.strongCells,this.ghostCells].some(s=>s.has(index))) { this.strongCells.add(index); return "strong"; }
+            if (this.strongCells.has(index)) { this.strongCells.delete(index); this.accentCells.add(index); return "accent"; }
+            if (this.accentCells.has(index)) { this.accentCells.delete(index); this.weakCells.add(index); return "soft"; }
+            if (this.weakCells.has(index)) { this.weakCells.delete(index); this.ghostCells.add(index); return "ghost"; }
+            this.activeCells.delete(index); clearVelocity(); return "off";
+        }
+        clear() { this.activeCells.clear(); this.accentCells.clear(); this.weakCells.clear(); this.strongCells.clear(); this.ghostCells.clear(); }
+        toggleMute(track) {
+            const i = Math.round(Util.clamp(track, 0, CONFIG.TRACK_COUNT - 1, 0));
+            this.trackMuted[i] = !this.trackMuted[i];
+        }
+        toggleSolo(track) {
+            const i = Math.round(Util.clamp(track, 0, CONFIG.TRACK_COUNT - 1, 0));
+            this.trackSolo[i] = !this.trackSolo[i];
+        }
+        isTrackAudible(track) {
+            const anySolo = this.trackSolo.some(Boolean);
+            return !this.trackMuted[track] && (!anySolo || this.trackSolo[track]);
+        }
+        setSignature(numerator, denominator, preserve = true) {
+            const nextIndex = signatureIndexOf(numerator, denominator);
+            if (nextIndex < 0 || nextIndex === this.signatureIndex) return false;
+            const oldSig = this.signature, nextSig = CONFIG.SIGNATURES[nextIndex];
+            const remapSet = set => {
+                const out = new Set();
+                for (const index of set) {
+                    const track = Math.floor(index / oldSig.steps), step = index % oldSig.steps;
+                    const bar = Math.floor(step / oldSig.barSteps), inBar = step % oldSig.barSteps;
+                    const quarterPos = inBar / 4;
+                    const mapped = Math.round(quarterPos * 4);
+                    if (track < CONFIG.TRACK_COUNT && mapped < nextSig.barSteps) out.add(track * nextSig.steps + bar * nextSig.barSteps + mapped);
+                }
+                return out;
+            };
+            if (preserve) { this.activeCells=remapSet(this.activeCells); this.accentCells=remapSet(this.accentCells); this.weakCells=remapSet(this.weakCells); this.strongCells=remapSet(this.strongCells); this.ghostCells=remapSet(this.ghostCells); }
+            else this.clear();
+            this.signatureIndex = nextIndex;
+            this.memorySlot = 0;
+            return true;
         }
         loadPreset(bankIndex, presetIndex) {
+            const info = this.store.presets.meta?.[bankIndex]?.grooves?.[presetIndex];
+            if (!info) return false;
+            this.signatureIndex = info.signatureIndex;
             const bank = this.store.presets[bankIndex]?.[this.signatureIndex];
-            if (!bank?.length) return;
-            this.apply(bank[presetIndex % bank.length]);
+            const pattern = bank?.[presetIndex];
+            if (!pattern) return false;
+            this.apply(pattern);
             this.chainEnabled = false;
+            this.memorySlot = 0;
+            return true;
         }
         nextChainSlot() {
             const slots = this.store.populated(this.signatureIndex);
@@ -1353,12 +447,36 @@
                 for (let step = 0; step < steps; step++) {
                     let probability = 0.04;
                     if (track === 3) probability = step % 2 === 0 ? 0.72 : 0.18;
-                    if (track === 4 || track === 5) probability = step % (group * 2) === group ? 0.58 : 0.06;
-                    if (track >= 8) probability = step % group === 0 ? 0.46 : 0.08;
+                    if (track === 4) probability = step % (group * 2) === group ? 0.58 : 0.06;
+                    if (track === 5 || track === 6) probability = step % (group * 2) === group ? 0.14 : 0.03;
+                    if (track === 7) probability = step % group === 0 ? 0.46 : 0.08;
                     if (track < 2) probability = step % (group * 4) === 0 ? 0.2 : 0.025;
                     if (Math.random() < probability) this.activeCells.add(track * steps + step);
                 }
             }
+        }
+        variation() {
+            const steps=this.signature.steps, barSteps=this.signature.barSteps;
+            const active=new Set(this.activeCells), soft=new Set(this.weakCells), strong=new Set(this.strongCells), ghost=new Set(this.ghostCells), accent=new Set(this.accentCells);
+            const clearV=i=>{soft.delete(i);strong.delete(i);ghost.delete(i);accent.delete(i);};
+            const addNote=(track,step,velocity="normal")=>{ if(step<0||step>=steps)return; const i=track*steps+step; active.add(i); clearV(i); ({soft,strong,ghost,accent}[velocity]||new Set()).add?.(i); };
+            const remove=(track,step)=>{const i=track*steps+step;active.delete(i);clearV(i);};
+            for(let bar=0;bar<2;bar++){
+                const base=bar*barSteps;
+                // 1) kick: 1-3 edits, mostly syncopations around existing pulse
+                const kickCandidates=[1,3,6,7,10,11,Math.max(0,barSteps-2),Math.max(0,barSteps-1)].filter(x=>x<barSteps);
+                for(let k=0;k<1+Math.floor(Math.random()*3);k++){const s=base+kickCandidates[Math.floor(Math.random()*kickCandidates.length)]; const idx=7*steps+s; if(active.has(idx)&&Math.random()<.35)remove(7,s); else addNote(7,s,Math.random()<.28?"strong":"normal");}
+                // 2) snare: preserve main backbeats, add/move ghosts
+                const ghostCandidates=[2,3,5,7,9,10,11,13,15].filter(x=>x<barSteps);
+                for(let k=0;k<1+Math.floor(Math.random()*3);k++){const s=base+ghostCandidates[Math.floor(Math.random()*ghostCandidates.length)]; addNote(4,s,Math.random()<.75?"ghost":"soft");}
+                // 3) hats: openings, doubles and omissions
+                if(Math.random()<.7)addNote(2,base+Math.max(0,barSteps-2),"accent");
+                if(Math.random()<.55)addNote(3,base+Math.max(0,barSteps-1),"soft");
+                if(Math.random()<.35){const s=base+Math.max(0,barSteps-2);remove(3,s);}
+                // 4) occasional tom pickup/fill at end of phrase
+                if(Math.random()<.42){ addNote(5,base+Math.max(0,barSteps-3),"soft"); addNote(6,base+Math.max(0,barSteps-2),"strong"); if(Math.random()<.5)addNote(4,base+Math.max(0,barSteps-1),"accent"); }
+            }
+            this.activeCells=active; this.weakCells=soft; this.strongCells=strong; this.ghostCells=ghost; this.accentCells=accent;
         }
     }
 
@@ -1384,8 +502,11 @@
             if (!this.playing) return;
             const ctx = this.audio.ensureContext();
             while (this.nextTime < ctx.currentTime + CONFIG.SCHEDULER.scheduleAheadSec) {
-                this.scheduleCurrentStep(this.step, this.nextTime);
-                const duration = 60 / this.seq.signature.group / Util.clamp(this.seq.tempo, CONFIG.TEMPO.min, CONFIG.TEMPO.max, CONFIG.TEMPO.default);
+                const duration = 60 / Util.clamp(this.seq.tempo, CONFIG.TEMPO.min, CONFIG.TEMPO.max, CONFIG.TEMPO.default) / 4;
+                const swingDelay = (this.step % 2 === 1)
+                    ? duration * CONFIG.SWING.maxDelayRatio * (Util.clamp(this.seq.swing, CONFIG.SWING.min, CONFIG.SWING.max, CONFIG.SWING.default) / 100)
+                    : 0;
+                this.scheduleCurrentStep(this.step, this.nextTime + swingDelay);
                 const finishing = this.step === this.seq.signature.steps - 1;
                 this.nextTime += duration;
                 this.step = (this.step + 1) % this.seq.signature.steps;
@@ -1400,11 +521,20 @@
             const steps = this.seq.signature.steps;
             this.ui.schedulePlayhead(step, time);
             if (this.seq.metronomeEnabled && step % this.seq.signature.group === 0) {
-                this.audio.play({ kitIndex: this.seq.kitIndex, trackIndex: 10, time, trackVolume: 0.75, masterVolume: this.seq.masterVolume, human: 0 });
+                this.audio.play({ kitIndex: this.seq.kitIndex, trackIndex: CONFIG.METRONOME_TRACK_INDEX, time, trackVolume: 0.75, masterVolume: this.seq.masterVolume, velocity: "normal" });
             }
             for (let track = 0; track < CONFIG.TRACK_COUNT; track++) {
-                if (!this.seq.activeCells.has(track * steps + step)) continue;
-                this.audio.play({ kitIndex: this.seq.kitIndex, trackIndex: track, time, trackVolume: this.seq.trackVolumes[track], masterVolume: this.seq.masterVolume, human: this.seq.human });
+                const cellIndex = track * steps + step;
+                if (!this.seq.activeCells.has(cellIndex) || !this.seq.isTrackAudible(track)) continue;
+                const velocity = this.seq.accentCells.has(cellIndex) ? "accent" : this.seq.strongCells.has(cellIndex) ? "strong" : this.seq.weakCells.has(cellIndex) ? "soft" : this.seq.ghostCells.has(cellIndex) ? "ghost" : "normal";
+                this.audio.play({
+                    kitIndex: this.seq.kitIndex,
+                    trackIndex: track,
+                    time,
+                    trackVolume: this.seq.trackVolumes[track],
+                    masterVolume: this.seq.masterVolume,
+                    velocity
+                });
             }
         }
     }
@@ -1432,23 +562,22 @@
     class UIController {
         constructor(seq, audio) {
             this.seq = seq; this.audio = audio; this.scheduler = null;
-            this.cells = []; this.memoryButtons = []; this.trackLabels = []; this.kitButtons = [];
-            this.copySnapshot = null; this.presetPositions = [0,0,0]; this.playheadTimeouts = [];
+            this.cells = []; this.memoryButtons = []; this.trackLabels = []; this.trackMuteButtons = []; this.trackSoloButtons = []; this.kitButtons = [];
+            this.copySnapshot = null; this.playheadTimeouts = []; this.tapTimes = []; this.meterFrame = null;
             this.dom = this.cacheDom();
         }
         cacheDom() {
             const $ = id => document.getElementById(id);
             return {
                 sets: $("sets"), leds: $("leds"), tracks: $("tracks"), grid: document.querySelector(".grid"), sliders: $("sliders"),
-                master: $("master"), dynamics: $("dynamics"), memory: $("memory"), clear: $("clear"), signatureButton: $("signature-button"),
-                signature: $("signature"), metro: $("metronome-button"), chain: $("chain"), play: $("play-button"), icon: $("play-pause-icon"),
-                minus: $("minus-button"), plus: $("plus-button"), tempo: $("metronome-tempo"), random: $("random"), save: $("save"), copy: $("copy-paste"),
-                styles: Array.from(document.getElementsByClassName("style")), presetDisplays: Array.from(document.getElementsByClassName("preset-drum-beats"))
+                master: $("master"), swing: $("swing"), swingValue: $("swing-value"), vu: $("vu-meter"), presetFamily: $("preset-family"), presetGroove: $("preset-groove"), grooveRefresh: $("groove-refresh"), memory: $("memory"), clear: $("clear"), signatureButton: $("signature-button"),
+                signature: $("signature"), signatureNumerator: $("signature-numerator"), signatureDenominator: $("signature-denominator"), metro: $("metronome-button"), chain: $("chain"), play: $("play-button"), icon: $("play-pause-icon"),
+                minus: $("minus-button"), plus: $("plus-button"), tap: $("tap-tempo"), tempo: $("metronome-tempo"), random: $("random"), save: $("save"), copy: $("copy-paste")
             };
         }
         init(scheduler) {
             this.scheduler = scheduler;
-            this.buildKits(); this.buildTrackLabels(); this.buildMemory(); this.buildSliders(); this.buildGrid(); this.bindControls(); this.bindUnlock(); this.renderState();
+            this.buildKits(); this.buildTrackLabels(); this.buildMemory(); this.buildSliders(); this.buildGrid(); this.buildPresetSelector(); this.bindControls(); this.bindUnlock(); this.startVuMeter(); this.renderState();
         }
         buildKits() {
             this.dom.sets.innerHTML = "";
@@ -1461,10 +590,21 @@
         }
         buildTrackLabels() {
             this.dom.tracks.innerHTML = "";
+            this.trackLabels = []; this.trackMuteButtons = []; this.trackSoloButtons = [];
             for (let i = 0; i < CONFIG.TRACK_COUNT; i++) {
+                const row = document.createElement("div");
+                row.className = "track-row";
                 const label = document.createElement("div"); label.className = "bt-led track";
                 label.style.color = i < 4 ? "#dde" : i < 8 ? "#9df" : "#d9f";
-                this.dom.tracks.appendChild(label); this.trackLabels.push(label);
+                const controls = document.createElement("div"); controls.className = "track-controls";
+                const mute = document.createElement("button"); mute.type = "button"; mute.className = "track-toggle mute"; mute.textContent = "M"; mute.title = `Mute piste ${i + 1}`;
+                const solo = document.createElement("button"); solo.type = "button"; solo.className = "track-toggle solo"; solo.textContent = "S"; solo.title = `Solo piste ${i + 1}`;
+                mute.addEventListener("click", e => { e.stopPropagation(); this.seq.toggleMute(i); this.renderTrackControls(); });
+                solo.addEventListener("click", e => { e.stopPropagation(); this.seq.toggleSolo(i); this.renderTrackControls(); });
+                controls.append(mute, solo);
+                row.append(label, controls);
+                this.dom.tracks.appendChild(row);
+                this.trackLabels.push(label); this.trackMuteButtons.push(mute); this.trackSoloButtons.push(solo);
             }
         }
         buildMemory() {
@@ -1480,13 +620,49 @@
             input.setAttribute("aria-label", label); input.addEventListener("input", onInput); return input;
         }
         buildSliders() {
-            this.dom.sliders.innerHTML = ""; this.dom.master.innerHTML = ""; this.dom.dynamics.innerHTML = "";
+            this.dom.sliders.innerHTML = ""; this.dom.master.innerHTML = ""; if (this.dom.swing) this.dom.swing.innerHTML = "";
             for (let i = 0; i < CONFIG.TRACK_COUNT; i++) {
-                const kind = i < 4 ? "cymbal" : i < 8 ? "snare" : "kick";
+                const kind = i < 4 ? "cymbal" : i === 4 ? "snare" : i < 7 ? "tom" : "kick";
                 this.dom.sliders.appendChild(this.slider(`slider-thin ${kind}`, `Volume piste ${i+1}`, e => { this.seq.trackVolumes[i] = Util.clamp(Number(e.target.value)/100,0,1,1); }));
             }
             this.dom.master.appendChild(this.slider("slider-high", "Volume master", e => { this.seq.masterVolume = Util.clamp(Number(e.target.value)/100,0,1,1); }));
-            this.dom.dynamics.appendChild(this.slider("slider-high", "Humanisation", e => { this.seq.human = Util.clamp(Number(e.target.value)/100,0,1,0); }));
+            if (this.dom.swing) this.dom.swing.appendChild(this.slider("slider-high swing-slider", "Swing", e => {
+                this.seq.swing = Math.round(Util.clamp(Number(e.target.value), CONFIG.SWING.min, CONFIG.SWING.max, CONFIG.SWING.default));
+                this.renderSwing();
+            }));
+        }
+        buildPresetSelector() {
+            const meta = this.seq.store.presets.meta || [];
+            if (!this.dom.presetFamily || !this.dom.presetGroove) return;
+            this.dom.presetFamily.innerHTML = meta.map((family, i) => `<option value="${i}">${family.name}</option>`).join("");
+            this.dom.presetFamily.value = "0";
+            this.populateGrooves(0);
+        }
+        populateGrooves(familyIndex, selected = 0) {
+            const meta = this.seq.store.presets.meta || [];
+            const family = meta[familyIndex];
+            if (!family || !this.dom.presetGroove) return;
+            this.dom.presetGroove.innerHTML = family.grooves.map((groove, i) => `<option value="${i}">${String(i + 1).padStart(2,"0")} · ${groove.name} · ${groove.signature}</option>`).join("");
+            this.dom.presetGroove.value = String(Util.clamp(selected, 0, family.grooves.length - 1, 0));
+        }
+        loadSelectedPreset() {
+            if (!this.dom.presetFamily || !this.dom.presetGroove) return;
+            const family = Number(this.dom.presetFamily.value) || 0;
+            const groove = Number(this.dom.presetGroove.value) || 0;
+            this.scheduler?.stop();
+            if (this.seq.loadPreset(family, groove)) { this.buildGrid(); this.renderState(); }
+        }
+        startVuMeter() {
+            if (!this.dom.vu) return;
+            this.dom.vu.innerHTML = Array.from({length:16}, (_, i) => `<span class="vu-segment" data-i="${i}"></span>`).join("");
+            const segments = Array.from(this.dom.vu.children);
+            const draw = () => {
+                const level = this.audio.getOutputLevel();
+                const active = Math.round(level * segments.length);
+                segments.forEach((segment, i) => segment.classList.toggle("active", i < active));
+                this.meterFrame = requestAnimationFrame(draw);
+            };
+            draw();
         }
         buildGrid() {
             this.dom.grid.innerHTML = ""; this.dom.leds.innerHTML = ""; this.cells = [];
@@ -1501,24 +677,29 @@
                     const index = track * steps + step;
                     const cell = document.createElement("div"); cell.className = "cell beat"; cell.style.width = `${width}%`;
                     if (step === 0) cell.classList.add("first","capo"); else if (step === steps/2) cell.classList.add("capo"); else if (step % group === 0) cell.classList.add("quarto");
-                    cell.addEventListener("click", () => { this.seq.toggleCell(index); cell.classList.toggle("on", this.seq.activeCells.has(index)); });
+                    cell.addEventListener("click", () => { this.seq.cycleCell(index); this.renderCell(index); });
                     this.dom.grid.appendChild(cell); this.cells.push(cell);
                 }
             }
         }
         bindControls() {
             this.press(this.dom.clear, () => { this.seq.clear(); this.resetPresetSelectors(); this.renderGrid(); });
-            this.press(this.dom.signatureButton, () => { this.scheduler.stop(); this.seq.cycleSignature(); this.buildGrid(); this.resetPresetSelectors(); this.renderState(); });
+            const applySignature = () => { this.scheduler.stop(); const n=Number(this.dom.signatureNumerator?.value), d=Number(this.dom.signatureDenominator?.value); if(this.seq.setSignature(n,d,true)){ this.buildGrid(); this.renderState(); } };
+            this.dom.signatureNumerator?.addEventListener("change", applySignature);
+            this.dom.signatureDenominator?.addEventListener("change", applySignature);
             this.dom.metro.addEventListener("pointerdown", e => { e.preventDefault(); this.seq.metronomeEnabled = !this.seq.metronomeEnabled; this.renderButtons(); });
             this.dom.chain.addEventListener("pointerdown", e => { e.preventDefault(); if (this.seq.store.populated(this.seq.signatureIndex).length >= 2) this.seq.chainEnabled = !this.seq.chainEnabled; this.renderButtons(); });
             this.dom.play.addEventListener("pointerdown", e => { e.preventDefault(); this.scheduler.toggle(); });
             this.bindTempo(this.dom.minus, -1); this.bindTempo(this.dom.plus, 1);
-            this.dom.styles.forEach((button, bankIndex) => this.press(button, () => {
-                const bank = this.seq.store.presets[bankIndex][this.seq.signatureIndex]; const pos = this.presetPositions[bankIndex] % bank.length;
-                this.seq.loadPreset(bankIndex, pos); this.presetPositions = this.presetPositions.map((v,i)=>i===bankIndex?(pos+1)%bank.length:0);
-                this.renderPresetDisplays(bankIndex, pos + 1); this.renderState();
-            }));
-            this.press(this.dom.random, () => { this.seq.randomize(); this.resetPresetSelectors(); this.renderGrid(); });
+            if (this.dom.tap) this.press(this.dom.tap, () => this.handleTapTempo());
+            if (this.dom.presetFamily) this.dom.presetFamily.addEventListener("change", () => {
+                const family = Number(this.dom.presetFamily.value) || 0;
+                this.populateGrooves(family, 0);
+                this.loadSelectedPreset();
+            });
+            if (this.dom.presetGroove) this.dom.presetGroove.addEventListener("change", () => this.loadSelectedPreset());
+            if (this.dom.grooveRefresh) this.press(this.dom.grooveRefresh, () => this.loadSelectedPreset());
+            this.press(this.dom.random, () => { this.seq.variation(); this.renderGrid(); });
             this.press(this.dom.save, () => { this.scheduler.stop(); this.seq.saveSlot(); this.renderMemory(); });
             this.dom.copy.addEventListener("pointerdown", e => {
                 e.preventDefault();
@@ -1528,6 +709,18 @@
             });
             window.addEventListener("keydown", e => { if (e.code === "Space" && e.target === document.body) { e.preventDefault(); this.scheduler.toggle(); } });
             document.addEventListener("visibilitychange", () => { if (document.hidden) { this.scheduler.stop(); this.audio.suspend(); } });
+        }
+        handleTapTempo() {
+            const now = performance.now();
+            if (this.tapTimes.length && now - this.tapTimes[this.tapTimes.length - 1] > 2000) this.tapTimes = [];
+            this.tapTimes.push(now);
+            if (this.tapTimes.length > 6) this.tapTimes.shift();
+            if (this.tapTimes.length < 2) return;
+            const intervals = [];
+            for (let i = 1; i < this.tapTimes.length; i++) intervals.push(this.tapTimes[i] - this.tapTimes[i - 1]);
+            const avg = intervals.reduce((a, b) => a + b, 0) / intervals.length;
+            this.seq.tempo = Math.round(Util.clamp(60000 / avg, CONFIG.TEMPO.min, CONFIG.TEMPO.max, CONFIG.TEMPO.default));
+            this.renderTempo();
         }
         bindTempo(button, delta) {
             let timer = null;
@@ -1543,19 +736,36 @@
             const unlock = async () => { try { await this.audio.resume(); await this.audio.preloadKit(this.seq.kitIndex); } catch (e) { console.warn(e); } };
             ["pointerdown","keydown","touchstart"].forEach(type => document.addEventListener(type, unlock, { once: true, passive: true }));
         }
-        renderState() { this.renderSignature(); this.renderTempo(); this.renderKit(); this.renderGrid(); this.renderSliders(); this.renderMemory(); this.renderButtons(); }
-        renderSignature() { this.dom.signature.innerHTML = `<span>${this.seq.signature.label}</span>`; }
+        renderState() { this.renderSignature(); this.renderTempo(); this.renderKit(); this.renderGrid(); this.renderSliders(); this.renderSwing(); this.renderTrackControls(); this.renderMemory(); this.renderButtons(); }
+        renderSignature() { if(this.dom.signatureNumerator)this.dom.signatureNumerator.value=String(this.seq.signature.numerator); if(this.dom.signatureDenominator)this.dom.signatureDenominator.value=String(this.seq.signature.denominator); if(this.dom.signature)this.dom.signature.setAttribute("aria-label",`Signature ${this.seq.signature.label}`); }
         renderTempo() { this.dom.tempo.textContent = String(this.seq.tempo); }
         renderKit() {
             this.kitButtons.forEach((b,i)=>b.classList.toggle("bt-buttondown",i===this.seq.kitIndex));
             const kit = CONFIG.KITS[this.seq.kitIndex] || CONFIG.KITS[0];
             this.trackLabels.forEach((label,i)=>label.textContent = CONFIG.SAMPLE_MAP[kit.tracks[i]]?.[1] || `TRACK ${i+1}`);
         }
-        renderGrid() { this.cells.forEach((cell,i)=>cell.classList.toggle("on",this.seq.activeCells.has(i))); }
+        renderCell(index) {
+            const cell=this.cells[index]; if(!cell)return;
+            const on=this.seq.activeCells.has(index), accent=this.seq.accentCells.has(index), strong=this.seq.strongCells.has(index), soft=this.seq.weakCells.has(index), ghost=this.seq.ghostCells.has(index);
+            cell.classList.toggle("on",on); cell.classList.toggle("accent",on&&accent); cell.classList.toggle("strong",on&&strong); cell.classList.toggle("soft",on&&soft); cell.classList.toggle("ghost",on&&ghost);
+            const label=accent?"Accent":strong?"Forte":soft?"Douce":ghost?"Ghost":on?"Normale":"Désactivée"; cell.setAttribute("aria-label",`Note ${label}`);
+        }
+        renderGrid() { this.cells.forEach((cell,i)=>this.renderCell(i)); }
+        renderTrackControls() {
+            this.trackMuteButtons.forEach((b,i)=>b.classList.toggle("active", !!this.seq.trackMuted[i]));
+            this.trackSoloButtons.forEach((b,i)=>b.classList.toggle("active", !!this.seq.trackSolo[i]));
+        }
+        renderSwing() {
+            if (this.dom.swing) {
+                const input = this.dom.swing.querySelector("input");
+                if (input) input.value = String(this.seq.swing);
+            }
+            if (this.dom.swingValue) this.dom.swingValue.textContent = `${this.seq.swing}%`;
+        }
         renderSliders() {
             this.dom.sliders.querySelectorAll("input").forEach((input,i)=>input.value=String(Math.round(Util.clamp(this.seq.trackVolumes[i],0,1,1)*100)));
-            const master=this.dom.master.querySelector("input"), human=this.dom.dynamics.querySelector("input");
-            if(master) master.value=String(Math.round(Util.clamp(this.seq.masterVolume,0,1,1)*100)); if(human) human.value=String(Math.round(Util.clamp(this.seq.human,0,1,0)*100));
+            const master=this.dom.master.querySelector("input");
+            if(master) master.value=String(Math.round(Util.clamp(this.seq.masterVolume,0,1,1)*100));
         }
         renderMemory() {
             this.memoryButtons.forEach((b,i)=>{ const saved=!!this.seq.store.get(this.seq.signatureIndex,i); b.classList.toggle("bt-buttondown",i===this.seq.memorySlot); b.classList.toggle("memory-saved",saved); b.classList.toggle("memory-empty",!saved); });
@@ -1563,8 +773,7 @@
             if (this.seq.store.populated(this.seq.signatureIndex).length < 2) this.seq.chainEnabled = false;
         }
         renderButtons() { this.dom.metro.classList.toggle("bt-buttondown",this.seq.metronomeEnabled); this.dom.chain.classList.toggle("bt-buttondown",this.seq.chainEnabled); }
-        resetPresetSelectors() { this.presetPositions=[0,0,0]; ["ROCK","HIPHOP","LATIN"].forEach((label,i)=>{ if(this.dom.presetDisplays[i]) this.dom.presetDisplays[i].innerHTML=`<p>${label}</p>`; }); }
-        renderPresetDisplays(active, number) { ["ROCK","HIPHOP","LATIN"].forEach((label,i)=>{ if(i !== active && this.dom.presetDisplays[i]) this.dom.presetDisplays[i].innerHTML=`<p>${label}</p>`; }); this.dom.presetDisplays[active].innerHTML=`<span>${number}</span>`; }
+        resetPresetSelectors() { /* Le motif courant peut être libre sans modifier la sélection affichée. */ }
         setPlaying(value) { this.dom.icon.className=value?"metronome-pause":"metronome-play"; this.dom.play.classList.toggle("bt-buttondown",value); }
         clearPlayhead() { this.playheadTimeouts.forEach(clearTimeout); this.playheadTimeouts=[]; this.cells.forEach(c=>c.classList.remove("ticked")); this.dom.leds.querySelectorAll(".beat-led").forEach(l=>l.classList.remove("is-playing")); }
         schedulePlayhead(step, audioTime) {

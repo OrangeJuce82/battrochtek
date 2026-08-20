@@ -981,7 +981,7 @@ strong {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 0;
+    min-width: 140px;
     flex: 0 0 42%;
     padding: 2px 5px 3px;
     box-sizing: border-box;
@@ -992,6 +992,7 @@ strong {
 
 .preset-field.groove {
     flex: 1 1 auto;
+    min-width: 180px;
 }
 
 .preset-field span {

@@ -1,0 +1,29 @@
+{
+  "name": "battrochtek",
+  "version": "13.0.0",
+  "private": true,
+  "description": "Drum machine et bibliothèque de grooves PWA basée sur la Web Audio API.",
+  "scripts": {
+    "postinstall": "node scripts/vendor-alpine.mjs",
+    "dev": "http-server . -p 8000 -c-1",
+    "start": "http-server . -p 8000 -c-1",
+    "lint": "eslint app.js service-worker.js scripts/*.mjs eslint.config.js",
+    "format": "prettier --write \"*.{js,json,md,html,css}\" \"scripts/**/*.mjs\"",
+    "format:check": "prettier --check \"*.{js,json,md,html,css}\" \"scripts/**/*.mjs\"",
+    "test": "node scripts/smoke.mjs",
+    "check": "node --check app.js && node --check service-worker.js && npm run lint && npm test"
+  },
+  "dependencies": {
+    "alpinejs": "3.16.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "http-server": "^14.1.1",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=20",
+    "npm": ">=10"
+  },
+  "type": "module"
+}

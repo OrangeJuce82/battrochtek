@@ -18,7 +18,18 @@
         <meta property="og:image" content="logo.png">
         <meta name="HandheldFriendly" content="true">
         <meta name="format-detection" content="telephone=no">
-                <link rel="stylesheet" href="styles.css">
+                <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            document.addEventListener('alpine:init', () => {
+                Alpine.store('ui', {
+                    playing:false, metronome:false, tempoRamp:false, chain:false,
+                    memorySlot:0, undoAvailable:false, redoAvailable:false, masterState:'high'
+                });
+            });
+        </script>
+        <script defer src="vendor/alpine/alpine.min.js"></script>
+        <script defer src="app.js"></script>
 
         </head>
     <body class="limited-ads">
@@ -27,20 +38,39 @@
             <header>
                 <div class="bt-header" aria-label="Battrochtek">
                     <h1><img src="logo.png" alt="" class="bt-header-logo"> <span>Battrochtek</span></h1>
-                                    <div class="vu-meter-wrap" title="Niveau de sortie audio"><span class="vu-label">OUTPUT</span><div id="vu-meter" class="vu-meter" aria-label="VU-mètre de sortie"></div></div>
+                    <div class="output-tools">
+                        <button type="button" class="header-icon-button master-level-button" id="master-level" title="Volume master : fort" aria-label="Volume master : fort"
+                            :class="'volume-' + $store.ui.masterState">
+                            <i id="master-level-icon" class="fa-solid" :class="{ 'fa-volume-xmark': $store.ui.masterState === 'off', 'fa-volume-low': $store.ui.masterState === 'low', 'fa-volume-high': $store.ui.masterState === 'high' }" aria-hidden="true"></i>
+                        </button>
+                        <div class="vu-meter-wrap" title="Niveau de sortie audio"><span class="vu-label">OUTPUT</span><div id="vu-meter" class="vu-meter" aria-label="VU-mètre de sortie"></div></div>
+                    </div>
                 </div>
             </header>
             <div class="bt">
-                <div class="bt-head">
-                    <p>
-                        <strong>DRUM SEQUENCER</strong>
-                    </p>
+                <div class="score-toolbar" aria-label="Sélection du style et du groove">
+                    <div class="preset-selector" id="preset-selector">
+                        <label class="control-field"><span>STYLE</span><select id="preset-family" title="Style musical"></select></label>
+                        <label class="control-field groove"><span>GROOVE</span><select id="preset-groove" title="Groove"></select></label>
+                        <button type="button" class="bt-button preset-icon" id="groove-refresh" title="Recharger le groove original" aria-label="Recharger le groove original"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i></button>
+                        <button type="button" class="bt-button variation-button" id="random" title="Créer une variante musicale du groove courant">VARIANTE</button>
+                    </div>
                 </div>
-                <div class="bt-left">
-                    <div class="bt-corner"></div>
+
+                <div class="instrument-toolbar" aria-label="Kit et swing">
+                    <label class="control-field kit-selector" title="Kit de batterie">
+                        <span class="icon-label" aria-hidden="true"><i class="fa-solid fa-drum"></i></span>
+                        <select id="kit-select" aria-label="Kit de batterie"></select>
+                    </label>
+                    <label class="control-field swing-edit" title="Swing en pourcentage">
+                        <span>SWING</span>
+                        <div class="percent-edit">
+                            <input id="swing-input" type="number" min="0" max="100" step="1" value="0" inputmode="numeric" aria-label="Swing en pourcentage">
+                            <span>%</span>
+                        </div>
+                    </label>
                 </div>
-                <div class="bt-toolbar" id="sets"></div>
-                <div class="drum-machine-clear"></div>
+
                 <div class="bt-leds" id="leds"></div>
                 <div class="bt-left" id="tracks"></div>
                 <div class="bt-grid">
@@ -48,137 +78,83 @@
                 </div>
                 <div class="bt-right" id="sliders"></div>
                 <div class="drum-machine-clear"></div>
-                <div class="bt-left">
-                    <div class="bt-line sounds">SCORE</div>
-                </div>
-                <div class="bt-toolbar">
-                    <div class="bt-button" id="clear" title="Clear the current pattern">
-                        <p>CLEAR</p>
-                    </div>
-                    <div class="bt-spacer"></div>
-                    <div class="bt-button signature-control" id="signature-button" title="Signature : numérateur / dénominateur">
+
+                <div class="transport-bar" aria-label="Transport">
+                    <button type="button" class="transport-button play-toggle" id="play-button" title="Lecture / pause (Espace)" aria-label="Lecture / pause" :aria-pressed="$store.ui.playing.toString()" :class="{ 'bt-buttondown': $store.ui.playing }">
+                        <i id="play-pause-icon" class="fa-solid" :class="$store.ui.playing ? 'fa-pause' : 'fa-play'" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="transport-button tap-modern" id="tap-tempo" title="Tap tempo (T)">TAP</button>
+                    <button type="button" class="transport-button tempo-nudge" id="minus-button" title="Diminuer le tempo" aria-label="Diminuer le tempo">−</button>
+                    <label class="tempo-edit" title="Tempo en BPM">
+                        <input id="metronome-tempo" type="number" min="40" max="240" step="1" value="120" inputmode="numeric" aria-label="Tempo en BPM">
+                        <span>BPM</span>
+                    </label>
+                    <button type="button" class="transport-button tempo-nudge" id="plus-button" title="Augmenter le tempo" aria-label="Augmenter le tempo">+</button>
+                    <button type="button" class="transport-button icon-only tempo-ramp-button" id="tempo-ramp" :aria-pressed="$store.ui.tempoRamp.toString()" :class="{ 'bt-buttondown': $store.ui.tempoRamp }" title="Escalier BPM : +5 BPM à chaque tour" aria-label="Activer l’escalier BPM, plus 5 BPM par tour">
+                        <i class="fa-solid fa-stairs" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="transport-button icon-only" id="metronome-button" :aria-pressed="$store.ui.metronome.toString()" :class="{ 'bt-buttondown': $store.ui.metronome }" title="Métronome (M)" aria-label="Activer ou désactiver le métronome">
+                        <i class="fa-solid fa-stopwatch" aria-hidden="true"></i>
+                    </button>
+                    <div class="signature-control transport-signature" id="signature-button" title="Signature rythmique">
                         <div id="signature" class="signature-editor">
                             <select id="signature-numerator" aria-label="Numérateur de signature"><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select><span>/</span><select id="signature-denominator" aria-label="Dénominateur de signature"><option value="4" selected>4</option><option value="8">8</option><option value="16">16</option></select>
                         </div>
                     </div>
-                    <div class="bt-button" id="metronome-button" title="Toggle metronome options and playback">
-                        <div class="bt-label center">
-                            <span3>OPTIONS</span3>
-                        </div>
-                        <p>METRO</p>
-                    </div>
-                    <div class="bt-spacer"></div>
-                    <div class="bt-button large" id="play-button" title="Play or pause the sequence">
-                        <div id="play-pause-icon" class="metronome-play"></div>
-                    </div>
-                    <div id="metronome-tempo-display">
-                        <div id="metronome-tempo">120</div>
-                        <div id="metronome-bpm">bpm</div>
-                    </div>
-                    <div class="bt-button small" id="minus-button" title="Decrease tempo">
-                        <span1>-</span1>
-                    </div>
-                    <div class="bt-button small" id="plus-button" title="Increase tempo">
-                        <span1>+</span1>
-                    </div>
-                    <div class="bt-button tap" id="tap-tempo" title="Tap tempo : clique plusieurs fois au rythme voulu">
-                        <p>TAP</p>
-                    </div>
-                    <div class="bt-spacer transport-spacer"></div>
-                    <div class="preset-selector" id="preset-selector" aria-label="Sélection des grooves">
-                        <label class="preset-field"><span>FAMILY</span><select id="preset-family" title="Famille de groove"></select></label>
-                        <label class="preset-field groove"><span>GROOVE</span><select id="preset-groove" title="Groove"></select></label>
-                        <div class="bt-button preset-icon" id="groove-refresh" title="Recharger le groove original (tempo, swing, signature et pattern)" aria-label="Recharger le groove original"><span aria-hidden="true">↻</span></div>
-                        <div class="bt-button preset-icon" id="random" title="Créer une variation musicale du groove courant" aria-label="Créer une variation"><span aria-hidden="true">⤨</span></div>
-                    </div>
+                </div>
 
+                <div class="memory-toolbar" id="memory" aria-label="Mémoires et édition">
+                    <div class="memory-separator" aria-hidden="true"></div>
+                    <button type="button" class="bt-button memory-action icon-only" id="chain" :aria-pressed="$store.ui.chain.toString()" :class="{ 'bt-buttondown': $store.ui.chain }" title="Chaîner les mémoires" aria-label="Chaîner les mémoires"><i class="fa-solid fa-link" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only history-button" id="undo" :class="{ 'is-disabled': !$store.ui.undoAvailable }" title="Annuler" aria-label="Annuler"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only history-button" id="redo" :class="{ 'is-disabled': !$store.ui.redoAvailable }" title="Rétablir" aria-label="Rétablir"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only" id="save" title="Sauvegarder dans la mémoire sélectionnée (Ctrl+S)" aria-label="Sauvegarder"><i class="fa-solid fa-floppy-disk" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only" id="clear" title="Nouveau pattern vierge" aria-label="Nouveau pattern vierge"><i class="fa-solid fa-file" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only danger-icon" id="cache-clear" title="Vider les mémoires" aria-label="Vider les mémoires"><i class="fa-solid fa-trash-can" aria-hidden="true"></i></button>
                 </div>
                 <div class="drum-machine-clear"></div>
-                <div class="bt-left">
-                    <div class="bt-line sounds">MEMORY</div>
-                </div>
-                <div class="bt-toolbar" id="memory">
-                    <div class="bt-button" id="save" title="Save the current pattern in memory">
-                        <p>SAVE</p>
-                    </div>
-                    <div class="bt-button" id="copy-paste" title="Copy or paste the selected pattern">
-                        <p>COPY</p>
-                    </div>
-                    <div class="bt-button" id="chain" title="Chaîner les slots mémoire sauvegardés">
-                        <p>CHAIN</p>
-                    </div>
-                    <div class="bt-spacer"></div>
-                </div>
-                <div class="drum-machine-clear"></div>
-                <div class="bottom-controls">
-                    <div class="bottom-control swing-control">
-                        <div class="bt-line sounds">SWING <output id="swing-value" class="swing-value" for="swing">0%</output></div>
-                        <div class="bt-sliders bt-swing" id="swing"></div>
-                    </div>
-                    <div class="bottom-control master-control-block">
-                        <div class="bt-line sounds">MASTER</div>
-                        <div class="bt-sliders" id="master"></div>
-                    </div>
-                </div>
                 <div class="drum-machine-clear"></div>
             </div>
             <div class="bt-help" id="bt-help" aria-live="polite">
                 <span class="bt-help-icon">💡</span>
-                <span class="bt-help-text">Survole un bouton pour voir l’aide.</span>
+                <span class="bt-help-text">Survole, touche ou sélectionne un contrôle pour voir l’aide.</span>
             </div>
         </div>
         <script>
-            var scriptLoaded = false;
-            function loadJS(url) {
-                const script = document.createElement('script');
-                script.type = 'text/javascript';
-                script.async = false;
-                script.defer = true;
-                script.src = url;
-                document.head.appendChild(script);
-            }
-            function loadScript() {
-                var width = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
-                if (width >= 680 && scriptLoaded == false) {
-                    loadJS('app.js');
-                    scriptLoaded = true;
-                }
-            }
-            window.onresize = function() {
-                loadScript();
-            };
-            loadScript();
-
             (function() {
                 var helpBar = document.getElementById('bt-help');
                 if (!helpBar) return;
 
                 var helpText = helpBar.querySelector('.bt-help-text');
-                var defaultText = 'Survole un bouton pour voir l’aide.';
+                var defaultText = 'Survole, touche ou sélectionne un contrôle pour voir l’aide.';
 
                 function setHelp(text) {
                     helpText.textContent = text || defaultText;
                 }
 
                 document.addEventListener('mouseover', function(event) {
-                    var button = event.target.closest('.bt-button[title]');
+                    var button = event.target.closest('.bt-button[title], .transport-button[title]');
                     if (button) setHelp(button.getAttribute('title'));
                 });
 
                 document.addEventListener('mouseout', function(event) {
-                    var button = event.target.closest('.bt-button[title]');
-                    var related = event.relatedTarget && event.relatedTarget.closest ? event.relatedTarget.closest('.bt-button[title]') : null;
+                    var button = event.target.closest('.bt-button[title], .transport-button[title]');
+                    var related = event.relatedTarget && event.relatedTarget.closest ? event.relatedTarget.closest('.bt-button[title], .transport-button[title]') : null;
                     if (button && button !== related) setHelp();
                 });
 
                 document.addEventListener('focusin', function(event) {
-                    var button = event.target.closest('.bt-button[title]');
+                    var button = event.target.closest('.bt-button[title], .transport-button[title]');
                     if (button) setHelp(button.getAttribute('title'));
                 });
 
                 document.addEventListener('focusout', function(event) {
-                    var button = event.target.closest('.bt-button[title]');
+                    var button = event.target.closest('.bt-button[title], .transport-button[title]');
                     if (button) setHelp();
+                });
+
+                window.addEventListener('battrochtek-status', function(event) {
+                    if (event.detail) setHelp(event.detail);
                 });
             })();
         </script>

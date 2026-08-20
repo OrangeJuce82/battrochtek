@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1.0, minimum-scale=1.0">
+        <title>🥁 Battrochtek</title>
+        <meta name="description" content="Battrochtek drum machine and pattern sequencer.">
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f1f1f'/%3E%3Cpath d='M20 18h8v28h-8zM36 18h8v28h-8z' fill='%23f80'/%3E%3C/svg%3E">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+        <meta property="og:url" content="./">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Battrochtek">
+        <meta property="og:description" content="Battrochtek drum machine and pattern sequencer.">
+        <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f1f1f'/%3E%3Cpath d='M18 24h28v16H18z' fill='%23f80'/%3E%3Cpath d='M22 20h20v6H22z' fill='%23fff'/%3E%3Cpath d='M22 42h20v2H22z' fill='%23fff'/%3E%3C/svg%3E">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="format-detection" content="telephone=no">
+                <link rel="stylesheet" href="styles.css">
+
+        </head>
+    <body class="limited-ads">
+        <div id="nav-back" class="drum-games-shade"></div>
+        <div class="drum-machine-container" id="Drum-Machine-Online-Sequencer">
+            <header>
+                <div class="bt-header" aria-label="Battrochtek">
+                    <h1>🥁 Battrochtek</h1>
+                </div>
+            </header>
+            <div class="bt">
+                <div class="bt-head">
+                    <p>
+                        <strong>DRUM SEQUENCER</strong>
+                    </p>
+                </div>
+                <div class="bt-left">
+                    <div class="bt-corner"></div>
+                </div>
+                <div class="bt-toolbar" id="sets"></div>
+                <div class="drum-machine-clear"></div>
+                <div class="bt-leds" id="leds"></div>
+                <div class="bt-left" id="tracks"></div>
+                <div class="bt-grid">
+                    <div class="grid"></div>
+                </div>
+                <div class="bt-right" id="sliders"></div>
+                <div class="drum-machine-clear"></div>
+                <div class="bt-left">
+                    <div class="bt-line sounds">SCORE</div>
+                </div>
+                <div class="bt-toolbar">
+                    <div class="bt-button" id="clear" title="Clear the current pattern">
+                        <p>CLEAR</p>
+                    </div>
+                    <div class="bt-spacer"></div>
+                    <div class="bt-button" id="signature-button" title="Change the time signature">
+                        <div class="bt-label left"></div>
+                        <div id="signature">
+                            <span>4/4</span>
+                        </div>
+                    </div>
+                    <div class="bt-button" id="metronome-button" title="Toggle metronome options and playback">
+                        <div class="bt-label center">
+                            <span3>OPTIONS</span3>
+                        </div>
+                        <p>METRO</p>
+                    </div>
+                    <div class="bt-button" id="chain" title="Chain patterns together">
+                        <div class="bt-label right"></div>
+                        <p>CHAIN</p>
+                    </div>
+                    <div class="bt-spacer"></div>
+                    <div class="bt-button large" id="play-button" title="Play or pause the sequence">
+                        <div id="play-pause-icon" class="metronome-play"></div>
+                    </div>
+                    <div id="metronome-tempo-display">
+                        <div id="metronome-tempo">120</div>
+                        <div id="metronome-bpm">bpm</div>
+                    </div>
+                    <div class="bt-button small" id="minus-button" title="Decrease tempo">
+                        <span1>-</span1>
+                    </div>
+                    <div class="bt-button small" id="plus-button" title="Increase tempo">
+                        <span1>+</span1>
+                    </div>
+                    <div class="bt-spacer"></div>
+                    <div class="bt-button style" title="Load the rock preset">
+                        <div class="bt-label left"></div>
+                        <div class="preset-drum-beats">
+                            <p>ROCK</p>
+                        </div>
+                    </div>
+                    <div class="bt-button style" title="Load the hip-hop preset">
+                        <div class="bt-label center">
+                            <span3>PRESET</span3>
+                        </div>
+                        <div class="preset-drum-beats">
+                            <p>HIPHOP</p>
+                        </div>
+                    </div>
+                    <div class="bt-button style" title="Load the latin preset">
+                        <div class="bt-label right"></div>
+                        <div class="preset-drum-beats">
+                            <p>LATIN</p>
+                        </div>
+                    </div>
+                    <div class="bt-spacer"></div>
+                    <div class="bt-button" id="random" title="Generate a random pattern">
+                        <p>RANDOM</p>
+                    </div>
+                </div>
+                <div class="drum-machine-clear"></div>
+                <div class="bt-left">
+                    <div class="bt-line sounds">MEMORY</div>
+                </div>
+                <div class="bt-toolbar" id="memory">
+                    <div class="bt-button" id="save" title="Save the current pattern in memory">
+                        <p>SAVE</p>
+                    </div>
+                    <div class="bt-button" id="copy-paste" title="Copy or paste the selected pattern">
+                        <p>COPY</p>
+                    </div>
+                    <div class="bt-spacer"></div>
+                </div>
+                <div class="drum-machine-clear"></div>
+                <div class="bt-left">
+                    <div class="bt-line sounds">MASTER</div>
+                </div>
+                <div class="bt-sliders" id="master"></div>
+                <div class="bt-left">
+                    <div class="bt-line sounds">HUMAN</div>
+                </div>
+                <div class="bt-sliders" id="dynamics"></div>
+                <div class="drum-machine-clear"></div>
+            </div>
+            <div class="bt-help" id="bt-help" aria-live="polite">
+                <span class="bt-help-icon">💡</span>
+                <span class="bt-help-text">Survole un bouton pour voir l’aide.</span>
+            </div>
+        </div>
+        <script>
+            var scriptLoaded = false;
+            function loadJS(url) {
+                const script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.async = false;
+                script.defer = true;
+                script.src = url;
+                document.head.appendChild(script);
+            }
+            function loadScript() {
+                var width = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+                if (width >= 680 && scriptLoaded == false) {
+                    loadJS('app.js');
+                    scriptLoaded = true;
+                }
+            }
+            window.onresize = function() {
+                loadScript();
+            };
+            loadScript();
+
+            (function() {
+                var helpBar = document.getElementById('bt-help');
+                if (!helpBar) return;
+
+                var helpText = helpBar.querySelector('.bt-help-text');
+                var defaultText = 'Survole un bouton pour voir l’aide.';
+
+                function setHelp(text) {
+                    helpText.textContent = text || defaultText;
+                }
+
+                document.addEventListener('mouseover', function(event) {
+                    var button = event.target.closest('.bt-button[title]');
+                    if (button) setHelp(button.getAttribute('title'));
+                });
+
+                document.addEventListener('mouseout', function(event) {
+                    var button = event.target.closest('.bt-button[title]');
+                    var related = event.relatedTarget && event.relatedTarget.closest ? event.relatedTarget.closest('.bt-button[title]') : null;
+                    if (button && button !== related) setHelp();
+                });
+
+                document.addEventListener('focusin', function(event) {
+                    var button = event.target.closest('.bt-button[title]');
+                    if (button) setHelp(button.getAttribute('title'));
+                });
+
+                document.addEventListener('focusout', function(event) {
+                    var button = event.target.closest('.bt-button[title]');
+                    if (button) setHelp();
+                });
+            })();
+        </script>
+    </body>
+</html>

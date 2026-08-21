@@ -39,7 +39,7 @@
         LEGACY_TRACK_COUNT: 10,
         MEMORY_SLOTS: 8,
         TEMPO: Object.freeze({ min: 40, max: 240, default: 120 }),
-        TEMPO_RAMP_STEP: 5,
+        TEMPO_RAMP_STEP: 1,
         SWING: Object.freeze({ min: 0, max: 100, default: 0, maxDelayRatio: 0.28 }),
         VELOCITY_GAIN: Object.freeze({ ghost:0.30, soft:0.48, normal:0.72, strong:0.92, accent:1.15 }),
         SCHEDULER: Object.freeze({ lookAheadMs: 25, scheduleAheadSec: 0.1 }),

@@ -418,7 +418,8 @@ button i { pointer-events: none; }
 }
 .grid .cell:hover { background: var(--bt-cell-hover); }
 .grid .cell.quarto { box-shadow: inset 1px 0 0 var(--bt-border-strong); }
-.grid .cell.first { box-shadow: inset 2px 0 0 var(--bt-accent-strong); }
+.grid .cell.first,
+.grid .cell.capo { box-shadow: inset 2px 0 0 var(--bt-accent-strong); }
 .grid .cell.on { background: var(--bt-normal); transform: scale(.82); box-shadow: 0 0 5px rgb(80 90 100 / .35); }
 .grid .cell.on.ghost { background: var(--bt-ghost); transform: scale(.56); }
 .grid .cell.on.soft,

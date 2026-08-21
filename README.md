@@ -1,3 +1,17 @@
+## v34
+
+- Les cellules `capo` (premier temps de chaque mesure) utilisent désormais la même bordure forte que `first`.
+- Le début de la deuxième mesure est donc aussi lisible visuellement que le tout premier temps.
+- Cache PWA `battrochtek-v34`.
+
+## v33
+
+- Correction du bouton **Recharger le groove** : suppression de l'appel invalide à `PatternStore.persist()`.
+- Le groove source est maintenant restauré via `PatternStore.set()`, ce qui met correctement à jour la mémoire courante et le hash URL.
+- La mémoire sélectionnée reste inchangée.
+- Les sept autres mémoires ne sont pas modifiées.
+- Cache PWA `battrochtek-v33`.
+
 ## v32
 
 - Correction GitHub Actions : `grooves:build` utilise bien `./grooves` en minuscules.

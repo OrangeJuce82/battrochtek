@@ -462,8 +462,7 @@
             const pattern = this.store.normalizePattern(sourcePattern, signatureIndex);
             if (!pattern) return false;
 
-            this.store.slots[slot] = { signatureIndex, pattern:Util.clone(pattern) };
-            this.store.persist();
+            this.store.set(slot, signatureIndex, pattern);
             this.loadSlot(slot);
             return true;
         }

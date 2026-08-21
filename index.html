@@ -103,7 +103,7 @@
                         <span>BPM</span>
                     </label>
                     <button type="button" class="transport-button tempo-nudge" id="plus-button" data-bt-tooltip="Augmenter le tempo" aria-label="Augmenter le tempo">+</button>
-                    <button type="button" class="transport-button icon-only tempo-ramp-button" id="tempo-ramp" :aria-pressed="$store.ui.tempoRamp.toString()" :class="{ 'bt-buttondown': $store.ui.tempoRamp }" data-bt-tooltip="Escalier BPM : +5 BPM à chaque tour" aria-label="Activer l’escalier BPM, plus 5 BPM par tour">
+                    <button type="button" class="transport-button icon-only tempo-ramp-button" id="tempo-ramp" :aria-pressed="$store.ui.tempoRamp.toString()" :class="{ 'bt-buttondown': $store.ui.tempoRamp }" data-bt-tooltip="Escalier BPM : +1 BPM à chaque tour" aria-label="Activer l’escalier BPM, plus 1 BPM par tour">
                         <i class="fa-solid fa-stairs" aria-hidden="true"></i>
                     </button>
                     <button type="button" class="transport-button icon-only" id="metronome-button" :aria-pressed="$store.ui.metronome.toString()" :class="{ 'bt-buttondown': $store.ui.metronome }" data-bt-tooltip="Métronome (M)" aria-label="Activer ou désactiver le métronome">

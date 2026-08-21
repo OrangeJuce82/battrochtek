@@ -19,7 +19,7 @@ Faire de Battrochtek une **bibliothèque interactive de grooves pour batteur** :
 ## P1 — Édition / pratique
 
 - [x] Undo / Redo, 30 états, raccourcis Cmd/Ctrl+Z et Redo.
-- [x] Escalier BPM : +5 BPM par tour, valeur éditable.
+- [x] Escalier BPM : +1 BPM par tour, valeur éditable.
 - [ ] Mode Practice : BPM départ/cible, incrément, nombre de tours.
 - [ ] Mute bars / dropout pour travailler le time.
 - [ ] Simplify ↔ Busier : retirer/ajouter progressivement ghosts, syncopes et ouvertures.

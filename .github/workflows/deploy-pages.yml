@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Sync public groove corpora
+        run: npm run grooves:build
+
       - name: Validate project
         run: npm run check
 

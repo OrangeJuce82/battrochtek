@@ -1,0 +1,1528 @@
+{
+  "minimumDifference": 10,
+  "input": 639,
+  "kept": 487,
+  "removed": 152,
+  "removedGrooves": [
+    {
+      "source": "Basic Grooves",
+      "name": "Sunday Bloody Sunday – U2",
+      "origin": "Rock / Pop/Sunday Bloody Sunday – U2",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Billie Jean – Michael Jackson",
+      "matchedOrigin": "Rock / Pop/Billie Jean – Michael Jackson",
+      "similarity": 90.9,
+      "difference": 9.1
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Smells Like Teen Spirit – Nirvana",
+      "origin": "Rock / Pop/Smells Like Teen Spirit – Nirvana",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Billie Jean – Michael Jackson",
+      "matchedOrigin": "Rock / Pop/Billie Jean – Michael Jackson",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "We Will Rock You – Queen",
+      "origin": "Rock / Pop/We Will Rock You – Queen",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Back In Black – AC/DC",
+      "matchedOrigin": "Rock / Pop/Back In Black – AC/DC",
+      "similarity": 91.5,
+      "difference": 8.5
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Walk This Way – Aerosmith",
+      "origin": "Rock / Pop/Walk This Way – Aerosmith",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "When The Levee Breaks – Led Zeppelin",
+      "matchedOrigin": "Rock / Pop/When The Levee Breaks – Led Zeppelin",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Rosanna – Toto",
+      "origin": "Rock / Pop/Rosanna – Toto",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Billie Jean – Michael Jackson",
+      "matchedOrigin": "Rock / Pop/Billie Jean – Michael Jackson",
+      "similarity": 90.9,
+      "difference": 9.1
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "In The Air Tonight – Phil Collins",
+      "origin": "Rock / Pop/In The Air Tonight – Phil Collins",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Billie Jean – Michael Jackson",
+      "matchedOrigin": "Rock / Pop/Billie Jean – Michael Jackson",
+      "similarity": 90.9,
+      "difference": 9.1
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Every Breath You Take – The Police",
+      "origin": "Rock / Pop/Every Breath You Take – The Police",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Back In Black – AC/DC",
+      "matchedOrigin": "Rock / Pop/Back In Black – AC/DC",
+      "similarity": 94.1,
+      "difference": 5.9
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Locked Out Of Heaven – Bruno Mars",
+      "origin": "Rock / Pop/Locked Out Of Heaven – Bruno Mars",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "When The Levee Breaks – Led Zeppelin",
+      "matchedOrigin": "Rock / Pop/When The Levee Breaks – Led Zeppelin",
+      "similarity": 94.5,
+      "difference": 5.5
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Seven Nation Army – The White Stripes",
+      "origin": "Rock / Pop/Seven Nation Army – The White Stripes",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Back In Black – AC/DC",
+      "matchedOrigin": "Rock / Pop/Back In Black – AC/DC",
+      "similarity": 94.5,
+      "difference": 5.5
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Supermassive Black Hole – Muse",
+      "origin": "Rock / Pop/Supermassive Black Hole – Muse",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "When The Levee Breaks – Led Zeppelin",
+      "matchedOrigin": "Rock / Pop/When The Levee Breaks – Led Zeppelin",
+      "similarity": 91.5,
+      "difference": 8.5
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Use Somebody – Kings Of Leon",
+      "origin": "Rock / Pop/Use Somebody – Kings Of Leon",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Come Together – The Beatles",
+      "matchedOrigin": "Rock / Pop/Come Together – The Beatles",
+      "similarity": 91.5,
+      "difference": 8.5
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Take Me Out – Franz Ferdinand",
+      "origin": "Rock / Pop/Take Me Out – Franz Ferdinand",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Billie Jean – Michael Jackson",
+      "matchedOrigin": "Rock / Pop/Billie Jean – Michael Jackson",
+      "similarity": 97.2,
+      "difference": 2.8
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Baba O’Riley – The Who",
+      "origin": "Rock / Pop/Baba O’Riley – The Who",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Billie Jean – Michael Jackson",
+      "matchedOrigin": "Rock / Pop/Billie Jean – Michael Jackson",
+      "similarity": 90.9,
+      "difference": 9.1
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Rebel Rebel – David Bowie",
+      "origin": "Rock / Pop/Rebel Rebel – David Bowie",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Back In Black – AC/DC",
+      "matchedOrigin": "Rock / Pop/Back In Black – AC/DC",
+      "similarity": 94.1,
+      "difference": 5.9
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Sledgehammer – Peter Gabriel",
+      "origin": "Rock / Pop/Sledgehammer – Peter Gabriel",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "When The Levee Breaks – Led Zeppelin",
+      "matchedOrigin": "Rock / Pop/When The Levee Breaks – Led Zeppelin",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Message in a Bottle – The Police",
+      "origin": "Rock / Pop/Message in a Bottle – The Police",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Billie Jean – Michael Jackson",
+      "matchedOrigin": "Rock / Pop/Billie Jean – Michael Jackson",
+      "similarity": 90.9,
+      "difference": 9.1
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Cissy Strut – The Meters",
+      "origin": "Funk / Soul/Cissy Strut – The Meters",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 90.1,
+      "difference": 9.9
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Superstition – Stevie Wonder",
+      "origin": "Funk / Soul/Superstition – Stevie Wonder",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 96.4,
+      "difference": 3.6
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Cold Sweat – James Brown",
+      "origin": "Funk / Soul/Cold Sweat – James Brown",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 90.1,
+      "difference": 9.9
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Use Me – Bill Withers",
+      "origin": "Funk / Soul/Use Me – Bill Withers",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 96.4,
+      "difference": 3.6
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Chameleon – Herbie Hancock",
+      "origin": "Funk / Soul/Chameleon – Herbie Hancock",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 94.9,
+      "difference": 5.1
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Pick Up The Pieces – Average White Band",
+      "origin": "Funk / Soul/Pick Up The Pieces – Average White Band",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 90.1,
+      "difference": 9.9
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "The Chicken – Jaco Pastorius",
+      "origin": "Funk / Soul/The Chicken – Jaco Pastorius",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 97.5,
+      "difference": 2.5
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Get Up (I Feel Like Being A) Sex Machine – James Brown",
+      "origin": "Funk / Soul/Get Up (I Feel Like Being A) Sex Machine – James Brown",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 91.5,
+      "difference": 8.5
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Just Kissed My Baby – The Meters",
+      "origin": "Funk / Soul/Just Kissed My Baby – The Meters",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 94.9,
+      "difference": 5.1
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "I Got The Feelin' – James Brown",
+      "origin": "Funk / Soul/I Got The Feelin' – James Brown",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 94.9,
+      "difference": 5.1
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Soul Man – Sam & Dave",
+      "origin": "Funk / Soul/Soul Man – Sam & Dave",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 91.8,
+      "difference": 8.2
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "I Heard It Through The Grapevine – Marvin Gaye",
+      "origin": "Funk / Soul/I Heard It Through The Grapevine – Marvin Gaye",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 98,
+      "difference": 2
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Let's Stay Together – Al Green",
+      "origin": "Funk / Soul/Let's Stay Together – Al Green",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 93,
+      "difference": 7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Ain't Too Proud To Beg – The Temptations",
+      "origin": "Funk / Soul/Ain't Too Proud To Beg – The Temptations",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 94.9,
+      "difference": 5.1
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Papa Was A Rollin' Stone – The Temptations",
+      "origin": "Funk / Soul/Papa Was A Rollin' Stone – The Temptations",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 94.9,
+      "difference": 5.1
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Brick House – Commodores",
+      "origin": "Funk / Soul/Brick House – Commodores",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 90.1,
+      "difference": 9.9
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Le Freak – Chic",
+      "origin": "Funk / Soul/Le Freak – Chic",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Good Times – Chic",
+      "origin": "Funk / Soul/Good Times – Chic",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 90.1,
+      "difference": 9.9
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Kiss – Prince",
+      "origin": "Funk / Soul/Kiss – Prince",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 94.9,
+      "difference": 5.1
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Kissing My Love – Bill Withers",
+      "origin": "Funk / Soul/Kissing My Love – Bill Withers",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 97.5,
+      "difference": 2.5
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Rock Steady – Aretha Franklin",
+      "origin": "Funk / Soul/Rock Steady – Aretha Franklin",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 91.5,
+      "difference": 8.5
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "What Is Hip? – Tower of Power",
+      "origin": "Funk / Soul/What Is Hip? – Tower of Power",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 96.4,
+      "difference": 3.6
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "I Want You Back – The Jackson 5",
+      "origin": "Funk / Soul/I Want You Back – The Jackson 5",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 93,
+      "difference": 7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Outstanding – The Gap Band",
+      "origin": "Funk / Soul/Outstanding – The Gap Band",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 94.9,
+      "difference": 5.1
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Cold Shot – Stevie Ray Vaughan",
+      "origin": "Blues / Shuffle/Cold Shot – Stevie Ray Vaughan",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Pride And Joy – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Pride And Joy – Stevie Ray Vaughan",
+      "similarity": 96.7,
+      "difference": 3.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Sweet Home Chicago – Blues Brothers",
+      "origin": "Blues / Shuffle/Sweet Home Chicago – Blues Brothers",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Pride And Joy – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Pride And Joy – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Stormy Monday – T-Bone Walker",
+      "origin": "Blues / Shuffle/Stormy Monday – T-Bone Walker",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Texas Flood – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Texas Flood – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Before You Accuse Me – Eric Clapton",
+      "origin": "Blues / Shuffle/Before You Accuse Me – Eric Clapton",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Pride And Joy – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Pride And Joy – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Tush – ZZ Top",
+      "origin": "Blues / Shuffle/Tush – ZZ Top",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Pride And Joy – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Pride And Joy – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "La Grange – ZZ Top",
+      "origin": "Blues / Shuffle/La Grange – ZZ Top",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Pride And Joy – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Pride And Joy – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Crossroads – Cream",
+      "origin": "Blues / Shuffle/Crossroads – Cream",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Pride And Joy – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Pride And Joy – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Red House – Jimi Hendrix",
+      "origin": "Blues / Shuffle/Red House – Jimi Hendrix",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Texas Flood – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Texas Flood – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Fool In The Rain – Led Zeppelin",
+      "origin": "Blues / Shuffle/Fool In The Rain – Led Zeppelin",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Pride And Joy – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Pride And Joy – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Rosanna – Toto",
+      "origin": "Blues / Shuffle/Rosanna – Toto",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Pride And Joy – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Pride And Joy – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Home At Last – Steely Dan",
+      "origin": "Blues / Shuffle/Home At Last – Steely Dan",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Pride And Joy – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Pride And Joy – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Babylon Sisters – Steely Dan",
+      "origin": "Blues / Shuffle/Babylon Sisters – Steely Dan",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Pride And Joy – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Pride And Joy – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "The Thrill Is Gone – B.B. King",
+      "origin": "Blues / Shuffle/The Thrill Is Gone – B.B. King",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Pride And Joy – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Pride And Joy – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Hoochie Coochie Man – Muddy Waters",
+      "origin": "Blues / Shuffle/Hoochie Coochie Man – Muddy Waters",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Texas Flood – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Texas Flood – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "I'd Rather Go Blind – Etta James",
+      "origin": "Blues / Shuffle/I'd Rather Go Blind – Etta James",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Texas Flood – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Texas Flood – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Still Got The Blues – Gary Moore",
+      "origin": "Blues / Shuffle/Still Got The Blues – Gary Moore",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Texas Flood – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Texas Flood – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Since I've Been Loving You – Led Zeppelin",
+      "origin": "Blues / Shuffle/Since I've Been Loving You – Led Zeppelin",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Texas Flood – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Texas Flood – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Black Velvet – Alannah Myles",
+      "origin": "Blues / Shuffle/Black Velvet – Alannah Myles",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Pride And Joy – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Pride And Joy – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Pride and Joy (Live Feel) – Stevie Ray Vaughan",
+      "origin": "Blues / Shuffle/Pride and Joy (Live Feel) – Stevie Ray Vaughan",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Pride And Joy – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Pride And Joy – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Roadhouse Blues – The Doors",
+      "origin": "Blues / Shuffle/Roadhouse Blues – The Doors",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Pride And Joy – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Pride And Joy – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Boom Boom – John Lee Hooker",
+      "origin": "Blues / Shuffle/Boom Boom – John Lee Hooker",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Pride And Joy – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Pride And Joy – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "I’m Tore Down – Freddie King",
+      "origin": "Blues / Shuffle/I’m Tore Down – Freddie King",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Pride And Joy – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Pride And Joy – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Hide Away – Freddie King",
+      "origin": "Blues / Shuffle/Hide Away – Freddie King",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Pride And Joy – Stevie Ray Vaughan",
+      "matchedOrigin": "Blues / Shuffle/Pride And Joy – Stevie Ray Vaughan",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Moanin' – Art Blakey & The Jazz Messengers",
+      "origin": "Jazz/Moanin' – Art Blakey & The Jazz Messengers",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "So What – Miles Davis",
+      "matchedOrigin": "Jazz/So What – Miles Davis",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Freddie Freeloader – Miles Davis",
+      "origin": "Jazz/Freddie Freeloader – Miles Davis",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "So What – Miles Davis",
+      "matchedOrigin": "Jazz/So What – Miles Davis",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Cantaloupe Island – Herbie Hancock",
+      "origin": "Jazz/Cantaloupe Island – Herbie Hancock",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "So What – Miles Davis",
+      "matchedOrigin": "Jazz/So What – Miles Davis",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Mercy, Mercy, Mercy – Cannonball Adderley",
+      "origin": "Jazz/Mercy, Mercy, Mercy – Cannonball Adderley",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "So What – Miles Davis",
+      "matchedOrigin": "Jazz/So What – Miles Davis",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Sing, Sing, Sing – Benny Goodman",
+      "origin": "Jazz/Sing, Sing, Sing – Benny Goodman",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "So What – Miles Davis",
+      "matchedOrigin": "Jazz/So What – Miles Davis",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Footprints – Wayne Shorter",
+      "origin": "Jazz/Footprints – Wayne Shorter",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "All Blues – Miles Davis",
+      "matchedOrigin": "Jazz/All Blues – Miles Davis",
+      "similarity": 94.1,
+      "difference": 5.9
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Mission: Impossible Theme – Lalo Schifrin",
+      "origin": "Jazz/Mission: Impossible Theme – Lalo Schifrin",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Take Five – Dave Brubeck Quartet",
+      "matchedOrigin": "Jazz/Take Five – Dave Brubeck Quartet",
+      "similarity": 93.7,
+      "difference": 6.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "A Night In Tunisia – Dizzy Gillespie",
+      "origin": "Jazz/A Night In Tunisia – Dizzy Gillespie",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "So What – Miles Davis",
+      "matchedOrigin": "Jazz/So What – Miles Davis",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Song For My Father – Horace Silver",
+      "origin": "Jazz/Song For My Father – Horace Silver",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "So What – Miles Davis",
+      "matchedOrigin": "Jazz/So What – Miles Davis",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "The Sidewinder – Lee Morgan",
+      "origin": "Jazz/The Sidewinder – Lee Morgan",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "So What – Miles Davis",
+      "matchedOrigin": "Jazz/So What – Miles Davis",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Watermelon Man – Herbie Hancock",
+      "origin": "Jazz/Watermelon Man – Herbie Hancock",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "So What – Miles Davis",
+      "matchedOrigin": "Jazz/So What – Miles Davis",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "St. Thomas – Sonny Rollins",
+      "origin": "Jazz/St. Thomas – Sonny Rollins",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "So What – Miles Davis",
+      "matchedOrigin": "Jazz/So What – Miles Davis",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Caravan – Duke Ellington",
+      "origin": "Jazz/Caravan – Duke Ellington",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "So What – Miles Davis",
+      "matchedOrigin": "Jazz/So What – Miles Davis",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Autumn Leaves – Cannonball Adderley",
+      "origin": "Jazz/Autumn Leaves – Cannonball Adderley",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "So What – Miles Davis",
+      "matchedOrigin": "Jazz/So What – Miles Davis",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Chitlins Con Carne – Kenny Burrell",
+      "origin": "Jazz/Chitlins Con Carne – Kenny Burrell",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "So What – Miles Davis",
+      "matchedOrigin": "Jazz/So What – Miles Davis",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Cucumber Slumber – Weather Report",
+      "origin": "Jazz/Cucumber Slumber – Weather Report",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "So What – Miles Davis",
+      "matchedOrigin": "Jazz/So What – Miles Davis",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Actual Proof – Herbie Hancock",
+      "origin": "Jazz/Actual Proof – Herbie Hancock",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "So What – Miles Davis",
+      "matchedOrigin": "Jazz/So What – Miles Davis",
+      "similarity": 96.5,
+      "difference": 3.5
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "The Chicken (Live) – Jaco Pastorius",
+      "origin": "Jazz/The Chicken (Live) – Jaco Pastorius",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "So What – Miles Davis",
+      "matchedOrigin": "Jazz/So What – Miles Davis",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Strasbourg / St. Denis – Roy Hargrove",
+      "origin": "Jazz/Strasbourg / St. Denis – Roy Hargrove",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "So What – Miles Davis",
+      "matchedOrigin": "Jazz/So What – Miles Davis",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Red Clay – Freddie Hubbard",
+      "origin": "Jazz/Red Clay – Freddie Hubbard",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "So What – Miles Davis",
+      "matchedOrigin": "Jazz/So What – Miles Davis",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Ashley's Roachclip – The Soul Searchers",
+      "origin": "Hip-Hop/Ashley's Roachclip – The Soul Searchers",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Amen, Brother – The Winstons",
+      "matchedOrigin": "Hip-Hop/Amen, Brother – The Winstons",
+      "similarity": 91.2,
+      "difference": 8.8
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Hihache – Lafayette Afro Rock Band",
+      "origin": "Hip-Hop/Hihache – Lafayette Afro Rock Band",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Apache – Incredible Bongo Band",
+      "matchedOrigin": "Hip-Hop/Apache – Incredible Bongo Band",
+      "similarity": 96.8,
+      "difference": 3.2
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "God Make Me Funky – The Headhunters",
+      "origin": "Hip-Hop/God Make Me Funky – The Headhunters",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Impeach The President – The Honey Drippers",
+      "matchedOrigin": "Hip-Hop/Impeach The President – The Honey Drippers",
+      "similarity": 95.6,
+      "difference": 4.4
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "It's A New Day – Skull Snaps",
+      "origin": "Hip-Hop/It's A New Day – Skull Snaps",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Synthetic Substitution – Melvin Bliss",
+      "matchedOrigin": "Hip-Hop/Synthetic Substitution – Melvin Bliss",
+      "similarity": 92.5,
+      "difference": 7.5
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "C.R.E.A.M. – Wu-Tang Clan",
+      "origin": "Hip-Hop/C.R.E.A.M. – Wu-Tang Clan",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Nuthin' But A 'G' Thang – Dr. Dre",
+      "matchedOrigin": "Hip-Hop/Nuthin' But A 'G' Thang – Dr. Dre",
+      "similarity": 91.2,
+      "difference": 8.8
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Shook Ones, Pt. II – Mobb Deep",
+      "origin": "Hip-Hop/Shook Ones, Pt. II – Mobb Deep",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Apache – Incredible Bongo Band",
+      "matchedOrigin": "Hip-Hop/Apache – Incredible Bongo Band",
+      "similarity": 95.2,
+      "difference": 4.8
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "The Message – Grandmaster Flash",
+      "origin": "Hip-Hop/The Message – Grandmaster Flash",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Synthetic Substitution – Melvin Bliss",
+      "matchedOrigin": "Hip-Hop/Synthetic Substitution – Melvin Bliss",
+      "similarity": 95.1,
+      "difference": 4.9
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Rapper's Delight – Sugarhill Gang",
+      "origin": "Hip-Hop/Rapper's Delight – Sugarhill Gang",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Hip-Hop/Funky Drummer – James Brown",
+      "similarity": 91,
+      "difference": 9
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Paid In Full – Eric B. & Rakim",
+      "origin": "Hip-Hop/Paid In Full – Eric B. & Rakim",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Think (About It) – Lyn Collins",
+      "matchedOrigin": "Hip-Hop/Think (About It) – Lyn Collins",
+      "similarity": 90.7,
+      "difference": 9.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Hip Hop Hooray – Naughty By Nature",
+      "origin": "Hip-Hop/Hip Hop Hooray – Naughty By Nature",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Impeach The President – The Honey Drippers",
+      "matchedOrigin": "Hip-Hop/Impeach The President – The Honey Drippers",
+      "similarity": 90.7,
+      "difference": 9.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Juicy – The Notorious B.I.G.",
+      "origin": "Hip-Hop/Juicy – The Notorious B.I.G.",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Apache – Incredible Bongo Band",
+      "matchedOrigin": "Hip-Hop/Apache – Incredible Bongo Band",
+      "similarity": 95.2,
+      "difference": 4.8
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Still D.R.E. – Dr. Dre",
+      "origin": "Hip-Hop/Still D.R.E. – Dr. Dre",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Synthetic Substitution – Melvin Bliss",
+      "matchedOrigin": "Hip-Hop/Synthetic Substitution – Melvin Bliss",
+      "similarity": 95.1,
+      "difference": 4.9
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "The Next Episode – Dr. Dre",
+      "origin": "Hip-Hop/The Next Episode – Dr. Dre",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Hip-Hop/Funky Drummer – James Brown",
+      "similarity": 91.7,
+      "difference": 8.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Scenario – A Tribe Called Quest",
+      "origin": "Hip-Hop/Scenario – A Tribe Called Quest",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Think (About It) – Lyn Collins",
+      "matchedOrigin": "Hip-Hop/Think (About It) – Lyn Collins",
+      "similarity": 90.7,
+      "difference": 9.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "They Reminisce Over You (T.R.O.Y.) – Pete Rock & CL Smooth",
+      "origin": "Hip-Hop/They Reminisce Over You (T.R.O.Y.) – Pete Rock & CL Smooth",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Synthetic Substitution – Melvin Bliss",
+      "matchedOrigin": "Hip-Hop/Synthetic Substitution – Melvin Bliss",
+      "similarity": 90.2,
+      "difference": 9.8
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Mass Appeal – Gang Starr",
+      "origin": "Hip-Hop/Mass Appeal – Gang Starr",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Apache – Incredible Bongo Band",
+      "matchedOrigin": "Hip-Hop/Apache – Incredible Bongo Band",
+      "similarity": 97.3,
+      "difference": 2.7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "93 ’til Infinity – Souls of Mischief",
+      "origin": "Hip-Hop/93 ’til Infinity – Souls of Mischief",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Synthetic Substitution – Melvin Bliss",
+      "matchedOrigin": "Hip-Hop/Synthetic Substitution – Melvin Bliss",
+      "similarity": 92.9,
+      "difference": 7.1
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Electric Relaxation – A Tribe Called Quest",
+      "origin": "Hip-Hop/Electric Relaxation – A Tribe Called Quest",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Synthetic Substitution – Melvin Bliss",
+      "matchedOrigin": "Hip-Hop/Synthetic Substitution – Melvin Bliss",
+      "similarity": 92.5,
+      "difference": 7.5
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Mirror In The Bathroom – The Beat",
+      "origin": "Reggae / Ska/Mirror In The Bathroom – The Beat",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "54-46 That's My Number – Toots & The Maytals",
+      "matchedOrigin": "Reggae / Ska/54-46 That's My Number – Toots & The Maytals",
+      "similarity": 92.3,
+      "difference": 7.7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Pass The Dutchie – Musical Youth",
+      "origin": "Reggae / Ska/Pass The Dutchie – Musical Youth",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Rivers Of Babylon – The Melodians",
+      "matchedOrigin": "Reggae / Ska/Rivers Of Babylon – The Melodians",
+      "similarity": 94.8,
+      "difference": 5.2
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Mas Que Nada – Jorge Ben Jor",
+      "origin": "Latin/Mas Que Nada – Jorge Ben Jor",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "The Girl From Ipanema – Getz/Gilberto",
+      "matchedOrigin": "Latin/The Girl From Ipanema – Getz/Gilberto",
+      "similarity": 92.3,
+      "difference": 7.7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Oye Como Va – Santana",
+      "origin": "Latin/Oye Como Va – Santana",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "The Girl From Ipanema – Getz/Gilberto",
+      "matchedOrigin": "Latin/The Girl From Ipanema – Getz/Gilberto",
+      "similarity": 96,
+      "difference": 4
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Watermelon Man – Mongo Santamaría",
+      "origin": "Latin/Watermelon Man – Mongo Santamaría",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "The Girl From Ipanema – Getz/Gilberto",
+      "matchedOrigin": "Latin/The Girl From Ipanema – Getz/Gilberto",
+      "similarity": 96.3,
+      "difference": 3.7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Soul Bossa Nova – Quincy Jones",
+      "origin": "Latin/Soul Bossa Nova – Quincy Jones",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "The Girl From Ipanema – Getz/Gilberto",
+      "matchedOrigin": "Latin/The Girl From Ipanema – Getz/Gilberto",
+      "similarity": 92.3,
+      "difference": 7.7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Corcovado – Antônio Carlos Jobim",
+      "origin": "Latin/Corcovado – Antônio Carlos Jobim",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "The Girl From Ipanema – Getz/Gilberto",
+      "matchedOrigin": "Latin/The Girl From Ipanema – Getz/Gilberto",
+      "similarity": 94.1,
+      "difference": 5.9
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Wave – Antônio Carlos Jobim",
+      "origin": "Latin/Wave – Antônio Carlos Jobim",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "The Girl From Ipanema – Getz/Gilberto",
+      "matchedOrigin": "Latin/The Girl From Ipanema – Getz/Gilberto",
+      "similarity": 93.6,
+      "difference": 6.4
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Desafinado – Stan Getz & Charlie Byrd",
+      "origin": "Latin/Desafinado – Stan Getz & Charlie Byrd",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Manteca – Dizzy Gillespie",
+      "matchedOrigin": "Latin/Manteca – Dizzy Gillespie",
+      "similarity": 94.1,
+      "difference": 5.9
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Água de Beber – Antônio Carlos Jobim",
+      "origin": "Latin/Água de Beber – Antônio Carlos Jobim",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Manteca – Dizzy Gillespie",
+      "matchedOrigin": "Latin/Manteca – Dizzy Gillespie",
+      "similarity": 93,
+      "difference": 7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Brazil – Ary Barroso",
+      "origin": "Latin/Brazil – Ary Barroso",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "The Girl From Ipanema – Getz/Gilberto",
+      "matchedOrigin": "Latin/The Girl From Ipanema – Getz/Gilberto",
+      "similarity": 96,
+      "difference": 4
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Ran Kan Kan – Tito Puente",
+      "origin": "Latin/Ran Kan Kan – Tito Puente",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "The Girl From Ipanema – Getz/Gilberto",
+      "matchedOrigin": "Latin/The Girl From Ipanema – Getz/Gilberto",
+      "similarity": 92.3,
+      "difference": 7.7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Mambo Gozón – Tito Puente",
+      "origin": "Latin/Mambo Gozón – Tito Puente",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "The Girl From Ipanema – Getz/Gilberto",
+      "matchedOrigin": "Latin/The Girl From Ipanema – Getz/Gilberto",
+      "similarity": 94.1,
+      "difference": 5.9
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Quimbara – Celia Cruz",
+      "origin": "Latin/Quimbara – Celia Cruz",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Manteca – Dizzy Gillespie",
+      "matchedOrigin": "Latin/Manteca – Dizzy Gillespie",
+      "similarity": 96.3,
+      "difference": 3.7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Pedro Navaja – Rubén Blades",
+      "origin": "Latin/Pedro Navaja – Rubén Blades",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Manteca – Dizzy Gillespie",
+      "matchedOrigin": "Latin/Manteca – Dizzy Gillespie",
+      "similarity": 93,
+      "difference": 7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Chan Chan – Buena Vista Social Club",
+      "origin": "Latin/Chan Chan – Buena Vista Social Club",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "The Girl From Ipanema – Getz/Gilberto",
+      "matchedOrigin": "Latin/The Girl From Ipanema – Getz/Gilberto",
+      "similarity": 92.3,
+      "difference": 7.7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "El Cuarto de Tula – Buena Vista Social Club",
+      "origin": "Latin/El Cuarto de Tula – Buena Vista Social Club",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Manteca – Dizzy Gillespie",
+      "matchedOrigin": "Latin/Manteca – Dizzy Gillespie",
+      "similarity": 96.3,
+      "difference": 3.7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Black Orpheus – Luiz Bonfá",
+      "origin": "Latin/Black Orpheus – Luiz Bonfá",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "The Girl From Ipanema – Getz/Gilberto",
+      "matchedOrigin": "Latin/The Girl From Ipanema – Getz/Gilberto",
+      "similarity": 93.6,
+      "difference": 6.4
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Spain – Chick Corea",
+      "origin": "Latin/Spain – Chick Corea",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Manteca – Dizzy Gillespie",
+      "matchedOrigin": "Latin/Manteca – Dizzy Gillespie",
+      "similarity": 93,
+      "difference": 7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "A Night in Tunisia – Chano Pozo / Dizzy Gillespie",
+      "origin": "Latin/A Night in Tunisia – Chano Pozo / Dizzy Gillespie",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "The Girl From Ipanema – Getz/Gilberto",
+      "matchedOrigin": "Latin/The Girl From Ipanema – Getz/Gilberto",
+      "similarity": 92.3,
+      "difference": 7.7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Chega de Saudade – João Gilberto",
+      "origin": "Latin/Chega de Saudade – João Gilberto",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "The Girl From Ipanema – Getz/Gilberto",
+      "matchedOrigin": "Latin/The Girl From Ipanema – Getz/Gilberto",
+      "similarity": 92.3,
+      "difference": 7.7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Samba de Uma Nota Só – Antônio Carlos Jobim",
+      "origin": "Latin/Samba de Uma Nota Só – Antônio Carlos Jobim",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "The Girl From Ipanema – Getz/Gilberto",
+      "matchedOrigin": "Latin/The Girl From Ipanema – Getz/Gilberto",
+      "similarity": 94.1,
+      "difference": 5.9
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "El Cantante – Héctor Lavoe",
+      "origin": "Latin/El Cantante – Héctor Lavoe",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "The Girl From Ipanema – Getz/Gilberto",
+      "matchedOrigin": "Latin/The Girl From Ipanema – Getz/Gilberto",
+      "similarity": 96.3,
+      "difference": 3.7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Vivir Mi Vida – Marc Anthony",
+      "origin": "Latin/Vivir Mi Vida – Marc Anthony",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Manteca – Dizzy Gillespie",
+      "matchedOrigin": "Latin/Manteca – Dizzy Gillespie",
+      "similarity": 94.6,
+      "difference": 5.4
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Water No Get Enemy – Fela Kuti",
+      "origin": "Afro / World/Water No Get Enemy – Fela Kuti",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Funky Drummer – James Brown",
+      "matchedOrigin": "Funk / Soul/Funky Drummer – James Brown",
+      "similarity": 90.1,
+      "difference": 9.9
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Expensive Shit – Fela Kuti",
+      "origin": "Afro / World/Expensive Shit – Fela Kuti",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 95.2,
+      "difference": 4.8
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Shakara – Fela Kuti",
+      "origin": "Afro / World/Shakara – Fela Kuti",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 95.2,
+      "difference": 4.8
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Sorrow Tears And Blood – Fela Kuti",
+      "origin": "Afro / World/Sorrow Tears And Blood – Fela Kuti",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 93.7,
+      "difference": 6.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Gentleman – Fela Kuti",
+      "origin": "Afro / World/Gentleman – Fela Kuti",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 95.2,
+      "difference": 4.8
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Lady – Fela Kuti",
+      "origin": "Afro / World/Lady – Fela Kuti",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 93.7,
+      "difference": 6.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Roforofo Fight – Fela Kuti",
+      "origin": "Afro / World/Roforofo Fight – Fela Kuti",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 93.7,
+      "difference": 6.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Opposite People – Fela Kuti",
+      "origin": "Afro / World/Opposite People – Fela Kuti",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 96.3,
+      "difference": 3.7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "ITT – Fela Kuti",
+      "origin": "Afro / World/ITT – Fela Kuti",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 93.7,
+      "difference": 6.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Soul Makossa – Manu Dibango",
+      "origin": "Afro / World/Soul Makossa – Manu Dibango",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 93.7,
+      "difference": 6.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Pata Pata – Miriam Makeba",
+      "origin": "Afro / World/Pata Pata – Miriam Makeba",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 96.3,
+      "difference": 3.7
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Yéké Yéké – Mory Kanté",
+      "origin": "Afro / World/Yéké Yéké – Mory Kanté",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 95.2,
+      "difference": 4.8
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Sweet Mother – Prince Nico Mbarga",
+      "origin": "Afro / World/Sweet Mother – Prince Nico Mbarga",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Agolo – Angélique Kidjo",
+      "origin": "Afro / World/Agolo – Angélique Kidjo",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 93.7,
+      "difference": 6.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Jerusalema – Master KG",
+      "origin": "Afro / World/Jerusalema – Master KG",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 93.7,
+      "difference": 6.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Waka Waka – Shakira",
+      "origin": "Afro / World/Waka Waka – Shakira",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Malaika – Miriam Makeba",
+      "origin": "Afro / World/Malaika – Miriam Makeba",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Homeless – Ladysmith Black Mambazo",
+      "matchedOrigin": "Afro / World/Homeless – Ladysmith Black Mambazo",
+      "similarity": 93.9,
+      "difference": 6.1
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Jingo – Santana",
+      "origin": "Afro / World/Jingo – Santana",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Homeless – Ladysmith Black Mambazo",
+      "matchedOrigin": "Afro / World/Homeless – Ladysmith Black Mambazo",
+      "similarity": 92,
+      "difference": 8
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Ye Ye De Smell – Fela Kuti",
+      "origin": "Afro / World/Ye Ye De Smell – Fela Kuti",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 93.7,
+      "difference": 6.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "African Woman – The Funkees",
+      "origin": "Afro / World/African Woman – The Funkees",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 93.7,
+      "difference": 6.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "New Bell – Manu Dibango",
+      "origin": "Afro / World/New Bell – Manu Dibango",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 93.7,
+      "difference": 6.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Lady (Hear Me Tonight) – Modjo / Chic-influenced world-dance",
+      "origin": "Afro / World/Lady (Hear Me Tonight) – Modjo / Chic-influenced world-dance",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 93.7,
+      "difference": 6.3
+    },
+    {
+      "source": "Basic Grooves",
+      "name": "Premier Gaou – Magic System",
+      "origin": "Afro / World/Premier Gaou – Magic System",
+      "matchedSource": "Basic Grooves",
+      "matchedName": "Zombie – Fela Kuti",
+      "matchedOrigin": "Afro / World/Zombie – Fela Kuti",
+      "similarity": 93.7,
+      "difference": 6.3
+    },
+    {
+      "source": "mei-gmd",
+      "name": "65 funk 112 beat 4 4",
+      "origin": "funk/65_funk_112_beat_4-4.mid",
+      "matchedSource": "mei-gmd",
+      "matchedName": "47 funk 112 beat 4 4",
+      "matchedOrigin": "funk/47_funk_112_beat_4-4.mid",
+      "similarity": 91.3,
+      "difference": 8.7
+    },
+    {
+      "source": "mei-gmd",
+      "name": "8 rock 130 beat 4 4",
+      "origin": "rock/8_rock_130_beat_4-4.mid",
+      "matchedSource": "mei-gmd",
+      "matchedName": "7 rock 130 beat 4 4",
+      "matchedOrigin": "rock/7_rock_130_beat_4-4.mid",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "mei-gmd",
+      "name": "14 rock 130 beat 4 4",
+      "origin": "rock/14_rock_130_beat_4-4.mid",
+      "matchedSource": "mei-gmd",
+      "matchedName": "13 rock 130 beat 4 4",
+      "matchedOrigin": "rock/13_rock_130_beat_4-4.mid",
+      "similarity": 95.6,
+      "difference": 4.4
+    },
+    {
+      "source": "mei-gmd",
+      "name": "42 rock 120 beat 4 4",
+      "origin": "rock/42_rock_120_beat_4-4.mid",
+      "matchedSource": "mei-gmd",
+      "matchedName": "30 rock 120 beat 4 4",
+      "matchedOrigin": "rock/30_rock_120_beat_4-4.mid",
+      "similarity": 98.5,
+      "difference": 1.5
+    }
+  ]
+}

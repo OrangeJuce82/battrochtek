@@ -4,7 +4,7 @@ Battrochtek est une drum machine / bibliothèque de grooves PWA basée sur la We
 
 ## Installation
 
-Prérequis : Node.js 20+ et npm 10+.
+Prérequis : Node.js 24+ et npm 10+.
 
 ```bash
 npm install
@@ -50,10 +50,27 @@ Avant le premier déploiement, ouvre **Settings → Pages** dans le dépôt GitH
 
 Une fois cette option activée, les push suivants sur `main` déploient automatiquement l'application.
 
+## Sources de grooves
+
+Les grooves intégrés sont maintenant regroupés sous **Basic Grooves**. Ils chargent uniquement la mémoire 1.
+
+Les imports MIDI sont génériques : **un dossier = une Source**, un sous-dossier facultatif = un Style, et chaque fichier MIDI = un Groove. Lorsqu’un Groove importé est choisi, ses huit premières fenêtres non vides de deux mesures remplissent automatiquement les mémoires 1 à 8.
+
+L’import respecte le mapping simplifié du Groove MIDI Dataset de Magenta et utilise 9 lignes : Crash, Ride, HH Open, HH Closed, Snare, High Tom, Low-Mid Tom, Floor Tom et Kick. Les articulations Roland head/rim/edge sont regroupées selon le « Paper Mapping ».
+
+Place les fichiers dans `groove-sources/<Nom de la source>/` puis lance :
+
+```bash
+npm run grooves:sync
+```
+
+Voir [GROOVE_SOURCES.md](GROOVE_SOURCES.md) pour la convention complète.
+
 ## Commandes npm
 
 - `npm run dev` / `npm start` : serveur local sur le port 8000.
 - `npm run build` : génère le site statique GitHub Pages dans `dist/`.
+- `npm run grooves:sync` : importe les dossiers MIDI de `groove-sources/` et régénère le bundle des Sources.
 - `npm run lint` : contrôle ESLint.
 - `npm run format` : formatage Prettier.
 - `npm run format:check` : vérification du formatage.
@@ -73,6 +90,61 @@ Une fois cette option activée, les push suivants sur `main` déploient automati
 - `Ctrl/Cmd+D` : duplique vers la mémoire suivante.
 - `Ctrl/Cmd+Z` / `Ctrl/Cmd+Y` : undo / redo.
 
+
+
+## v31
+
+- Le bouton **Recharger le groove** conserve désormais la mémoire sélectionnée.
+- Il restaure uniquement le slot courant depuis le groove source, sans écraser les sept autres mémoires.
+- Pour les sources multi-mémoires, la mémoire N retrouve la boucle source N ; si elle n'existe pas, la première boucle du groove sert de référence.
+- La lecture Play/Pause reste inchangée pendant le rechargement.
+- Cache PWA `battrochtek-v31`.
+
+## v30
+
+- Les Sources importées portent désormais strictement le nom de leur dossier de premier niveau dans `./grooves`.
+- Les fichiers générés à la racine (`clean-report.json`, `external-grooves.js`) ne peuvent plus transformer toute la bibliothèque en une fausse Source `Grooves`.
+- La racine standard est `./grooves` en minuscules.
+- La recherche globale n'utilise plus le `datalist` natif du navigateur.
+- Nouvel autocomplete Battrochtek sous le champ de recherche : 12 résultats, source/style/signature/BPM, souris et clavier ↑/↓/Entrée/Échap.
+- Cache PWA `battrochtek-v30`.
+
+## v28
+
+- `Basic Grooves` déplacé dans `./grooves/Basic Grooves/basic-grooves.json`.
+- `./grooves/<Source>/` devient la racine unique pour les imports MIDI/JSON.
+- `npm run grooves:clean -- --difference N` déduplique tous les datasets entre eux.
+- Similarité basée sur les frappes actives (Dice) et légèrement pondérée par les vélocités.
+- Rapport détaillé des doublons dans `grooves/clean-report.json`.
+- Seuil de nettoyage par défaut configurable dans `.groovesrc.json`.
+- Le workflow GitHub Pages utilise `npm run grooves:build` pour publier la bibliothèque nettoyée.
+- Les MIDI multi-instruments sont filtrés sur le canal percussion GM 10.
+- Recherche globale avec autocomplétion au centre du header.
+- Cache PWA `battrochtek-v28`.
+
+## v27
+
+- **Source IA** renommée **Basic Grooves** ; un Basic Groove remplit uniquement la mémoire 1.
+- Import MIDI indépendant de toute collection nommée : un dossier de premier niveau devient automatiquement une Source.
+- Les sous-dossiers servent de Styles et les fichiers MIDI deviennent les Grooves.
+- Chaque MIDI est découpé en jusqu’à 8 fenêtres successives de deux mesures, chargées dans les mémoires 1 à 8.
+- Mapping d’import aligné sur le **Paper Mapping** du Groove MIDI Dataset / Roland TD-11.
+- Grille étendue à 9 lignes avec un **Floor Tom** séparé du **Low-Mid Tom**.
+- Migration automatique des anciens patterns 8 et 10 pistes vers la nouvelle grille 9 pistes.
+- Suppression des dépendances spécifiques Lucerne/GMD/Agostini dans le code d’import.
+- Cache PWA `battrochtek-v27`.
+
+## v26
+
+- Ajout d’un sélecteur **SOURCE** avant STYLE.
+- Conservation des grooves existants sous **Source IA**.
+- Import automatisé de la Lucerne Groove Research Library via *Drum Groove Corpora*.
+- Import du sous-ensemble Magenta/GMD utilisé par l’étude (358 tracks avant adaptation), sans dupliquer les rendus E-GMD.
+- Adaptation des corpus externes en boucles de deux mesures, grille 1/16, HH/SD/BD.
+- Déduplication des patterns devenus identiques après quantification.
+- Importeur local Agostini sans redistribution de contenu commercial non autorisé.
+- Synchronisation des corpus ajoutée au workflow GitHub Pages.
+- Cache PWA `battrochtek-v26`.
 
 ## v25
 
@@ -153,6 +225,22 @@ Une fois cette option activée, les push suivants sur `main` déploient automati
 - Chaque piste possède son propre sélecteur de sample. Une modification transforme automatiquement le kit en **CUSTOM**.
 - Le Kit Custom est sauvegardé avec le pattern dans les mémoires URL.
 - Cache applicatif `battrochtek-v17` et cache audio `battrochtek-audio-v2`.
+
+
+## Grooves v28
+
+Toutes les Sources de grooves sont maintenant rangées sous `./grooves/<Nom de la Source>/`. Les anciens **Basic Grooves** vivent dans `grooves/Basic Grooves/basic-grooves.json` et suivent le même pipeline que les MIDI externes.
+
+```bash
+npm run grooves:sync
+npm run grooves:clean -- --difference 10
+```
+
+`grooves:sync` importe tout sans filtrer. `grooves:clean` compare globalement tous les datasets et ne conserve que les grooves séparés par la différence minimale demandée. Le seuil par défaut se règle dans `.groovesrc.json`. Le rapport est écrit dans `grooves/clean-report.json`.
+
+Une **recherche globale avec autocomplétion** est disponible au centre du header. Elle indexe le nom du groove, son style et sa Source ; sélectionner un résultat charge directement le groove et ses mémoires.
+
+Voir `GROOVE_SOURCES.md` pour le format d'import et l'algorithme de nettoyage, et `GROOVE_DATASETS.md` pour les corpus externes recommandés.
 
 ## PWA et audio
 

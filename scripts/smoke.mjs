@@ -1,11 +1,14 @@
 import { readFile } from "node:fs/promises";
 
-const [app, html, sw, css, manifest] = await Promise.all([
+const [app, html, sw, css, manifest, basicGrooves, syncGrooves, grooveImport] = await Promise.all([
   readFile("app.js", "utf8"),
   readFile("index.html", "utf8"),
   readFile("service-worker.js", "utf8"),
   readFile("styles.css", "utf8"),
   readFile("manifest.webmanifest", "utf8"),
+  readFile("grooves/Basic Grooves/basic-grooves.json", "utf8"),
+  readFile("scripts/sync-grooves.mjs", "utf8"),
+  readFile("scripts/groove-import-lib.mjs", "utf8"),
 ]);
 
 const checks = [
@@ -20,7 +23,7 @@ const checks = [
   [!app.includes("localStorage.getItem") && !app.includes("localStorage.setItem"), "localStorage retiré des mémoires"],
   [app.includes("history.replaceState"), "mise à jour du hash sans navigation"],
   [sw.includes('"./vendor/oat/oat.min.css"') && sw.includes('"./vendor/oat/oat.min.js"'), "Oat inclus dans l’app shell PWA"],
-  [sw.includes('battrochtek-v25'), "cache PWA v25"],
+  [sw.includes('battrochtek-v31'), "cache PWA v31"],
   [css.includes('--bt-instrument-text:') && !app.includes('label.style.color'), "couleur des instruments pilotée par le thème"],
   [css.includes('.bt-tooltip') && html.includes('id="bt-tooltip"'), "tooltips adaptatifs présents"],
   [!html.includes('id="bt-help"'), "ancienne aide au survol retirée"],
@@ -37,6 +40,19 @@ const checks = [
   [!app.includes('this.scheduler.stop();') && !app.includes('this.scheduler?.stop();'), "aucune action UI secondaire ne coupe Play"],
   [app.includes('e.code === "Space" && !mod') && app.indexOf('e.code === "Space" && !mod') < app.indexOf('if (editing || mod || e.altKey) return;'), "Espace prioritaire même dans les selects"],
   [app.includes('i % this.seq.signature.barSteps === 0'), "bar-accent sur chaque début de mesure"],
+  [basicGrooves.includes('"sourceLabel": "Basic Grooves"') && html.includes('id="preset-source"'), "Basic Grooves dans ./grooves et sélecteur de source présents"],
+  [html.includes('grooves/external-grooves.js'), "bundle de corpus externes chargé"],
+  [sw.includes('./grooves/external-grooves.js'), "corpus externes inclus dans la PWA"],
+  [app.includes('TRACK_COUNT: 9') && app.includes('tomFloor:7') && app.includes('kick:8'), "grille GMD étendue à 9 pistes"],
+  [app.includes('replaceMemories(entries = [])') && app.includes('info.memories'), "import de groove vers les 8 mémoires"],
+  [html.includes('id="groove-search"'), "recherche globale de grooves présente"],
+  [html.includes('class="groove-search-results"') && !html.includes('<datalist id="groove-search-list"'), "autocomplete global sous la recherche sans datalist natif"],
+  [app.includes("reloadPresetMemory(bankIndex, presetIndex)") && app.includes("const slot = this.memorySlot"), "rechargement du groove conserve la mémoire sélectionnée"],
+  [app.includes("this.store.slots[slot] = { signatureIndex, pattern:Util.clone(pattern) }"), "rechargement restaure uniquement le slot courant"],
+  [app.includes("this.reloadSelectedPresetMemory()") && !app.includes("this.pushHistory(); this.loadSelectedPreset(false);"), "bouton Recharger n'utilise plus le chargement complet du preset"],
+  [app.includes('buildGlobalSearch()') && app.includes('ArrowDown') && app.includes('ArrowUp'), "autocomplete global clavier présent"],
+  [syncGrooves.includes('importGrooveRoot("grooves")'), "sync utilise ./grooves en minuscules"],
+  [grooveImport.includes("for (const name of await readdir(root))") && grooveImport.includes("label:name"), "nom de Source issu du dossier de premier niveau"],
   [manifest.includes('icons/icon-512.png'), "icônes PWA déclarées"],
 ];
 

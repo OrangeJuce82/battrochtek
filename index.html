@@ -33,6 +33,7 @@
         <script defer src="vendor/oat/oat.min.js"></script>
         <script defer src="vendor/alpine/alpine.min.js"></script>
         <script defer src="vendor/qrcode/qrcode.js"></script>
+        <script defer src="grooves/external-grooves.js"></script>
         <script defer src="app.js"></script>
 
         </head>
@@ -42,6 +43,11 @@
             <header>
                 <div class="bt-header" aria-label="Battrochtek">
                     <h1><img src="logo.png" alt="" class="bt-header-logo"> <span>Battrochtek</span></h1>
+                    <div class="groove-search-wrap" role="search">
+                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                        <input id="groove-search" type="search" autocomplete="off" placeholder="Rechercher un groove…" aria-label="Rechercher dans tous les grooves" aria-expanded="false" aria-controls="groove-search-list" aria-autocomplete="list">
+                        <div id="groove-search-list" class="groove-search-results" role="listbox" aria-label="Résultats de recherche" hidden></div>
+                    </div>
                     <div class="output-tools">
                         <button type="button" class="ghost small header-icon-button theme-toggle" id="theme-toggle" data-bt-tooltip="Basculer le thème clair / sombre" aria-label="Basculer le thème clair / sombre"><i class="fa-solid fa-moon" id="theme-toggle-icon" aria-hidden="true"></i></button>
                         <button type="button" class="ghost small header-icon-button share-button" id="share-button" data-bt-tooltip="Partager ou sauvegarder ce groove" aria-label="Partager ou sauvegarder ce groove"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i></button>
@@ -56,6 +62,7 @@
             <div class="bt">
                 <div class="score-toolbar" aria-label="Sélection du style et du groove">
                     <div class="preset-selector" id="preset-selector">
+                        <label class="control-field source-selector" data-field><span>SOURCE</span><select id="preset-source" data-bt-tooltip="Source des grooves"></select></label>
                         <label class="control-field" data-field><span>STYLE</span><select id="preset-family" data-bt-tooltip="Style musical"></select></label>
                         <label class="control-field groove" data-field><span>GROOVE</span><select id="preset-groove" data-bt-tooltip="Groove"></select></label>
                         <button type="button" class="bt-button preset-icon" id="groove-refresh" data-bt-tooltip="Recharger le groove original" aria-label="Recharger le groove original"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i></button>

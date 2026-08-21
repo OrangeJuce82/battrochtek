@@ -44,6 +44,12 @@ Le dépôt contient `.github/workflows/deploy-pages.yml`. À chaque push sur `ma
 
 Dans **Settings → Pages** du dépôt, sélectionne **GitHub Actions** comme source. Tous les chemins de l’application étant relatifs, le déploiement fonctionne aussi dans un sous-chemin de projet GitHub Pages.
 
+### Première activation de GitHub Pages
+
+Avant le premier déploiement, ouvre **Settings → Pages** dans le dépôt GitHub et choisis **GitHub Actions** comme source de publication. Cette activation est un réglage du dépôt et ne peut pas être créée de façon fiable par le `GITHUB_TOKEN` standard du workflow.
+
+Une fois cette option activée, les push suivants sur `main` déploient automatiquement l'application.
+
 ## Commandes npm
 
 - `npm run dev` / `npm start` : serveur local sur le port 8000.
@@ -67,6 +73,14 @@ Dans **Settings → Pages** du dépôt, sélectionne **GitHub Actions** comme so
 - `Ctrl/Cmd+D` : duplique vers la mémoire suivante.
 - `Ctrl/Cmd+Z` / `Ctrl/Cmd+Y` : undo / redo.
 
+
+## v25
+
+- `actions/configure-pages` passe de v5 à v6 (runtime Node.js 24).
+- `actions/upload-pages-artifact` passe à v4.
+- Le workflow construit et valide l'application avant l'étape de configuration Pages.
+- Documentation explicite de l'activation initiale **Settings → Pages → GitHub Actions**.
+- Cache PWA `battrochtek-v25`.
 
 ## v24
 

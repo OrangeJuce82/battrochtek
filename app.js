@@ -835,6 +835,20 @@
             if (!this.enabled) return;
             this.enabled = false;
             this.loopCount = 0;
+
+            // Le tempo d'entraînement est temporaire : en quittant le mode,
+            // restaurer le BPM propre à la mémoire actuellement sélectionnée.
+            const memory = this.seq.store.get(this.seq.memorySlot);
+            if (memory && Number.isFinite(Number(memory.tempo))) {
+                this.seq.tempo = Math.round(Util.clamp(
+                    Number(memory.tempo),
+                    CONFIG.TEMPO.min,
+                    CONFIG.TEMPO.max,
+                    CONFIG.TEMPO.default
+                ));
+                this.ui?.renderTempo();
+            }
+
             this.ui?.renderButtons();
             this.ui?.renderPractice();
             if (!silent) this.ui?.status(I18N.t("practice.stopped"));

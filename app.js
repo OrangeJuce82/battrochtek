@@ -65,7 +65,7 @@
                 theme: "system",
                 audio: Object.freeze({ masterVolume: 1, metronomeEnabled: false }),
                 training: Object.freeze({ mode:"tempo", startTempo:60, targetTempo:90, tempoStep:3, loopsPerLevel:4, countInBars:1 }),
-                ui: Object.freeze({ practicePanelOpen:false }),
+                ui: Object.freeze({}),
                 editing: Object.freeze({})
             });
             this.data = this.load();
@@ -75,7 +75,7 @@
                 version:1, theme:"system",
                 audio:{ masterVolume:1, metronomeEnabled:false },
                 training:{ mode:"tempo", startTempo:60, targetTempo:90, tempoStep:3, loopsPerLevel:4, countInBars:1 },
-                ui:{ practicePanelOpen:false }, editing:{}
+                ui:{}, editing:{}
             });
             try {
                 const parsed = JSON.parse(localStorage.getItem(this.key) || "null");
@@ -92,7 +92,6 @@
                 out.training.tempoStep = Math.round(Util.clamp(t.tempoStep, 1, 20, out.training.tempoStep));
                 out.training.loopsPerLevel = Math.round(Util.clamp(t.loopsPerLevel, 1, 32, out.training.loopsPerLevel));
                 out.training.countInBars = Math.round(Util.clamp(t.countInBars, 0, 2, out.training.countInBars));
-                out.ui.practicePanelOpen = !!parsed.ui?.practicePanelOpen;
                 out.editing = parsed.editing && typeof parsed.editing === "object" ? { ...parsed.editing } : {};
                 return out;
             } catch (error) {
@@ -1275,17 +1274,14 @@
                 language: I18N.language,
                 theme: document.documentElement.dataset.theme || "",
                 practice: this.practice ? {
-                    panel: !!this.dom.practicePanel && !this.dom.practicePanel.hidden,
-                    enabled: !!this.practice.enabled,
+                    // Partager les préférences de Practice, jamais son état d'exécution.
+                    panel: false,
                     mode: this.dom.practiceMode?.value || this.practice.mode,
                     startTempo: Number(this.dom.practiceStartTempo?.value || this.practice.startTempo),
                     targetTempo: Number(this.dom.practiceTargetTempo?.value || this.practice.targetTempo),
                     tempoStep: Number(this.dom.practiceTempoStep?.value || this.practice.tempoStep),
                     loopsPerLevel: Number(this.dom.practiceLoops?.value || this.practice.loopsPerLevel),
-                    countInBars: Number(this.dom.practiceCountIn?.value || this.practice.countInBars),
-                    loopCount: this.practice.loopCount,
-                    layerLevel: this.practice.layerLevel,
-                    phase: this.practice.phase
+                    countInBars: Number(this.dom.practiceCountIn?.value || this.practice.countInBars)
                 } : null
             };
         }
@@ -1331,11 +1327,22 @@
                     loopsPerLevel:p.loopsPerLevel,
                     countInBars:p.countInBars
                 });
-                this.practice.enabled = !!p.enabled;
-                this.practice.loopCount = Math.max(0, Number(p.loopCount) || 0);
-                this.practice.layerLevel = Math.max(0, Number(p.layerLevel) || 0);
-                this.practice.phase = ["layers", "tempo"].includes(p.phase) ? p.phase : (this.practice.mode === "tempo" ? "tempo" : "layers");
-                if (this.dom.practicePanel) this.dom.practicePanel.hidden = !p.panel;
+                // Un chargement de page/lien ne reprend jamais une session Practice en cours.
+                // Le prochain Play appellera start() et initialisera le bon mode proprement.
+                this.practice.enabled = false;
+                this.practice.loopCount = 0;
+                this.practice.layerLevel = 0;
+                this.practice.phase = this.practice.mode === "tempo" ? "tempo" : "layers";
+                const restoredMemory = this.seq.store.get(this.seq.memorySlot);
+                if (restoredMemory && Number.isFinite(Number(restoredMemory.tempo))) {
+                    this.seq.tempo = Math.round(Util.clamp(
+                        Number(restoredMemory.tempo),
+                        CONFIG.TEMPO.min,
+                        CONFIG.TEMPO.max,
+                        CONFIG.TEMPO.default
+                    ));
+                }
+                if (this.dom.practicePanel) this.dom.practicePanel.hidden = true;
                 if (this.dom.practiceMode) this.dom.practiceMode.value = this.practice.mode;
                 if (this.dom.practiceStartTempo) this.dom.practiceStartTempo.value = String(this.practice.startTempo);
                 if (this.dom.practiceTargetTempo) this.dom.practiceTargetTempo.value = String(this.practice.targetTempo);
@@ -1446,13 +1453,13 @@
             [this.dom.practiceMode, this.dom.practiceStartTempo, this.dom.practiceTargetTempo, this.dom.practiceTempoStep, this.dom.practiceLoops, this.dom.practiceCountIn]
                 .filter(Boolean).forEach(control => { control.addEventListener("change", optionChanged); });
             fill();
-            this.dom.practicePanel.hidden = !this.preferences?.data?.ui?.practicePanelOpen;
+            // Practice est toujours OFF au chargement ; seuls ses paramètres persistent.
+            this.dom.practicePanel.hidden = true;
             this.press(this.dom.practiceButton, () => {
                 // Ouvrir/fermer l'entraînement arrête la lecture mais ne réinitialise jamais ses réglages.
                 this.scheduler?.stop();
                 const show = this.dom.practicePanel.hidden;
                 this.dom.practicePanel.hidden = !show;
-                this.preferences?.setUi({ practicePanelOpen:show });
                 if (!show && this.practice.enabled) this.practice.stop({ silent:true });
                 this.renderPractice();
             });

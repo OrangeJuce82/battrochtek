@@ -33,7 +33,7 @@ const checks = [
   [!app.includes('localStorage.getItem("mem")') && !app.includes('localStorage.setItem("mem")'), "localStorage retiré des mémoires"],
   [app.includes("history.replaceState"), "mise à jour du hash sans navigation"],
   [sw.includes('"./vendor/oat/oat.min.css"') && sw.includes('"./vendor/oat/oat.min.js"'), "Oat inclus dans l’app shell PWA"],
-  [sw.includes('battrochtek-v44'), "cache PWA v44"],
+  [sw.includes('battrochtek-v46'), "cache PWA v46"],
   [css.includes('--bt-instrument-text:') && !app.includes('label.style.color'), "couleur des instruments pilotée par le thème"],
   [css.includes('.bt-tooltip') && html.includes('id="bt-tooltip"'), "tooltips adaptatifs présents"],
   [!html.includes('id="bt-help"'), "ancienne aide au survol retirée"],

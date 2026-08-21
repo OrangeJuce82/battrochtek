@@ -319,7 +319,7 @@ button i { pointer-events: none; }
     font-weight: 700;
 }
 .instrument-toolbar .kit-selector { width: 205px; min-width: 205px; }
-.instrument-toolbar .swing-edit { width: 145px; grid-template-columns: auto 72px; }
+.instrument-toolbar .swing-edit { width: 126px; grid-template-columns: auto 72px; gap: 3px; }
 .icon-label {
     width: 18px;
     justify-content: center;
@@ -769,3 +769,146 @@ button i { pointer-events: none; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 @media (max-width: 760px) { .practice-panel-header { align-items: flex-start; flex-direction: column; } }
 @media (max-width: 480px) { .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Pattern editing / nudge controls */
+.score-toolbar .preset-selector {
+    grid-template-columns: minmax(210px, .9fr) minmax(150px, .7fr) minmax(280px, 1.7fr) 38px auto auto;
+}
+.pattern-shift-controls {
+    height: var(--bt-control-h);
+    display: flex;
+    align-items: stretch;
+    gap: 2px;
+}
+.pattern-shift-controls .pattern-shift-global {
+    width: 27px;
+    min-width: 27px;
+    height: var(--bt-control-h);
+    min-height: var(--bt-control-h);
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1;
+}
+.track-toggle.pattern-shift {
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 15px;
+}
+.grid.is-pattern-dragging,
+.grid.is-pattern-dragging .cell {
+    cursor: grabbing;
+    user-select: none;
+    touch-action: none;
+}
+
+#tracks .track-controls { gap: 1px; flex: 0 0 auto; }
+#tracks .track-toggle { width: 14px; min-width: 14px; height: 17px; }
+
+/* v19 — édition de grille + mix compact */
+:root {
+    --bt-track-width: 12.5%;
+    --bt-slider-width: 15%;
+    --bt-grid-width: 71.5%;
+    --bt-track-gap: .5%;
+    --bt-max-width: 82rem;
+}
+#tracks .track-row { gap: 4px; }
+#tracks .bt-led.track { flex: 1 1 auto; min-width: 0; }
+.track-shift-controls {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 2px;
+    padding-right: 2px;
+}
+.track-toggle.pattern-shift,
+.pattern-shift-global {
+    color: var(--bt-accent-strong);
+    border-color: color-mix(in srgb, var(--bt-accent) 45%, var(--bt-border));
+    background: color-mix(in srgb, var(--bt-accent) 7%, var(--bt-control));
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1;
+}
+.track-toggle.pattern-shift:hover,
+.pattern-shift-global:hover {
+    color: var(--bt-text);
+    border-color: var(--bt-accent);
+    background: color-mix(in srgb, var(--bt-accent) 14%, var(--bt-control));
+}
+#sliders.bt-right {
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+.track-mix-row {
+    height: var(--bt-row-h);
+    min-height: var(--bt-row-h);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+.track-mix-row .track-toggle {
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    color: var(--bt-muted);
+    background: transparent;
+    border-color: transparent;
+    font-size: 8px;
+    letter-spacing: .02em;
+}
+.track-mix-row .track-toggle:hover {
+    color: var(--bt-text);
+    border-color: var(--bt-border);
+    background: var(--bt-panel-2);
+}
+.track-mix-row .track-toggle.mute.active { background: #a94249; color: #fff; border-color: #a94249; }
+.track-mix-row .track-toggle.solo.active { background: var(--bt-warning); color: #201600; border-color: var(--bt-warning); }
+.rotary-knob {
+    --knob-angle: -135deg;
+    position: relative;
+    width: 19px;
+    min-width: 19px;
+    height: 19px;
+    padding: 0;
+    border: 1px solid var(--bt-border);
+    border-radius: 50%;
+    background: var(--bt-control);
+    color: var(--bt-muted);
+    font: 700 6px/1 system-ui, sans-serif;
+    text-align: center;
+    cursor: ns-resize;
+    box-shadow: inset 0 0 0 1px rgb(255 255 255 / .025);
+    touch-action: none;
+}
+.rotary-knob::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 2px;
+    width: 1px;
+    height: 5px;
+    border-radius: 999px;
+    background: var(--bt-accent-strong);
+    transform-origin: 50% 7.5px;
+    transform: translateX(-50%) rotate(var(--knob-angle));
+    box-shadow: 0 0 2px rgb(57 202 165 / .35);
+}
+.rotary-knob:hover,
+.rotary-knob:focus-visible {
+    color: var(--bt-text);
+    border-color: var(--bt-accent);
+    outline: none;
+}
+.grid.is-pattern-dragging { cursor: grabbing; }
+
+@media (max-width: 900px) {
+    :root {
+        --bt-track-width: 15%;
+        --bt-slider-width: 16%;
+        --bt-grid-width: 68%;
+    }
+    .track-mix-row { gap: 2px; }
+}

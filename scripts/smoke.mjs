@@ -24,12 +24,16 @@ const checks = [
   [app.includes('layerPlan') && app.includes('practice.snare') && app.includes('practice.kick'), "Practice V2 couches présent"],
   [app.includes('+ ghost notes') && app.includes('velocityForCell'), "Practice V3 accents et ghost notes présent"],
   [app.includes("event.shiftKey"), "Shift+clic de grille présent"],
+  [app.includes("Ctrl/Cmd+Shift+clic") && app.includes("this.seq.clearCell(targetIndex)"), "Ctrl/Cmd+Shift+clic de suppression répétée présent"],
+  [app.includes("drag.wholeGrid") && app.includes("translateGrid(deltaTracks, deltaSteps)"), "Alt+Shift+glisser déplace toute la grille"],
+  [app.includes("createStereoPanner") && app.includes("trackPans") && css.includes(".rotary-knob"), "mix Pan/Volume rotatif présent"],
+  [css.includes(".track-shift-controls") && css.includes(".pattern-shift-global"), "flèches de décalage visibles à gauche"],
   [app.includes('new StorageManager("mem")'), "mémoires URL activées"],
   [app.includes("new URLSearchParams(location.hash.slice(1))"), "lecture du hash URL présente"],
   [!app.includes('localStorage.getItem("mem")') && !app.includes('localStorage.setItem("mem")'), "localStorage retiré des mémoires"],
   [app.includes("history.replaceState"), "mise à jour du hash sans navigation"],
   [sw.includes('"./vendor/oat/oat.min.css"') && sw.includes('"./vendor/oat/oat.min.js"'), "Oat inclus dans l’app shell PWA"],
-  [sw.includes('battrochtek-v36'), "cache PWA v36"],
+  [sw.includes('battrochtek-v37'), "cache PWA v37"],
   [css.includes('--bt-instrument-text:') && !app.includes('label.style.color'), "couleur des instruments pilotée par le thème"],
   [css.includes('.bt-tooltip') && html.includes('id="bt-tooltip"'), "tooltips adaptatifs présents"],
   [!html.includes('id="bt-help"'), "ancienne aide au survol retirée"],
@@ -72,4 +76,8 @@ const checks = [
 
 const failed = checks.filter(([ok]) => !ok);
 for (const [ok, label] of checks) console.log(`${ok ? "✓" : "✗"} ${label}`);
-if (failed.length) process.exit(1);
+if (failed.length) {
+  console.error(`\n✗ ${failed.length} contrôle${failed.length > 1 ? "s" : ""} en échec :`);
+  for (const [, label] of failed) console.error(`  - ${label}`);
+  process.exit(1);
+}

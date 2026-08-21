@@ -97,6 +97,20 @@ function patternForWindow(parsed,start,signature,meta={}) {
     else if (note.velocity>=116) accent.push(cell);
     else if (note.velocity>=98) strong.push(cell);
   }
+  // The Battrochtek grid displays two bars. Some MIDI groove libraries store
+  // only one bar; in that case repeat it into the second half of the grid.
+  const repeatFirstBar = active.length > 0 && active.every(cell => (cell % steps) < barSteps);
+  if (repeatFirstBar) {
+    const duplicateBar = values => {
+      for (const cell of [...values]) values.push(cell + barSteps);
+    };
+    duplicateBar(active);
+    duplicateBar(ghost);
+    duplicateBar(soft);
+    duplicateBar(strong);
+    duplicateBar(accent);
+  }
+
   const on=uniqueSorted(active);
   if (!on.length) return null;
   const keep=values=>uniqueSorted(values).filter(v=>on.includes(v));

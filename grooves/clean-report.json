@@ -1,8 +1,8 @@
 {
   "minimumDifference": 10,
   "input": 1107,
-  "kept": 861,
-  "removed": 246,
+  "kept": 859,
+  "removed": 248,
   "removedGrooves": [
     {
       "source": "Basic Grooves",
@@ -2433,6 +2433,26 @@
       "matchedOrigin": "Funk/47_funk_112_beat_4-4.mid",
       "similarity": 91.3,
       "difference": 8.7
+    },
+    {
+      "source": "Groove MIDI Dataset",
+      "name": "2 rock 100 beat 4 4",
+      "origin": "Rock/2_rock_100_beat_4-4.mid",
+      "matchedSource": "Groove MIDI Dataset",
+      "matchedName": "1 rock 100 beat 4 4",
+      "matchedOrigin": "Rock/1_rock_100_beat_4-4.mid",
+      "similarity": 91.1,
+      "difference": 8.9
+    },
+    {
+      "source": "Groove MIDI Dataset",
+      "name": "5 rock 100 beat 4 4",
+      "origin": "Rock/5_rock_100_beat_4-4.mid",
+      "matchedSource": "Groove MIDI Dataset",
+      "matchedName": "3 rock 100 beat 4 4",
+      "matchedOrigin": "Rock/3_rock_100_beat_4-4.mid",
+      "similarity": 93.5,
+      "difference": 6.5
     },
     {
       "source": "Groove MIDI Dataset",

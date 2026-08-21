@@ -68,6 +68,14 @@ Dans **Settings → Pages** du dépôt, sélectionne **GitHub Actions** comme so
 - `Ctrl/Cmd+Z` / `Ctrl/Cmd+Y` : undo / redo.
 
 
+## v24
+
+- ESLint distingue désormais les environnements navigateur, Service Worker et Node.js.
+- `process` est correctement déclaré uniquement pour les scripts Node (`scripts/*.mjs`).
+- Les API Web restent limitées à `app.js` et au Service Worker au lieu d'être déclarées globalement pour tout le projet.
+- Workflow GitHub Pages conservé sur `actions/checkout@v7`, `actions/setup-node@v7` et Node.js 24.
+- Cache PWA `battrochtek-v24`.
+
 ## v23
 
 - ESLint connaît maintenant les API Web utilisées par l’application (`fetch`, `location`, `URLSearchParams`, `TextEncoder`, `TextDecoder`, `atob`, `btoa`, etc.).

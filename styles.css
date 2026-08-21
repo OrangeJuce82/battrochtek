@@ -32,7 +32,7 @@
     --bt-grid-width: 80.5%;
     --bt-track-gap: .5%;
     --bt-row-h: 22px;
-    --bt-max-width: 73.5rem;
+    --bt-max-width: 72rem;
     --bt-kit-color: var(--bt-accent);
 
     /* Oat tokens : une seule source de vérité pour le thème. */
@@ -811,7 +811,7 @@ button i { pointer-events: none; }
     --bt-slider-width: 15%;
     --bt-grid-width: 71.5%;
     --bt-track-gap: .5%;
-    --bt-max-width: 82rem;
+    --bt-max-width: 72rem;
 }
 #tracks .track-row { gap: 4px; }
 #tracks .bt-led.track { flex: 1 1 auto; min-width: 0; }
@@ -911,4 +911,135 @@ button i { pointer-events: none; }
         --bt-grid-width: 68%;
     }
     .track-mix-row { gap: 2px; }
+}
+
+/* v36.6 — layout séquenceur verrouillé + aide raccourcis */
+.instrument-toolbar .swing-edit {
+    width: auto;
+    min-width: 0;
+    display: inline-flex;
+    grid-template-columns: none;
+    align-items: center;
+    gap: 4px;
+}
+.instrument-toolbar .swing-edit > span:first-child { flex: 0 0 auto; }
+.instrument-toolbar .swing-edit .percent-edit { width: 72px; flex: 0 0 72px; }
+
+.sequencer-layout {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(108px, 12.5fr) minmax(0, 71.5fr) minmax(112px, 15fr);
+    grid-template-rows: auto calc(var(--bt-row-h) * 9);
+    column-gap: .5%;
+    align-items: start;
+}
+.sequencer-layout .bt-leds {
+    grid-column: 2;
+    grid-row: 1;
+    float: none;
+    width: 100%;
+    margin: 10px 0 8px;
+}
+.sequencer-layout #tracks.bt-left {
+    grid-column: 1;
+    grid-row: 2;
+    float: none;
+    width: 100%;
+    margin: 0;
+    min-width: 0;
+}
+.sequencer-layout .bt-grid {
+    grid-column: 2;
+    grid-row: 2;
+    float: none;
+    width: 100%;
+}
+.sequencer-layout #sliders.bt-right {
+    grid-column: 3;
+    grid-row: 2;
+    float: none;
+    width: 100%;
+    padding-left: 0;
+}
+
+.shortcut-help {
+    margin: 12px 12px 14px;
+    border: 1px solid var(--bt-border);
+    border-radius: 9px;
+    background: var(--bt-panel-2);
+    overflow: hidden;
+}
+.shortcut-help summary {
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 8px 12px;
+    cursor: pointer;
+    user-select: none;
+    color: var(--bt-text);
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: .04em;
+    list-style: none;
+}
+.shortcut-help summary::-webkit-details-marker { display: none; }
+.shortcut-help summary:hover { background: color-mix(in srgb, var(--bt-accent) 5%, transparent); }
+.shortcut-help summary > .fa-keyboard { color: var(--bt-accent-strong); }
+.shortcut-chevron { margin-left: auto; color: var(--bt-muted); transition: transform .16s ease; }
+.shortcut-help[open] .shortcut-chevron { transform: rotate(180deg); }
+.shortcut-help-body {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    padding: 4px 12px 14px;
+    border-top: 1px solid var(--bt-border);
+}
+.shortcut-group { min-width: 0; }
+.shortcut-group h3 {
+    margin: 12px 0 7px;
+    color: var(--bt-muted);
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+}
+.shortcut-item {
+    min-height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    border-bottom: 1px solid color-mix(in srgb, var(--bt-border) 60%, transparent);
+    color: var(--bt-text);
+    font-size: 9px;
+    line-height: 1.25;
+}
+.shortcut-item:last-child { border-bottom: 0; }
+.shortcut-keys { display: inline-flex; align-items: center; justify-content: flex-end; gap: 3px; flex-wrap: wrap; }
+.shortcut-help kbd {
+    min-width: 22px;
+    height: 21px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6px;
+    border: 1px solid var(--bt-border-strong);
+    border-bottom-width: 2px;
+    border-radius: 5px;
+    background: var(--bt-control);
+    color: var(--bt-text);
+    box-shadow: 0 1px 0 rgb(0 0 0 / .08);
+    font: 700 8px/1 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    white-space: nowrap;
+}
+.shortcut-or { color: var(--bt-muted); font-size: 8px; }
+.platform-mac .win-only { display: none; }
+
+@media (max-width: 900px) {
+    .sequencer-layout {
+        grid-template-columns: minmax(108px, 15fr) minmax(0, 68fr) minmax(112px, 16fr);
+    }
+    .sequencer-layout #sliders.bt-right { display: flex; }
+    .shortcut-help-body { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }

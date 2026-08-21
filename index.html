@@ -90,13 +90,14 @@
                     </label>
                 </div>
 
-                <div class="bt-leds" id="leds"></div>
-                <div class="bt-left" id="tracks"></div>
-                <div class="bt-grid">
-                    <div class="grid"></div>
+                <div class="sequencer-layout">
+                    <div class="bt-leds" id="leds"></div>
+                    <div class="bt-left" id="tracks"></div>
+                    <div class="bt-grid">
+                        <div class="grid"></div>
+                    </div>
+                    <div class="bt-right" id="sliders"></div>
                 </div>
-                <div class="bt-right" id="sliders"></div>
-                <div class="drum-machine-clear"></div>
 
                 <div class="transport-bar" aria-label="Transport">
                     <button type="button" class="transport-button play-toggle" id="play-button" data-bt-tooltip="Lecture / stop (Espace)" data-i18n-tooltip="transport.playPause" aria-label="Lecture / stop" data-i18n-aria="transport.playPause" :aria-pressed="$store.ui.playing.toString()" :class="{ 'bt-buttondown': $store.ui.playing }">
@@ -151,6 +152,35 @@
                 </div>
                 <div class="drum-machine-clear"></div>
                 <div class="drum-machine-clear"></div>
+
+                <details class="shortcut-help" id="shortcut-help">
+                    <summary><i class="fa-regular fa-keyboard" aria-hidden="true"></i><span>Raccourcis clavier</span><i class="fa-solid fa-chevron-down shortcut-chevron" aria-hidden="true"></i></summary>
+                    <div class="shortcut-help-body">
+                        <div class="shortcut-group"><h3>Transport</h3>
+                            <div class="shortcut-item"><span>Lecture / Stop</span><span class="shortcut-keys"><kbd>Espace</kbd></span></div>
+                            <div class="shortcut-item"><span>Tap tempo</span><span class="shortcut-keys"><kbd>T</kbd></span></div>
+                            <div class="shortcut-item"><span>Métronome</span><span class="shortcut-keys"><kbd>M</kbd></span></div>
+                            <div class="shortcut-item"><span>Mémoire 1 à 8</span><span class="shortcut-keys"><kbd>1</kbd>…<kbd>8</kbd></span></div>
+                        </div>
+                        <div class="shortcut-group"><h3>Édition</h3>
+                            <div class="shortcut-item"><span>Annuler</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>Z</kbd></span></div>
+                            <div class="shortcut-item"><span>Rétablir</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘ ⇧" data-win="Ctrl Shift">Ctrl Shift</kbd><kbd>Z</kbd><span class="shortcut-or">/</span><kbd class="win-only">Ctrl</kbd><kbd class="win-only">Y</kbd></span></div>
+                            <div class="shortcut-item"><span>Copier le pattern</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>C</kbd></span></div>
+                            <div class="shortcut-item"><span>Coller le pattern</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>V</kbd></span></div>
+                            <div class="shortcut-item"><span>Dupliquer vers mémoire suivante</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>D</kbd></span></div>
+                            <div class="shortcut-item"><span>Sauvegarder la mémoire</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>S</kbd></span></div>
+                        </div>
+                        <div class="shortcut-group"><h3>Grille</h3>
+                            <div class="shortcut-item"><span>Changer une cellule</span><span class="shortcut-keys"><kbd>Clic</kbd></span></div>
+                            <div class="shortcut-item"><span>Répéter la position à chaque temps</span><span class="shortcut-keys"><kbd>Shift</kbd><kbd>Clic</kbd></span></div>
+                            <div class="shortcut-item"><span>Effacer une cellule</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>Clic</kbd></span></div>
+                            <div class="shortcut-item"><span>Effacer cette position sur tous les temps</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘ ⇧" data-win="Ctrl Shift">Ctrl Shift</kbd><kbd>Clic</kbd></span></div>
+                            <div class="shortcut-item"><span>Déplacer une piste sur les 2 axes</span><span class="shortcut-keys"><kbd>Alt</kbd><kbd>Glisser</kbd></span></div>
+                            <div class="shortcut-item"><span>Déplacer toute la grille sur les 2 axes</span><span class="shortcut-keys"><kbd>Alt</kbd><kbd>Shift</kbd><kbd>Glisser</kbd></span></div>
+                            <div class="shortcut-item"><span>Décaler avec ‹ › d’un temps</span><span class="shortcut-keys"><kbd>Shift</kbd><kbd>Clic</kbd></span></div>
+                        </div>
+                    </div>
+                </details>
             </div>
             <div id="bt-status-live" class="bt-status-live" aria-live="polite"></div>
             <div id="bt-tooltip" class="bt-tooltip" role="tooltip" aria-hidden="true"></div>
@@ -179,6 +209,15 @@
                 </div>
             </div>
         </dialog>
+        <script>
+            (function () {
+                var isMac = /Mac|iPhone|iPad|iPod/.test(navigator.platform || navigator.userAgent);
+                document.documentElement.classList.add(isMac ? 'platform-mac' : 'platform-win');
+                document.querySelectorAll('.mod-key').forEach(function (key) {
+                    key.textContent = isMac ? key.dataset.mac : key.dataset.win;
+                });
+            })();
+        </script>
         <script>
             (function() {
                 var tooltip = document.getElementById('bt-tooltip');

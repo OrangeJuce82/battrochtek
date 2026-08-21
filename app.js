@@ -1493,7 +1493,12 @@
                 if (b.id==="basic") return 1;
                 return a.label.localeCompare(b.label,undefined,{numeric:true,sensitivity:"base"});
             });
-            this.dom.presetSource.innerHTML=ordered.map(source=>`<option value="${source.id}">${source.label} · ${source.count}</option>`).join("");
+            this.dom.presetSource.replaceChildren(...ordered.map(source => {
+                const option = document.createElement("option");
+                option.value = String(source.id);
+                option.textContent = `${source.label} · ${source.count}`;
+                return option;
+            }));
             const first=ordered[0]?.id;
             if (first) { this.dom.presetSource.value=first; this.populateFamilies(first); }
         }
@@ -1501,7 +1506,12 @@
             const meta=this.seq.store.presets.meta || [];
             const families=meta.map((family,index)=>({family,index})).filter(item=>item.family.source===source);
             if (!families.length) return;
-            this.dom.presetFamily.innerHTML=families.map(({family,index})=>`<option value="${index}">${family.name}</option>`).join("");
+            this.dom.presetFamily.replaceChildren(...families.map(({ family, index }) => {
+                const option = document.createElement("option");
+                option.value = String(index);
+                option.textContent = String(family.name);
+                return option;
+            }));
             const index=families.some(item=>item.index===selectedFamily) ? selectedFamily : families[0].index;
             this.dom.presetFamily.value=String(index);
             this.populateGrooves(index,0);
@@ -1510,7 +1520,12 @@
             const meta = this.seq.store.presets.meta || [];
             const family = meta[familyIndex];
             if (!family || !this.dom.presetGroove) return;
-            this.dom.presetGroove.innerHTML = family.grooves.map((groove, i) => `<option value="${i}">${String(i + 1).padStart(2,"0")} · ${groove.name} · ${groove.signature}</option>`).join("");
+            this.dom.presetGroove.replaceChildren(...family.grooves.map((groove, i) => {
+                const option = document.createElement("option");
+                option.value = String(i);
+                option.textContent = `${String(i + 1).padStart(2,"0")} · ${groove.name} · ${groove.signature}`;
+                return option;
+            }));
             this.dom.presetGroove.dataset.btTooltip = family.sourceLabel || "Groove";
             this.dom.presetGroove.value = String(Util.clamp(selected, 0, family.grooves.length - 1, 0));
         }

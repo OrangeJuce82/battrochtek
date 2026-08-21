@@ -5,6 +5,7 @@ const AUDIO_CACHE = "battrochtek-audio-v2";
 // npm install. Le mettre dans l'app shell risquait de figer le placeholder dans
 // le cache du service worker avant le postinstall.
 const APP_SHELL = [
+  "vendor/i18next/i18next.min.js",
   "./",
   "./index.html",
   "./styles.css",

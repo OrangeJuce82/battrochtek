@@ -21,6 +21,15 @@ export default [
         console: "readonly",
         self: "readonly",
         URL: "readonly",
+        URLSearchParams: "readonly",
+        location: "readonly",
+        history: "readonly",
+        fetch: "readonly",
+        Response: "readonly",
+        TextEncoder: "readonly",
+        TextDecoder: "readonly",
+        atob: "readonly",
+        btoa: "readonly",
         Uint8Array: "readonly"
       }
     },

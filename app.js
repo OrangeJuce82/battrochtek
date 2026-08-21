@@ -687,7 +687,7 @@
             this.dom = this.cacheDom();
         }
         alpineUi() {
-            try { return window.Alpine?.store?.("ui") || null; } catch (_) { return null; }
+            try { return window.Alpine?.store?.("ui") || null; } catch { return null; }
         }
         syncUiStore() {
             const ui = this.alpineUi();

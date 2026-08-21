@@ -1,4 +1,4 @@
-const CACHE_NAME = "battrochtek-v22";
+const CACHE_NAME = "battrochtek-v23";
 const AUDIO_CACHE = "battrochtek-audio-v2";
 
 // Alpine n'est volontairement pas pré-caché ici : il est généré localement par
@@ -68,7 +68,7 @@ self.addEventListener("fetch", event => {
           await cache.put(event.request, copy);
         }
         return response;
-      } catch (_) {
+      } catch {
         return new Response("", { status: 504, statusText: "Audio offline unavailable" });
       }
     })());
@@ -81,7 +81,7 @@ self.addEventListener("fetch", event => {
     try {
       const response = await fetch(event.request);
       return await cacheNetworkResponse(CACHE_NAME, event.request, response);
-    } catch (_) {
+    } catch {
       const cached = await caches.match(event.request);
       if (cached) return cached;
       if (event.request.mode === "navigate") {

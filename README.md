@@ -68,6 +68,14 @@ Dans **Settings → Pages** du dépôt, sélectionne **GitHub Actions** comme so
 - `Ctrl/Cmd+Z` / `Ctrl/Cmd+Y` : undo / redo.
 
 
+## v23
+
+- ESLint connaît maintenant les API Web utilisées par l’application (`fetch`, `location`, `URLSearchParams`, `TextEncoder`, `TextDecoder`, `atob`, `btoa`, etc.).
+- Suppression des variables de `catch` inutilisées.
+- GitHub Actions utilise `actions/checkout@v7` et `actions/setup-node@v7`, compatibles avec le runtime Node.js 24 actuel de GitHub Actions.
+- Le cache automatique de `setup-node` est explicitement désactivé tant que le dépôt ne versionne pas de `package-lock.json`.
+- Cache PWA `battrochtek-v23`.
+
 ## v22
 
 - GitHub Actions passe à Node.js 24.

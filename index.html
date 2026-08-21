@@ -7,8 +7,9 @@
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
         <link rel="manifest" href="manifest.webmanifest">
-        <meta name="msapplication-TileColor" content="#111a23">
-        <meta name="theme-color" content="#111a23">
+        <meta name="msapplication-TileColor" content="#f8fafc">
+        <meta name="theme-color" content="#f8fafc" id="theme-color-meta">
+        <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-title" content="Battrochtek">
         <meta property="og:url" content="./">
@@ -18,7 +19,8 @@
         <meta property="og:image" content="logo.png">
         <meta name="HandheldFriendly" content="true">
         <meta name="format-detection" content="telephone=no">
-                <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+                <link rel="stylesheet" href="vendor/oat/oat.min.css">
+        <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
         <link rel="stylesheet" href="styles.css">
         <script>
             document.addEventListener('alpine:init', () => {
@@ -28,7 +30,9 @@
                 });
             });
         </script>
+        <script defer src="vendor/oat/oat.min.js"></script>
         <script defer src="vendor/alpine/alpine.min.js"></script>
+        <script defer src="vendor/qrcode/qrcode.js"></script>
         <script defer src="app.js"></script>
 
         </head>
@@ -39,30 +43,32 @@
                 <div class="bt-header" aria-label="Battrochtek">
                     <h1><img src="logo.png" alt="" class="bt-header-logo"> <span>Battrochtek</span></h1>
                     <div class="output-tools">
-                        <button type="button" class="header-icon-button master-level-button" id="master-level" title="Volume master : fort" aria-label="Volume master : fort"
+                        <button type="button" class="ghost small header-icon-button theme-toggle" id="theme-toggle" data-bt-tooltip="Basculer le thème clair / sombre" aria-label="Basculer le thème clair / sombre"><i class="fa-solid fa-moon" id="theme-toggle-icon" aria-hidden="true"></i></button>
+                        <button type="button" class="ghost small header-icon-button share-button" id="share-button" data-bt-tooltip="Partager ou sauvegarder ce groove" aria-label="Partager ou sauvegarder ce groove"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i></button>
+                        <button type="button" class="ghost small header-icon-button master-level-button" id="master-level" data-bt-tooltip="Volume master : fort" aria-label="Volume master : fort"
                             :class="'volume-' + $store.ui.masterState">
                             <i id="master-level-icon" class="fa-solid" :class="{ 'fa-volume-xmark': $store.ui.masterState === 'off', 'fa-volume-low': $store.ui.masterState === 'low', 'fa-volume-high': $store.ui.masterState === 'high' }" aria-hidden="true"></i>
                         </button>
-                        <div class="vu-meter-wrap" title="Niveau de sortie audio"><span class="vu-label">OUTPUT</span><div id="vu-meter" class="vu-meter" aria-label="VU-mètre de sortie"></div></div>
+                        <div class="vu-meter-wrap" data-bt-tooltip="Niveau de sortie audio"><span class="vu-label">OUTPUT</span><div id="vu-meter" class="vu-meter" aria-label="VU-mètre de sortie"></div></div>
                     </div>
                 </div>
             </header>
             <div class="bt">
                 <div class="score-toolbar" aria-label="Sélection du style et du groove">
                     <div class="preset-selector" id="preset-selector">
-                        <label class="control-field"><span>STYLE</span><select id="preset-family" title="Style musical"></select></label>
-                        <label class="control-field groove"><span>GROOVE</span><select id="preset-groove" title="Groove"></select></label>
-                        <button type="button" class="bt-button preset-icon" id="groove-refresh" title="Recharger le groove original" aria-label="Recharger le groove original"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i></button>
-                        <button type="button" class="bt-button variation-button" id="random" title="Créer une variante musicale du groove courant">VARIANTE</button>
+                        <label class="control-field" data-field><span>STYLE</span><select id="preset-family" data-bt-tooltip="Style musical"></select></label>
+                        <label class="control-field groove" data-field><span>GROOVE</span><select id="preset-groove" data-bt-tooltip="Groove"></select></label>
+                        <button type="button" class="bt-button preset-icon" id="groove-refresh" data-bt-tooltip="Recharger le groove original" aria-label="Recharger le groove original"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i></button>
+                        <button type="button" class="bt-button variation-button" id="random" data-bt-tooltip="Créer une variante musicale du groove courant">VARIANTE</button>
                     </div>
                 </div>
 
                 <div class="instrument-toolbar" aria-label="Kit et swing">
-                    <label class="control-field kit-selector" title="Kit de batterie">
+                    <label class="control-field kit-selector" data-field data-bt-tooltip="Kit de batterie">
                         <span class="icon-label" aria-hidden="true"><i class="fa-solid fa-drum"></i></span>
                         <select id="kit-select" aria-label="Kit de batterie"></select>
                     </label>
-                    <label class="control-field swing-edit" title="Swing en pourcentage">
+                    <label class="control-field swing-edit" data-field data-bt-tooltip="Swing en pourcentage">
                         <span>SWING</span>
                         <div class="percent-edit">
                             <input id="swing-input" type="number" min="0" max="100" step="1" value="0" inputmode="numeric" aria-label="Swing en pourcentage">
@@ -80,23 +86,23 @@
                 <div class="drum-machine-clear"></div>
 
                 <div class="transport-bar" aria-label="Transport">
-                    <button type="button" class="transport-button play-toggle" id="play-button" title="Lecture / pause (Espace)" aria-label="Lecture / pause" :aria-pressed="$store.ui.playing.toString()" :class="{ 'bt-buttondown': $store.ui.playing }">
+                    <button type="button" class="transport-button play-toggle" id="play-button" data-bt-tooltip="Lecture / pause (Espace)" aria-label="Lecture / pause" :aria-pressed="$store.ui.playing.toString()" :class="{ 'bt-buttondown': $store.ui.playing }">
                         <i id="play-pause-icon" class="fa-solid" :class="$store.ui.playing ? 'fa-pause' : 'fa-play'" aria-hidden="true"></i>
                     </button>
-                    <button type="button" class="transport-button tap-modern" id="tap-tempo" title="Tap tempo (T)">TAP</button>
-                    <button type="button" class="transport-button tempo-nudge" id="minus-button" title="Diminuer le tempo" aria-label="Diminuer le tempo">−</button>
-                    <label class="tempo-edit" title="Tempo en BPM">
+                    <button type="button" class="transport-button tap-modern" id="tap-tempo" data-bt-tooltip="Tap tempo (T)">TAP</button>
+                    <button type="button" class="transport-button tempo-nudge" id="minus-button" data-bt-tooltip="Diminuer le tempo" aria-label="Diminuer le tempo">−</button>
+                    <label class="tempo-edit" data-bt-tooltip="Tempo en BPM">
                         <input id="metronome-tempo" type="number" min="40" max="240" step="1" value="120" inputmode="numeric" aria-label="Tempo en BPM">
                         <span>BPM</span>
                     </label>
-                    <button type="button" class="transport-button tempo-nudge" id="plus-button" title="Augmenter le tempo" aria-label="Augmenter le tempo">+</button>
-                    <button type="button" class="transport-button icon-only tempo-ramp-button" id="tempo-ramp" :aria-pressed="$store.ui.tempoRamp.toString()" :class="{ 'bt-buttondown': $store.ui.tempoRamp }" title="Escalier BPM : +5 BPM à chaque tour" aria-label="Activer l’escalier BPM, plus 5 BPM par tour">
+                    <button type="button" class="transport-button tempo-nudge" id="plus-button" data-bt-tooltip="Augmenter le tempo" aria-label="Augmenter le tempo">+</button>
+                    <button type="button" class="transport-button icon-only tempo-ramp-button" id="tempo-ramp" :aria-pressed="$store.ui.tempoRamp.toString()" :class="{ 'bt-buttondown': $store.ui.tempoRamp }" data-bt-tooltip="Escalier BPM : +5 BPM à chaque tour" aria-label="Activer l’escalier BPM, plus 5 BPM par tour">
                         <i class="fa-solid fa-stairs" aria-hidden="true"></i>
                     </button>
-                    <button type="button" class="transport-button icon-only" id="metronome-button" :aria-pressed="$store.ui.metronome.toString()" :class="{ 'bt-buttondown': $store.ui.metronome }" title="Métronome (M)" aria-label="Activer ou désactiver le métronome">
+                    <button type="button" class="transport-button icon-only" id="metronome-button" :aria-pressed="$store.ui.metronome.toString()" :class="{ 'bt-buttondown': $store.ui.metronome }" data-bt-tooltip="Métronome (M)" aria-label="Activer ou désactiver le métronome">
                         <i class="fa-solid fa-stopwatch" aria-hidden="true"></i>
                     </button>
-                    <div class="signature-control transport-signature" id="signature-button" title="Signature rythmique">
+                    <div class="signature-control transport-signature" id="signature-button" data-bt-tooltip="Signature rythmique">
                         <div id="signature" class="signature-editor">
                             <select id="signature-numerator" aria-label="Numérateur de signature"><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select><span>/</span><select id="signature-denominator" aria-label="Dénominateur de signature"><option value="4" selected>4</option><option value="8">8</option><option value="16">16</option></select>
                         </div>
@@ -105,57 +111,104 @@
 
                 <div class="memory-toolbar" id="memory" aria-label="Mémoires et édition">
                     <div class="memory-separator" aria-hidden="true"></div>
-                    <button type="button" class="bt-button memory-action icon-only" id="chain" :aria-pressed="$store.ui.chain.toString()" :class="{ 'bt-buttondown': $store.ui.chain }" title="Chaîner les mémoires" aria-label="Chaîner les mémoires"><i class="fa-solid fa-link" aria-hidden="true"></i></button>
-                    <button type="button" class="bt-button memory-action icon-only history-button" id="undo" :class="{ 'is-disabled': !$store.ui.undoAvailable }" title="Annuler" aria-label="Annuler"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></button>
-                    <button type="button" class="bt-button memory-action icon-only history-button" id="redo" :class="{ 'is-disabled': !$store.ui.redoAvailable }" title="Rétablir" aria-label="Rétablir"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i></button>
-                    <button type="button" class="bt-button memory-action icon-only" id="save" title="Sauvegarder dans la mémoire sélectionnée (Ctrl+S)" aria-label="Sauvegarder"><i class="fa-solid fa-floppy-disk" aria-hidden="true"></i></button>
-                    <button type="button" class="bt-button memory-action icon-only" id="clear" title="Nouveau pattern vierge" aria-label="Nouveau pattern vierge"><i class="fa-solid fa-file" aria-hidden="true"></i></button>
-                    <button type="button" class="bt-button memory-action icon-only danger-icon" id="cache-clear" title="Vider les mémoires" aria-label="Vider les mémoires"><i class="fa-solid fa-trash-can" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only" id="chain" :aria-pressed="$store.ui.chain.toString()" :class="{ 'bt-buttondown': $store.ui.chain }" data-bt-tooltip="Chaîner les mémoires" aria-label="Chaîner les mémoires"><i class="fa-solid fa-link" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only history-button" id="undo" :class="{ 'is-disabled': !$store.ui.undoAvailable }" data-bt-tooltip="Annuler" aria-label="Annuler"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only history-button" id="redo" :class="{ 'is-disabled': !$store.ui.redoAvailable }" data-bt-tooltip="Rétablir" aria-label="Rétablir"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only" id="save" data-bt-tooltip="Sauvegarder dans la mémoire sélectionnée (Ctrl+S)" aria-label="Sauvegarder"><i class="fa-solid fa-floppy-disk" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only" id="clear" data-bt-tooltip="Nouveau pattern vierge" aria-label="Nouveau pattern vierge"><i class="fa-solid fa-file" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only danger-icon outline" data-variant="danger" id="cache-clear" data-bt-tooltip="Vider les mémoires" aria-label="Vider les mémoires"><i class="fa-solid fa-trash-can" aria-hidden="true"></i></button>
                 </div>
                 <div class="drum-machine-clear"></div>
                 <div class="drum-machine-clear"></div>
             </div>
-            <div class="bt-help" id="bt-help" aria-live="polite">
-                <span class="bt-help-icon">💡</span>
-                <span class="bt-help-text">Survole, touche ou sélectionne un contrôle pour voir l’aide.</span>
-            </div>
+            <div id="bt-status-live" class="bt-status-live" aria-live="polite"></div>
+            <div id="bt-tooltip" class="bt-tooltip" role="tooltip" aria-hidden="true"></div>
         </div>
+
+        <dialog id="share-dialog" class="share-dialog" aria-labelledby="share-dialog-title">
+            <div class="share-dialog-card">
+                <div class="share-dialog-header">
+                    <div>
+                        <h2 id="share-dialog-title">Partager ce groove</h2>
+                        <p>Le lien contient le groove courant. Scanne-le, partage-le ou enregistre-le dans tes favoris.</p>
+                    </div>
+                    <button type="button" class="ghost small header-icon-button" id="share-close" aria-label="Fermer"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                </div>
+                <div class="share-qr-wrap">
+                    <canvas id="share-qr" width="280" height="280" aria-label="QR code du groove"></canvas>
+                    <p id="share-qr-error" class="share-qr-error" hidden></p>
+                </div>
+                <label class="share-url-field">
+                    <span>LIEN</span>
+                    <input id="share-url" type="text" readonly spellcheck="false" aria-label="Lien du groove">
+                </label>
+                <div class="share-dialog-actions">
+                    <button type="button" class="bt-button" id="share-copy"><i class="fa-solid fa-copy" aria-hidden="true"></i> Copier le lien</button>
+                    <button type="button" class="bt-button outline" id="share-native" hidden><i class="fa-solid fa-arrow-up-from-bracket" aria-hidden="true"></i> Partager</button>
+                </div>
+            </div>
+        </dialog>
         <script>
             (function() {
-                var helpBar = document.getElementById('bt-help');
-                if (!helpBar) return;
+                var tooltip = document.getElementById('bt-tooltip');
+                if (!tooltip) return;
+                var active = null;
 
-                var helpText = helpBar.querySelector('.bt-help-text');
-                var defaultText = 'Survole, touche ou sélectionne un contrôle pour voir l’aide.';
+                function tooltipTarget(node) {
+                    return node && node.closest ? node.closest('[data-bt-tooltip]') : null;
+                }
 
-                function setHelp(text) {
-                    helpText.textContent = text || defaultText;
+                function normalize(target) {
+                    return target?.dataset?.btTooltip || '';
+                }
+
+                function place(target) {
+                    var rect = target.getBoundingClientRect();
+                    var tip = tooltip.getBoundingClientRect();
+                    var gap = 8;
+                    var left = rect.left + (rect.width - tip.width) / 2;
+                    left = Math.max(10, Math.min(left, window.innerWidth - tip.width - 10));
+                    var below = rect.bottom + gap;
+                    var above = rect.top - tip.height - gap;
+                    var top = below + tip.height <= window.innerHeight - 8 ? below : Math.max(8, above);
+                    tooltip.style.left = Math.round(left) + 'px';
+                    tooltip.style.top = Math.round(top) + 'px';
+                }
+
+                function show(target) {
+                    var text = normalize(target);
+                    if (!text) return;
+                    active = target;
+                    tooltip.textContent = text;
+                    tooltip.setAttribute('aria-hidden', 'false');
+                    tooltip.classList.add('is-visible');
+                    requestAnimationFrame(function() { if (active === target) place(target); });
+                }
+
+                function hide(target) {
+                    if (target && active !== target) return;
+                    active = null;
+                    tooltip.classList.remove('is-visible');
+                    tooltip.setAttribute('aria-hidden', 'true');
                 }
 
                 document.addEventListener('mouseover', function(event) {
-                    var button = event.target.closest('.bt-button[title], .transport-button[title]');
-                    if (button) setHelp(button.getAttribute('title'));
+                    var target = tooltipTarget(event.target);
+                    if (target && target !== active) show(target);
                 });
-
                 document.addEventListener('mouseout', function(event) {
-                    var button = event.target.closest('.bt-button[title], .transport-button[title]');
-                    var related = event.relatedTarget && event.relatedTarget.closest ? event.relatedTarget.closest('.bt-button[title], .transport-button[title]') : null;
-                    if (button && button !== related) setHelp();
+                    var target = tooltipTarget(event.target);
+                    if (!target) return;
+                    var related = tooltipTarget(event.relatedTarget);
+                    if (related !== target) hide(target);
                 });
-
                 document.addEventListener('focusin', function(event) {
-                    var button = event.target.closest('.bt-button[title], .transport-button[title]');
-                    if (button) setHelp(button.getAttribute('title'));
+                    var target = tooltipTarget(event.target);
+                    if (target) show(target);
                 });
-
-                document.addEventListener('focusout', function(event) {
-                    var button = event.target.closest('.bt-button[title], .transport-button[title]');
-                    if (button) setHelp();
-                });
-
-                window.addEventListener('battrochtek-status', function(event) {
-                    if (event.detail) setHelp(event.detail);
-                });
+                document.addEventListener('focusout', function(event) { hide(tooltipTarget(event.target)); });
+                window.addEventListener('resize', function() { if (active) place(active); });
+                window.addEventListener('scroll', function() { if (active) place(active); }, true);
             })();
         </script>
         <script>

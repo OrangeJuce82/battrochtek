@@ -22,6 +22,10 @@
         crash:0, ride:1, openHat:2, closedHat:3, snare:4, tomHigh:5, tomLow:6, kick:7
     });
 
+    const SAMPLE_LIBRARY = Object.freeze([{"key":"studio_kick_a","file":"sounds/studio-kick-a.wav","label":"Studio Kick A","type":"kick","source":"01kick1.wav"},{"key":"studio_kick_b","file":"sounds/studio-kick-b.wav","label":"Studio Kick B","type":"kick","source":"01kick2.wav"},{"key":"studio_snare_a","file":"sounds/studio-snare-a.wav","label":"Studio Snare A","type":"snare","source":"01snare1.wav"},{"key":"studio_snare_b","file":"sounds/studio-snare-b.wav","label":"Studio Snare B","type":"snare","source":"01snare2.wav"},{"key":"studio_tom_a","file":"sounds/studio-tom-a.wav","label":"Studio Tom A","type":"tom","source":"01tom1.wav"},{"key":"studio_tom_b","file":"sounds/studio-tom-b.wav","label":"Studio Tom B","type":"tom","source":"01tom2.wav"},{"key":"bright_kick_a","file":"sounds/bright-kick-a.wav","label":"Bright Kick A","type":"kick","source":"02kick1.wav"},{"key":"bright_kick_b","file":"sounds/bright-kick-b.wav","label":"Bright Kick B","type":"kick","source":"02kick2.wav"},{"key":"bright_snare_a","file":"sounds/bright-snare-a.wav","label":"Bright Snare A","type":"snare","source":"02snare1.wav"},{"key":"bright_snare_b","file":"sounds/bright-snare-b.wav","label":"Bright Snare B","type":"snare","source":"02snare2.wav"},{"key":"bright_tom_a","file":"sounds/bright-tom-a.wav","label":"Bright Tom A","type":"tom","source":"02tom1.wav"},{"key":"bright_tom_b","file":"sounds/bright-tom-b.wav","label":"Bright Tom B","type":"tom","source":"02tom2.wav"},{"key":"rock_kick_a","file":"sounds/rock-kick-a.wav","label":"Rock Kick A","type":"kick","source":"03kick1.wav"},{"key":"rock_kick_b","file":"sounds/rock-kick-b.wav","label":"Rock Kick B","type":"kick","source":"03kick2.wav"},{"key":"rock_snare_a","file":"sounds/rock-snare-a.wav","label":"Rock Snare A","type":"snare","source":"03snare1.wav"},{"key":"rock_tom_a","file":"sounds/rock-tom-a.wav","label":"Rock Tom A","type":"tom","source":"03tom1.wav"},{"key":"rock_tom_b","file":"sounds/rock-tom-b.wav","label":"Rock Tom B","type":"tom","source":"03tom2.wav"},{"key":"tight_kick_a","file":"sounds/tight-kick-a.wav","label":"Tight Kick A","type":"kick","source":"04kick1.wav"},{"key":"tight_kick_b","file":"sounds/tight-kick-b.wav","label":"Tight Kick B","type":"kick","source":"04kick2.wav"},{"key":"tight_snare_a","file":"sounds/tight-snare-a.wav","label":"Tight Snare A","type":"snare","source":"04snare1.wav"},{"key":"warm_kick_a","file":"sounds/warm-kick-a.wav","label":"Warm Kick A","type":"kick","source":"05kick1.wav"},{"key":"warm_kick_b","file":"sounds/warm-kick-b.wav","label":"Warm Kick B","type":"kick","source":"05kick2.wav"},{"key":"warm_snare_a","file":"sounds/warm-snare-a.wav","label":"Warm Snare A","type":"snare","source":"05snare1.wav"},{"key":"warm_snare_b","file":"sounds/warm-snare-b.wav","label":"Warm Snare B","type":"snare","source":"05snare2.wav"},{"key":"warm_tom_a","file":"sounds/warm-tom-a.wav","label":"Warm Tom A","type":"tom","source":"05tom1.wav"},{"key":"warm_tom_b","file":"sounds/warm-tom-b.wav","label":"Warm Tom B","type":"tom","source":"05tom2.wav"},{"key":"raw_kick_a","file":"sounds/raw-kick-a.wav","label":"Raw Kick A","type":"kick","source":"06kick1.wav"},{"key":"raw_kick_b","file":"sounds/raw-kick-b.wav","label":"Raw Kick B","type":"kick","source":"06kick2.wav"},{"key":"raw_snare_a","file":"sounds/raw-snare-a.wav","label":"Raw Snare A","type":"snare","source":"06snare1.wav"},{"key":"raw_snare_b","file":"sounds/raw-snare-b.wav","label":"Raw Snare B","type":"snare","source":"06snare2.wav"},{"key":"raw_tom_a","file":"sounds/raw-tom-a.wav","label":"Raw Tom A","type":"tom","source":"06tom1.wav"},{"key":"raw_tom_b","file":"sounds/raw-tom-b.wav","label":"Raw Tom B","type":"tom","source":"06tom2.wav"},{"key":"arena_kick_a","file":"sounds/arena-kick-a.wav","label":"Arena Kick A","type":"kick","source":"07kick1.wav"},{"key":"arena_kick_b","file":"sounds/arena-kick-b.wav","label":"Arena Kick B","type":"kick","source":"07kick2.wav"},{"key":"arena_snare_a","file":"sounds/arena-snare-a.wav","label":"Arena Snare A","type":"snare","source":"07snare1.wav"},{"key":"arena_snare_b","file":"sounds/arena-snare-b.wav","label":"Arena Snare B","type":"snare","source":"07snare2.wav"},{"key":"arena_tom_a","file":"sounds/arena-tom-a.wav","label":"Arena Tom A","type":"tom","source":"07tom1.wav"},{"key":"arena_tom_b","file":"sounds/arena-tom-b.wav","label":"Arena Tom B","type":"tom","source":"07tom2.wav"},{"key":"deep_kick_a","file":"sounds/deep-kick-a.wav","label":"Deep Kick A","type":"kick","source":"08kick1.wav"},{"key":"deep_kick_b","file":"sounds/deep-kick-b.wav","label":"Deep Kick B","type":"kick","source":"08kick2.wav"},{"key":"deep_snare_a","file":"sounds/deep-snare-a.wav","label":"Deep Snare A","type":"snare","source":"08snare1.wav"},{"key":"deep_snare_b","file":"sounds/deep-snare-b.wav","label":"Deep Snare B","type":"snare","source":"08snare2.wav"},{"key":"deep_tom_a","file":"sounds/deep-tom-a.wav","label":"Deep Tom A","type":"tom","source":"08tom1.wav"},{"key":"deep_tom_b","file":"sounds/deep-tom-b.wav","label":"Deep Tom B","type":"tom","source":"08tom2.wav"},{"key":"alarm_01","file":"sounds/alarm-01.wav","label":"Alarm 01","type":"fx","source":"alarm_01.wav"},{"key":"anvil_01","file":"sounds/anvil-01.wav","label":"Anvil 01","type":"fx","source":"anvil_01.wav"},{"key":"beep_01","file":"sounds/beep-01.wav","label":"Beep 01","type":"fx","source":"beep_01.wav"},{"key":"beep_02","file":"sounds/beep-02.wav","label":"Beep 02","type":"fx","source":"beep_02.wav"},{"key":"legacy_bell1","file":"sounds/legacy-bell1.wav","label":"Legacy Bell1","type":"cymbal","source":"bell1.wav"},{"key":"bongo_01","file":"sounds/bongo-01.wav","label":"Bongo 01","type":"perc","source":"bongo_01.wav"},{"key":"bongo_02","file":"sounds/bongo-02.wav","label":"Bongo 02","type":"perc","source":"bongo_02.wav"},{"key":"bongo_03","file":"sounds/bongo-03.wav","label":"Bongo 03","type":"perc","source":"bongo_03.wav"},{"key":"bongo_04","file":"sounds/bongo-04.wav","label":"Bongo 04","type":"perc","source":"bongo_04.wav"},{"key":"legacy_china1","file":"sounds/legacy-china1.wav","label":"Legacy China1","type":"cymbal","source":"china1.wav"},{"key":"clap_01","file":"sounds/clap-01.wav","label":"Clap 01","type":"perc","source":"clap_01.wav"},{"key":"clap_02","file":"sounds/clap-02.wav","label":"Clap 02","type":"perc","source":"clap_02.wav"},{"key":"clap_03","file":"sounds/clap-03.wav","label":"Clap 03","type":"perc","source":"clap_03.wav"},{"key":"clap_04","file":"sounds/clap-04.wav","label":"Clap 04","type":"perc","source":"clap_04.wav"},{"key":"clap_long_01","file":"sounds/clap-long-01.wav","label":"Clap Long 01","type":"perc","source":"clap_long_01.wav"},{"key":"claves_01","file":"sounds/claves-01.wav","label":"Claves 01","type":"perc","source":"claves_01.wav"},{"key":"claves_02","file":"sounds/claves-02.wav","label":"Claves 02","type":"perc","source":"claves_02.wav"},{"key":"legacy_cowbell","file":"sounds/legacy-cowbell.wav","label":"Legacy Cowbell","type":"perc","source":"cowbell.wav"},{"key":"cowbell_01","file":"sounds/cowbell-01.wav","label":"Cowbell 01","type":"perc","source":"cowbell_01.wav"},{"key":"cowbell_02","file":"sounds/cowbell-02.wav","label":"Cowbell 02","type":"perc","source":"cowbell_02.wav"},{"key":"cowbell_03","file":"sounds/cowbell-03.wav","label":"Cowbell 03","type":"perc","source":"cowbell_03.wav"},{"key":"legacy_crash1","file":"sounds/legacy-crash1.wav","label":"Legacy Crash1","type":"cymbal","source":"crash1.wav"},{"key":"crash_electro_01","file":"sounds/crash-electro-01.wav","label":"Crash Electro 01","type":"cymbal","source":"crash_01.wav"},{"key":"crash_electro_02","file":"sounds/crash-electro-02.wav","label":"Crash Electro 02","type":"cymbal","source":"crash_02.wav"},{"key":"crow_01","file":"sounds/crow-01.wav","label":"Crow 01","type":"fx","source":"crow_01.wav"},{"key":"crow_02","file":"sounds/crow-02.wav","label":"Crow 02","type":"fx","source":"crow_02.wav"},{"key":"cymbal_electro_01","file":"sounds/cymbal-electro-01.wav","label":"Cymbal Electro 01","type":"cymbal","source":"cymbal_01.wav"},{"key":"cymbal_electro_02","file":"sounds/cymbal-electro-02.wav","label":"Cymbal Electro 02","type":"cymbal","source":"cymbal_02.wav"},{"key":"cymbal_electro_03","file":"sounds/cymbal-electro-03.wav","label":"Cymbal Electro 03","type":"cymbal","source":"cymbal_03.wav"},{"key":"cymbal_electro_04","file":"sounds/cymbal-electro-04.wav","label":"Cymbal Electro 04","type":"cymbal","source":"cymbal_04.wav"},{"key":"door_01","file":"sounds/door-01.wav","label":"Door 01","type":"fx","source":"door_01.wav"},{"key":"door_02","file":"sounds/door-02.wav","label":"Door 02","type":"fx","source":"door_02.wav"},{"key":"formant_01","file":"sounds/formant-01.wav","label":"Formant 01","type":"fx","source":"formant_01.wav"},{"key":"game_01","file":"sounds/game-01.wav","label":"Game 01","type":"fx","source":"game_01.wav"},{"key":"game_02","file":"sounds/game-02.wav","label":"Game 02","type":"fx","source":"game_02.wav"},{"key":"game_03","file":"sounds/game-03.wav","label":"Game 03","type":"fx","source":"game_03.wav"},{"key":"game_coin","file":"sounds/game-coin.wav","label":"Game Coin","type":"fx","source":"game_coin.wav"},{"key":"game_damaged","file":"sounds/game-damaged.wav","label":"Game Damaged","type":"fx","source":"game_damaged.wav"},{"key":"game_fail","file":"sounds/game-fail.wav","label":"Game Fail","type":"fx","source":"game_fail.wav"},{"key":"game_fail_02","file":"sounds/game-fail-02.wav","label":"Game Fail 02","type":"fx","source":"game_fail_02.wav"},{"key":"game_level_up","file":"sounds/game-level-up.wav","label":"Game Level Up","type":"fx","source":"game_level_up.wav"},{"key":"game_passed_01","file":"sounds/game-passed-01.wav","label":"Game Passed 01","type":"fx","source":"game_passed_01.wav"},{"key":"game_passed_02","file":"sounds/game-passed-02.wav","label":"Game Passed 02","type":"fx","source":"game_passed_02.wav"},{"key":"game_pick_up","file":"sounds/game-pick-up.wav","label":"Game Pick Up","type":"fx","source":"game_pick_up.wav"},{"key":"glass_01","file":"sounds/glass-01.wav","label":"Glass 01","type":"fx","source":"glass_01.wav"},{"key":"glass_02","file":"sounds/glass-02.wav","label":"Glass 02","type":"fx","source":"glass_02.wav"},{"key":"glitch_01","file":"sounds/glitch-01.wav","label":"Glitch 01","type":"fx","source":"glitch_01.wav"},{"key":"glitch_02","file":"sounds/glitch-02.wav","label":"Glitch 02","type":"fx","source":"glitch_02.wav"},{"key":"electro_hat_closed_bright_01","file":"sounds/electro-hat-closed-bright-01.wav","label":"Electro Hat Closed Bright 01","type":"hat","source":"hat_closed_01.wav"},{"key":"electro_hat_closed_bright_02","file":"sounds/electro-hat-closed-bright-02.wav","label":"Electro Hat Closed Bright 02","type":"hat","source":"hat_closed_02.wav"},{"key":"electro_hat_closed_bright_03","file":"sounds/electro-hat-closed-bright-03.wav","label":"Electro Hat Closed Bright 03","type":"hat","source":"hat_closed_03.wav"},{"key":"electro_hat_closed_bright_04","file":"sounds/electro-hat-closed-bright-04.wav","label":"Electro Hat Closed Bright 04","type":"hat","source":"hat_closed_04.wav"},{"key":"electro_hat_closed_bright_05","file":"sounds/electro-hat-closed-bright-05.wav","label":"Electro Hat Closed Bright 05","type":"hat","source":"hat_closed_05.wav"},{"key":"electro_hat_closed_bright_06","file":"sounds/electro-hat-closed-bright-06.wav","label":"Electro Hat Closed Bright 06","type":"hat","source":"hat_closed_06.wav"},{"key":"electro_hat_closed_distorted_01","file":"sounds/electro-hat-closed-distorted-01.wav","label":"Electro Hat Closed Distorted 01","type":"hat","source":"hat_distort_01.wav"},{"key":"electro_hat_closed_metal_01","file":"sounds/electro-hat-closed-metal-01.wav","label":"Electro Hat Closed Metal 01","type":"hat","source":"hat_metal_01.wav"},{"key":"electro_hat_open_bright_01","file":"sounds/electro-hat-open-bright-01.wav","label":"Electro Hat Open Bright 01","type":"hat","source":"hat_open_01.wav"},{"key":"electro_hat_open_bright_02","file":"sounds/electro-hat-open-bright-02.wav","label":"Electro Hat Open Bright 02","type":"hat","source":"hat_open_02.wav"},{"key":"electro_hat_open_bright_03","file":"sounds/electro-hat-open-bright-03.wav","label":"Electro Hat Open Bright 03","type":"hat","source":"hat_open_03.wav"},{"key":"electro_hat_open_bright_04","file":"sounds/electro-hat-open-bright-04.wav","label":"Electro Hat Open Bright 04","type":"hat","source":"hat_open_04.wav"},{"key":"electro_hat_open_bright_05","file":"sounds/electro-hat-open-bright-05.wav","label":"Electro Hat Open Bright 05","type":"hat","source":"hat_open_05.wav"},{"key":"heartbeat_01","file":"sounds/heartbeat-01.wav","label":"Heartbeat 01","type":"fx","source":"heartbeat_01.wav"},{"key":"legacy_hat_closed_1","file":"sounds/legacy-hat-closed-1.wav","label":"Legacy Hat Closed 1","type":"hat","source":"hihat1.wav"},{"key":"legacy_hat_closed_2","file":"sounds/legacy-hat-closed-2.wav","label":"Legacy Hat Closed 2","type":"hat","source":"hihat2.wav"},{"key":"electro_kick_deep_01","file":"sounds/electro-kick-deep-01.wav","label":"Electro Kick Deep 01","type":"kick","source":"kick_01.wav"},{"key":"electro_kick_sub_02","file":"sounds/electro-kick-sub-02.wav","label":"Electro Kick Sub 02","type":"kick","source":"kick_02.wav"},{"key":"electro_kick_sub_03","file":"sounds/electro-kick-sub-03.wav","label":"Electro Kick Sub 03","type":"kick","source":"kick_03.wav"},{"key":"electro_kick_punch_04","file":"sounds/electro-kick-punch-04.wav","label":"Electro Kick Punch 04","type":"kick","source":"kick_04.wav"},{"key":"electro_kick_deep_05","file":"sounds/electro-kick-deep-05.wav","label":"Electro Kick Deep 05","type":"kick","source":"kick_05.wav"},{"key":"electro_kick_deep_06","file":"sounds/electro-kick-deep-06.wav","label":"Electro Kick Deep 06","type":"kick","source":"kick_06.wav"},{"key":"electro_kick_sub_07","file":"sounds/electro-kick-sub-07.wav","label":"Electro Kick Sub 07","type":"kick","source":"kick_07.wav"},{"key":"electro_kick_bright_08","file":"sounds/electro-kick-bright-08.wav","label":"Electro Kick Bright 08","type":"kick","source":"kick_08.wav"},{"key":"electro_kick_punch_09","file":"sounds/electro-kick-punch-09.wav","label":"Electro Kick Punch 09","type":"kick","source":"kick_09.wav"},{"key":"electro_kick_deep_10","file":"sounds/electro-kick-deep-10.wav","label":"Electro Kick Deep 10","type":"kick","source":"kick_10.wav"},{"key":"electro_kick_sub_11","file":"sounds/electro-kick-sub-11.wav","label":"Electro Kick Sub 11","type":"kick","source":"kick_11.wav"},{"key":"electro_kick_sub_12","file":"sounds/electro-kick-sub-12.wav","label":"Electro Kick Sub 12","type":"kick","source":"kick_12.wav"},{"key":"electro_kick_deep_13","file":"sounds/electro-kick-deep-13.wav","label":"Electro Kick Deep 13","type":"kick","source":"kick_13.wav"},{"key":"electro_kick_deep_14","file":"sounds/electro-kick-deep-14.wav","label":"Electro Kick Deep 14","type":"kick","source":"kick_14.wav"},{"key":"electro_kick_distorted_01","file":"sounds/electro-kick-distorted-01.wav","label":"Electro Kick Distorted 01","type":"kick","source":"kick_distort_01.wav"},{"key":"electro_kick_distorted_02","file":"sounds/electro-kick-distorted-02.wav","label":"Electro Kick Distorted 02","type":"kick","source":"kick_distort_02.wav"},{"key":"lock_01","file":"sounds/lock-01.wav","label":"Lock 01","type":"fx","source":"lock_01.wav"},{"key":"maracas_01","file":"sounds/maracas-01.wav","label":"Maracas 01","type":"perc","source":"maracas_01.wav"},{"key":"maracas_02","file":"sounds/maracas-02.wav","label":"Maracas 02","type":"perc","source":"maracas_02.wav"},{"key":"melee_01","file":"sounds/melee-01.wav","label":"Melee 01","type":"fx","source":"melee_01.wav"},{"key":"melee_02","file":"sounds/melee-02.wav","label":"Melee 02","type":"fx","source":"melee_02.wav"},{"key":"melee_03","file":"sounds/melee-03.wav","label":"Melee 03","type":"fx","source":"melee_03.wav"},{"key":"metal_01","file":"sounds/metal-01.wav","label":"Metal 01","type":"fx","source":"metal_01.wav"},{"key":"metal_02","file":"sounds/metal-02.wav","label":"Metal 02","type":"fx","source":"metal_02.wav"},{"key":"notify_01","file":"sounds/notify-01.wav","label":"Notify 01","type":"fx","source":"notify_01.wav"},{"key":"legacy_hat_open_1","file":"sounds/legacy-hat-open-1.wav","label":"Legacy Hat Open 1","type":"hat","source":"open1.wav"},{"key":"legacy_hat_open_2","file":"sounds/legacy-hat-open-2.wav","label":"Legacy Hat Open 2","type":"hat","source":"open2.wav"},{"key":"legacy_pad_2","file":"sounds/legacy-pad-2.wav","label":"Legacy Pad 2","type":"fx","source":"pad2.wav"},{"key":"perc_01","file":"sounds/perc-01.wav","label":"Perc 01","type":"perc","source":"perc_01.wav"},{"key":"perc_02","file":"sounds/perc-02.wav","label":"Perc 02","type":"perc","source":"perc_02.wav"},{"key":"perc_03","file":"sounds/perc-03.wav","label":"Perc 03","type":"perc","source":"perc_03.wav"},{"key":"perc_04","file":"sounds/perc-04.wav","label":"Perc 04","type":"perc","source":"perc_04.wav"},{"key":"punch_01","file":"sounds/punch-01.wav","label":"Punch 01","type":"fx","source":"punch_01.wav"},{"key":"punch_02","file":"sounds/punch-02.wav","label":"Punch 02","type":"fx","source":"punch_02.wav"},{"key":"punch_03","file":"sounds/punch-03.wav","label":"Punch 03","type":"fx","source":"punch_03.wav"},{"key":"punch_04","file":"sounds/punch-04.wav","label":"Punch 04","type":"fx","source":"punch_04.wav"},{"key":"punch_05","file":"sounds/punch-05.wav","label":"Punch 05","type":"fx","source":"punch_05.wav"},{"key":"punch_06","file":"sounds/punch-06.wav","label":"Punch 06","type":"fx","source":"punch_06.wav"},{"key":"ratchet_01","file":"sounds/ratchet-01.wav","label":"Ratchet 01","type":"fx","source":"ratchet_01.wav"},{"key":"legacy_ride1","file":"sounds/legacy-ride1.wav","label":"Legacy Ride1","type":"cymbal","source":"ride1.wav"},{"key":"legacy_ride3","file":"sounds/legacy-ride3.wav","label":"Legacy Ride3","type":"cymbal","source":"ride3.wav"},{"key":"ride_electro_01","file":"sounds/ride-electro-01.wav","label":"Ride Electro 01","type":"cymbal","source":"ride_01.wav"},{"key":"ride_electro_02","file":"sounds/ride-electro-02.wav","label":"Ride Electro 02","type":"cymbal","source":"ride_02.wav"},{"key":"legacy_rim","file":"sounds/legacy-rim.wav","label":"Legacy Rim","type":"perc","source":"rim.wav"},{"key":"rimshot_01","file":"sounds/rimshot-01.wav","label":"Rimshot 01","type":"perc","source":"rimshot_01.wav"},{"key":"rimshot_02","file":"sounds/rimshot-02.wav","label":"Rimshot 02","type":"perc","source":"rimshot_02.wav"},{"key":"rimshot_03","file":"sounds/rimshot-03.wav","label":"Rimshot 03","type":"perc","source":"rimshot_03.wav"},{"key":"rimshot_04","file":"sounds/rimshot-04.wav","label":"Rimshot 04","type":"perc","source":"rimshot_04.wav"},{"key":"electro_snare_snap_01","file":"sounds/electro-snare-snap-01.wav","label":"Electro Snare Snap 01","type":"snare","source":"snare_01.wav"},{"key":"electro_snare_snap_02","file":"sounds/electro-snare-snap-02.wav","label":"Electro Snare Snap 02","type":"snare","source":"snare_02.wav"},{"key":"electro_snare_bright_03","file":"sounds/electro-snare-bright-03.wav","label":"Electro Snare Bright 03","type":"snare","source":"snare_03.wav"},{"key":"electro_snare_crack_04","file":"sounds/electro-snare-crack-04.wav","label":"Electro Snare Crack 04","type":"snare","source":"snare_04.wav"},{"key":"electro_snare_snap_05","file":"sounds/electro-snare-snap-05.wav","label":"Electro Snare Snap 05","type":"snare","source":"snare_05.wav"},{"key":"electro_snare_crack_06","file":"sounds/electro-snare-crack-06.wav","label":"Electro Snare Crack 06","type":"snare","source":"snare_06.wav"},{"key":"electro_snare_snap_07","file":"sounds/electro-snare-snap-07.wav","label":"Electro Snare Snap 07","type":"snare","source":"snare_07.wav"},{"key":"electro_snare_snap_08","file":"sounds/electro-snare-snap-08.wav","label":"Electro Snare Snap 08","type":"snare","source":"snare_08.wav"},{"key":"electro_snare_crack_09","file":"sounds/electro-snare-crack-09.wav","label":"Electro Snare Crack 09","type":"snare","source":"snare_09.wav"},{"key":"electro_snare_snap_10","file":"sounds/electro-snare-snap-10.wav","label":"Electro Snare Snap 10","type":"snare","source":"snare_10.wav"},{"key":"electro_snare_warm_11","file":"sounds/electro-snare-warm-11.wav","label":"Electro Snare Warm 11","type":"snare","source":"snare_11.wav"},{"key":"electro_snare_bright_12","file":"sounds/electro-snare-bright-12.wav","label":"Electro Snare Bright 12","type":"snare","source":"snare_12.wav"},{"key":"electro_snare_snap_13","file":"sounds/electro-snare-snap-13.wav","label":"Electro Snare Snap 13","type":"snare","source":"snare_13.wav"},{"key":"electro_snare_snap_14","file":"sounds/electro-snare-snap-14.wav","label":"Electro Snare Snap 14","type":"snare","source":"snare_14.wav"},{"key":"electro_snare_distorted_01","file":"sounds/electro-snare-distorted-01.wav","label":"Electro Snare Distorted 01","type":"snare","source":"snare_distort_01.wav"},{"key":"electro_snare_distorted_02","file":"sounds/electro-snare-distorted-02.wav","label":"Electro Snare Distorted 02","type":"snare","source":"snare_distort_02.wav"},{"key":"legacy_splash1","file":"sounds/legacy-splash1.wav","label":"Legacy Splash1","type":"cymbal","source":"splash1.wav"},{"key":"legacy_stax_1","file":"sounds/legacy-stax-1.wav","label":"Legacy Stax 1","type":"fx","source":"stax1.wav"},{"key":"metronome_tick","file":"sounds/metronome-tick.wav","label":"Metronome Tick","type":"metro","source":"tick.wav"},{"key":"electro_tom_high_01","file":"sounds/electro-tom-high-01.wav","label":"Electro Tom High 01","type":"tom","source":"tom_hi_01.wav"},{"key":"electro_tom_high_02","file":"sounds/electro-tom-high-02.wav","label":"Electro Tom High 02","type":"tom","source":"tom_hi_02.wav"},{"key":"electro_tom_high_03","file":"sounds/electro-tom-high-03.wav","label":"Electro Tom High 03","type":"tom","source":"tom_hi_03.wav"},{"key":"electro_tom_high_04","file":"sounds/electro-tom-high-04.wav","label":"Electro Tom High 04","type":"tom","source":"tom_hi_04.wav"},{"key":"electro_tom_high_05","file":"sounds/electro-tom-high-05.wav","label":"Electro Tom High 05","type":"tom","source":"tom_hi_05.wav"},{"key":"electro_tom_low_01","file":"sounds/electro-tom-low-01.wav","label":"Electro Tom Low 01","type":"tom","source":"tom_low_01.wav"},{"key":"electro_tom_low_02","file":"sounds/electro-tom-low-02.wav","label":"Electro Tom Low 02","type":"tom","source":"tom_low_02.wav"},{"key":"electro_tom_low_03","file":"sounds/electro-tom-low-03.wav","label":"Electro Tom Low 03","type":"tom","source":"tom_low_03.wav"},{"key":"electro_tom_low_04","file":"sounds/electro-tom-low-04.wav","label":"Electro Tom Low 04","type":"tom","source":"tom_low_04.wav"},{"key":"electro_tom_low_05","file":"sounds/electro-tom-low-05.wav","label":"Electro Tom Low 05","type":"tom","source":"tom_low_05.wav"},{"key":"electro_tom_mid_01","file":"sounds/electro-tom-mid-01.wav","label":"Electro Tom Mid 01","type":"tom","source":"tom_mid_01.wav"},{"key":"electro_tom_mid_02","file":"sounds/electro-tom-mid-02.wav","label":"Electro Tom Mid 02","type":"tom","source":"tom_mid_02.wav"},{"key":"electro_tom_mid_03","file":"sounds/electro-tom-mid-03.wav","label":"Electro Tom Mid 03","type":"tom","source":"tom_mid_03.wav"},{"key":"electro_tom_mid_04","file":"sounds/electro-tom-mid-04.wav","label":"Electro Tom Mid 04","type":"tom","source":"tom_mid_04.wav"},{"key":"electro_tom_mid_05","file":"sounds/electro-tom-mid-05.wav","label":"Electro Tom Mid 05","type":"tom","source":"tom_mid_05.wav"},{"key":"twang_01","file":"sounds/twang-01.wav","label":"Twang 01","type":"fx","source":"twang_01.wav"},{"key":"twang_02","file":"sounds/twang-02.wav","label":"Twang 02","type":"fx","source":"twang_02.wav"},{"key":"twang_03","file":"sounds/twang-03.wav","label":"Twang 03","type":"fx","source":"twang_03.wav"},{"key":"vocal_are_you_crazy","file":"sounds/vocal-are-you-crazy.wav","label":"Vocal Are You Crazy","type":"fx","source":"vocal_are_you_crazy.wav"},{"key":"vocal_come_on_01","file":"sounds/vocal-come-on-01.wav","label":"Vocal Come On 01","type":"fx","source":"vocal_come_on_01.wav"},{"key":"vocal_dont_judge","file":"sounds/vocal-dont-judge.wav","label":"Vocal Dont Judge","type":"fx","source":"vocal_dont_judge.wav"},{"key":"vocal_gasp","file":"sounds/vocal-gasp.wav","label":"Vocal Gasp","type":"fx","source":"vocal_gasp.wav"},{"key":"vocal_lets_run","file":"sounds/vocal-lets-run.wav","label":"Vocal Lets Run","type":"fx","source":"vocal_lets_run.wav"},{"key":"vocal_no_cant","file":"sounds/vocal-no-cant.wav","label":"Vocal No Cant","type":"fx","source":"vocal_no_cant.wav"},{"key":"vocal_order","file":"sounds/vocal-order.wav","label":"Vocal Order","type":"fx","source":"vocal_order.wav"},{"key":"vocal_scream_01","file":"sounds/vocal-scream-01.wav","label":"Vocal Scream 01","type":"fx","source":"vocal_scream_01.wav"},{"key":"vocal_the_line","file":"sounds/vocal-the-line.wav","label":"Vocal The Line","type":"fx","source":"vocal_the_line.wav"},{"key":"vocal_what_01","file":"sounds/vocal-what-01.wav","label":"Vocal What 01","type":"fx","source":"vocal_what_01.wav"},{"key":"vocal_what_02","file":"sounds/vocal-what-02.wav","label":"Vocal What 02","type":"fx","source":"vocal_what_02.wav"},{"key":"warb_01","file":"sounds/warb-01.wav","label":"Warb 01","type":"fx","source":"warb_01.wav"},{"key":"zap_01","file":"sounds/zap-01.wav","label":"Zap 01","type":"fx","source":"zap_01.wav"},{"key":"zap_02","file":"sounds/zap-02.wav","label":"Zap 02","type":"fx","source":"zap_02.wav"},{"key":"zap_03","file":"sounds/zap-03.wav","label":"Zap 03","type":"fx","source":"zap_03.wav"},{"key":"zap_04","file":"sounds/zap-04.wav","label":"Zap 04","type":"fx","source":"zap_04.wav"},{"key":"zap_05","file":"sounds/zap-05.wav","label":"Zap 05","type":"fx","source":"zap_05.wav"}]);
+    const SAMPLE_INDEX = Object.freeze(Object.fromEntries(SAMPLE_LIBRARY.map(sample => [sample.key, Object.freeze(sample)])));
+    const TRACK_SAMPLE_TYPES = Object.freeze([['cymbal','fx','perc'],['cymbal','perc','fx'],['hat','perc','fx'],['hat','perc'],['snare','perc'],['tom','perc'],['tom','perc'],['kick','perc','fx']]);
+
     const CONFIG = Object.freeze({
         SIGNATURES: Object.freeze(SIGNATURES),
         SIGNATURE_DENOMINATORS: Object.freeze([4,8,16]),
@@ -34,30 +38,8 @@
         SWING: Object.freeze({ min: 0, max: 100, default: 0, maxDelayRatio: 0.28 }),
         VELOCITY_GAIN: Object.freeze({ ghost:0.30, soft:0.48, normal:0.72, strong:0.92, accent:1.15 }),
         SCHEDULER: Object.freeze({ lookAheadMs: 25, scheduleAheadSec: 0.1 }),
-        STORAGE_KEY: "patternStore",
-        SAMPLE_MAP: Object.freeze({
-            crash1: ["sounds/crash1.wav", "CRASH"], china1: ["sounds/china1.wav", "CHINA"], ride1: ["sounds/ride1.wav", "RIDE"], bell1: ["sounds/bell1.wav", "BELL"],
-            open2: ["sounds/open2.wav", "OPEN"], hihat2: ["sounds/hihat2.wav", "HIHAT"], cowbell: ["sounds/cowbell.wav", "BELL"], rim: ["sounds/rim.wav", "RIM"], pad2: ["sounds/pad2.wav", "PAD"], ride3: ["sounds/ride3.wav", "RIDE"],
-            s01a:["sounds/01snare1.wav","SNARE"], t01a:["sounds/01tom1.wav","TOM 1"], t01b:["sounds/01tom2.wav","TOM 2"], k01a:["sounds/01kick1.wav","KICK"],
-            s02a:["sounds/02snare1.wav","SNARE"], t02a:["sounds/02tom1.wav","TOM 1"], t02b:["sounds/02tom2.wav","TOM 2"], k02a:["sounds/02kick1.wav","KICK"],
-            s03a:["sounds/03snare1.wav","SNARE"], t03a:["sounds/03tom1.wav","TOM 1"], t03b:["sounds/03tom2.wav","TOM 2"],
-            s04a:["sounds/04snare1.wav","SNARE"], k04a:["sounds/04kick1.wav","KICK"],
-            s05a:["sounds/05snare1.wav","SNARE"], t05a:["sounds/05tom1.wav","TOM 1"], t05b:["sounds/05tom2.wav","TOM 2"], k05a:["sounds/05kick1.wav","KICK"],
-            s06a:["sounds/06snare1.wav","SNARE"], t06a:["sounds/06tom1.wav","TOM 1"], t06b:["sounds/06tom2.wav","TOM 2"], k06a:["sounds/06kick1.wav","KICK"],
-            s07a:["sounds/07snare1.wav","SNARE"], t07a:["sounds/07tom1.wav","TOM 1"], t07b:["sounds/07tom2.wav","TOM 2"], k07a:["sounds/07kick1.wav","KICK"],
-            s08a:["sounds/08snare1.wav","SNARE"], t08a:["sounds/08tom1.wav","TOM 1"], t08b:["sounds/08tom2.wav","TOM 2"], k08a:["sounds/08kick1.wav","KICK"],
-            tick:["sounds/tick.wav","METRO"]
-        }),
-        KITS: Object.freeze([
-            Object.freeze({ name:"POWER", tracks:["crash1","ride1","open2","hihat2","s01a","t01a","t01b","k01a","tick"] }),
-            Object.freeze({ name:"SHOCK", tracks:["china1","bell1","open2","hihat2","s02a","t02a","t02b","k02a","tick"] }),
-            Object.freeze({ name:"RUDE", tracks:["crash1","ride3","open2","hihat2","s03a","t03a","t03b","k01a","tick"] }),
-            Object.freeze({ name:"COOL", tracks:["crash1","ride1","open2","hihat2","s04a","t01a","t01b","k04a","tick"] }),
-            Object.freeze({ name:"HYBRID", tracks:["crash1","pad2","open2","hihat2","s05a","t05a","t05b","k05a","tick"] }),
-            Object.freeze({ name:"ETHNIC", tracks:["china1","cowbell","open2","hihat2","s06a","t06a","t06b","k06a","tick"] }),
-            Object.freeze({ name:"WILD", tracks:["crash1","bell1","open2","hihat2","s07a","t07a","t07b","k07a","tick"] }),
-            Object.freeze({ name:"LARGE", tracks:["china1","ride3","open2","hihat2","s08a","t08a","t08b","k08a","tick"] })
-        ])
+        SAMPLE_MAP: Object.freeze(Object.fromEntries(SAMPLE_LIBRARY.map(sample => [sample.key, [sample.file, sample.label, sample.type]]))),
+        KITS: Object.freeze([{"name":"STUDIO PUNCH","color":"#2d9cdb","tracks":["legacy_crash1","legacy_ride1","legacy_hat_open_1","legacy_hat_closed_1","studio_snare_a","studio_tom_a","studio_tom_b","studio_kick_a","metronome_tick"]},{"name":"ARENA 909","color":"#ff5a36","tracks":["crash_electro_02","ride_electro_02","electro_hat_open_bright_03","electro_hat_closed_bright_06","electro_snare_snap_14","electro_tom_high_05","electro_tom_low_05","electro_kick_deep_14","metronome_tick"]},{"name":"NEON 808","color":"#ff2f7d","tracks":["cymbal_electro_01","cowbell_01","electro_hat_open_bright_01","electro_hat_closed_bright_01","electro_snare_warm_11","electro_tom_high_02","electro_tom_low_02","electro_kick_sub_12","metronome_tick"]},{"name":"SOUL POCKET","color":"#d4a72c","tracks":["legacy_crash1","legacy_ride1","legacy_hat_open_2","legacy_hat_closed_2","warm_snare_a","warm_tom_a","warm_tom_b","warm_kick_a","metronome_tick"]},{"name":"FUNK TIGHT","color":"#32a852","tracks":["legacy_splash1","legacy_cowbell","electro_hat_open_bright_04","electro_hat_closed_bright_04","tight_snare_a","electro_tom_high_03","electro_tom_low_03","tight_kick_a","metronome_tick"]},{"name":"DMX STREET","color":"#8b5cf6","tracks":["cymbal_electro_02","cowbell_03","electro_hat_open_bright_02","electro_hat_closed_bright_02","electro_snare_snap_10","electro_tom_mid_03","electro_tom_low_04","electro_kick_deep_10","metronome_tick"]},{"name":"LINN CHROME","color":"#00a7a7","tracks":["crash_electro_01","ride_electro_01","electro_hat_open_bright_05","electro_hat_closed_bright_05","clap_02","electro_tom_high_01","electro_tom_mid_01","electro_kick_deep_05","metronome_tick"]},{"name":"SP DUST","color":"#9a6b3f","tracks":["legacy_china1","legacy_ride3","electro_hat_closed_distorted_01","electro_hat_closed_metal_01","electro_snare_distorted_01","raw_tom_a","raw_tom_b","electro_kick_distorted_01","metronome_tick"]},{"name":"AFRO CIRCUIT","color":"#e48a1d","tracks":["cymbal_electro_03","cowbell_02","maracas_01","claves_01","rimshot_02","bongo_01","bongo_02","electro_kick_sub_07","metronome_tick"]},{"name":"GLITCH LAB","color":"#e83e8c","tracks":["zap_05","game_level_up","electro_hat_closed_distorted_01","glitch_01","electro_snare_distorted_02","punch_03","metal_02","electro_kick_distorted_02","metronome_tick"]}].map(kit => Object.freeze({...kit, tracks:Object.freeze(kit.tracks)})))
     });
 
     const Util = Object.freeze({
@@ -190,13 +172,14 @@
         constructor(storageManager, presets) {
             this.storage = storageManager;
             this.presets = presets;
-            this.banks = this.storage.load(this.createDefaults(presets));
+            this.slots = this.normalizeSlots(this.storage.load(this.createDefaults(presets)));
         }
         createDefaults(presets) {
-            const banks = Array.from({ length: CONFIG.SIGNATURES.length }, () => Array(CONFIG.MEMORY_SLOTS));
-            const first = presets[4]?.[signatureIndexOf(4,4)]?.find(Boolean);
-            if (first) banks[signatureIndexOf(4,4)][0] = this.normalizePattern(first, signatureIndexOf(4,4));
-            return banks;
+            const slots = Array(CONFIG.MEMORY_SLOTS);
+            const signatureIndex = signatureIndexOf(4,4);
+            const first = presets[4]?.[signatureIndex]?.find(Boolean);
+            if (first) slots[0] = { signatureIndex, pattern:this.normalizePattern(first, signatureIndex) };
+            return slots;
         }
         normalizePattern(pattern, signatureIndex = 0) {
             if (!Array.isArray(pattern)) return null;
@@ -235,31 +218,46 @@
             const weak = remapCells(pattern[weakIndex]).filter(n => cells.includes(n) && !accents.includes(n));
             const strong = strongIndex >= 0 ? remapCells(pattern[strongIndex]).filter(n => cells.includes(n) && !accents.includes(n)) : [];
             const ghost = ghostIndex >= 0 ? remapCells(pattern[ghostIndex]).filter(n => cells.includes(n) && !accents.includes(n) && !weak.includes(n)) : [];
-            return [cells, kit, volumes, tempo, master, swing, accents, weak, strong, ghost];
+            const customTracks = Array.isArray(pattern[10]) && pattern[10].length >= CONFIG.TRACK_COUNT
+                ? pattern[10].slice(0, CONFIG.TRACK_COUNT).map((key, i) => SAMPLE_INDEX[key] ? key : CONFIG.KITS[kit].tracks[i])
+                : null;
+            return [cells, kit, volumes, tempo, master, swing, accents, weak, strong, ghost, customTracks];
         }
-        normalizeBanks(raw, defaults) {
-            const out = Array.from({ length: CONFIG.SIGNATURES.length }, () => Array(CONFIG.MEMORY_SLOTS));
-            for (let s = 0; s < CONFIG.SIGNATURES.length; s++) {
-                const sourceBank = Array.isArray(raw?.[s]) ? raw[s] : [];
-                for (let slot = 0; slot < CONFIG.MEMORY_SLOTS; slot++) {
-                    const p = sourceBank[slot];
-                    out[s][slot] = p == null ? undefined : this.normalizePattern(p, s);
+        normalizeSlots(raw) {
+            const out = Array(CONFIG.MEMORY_SLOTS);
+            if (!Array.isArray(raw)) return out;
+            // v18 et antérieures : banques séparées par signature. On migre les premières
+            // mémoires rencontrées vers huit slots autonomes qui transportent leur signature.
+            const looksLikeLegacyBanks = raw.length === CONFIG.SIGNATURES.length && raw.some(item => Array.isArray(item));
+            if (looksLikeLegacyBanks) {
+                for (let signatureIndex = 0; signatureIndex < raw.length; signatureIndex++) {
+                    const bank = Array.isArray(raw[signatureIndex]) ? raw[signatureIndex] : [];
+                    for (let slot = 0; slot < CONFIG.MEMORY_SLOTS; slot++) {
+                        if (out[slot] || !bank[slot]) continue;
+                        out[slot] = { signatureIndex, pattern:this.normalizePattern(bank[slot], signatureIndex) };
+                    }
                 }
-                if (!out[s].some(Boolean) && defaults[s][0]) out[s][0] = this.normalizePattern(defaults[s][0], s);
+                return out;
+            }
+            for (let slot = 0; slot < CONFIG.MEMORY_SLOTS; slot++) {
+                const entry = raw[slot];
+                if (!entry || typeof entry !== "object") continue;
+                const signatureIndex = Math.round(Util.clamp(entry.signatureIndex, 0, CONFIG.SIGNATURES.length - 1, 0));
+                const pattern = this.normalizePattern(entry.pattern, signatureIndex);
+                if (pattern) out[slot] = { signatureIndex, pattern };
             }
             return out;
         }
-        get(signature, slot) { return this.banks[signature]?.[slot] || null; }
-        set(signature, slot, pattern) {
-            this.banks[signature][slot] = this.normalizePattern(pattern, signature);
-            this.storage.save(this.banks);
+        get(slot) { return this.slots[slot] || null; }
+        set(slot, signatureIndex, pattern) {
+            const normalizedSignature = Math.round(Util.clamp(signatureIndex, 0, CONFIG.SIGNATURES.length - 1, 0));
+            this.slots[slot] = { signatureIndex:normalizedSignature, pattern:this.normalizePattern(pattern, normalizedSignature) };
+            this.storage.save(this.slots);
         }
-        populated(signature) {
-            return this.banks[signature].map((p, i) => p ? i : -1).filter(i => i >= 0);
-        }
+        populated() { return this.slots.map((entry, i) => entry ? i : -1).filter(i => i >= 0); }
         resetMemories() {
-            this.banks = Array.from({ length: CONFIG.SIGNATURES.length }, () => Array(CONFIG.MEMORY_SLOTS));
-            this.storage.save(this.banks);
+            this.slots = Array(CONFIG.MEMORY_SLOTS);
+            this.storage.save(this.slots);
         }
     }
 
@@ -306,6 +304,9 @@
             const kit = CONFIG.KITS[Math.round(Util.clamp(kitIndex, 0, CONFIG.KITS.length - 1, 0))];
             return Promise.all(kit.tracks.map(key => this.loadSample(key)));
         }
+        preloadTracks(trackKeys = []) {
+            return Promise.all(trackKeys.map(key => this.loadSample(key)));
+        }
         async downloadAllSamples(onProgress) {
             const urls = [...new Set(Object.values(CONFIG.SAMPLE_MAP).map(entry => entry[0]))];
             let done = 0, failed = 0;
@@ -327,12 +328,12 @@
                 await Promise.all(keys.filter(key => key.startsWith("battrochtek-audio-")).map(key => caches.delete(key)));
             }
         }
-        async play({ kitIndex, trackIndex, time, trackVolume = 1, masterVolume = 1, velocity = "normal" }) {
+        async play({ kitIndex, trackIndex, sampleKey = null, time, trackVolume = 1, masterVolume = 1, velocity = "normal" }) {
             const ctx = this.ensureContext();
             const kit = CONFIG.KITS[Math.round(Util.clamp(kitIndex, 0, CONFIG.KITS.length - 1, 0))] || CONFIG.KITS[0];
             const safeTrack = Math.round(Util.clamp(trackIndex, 0, CONFIG.METRONOME_TRACK_INDEX, 0));
-            const sampleKey = kit.tracks[safeTrack];
-            const buffer = await this.loadSample(sampleKey);
+            const resolvedSampleKey = sampleKey || kit.tracks[safeTrack];
+            const buffer = await this.loadSample(resolvedSampleKey);
             if (!buffer) return;
             const source = ctx.createBufferSource();
             const gainNode = ctx.createGain();
@@ -366,6 +367,7 @@
             this.signatureIndex = 0;
             this.memorySlot = 0;
             this.kitIndex = 0;
+            this.customTracks = null;
             this.trackVolumes = Array(CONFIG.TRACK_COUNT).fill(1);
             this.masterVolume = 1;
             this.swing = CONFIG.SWING.default;
@@ -384,13 +386,14 @@
         }
         get signature() { return CONFIG.SIGNATURES[this.signatureIndex]; }
         snapshot() {
-            return [Array.from(this.activeCells).sort((a,b)=>a-b), this.kitIndex, this.trackVolumes.slice(), this.tempo, this.masterVolume, this.swing, Array.from(this.accentCells).sort((a,b)=>a-b), Array.from(this.weakCells).sort((a,b)=>a-b), Array.from(this.strongCells).sort((a,b)=>a-b), Array.from(this.ghostCells).sort((a,b)=>a-b)];
+            return [Array.from(this.activeCells).sort((a,b)=>a-b), this.kitIndex, this.trackVolumes.slice(), this.tempo, this.masterVolume, this.swing, Array.from(this.accentCells).sort((a,b)=>a-b), Array.from(this.weakCells).sort((a,b)=>a-b), Array.from(this.strongCells).sort((a,b)=>a-b), Array.from(this.ghostCells).sort((a,b)=>a-b), this.customTracks ? this.customTracks.slice() : null];
         }
         apply(pattern) {
             const p = this.store.normalizePattern(pattern, this.signatureIndex);
             if (!p) return false;
             this.activeCells = new Set(p[0]);
             this.kitIndex = p[1];
+            this.customTracks = p[10] ? p[10].slice() : null;
             this.trackVolumes = p[2];
             this.tempo = p[3];
             this.masterVolume = p[4];
@@ -401,13 +404,36 @@
             this.ghostCells = new Set(p[9] || []);
             return true;
         }
+        sampleForTrack(track) {
+            const kit = CONFIG.KITS[this.kitIndex] || CONFIG.KITS[0];
+            return this.customTracks?.[track] || kit.tracks[track];
+        }
+        currentTrackSamples() {
+            return Array.from({ length: CONFIG.TRACK_COUNT }, (_, i) => this.sampleForTrack(i));
+        }
+        selectKit(index) {
+            this.kitIndex = Math.round(Util.clamp(index, 0, CONFIG.KITS.length - 1, 0));
+            this.customTracks = null;
+        }
+        setTrackSample(track, sampleKey) {
+            const i = Math.round(Util.clamp(track, 0, CONFIG.TRACK_COUNT - 1, 0));
+            if (!SAMPLE_INDEX[sampleKey]) return false;
+            if (!this.customTracks) this.customTracks = this.currentTrackSamples();
+            this.customTracks[i] = sampleKey;
+            return true;
+        }
+        get isCustomKit() { return Array.isArray(this.customTracks); }
         loadSlot(slot) {
             this.memorySlot = Math.round(Util.clamp(slot, 0, CONFIG.MEMORY_SLOTS - 1, 0));
-            const p = this.store.get(this.signatureIndex, this.memorySlot);
-            if (p) this.apply(p);
-            else { this.activeCells.clear(); this.accentCells.clear(); this.weakCells.clear(); this.strongCells.clear(); this.ghostCells.clear(); }
+            const entry = this.store.get(this.memorySlot);
+            if (entry) {
+                this.signatureIndex = entry.signatureIndex;
+                this.apply(entry.pattern);
+            } else {
+                this.activeCells.clear(); this.accentCells.clear(); this.weakCells.clear(); this.strongCells.clear(); this.ghostCells.clear();
+            }
         }
-        saveSlot() { this.store.set(this.signatureIndex, this.memorySlot, this.snapshot()); }
+        saveSlot() { this.store.set(this.memorySlot, this.signatureIndex, this.snapshot()); }
         cycleCell(index) {
             const clearVelocity = () => { this.accentCells.delete(index); this.weakCells.delete(index); this.strongCells.delete(index); this.ghostCells.delete(index); };
             if (!this.activeCells.has(index)) { this.activeCells.add(index); clearVelocity(); return "normal"; }
@@ -448,7 +474,6 @@
             if (preserve) { this.activeCells=remapSet(this.activeCells); this.accentCells=remapSet(this.accentCells); this.weakCells=remapSet(this.weakCells); this.strongCells=remapSet(this.strongCells); this.ghostCells=remapSet(this.ghostCells); }
             else this.clear();
             this.signatureIndex = nextIndex;
-            this.memorySlot = 0;
             return true;
         }
         loadPreset(bankIndex, presetIndex) {
@@ -459,12 +484,10 @@
             const pattern = bank?.[presetIndex];
             if (!pattern) return false;
             this.apply(pattern);
-            this.chainEnabled = false;
-            this.memorySlot = 0;
             return true;
         }
         nextChainSlot() {
-            const slots = this.store.populated(this.signatureIndex);
+            const slots = this.store.populated();
             if (slots.length < 2) { this.chainEnabled = false; return this.memorySlot; }
             const pos = slots.indexOf(this.memorySlot);
             const next = slots[(pos < 0 ? 0 : pos + 1) % slots.length];
@@ -571,7 +594,10 @@
                 this.step = (this.step + 1) % this.seq.signature.steps;
                 if (finishing && this.seq.chainEnabled) {
                     this.seq.nextChainSlot();
+                    this.ui.syncSchedulerStructure();
+                    this.ui.buildGrid();
                     this.ui.renderState();
+                    this.ui.makeKeyboardAccessible();
                 }
                 if (finishing && this.seq.tempoRampEnabled) {
                     const before = this.seq.tempo;
@@ -590,7 +616,7 @@
             const steps = this.seq.signature.steps;
             this.ui.schedulePlayhead(step, time);
             if (this.seq.metronomeEnabled && step % this.seq.signature.group === 0) {
-                this.audio.play({ kitIndex: this.seq.kitIndex, trackIndex: CONFIG.METRONOME_TRACK_INDEX, time, trackVolume: 0.75, masterVolume: this.seq.masterVolume, velocity: "normal" });
+                this.audio.play({ kitIndex: this.seq.kitIndex, trackIndex: CONFIG.METRONOME_TRACK_INDEX, sampleKey: CONFIG.KITS[this.seq.kitIndex].tracks[CONFIG.METRONOME_TRACK_INDEX], time, trackVolume: 0.75, masterVolume: this.seq.masterVolume, velocity: "normal" });
             }
             for (let track = 0; track < CONFIG.TRACK_COUNT; track++) {
                 const cellIndex = track * steps + step;
@@ -599,6 +625,7 @@
                 this.audio.play({
                     kitIndex: this.seq.kitIndex,
                     trackIndex: track,
+                    sampleKey: this.seq.sampleForTrack(track),
                     time,
                     trackVolume: this.seq.trackVolumes[track],
                     masterVolume: this.seq.masterVolume,
@@ -610,28 +637,51 @@
 
     class StorageManager {
         constructor(key) { this.key = key; }
+        static encode(value) {
+            const bytes = new TextEncoder().encode(JSON.stringify(value));
+            let binary = "";
+            for (let i = 0; i < bytes.length; i += 0x8000) binary += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
+            return btoa(binary).replaceAll("+", "-").replaceAll("/", "_").replace(/=+$/u, "");
+        }
+        static decode(value) {
+            const base64 = value.replaceAll("-", "+").replaceAll("_", "/") + "=".repeat((4 - value.length % 4) % 4);
+            const binary = atob(base64);
+            const bytes = Uint8Array.from(binary, char => char.charCodeAt(0));
+            return JSON.parse(new TextDecoder().decode(bytes));
+        }
+        compact(slots) {
+            return { v: 2, slots: slots.map(entry => entry ? { signatureIndex:entry.signatureIndex, pattern:entry.pattern } : null) };
+        }
         load(defaults) {
             try {
-                const raw = localStorage.getItem(this.key);
-                if (!raw) return defaults;
-                const parsed = JSON.parse(raw);
-                const helper = Object.create(PatternStore.prototype);
-                return helper.normalizeBanks(parsed, defaults);
+                const params = new URLSearchParams(location.hash.slice(1));
+                const encoded = params.get(this.key);
+                if (!encoded) return defaults;
+                const payload = StorageManager.decode(encoded);
+                if (payload?.v === 2 && Array.isArray(payload.slots)) return payload.slots;
+                if (payload?.v === 1 && Array.isArray(payload.banks)) return payload.banks;
+                throw new Error("Format de mémoires URL inconnu.");
             } catch (error) {
-                console.warn("Sauvegarde Battrochtek invalide, migration vers les valeurs sûres.", error);
+                console.warn("Hash Battrochtek invalide, chargement des valeurs sûres.", error);
                 return defaults;
             }
         }
-        save(banks) {
-            try { localStorage.setItem(this.key, JSON.stringify(banks)); }
-            catch (error) { console.warn("Impossible de sauvegarder le pattern.", error); }
+        save(slots) {
+            try {
+                const params = new URLSearchParams(location.hash.slice(1));
+                params.set(this.key, StorageManager.encode(this.compact(slots)));
+                const hash = params.toString();
+                history.replaceState(null, "", `${location.pathname}${location.search}#${hash}`);
+            } catch (error) {
+                console.warn("Impossible d’écrire les mémoires dans l’URL.", error);
+            }
         }
     }
 
     class UIController {
         constructor(seq, audio) {
             this.seq = seq; this.audio = audio; this.scheduler = null;
-            this.cells = []; this.memoryButtons = []; this.trackLabels = []; this.trackMuteButtons = []; this.trackSoloButtons = []; this.kitButtons = [];
+            this.cells = []; this.memoryButtons = []; this.trackLabels = []; this.trackSampleSelects = []; this.trackMuteButtons = []; this.trackSoloButtons = []; this.kitButtons = [];
             this.copySnapshot = null; this.playheadTimeouts = []; this.tapTimes = []; this.meterFrame = null;
             this.undoStack = []; this.redoStack = []; this.historyLimit = 30;
             this.dom = this.cacheDom();
@@ -658,41 +708,156 @@
                 masterButton: $("master-level"), masterIcon: $("master-level-icon"), swingInput: $("swing-input"), vu: $("vu-meter"), presetFamily: $("preset-family"), presetGroove: $("preset-groove"), grooveRefresh: $("groove-refresh"), memory: $("memory"), clear: $("clear"), signatureButton: $("signature-button"),
                 signature: $("signature"), signatureNumerator: $("signature-numerator"), signatureDenominator: $("signature-denominator"), metro: $("metronome-button"), chain: $("chain"), play: $("play-button"), icon: $("play-pause-icon"),
                 minus: $("minus-button"), plus: $("plus-button"), tap: $("tap-tempo"), tempo: $("metronome-tempo"), random: $("random"), save: $("save"),
-                undo: $("undo"), redo: $("redo"), tempoRamp: $("tempo-ramp"), kitSelect: $("kit-select"), cacheClear: $("cache-clear")
+                undo: $("undo"), redo: $("redo"), tempoRamp: $("tempo-ramp"), kitSelect: $("kit-select"), cacheClear: $("cache-clear"), themeToggle: $("theme-toggle"), themeIcon: $("theme-toggle-icon"), themeColorMeta: $("theme-color-meta"),
+                shareButton: $("share-button"), shareDialog: $("share-dialog"), shareClose: $("share-close"), shareQr: $("share-qr"), shareQrError: $("share-qr-error"), shareUrl: $("share-url"), shareCopy: $("share-copy"), shareNative: $("share-native")
             };
         }
         init(scheduler) {
             this.scheduler = scheduler;
-            this.buildKits(); this.buildTrackLabels(); this.buildMemory(); this.buildSliders(); this.buildGrid(); this.buildPresetSelector(); this.bindControls(); this.bindUnlock(); this.startVuMeter(); this.renderState(); this.makeKeyboardAccessible();
+            this.setupTheme(); this.setupShare(); this.buildKits(); this.buildTrackLabels(); this.buildMemory(); this.buildSliders(); this.buildGrid(); this.buildPresetSelector(); this.bindControls(); this.bindUnlock(); this.startVuMeter(); this.renderState(); this.makeKeyboardAccessible();
+        }
+        setupTheme() {
+            const systemDark = window.matchMedia?.("(prefers-color-scheme: dark)");
+            let explicitTheme = null;
+            const apply = theme => {
+                const resolved = theme || (systemDark?.matches ? "dark" : "light");
+                document.documentElement.dataset.theme = resolved;
+                document.documentElement.style.colorScheme = resolved;
+                document.body.dataset.theme = resolved;
+                if (this.dom.themeIcon) {
+                    this.dom.themeIcon.classList.toggle("fa-sun", resolved === "dark");
+                    this.dom.themeIcon.classList.toggle("fa-moon", resolved !== "dark");
+                }
+                this.dom.themeToggle?.setAttribute("aria-label", resolved === "dark" ? "Passer au thème clair" : "Passer au thème sombre");
+                this.dom.themeToggle && (this.dom.themeToggle.dataset.btTooltip = resolved === "dark" ? "Thème clair" : "Thème sombre");
+                this.dom.themeColorMeta?.setAttribute("content", resolved === "dark" ? "#101419" : "#f8fafc");
+            };
+            apply(null);
+            this.dom.themeToggle?.addEventListener("click", () => {
+                const current = document.documentElement.dataset.theme || (systemDark?.matches ? "dark" : "light");
+                explicitTheme = current === "dark" ? "light" : "dark";
+                apply(explicitTheme);
+            });
+            systemDark?.addEventListener?.("change", () => { if (!explicitTheme) apply(null); });
+        }
+        setupShare() {
+            if (!this.dom.shareButton || !this.dom.shareDialog) return;
+            const close = () => { if (this.dom.shareDialog.open) this.dom.shareDialog.close(); };
+            const copyUrl = async () => {
+                const url = this.dom.shareUrl?.value || location.href;
+                try {
+                    if (navigator.clipboard?.writeText && window.isSecureContext) await navigator.clipboard.writeText(url);
+                    else {
+                        this.dom.shareUrl?.focus();
+                        this.dom.shareUrl?.select();
+                        if (!document.execCommand("copy")) throw new Error("Copie refusée");
+                    }
+                    if (this.dom.shareCopy) {
+                        const original = this.dom.shareCopy.innerHTML;
+                        this.dom.shareCopy.innerHTML = '<i class="fa-solid fa-check" aria-hidden="true"></i> Lien copié';
+                        setTimeout(() => { if (this.dom.shareCopy) this.dom.shareCopy.innerHTML = original; }, 1600);
+                    }
+                    this.status("Lien du groove copié.");
+                } catch (error) {
+                    console.warn("Copie du lien impossible.", error);
+                    this.status("Impossible de copier automatiquement le lien. Sélectionne-le manuellement.");
+                    this.dom.shareUrl?.focus();
+                    this.dom.shareUrl?.select();
+                }
+            };
+            const open = () => {
+                /* Le lien partagé doit contenir le groove actuellement affiché. */
+                this.seq.saveSlot();
+                this.renderMemory();
+                /* Le QR partage le groove courant uniquement : le lien reste court et importable,
+                   tandis que l’URL de la session continue de conserver les 8 mémoires. */
+                const shareSlots = Array(CONFIG.MEMORY_SLOTS);
+                shareSlots[this.seq.memorySlot] = { signatureIndex:this.seq.signatureIndex, pattern:this.seq.snapshot() };
+                const shareLocation = new URL(location.href);
+                const shareParams = new URLSearchParams(shareLocation.hash.slice(1));
+                shareParams.set("mem", StorageManager.encode({ v: 2, slots: shareSlots.map(entry => entry ?? null) }));
+                shareLocation.hash = shareParams.toString();
+                const url = shareLocation.href;
+                if (this.dom.shareUrl) this.dom.shareUrl.value = url;
+                if (this.dom.shareQrError) { this.dom.shareQrError.hidden = true; this.dom.shareQrError.textContent = ""; }
+                if (this.dom.shareQr) this.dom.shareQr.hidden = false;
+                try {
+                    if (!window.BtQRCode?.renderCanvas) throw new Error("Générateur QR indisponible");
+                    window.BtQRCode.renderCanvas(this.dom.shareQr, url, { size: 280, quiet: 4 });
+                } catch (error) {
+                    console.warn("QR code impossible à générer.", error);
+                    if (this.dom.shareQr) this.dom.shareQr.hidden = true;
+                    if (this.dom.shareQrError) {
+                        this.dom.shareQrError.hidden = false;
+                        this.dom.shareQrError.textContent = "Le lien est trop long pour être affiché en QR code. Le bouton Copier reste disponible.";
+                    }
+                }
+                const tooltip = document.getElementById("bt-tooltip");
+                tooltip?.classList.remove("is-visible");
+                tooltip?.setAttribute("aria-hidden", "true");
+                this.dom.shareButton.blur();
+                this.dom.shareDialog.showModal();
+                this.dom.shareClose?.focus();
+            };
+            this.press(this.dom.shareButton, open);
+            this.dom.shareClose?.addEventListener("click", close);
+            this.dom.shareCopy?.addEventListener("click", copyUrl);
+            if (navigator.share && this.dom.shareNative) {
+                this.dom.shareNative.hidden = false;
+                this.dom.shareNative.addEventListener("click", async () => {
+                    try { await navigator.share({ title: "Battrochtek", text: "Mon groove Battrochtek", url: this.dom.shareUrl?.value || location.href }); }
+                    catch (error) { if (error?.name !== "AbortError") console.warn("Partage natif impossible.", error); }
+                });
+            }
+            this.dom.shareDialog.addEventListener("click", event => { if (event.target === this.dom.shareDialog) close(); });
         }
         buildKits() {
             if (!this.dom.kitSelect) return;
-            this.dom.kitSelect.innerHTML = CONFIG.KITS.map((kit,i)=>`<option value="${i}">${kit.name}</option>`).join("");
+            this.dom.kitSelect.innerHTML = CONFIG.KITS.map((kit,i)=>`<option value="${i}">${kit.name}</option>`).join("") + '<option value="custom" disabled>CUSTOM</option>';
             this.dom.kitSelect.value = String(this.seq.kitIndex);
             this.dom.kitSelect.addEventListener("change", async () => {
-                this.seq.kitIndex = Math.round(Util.clamp(Number(this.dom.kitSelect.value),0,CONFIG.KITS.length-1,0));
-                this.renderKit(); this.status(`Chargement ${CONFIG.KITS[this.seq.kitIndex].name}…`);
-                const buffers = await this.audio.preloadKit(this.seq.kitIndex);
-                this.status(buffers.every(Boolean) ? `${CONFIG.KITS[this.seq.kitIndex].name} prêt.` : "Kit chargé partiellement : samples manquants.");
+                if (this.dom.kitSelect.value === "custom") return;
+                this.seq.selectKit(Number(this.dom.kitSelect.value));
+                this.renderKit();
+                const kit = CONFIG.KITS[this.seq.kitIndex];
+                this.status(`Chargement ${kit.name}…`);
+                const buffers = await this.audio.preloadTracks(this.seq.currentTrackSamples());
+                this.status(buffers.every(Boolean) ? `${kit.name} prêt.` : "Kit chargé partiellement : samples manquants.");
             });
         }
         buildTrackLabels() {
             this.dom.tracks.innerHTML = "";
-            this.trackLabels = []; this.trackMuteButtons = []; this.trackSoloButtons = [];
+            this.trackLabels = []; this.trackSampleSelects = []; this.trackMuteButtons = []; this.trackSoloButtons = [];
             for (let i = 0; i < CONFIG.TRACK_COUNT; i++) {
                 const row = document.createElement("div");
                 row.className = "track-row";
                 const label = document.createElement("div"); label.className = "bt-led track";
-                label.style.color = i < 4 ? "#dde" : i < 8 ? "#9df" : "#d9f";
+                const select = document.createElement("select"); select.className = "track-sample-select"; select.setAttribute("aria-label", `Son piste ${i + 1}`);
+                const allowed = new Set(TRACK_SAMPLE_TYPES[i]);
+                const choices = SAMPLE_LIBRARY.filter(sample => allowed.has(sample.type));
+                const grouped = Object.groupBy ? Object.groupBy(choices, sample => sample.type) : choices.reduce((acc, sample) => ((acc[sample.type] ||= []).push(sample), acc), {});
+                Object.entries(grouped).forEach(([type, samples]) => {
+                    const group = document.createElement("optgroup"); group.label = type.toUpperCase();
+                    samples.forEach(sample => { const option = document.createElement("option"); option.value = sample.key; option.textContent = sample.label; group.appendChild(option); });
+                    select.appendChild(group);
+                });
+                select.addEventListener("change", async event => {
+                    this.pushHistory();
+                    if (!this.seq.setTrackSample(i, event.target.value)) return;
+                    this.renderKit();
+                    await this.audio.loadSample(event.target.value);
+                    this.status(`Kit Custom : piste ${i + 1} → ${SAMPLE_INDEX[event.target.value]?.label || event.target.value}.`);
+                });
+                label.appendChild(select);
                 const controls = document.createElement("div"); controls.className = "track-controls";
-                const mute = document.createElement("button"); mute.type = "button"; mute.className = "track-toggle mute"; mute.textContent = "M"; mute.title = `Mute piste ${i + 1}`;
-                const solo = document.createElement("button"); solo.type = "button"; solo.className = "track-toggle solo"; solo.textContent = "S"; solo.title = `Solo piste ${i + 1}`;
+                const mute = document.createElement("button"); mute.type = "button"; mute.className = "track-toggle mute"; mute.textContent = "M"; mute.dataset.btTooltip = `Mute piste ${i + 1}`;
+                const solo = document.createElement("button"); solo.type = "button"; solo.className = "track-toggle solo"; solo.textContent = "S"; solo.dataset.btTooltip = `Solo piste ${i + 1}`;
                 mute.addEventListener("click", e => { e.stopPropagation(); this.seq.toggleMute(i); this.renderTrackControls(); });
                 solo.addEventListener("click", e => { e.stopPropagation(); this.seq.toggleSolo(i); this.renderTrackControls(); });
                 controls.append(mute, solo);
                 row.append(label, controls);
                 this.dom.tracks.appendChild(row);
-                this.trackLabels.push(label); this.trackMuteButtons.push(mute); this.trackSoloButtons.push(solo);
+                this.trackLabels.push(label); this.trackSampleSelects.push(select); this.trackMuteButtons.push(mute); this.trackSoloButtons.push(solo);
             }
         }
         buildMemory() {
@@ -701,7 +866,7 @@
             const separator = this.dom.memory.querySelector(".memory-separator");
             for (let i = 0; i < CONFIG.MEMORY_SLOTS; i++) {
                 const button = document.createElement("button"); button.type = "button"; button.className = "bt-button pattern"; button.innerHTML = `<span>${i + 1}</span>`;
-                button.title = `Mémoire ${i + 1} — raccourci ${i + 1}`;
+                button.dataset.btTooltip = `Mémoire ${i + 1} — vide — raccourci ${i + 1}`;
                 button.addEventListener("pointerdown", e => { e.preventDefault(); this.selectMemorySlot(i); });
                 this.dom.memory.insertBefore(button, separator); this.memoryButtons.push(button);
             }
@@ -735,9 +900,12 @@
             if (!this.dom.presetFamily || !this.dom.presetGroove) return;
             const family = Number(this.dom.presetFamily.value) || 0;
             const groove = Number(this.dom.presetGroove.value) || 0;
-            this.scheduler?.stop();
             const before = recordHistory ? this.captureState() : null;
-            if (this.seq.loadPreset(family, groove)) { if (recordHistory) this.pushHistory(before); this.buildGrid(); this.renderState(); this.makeKeyboardAccessible(); }
+            if (this.seq.loadPreset(family, groove)) {
+                if (recordHistory) this.pushHistory(before);
+                this.syncSchedulerStructure();
+                this.buildGrid(); this.renderState(); this.makeKeyboardAccessible();
+            }
         }
         startVuMeter() {
             if (!this.dom.vu) return;
@@ -757,7 +925,9 @@
             this.dom.leds.style.setProperty("--step-count", String(steps));
             for (let i = 0; i < steps; i++) {
                 const led = document.createElement("div"); led.className = "bt-led beat-led";
-                if (i % group === 0) led.classList.add("beat-accent"); if (i === 0) led.classList.add("bar-accent"); this.dom.leds.appendChild(led);
+                if (i % group === 0) led.classList.add("beat-accent");
+                if (i % this.seq.signature.barSteps === 0) led.classList.add("bar-accent");
+                this.dom.leds.appendChild(led);
             }
             const width = (100 - 0.2 * steps) / steps;
             for (let track = 0; track < CONFIG.TRACK_COUNT; track++) {
@@ -789,9 +959,11 @@
         }
         selectMemorySlot(index) {
             const slot = Math.round(Util.clamp(index, 0, CONFIG.MEMORY_SLOTS - 1, 0));
-            this.scheduler.stop();
             this.seq.loadSlot(slot);
+            this.syncSchedulerStructure();
+            this.buildGrid();
             this.renderState();
+            this.makeKeyboardAccessible();
             this.status(`Mémoire ${slot + 1}.`);
         }
         copyCurrentPattern() {
@@ -801,8 +973,9 @@
         pastePatternToCurrentMemory() {
             if (!this.copySnapshot) { this.status("Rien à coller : utilise d’abord Ctrl+C."); return; }
             const before = this.captureState();
-            this.seq.store.set(this.seq.signatureIndex, this.seq.memorySlot, this.copySnapshot);
+            this.seq.store.set(this.seq.memorySlot, this.seq.signatureIndex, this.copySnapshot);
             this.seq.loadSlot(this.seq.memorySlot);
+            this.syncSchedulerStructure();
             this.pushHistory(before);
             this.renderState();
             this.status(`Pattern collé en mémoire ${this.seq.memorySlot + 1}.`);
@@ -810,18 +983,21 @@
         duplicateToNextMemory() {
             const next = (this.seq.memorySlot + 1) % CONFIG.MEMORY_SLOTS;
             const snapshot = this.seq.snapshot();
-            this.seq.store.set(this.seq.signatureIndex, next, snapshot);
+            this.seq.store.set(next, this.seq.signatureIndex, snapshot);
             this.seq.loadSlot(next);
+            this.syncSchedulerStructure();
+            this.buildGrid();
             this.renderState();
+            this.makeKeyboardAccessible();
             this.status(`Pattern dupliqué vers la mémoire ${next + 1}.`);
         }
         bindControls() {
             this.press(this.dom.clear, () => { this.pushHistory(); this.seq.clear(); this.resetPresetSelectors(); this.renderGrid(); });
-            const applySignature = () => { this.scheduler.stop(); const n=Number(this.dom.signatureNumerator?.value), d=Number(this.dom.signatureDenominator?.value); const before=this.captureState(); if(this.seq.setSignature(n,d,true)){ this.pushHistory(before); this.buildGrid(); this.renderState(); this.makeKeyboardAccessible(); } };
+            const applySignature = () => { const n=Number(this.dom.signatureNumerator?.value), d=Number(this.dom.signatureDenominator?.value); const before=this.captureState(); if(this.seq.setSignature(n,d,true)){ this.pushHistory(before); this.syncSchedulerStructure(); this.buildGrid(); this.renderState(); this.makeKeyboardAccessible(); } };
             this.dom.signatureNumerator?.addEventListener("change", applySignature);
             this.dom.signatureDenominator?.addEventListener("change", applySignature);
             this.dom.metro.addEventListener("pointerdown", e => { e.preventDefault(); this.seq.metronomeEnabled = !this.seq.metronomeEnabled; this.renderButtons(); });
-            this.dom.chain.addEventListener("pointerdown", e => { e.preventDefault(); if (this.seq.store.populated(this.seq.signatureIndex).length >= 2) this.seq.chainEnabled = !this.seq.chainEnabled; this.renderButtons(); });
+            this.dom.chain.addEventListener("pointerdown", e => { e.preventDefault(); if (this.seq.store.populated().length >= 2) this.seq.chainEnabled = !this.seq.chainEnabled; this.renderButtons(); });
             this.dom.play.addEventListener("pointerdown", e => { e.preventDefault(); this.scheduler.toggle(); });
             this.bindTempo(this.dom.minus, -1); this.bindTempo(this.dom.plus, 1);
             if (this.dom.tap) this.press(this.dom.tap, () => this.handleTapTempo());
@@ -833,12 +1009,12 @@
             if (this.dom.presetGroove) this.dom.presetGroove.addEventListener("change", () => this.loadSelectedPreset());
             if (this.dom.grooveRefresh) this.press(this.dom.grooveRefresh, () => { this.pushHistory(); this.loadSelectedPreset(false); });
             this.press(this.dom.random, () => { this.pushHistory(); this.seq.variation(this.seq.store.presets.meta?.[Number(this.dom.presetFamily?.value)||0]?.name || ""); this.renderGrid(); });
-            this.press(this.dom.save, () => { this.scheduler.stop(); this.seq.saveSlot(); this.renderMemory(); });
+            this.press(this.dom.save, () => { this.seq.saveSlot(); this.renderMemory(); });
             if (this.dom.cacheClear) this.press(this.dom.cacheClear, () => {
-                this.scheduler.stop();
                 this.seq.store.resetMemories();
                 this.seq.memorySlot = 0;
                 this.seq.loadSlot(0);
+                this.syncSchedulerStructure();
                 this.seq.chainEnabled = false;
                 this.undoStack.length = 0;
                 this.redoStack.length = 0;
@@ -884,14 +1060,23 @@
                 if (mod && !editing && key === "c") { e.preventDefault(); this.copyCurrentPattern(); return; }
                 if (mod && !editing && key === "v") { e.preventDefault(); this.pastePatternToCurrentMemory(); return; }
                 if (mod && !editing && key === "d") { e.preventDefault(); this.duplicateToNextMemory(); return; }
-                if (mod && !editing && key === "s") { e.preventDefault(); this.scheduler.stop(); this.seq.saveSlot(); this.renderMemory(); this.status(`Mémoire ${this.seq.memorySlot + 1} sauvegardée.`); return; }
+                if (mod && !editing && key === "s") { e.preventDefault(); this.seq.saveSlot(); this.renderMemory(); this.status(`Mémoire ${this.seq.memorySlot + 1} sauvegardée.`); return; }
+                if (e.code === "Space" && !mod && !e.altKey) { e.preventDefault(); this.scheduler.toggle(); return; }
                 if (editing || mod || e.altKey) return;
                 if (/^[1-8]$/.test(e.key)) { e.preventDefault(); this.selectMemorySlot(Number(e.key) - 1); return; }
-                if (e.code === "Space") { e.preventDefault(); this.scheduler.toggle(); return; }
                 if (key === "t") { e.preventDefault(); this.handleTapTempo(); return; }
                 if (key === "m") { e.preventDefault(); this.seq.metronomeEnabled = !this.seq.metronomeEnabled; this.renderButtons(); return; }
             });
-            document.addEventListener("visibilitychange", () => { if (document.hidden) { this.scheduler.stop(); this.audio.suspend(); } });
+            document.addEventListener("visibilitychange", () => {
+                if (document.hidden) this.audio.suspend();
+                else if (this.scheduler.playing) this.audio.resume().catch(error => console.warn("Reprise audio impossible.", error));
+            });
+        }
+        syncSchedulerStructure() {
+            if (!this.scheduler) return;
+            const steps = Math.max(1, this.seq.signature.steps);
+            this.scheduler.step = ((this.scheduler.step % steps) + steps) % steps;
+            this.clearPlayhead();
         }
         bindNumberWheel(input, step, min, max, apply) {
             input.addEventListener("wheel", e => {
@@ -931,16 +1116,20 @@
             ["pointerup","pointerleave","pointercancel"].forEach(type => button.addEventListener(type, () => button.classList.remove("bt-buttondown")));
         }
         bindUnlock() {
-            const unlock = async () => { try { this.status("Chargement du kit audio…"); await this.audio.resume(); const buffers = await this.audio.preloadKit(this.seq.kitIndex); const missing = buffers.filter(Boolean).length !== buffers.length; this.status(missing ? "Kit chargé partiellement : certains samples sont indisponibles." : "Kit audio prêt."); } catch (e) { console.warn(e); this.status(`Erreur audio : ${e.message || e}`); } };
+            const unlock = async () => { try { this.status("Chargement du kit audio…"); await this.audio.resume(); const buffers = await this.audio.preloadTracks(this.seq.currentTrackSamples()); const missing = buffers.filter(Boolean).length !== buffers.length; this.status(missing ? "Kit chargé partiellement : certains samples sont indisponibles." : "Kit audio prêt."); } catch (e) { console.warn(e); this.status(`Erreur audio : ${e.message || e}`); } };
             ["pointerdown","keydown","touchstart"].forEach(type => document.addEventListener(type, unlock, { once: true, passive: true }));
         }
         renderState() { this.renderSignature(); this.renderTempo(); this.renderKit(); this.renderGrid(); this.renderSliders(); this.renderSwing(); this.renderTrackControls(); this.renderMemory(); this.renderButtons(); }
         renderSignature() { if(this.dom.signatureNumerator)this.dom.signatureNumerator.value=String(this.seq.signature.numerator); if(this.dom.signatureDenominator)this.dom.signatureDenominator.value=String(this.seq.signature.denominator); if(this.dom.signature)this.dom.signature.setAttribute("aria-label",`Signature ${this.seq.signature.label}`); }
         renderTempo() { if (this.dom.tempo) this.dom.tempo.value = String(this.seq.tempo); }
         renderKit() {
-            if (this.dom.kitSelect) this.dom.kitSelect.value = String(this.seq.kitIndex);
             const kit = CONFIG.KITS[this.seq.kitIndex] || CONFIG.KITS[0];
-            this.trackLabels.forEach((label,i)=>label.textContent = CONFIG.SAMPLE_MAP[kit.tracks[i]]?.[1] || `TRACK ${i+1}`);
+            if (this.dom.kitSelect) {
+                this.dom.kitSelect.value = this.seq.isCustomKit ? "custom" : String(this.seq.kitIndex);
+                this.dom.kitSelect.style.setProperty("--kit-color", kit.color);
+                this.dom.kitSelect.parentElement?.style.setProperty("--kit-color", kit.color);
+            }
+            this.trackSampleSelects.forEach((select, i) => { select.value = this.seq.sampleForTrack(i); });
         }
         renderCell(index) {
             const cell=this.cells[index]; if(!cell)return;
@@ -966,7 +1155,7 @@
             this.dom.masterButton.classList.add(`volume-${state}`);
             if (this.dom.masterIcon) this.dom.masterIcon.className = `fa-solid ${icon}`;
             this.dom.masterButton.setAttribute("aria-label", `Volume master : ${label}`);
-            this.dom.masterButton.title = `Volume master : ${label}`;
+            this.dom.masterButton.dataset.btTooltip = `Volume master : ${label}`;
             this.syncUiStore();
         }
         renderSliders() {
@@ -974,8 +1163,15 @@
             this.renderMaster();
         }
         renderMemory() {
-            this.memoryButtons.forEach((b,i)=>{ const saved=!!this.seq.store.get(this.seq.signatureIndex,i); b.classList.toggle("bt-buttondown",i===this.seq.memorySlot); b.classList.toggle("memory-saved",saved); b.classList.toggle("memory-empty",!saved); });
-            if (this.seq.store.populated(this.seq.signatureIndex).length < 2) this.seq.chainEnabled = false;
+            this.memoryButtons.forEach((b,i)=>{
+                const saved = !!this.seq.store.get(i);
+                const selected = i === this.seq.memorySlot;
+                b.classList.toggle("bt-buttondown", selected);
+                b.classList.toggle("memory-saved", saved);
+                b.classList.toggle("memory-empty", !saved);
+                b.dataset.btTooltip = `Mémoire ${i + 1} — ${saved ? "sauvegardée" : "vide"}${selected ? " — sélectionnée" : ""} — raccourci ${i + 1}`;
+            });
+            if (this.seq.store.populated().length < 2) this.seq.chainEnabled = false;
             this.syncUiStore();
         }
         renderButtons() {
@@ -992,10 +1188,10 @@
         captureState() { return { signatureIndex:this.seq.signatureIndex, memorySlot:this.seq.memorySlot, pattern:this.seq.snapshot() }; }
         restoreState(state) {
             if (!state) return;
-            this.scheduler?.stop();
             this.seq.signatureIndex = state.signatureIndex;
             this.seq.memorySlot = state.memorySlot ?? 0;
             this.seq.apply(state.pattern);
+            this.syncSchedulerStructure();
             this.buildGrid(); this.renderState(); this.makeKeyboardAccessible();
         }
         pushHistory(state = this.captureState()) {
@@ -1018,7 +1214,7 @@
         }
         status(message) {
             window.dispatchEvent(new CustomEvent("battrochtek-status", { detail:String(message || "") }));
-            const help = document.querySelector("#bt-help .bt-help-text"); if (help && message) help.textContent = String(message);
+            const live = document.querySelector("#bt-status-live"); if (live && message) live.textContent = String(message);
         }
         makeKeyboardAccessible() {
             document.querySelectorAll(".bt-button, .transport-button").forEach(button => {
@@ -1056,12 +1252,12 @@
     const App = {
         init() {
             const presets = createFactoryPresets();
-            const storage = new StorageManager(CONFIG.STORAGE_KEY);
+            const storage = new StorageManager("mem");
             const store = new PatternStore(storage, presets);
-            // La normalisation complète est faite ici après construction de PatternStore.
-            store.banks = store.normalizeBanks(store.banks, store.createDefaults(presets));
+            // Les 8 mémoires sont autonomes : chacune transporte signature, tempo et pattern.
+            storage.save(store.slots);
             const sequencer = new Sequencer(store);
-            const first = store.populated(0)[0] ?? 0;
+            const first = store.populated()[0] ?? 0;
             sequencer.loadSlot(first);
             const audio = new AudioEngine();
             const ui = new UIController(sequencer, audio);
@@ -1071,16 +1267,30 @@
         }
     };
 
+    let appStarted = false;
     const startApp = () => {
-        if (!window.Alpine?.store?.("ui")) {
-            const message = "Erreur de démarrage : Alpine.js local n’est pas disponible. Vérifie vendor/alpine/alpine.min.js puis recharge la page.";
-            window.dispatchEvent(new CustomEvent("battrochtek-status", { detail: message }));
-            console.error(message);
-            return;
-        }
+        if (appStarted || !window.Alpine?.store?.("ui")) return false;
+        appStarted = true;
         App.init();
+        return true;
     };
 
-    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", startApp, { once: true });
-    else startApp();
+    const reportMissingAlpine = () => {
+        if (appStarted || startApp()) return;
+        const message = "Erreur de démarrage : Alpine.js local n’est pas disponible. Exécute npm install pour générer vendor/alpine/alpine.min.js, puis recharge la page.";
+        window.dispatchEvent(new CustomEvent("battrochtek-status", { detail: message }));
+        console.error(message);
+    };
+
+    // Le bundle CDN d'Alpine démarre via microtask. Lors d'un rechargement avec
+    // service worker, DOMContentLoaded peut arriver avant la création du store.
+    // On tente donc au DOM ready ET à la fin de l'initialisation Alpine.
+    document.addEventListener("alpine:initialized", startApp, { once: true });
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", () => {
+            if (!startApp()) window.setTimeout(reportMissingAlpine, 500);
+        }, { once: true });
+    } else if (!startApp()) {
+        window.setTimeout(reportMissingAlpine, 500);
+    }
 })();

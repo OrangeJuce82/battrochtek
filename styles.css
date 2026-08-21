@@ -311,6 +311,7 @@ button i { pointer-events: none; }
     white-space: nowrap;
 }
 .control-field select {
+    margin: 0;
     width: 100%;
     height: var(--bt-control-h);
     min-height: var(--bt-control-h);

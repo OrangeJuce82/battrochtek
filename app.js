@@ -1042,9 +1042,17 @@
                 this.dom.practiceMode.value = this.practice.enabled ? this.practice.mode : "tempo";
             };
             this.press(this.dom.practiceButton, () => {
+                // Opening or closing the practice panel always stops playback.
+                this.scheduler?.stop();
+
                 const show = this.dom.practicePanel.hidden;
-                if (show) fill();
-                this.dom.practicePanel.hidden = !show;
+                if (show) {
+                    fill();
+                    this.dom.practicePanel.hidden = false;
+                } else {
+                    this.dom.practicePanel.hidden = true;
+                    if (this.practice.enabled) this.practice.stop({ silent:true });
+                }
                 this.renderPractice();
             });
         }

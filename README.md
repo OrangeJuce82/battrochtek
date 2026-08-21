@@ -66,3 +66,11 @@ Les sources sont placées dans `grooves/`. Les scripts `grooves:sync` et `groove
 ## Déploiement
 
 Le workflow GitHub Actions construit et publie automatiquement la PWA sur GitHub Pages depuis `main`.
+
+## Groove Library v2
+
+La v37 transforme la banque en bibliothèque éditoriale : **1239 grooves** au build actuel, dont **132 grooves Battrochtek Library v2** ciblés sur les zones sous-représentées (Cumbia/Latin, Afrique/World, Country, électronique, Hip-Hop, Jazz moderne, Concepts). Les grooves v2 disposent de 4 mémoires évolutives, et les Cumbia de 8 mémoires.
+
+Les métadonnées internes comprennent désormais `family`, `style`, `substyle`, `origin`, `feel`, `signature`, `bpm`, `difficulty`, `sourceType`, `artist`, `song`, `drummer` et `tags`. La recherche globale indexe ces champs sans alourdir l'interface Style → Groove.
+
+Commandes : `npm run grooves:library` régénère la couche éditoriale ; `npm run grooves:build` la régénère puis reconstruit le bundle complet sans suppression automatique ; `npm run grooves:clean` reste disponible pour un audit/dédoublonnage volontaire.

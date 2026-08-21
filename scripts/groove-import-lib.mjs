@@ -137,7 +137,7 @@ export function midiToMemoryBank(bytes,meta={}) {
     memories.push({signature:`${n}/${d}`,pattern});
   }
   if (!memories.length) return null;
-  return {
+  const groove={
     source:meta.source||"external",
     sourceLabel:meta.sourceLabel||meta.source||"External",
     family:meta.family||"MIDI",
@@ -150,6 +150,7 @@ export function midiToMemoryBank(bytes,meta={}) {
     attribution:meta.attribution||"",
     origin:meta.origin||""
   };
+  return {...groove,...classifyMetadata(groove,meta)};
 }
 
 const IGNORED_GROOVE_FILES = new Set(["clean-report.json", "external-grooves.js"]);
@@ -183,13 +184,41 @@ export async function sourceDirectories(input) {
   return dirs.sort((a,b)=>a.label.localeCompare(b.label,undefined,{numeric:true,sensitivity:"base"}));
 }
 
+
+function classifyMetadata(groove, context={}) {
+  const text=`${groove?.family||context.family||""} ${groove?.name||context.name||""} ${groove?.origin||context.origin||""}`.toLowerCase();
+  const tags=new Set(Array.isArray(groove?.tags)?groove.tags:[]);
+  const add=(...values)=>values.filter(Boolean).forEach(v=>tags.add(v));
+  let style=groove?.style || groove?.family || context.family || "Grooves";
+  let substyle=groove?.substyle || "";
+  let feel=groove?.feel || "straight";
+  let origin=groove?.origin || context.origin || "";
+  let difficulty=groove?.difficulty || "intermediate";
+  const rules=[
+    [/cumbia/,"Cumbia","cumbia"],[/songo/,"Songo","songo"],[/mozambique/,"Mozambique","mozambique"],[/timba/,"Timba","timba"],[/bossa/,"Bossa Nova","bossa"],[/samba/,"Samba","samba"],
+    [/afro.?beat/,"Afrobeat","afrobeat"],[/high.?life/,"Highlife","highlife"],[/gospel/,"Gospel","gospel"],[/new.?orleans|second.?line/,"New Orleans","second-line"],
+    [/motown/,"Motown","motown"],[/shuffle/,"Shuffle","shuffle"],[/swing/,"Swing","swing"],[/reggae/,"Reggae","reggae"],[/ska/,"Ska","ska"],
+    [/hip.?hop|boom.?bap/,"Hip-Hop","hip-hop"],[/disco/,"Disco","disco"],[/country/,"Country","country"],[/funk/,"Funk","funk"],[/soul/,"Soul","soul"],[/rock/,"Rock","rock"],[/jazz/,"Jazz","jazz"]
+  ];
+  for (const [re,st,tag] of rules) if (re.test(text)) { if(!groove?.style) style=st; add(tag); break; }
+  if (/12\/8|6\/8/.test(String(groove?.signature||""))) { feel=groove?.feel||"compound"; add("compound-meter"); }
+  if (/7\/8|9\/8|5\/4|7\/4/.test(String(groove?.signature||""))) { add("odd-meter"); difficulty=groove?.difficulty||"advanced"; }
+  if (/brush/.test(text)) add("brushes");
+  if (/half.?time/.test(text)) { feel=groove?.feel||"half-time"; add("half-time"); }
+  if (/ghost/.test(text)) add("ghost-notes");
+  if (/linear/.test(text)) add("linear");
+  if (/live|session|performance/.test(text)) add("human-performance");
+  const sourceType=groove?.sourceType || (/groove midi dataset/i.test(context.sourceLabel||groove?.sourceLabel||"")?"human-midi":/drum machine/i.test(context.sourceLabel||groove?.sourceLabel||"")?"drum-machine":"curated");
+  return {style,substyle,feel,difficulty,origin,sourceType,tags:[...tags]};
+}
+
 function normalizeJsonGroove(groove, context) {
   if (!groove || typeof groove!=="object") return null;
   const memories=Array.isArray(groove.memories) ? groove.memories.filter(m=>Array.isArray(m?.pattern)).slice(0,8) : [];
   const pattern=memories[0]?.pattern || groove.pattern;
   if (!Array.isArray(pattern)) return null;
   const signature=String(groove.signature || memories[0]?.signature || "4/4");
-  return {
+  const base={
     ...groove,
     source:slug(context.sourceLabel), sourceLabel:context.sourceLabel,
     family:groove.family || context.family || "Grooves",
@@ -200,6 +229,7 @@ function normalizeJsonGroove(groove, context) {
     memories:memories.length ? memories : [{signature,pattern}],
     origin:groove.origin || context.origin
   };
+  return {...base,...classifyMetadata(base,context)};
 }
 
 async function importJsonFile(file,sourceDir,label) {

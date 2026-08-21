@@ -1,6 +1,6 @@
 {
   "name": "battrochtek",
-  "version": "36.15.0",
+  "version": "37.0.0",
   "private": true,
   "description": "Drum machine et bibliothèque de grooves PWA basée sur la Web Audio API.",
   "scripts": {
@@ -15,11 +15,12 @@
     "build": "node scripts/build-pages.mjs",
     "grooves:sync": "node scripts/sync-grooves.mjs",
     "grooves:clean": "node scripts/clean-grooves.mjs",
-    "grooves:build": "node scripts/clean-grooves.mjs"
+    "grooves:build": "node scripts/build-library-v2.mjs && node scripts/sync-grooves.mjs",
+    "grooves:library": "node scripts/build-library-v2.mjs"
   },
   "dependencies": {
-    "alpinejs": "3.15.12",
-    "@knadh/oat": "^0.4.1"
+    "@knadh/oat": "^0.4.1",
+    "alpinejs": "3.15.12"
   },
   "devDependencies": {
     "eslint": "^9.0.0",

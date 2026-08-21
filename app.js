@@ -229,6 +229,10 @@
                     signature:CONFIG.SIGNATURES[signatureIndex].label, bpm:Number(groove.bpm)||120,
                     source:group.source, sourceLabel:group.sourceLabel,
                     attribution:groove.attribution||"", origin:groove.origin||"",
+                    style:groove.style||group.name, substyle:groove.substyle||"", feel:groove.feel||"",
+                    difficulty:groove.difficulty||"", sourceType:groove.sourceType||"",
+                    artist:groove.artist||"", song:groove.song||"", drummer:groove.drummer||"",
+                    tags:Array.isArray(groove.tags)?groove.tags:[],
                     memories:memories.map(memory=>({
                         signatureIndex:signatureIndexOf(...String(memory.signature||groove.signature||"4/4").split("/").map(Number)),
                         pattern:Util.clone(memory.pattern)
@@ -1679,8 +1683,11 @@
                     groove:groove.name,
                     signature:groove.signature||"",
                     bpm:groove.bpm||"",
+                    style:groove.style||"", substyle:groove.substyle||"", feel:groove.feel||"",
+                    difficulty:groove.difficulty||"", origin:groove.origin||"", sourceType:groove.sourceType||"",
+                    artist:groove.artist||"", song:groove.song||"", drummer:groove.drummer||"", tags:groove.tags||[]
                 };
-                entry.search=`${entry.groove} ${entry.family} ${entry.sourceLabel} ${entry.signature} ${entry.bpm}`.toLocaleLowerCase();
+                entry.search=`${entry.groove} ${entry.family} ${entry.sourceLabel} ${entry.signature} ${entry.bpm} ${entry.style} ${entry.substyle} ${entry.feel} ${entry.difficulty} ${entry.origin} ${entry.sourceType} ${entry.artist} ${entry.song} ${entry.drummer} ${(entry.tags||[]).join(" ")}`.toLocaleLowerCase();
                 this.grooveSearchEntries.push(entry);
             }));
 

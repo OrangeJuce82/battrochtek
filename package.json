@@ -1,6 +1,6 @@
 {
   "name": "battrochtek",
-  "version": "36.6.0",
+  "version": "36.12.0",
   "private": true,
   "description": "Drum machine et bibliothèque de grooves PWA basée sur la Web Audio API.",
   "scripts": {

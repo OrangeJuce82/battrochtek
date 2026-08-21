@@ -79,7 +79,7 @@ button i { pointer-events: none; }
 }
 .drum-machine-container {
     width: min(calc(100% - 24px), var(--bt-max-width));
-    min-width: 730px;
+    min-width: 0;
     margin: 0 auto;
 }
 .drum-machine-clear { clear: both; }
@@ -274,7 +274,7 @@ button i { pointer-events: none; }
 .score-toolbar .preset-selector {
     width: 100%;
     display: grid;
-    grid-template-columns: minmax(210px, .9fr) minmax(150px, .7fr) minmax(280px, 1.7fr) 38px auto;
+    grid-template-columns: minmax(210px, .9fr) minmax(150px, .7fr) minmax(280px, 1.7fr) 38px 38px;
     align-items: stretch;
     gap: var(--bt-gap);
 }
@@ -287,9 +287,27 @@ button i { pointer-events: none; }
     margin: 0;
 }
 .instrument-toolbar {
-    justify-content: flex-end;
-    gap: 22px;
+    justify-content: space-between;
+    gap: 18px;
     padding: 4px 12px 15px;
+}
+.groove-edit-tools {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.groove-edit-tools .variation-button { flex: 0 0 auto; }
+.instrument-toolbar > .pattern-shift-pad { flex: 0 0 auto; }
+.instrument-toolbar > .groove-edit-center { flex: 1 1 auto; justify-content: center; }
+.pattern-shift-pad { display: grid; grid-template-columns: repeat(4, 30px); gap: 4px; }
+.pattern-shift-pad .pattern-shift-global { width: 30px; min-width: 30px; padding: 0; }
+.groove-preview.bt-buttondown,
+.groove-preview[aria-pressed="true"] {
+    background: var(--bt-accent);
+    color: var(--bt-active-fg);
+    border-color: var(--bt-accent);
+    box-shadow: 0 0 0 1px rgb(57 202 165 / .18), 0 0 10px rgb(57 202 165 / .16);
 }
 .control-field[data-field] {
     min-width: 0;
@@ -625,13 +643,6 @@ button i { pointer-events: none; }
 .bottom-controls, .bottom-control, #master, #swing, #swing-value,
 #metronome-tempo-display, #metronome-bpm { display: none !important; }
 
-@media (max-width: 900px) {
-    .drum-machine-container { width: 730px; }
-    .vu-meter-wrap { min-width: 150px; }
-    .vu-meter { width: 105px; }
-    #sliders.bt-right { display: none; }
-    :root { --bt-slider-width: 0%; --bt-grid-width: 89.5%; }
-}
 
 /* Kits / samples v17 */
 .kit-selector { --kit-color: var(--bt-accent); }
@@ -1043,4 +1054,134 @@ button i { pointer-events: none; }
     }
     .sequencer-layout #sliders.bt-right { display: flex; }
     .shortcut-help-body { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* v36.7 — responsive mobile: the page itself never requires a 730 px canvas. */
+.drum-machine-container { min-width: 0; }
+.velocity-cycle { color: var(--bt-muted); font-size: 8px; text-align: right; line-height: 1.35; }
+
+@media (max-width: 900px) {
+    .drum-machine-container { width: min(calc(100% - 16px), var(--bt-max-width)); min-width: 0; }
+    .bt-header { flex-wrap: wrap; gap: 8px 12px; padding-inline: 2px; }
+    .bt-header h1 { flex: 0 0 auto; }
+    .groove-search-wrap { flex: 1 1 280px; min-width: 180px; max-width: none; order: 2; }
+    .output-tools { margin-left: auto; flex-wrap: wrap; }
+    .vu-meter-wrap { min-width: 120px; }
+    .vu-meter { width: 90px; }
+    .score-toolbar .preset-selector {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 38px 38px;
+    }
+    .score-toolbar .preset-selector .source-selector { grid-column: 1; }
+    .score-toolbar .preset-selector > .control-field:nth-child(2) { grid-column: 2; }
+    .score-toolbar .preset-selector .groove { grid-column: 1 / span 2; grid-row: 2; }
+    .score-toolbar .preset-selector #groove-preview { grid-column: 3; grid-row: 2; }
+    .score-toolbar .preset-selector #groove-add { grid-column: 4; grid-row: 2; }
+    .instrument-toolbar { justify-content: space-between; gap: 10px; }
+    .instrument-toolbar .kit-selector { width: auto; min-width: 0; flex: 0 1 205px; }
+    .groove-edit-tools { flex: 1 1 auto; }
+    .sequencer-layout { overflow-x: auto; overscroll-behavior-inline: contain; scrollbar-gutter: stable; }
+    .shortcut-help-body { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+    body { min-width: 0; }
+    .drum-machine-container { width: calc(100% - 10px); }
+    .bt { border-radius: 9px; }
+    .bt-header { padding: 6px 2px 8px; }
+    .bt-header h1 { font-size: 1rem; }
+    .bt-header-logo { width: 36px; height: 36px; }
+    .groove-search-wrap { order: 3; flex: 1 0 100%; min-width: 0; }
+    .output-tools { gap: 4px; }
+    .vu-meter-wrap { display: none; }
+    .score-toolbar { padding: 8px 8px 5px; }
+    .score-toolbar .preset-selector { grid-template-columns: minmax(0, 1fr) 36px 36px; gap: 5px; }
+    .score-toolbar .preset-selector .source-selector,
+    .score-toolbar .preset-selector > .control-field:nth-child(2) { grid-column: 1 / -1; grid-row: auto; }
+    .score-toolbar .preset-selector .groove { grid-column: 1; grid-row: auto; }
+    .score-toolbar .preset-selector #groove-preview { grid-column: 2; grid-row: auto; width: 36px; }
+    .score-toolbar .preset-selector #groove-add { grid-column: 3; grid-row: auto; width: 36px; }
+    .instrument-toolbar { padding: 4px 8px 10px; flex-wrap: wrap; align-items: stretch; }
+    .instrument-toolbar > .pattern-shift-pad { order: 1; }
+    .instrument-toolbar > .groove-edit-center { order: 2; flex: 1 1 auto; flex-wrap: wrap; justify-content: center; }
+    .instrument-toolbar .kit-selector { order: 3; margin-left: auto; flex: 0 1 205px; }
+    .instrument-toolbar .swing-edit { margin-left: 0; }
+    .sequencer-layout {
+        width: 100%;
+        grid-template-columns: 92px minmax(455px, 1fr);
+        grid-template-rows: auto calc(var(--bt-row-h) * 9);
+        column-gap: 5px;
+        padding: 0 6px 4px;
+        box-sizing: border-box;
+    }
+    .sequencer-layout .bt-leds { grid-column: 2; }
+    .sequencer-layout #tracks.bt-left { grid-column: 1; position: sticky; left: 0; z-index: 4; background: var(--bt-panel); }
+    .sequencer-layout .bt-grid { grid-column: 2; min-width: 455px; }
+    .sequencer-layout #sliders.bt-right { display: none; }
+    .transport-bar { flex-wrap: wrap; justify-content: center; gap: 5px; padding-inline: 8px; }
+    .memory-toolbar { flex-wrap: wrap; justify-content: center; gap: 4px; padding-inline: 8px; }
+    .practice-panel { padding: 10px 8px; }
+    .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .practice-status { white-space: normal; }
+    .shortcut-help { margin-inline: 8px; }
+    .shortcut-help-body { grid-template-columns: 1fr; gap: 4px; }
+    .share-dialog { width: min(96vw, 510px); }
+    .share-dialog-card { padding: 14px; }
+    .share-url-field { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 390px) {
+    .language-control select { min-width: 48px; }
+    .header-icon-button { width: 30px; min-width: 30px; }
+    .groove-edit-tools .swing-edit { margin-left: auto; }
+}
+
+/* v36.9 — navigation de grille à 4 directions */
+.instrument-toolbar .pattern-shift-pad {
+    display: grid;
+    grid-template-columns: repeat(4, 30px);
+    align-items: stretch;
+    gap: 4px;
+}
+.instrument-toolbar .pattern-shift-pad .pattern-shift-global {
+    width: 30px;
+    min-width: 30px;
+    font-size: 12px;
+}
+
+
+/* v36.9.1 — flèches de déplacement centrées sous la grille */
+.sequencer-layout {
+    grid-template-rows: auto calc(var(--bt-row-h) * 9) auto;
+}
+.grid-shift-under-grid {
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    width: 100%;
+    padding-top: 6px;
+}
+.grid-shift-under-grid .pattern-shift-global {
+    width: 14px;
+    min-width: 14px;
+    height: 17px;
+    min-height: 17px;
+    margin: 0;
+    padding: 0;
+    font-size: 9px;
+    line-height: 1;
+}
+.grid-shift-under-grid .pattern-shift-global i {
+    font-size: 8px;
+    line-height: 1;
+}
+@media (max-width: 680px) {
+    .sequencer-layout {
+        grid-template-rows: auto calc(var(--bt-row-h) * 9) auto;
+    }
+    .grid-shift-under-grid {
+        grid-column: 2;
+    }
 }

@@ -17,25 +17,25 @@ Puis ouvre `http://localhost:8000`.
 
 - Séquenceur 9 pistes avec plusieurs niveaux de vélocité.
 - Bibliothèque de grooves et import MIDI.
-- 8 mémoires partageables dans l’URL.
-- Kits de batterie, volumes par piste, swing et métronome.
-- Signatures rythmiques multiples.
+- 8 mémoires **autosauvegardées** dans l’URL : chaque mémoire contient uniquement sa grille et sa signature.
+- Le kit, le mix, le tempo, le volume master et le swing restent globaux quand on change de mémoire.
+- Kits de batterie, volumes et panoramiques par piste, swing et métronome.
 - Undo / redo, copie, collage et duplication.
-- PWA utilisable hors ligne.
-- Interface **FR / EN / ES**.
+- QR code vers l’application seule ; le bouton **Copier le lien** inclut les huit mémoires.
+- PWA utilisable hors ligne, sans CDN JavaScript.
+- Interface responsive **FR / EN / ES**.
 
 ## Entraînement
 
-Le bouton 🎓 affiche le panneau d’entraînement sous la barre de transport.
+Le bouton 🎓 affiche le panneau d’entraînement. Configure les options puis appuie sur **Lecture** pour démarrer.
 
 - **Tempo** : départ, objectif, palier et nombre de boucles.
-- **Couches** : charley → caisse claire → kick → autres éléments → accents → ghost notes.
+- **Couches** : charley → caisse claire → grosse caisse → autres éléments → accents → notes fantômes.
 - **Couches + tempo** : apprend d’abord le groove puis augmente le tempo.
-- Count-in de 0, 1 ou 2 mesures.
-- À chaque nouveau Play, l’entraînement repart du début.
+- Décompte de 0, 1 ou 2 mesures.
+- À chaque nouvelle Lecture, l’entraînement repart du début.
+- Modifier une option pendant l’entraînement arrête immédiatement la session avant d’appliquer une nouvelle configuration.
 - Une fois le tempo cible atteint, la lecture continue à ce tempo.
-
-Le métronome reste contrôlé uniquement par son bouton dédié.
 
 ## Commandes utiles
 
@@ -50,19 +50,18 @@ npm run grooves:clean
 
 ## Raccourcis
 
-- `Espace` : lecture / pause
+- `Espace` : lecture / stop
 - `T` : tap tempo
 - `M` : métronome
 - `1` à `8` : mémoires
-- `Ctrl/Cmd + S` : sauvegarder
 - `Ctrl/Cmd + C / V` : copier / coller
-- `Ctrl/Cmd + D` : dupliquer
+- `Ctrl/Cmd + D` : dupliquer vers la mémoire suivante
 - `Ctrl/Cmd + Z / Y` : undo / redo
 - `Shift + clic` : applique l’édition à la même subdivision de chaque temps
 
 ## Grooves
 
-Les sources sont placées dans `grooves/`. Pour importer des fichiers MIDI, voir [GROOVE_SOURCES.md](GROOVE_SOURCES.md).
+Les sources sont placées dans `grooves/`. Les scripts `grooves:sync` et `grooves:clean` assurent leur import et leur normalisation.
 
 ## Déploiement
 

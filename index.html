@@ -67,26 +67,25 @@
                         <label class="control-field source-selector" data-field><span data-i18n="toolbar.source">SOURCE</span><select id="preset-source" data-bt-tooltip="Source des grooves" data-i18n-tooltip="toolbar.sourceTooltip"></select></label>
                         <label class="control-field" data-field><span data-i18n="toolbar.style">STYLE</span><select id="preset-family" data-bt-tooltip="Style musical" data-i18n-tooltip="toolbar.styleTooltip"></select></label>
                         <label class="control-field groove" data-field><span data-i18n="toolbar.groove">GROOVE</span><select id="preset-groove" data-bt-tooltip="Groove" data-i18n-tooltip="toolbar.grooveTooltip"></select></label>
-                        <button type="button" class="bt-button preset-icon" id="groove-refresh" data-bt-tooltip="Recharger le groove original" data-i18n-tooltip="toolbar.reload" aria-label="Recharger le groove original" data-i18n-aria="toolbar.reload"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i></button>
-                        <button type="button" class="bt-button variation-button" id="random" data-bt-tooltip="Créer une variante musicale du groove courant" data-i18n-tooltip="toolbar.variantTooltip"><span data-i18n="toolbar.variant">VARIANTE</span></button>
-                        <div class="pattern-shift-controls" aria-label="Décaler toute la grille">
-                            <button type="button" class="bt-button pattern-shift-global" id="grid-shift-left" data-bt-tooltip="Décaler toute la grille à gauche — Shift : 1 temps" aria-label="Décaler toute la grille à gauche">‹</button>
-                            <button type="button" class="bt-button pattern-shift-global" id="grid-shift-right" data-bt-tooltip="Décaler toute la grille à droite — Shift : 1 temps" aria-label="Décaler toute la grille à droite">›</button>
-                        </div>
+                        <button type="button" class="bt-button preset-icon groove-preview" id="groove-preview" data-bt-tooltip="Préécouter le groove sélectionné" data-i18n-tooltip="toolbar.preview" aria-label="Préécouter le groove sélectionné" data-i18n-aria="toolbar.preview" aria-pressed="false"><i class="fa-solid fa-headphones" aria-hidden="true"></i></button>
+                        <button type="button" class="bt-button preset-icon groove-add" id="groove-add" data-bt-tooltip="Ajouter le patch à partir de la mémoire sélectionnée" data-i18n-tooltip="toolbar.addPatch" aria-label="Ajouter le patch à partir de la mémoire sélectionnée" data-i18n-aria="toolbar.addPatch"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
                     </div>
                 </div>
 
-                <div class="instrument-toolbar" aria-label="Kit et swing">
+                <div class="instrument-toolbar" aria-label="Swing, variation et kit">
+                    <div class="groove-edit-tools groove-edit-center">
+                        <label class="control-field swing-edit" data-field data-bt-tooltip="Swing en pourcentage" data-i18n-tooltip="swing.tooltip">
+                            <span data-i18n="toolbar.swing">SWING</span>
+                            <div class="percent-edit">
+                                <input id="swing-input" type="number" min="0" max="100" step="1" value="0" inputmode="numeric" aria-label="Swing en pourcentage" data-i18n-aria="swing.tooltip">
+                                <span>%</span>
+                            </div>
+                        </label>
+                        <button type="button" class="bt-button variation-button" id="random" data-bt-tooltip="Créer une variante musicale du groove courant" data-i18n-tooltip="toolbar.variantTooltip"><span data-i18n="toolbar.variant">VARIANTE</span></button>
+                    </div>
                     <label class="control-field kit-selector" data-field data-bt-tooltip="Kit de batterie" data-i18n-tooltip="kit.tooltip">
                         <span class="icon-label" aria-hidden="true"><i class="fa-solid fa-drum"></i></span>
                         <select id="kit-select" aria-label="Kit de batterie" data-i18n-aria="kit.tooltip"></select>
-                    </label>
-                    <label class="control-field swing-edit" data-field data-bt-tooltip="Swing en pourcentage" data-i18n-tooltip="swing.tooltip">
-                        <span data-i18n="toolbar.swing">SWING</span>
-                        <div class="percent-edit">
-                            <input id="swing-input" type="number" min="0" max="100" step="1" value="0" inputmode="numeric" aria-label="Swing en pourcentage" data-i18n-aria="swing.tooltip">
-                            <span>%</span>
-                        </div>
                     </label>
                 </div>
 
@@ -96,11 +95,17 @@
                     <div class="bt-grid">
                         <div class="grid"></div>
                     </div>
+                    <div class="grid-shift-under-grid" aria-label="Décaler toute la grille">
+                        <button type="button" class="track-toggle pattern-shift pattern-shift-global" id="grid-shift-left" data-bt-tooltip="Décaler toute la grille à gauche — Shift : 1 temps" aria-label="Décaler toute la grille à gauche"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+                        <button type="button" class="track-toggle pattern-shift pattern-shift-global" id="grid-shift-up" data-bt-tooltip="Décaler toute la grille d’une piste vers le haut" aria-label="Décaler toute la grille vers le haut"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+                        <button type="button" class="track-toggle pattern-shift pattern-shift-global" id="grid-shift-down" data-bt-tooltip="Décaler toute la grille d’une piste vers le bas" aria-label="Décaler toute la grille vers le bas"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></button>
+                        <button type="button" class="track-toggle pattern-shift pattern-shift-global" id="grid-shift-right" data-bt-tooltip="Décaler toute la grille à droite — Shift : 1 temps" aria-label="Décaler toute la grille à droite"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                    </div>
                     <div class="bt-right" id="sliders"></div>
                 </div>
 
                 <div class="transport-bar" aria-label="Transport">
-                    <button type="button" class="transport-button play-toggle" id="play-button" data-bt-tooltip="Lecture / stop (Espace)" data-i18n-tooltip="transport.playPause" aria-label="Lecture / stop" data-i18n-aria="transport.playPause" :aria-pressed="$store.ui.playing.toString()" :class="{ 'bt-buttondown': $store.ui.playing }">
+                    <button type="button" class="transport-button play-toggle" id="play-button" data-bt-tooltip="Lecture / arrêt (Espace)" data-i18n-tooltip="transport.playPause" aria-label="Lecture / arrêt" data-i18n-aria="transport.playPause" :aria-pressed="$store.ui.playing.toString()" :class="{ 'bt-buttondown': $store.ui.playing }">
                         <i id="play-pause-icon" class="fa-solid" :class="$store.ui.playing ? 'fa-stop' : 'fa-play'" aria-hidden="true"></i>
                     </button>
                     <button type="button" class="transport-button tap-modern" id="tap-tempo" data-bt-tooltip="Tap tempo (T)" data-i18n-tooltip="transport.tap">TAP</button>
@@ -126,7 +131,7 @@
                     <div class="practice-panel-header">
                         <div>
                             <h2 id="practice-title"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> <span data-i18n="practice.title">Entraînement</span></h2>
-                            <p data-i18n="practice.subtitle">Travaille le groove par tempo ou par couches.</p>
+                            <p data-i18n="practice.subtitle">Configure l’entraînement, puis appuie sur Lecture pour démarrer.</p>
                         </div>
                         <div id="practice-status" class="practice-status" aria-live="polite" data-i18n="practice.ready">Prêt à démarrer</div>
                     </div>
@@ -136,9 +141,9 @@
                         <label class="practice-field"><span data-i18n="practice.target">OBJECTIF</span><div class="practice-number"><input id="practice-target-tempo" type="number" min="40" max="240" step="1" value="90"><em>BPM</em></div></label>
                         <label class="practice-field"><span data-i18n="practice.step">PALIER</span><select id="practice-tempo-step"><option value="1">+1 BPM</option><option value="2">+2 BPM</option><option value="3" selected>+3 BPM</option><option value="5">+5 BPM</option></select></label>
                         <label class="practice-field"><span data-i18n="practice.loops">TOURS / NIVEAU</span><input id="practice-loops" type="number" min="1" max="32" step="1" value="4"></label>
-                        <label class="practice-field"><span data-i18n="practice.countIn">COUNT-IN</span><select id="practice-count-in"><option value="0" data-i18n="common.off">Off</option><option value="1" selected data-i18n="practice.oneBar">1 mesure</option><option value="2" data-i18n="practice.twoBars">2 mesures</option></select></label>
+                        <label class="practice-field"><span data-i18n="practice.countIn">DÉCOMPTE</span><select id="practice-count-in"><option value="0" data-i18n="common.off">Off</option><option value="1" selected data-i18n="practice.oneBar">1 mesure</option><option value="2" data-i18n="practice.twoBars">2 mesures</option></select></label>
                     </div>
-                    <div class="practice-explainer" data-i18n="practice.explainer">Couches : charley → caisse claire → kick → autres éléments du groove → accents → ghost notes.</div>
+                    <div class="practice-explainer" data-i18n="practice.explainer">Couches : charley → caisse claire → grosse caisse → autres éléments du groove → accents → notes fantômes.</div>
                 </section>
 
                 <div class="memory-toolbar" id="memory" aria-label="Mémoires et édition">
@@ -146,8 +151,7 @@
                     <button type="button" class="bt-button memory-action icon-only" id="chain" :aria-pressed="$store.ui.chain.toString()" :class="{ 'bt-buttondown': $store.ui.chain }" data-bt-tooltip="Chaîner les mémoires" data-i18n-tooltip="memory.chain" aria-label="Chaîner les mémoires" data-i18n-aria="memory.chain"><i class="fa-solid fa-link" aria-hidden="true"></i></button>
                     <button type="button" class="bt-button memory-action icon-only history-button" id="undo" :class="{ 'is-disabled': !$store.ui.undoAvailable }" data-bt-tooltip="Annuler" data-i18n-tooltip="memory.undo" aria-label="Annuler" data-i18n-aria="memory.undo"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></button>
                     <button type="button" class="bt-button memory-action icon-only history-button" id="redo" :class="{ 'is-disabled': !$store.ui.redoAvailable }" data-bt-tooltip="Rétablir" data-i18n-tooltip="memory.redo" aria-label="Rétablir" data-i18n-aria="memory.redo"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i></button>
-                    <button type="button" class="bt-button memory-action icon-only" id="save" data-bt-tooltip="Sauvegarder dans la mémoire sélectionnée (Ctrl+S)" data-i18n-tooltip="memory.save" aria-label="Sauvegarder" data-i18n-aria="memory.save"><i class="fa-solid fa-floppy-disk" aria-hidden="true"></i></button>
-                    <button type="button" class="bt-button memory-action icon-only" id="clear" data-bt-tooltip="Nouveau pattern vierge" data-i18n-tooltip="memory.new" aria-label="Nouveau pattern vierge" data-i18n-aria="memory.new"><i class="fa-solid fa-file" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only" id="clear" data-bt-tooltip="Nouveau motif vierge" data-i18n-tooltip="memory.new" aria-label="Nouveau motif vierge" data-i18n-aria="memory.new"><i class="fa-solid fa-file" aria-hidden="true"></i></button>
                     <button type="button" class="bt-button memory-action icon-only danger-icon outline" data-variant="danger" id="cache-clear" data-bt-tooltip="Vider les mémoires" data-i18n-tooltip="memory.clear" aria-label="Vider les mémoires" data-i18n-aria="memory.clear"><i class="fa-solid fa-trash-can" aria-hidden="true"></i></button>
                 </div>
                 <div class="drum-machine-clear"></div>
@@ -157,7 +161,7 @@
                     <summary><i class="fa-regular fa-keyboard" aria-hidden="true"></i><span data-i18n="shortcut.title">Raccourcis clavier</span><i class="fa-solid fa-chevron-down shortcut-chevron" aria-hidden="true"></i></summary>
                     <div class="shortcut-help-body">
                         <div class="shortcut-group"><h3 data-i18n="shortcut.transport">Transport</h3>
-                            <div class="shortcut-item"><span data-i18n="shortcut.playStop">Lecture / Stop</span><span class="shortcut-keys"><kbd data-i18n="shortcut.space">Espace</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.playStop">Lecture / arrêt</span><span class="shortcut-keys"><kbd data-i18n="shortcut.space">Espace</kbd></span></div>
                             <div class="shortcut-item"><span data-i18n="shortcut.tap">Tap tempo</span><span class="shortcut-keys"><kbd>T</kbd></span></div>
                             <div class="shortcut-item"><span data-i18n="shortcut.metronome">Métronome</span><span class="shortcut-keys"><kbd>M</kbd></span></div>
                             <div class="shortcut-item"><span data-i18n="shortcut.memories">Mémoire 1 à 8</span><span class="shortcut-keys"><kbd>1</kbd>…<kbd>8</kbd></span></div>
@@ -165,10 +169,9 @@
                         <div class="shortcut-group"><h3 data-i18n="shortcut.edit">Édition</h3>
                             <div class="shortcut-item"><span data-i18n="shortcut.undo">Annuler</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>Z</kbd></span></div>
                             <div class="shortcut-item"><span data-i18n="shortcut.redo">Rétablir</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘ ⇧" data-win="Ctrl Shift">Ctrl Shift</kbd><kbd>Z</kbd><span class="shortcut-or">/</span><kbd class="win-only">Ctrl</kbd><kbd class="win-only">Y</kbd></span></div>
-                            <div class="shortcut-item"><span data-i18n="shortcut.copy">Copier le pattern</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>C</kbd></span></div>
-                            <div class="shortcut-item"><span data-i18n="shortcut.paste">Coller le pattern</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>V</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.copy">Copier le motif</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>C</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.paste">Coller le motif</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>V</kbd></span></div>
                             <div class="shortcut-item"><span data-i18n="shortcut.duplicate">Dupliquer vers mémoire suivante</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>D</kbd></span></div>
-                            <div class="shortcut-item"><span data-i18n="shortcut.save">Sauvegarder la mémoire</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>S</kbd></span></div>
                         </div>
                         <div class="shortcut-group"><h3 data-i18n="shortcut.grid">Grille</h3>
                             <div class="shortcut-item"><span data-i18n="shortcut.cell">Changer une cellule</span><span class="shortcut-keys"><kbd data-i18n="shortcut.click">Clic</kbd></span></div>
@@ -178,6 +181,7 @@
                             <div class="shortcut-item"><span data-i18n="shortcut.moveTrack">Déplacer une piste sur les 2 axes</span><span class="shortcut-keys"><kbd>Alt</kbd><kbd data-i18n="shortcut.drag">Glisser</kbd></span></div>
                             <div class="shortcut-item"><span data-i18n="shortcut.moveGrid">Déplacer toute la grille sur les 2 axes</span><span class="shortcut-keys"><kbd>Alt</kbd><kbd>Shift</kbd><kbd data-i18n="shortcut.drag">Glisser</kbd></span></div>
                             <div class="shortcut-item"><span data-i18n="shortcut.shiftBeat">Décaler avec ‹ › d’un temps</span><span class="shortcut-keys"><kbd>Shift</kbd><kbd data-i18n="shortcut.click">Clic</kbd></span></div>
+                            <div class="shortcut-item velocity-legend"><span data-i18n="shortcut.velocity">Niveaux de vélocité</span><span class="velocity-cycle" data-i18n="shortcut.velocityCycle">Éteint → normal → fort → accent → doux → fantôme</span></div>
                         </div>
                     </div>
                 </details>
@@ -191,12 +195,12 @@
                 <div class="share-dialog-header">
                     <div>
                         <h2 id="share-dialog-title" data-i18n="share.title">Partager ce groove</h2>
-                        <p data-i18n="share.subtitle">Le lien contient le groove courant. Scanne-le, partage-le ou enregistre-le dans tes favoris.</p>
+                        <p data-i18n="share.subtitle">Le QR code ouvre l’application. Le bouton Copier crée un lien contenant toutes les mémoires.</p>
                     </div>
                     <button type="button" class="ghost small header-icon-button" id="share-close" aria-label="Fermer" data-i18n-aria="common.close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
                 </div>
                 <div class="share-qr-wrap">
-                    <canvas id="share-qr" width="280" height="280" aria-label="QR code du groove"></canvas>
+                    <canvas id="share-qr" width="280" height="280" aria-label="QR code de l’application"></canvas>
                     <p id="share-qr-error" class="share-qr-error" hidden></p>
                 </div>
                 <label class="share-url-field">

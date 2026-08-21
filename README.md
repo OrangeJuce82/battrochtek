@@ -1,3 +1,11 @@
+## v32
+
+- Correction GitHub Actions : `grooves:build` utilise bien `./grooves` en minuscules.
+- `sync-grooves.mjs` et `clean-grooves.mjs` utilisent désormais la même racine.
+- `.groovesrc.json` utilise `minimumDifference: 10`.
+- Ajout de tests de non-régression sur la casse du dossier et le seuil de nettoyage.
+- Cache PWA `battrochtek-v32`.
+
 # 🥁 Battrochtek
 
 Battrochtek est une drum machine / bibliothèque de grooves PWA basée sur la Web Audio API. L’interface utilise **Oat UI** pour les composants et styles génériques, **Alpine.js** pour l’état réactif, et une CSS locale limitée au séquenceur et à l’identité visuelle.

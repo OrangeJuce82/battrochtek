@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 
-const [app, html, sw, css, manifest, basicGrooves, syncGrooves, grooveImport] = await Promise.all([
+const [app, html, sw, css, manifest, basicGrooves, syncGrooves, grooveImport, cleanGrooves, grooveConfig] = await Promise.all([
   readFile("app.js", "utf8"),
   readFile("index.html", "utf8"),
   readFile("service-worker.js", "utf8"),
@@ -9,6 +9,8 @@ const [app, html, sw, css, manifest, basicGrooves, syncGrooves, grooveImport] = 
   readFile("grooves/Basic Grooves/basic-grooves.json", "utf8"),
   readFile("scripts/sync-grooves.mjs", "utf8"),
   readFile("scripts/groove-import-lib.mjs", "utf8"),
+  readFile("scripts/clean-grooves.mjs", "utf8"),
+  readFile(".groovesrc.json", "utf8"),
 ]);
 
 const checks = [
@@ -23,7 +25,7 @@ const checks = [
   [!app.includes("localStorage.getItem") && !app.includes("localStorage.setItem"), "localStorage retiré des mémoires"],
   [app.includes("history.replaceState"), "mise à jour du hash sans navigation"],
   [sw.includes('"./vendor/oat/oat.min.css"') && sw.includes('"./vendor/oat/oat.min.js"'), "Oat inclus dans l’app shell PWA"],
-  [sw.includes('battrochtek-v31'), "cache PWA v31"],
+  [sw.includes('battrochtek-v32'), "cache PWA v32"],
   [css.includes('--bt-instrument-text:') && !app.includes('label.style.color'), "couleur des instruments pilotée par le thème"],
   [css.includes('.bt-tooltip') && html.includes('id="bt-tooltip"'), "tooltips adaptatifs présents"],
   [!html.includes('id="bt-help"'), "ancienne aide au survol retirée"],
@@ -52,6 +54,8 @@ const checks = [
   [app.includes("this.reloadSelectedPresetMemory()") && !app.includes("this.pushHistory(); this.loadSelectedPreset(false);"), "bouton Recharger n'utilise plus le chargement complet du preset"],
   [app.includes('buildGlobalSearch()') && app.includes('ArrowDown') && app.includes('ArrowUp'), "autocomplete global clavier présent"],
   [syncGrooves.includes('importGrooveRoot("grooves")'), "sync utilise ./grooves en minuscules"],
+  [cleanGrooves.includes('importGrooveRoot("grooves")') && !cleanGrooves.includes('importGrooveRoot("Grooves")'), "cleaner utilise ./grooves en minuscules"],
+  [JSON.parse(grooveConfig).minimumDifference === 10, "différence minimale configurée à 10%"],
   [grooveImport.includes("for (const name of await readdir(root))") && grooveImport.includes("label:name"), "nom de Source issu du dossier de premier niveau"],
   [manifest.includes('icons/icon-512.png'), "icônes PWA déclarées"],
 ];

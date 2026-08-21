@@ -50,7 +50,7 @@ function grooveSimilarity(a,b) {
   return (bestAverage(A,B)+bestAverage(B,A))/2;
 }
 
-const {grooves}=await importGrooveRoot("Grooves");
+const {grooves}=await importGrooveRoot("grooves");
 const kept=[],removed=[];
 for (const groove of grooves) {
   let closest=null,similarity=-1;

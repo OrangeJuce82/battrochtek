@@ -22,10 +22,7 @@
         crash:0, ride:1, openHat:2, closedHat:3, snare:4,
         tomHigh:5, tomMid:6, tomFloor:7, kick:8
     });
-    const TRACK_NAMES = Object.freeze([
-        "Crash", "Ride", "HH Open", "HH Closed", "Snare",
-        "High Tom", "Low-Mid Tom", "Floor Tom", "Kick"
-    ]);
+    const TRACK_I18N_KEYS = Object.freeze(["track.crash", "track.ride", "track.openHat", "track.closedHat", "track.snare", "track.tomHigh", "track.tomMid", "track.tomFloor", "track.kick"]);
 
     const SAMPLE_LIBRARY = Object.freeze([{"key":"studio_kick_a","file":"sounds/studio-kick-a.wav","label":"Studio Kick A","type":"kick","source":"01kick1.wav"},{"key":"studio_kick_b","file":"sounds/studio-kick-b.wav","label":"Studio Kick B","type":"kick","source":"01kick2.wav"},{"key":"studio_snare_a","file":"sounds/studio-snare-a.wav","label":"Studio Snare A","type":"snare","source":"01snare1.wav"},{"key":"studio_snare_b","file":"sounds/studio-snare-b.wav","label":"Studio Snare B","type":"snare","source":"01snare2.wav"},{"key":"studio_tom_a","file":"sounds/studio-tom-a.wav","label":"Studio Tom A","type":"tom","source":"01tom1.wav"},{"key":"studio_tom_b","file":"sounds/studio-tom-b.wav","label":"Studio Tom B","type":"tom","source":"01tom2.wav"},{"key":"bright_kick_a","file":"sounds/bright-kick-a.wav","label":"Bright Kick A","type":"kick","source":"02kick1.wav"},{"key":"bright_kick_b","file":"sounds/bright-kick-b.wav","label":"Bright Kick B","type":"kick","source":"02kick2.wav"},{"key":"bright_snare_a","file":"sounds/bright-snare-a.wav","label":"Bright Snare A","type":"snare","source":"02snare1.wav"},{"key":"bright_snare_b","file":"sounds/bright-snare-b.wav","label":"Bright Snare B","type":"snare","source":"02snare2.wav"},{"key":"bright_tom_a","file":"sounds/bright-tom-a.wav","label":"Bright Tom A","type":"tom","source":"02tom1.wav"},{"key":"bright_tom_b","file":"sounds/bright-tom-b.wav","label":"Bright Tom B","type":"tom","source":"02tom2.wav"},{"key":"rock_kick_a","file":"sounds/rock-kick-a.wav","label":"Rock Kick A","type":"kick","source":"03kick1.wav"},{"key":"rock_kick_b","file":"sounds/rock-kick-b.wav","label":"Rock Kick B","type":"kick","source":"03kick2.wav"},{"key":"rock_snare_a","file":"sounds/rock-snare-a.wav","label":"Rock Snare A","type":"snare","source":"03snare1.wav"},{"key":"rock_tom_a","file":"sounds/rock-tom-a.wav","label":"Rock Tom A","type":"tom","source":"03tom1.wav"},{"key":"rock_tom_b","file":"sounds/rock-tom-b.wav","label":"Rock Tom B","type":"tom","source":"03tom2.wav"},{"key":"tight_kick_a","file":"sounds/tight-kick-a.wav","label":"Tight Kick A","type":"kick","source":"04kick1.wav"},{"key":"tight_kick_b","file":"sounds/tight-kick-b.wav","label":"Tight Kick B","type":"kick","source":"04kick2.wav"},{"key":"tight_snare_a","file":"sounds/tight-snare-a.wav","label":"Tight Snare A","type":"snare","source":"04snare1.wav"},{"key":"warm_kick_a","file":"sounds/warm-kick-a.wav","label":"Warm Kick A","type":"kick","source":"05kick1.wav"},{"key":"warm_kick_b","file":"sounds/warm-kick-b.wav","label":"Warm Kick B","type":"kick","source":"05kick2.wav"},{"key":"warm_snare_a","file":"sounds/warm-snare-a.wav","label":"Warm Snare A","type":"snare","source":"05snare1.wav"},{"key":"warm_snare_b","file":"sounds/warm-snare-b.wav","label":"Warm Snare B","type":"snare","source":"05snare2.wav"},{"key":"warm_tom_a","file":"sounds/warm-tom-a.wav","label":"Warm Tom A","type":"tom","source":"05tom1.wav"},{"key":"warm_tom_b","file":"sounds/warm-tom-b.wav","label":"Warm Tom B","type":"tom","source":"05tom2.wav"},{"key":"raw_kick_a","file":"sounds/raw-kick-a.wav","label":"Raw Kick A","type":"kick","source":"06kick1.wav"},{"key":"raw_kick_b","file":"sounds/raw-kick-b.wav","label":"Raw Kick B","type":"kick","source":"06kick2.wav"},{"key":"raw_snare_a","file":"sounds/raw-snare-a.wav","label":"Raw Snare A","type":"snare","source":"06snare1.wav"},{"key":"raw_snare_b","file":"sounds/raw-snare-b.wav","label":"Raw Snare B","type":"snare","source":"06snare2.wav"},{"key":"raw_tom_a","file":"sounds/raw-tom-a.wav","label":"Raw Tom A","type":"tom","source":"06tom1.wav"},{"key":"raw_tom_b","file":"sounds/raw-tom-b.wav","label":"Raw Tom B","type":"tom","source":"06tom2.wav"},{"key":"arena_kick_a","file":"sounds/arena-kick-a.wav","label":"Arena Kick A","type":"kick","source":"07kick1.wav"},{"key":"arena_kick_b","file":"sounds/arena-kick-b.wav","label":"Arena Kick B","type":"kick","source":"07kick2.wav"},{"key":"arena_snare_a","file":"sounds/arena-snare-a.wav","label":"Arena Snare A","type":"snare","source":"07snare1.wav"},{"key":"arena_snare_b","file":"sounds/arena-snare-b.wav","label":"Arena Snare B","type":"snare","source":"07snare2.wav"},{"key":"arena_tom_a","file":"sounds/arena-tom-a.wav","label":"Arena Tom A","type":"tom","source":"07tom1.wav"},{"key":"arena_tom_b","file":"sounds/arena-tom-b.wav","label":"Arena Tom B","type":"tom","source":"07tom2.wav"},{"key":"deep_kick_a","file":"sounds/deep-kick-a.wav","label":"Deep Kick A","type":"kick","source":"08kick1.wav"},{"key":"deep_kick_b","file":"sounds/deep-kick-b.wav","label":"Deep Kick B","type":"kick","source":"08kick2.wav"},{"key":"deep_snare_a","file":"sounds/deep-snare-a.wav","label":"Deep Snare A","type":"snare","source":"08snare1.wav"},{"key":"deep_snare_b","file":"sounds/deep-snare-b.wav","label":"Deep Snare B","type":"snare","source":"08snare2.wav"},{"key":"deep_tom_a","file":"sounds/deep-tom-a.wav","label":"Deep Tom A","type":"tom","source":"08tom1.wav"},{"key":"deep_tom_b","file":"sounds/deep-tom-b.wav","label":"Deep Tom B","type":"tom","source":"08tom2.wav"},{"key":"alarm_01","file":"sounds/alarm-01.wav","label":"Alarm 01","type":"fx","source":"alarm_01.wav"},{"key":"anvil_01","file":"sounds/anvil-01.wav","label":"Anvil 01","type":"fx","source":"anvil_01.wav"},{"key":"beep_01","file":"sounds/beep-01.wav","label":"Beep 01","type":"fx","source":"beep_01.wav"},{"key":"beep_02","file":"sounds/beep-02.wav","label":"Beep 02","type":"fx","source":"beep_02.wav"},{"key":"legacy_bell1","file":"sounds/legacy-bell1.wav","label":"Legacy Bell1","type":"cymbal","source":"bell1.wav"},{"key":"bongo_01","file":"sounds/bongo-01.wav","label":"Bongo 01","type":"perc","source":"bongo_01.wav"},{"key":"bongo_02","file":"sounds/bongo-02.wav","label":"Bongo 02","type":"perc","source":"bongo_02.wav"},{"key":"bongo_03","file":"sounds/bongo-03.wav","label":"Bongo 03","type":"perc","source":"bongo_03.wav"},{"key":"bongo_04","file":"sounds/bongo-04.wav","label":"Bongo 04","type":"perc","source":"bongo_04.wav"},{"key":"legacy_china1","file":"sounds/legacy-china1.wav","label":"Legacy China1","type":"cymbal","source":"china1.wav"},{"key":"clap_01","file":"sounds/clap-01.wav","label":"Clap 01","type":"perc","source":"clap_01.wav"},{"key":"clap_02","file":"sounds/clap-02.wav","label":"Clap 02","type":"perc","source":"clap_02.wav"},{"key":"clap_03","file":"sounds/clap-03.wav","label":"Clap 03","type":"perc","source":"clap_03.wav"},{"key":"clap_04","file":"sounds/clap-04.wav","label":"Clap 04","type":"perc","source":"clap_04.wav"},{"key":"clap_long_01","file":"sounds/clap-long-01.wav","label":"Clap Long 01","type":"perc","source":"clap_long_01.wav"},{"key":"claves_01","file":"sounds/claves-01.wav","label":"Claves 01","type":"perc","source":"claves_01.wav"},{"key":"claves_02","file":"sounds/claves-02.wav","label":"Claves 02","type":"perc","source":"claves_02.wav"},{"key":"legacy_cowbell","file":"sounds/legacy-cowbell.wav","label":"Legacy Cowbell","type":"perc","source":"cowbell.wav"},{"key":"cowbell_01","file":"sounds/cowbell-01.wav","label":"Cowbell 01","type":"perc","source":"cowbell_01.wav"},{"key":"cowbell_02","file":"sounds/cowbell-02.wav","label":"Cowbell 02","type":"perc","source":"cowbell_02.wav"},{"key":"cowbell_03","file":"sounds/cowbell-03.wav","label":"Cowbell 03","type":"perc","source":"cowbell_03.wav"},{"key":"legacy_crash1","file":"sounds/legacy-crash1.wav","label":"Legacy Crash1","type":"cymbal","source":"crash1.wav"},{"key":"crash_electro_01","file":"sounds/crash-electro-01.wav","label":"Crash Electro 01","type":"cymbal","source":"crash_01.wav"},{"key":"crash_electro_02","file":"sounds/crash-electro-02.wav","label":"Crash Electro 02","type":"cymbal","source":"crash_02.wav"},{"key":"crow_01","file":"sounds/crow-01.wav","label":"Crow 01","type":"fx","source":"crow_01.wav"},{"key":"crow_02","file":"sounds/crow-02.wav","label":"Crow 02","type":"fx","source":"crow_02.wav"},{"key":"cymbal_electro_01","file":"sounds/cymbal-electro-01.wav","label":"Cymbal Electro 01","type":"cymbal","source":"cymbal_01.wav"},{"key":"cymbal_electro_02","file":"sounds/cymbal-electro-02.wav","label":"Cymbal Electro 02","type":"cymbal","source":"cymbal_02.wav"},{"key":"cymbal_electro_03","file":"sounds/cymbal-electro-03.wav","label":"Cymbal Electro 03","type":"cymbal","source":"cymbal_03.wav"},{"key":"cymbal_electro_04","file":"sounds/cymbal-electro-04.wav","label":"Cymbal Electro 04","type":"cymbal","source":"cymbal_04.wav"},{"key":"door_01","file":"sounds/door-01.wav","label":"Door 01","type":"fx","source":"door_01.wav"},{"key":"door_02","file":"sounds/door-02.wav","label":"Door 02","type":"fx","source":"door_02.wav"},{"key":"formant_01","file":"sounds/formant-01.wav","label":"Formant 01","type":"fx","source":"formant_01.wav"},{"key":"game_01","file":"sounds/game-01.wav","label":"Game 01","type":"fx","source":"game_01.wav"},{"key":"game_02","file":"sounds/game-02.wav","label":"Game 02","type":"fx","source":"game_02.wav"},{"key":"game_03","file":"sounds/game-03.wav","label":"Game 03","type":"fx","source":"game_03.wav"},{"key":"game_coin","file":"sounds/game-coin.wav","label":"Game Coin","type":"fx","source":"game_coin.wav"},{"key":"game_damaged","file":"sounds/game-damaged.wav","label":"Game Damaged","type":"fx","source":"game_damaged.wav"},{"key":"game_fail","file":"sounds/game-fail.wav","label":"Game Fail","type":"fx","source":"game_fail.wav"},{"key":"game_fail_02","file":"sounds/game-fail-02.wav","label":"Game Fail 02","type":"fx","source":"game_fail_02.wav"},{"key":"game_level_up","file":"sounds/game-level-up.wav","label":"Game Level Up","type":"fx","source":"game_level_up.wav"},{"key":"game_passed_01","file":"sounds/game-passed-01.wav","label":"Game Passed 01","type":"fx","source":"game_passed_01.wav"},{"key":"game_passed_02","file":"sounds/game-passed-02.wav","label":"Game Passed 02","type":"fx","source":"game_passed_02.wav"},{"key":"game_pick_up","file":"sounds/game-pick-up.wav","label":"Game Pick Up","type":"fx","source":"game_pick_up.wav"},{"key":"glass_01","file":"sounds/glass-01.wav","label":"Glass 01","type":"fx","source":"glass_01.wav"},{"key":"glass_02","file":"sounds/glass-02.wav","label":"Glass 02","type":"fx","source":"glass_02.wav"},{"key":"glitch_01","file":"sounds/glitch-01.wav","label":"Glitch 01","type":"fx","source":"glitch_01.wav"},{"key":"glitch_02","file":"sounds/glitch-02.wav","label":"Glitch 02","type":"fx","source":"glitch_02.wav"},{"key":"electro_hat_closed_bright_01","file":"sounds/electro-hat-closed-bright-01.wav","label":"Electro Hat Closed Bright 01","type":"hat","source":"hat_closed_01.wav"},{"key":"electro_hat_closed_bright_02","file":"sounds/electro-hat-closed-bright-02.wav","label":"Electro Hat Closed Bright 02","type":"hat","source":"hat_closed_02.wav"},{"key":"electro_hat_closed_bright_03","file":"sounds/electro-hat-closed-bright-03.wav","label":"Electro Hat Closed Bright 03","type":"hat","source":"hat_closed_03.wav"},{"key":"electro_hat_closed_bright_04","file":"sounds/electro-hat-closed-bright-04.wav","label":"Electro Hat Closed Bright 04","type":"hat","source":"hat_closed_04.wav"},{"key":"electro_hat_closed_bright_05","file":"sounds/electro-hat-closed-bright-05.wav","label":"Electro Hat Closed Bright 05","type":"hat","source":"hat_closed_05.wav"},{"key":"electro_hat_closed_bright_06","file":"sounds/electro-hat-closed-bright-06.wav","label":"Electro Hat Closed Bright 06","type":"hat","source":"hat_closed_06.wav"},{"key":"electro_hat_closed_distorted_01","file":"sounds/electro-hat-closed-distorted-01.wav","label":"Electro Hat Closed Distorted 01","type":"hat","source":"hat_distort_01.wav"},{"key":"electro_hat_closed_metal_01","file":"sounds/electro-hat-closed-metal-01.wav","label":"Electro Hat Closed Metal 01","type":"hat","source":"hat_metal_01.wav"},{"key":"electro_hat_open_bright_01","file":"sounds/electro-hat-open-bright-01.wav","label":"Electro Hat Open Bright 01","type":"hat","source":"hat_open_01.wav"},{"key":"electro_hat_open_bright_02","file":"sounds/electro-hat-open-bright-02.wav","label":"Electro Hat Open Bright 02","type":"hat","source":"hat_open_02.wav"},{"key":"electro_hat_open_bright_03","file":"sounds/electro-hat-open-bright-03.wav","label":"Electro Hat Open Bright 03","type":"hat","source":"hat_open_03.wav"},{"key":"electro_hat_open_bright_04","file":"sounds/electro-hat-open-bright-04.wav","label":"Electro Hat Open Bright 04","type":"hat","source":"hat_open_04.wav"},{"key":"electro_hat_open_bright_05","file":"sounds/electro-hat-open-bright-05.wav","label":"Electro Hat Open Bright 05","type":"hat","source":"hat_open_05.wav"},{"key":"heartbeat_01","file":"sounds/heartbeat-01.wav","label":"Heartbeat 01","type":"fx","source":"heartbeat_01.wav"},{"key":"legacy_hat_closed_1","file":"sounds/legacy-hat-closed-1.wav","label":"Legacy Hat Closed 1","type":"hat","source":"hihat1.wav"},{"key":"legacy_hat_closed_2","file":"sounds/legacy-hat-closed-2.wav","label":"Legacy Hat Closed 2","type":"hat","source":"hihat2.wav"},{"key":"electro_kick_deep_01","file":"sounds/electro-kick-deep-01.wav","label":"Electro Kick Deep 01","type":"kick","source":"kick_01.wav"},{"key":"electro_kick_sub_02","file":"sounds/electro-kick-sub-02.wav","label":"Electro Kick Sub 02","type":"kick","source":"kick_02.wav"},{"key":"electro_kick_sub_03","file":"sounds/electro-kick-sub-03.wav","label":"Electro Kick Sub 03","type":"kick","source":"kick_03.wav"},{"key":"electro_kick_punch_04","file":"sounds/electro-kick-punch-04.wav","label":"Electro Kick Punch 04","type":"kick","source":"kick_04.wav"},{"key":"electro_kick_deep_05","file":"sounds/electro-kick-deep-05.wav","label":"Electro Kick Deep 05","type":"kick","source":"kick_05.wav"},{"key":"electro_kick_deep_06","file":"sounds/electro-kick-deep-06.wav","label":"Electro Kick Deep 06","type":"kick","source":"kick_06.wav"},{"key":"electro_kick_sub_07","file":"sounds/electro-kick-sub-07.wav","label":"Electro Kick Sub 07","type":"kick","source":"kick_07.wav"},{"key":"electro_kick_bright_08","file":"sounds/electro-kick-bright-08.wav","label":"Electro Kick Bright 08","type":"kick","source":"kick_08.wav"},{"key":"electro_kick_punch_09","file":"sounds/electro-kick-punch-09.wav","label":"Electro Kick Punch 09","type":"kick","source":"kick_09.wav"},{"key":"electro_kick_deep_10","file":"sounds/electro-kick-deep-10.wav","label":"Electro Kick Deep 10","type":"kick","source":"kick_10.wav"},{"key":"electro_kick_sub_11","file":"sounds/electro-kick-sub-11.wav","label":"Electro Kick Sub 11","type":"kick","source":"kick_11.wav"},{"key":"electro_kick_sub_12","file":"sounds/electro-kick-sub-12.wav","label":"Electro Kick Sub 12","type":"kick","source":"kick_12.wav"},{"key":"electro_kick_deep_13","file":"sounds/electro-kick-deep-13.wav","label":"Electro Kick Deep 13","type":"kick","source":"kick_13.wav"},{"key":"electro_kick_deep_14","file":"sounds/electro-kick-deep-14.wav","label":"Electro Kick Deep 14","type":"kick","source":"kick_14.wav"},{"key":"electro_kick_distorted_01","file":"sounds/electro-kick-distorted-01.wav","label":"Electro Kick Distorted 01","type":"kick","source":"kick_distort_01.wav"},{"key":"electro_kick_distorted_02","file":"sounds/electro-kick-distorted-02.wav","label":"Electro Kick Distorted 02","type":"kick","source":"kick_distort_02.wav"},{"key":"lock_01","file":"sounds/lock-01.wav","label":"Lock 01","type":"fx","source":"lock_01.wav"},{"key":"maracas_01","file":"sounds/maracas-01.wav","label":"Maracas 01","type":"perc","source":"maracas_01.wav"},{"key":"maracas_02","file":"sounds/maracas-02.wav","label":"Maracas 02","type":"perc","source":"maracas_02.wav"},{"key":"melee_01","file":"sounds/melee-01.wav","label":"Melee 01","type":"fx","source":"melee_01.wav"},{"key":"melee_02","file":"sounds/melee-02.wav","label":"Melee 02","type":"fx","source":"melee_02.wav"},{"key":"melee_03","file":"sounds/melee-03.wav","label":"Melee 03","type":"fx","source":"melee_03.wav"},{"key":"metal_01","file":"sounds/metal-01.wav","label":"Metal 01","type":"fx","source":"metal_01.wav"},{"key":"metal_02","file":"sounds/metal-02.wav","label":"Metal 02","type":"fx","source":"metal_02.wav"},{"key":"notify_01","file":"sounds/notify-01.wav","label":"Notify 01","type":"fx","source":"notify_01.wav"},{"key":"legacy_hat_open_1","file":"sounds/legacy-hat-open-1.wav","label":"Legacy Hat Open 1","type":"hat","source":"open1.wav"},{"key":"legacy_hat_open_2","file":"sounds/legacy-hat-open-2.wav","label":"Legacy Hat Open 2","type":"hat","source":"open2.wav"},{"key":"legacy_pad_2","file":"sounds/legacy-pad-2.wav","label":"Legacy Pad 2","type":"fx","source":"pad2.wav"},{"key":"perc_01","file":"sounds/perc-01.wav","label":"Perc 01","type":"perc","source":"perc_01.wav"},{"key":"perc_02","file":"sounds/perc-02.wav","label":"Perc 02","type":"perc","source":"perc_02.wav"},{"key":"perc_03","file":"sounds/perc-03.wav","label":"Perc 03","type":"perc","source":"perc_03.wav"},{"key":"perc_04","file":"sounds/perc-04.wav","label":"Perc 04","type":"perc","source":"perc_04.wav"},{"key":"punch_01","file":"sounds/punch-01.wav","label":"Punch 01","type":"fx","source":"punch_01.wav"},{"key":"punch_02","file":"sounds/punch-02.wav","label":"Punch 02","type":"fx","source":"punch_02.wav"},{"key":"punch_03","file":"sounds/punch-03.wav","label":"Punch 03","type":"fx","source":"punch_03.wav"},{"key":"punch_04","file":"sounds/punch-04.wav","label":"Punch 04","type":"fx","source":"punch_04.wav"},{"key":"punch_05","file":"sounds/punch-05.wav","label":"Punch 05","type":"fx","source":"punch_05.wav"},{"key":"punch_06","file":"sounds/punch-06.wav","label":"Punch 06","type":"fx","source":"punch_06.wav"},{"key":"ratchet_01","file":"sounds/ratchet-01.wav","label":"Ratchet 01","type":"fx","source":"ratchet_01.wav"},{"key":"legacy_ride1","file":"sounds/legacy-ride1.wav","label":"Legacy Ride1","type":"cymbal","source":"ride1.wav"},{"key":"legacy_ride3","file":"sounds/legacy-ride3.wav","label":"Legacy Ride3","type":"cymbal","source":"ride3.wav"},{"key":"ride_electro_01","file":"sounds/ride-electro-01.wav","label":"Ride Electro 01","type":"cymbal","source":"ride_01.wav"},{"key":"ride_electro_02","file":"sounds/ride-electro-02.wav","label":"Ride Electro 02","type":"cymbal","source":"ride_02.wav"},{"key":"legacy_rim","file":"sounds/legacy-rim.wav","label":"Legacy Rim","type":"perc","source":"rim.wav"},{"key":"rimshot_01","file":"sounds/rimshot-01.wav","label":"Rimshot 01","type":"perc","source":"rimshot_01.wav"},{"key":"rimshot_02","file":"sounds/rimshot-02.wav","label":"Rimshot 02","type":"perc","source":"rimshot_02.wav"},{"key":"rimshot_03","file":"sounds/rimshot-03.wav","label":"Rimshot 03","type":"perc","source":"rimshot_03.wav"},{"key":"rimshot_04","file":"sounds/rimshot-04.wav","label":"Rimshot 04","type":"perc","source":"rimshot_04.wav"},{"key":"electro_snare_snap_01","file":"sounds/electro-snare-snap-01.wav","label":"Electro Snare Snap 01","type":"snare","source":"snare_01.wav"},{"key":"electro_snare_snap_02","file":"sounds/electro-snare-snap-02.wav","label":"Electro Snare Snap 02","type":"snare","source":"snare_02.wav"},{"key":"electro_snare_bright_03","file":"sounds/electro-snare-bright-03.wav","label":"Electro Snare Bright 03","type":"snare","source":"snare_03.wav"},{"key":"electro_snare_crack_04","file":"sounds/electro-snare-crack-04.wav","label":"Electro Snare Crack 04","type":"snare","source":"snare_04.wav"},{"key":"electro_snare_snap_05","file":"sounds/electro-snare-snap-05.wav","label":"Electro Snare Snap 05","type":"snare","source":"snare_05.wav"},{"key":"electro_snare_crack_06","file":"sounds/electro-snare-crack-06.wav","label":"Electro Snare Crack 06","type":"snare","source":"snare_06.wav"},{"key":"electro_snare_snap_07","file":"sounds/electro-snare-snap-07.wav","label":"Electro Snare Snap 07","type":"snare","source":"snare_07.wav"},{"key":"electro_snare_snap_08","file":"sounds/electro-snare-snap-08.wav","label":"Electro Snare Snap 08","type":"snare","source":"snare_08.wav"},{"key":"electro_snare_crack_09","file":"sounds/electro-snare-crack-09.wav","label":"Electro Snare Crack 09","type":"snare","source":"snare_09.wav"},{"key":"electro_snare_snap_10","file":"sounds/electro-snare-snap-10.wav","label":"Electro Snare Snap 10","type":"snare","source":"snare_10.wav"},{"key":"electro_snare_warm_11","file":"sounds/electro-snare-warm-11.wav","label":"Electro Snare Warm 11","type":"snare","source":"snare_11.wav"},{"key":"electro_snare_bright_12","file":"sounds/electro-snare-bright-12.wav","label":"Electro Snare Bright 12","type":"snare","source":"snare_12.wav"},{"key":"electro_snare_snap_13","file":"sounds/electro-snare-snap-13.wav","label":"Electro Snare Snap 13","type":"snare","source":"snare_13.wav"},{"key":"electro_snare_snap_14","file":"sounds/electro-snare-snap-14.wav","label":"Electro Snare Snap 14","type":"snare","source":"snare_14.wav"},{"key":"electro_snare_distorted_01","file":"sounds/electro-snare-distorted-01.wav","label":"Electro Snare Distorted 01","type":"snare","source":"snare_distort_01.wav"},{"key":"electro_snare_distorted_02","file":"sounds/electro-snare-distorted-02.wav","label":"Electro Snare Distorted 02","type":"snare","source":"snare_distort_02.wav"},{"key":"legacy_splash1","file":"sounds/legacy-splash1.wav","label":"Legacy Splash1","type":"cymbal","source":"splash1.wav"},{"key":"legacy_stax_1","file":"sounds/legacy-stax-1.wav","label":"Legacy Stax 1","type":"fx","source":"stax1.wav"},{"key":"metronome_tick","file":"sounds/metronome-tick.wav","label":"Metronome Tick","type":"metro","source":"tick.wav"},{"key":"electro_tom_high_01","file":"sounds/electro-tom-high-01.wav","label":"Electro Tom High 01","type":"tom","source":"tom_hi_01.wav"},{"key":"electro_tom_high_02","file":"sounds/electro-tom-high-02.wav","label":"Electro Tom High 02","type":"tom","source":"tom_hi_02.wav"},{"key":"electro_tom_high_03","file":"sounds/electro-tom-high-03.wav","label":"Electro Tom High 03","type":"tom","source":"tom_hi_03.wav"},{"key":"electro_tom_high_04","file":"sounds/electro-tom-high-04.wav","label":"Electro Tom High 04","type":"tom","source":"tom_hi_04.wav"},{"key":"electro_tom_high_05","file":"sounds/electro-tom-high-05.wav","label":"Electro Tom High 05","type":"tom","source":"tom_hi_05.wav"},{"key":"electro_tom_low_01","file":"sounds/electro-tom-low-01.wav","label":"Electro Tom Low 01","type":"tom","source":"tom_low_01.wav"},{"key":"electro_tom_low_02","file":"sounds/electro-tom-low-02.wav","label":"Electro Tom Low 02","type":"tom","source":"tom_low_02.wav"},{"key":"electro_tom_low_03","file":"sounds/electro-tom-low-03.wav","label":"Electro Tom Low 03","type":"tom","source":"tom_low_03.wav"},{"key":"electro_tom_low_04","file":"sounds/electro-tom-low-04.wav","label":"Electro Tom Low 04","type":"tom","source":"tom_low_04.wav"},{"key":"electro_tom_low_05","file":"sounds/electro-tom-low-05.wav","label":"Electro Tom Low 05","type":"tom","source":"tom_low_05.wav"},{"key":"electro_tom_mid_01","file":"sounds/electro-tom-mid-01.wav","label":"Electro Tom Mid 01","type":"tom","source":"tom_mid_01.wav"},{"key":"electro_tom_mid_02","file":"sounds/electro-tom-mid-02.wav","label":"Electro Tom Mid 02","type":"tom","source":"tom_mid_02.wav"},{"key":"electro_tom_mid_03","file":"sounds/electro-tom-mid-03.wav","label":"Electro Tom Mid 03","type":"tom","source":"tom_mid_03.wav"},{"key":"electro_tom_mid_04","file":"sounds/electro-tom-mid-04.wav","label":"Electro Tom Mid 04","type":"tom","source":"tom_mid_04.wav"},{"key":"electro_tom_mid_05","file":"sounds/electro-tom-mid-05.wav","label":"Electro Tom Mid 05","type":"tom","source":"tom_mid_05.wav"},{"key":"twang_01","file":"sounds/twang-01.wav","label":"Twang 01","type":"fx","source":"twang_01.wav"},{"key":"twang_02","file":"sounds/twang-02.wav","label":"Twang 02","type":"fx","source":"twang_02.wav"},{"key":"twang_03","file":"sounds/twang-03.wav","label":"Twang 03","type":"fx","source":"twang_03.wav"},{"key":"vocal_are_you_crazy","file":"sounds/vocal-are-you-crazy.wav","label":"Vocal Are You Crazy","type":"fx","source":"vocal_are_you_crazy.wav"},{"key":"vocal_come_on_01","file":"sounds/vocal-come-on-01.wav","label":"Vocal Come On 01","type":"fx","source":"vocal_come_on_01.wav"},{"key":"vocal_dont_judge","file":"sounds/vocal-dont-judge.wav","label":"Vocal Dont Judge","type":"fx","source":"vocal_dont_judge.wav"},{"key":"vocal_gasp","file":"sounds/vocal-gasp.wav","label":"Vocal Gasp","type":"fx","source":"vocal_gasp.wav"},{"key":"vocal_lets_run","file":"sounds/vocal-lets-run.wav","label":"Vocal Lets Run","type":"fx","source":"vocal_lets_run.wav"},{"key":"vocal_no_cant","file":"sounds/vocal-no-cant.wav","label":"Vocal No Cant","type":"fx","source":"vocal_no_cant.wav"},{"key":"vocal_order","file":"sounds/vocal-order.wav","label":"Vocal Order","type":"fx","source":"vocal_order.wav"},{"key":"vocal_scream_01","file":"sounds/vocal-scream-01.wav","label":"Vocal Scream 01","type":"fx","source":"vocal_scream_01.wav"},{"key":"vocal_the_line","file":"sounds/vocal-the-line.wav","label":"Vocal The Line","type":"fx","source":"vocal_the_line.wav"},{"key":"vocal_what_01","file":"sounds/vocal-what-01.wav","label":"Vocal What 01","type":"fx","source":"vocal_what_01.wav"},{"key":"vocal_what_02","file":"sounds/vocal-what-02.wav","label":"Vocal What 02","type":"fx","source":"vocal_what_02.wav"},{"key":"warb_01","file":"sounds/warb-01.wav","label":"Warb 01","type":"fx","source":"warb_01.wav"},{"key":"zap_01","file":"sounds/zap-01.wav","label":"Zap 01","type":"fx","source":"zap_01.wav"},{"key":"zap_02","file":"sounds/zap-02.wav","label":"Zap 02","type":"fx","source":"zap_02.wav"},{"key":"zap_03","file":"sounds/zap-03.wav","label":"Zap 03","type":"fx","source":"zap_03.wav"},{"key":"zap_04","file":"sounds/zap-04.wav","label":"Zap 04","type":"fx","source":"zap_04.wav"},{"key":"zap_05","file":"sounds/zap-05.wav","label":"Zap 05","type":"fx","source":"zap_05.wav"}]);
     const SAMPLE_INDEX = Object.freeze(Object.fromEntries(SAMPLE_LIBRARY.map(sample => [sample.key, Object.freeze(sample)])));
@@ -39,7 +36,6 @@
         LEGACY_TRACK_COUNT: 10,
         MEMORY_SLOTS: 8,
         TEMPO: Object.freeze({ min: 40, max: 240, default: 120 }),
-        TEMPO_RAMP_STEP: 1,
         SWING: Object.freeze({ min: 0, max: 100, default: 0, maxDelayRatio: 0.28 }),
         VELOCITY_GAIN: Object.freeze({ ghost:0.30, soft:0.48, normal:0.72, strong:0.92, accent:1.15 }),
         SCHEDULER: Object.freeze({ lookAheadMs: 25, scheduleAheadSec: 0.1 }),
@@ -60,6 +56,70 @@
             return String(value).replace(/[&<>"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
         }
     });
+
+    const I18N_RESOURCES = Object.freeze({
+        fr: { translation: {
+            "toolbar.source":"SOURCE", "toolbar.style":"STYLE", "toolbar.groove":"GROOVE", "toolbar.variant":"VARIANTE", "toolbar.swing":"SWING",
+            "search.placeholder":"Rechercher un groove…", "search.aria":"Rechercher dans tous les grooves", "search.results":"Résultats de recherche", "common.off":"Off", "language.tooltip":"Langue", "theme.toggle":"Basculer le thème clair / sombre", "share.tooltip":"Partager ou sauvegarder ce groove", "audio.output":"Niveau de sortie audio", "audio.outputAria":"VU-mètre de sortie", "toolbar.sourceTooltip":"Source des grooves", "toolbar.styleTooltip":"Style musical", "toolbar.grooveTooltip":"Groove", "toolbar.reload":"Recharger le groove original", "toolbar.variantTooltip":"Créer une variante musicale du groove courant", "kit.tooltip":"Kit de batterie", "swing.tooltip":"Swing en pourcentage", "transport.playPause":"Lecture / stop (Espace)","transport.stop":"Stop", "transport.tap":"Tap tempo (T)", "transport.tempoDown":"Diminuer le tempo", "transport.tempoUp":"Augmenter le tempo", "transport.tempo":"Tempo en BPM", "transport.signature":"Signature rythmique", "practice.countIn":"COUNT-IN", "memory.chain":"Chaîner les mémoires", "memory.undo":"Annuler", "memory.redo":"Rétablir", "memory.save":"Sauvegarder dans la mémoire sélectionnée (Ctrl+S)", "memory.new":"Nouveau pattern vierge", "memory.clear":"Vider les mémoires",
+            "practice.title":"Entraînement", "practice.subtitle":"Travaille le groove par tempo ou par couches.", "practice.progression":"PROGRESSION", "practice.modeTempo":"Tempo", "practice.modeLayers":"Couches", "practice.modeCombined":"Couches + tempo", "practice.start":"DÉPART", "practice.target":"OBJECTIF", "practice.step":"PALIER", "practice.loops":"TOURS / NIVEAU", "practice.oneBar":"1 mesure", "practice.twoBars":"2 mesures", "practice.startButton":"Démarrer", "practice.stopButton":"Arrêter", "practice.ready":"Prêt à démarrer", "practice.explainer":"Couches : charley → caisse claire → kick → autres éléments du groove → accents → ghost notes.",
+            "practice.hihat":"Charley", "practice.snare":"Charley + caisse claire", "practice.kick":"Charley + caisse claire + kick", "practice.accents":"+ accents", "practice.ghosts":"+ ghost notes", "practice.tempoStatus":"{{tempo}} → {{target}} BPM", "practice.loop":"tour {{current}}/{{total}}", "practice.started":"Entraînement démarré à {{tempo}} BPM.", "practice.stopped":"Entraînement arrêté.", "practice.targetReached":"Objectif atteint : {{tempo}} BPM. On continue.", "practice.layersDone":"Toutes les couches sont en place.", "practice.layersToTempo":"Couches acquises. Progression tempo vers {{target}} BPM.", "practice.level":"Entraînement : {{label}}.", "practice.tempo":"Entraînement : {{tempo}} BPM.",
+            "track.crash":"Crash", "track.ride":"Ride", "track.openHat":"HH ouvert", "track.closedHat":"HH fermé", "track.snare":"Caisse claire", "track.tomHigh":"Tom aigu", "track.tomMid":"Tom médium", "track.tomFloor":"Tom basse", "track.kick":"Kick",
+            "language.label":"Langue", "common.close":"Fermer", "share.title":"Partager ce groove", "share.subtitle":"Le lien contient le groove courant. Scanne-le, partage-le ou enregistre-le dans tes favoris.", "share.link":"LIEN", "share.copy":"Copier le lien", "share.share":"Partager", "transport.metronome":"Métronome (M)", "transport.practice":"Entraînement", "transport.play":"Lecture", "transport.pause":"Pause", "transport.practice":"Entraînement", "memory.slot":"Mémoire {{n}}", "memory.saved":"sauvegardée", "memory.empty":"vide", "memory.selected":"sélectionnée"
+        }},
+        en: { translation: {
+            "toolbar.source":"SOURCE", "toolbar.style":"STYLE", "toolbar.groove":"GROOVE", "toolbar.variant":"VARIATION", "toolbar.swing":"SWING",
+            "search.placeholder":"Search grooves…", "search.aria":"Search all grooves", "search.results":"Search results", "common.off":"Off", "language.tooltip":"Language", "theme.toggle":"Toggle light / dark theme", "share.tooltip":"Share or save this groove", "audio.output":"Audio output level", "audio.outputAria":"Output VU meter", "toolbar.sourceTooltip":"Groove source", "toolbar.styleTooltip":"Music style", "toolbar.grooveTooltip":"Groove", "toolbar.reload":"Reload original groove", "toolbar.variantTooltip":"Create a musical variation of the current groove", "kit.tooltip":"Drum kit", "swing.tooltip":"Swing percentage", "transport.playPause":"Play / stop (Space)","transport.stop":"Stop", "transport.tap":"Tap tempo (T)", "transport.tempoDown":"Decrease tempo", "transport.tempoUp":"Increase tempo", "transport.tempo":"Tempo in BPM", "transport.signature":"Time signature", "practice.countIn":"COUNT-IN", "memory.chain":"Chain memories", "memory.undo":"Undo", "memory.redo":"Redo", "memory.save":"Save to selected memory (Ctrl+S)", "memory.new":"New empty pattern", "memory.clear":"Clear memories",
+            "practice.title":"Practice", "practice.subtitle":"Practice the groove by tempo or by layers.", "practice.progression":"PROGRESSION", "practice.modeTempo":"Tempo", "practice.modeLayers":"Layers", "practice.modeCombined":"Layers + tempo", "practice.start":"START", "practice.target":"TARGET", "practice.step":"STEP", "practice.loops":"LOOPS / LEVEL", "practice.oneBar":"1 bar", "practice.twoBars":"2 bars", "practice.startButton":"Start", "practice.stopButton":"Stop", "practice.ready":"Ready to start", "practice.explainer":"Layers: hi-hat → snare → kick → other groove parts → accents → ghost notes.",
+            "practice.hihat":"Hi-hat", "practice.snare":"Hi-hat + snare", "practice.kick":"Hi-hat + snare + kick", "practice.accents":"+ accents", "practice.ghosts":"+ ghost notes", "practice.tempoStatus":"{{tempo}} → {{target}} BPM", "practice.loop":"loop {{current}}/{{total}}", "practice.started":"Practice started at {{tempo}} BPM.", "practice.stopped":"Practice stopped.", "practice.targetReached":"Target reached: {{tempo}} BPM. Keep going.", "practice.layersDone":"All layers are active.", "practice.layersToTempo":"Layers complete. Tempo progression to {{target}} BPM.", "practice.level":"Practice: {{label}}.", "practice.tempo":"Practice: {{tempo}} BPM.",
+            "track.crash":"Crash", "track.ride":"Ride", "track.openHat":"Open HH", "track.closedHat":"Closed HH", "track.snare":"Snare", "track.tomHigh":"High Tom", "track.tomMid":"Mid Tom", "track.tomFloor":"Floor Tom", "track.kick":"Kick",
+            "language.label":"Language", "common.close":"Close", "share.title":"Share this groove", "share.subtitle":"The link contains the current groove. Scan it, share it or save it to your favorites.", "share.link":"LINK", "share.copy":"Copy link", "share.share":"Share", "transport.metronome":"Metronome (M)", "transport.practice":"Practice", "transport.play":"Play", "transport.pause":"Pause", "transport.practice":"Practice", "memory.slot":"Memory {{n}}", "memory.saved":"saved", "memory.empty":"empty", "memory.selected":"selected"
+        }},
+        es: { translation: {
+            "toolbar.source":"FUENTE", "toolbar.style":"ESTILO", "toolbar.groove":"GROOVE", "toolbar.variant":"VARIACIÓN", "toolbar.swing":"SWING",
+            "search.placeholder":"Buscar grooves…", "search.aria":"Buscar en todos los grooves", "search.results":"Resultados de búsqueda", "common.off":"Off", "language.tooltip":"Idioma", "theme.toggle":"Cambiar tema claro / oscuro", "share.tooltip":"Compartir o guardar este groove", "audio.output":"Nivel de salida de audio", "audio.outputAria":"VU-metro de salida", "toolbar.sourceTooltip":"Fuente de grooves", "toolbar.styleTooltip":"Estilo musical", "toolbar.grooveTooltip":"Groove", "toolbar.reload":"Recargar el groove original", "toolbar.variantTooltip":"Crear una variación musical del groove actual", "kit.tooltip":"Kit de batería", "swing.tooltip":"Swing en porcentaje", "transport.playPause":"Reproducir / stop (Espacio)","transport.stop":"Stop", "transport.tap":"Tap tempo (T)", "transport.tempoDown":"Disminuir tempo", "transport.tempoUp":"Aumentar tempo", "transport.tempo":"Tempo en BPM", "transport.signature":"Compás", "practice.countIn":"COUNT-IN", "memory.chain":"Encadenar memorias", "memory.undo":"Deshacer", "memory.redo":"Rehacer", "memory.save":"Guardar en la memoria seleccionada (Ctrl+S)", "memory.new":"Nuevo patrón vacío", "memory.clear":"Vaciar memorias",
+            "practice.title":"Práctica", "practice.subtitle":"Practica el groove por tempo o por capas.", "practice.progression":"PROGRESIÓN", "practice.modeTempo":"Tempo", "practice.modeLayers":"Capas", "practice.modeCombined":"Capas + tempo", "practice.start":"INICIO", "practice.target":"OBJETIVO", "practice.step":"PASO", "practice.loops":"VUELTAS / NIVEL", "practice.oneBar":"1 compás", "practice.twoBars":"2 compases", "practice.startButton":"Empezar", "practice.stopButton":"Parar", "practice.ready":"Listo para empezar", "practice.explainer":"Capas: charles → caja → bombo → otras partes del groove → acentos → ghost notes.",
+            "practice.hihat":"Charles", "practice.snare":"Charles + caja", "practice.kick":"Charles + caja + bombo", "practice.accents":"+ acentos", "practice.ghosts":"+ ghost notes", "practice.tempoStatus":"{{tempo}} → {{target}} BPM", "practice.loop":"vuelta {{current}}/{{total}}", "practice.started":"Práctica iniciada a {{tempo}} BPM.", "practice.stopped":"Práctica detenida.", "practice.targetReached":"Objetivo alcanzado: {{tempo}} BPM. Continúa.", "practice.layersDone":"Todas las capas están activas.", "practice.layersToTempo":"Capas completadas. Progresión de tempo hasta {{target}} BPM.", "practice.level":"Práctica: {{label}}.", "practice.tempo":"Práctica: {{tempo}} BPM.",
+            "track.crash":"Crash", "track.ride":"Ride", "track.openHat":"Charles abierto", "track.closedHat":"Charles cerrado", "track.snare":"Caja", "track.tomHigh":"Tom agudo", "track.tomMid":"Tom medio", "track.tomFloor":"Tom base", "track.kick":"Bombo",
+            "language.label":"Idioma", "common.close":"Cerrar", "share.title":"Compartir este groove", "share.subtitle":"El enlace contiene el groove actual. Escanéalo, compártelo o guárdalo en tus favoritos.", "share.link":"ENLACE", "share.copy":"Copiar enlace", "share.share":"Compartir", "transport.metronome":"Metrónomo (M)", "transport.practice":"Práctica", "transport.play":"Reproducir", "transport.pause":"Pausa", "transport.practice":"Práctica", "memory.slot":"Memoria {{n}}", "memory.saved":"guardada", "memory.empty":"vacía", "memory.selected":"seleccionada"
+        }}
+    });
+    const I18N = {
+        language: "fr",
+        init() {
+            const saved = localStorage.getItem("battrochtek-language");
+            const browser = String(navigator.language || "fr").slice(0, 2).toLowerCase();
+            this.language = ["fr", "en", "es"].includes(saved) ? saved : (["fr", "en", "es"].includes(browser) ? browser : "fr");
+            if (window.i18next?.init) {
+                window.i18next.init({ lng:this.language, fallbackLng:"fr", resources:I18N_RESOURCES, initImmediate:false, interpolation:{ escapeValue:false } });
+            }
+            document.documentElement.lang = this.language;
+        },
+        t(key, params = {}) {
+            const rawFallback = I18N_RESOURCES[this.language]?.translation?.[key] ?? I18N_RESOURCES.fr.translation[key] ?? key;
+            let fallback = String(rawFallback);
+            Object.entries(params).forEach(([name, replacement]) => { fallback = fallback.replaceAll(`{{${name}}}`, String(replacement)); });
+            if (window.i18next?.t) {
+                const translated = window.i18next.t(key, { ...params, lng:this.language, defaultValue:fallback });
+                if (typeof translated === "string" && translated.length) return translated;
+            }
+            return fallback;
+        },
+        setLanguage(language) {
+            if (!["fr", "en", "es"].includes(language)) return;
+            this.language = language;
+            localStorage.setItem("battrochtek-language", language);
+            window.i18next?.changeLanguage?.(language);
+            document.documentElement.lang = language;
+            this.apply(document);
+            window.dispatchEvent(new CustomEvent("battrochtek-language", { detail:language }));
+        },
+        apply(root = document) {
+            root.querySelectorAll("[data-i18n]").forEach(node => { node.textContent = this.t(node.dataset.i18n); });
+            root.querySelectorAll("[data-i18n-placeholder]").forEach(node => { node.placeholder = this.t(node.dataset.i18nPlaceholder); });
+            root.querySelectorAll("[data-i18n-aria]").forEach(node => { node.setAttribute("aria-label", this.t(node.dataset.i18nAria)); });
+            root.querySelectorAll("[data-i18n-tooltip]").forEach(node => { node.dataset.btTooltip = this.t(node.dataset.i18nTooltip); });
+        }
+    };
 
     function createFactoryPresets() {
         const external = Array.isArray(window.BATTROCHTEK_EXTERNAL_GROOVES) ? window.BATTROCHTEK_EXTERNAL_GROOVES : [];
@@ -337,8 +397,6 @@
             this.trackSolo = Array(CONFIG.TRACK_COUNT).fill(false);
             this.chainEnabled = false;
             this.metronomeEnabled = false;
-            this.tempoRampEnabled = false;
-            this.tempoRampStep = CONFIG.TEMPO_RAMP_STEP;
         }
         get signature() { return CONFIG.SIGNATURES[this.signatureIndex]; }
         snapshot() {
@@ -542,16 +600,186 @@
         }
     }
 
+
+    class PracticeController {
+        constructor(sequencer, audio) {
+            this.seq = sequencer;
+            this.audio = audio;
+            this.ui = null;
+            this.scheduler = null;
+            this.enabled = false;
+            this.mode = "tempo";
+            this.startTempo = 60;
+            this.targetTempo = 90;
+            this.tempoStep = 3;
+            this.loopsPerLevel = 4;
+            this.countInBars = 1;
+            this.loopCount = 0;
+            this.layerLevel = 0;
+            this.phase = "tempo";
+            this.targetAnnounced = false;
+        }
+        attach(ui, scheduler) { this.ui = ui; this.scheduler = scheduler; }
+        configure(options = {}) {
+            const clampInt = (value, min, max, fallback) => Math.round(Util.clamp(value, min, max, fallback));
+            this.mode = ["layers", "tempo", "combined"].includes(options.mode) ? options.mode : "tempo";
+            this.startTempo = clampInt(options.startTempo, CONFIG.TEMPO.min, CONFIG.TEMPO.max, 60);
+            this.targetTempo = clampInt(options.targetTempo, CONFIG.TEMPO.min, CONFIG.TEMPO.max, Math.max(90, this.startTempo));
+            if (this.targetTempo < this.startTempo) [this.startTempo, this.targetTempo] = [this.targetTempo, this.startTempo];
+            this.tempoStep = clampInt(options.tempoStep, 1, 20, 3);
+            this.loopsPerLevel = clampInt(options.loopsPerLevel, 1, 32, 4);
+            this.countInBars = clampInt(options.countInBars, 0, 2, 1);
+        }
+        start(options = {}) {
+            this.configure(options);
+            this.enabled = true;
+            this.resetForTransport({ announce:false });
+            this.ui?.renderButtons();
+            this.ui?.renderPractice();
+            this.ui?.status(I18N.t("practice.started", { tempo:this.startTempo }));
+        }
+        stop({ silent = false } = {}) {
+            if (!this.enabled) return;
+            this.enabled = false;
+            this.loopCount = 0;
+            this.ui?.renderButtons();
+            this.ui?.renderPractice();
+            if (!silent) this.ui?.status(I18N.t("practice.stopped"));
+        }
+        resetForTransport({ announce = false } = {}) {
+            if (!this.enabled) return;
+            this.loopCount = 0;
+            this.layerLevel = this.mode === "tempo" ? this.maxLayerLevel : 0;
+            this.phase = this.mode === "tempo" ? "tempo" : "layers";
+            this.targetAnnounced = false;
+            this.seq.tempo = this.startTempo;
+            this.ui?.renderTempo();
+            this.ui?.renderPractice();
+            if (announce) this.ui?.status(I18N.t("practice.started", { tempo:this.startTempo }));
+        }
+        trackHasNotes(track) {
+            const steps = this.seq.signature.steps;
+            for (let step = 0; step < steps; step++) if (this.seq.activeCells.has(track * steps + step)) return true;
+            return false;
+        }
+        get layerPlan() {
+            const R = TRACK_ROLES;
+            const hats = [R.closedHat, R.openHat].filter(track => this.trackHasNotes(track));
+            const pulse = hats.length ? hats : (this.trackHasNotes(R.ride) ? [R.ride] : []);
+            const stages = [];
+            const current = new Set(pulse);
+            stages.push({ tracks:new Set(current), label:I18N.t("practice.hihat") });
+            if (this.trackHasNotes(R.snare)) current.add(R.snare);
+            stages.push({ tracks:new Set(current), label:I18N.t("practice.snare") });
+            if (this.trackHasNotes(R.kick)) current.add(R.kick);
+            stages.push({ tracks:new Set(current), label:I18N.t("practice.kick") });
+            const extras = [R.ride, R.tomHigh, R.tomMid, R.tomFloor, R.crash]
+                .filter(track => !current.has(track) && this.trackHasNotes(track));
+            const extraLabels = {
+                [R.ride]:I18N.t("track.ride"), [R.tomHigh]:I18N.t("track.tomHigh"), [R.tomMid]:I18N.t("track.tomMid"),
+                [R.tomFloor]:I18N.t("track.tomFloor"), [R.crash]:I18N.t("track.crash")
+            };
+            extras.forEach(track => { current.add(track); stages.push({ tracks:new Set(current), label:`+ ${extraLabels[track]}` }); });
+            stages.push({ tracks:new Set(current), label:I18N.t("practice.accents"), accents:true });
+            stages.push({ tracks:new Set(current), label:I18N.t("practice.ghosts"), accents:true, ghosts:true });
+            return stages;
+        }
+        get maxLayerLevel() { return Math.max(0, this.layerPlan.length - 1); }
+        get currentLayer() { return this.layerPlan[Math.min(this.layerLevel, this.maxLayerLevel)]; }
+        get currentLayerLabel() { return this.currentLayer?.label || I18N.t("practice.hihat"); }
+        get progressLabel() {
+            if (!this.enabled) return I18N.t("practice.ready");
+            if (this.phase === "layers") return this.currentLayerLabel;
+            return I18N.t("practice.tempoStatus", { tempo:this.seq.tempo, target:this.targetTempo });
+        }
+        get beatSteps() { return Math.max(1, this.seq.signature.group); }
+        get beatsPerBar() { return Math.max(1, Math.round(this.seq.signature.barSteps / this.beatSteps)); }
+        get countInDuration() {
+            if (!this.enabled || this.countInBars <= 0) return 0;
+            const sixteenth = 60 / Util.clamp(this.seq.tempo, CONFIG.TEMPO.min, CONFIG.TEMPO.max, CONFIG.TEMPO.default) / 4;
+            return this.seq.signature.barSteps * sixteenth * this.countInBars;
+        }
+        scheduleCountIn(startTime) {
+            if (!this.enabled || this.countInBars <= 0) return;
+            const sixteenth = 60 / Util.clamp(this.seq.tempo, CONFIG.TEMPO.min, CONFIG.TEMPO.max, CONFIG.TEMPO.default) / 4;
+            const beatDuration = sixteenth * this.beatSteps;
+            const totalBeats = this.beatsPerBar * this.countInBars;
+            for (let beat = 0; beat < totalBeats; beat++) {
+                this.audio.play({
+                    kitIndex:this.seq.kitIndex,
+                    trackIndex:CONFIG.METRONOME_TRACK_INDEX,
+                    sampleKey:CONFIG.KITS[this.seq.kitIndex].tracks[CONFIG.METRONOME_TRACK_INDEX],
+                    time:startTime + beat * beatDuration,
+                    trackVolume:beat % this.beatsPerBar === 0 ? 0.95 : 0.7,
+                    masterVolume:this.seq.masterVolume,
+                    velocity:beat % this.beatsPerBar === 0 ? "accent" : "normal"
+                });
+            }
+        }
+        isTrackAllowed(track) {
+            if (!this.enabled || this.mode === "tempo" || this.phase === "tempo") return true;
+            return this.currentLayer?.tracks?.has(track) ?? true;
+        }
+        isCellAllowed(cellIndex, track) {
+            if (!this.enabled) return true;
+            if (!this.isTrackAllowed(track)) return false;
+            if (this.mode === "tempo" || this.phase === "tempo") return true;
+            if (!this.currentLayer?.ghosts && this.seq.ghostCells.has(cellIndex)) return false;
+            return true;
+        }
+        velocityForCell(cellIndex, velocity) {
+            if (!this.enabled || this.mode === "tempo" || this.phase === "tempo") return velocity;
+            if (!this.currentLayer?.accents && this.seq.accentCells.has(cellIndex)) return "normal";
+            return velocity;
+        }
+        onLoopEnd() {
+            if (!this.enabled) return;
+            this.loopCount += 1;
+            if (this.loopCount < this.loopsPerLevel) { this.ui?.renderPractice(); return; }
+            this.loopCount = 0;
+            if (this.phase === "layers") {
+                if (this.layerLevel < this.maxLayerLevel) {
+                    this.layerLevel += 1;
+                    this.ui?.status(I18N.t("practice.level", { label:this.currentLayerLabel }));
+                    this.ui?.renderPractice();
+                    return;
+                }
+                if (this.mode === "combined") {
+                    this.phase = "tempo";
+                    this.ui?.status(I18N.t("practice.layersToTempo", { target:this.targetTempo }));
+                } else if (!this.targetAnnounced) {
+                    this.targetAnnounced = true;
+                    this.ui?.status(I18N.t("practice.layersDone"));
+                }
+                this.ui?.renderPractice();
+                return;
+            }
+            if (this.seq.tempo < this.targetTempo) {
+                this.seq.tempo = Math.min(this.targetTempo, this.seq.tempo + this.tempoStep);
+                this.ui?.renderTempo();
+                this.ui?.status(I18N.t("practice.tempo", { tempo:this.seq.tempo }));
+            } else if (!this.targetAnnounced) {
+                this.targetAnnounced = true;
+                this.ui?.status(I18N.t("practice.targetReached", { tempo:this.seq.tempo }));
+            }
+            this.ui?.renderPractice();
+        }
+    }
+
     class Scheduler {
-        constructor(audio, sequencer, ui) {
-            this.audio = audio; this.seq = sequencer; this.ui = ui;
+        constructor(audio, sequencer, ui, practice = null) {
+            this.audio = audio; this.seq = sequencer; this.ui = ui; this.practice = practice;
             this.playing = false; this.step = 0; this.nextTime = 0; this.timer = null;
         }
         async start() {
             if (this.playing) return;
             const ctx = await this.audio.resume();
-            this.playing = true; this.step = 0; this.nextTime = ctx.currentTime + 0.02;
+            this.playing = true; this.step = 0;
+            const countInStart = ctx.currentTime + 0.02;
+            if (this.practice?.enabled) this.practice.scheduleCountIn(countInStart);
+            this.nextTime = countInStart + (this.practice?.countInDuration || 0);
             this.ui.setPlaying(true);
+            this.ui.renderPractice?.();
             this.loop();
         }
         stop() {
@@ -559,7 +787,9 @@
             clearTimeout(this.timer); this.timer = null;
             this.ui.setPlaying(false); this.ui.clearPlayhead();
         }
-        toggle() { return this.playing ? this.stop() : this.start(); }
+        toggle() {
+            return this.playing ? this.stop() : this.start();
+        }
         loop() {
             if (!this.playing) return;
             const ctx = this.audio.ensureContext();
@@ -579,16 +809,7 @@
                     this.ui.renderState();
                     this.ui.makeKeyboardAccessible();
                 }
-                if (finishing && this.seq.tempoRampEnabled) {
-                    const before = this.seq.tempo;
-                    this.seq.tempo = Math.round(Util.clamp(before + this.seq.tempoRampStep, CONFIG.TEMPO.min, CONFIG.TEMPO.max, CONFIG.TEMPO.default));
-                    if (this.seq.tempo !== before) this.ui.renderTempo();
-                    if (this.seq.tempo >= CONFIG.TEMPO.max) {
-                        this.seq.tempoRampEnabled = false;
-                        this.ui.renderButtons();
-                        this.ui.status(`Escalier terminé : ${CONFIG.TEMPO.max} BPM.`);
-                    }
-                }
+                if (finishing && this.practice?.enabled) this.practice.onLoopEnd();
             }
             this.timer = setTimeout(() => this.loop(), CONFIG.SCHEDULER.lookAheadMs);
         }
@@ -600,8 +821,9 @@
             }
             for (let track = 0; track < CONFIG.TRACK_COUNT; track++) {
                 const cellIndex = track * steps + step;
-                if (!this.seq.activeCells.has(cellIndex) || !this.seq.isTrackAudible(track)) continue;
-                const velocity = this.seq.accentCells.has(cellIndex) ? "accent" : this.seq.strongCells.has(cellIndex) ? "strong" : this.seq.weakCells.has(cellIndex) ? "soft" : this.seq.ghostCells.has(cellIndex) ? "ghost" : "normal";
+                if (!this.seq.activeCells.has(cellIndex) || !this.seq.isTrackAudible(track) || !this.practice?.isCellAllowed(cellIndex, track)) continue;
+                const baseVelocity = this.seq.accentCells.has(cellIndex) ? "accent" : this.seq.strongCells.has(cellIndex) ? "strong" : this.seq.weakCells.has(cellIndex) ? "soft" : this.seq.ghostCells.has(cellIndex) ? "ghost" : "normal";
+                const velocity = this.practice?.velocityForCell(cellIndex, baseVelocity) || baseVelocity;
                 this.audio.play({
                     kitIndex: this.seq.kitIndex,
                     trackIndex: track,
@@ -659,9 +881,9 @@
     }
 
     class UIController {
-        constructor(seq, audio) {
-            this.seq = seq; this.audio = audio; this.scheduler = null;
-            this.cells = []; this.memoryButtons = []; this.trackLabels = []; this.trackSampleSelects = []; this.trackMuteButtons = []; this.trackSoloButtons = []; this.kitButtons = [];
+        constructor(seq, audio, practice = null) {
+            this.seq = seq; this.audio = audio; this.practice = practice; this.scheduler = null;
+            this.cells = []; this.memoryButtons = []; this.trackLabels = []; this.trackRows = []; this.trackSampleSelects = []; this.trackMuteButtons = []; this.trackSoloButtons = []; this.kitButtons = [];
             this.copySnapshot = null; this.playheadTimeouts = []; this.tapTimes = []; this.meterFrame = null;
             this.undoStack = []; this.redoStack = []; this.historyLimit = 30;
             this.dom = this.cacheDom();
@@ -674,7 +896,7 @@
             if (!ui) throw new Error("Alpine.js est requis pour l’interface Battrochtek.");
             ui.playing = !!this.scheduler?.playing;
             ui.metronome = !!this.seq.metronomeEnabled;
-            ui.tempoRamp = !!this.seq.tempoRampEnabled;
+            ui.practice = !!this.practice?.enabled;
             ui.chain = !!this.seq.chainEnabled;
             ui.memorySlot = this.seq.memorySlot;
             ui.undoAvailable = this.undoStack.length > 0;
@@ -688,13 +910,31 @@
                 masterButton: $("master-level"), masterIcon: $("master-level-icon"), swingInput: $("swing-input"), vu: $("vu-meter"), presetSource: $("preset-source"), presetFamily: $("preset-family"), presetGroove: $("preset-groove"), grooveRefresh: $("groove-refresh"), memory: $("memory"), clear: $("clear"), signatureButton: $("signature-button"),
                 signature: $("signature"), signatureNumerator: $("signature-numerator"), signatureDenominator: $("signature-denominator"), metro: $("metronome-button"), chain: $("chain"), play: $("play-button"), icon: $("play-pause-icon"),
                 minus: $("minus-button"), plus: $("plus-button"), tap: $("tap-tempo"), tempo: $("metronome-tempo"), random: $("random"), save: $("save"),
-                undo: $("undo"), redo: $("redo"), tempoRamp: $("tempo-ramp"), kitSelect: $("kit-select"), cacheClear: $("cache-clear"), themeToggle: $("theme-toggle"), themeIcon: $("theme-toggle-icon"), themeColorMeta: $("theme-color-meta"),
+                undo: $("undo"), redo: $("redo"), practiceButton: $("practice-button"), practicePanel: $("practice-panel"), practiceMode: $("practice-mode"), practiceStartTempo: $("practice-start-tempo"), practiceTargetTempo: $("practice-target-tempo"), practiceTempoStep: $("practice-tempo-step"), practiceLoops: $("practice-loops"), practiceCountIn: $("practice-count-in"), practiceStatus: $("practice-status"), kitSelect: $("kit-select"), cacheClear: $("cache-clear"), languageSelect: $("language-select"), themeToggle: $("theme-toggle"), themeIcon: $("theme-toggle-icon"), themeColorMeta: $("theme-color-meta"),
                 grooveSearch: $("groove-search"), grooveSearchList: $("groove-search-list"), shareButton: $("share-button"), shareDialog: $("share-dialog"), shareClose: $("share-close"), shareQr: $("share-qr"), shareQrError: $("share-qr-error"), shareUrl: $("share-url"), shareCopy: $("share-copy"), shareNative: $("share-native")
             };
         }
         init(scheduler) {
             this.scheduler = scheduler;
-            this.setupTheme(); this.setupShare(); this.buildKits(); this.buildTrackLabels(); this.buildMemory(); this.buildSliders(); this.buildGrid(); this.buildPresetSelector(); this.buildGlobalSearch(); this.bindControls(); this.bindUnlock(); this.startVuMeter(); this.renderState(); this.makeKeyboardAccessible();
+            this.setupLanguage(); this.setupTheme(); this.setupShare(); this.setupPractice(); this.buildKits(); this.buildTrackLabels(); this.buildMemory(); this.buildSliders(); this.buildGrid(); this.buildPresetSelector(); this.buildGlobalSearch(); this.bindControls(); this.bindUnlock(); this.startVuMeter(); this.renderState(); this.makeKeyboardAccessible();
+        }
+        setupLanguage() {
+            if (!this.dom.languageSelect) return;
+            this.dom.languageSelect.value = I18N.language;
+            this.dom.languageSelect.setAttribute("aria-label", I18N.t("language.label"));
+            this.dom.languageSelect.addEventListener("change", () => I18N.setLanguage(this.dom.languageSelect.value));
+            window.addEventListener("battrochtek-language", () => {
+                this.dom.languageSelect.value = I18N.language;
+                this.dom.languageSelect.setAttribute("aria-label", I18N.t("language.label"));
+                this.buildTrackLabels();
+                this.renderKit();
+                this.renderTrackControls();
+                this.renderMemory();
+                this.renderPractice();
+                this.setPlaying(!!this.scheduler?.playing);
+                this.makeKeyboardAccessible();
+            });
+            I18N.apply(document);
         }
         setupTheme() {
             const systemDark = window.matchMedia?.("(prefers-color-scheme: dark)");
@@ -791,6 +1031,47 @@
             }
             this.dom.shareDialog.addEventListener("click", event => { if (event.target === this.dom.shareDialog) close(); });
         }
+        setupPractice() {
+            if (!this.practice || !this.dom.practicePanel || !this.dom.practiceButton) return;
+            const fill = () => {
+                this.dom.practiceStartTempo.value = String(this.practice.enabled ? this.practice.startTempo : Math.max(CONFIG.TEMPO.min, Math.min(this.seq.tempo, 80)));
+                this.dom.practiceTargetTempo.value = String(this.practice.enabled ? this.practice.targetTempo : Math.max(this.seq.tempo, 90));
+                this.dom.practiceTempoStep.value = String(this.practice.tempoStep);
+                this.dom.practiceLoops.value = String(this.practice.loopsPerLevel);
+                this.dom.practiceCountIn.value = String(this.practice.countInBars);
+                this.dom.practiceMode.value = this.practice.enabled ? this.practice.mode : "tempo";
+            };
+            this.press(this.dom.practiceButton, () => {
+                const show = this.dom.practicePanel.hidden;
+                if (show) fill();
+                this.dom.practicePanel.hidden = !show;
+                this.renderPractice();
+            });
+        }
+        renderPractice() {
+            if (!this.practice) return;
+            const active = this.practice.enabled;
+            const panelVisible = !!this.dom.practicePanel && !this.dom.practicePanel.hidden;
+            this.dom.practiceButton?.setAttribute("aria-pressed", String(active));
+            this.dom.practiceButton?.setAttribute("aria-expanded", String(panelVisible));
+            this.dom.practiceButton?.classList.toggle("bt-buttondown", active || panelVisible);
+            if (this.dom.practiceStatus) {
+                const counter = I18N.t("practice.loop", { current:Math.min(this.practice.loopCount + 1, this.practice.loopsPerLevel), total:this.practice.loopsPerLevel });
+                this.dom.practiceStatus.textContent = active ? `${this.practice.progressLabel} · ${counter}` : I18N.t("practice.ready");
+            }
+            this.applyPracticeTrackHighlight();
+            this.syncUiStore();
+        }
+        applyPracticeTrackHighlight() {
+            const active = !!this.practice?.enabled;
+            const steps = this.seq.signature.steps;
+            for (let track = 0; track < CONFIG.TRACK_COUNT; track++) {
+                const played = active && this.practice.isTrackAllowed(track);
+                this.trackRows?.[track]?.classList.toggle("practice-played", played);
+                for (let step = 0; step < steps; step++) this.cells[track * steps + step]?.classList.toggle("practice-played", played);
+            }
+        }
+
         buildKits() {
             if (!this.dom.kitSelect) return;
             this.dom.kitSelect.innerHTML = CONFIG.KITS.map((kit,i)=>`<option value="${i}">${kit.name}</option>`).join("") + '<option value="custom" disabled>CUSTOM</option>';
@@ -807,13 +1088,14 @@
         }
         buildTrackLabels() {
             this.dom.tracks.innerHTML = "";
-            this.trackLabels = []; this.trackSampleSelects = []; this.trackMuteButtons = []; this.trackSoloButtons = [];
+            this.trackLabels = []; this.trackRows = []; this.trackSampleSelects = []; this.trackMuteButtons = []; this.trackSoloButtons = [];
             for (let i = 0; i < CONFIG.TRACK_COUNT; i++) {
                 const row = document.createElement("div");
                 row.className = "track-row";
                 const label = document.createElement("div"); label.className = "bt-led track";
-                const select = document.createElement("select"); select.className = "track-sample-select"; select.setAttribute("aria-label", `${TRACK_NAMES[i]} — son`);
-                label.dataset.btTooltip = TRACK_NAMES[i];
+                const select = document.createElement("select"); select.className = "track-sample-select"; const trackName = I18N.t(TRACK_I18N_KEYS[i]);
+                select.setAttribute("aria-label", `${trackName} — son`);
+                label.dataset.btTooltip = trackName;
                 const allowed = new Set(TRACK_SAMPLE_TYPES[i]);
                 const choices = SAMPLE_LIBRARY.filter(sample => allowed.has(sample.type));
                 const grouped = Object.groupBy ? Object.groupBy(choices, sample => sample.type) : choices.reduce((acc, sample) => ((acc[sample.type] ||= []).push(sample), acc), {});
@@ -838,7 +1120,7 @@
                 controls.append(mute, solo);
                 row.append(label, controls);
                 this.dom.tracks.appendChild(row);
-                this.trackLabels.push(label); this.trackSampleSelects.push(select); this.trackMuteButtons.push(mute); this.trackSoloButtons.push(solo);
+                this.trackLabels.push(label); this.trackRows.push(row); this.trackSampleSelects.push(select); this.trackMuteButtons.push(mute); this.trackSoloButtons.push(solo);
             }
         }
         buildMemory() {
@@ -1142,7 +1424,25 @@
             this.dom.signatureDenominator?.addEventListener("change", applySignature);
             this.dom.metro.addEventListener("pointerdown", e => { e.preventDefault(); this.seq.metronomeEnabled = !this.seq.metronomeEnabled; this.renderButtons(); });
             this.dom.chain.addEventListener("pointerdown", e => { e.preventDefault(); if (this.seq.store.populated().length >= 2) this.seq.chainEnabled = !this.seq.chainEnabled; this.renderButtons(); });
-            this.dom.play.addEventListener("pointerdown", e => { e.preventDefault(); this.scheduler.toggle(); });
+            this.dom.play.addEventListener("pointerdown", async e => {
+                e.preventDefault();
+                if (this.scheduler.playing) {
+                    this.scheduler.stop();
+                    if (this.practice?.enabled) this.practice.stop({ silent:true });
+                    return;
+                }
+                if (this.dom.practicePanel && !this.dom.practicePanel.hidden) {
+                    this.practice.start({
+                        mode:this.dom.practiceMode.value,
+                        startTempo:Number(this.dom.practiceStartTempo.value),
+                        targetTempo:Number(this.dom.practiceTargetTempo.value),
+                        tempoStep:Number(this.dom.practiceTempoStep.value),
+                        loopsPerLevel:Number(this.dom.practiceLoops.value),
+                        countInBars:Number(this.dom.practiceCountIn.value)
+                    });
+                }
+                await this.scheduler.start();
+            });
             this.bindTempo(this.dom.minus, -1); this.bindTempo(this.dom.plus, 1);
             if (this.dom.tap) this.press(this.dom.tap, () => this.handleTapTempo());
             if (this.dom.presetSource) this.dom.presetSource.addEventListener("change", () => {
@@ -1173,12 +1473,6 @@
             });
             if (this.dom.undo) this.press(this.dom.undo, () => this.undo());
             if (this.dom.redo) this.press(this.dom.redo, () => this.redo());
-            if (this.dom.tempoRamp) this.dom.tempoRamp.addEventListener("pointerdown", event => {
-                event.preventDefault();
-                this.seq.tempoRampEnabled = !this.seq.tempoRampEnabled;
-                this.renderButtons();
-                this.status(this.seq.tempoRampEnabled ? `Escalier BPM actif : +${CONFIG.TEMPO_RAMP_STEP} BPM par tour.` : "Escalier BPM désactivé.");
-            });
             if (this.dom.tempo) {
                 const commitTempo = () => {
                     this.seq.tempo = Math.round(Util.clamp(Number(this.dom.tempo.value), CONFIG.TEMPO.min, CONFIG.TEMPO.max, CONFIG.TEMPO.default));
@@ -1268,7 +1562,7 @@
             const unlock = async () => { try { this.status("Chargement du kit audio…"); await this.audio.resume(); const buffers = await this.audio.preloadTracks(this.seq.currentTrackSamples()); const missing = buffers.filter(Boolean).length !== buffers.length; this.status(missing ? "Kit chargé partiellement : certains samples sont indisponibles." : "Kit audio prêt."); } catch (e) { console.warn(e); this.status(`Erreur audio : ${e.message || e}`); } };
             ["pointerdown","keydown","touchstart"].forEach(type => document.addEventListener(type, unlock, { once: true, passive: true }));
         }
-        renderState() { this.renderSignature(); this.renderTempo(); this.renderKit(); this.renderGrid(); this.renderSliders(); this.renderSwing(); this.renderTrackControls(); this.renderMemory(); this.renderButtons(); }
+        renderState() { this.renderSignature(); this.renderTempo(); this.renderKit(); this.renderGrid(); this.renderSliders(); this.renderSwing(); this.renderTrackControls(); this.renderMemory(); this.renderButtons(); this.renderPractice(); }
         renderSignature() { if(this.dom.signatureNumerator)this.dom.signatureNumerator.value=String(this.seq.signature.numerator); if(this.dom.signatureDenominator)this.dom.signatureDenominator.value=String(this.seq.signature.denominator); if(this.dom.signature)this.dom.signature.setAttribute("aria-label",`Signature ${this.seq.signature.label}`); }
         renderTempo() { if (this.dom.tempo) this.dom.tempo.value = String(this.seq.tempo); }
         renderKit() {
@@ -1316,9 +1610,10 @@
                 const saved = !!this.seq.store.get(i);
                 const selected = i === this.seq.memorySlot;
                 b.classList.toggle("bt-buttondown", selected);
+                b.classList.toggle("memory-selected", selected);
                 b.classList.toggle("memory-saved", saved);
                 b.classList.toggle("memory-empty", !saved);
-                b.dataset.btTooltip = `Mémoire ${i + 1} — ${saved ? "sauvegardée" : "vide"}${selected ? " — sélectionnée" : ""} — raccourci ${i + 1}`;
+                b.dataset.btTooltip = `${I18N.t("memory.slot", { n:i + 1 })} — ${saved ? I18N.t("memory.saved") : I18N.t("memory.empty")}${selected ? ` — ${I18N.t("memory.selected")}` : ""} — ${i + 1}`;
             });
             if (this.seq.store.populated().length < 2) this.seq.chainEnabled = false;
             this.syncUiStore();
@@ -1328,8 +1623,6 @@
             this.dom.metro.classList.toggle("bt-buttondown", this.seq.metronomeEnabled);
             this.dom.chain.setAttribute("aria-pressed", String(this.seq.chainEnabled));
             this.dom.chain.classList.toggle("bt-buttondown", this.seq.chainEnabled);
-            this.dom.tempoRamp?.setAttribute("aria-pressed", String(this.seq.tempoRampEnabled));
-            this.dom.tempoRamp?.classList.toggle("bt-buttondown", this.seq.tempoRampEnabled);
             this.dom.undo?.setAttribute("aria-disabled", String(this.undoStack.length === 0));
             this.dom.redo?.setAttribute("aria-disabled", String(this.redoStack.length === 0));
             this.syncUiStore();
@@ -1381,12 +1674,13 @@
         }
         resetPresetSelectors() { /* Le motif courant peut être libre sans modifier la sélection affichée. */ }
         setPlaying(value) {
-            this.dom.play.setAttribute("aria-label", value ? "Pause" : "Lecture");
+            this.dom.play.setAttribute("aria-label", value ? I18N.t("transport.stop") : I18N.t("transport.play"));
             this.dom.play.setAttribute("aria-pressed", String(value));
             this.dom.play.classList.toggle("bt-buttondown", value);
             if (this.dom.icon) {
                 this.dom.icon.classList.toggle("fa-play", !value);
-                this.dom.icon.classList.toggle("fa-pause", value);
+                this.dom.icon.classList.toggle("fa-stop", value);
+                this.dom.icon.classList.remove("fa-pause");
             }
             this.syncUiStore();
         }
@@ -1400,6 +1694,7 @@
 
     const App = {
         init() {
+            I18N.init();
             const presets = createFactoryPresets();
             const storage = new StorageManager("mem");
             const store = new PatternStore(storage, presets);
@@ -1409,10 +1704,12 @@
             const first = store.populated()[0] ?? 0;
             sequencer.loadSlot(first);
             const audio = new AudioEngine();
-            const ui = new UIController(sequencer, audio);
-            const scheduler = new Scheduler(audio, sequencer, ui);
+            const practice = new PracticeController(sequencer, audio);
+            const ui = new UIController(sequencer, audio, practice);
+            const scheduler = new Scheduler(audio, sequencer, ui, practice);
+            practice.attach(ui, scheduler);
             ui.init(scheduler);
-            window.Battrochtek = { CONFIG, TRACK_ROLES, store, sequencer, audio, scheduler, ui };
+            window.Battrochtek = { CONFIG, TRACK_ROLES, store, sequencer, audio, scheduler, practice, ui };
         }
     };
 

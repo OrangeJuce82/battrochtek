@@ -1,8 +1,8 @@
 {
   "minimumDifference": 10,
-  "input": 639,
-  "kept": 487,
-  "removed": 152,
+  "input": 1107,
+  "kept": 861,
+  "removed": 246,
   "removedGrooves": [
     {
       "source": "Basic Grooves",
@@ -1485,42 +1485,982 @@
       "difference": 6.3
     },
     {
-      "source": "mei-gmd",
-      "name": "65 funk 112 beat 4 4",
-      "origin": "funk/65_funk_112_beat_4-4.mid",
-      "matchedSource": "mei-gmd",
-      "matchedName": "47 funk 112 beat 4 4",
-      "matchedOrigin": "funk/47_funk_112_beat_4-4.mid",
-      "similarity": 91.3,
-      "difference": 8.7
+      "source": "Drum Machine Patterns",
+      "name": "Afro Cuban3MeasureB",
+      "origin": "Afro Cuban/Afro_Cuban3MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Afro Cuban2MeasureA",
+      "matchedOrigin": "Afro Cuban/Afro_Cuban2MeasureA.mid",
+      "similarity": 94.5,
+      "difference": 5.5
     },
     {
-      "source": "mei-gmd",
-      "name": "8 rock 130 beat 4 4",
-      "origin": "rock/8_rock_130_beat_4-4.mid",
-      "matchedSource": "mei-gmd",
-      "matchedName": "7 rock 130 beat 4 4",
-      "matchedOrigin": "rock/7_rock_130_beat_4-4.mid",
+      "source": "Drum Machine Patterns",
+      "name": "Afro Cuban4MeasureA",
+      "origin": "Afro Cuban/Afro_Cuban4MeasureA.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Afro Cuban1MeasureB",
+      "matchedOrigin": "Afro Cuban/Afro_Cuban1MeasureB.mid",
       "similarity": 100,
       "difference": 0
     },
     {
-      "source": "mei-gmd",
-      "name": "14 rock 130 beat 4 4",
-      "origin": "rock/14_rock_130_beat_4-4.mid",
-      "matchedSource": "mei-gmd",
-      "matchedName": "13 rock 130 beat 4 4",
-      "matchedOrigin": "rock/13_rock_130_beat_4-4.mid",
+      "source": "Drum Machine Patterns",
+      "name": "Afro Cuban4MeasureB",
+      "origin": "Afro Cuban/Afro_Cuban4MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Afro Cuban2MeasureA",
+      "matchedOrigin": "Afro Cuban/Afro_Cuban2MeasureA.mid",
+      "similarity": 94.1,
+      "difference": 5.9
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "AfroCub1",
+      "origin": "Afro Cuban/AfroCub1.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Afro Cuban1MeasureB",
+      "matchedOrigin": "Afro Cuban/Afro_Cuban1MeasureB.mid",
+      "similarity": 97.2,
+      "difference": 2.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "AfroCub2",
+      "origin": "Afro Cuban/AfroCub2.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Afro Cuban3MeasureA",
+      "matchedOrigin": "Afro Cuban/Afro_Cuban3MeasureA.mid",
+      "similarity": 92,
+      "difference": 8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "AfroCub4",
+      "origin": "Afro Cuban/AfroCub4.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "AfroCub3",
+      "matchedOrigin": "Afro Cuban/AfroCub3.mid",
+      "similarity": 90.2,
+      "difference": 9.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Ballad1MeasureB",
+      "origin": "Ballad/Ballad1MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad1MeasureA",
+      "matchedOrigin": "Ballad/Ballad1MeasureA.mid",
+      "similarity": 93.2,
+      "difference": 6.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Ballad3MeasureB",
+      "origin": "Ballad/Ballad3MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad1MeasureA",
+      "matchedOrigin": "Ballad/Ballad1MeasureA.mid",
+      "similarity": 90.2,
+      "difference": 9.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Ballad4MeasureB",
+      "origin": "Ballad/Ballad4MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad4MeasureA",
+      "matchedOrigin": "Ballad/Ballad4MeasureA.mid",
+      "similarity": 93.7,
+      "difference": 6.3
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Blues1MeasureB",
+      "origin": "Blues/Blues1MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Blues1MeasureA",
+      "matchedOrigin": "Blues/Blues1MeasureA.mid",
+      "similarity": 97.9,
+      "difference": 2.1
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Blues2",
+      "origin": "Blues/Blues2.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Blues1MeasureA",
+      "matchedOrigin": "Blues/Blues1MeasureA.mid",
+      "similarity": 93.6,
+      "difference": 6.4
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Blues2MeasureB",
+      "origin": "Blues/Blues2MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Blues1MeasureA",
+      "matchedOrigin": "Blues/Blues1MeasureA.mid",
+      "similarity": 97.9,
+      "difference": 2.1
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Blues3",
+      "origin": "Blues/Blues3.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Blues1MeasureA",
+      "matchedOrigin": "Blues/Blues1MeasureA.mid",
+      "similarity": 91,
+      "difference": 9
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Boogie3",
+      "origin": "Boogie/Boogie3.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Boogie2",
+      "matchedOrigin": "Boogie/Boogie2.mid",
+      "similarity": 90.9,
+      "difference": 9.1
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Bossa4",
+      "origin": "Bossa/Bossa4.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Bossa3",
+      "matchedOrigin": "Bossa/Bossa3.mid",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "BossaNova1MeasureB",
+      "origin": "Bossa/BossaNova1MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Afro Cuban5MeasureB",
+      "matchedOrigin": "Afro Cuban/Afro_Cuban5MeasureB.mid",
+      "similarity": 97,
+      "difference": 3
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Disco2",
+      "origin": "Disco/Disco2.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Disco1 2",
+      "matchedOrigin": "Disco/Disco1_2.mid",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Disco3MeasureA",
+      "origin": "Disco/Disco3MeasureA.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Disco2MeasureB",
+      "matchedOrigin": "Disco/Disco2MeasureB.mid",
+      "similarity": 97,
+      "difference": 3
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Disco3MeasureB",
+      "origin": "Disco/Disco3MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Disco2MeasureB",
+      "matchedOrigin": "Disco/Disco2MeasureB.mid",
+      "similarity": 92,
+      "difference": 8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Disco4MeasureB",
+      "origin": "Disco/Disco4MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Disco4MeasureA",
+      "matchedOrigin": "Disco/Disco4MeasureA.mid",
+      "similarity": 93.6,
+      "difference": 6.4
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Disco5MeasureB",
+      "origin": "Disco/Disco5MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Disco4MeasureA",
+      "matchedOrigin": "Disco/Disco4MeasureA.mid",
+      "similarity": 91.2,
+      "difference": 8.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Disco7",
+      "origin": "Disco/Disco7.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Disco4",
+      "matchedOrigin": "Disco/Disco4.mid",
+      "similarity": 90.2,
+      "difference": 9.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Disco8",
+      "origin": "Disco/Disco8.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Disco4MeasureA",
+      "matchedOrigin": "Disco/Disco4MeasureA.mid",
       "similarity": 95.6,
       "difference": 4.4
     },
     {
-      "source": "mei-gmd",
+      "source": "Drum Machine Patterns",
+      "name": "Disco9",
+      "origin": "Disco/Disco9.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Disco2MeasureA",
+      "matchedOrigin": "Disco/Disco2MeasureA.mid",
+      "similarity": 92,
+      "difference": 8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Funk1MeasureB",
+      "origin": "Funk/Funk1MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad2MeasureB",
+      "matchedOrigin": "Ballad/Ballad2MeasureB.mid",
+      "similarity": 91.5,
+      "difference": 8.5
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Funk3MeasureB",
+      "origin": "Funk/Funk3MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Funk3MeasureA",
+      "matchedOrigin": "Funk/Funk3MeasureA.mid",
+      "similarity": 93.2,
+      "difference": 6.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Funk8MeasureB",
+      "origin": "Funk/Funk8MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Funk8MeasureA",
+      "matchedOrigin": "Funk/Funk8MeasureA.mid",
+      "similarity": 96.2,
+      "difference": 3.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Funk10MeasureB",
+      "origin": "Funk/Funk10MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Funk10MeasureA",
+      "matchedOrigin": "Funk/Funk10MeasureA.mid",
+      "similarity": 90.7,
+      "difference": 9.3
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Funk11MeasureB",
+      "origin": "Funk/Funk11MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Funk11MeasureA",
+      "matchedOrigin": "Funk/Funk11MeasureA.mid",
+      "similarity": 94.5,
+      "difference": 5.5
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Funk12MeasureA",
+      "origin": "Funk/Funk12MeasureA.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Funk7MeasureA",
+      "matchedOrigin": "Funk/Funk7MeasureA.mid",
+      "similarity": 91.6,
+      "difference": 8.4
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Funk12MeasureB",
+      "origin": "Funk/Funk12MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Funk7MeasureA",
+      "matchedOrigin": "Funk/Funk7MeasureA.mid",
+      "similarity": 95.6,
+      "difference": 4.4
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Funk13MeasureB",
+      "origin": "Funk/Funk13MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Funk13MeasureA",
+      "matchedOrigin": "Funk/Funk13MeasureA.mid",
+      "similarity": 97.6,
+      "difference": 2.4
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Funk14",
+      "origin": "Funk/Funk14.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Funk13",
+      "matchedOrigin": "Funk/Funk13.mid",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Funk14MeasureA",
+      "origin": "Funk/Funk14MeasureA.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad2MeasureB",
+      "matchedOrigin": "Ballad/Ballad2MeasureB.mid",
+      "similarity": 94.5,
+      "difference": 5.5
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Funk14MeasureB",
+      "origin": "Funk/Funk14MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad1MeasureA",
+      "matchedOrigin": "Ballad/Ballad1MeasureA.mid",
+      "similarity": 90.2,
+      "difference": 9.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Funk15MeasureB",
+      "origin": "Funk/Funk15MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Funk15MeasureA",
+      "matchedOrigin": "Funk/Funk15MeasureA.mid",
+      "similarity": 95.4,
+      "difference": 4.6
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "FunkBreak15",
+      "origin": "Funk/FunkBreak15.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "FunkBreak14",
+      "matchedOrigin": "Funk/FunkBreak14.mid",
+      "similarity": 90.2,
+      "difference": 9.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "March2",
+      "origin": "March/March2.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "March1",
+      "matchedOrigin": "March/March1.mid",
+      "similarity": 91.2,
+      "difference": 8.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Paso2",
+      "origin": "Paso/Paso2.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Paso1",
+      "matchedOrigin": "Paso/Paso1.mid",
+      "similarity": 92,
+      "difference": 8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Pop1MeasureA",
+      "origin": "Pop/Pop1MeasureA.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad4MeasureA",
+      "matchedOrigin": "Ballad/Ballad4MeasureA.mid",
+      "similarity": 90,
+      "difference": 10
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Pop1MeasureB",
+      "origin": "Pop/Pop1MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Afro Cuban5MeasureB",
+      "matchedOrigin": "Afro Cuban/Afro_Cuban5MeasureB.mid",
+      "similarity": 95.3,
+      "difference": 4.7
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Pop4MeasureB",
+      "origin": "Pop/Pop4MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Pop4MeasureA",
+      "matchedOrigin": "Pop/Pop4MeasureA.mid",
+      "similarity": 92,
+      "difference": 8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Pop5",
+      "origin": "Pop/Pop5.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Pop1",
+      "matchedOrigin": "Pop/Pop1.mid",
+      "similarity": 90.7,
+      "difference": 9.3
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Pop5MeasureA",
+      "origin": "Pop/Pop5MeasureA.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Pop2MeasureA",
+      "matchedOrigin": "Pop/Pop2MeasureA.mid",
+      "similarity": 92,
+      "difference": 8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Pop6",
+      "origin": "Pop/Pop6.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Pop1",
+      "matchedOrigin": "Pop/Pop1.mid",
+      "similarity": 90.2,
+      "difference": 9.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "PopBreak4",
+      "origin": "Pop/PopBreak4.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "FunkBreak4",
+      "matchedOrigin": "Funk/FunkBreak4.mid",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Reggae4MeasureB",
+      "origin": "Reggae/Reggae4MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Reggae4MeasureA",
+      "matchedOrigin": "Reggae/Reggae4MeasureA.mid",
+      "similarity": 91.2,
+      "difference": 8.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Reggae8",
+      "origin": "Reggae/Reggae8.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Reggae4MeasureA",
+      "matchedOrigin": "Reggae/Reggae4MeasureA.mid",
+      "similarity": 91.2,
+      "difference": 8.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rhythm Blues5MeasureB",
+      "origin": "Rhythm Blues/Rhythm_Blues5MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Rhythm Blues2MeasureA",
+      "matchedOrigin": "Rhythm Blues/Rhythm_Blues2MeasureA.mid",
+      "similarity": 92.5,
+      "difference": 7.5
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rnb3",
+      "origin": "Rhythm Blues/Rnb3.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Rhythm Blues3MeasureA",
+      "matchedOrigin": "Rhythm Blues/Rhythm_Blues3MeasureA.mid",
+      "similarity": 92,
+      "difference": 8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rock1",
+      "origin": "Rock/Rock1.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad1MeasureA",
+      "matchedOrigin": "Ballad/Ballad1MeasureA.mid",
+      "similarity": 91.2,
+      "difference": 8.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rock2",
+      "origin": "Rock/Rock2.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad4MeasureA",
+      "matchedOrigin": "Ballad/Ballad4MeasureA.mid",
+      "similarity": 90.7,
+      "difference": 9.3
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rock2MeasureB",
+      "origin": "Rock/Rock2MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad5MeasureA",
+      "matchedOrigin": "Ballad/Ballad5MeasureA.mid",
+      "similarity": 90.2,
+      "difference": 9.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rock3",
+      "origin": "Rock/Rock3.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad1MeasureA",
+      "matchedOrigin": "Ballad/Ballad1MeasureA.mid",
+      "similarity": 93,
+      "difference": 7
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rock3MeasureA",
+      "origin": "Rock/Rock3MeasureA.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad4MeasureA",
+      "matchedOrigin": "Ballad/Ballad4MeasureA.mid",
+      "similarity": 90.3,
+      "difference": 9.7
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rock3MeasureB",
+      "origin": "Rock/Rock3MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad1MeasureA",
+      "matchedOrigin": "Ballad/Ballad1MeasureA.mid",
+      "similarity": 93.2,
+      "difference": 6.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rock4",
+      "origin": "Rock/Rock4.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad4MeasureA",
+      "matchedOrigin": "Ballad/Ballad4MeasureA.mid",
+      "similarity": 90.9,
+      "difference": 9.1
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rock4MeasureA",
+      "origin": "Rock/Rock4MeasureA.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad1MeasureA",
+      "matchedOrigin": "Ballad/Ballad1MeasureA.mid",
+      "similarity": 90.2,
+      "difference": 9.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rock5",
+      "origin": "Rock/Rock5.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Rhythm Blues1MeasureA",
+      "matchedOrigin": "Rhythm Blues/Rhythm_Blues1MeasureA.mid",
+      "similarity": 90.7,
+      "difference": 9.3
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rock5MeasureA",
+      "origin": "Rock/Rock5MeasureA.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Pop4MeasureA",
+      "matchedOrigin": "Pop/Pop4MeasureA.mid",
+      "similarity": 95.4,
+      "difference": 4.6
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rock5MeasureB",
+      "origin": "Rock/Rock5MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Rock1MeasureA",
+      "matchedOrigin": "Rock/Rock1MeasureA.mid",
+      "similarity": 94.7,
+      "difference": 5.3
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rock6",
+      "origin": "Rock/Rock6.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Rhythm Blues1MeasureA",
+      "matchedOrigin": "Rhythm Blues/Rhythm_Blues1MeasureA.mid",
+      "similarity": 93.5,
+      "difference": 6.5
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rock8",
+      "origin": "Rock/Rock8.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Rhythm Blues1MeasureB",
+      "matchedOrigin": "Rhythm Blues/Rhythm_Blues1MeasureB.mid",
+      "similarity": 94.7,
+      "difference": 5.3
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rock10",
+      "origin": "Rock/Rock10.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Rhythm Blues2MeasureA",
+      "matchedOrigin": "Rhythm Blues/Rhythm_Blues2MeasureA.mid",
+      "similarity": 91,
+      "difference": 9
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rock11",
+      "origin": "Rock/Rock11.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad1MeasureA",
+      "matchedOrigin": "Ballad/Ballad1MeasureA.mid",
+      "similarity": 91.2,
+      "difference": 8.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rock12",
+      "origin": "Rock/Rock12.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Rhythm Blues1MeasureA",
+      "matchedOrigin": "Rhythm Blues/Rhythm_Blues1MeasureA.mid",
+      "similarity": 90.7,
+      "difference": 9.3
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rock13",
+      "origin": "Rock/Rock13.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Funk3MeasureA",
+      "matchedOrigin": "Funk/Funk3MeasureA.mid",
+      "similarity": 95.6,
+      "difference": 4.4
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Rock14",
+      "origin": "Rock/Rock14.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Disco1MeasureA",
+      "matchedOrigin": "Disco/Disco1MeasureA.mid",
+      "similarity": 90.2,
+      "difference": 9.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Samba2",
+      "origin": "Samba/Samba2.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Samba1",
+      "matchedOrigin": "Samba/Samba1.mid",
+      "similarity": 93.5,
+      "difference": 6.5
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Samba3",
+      "origin": "Samba/Samba3.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Samba1",
+      "matchedOrigin": "Samba/Samba1.mid",
+      "similarity": 93.5,
+      "difference": 6.5
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Samba3MeasureA",
+      "origin": "Samba/Samba3MeasureA.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Disco1MeasureA",
+      "matchedOrigin": "Disco/Disco1MeasureA.mid",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Shuffle1MeasureB",
+      "origin": "Shuffle/Shuffle1MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Shuffle1MeasureA",
+      "matchedOrigin": "Shuffle/Shuffle1MeasureA.mid",
+      "similarity": 96.7,
+      "difference": 3.3
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Shuffle2",
+      "origin": "Shuffle/Shuffle2.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Boogie2",
+      "matchedOrigin": "Boogie/Boogie2.mid",
+      "similarity": 93,
+      "difference": 7
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Shuffle2MeasureA",
+      "origin": "Shuffle/Shuffle2MeasureA.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Blues2MeasureA",
+      "matchedOrigin": "Blues/Blues2MeasureA.mid",
+      "similarity": 94.1,
+      "difference": 5.9
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Shuffle2MeasureB",
+      "origin": "Shuffle/Shuffle2MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Blues2MeasureA",
+      "matchedOrigin": "Blues/Blues2MeasureA.mid",
+      "similarity": 91.5,
+      "difference": 8.5
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Shuffle4",
+      "origin": "Shuffle/Shuffle4.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Shuffle1",
+      "matchedOrigin": "Shuffle/Shuffle1.mid",
+      "similarity": 93.7,
+      "difference": 6.3
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Shuffle5",
+      "origin": "Shuffle/Shuffle5.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Shuffle3",
+      "matchedOrigin": "Shuffle/Shuffle3.mid",
+      "similarity": 92,
+      "difference": 8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Ska2",
+      "origin": "Ska/Ska2.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad4MeasureA",
+      "matchedOrigin": "Ballad/Ballad4MeasureA.mid",
+      "similarity": 93.2,
+      "difference": 6.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "SkaMeasureA",
+      "origin": "Ska/SkaMeasureA.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad1MeasureA",
+      "matchedOrigin": "Ballad/Ballad1MeasureA.mid",
+      "similarity": 92.5,
+      "difference": 7.5
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Slow1",
+      "origin": "Slow/Slow1.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad2MeasureB",
+      "matchedOrigin": "Ballad/Ballad2MeasureB.mid",
+      "similarity": 94.5,
+      "difference": 5.5
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Slow2",
+      "origin": "Slow/Slow2.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad2MeasureB",
+      "matchedOrigin": "Ballad/Ballad2MeasureB.mid",
+      "similarity": 94.5,
+      "difference": 5.5
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Slow3",
+      "origin": "Slow/Slow3.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad1MeasureA",
+      "matchedOrigin": "Ballad/Ballad1MeasureA.mid",
+      "similarity": 90.9,
+      "difference": 9.1
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Slow5",
+      "origin": "Slow/Slow5.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad1MeasureA",
+      "matchedOrigin": "Ballad/Ballad1MeasureA.mid",
+      "similarity": 93.2,
+      "difference": 6.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Slow11",
+      "origin": "Slow/Slow11.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad5MeasureA",
+      "matchedOrigin": "Ballad/Ballad5MeasureA.mid",
+      "similarity": 90.2,
+      "difference": 9.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Swing1MeasureB",
+      "origin": "Swing/Swing1MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Swing1MeasureA",
+      "matchedOrigin": "Swing/Swing1MeasureA.mid",
+      "similarity": 90.2,
+      "difference": 9.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Swing2",
+      "origin": "Swing/Swing2.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Swing1",
+      "matchedOrigin": "Swing/Swing1.mid",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Swing2MeasureB",
+      "origin": "Swing/Swing2MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Swing2MeasureA",
+      "matchedOrigin": "Swing/Swing2MeasureA.mid",
+      "similarity": 96.5,
+      "difference": 3.5
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Swing3 2",
+      "origin": "Swing/Swing3_2.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Jazz3",
+      "matchedOrigin": "Jazz/Jazz3.mid",
+      "similarity": 96.2,
+      "difference": 3.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Swing3MeasureB",
+      "origin": "Swing/Swing3MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Swing3MeasureA",
+      "matchedOrigin": "Swing/Swing3MeasureA.mid",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Swing5",
+      "origin": "Swing/Swing5.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Swing1",
+      "matchedOrigin": "Swing/Swing1.mid",
+      "similarity": 92.7,
+      "difference": 7.3
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Swing6",
+      "origin": "Swing/Swing6.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Jazz5",
+      "matchedOrigin": "Jazz/Jazz5.mid",
+      "similarity": 92.5,
+      "difference": 7.5
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Twist1MeasureA",
+      "origin": "Twist/Twist1MeasureA.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Ballad1MeasureA",
+      "matchedOrigin": "Ballad/Ballad1MeasureA.mid",
+      "similarity": 90.2,
+      "difference": 9.8
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Twist1MeasureB",
+      "origin": "Twist/Twist1MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Afro Cuban1MeasureB",
+      "matchedOrigin": "Afro Cuban/Afro_Cuban1MeasureB.mid",
+      "similarity": 91.5,
+      "difference": 8.5
+    },
+    {
+      "source": "Drum Machine Patterns",
+      "name": "Twist2MeasureB",
+      "origin": "Twist/Twist2MeasureB.mid",
+      "matchedSource": "Drum Machine Patterns",
+      "matchedName": "Afro Cuban1MeasureB",
+      "matchedOrigin": "Afro Cuban/Afro_Cuban1MeasureB.mid",
+      "similarity": 90.7,
+      "difference": 9.3
+    },
+    {
+      "source": "Groove MIDI Dataset",
+      "name": "65 funk 112 beat 4 4",
+      "origin": "Funk/65_funk_112_beat_4-4.mid",
+      "matchedSource": "Groove MIDI Dataset",
+      "matchedName": "47 funk 112 beat 4 4",
+      "matchedOrigin": "Funk/47_funk_112_beat_4-4.mid",
+      "similarity": 91.3,
+      "difference": 8.7
+    },
+    {
+      "source": "Groove MIDI Dataset",
+      "name": "8 rock 130 beat 4 4",
+      "origin": "Rock/8_rock_130_beat_4-4.mid",
+      "matchedSource": "Groove MIDI Dataset",
+      "matchedName": "7 rock 130 beat 4 4",
+      "matchedOrigin": "Rock/7_rock_130_beat_4-4.mid",
+      "similarity": 100,
+      "difference": 0
+    },
+    {
+      "source": "Groove MIDI Dataset",
+      "name": "14 rock 130 beat 4 4",
+      "origin": "Rock/14_rock_130_beat_4-4.mid",
+      "matchedSource": "Groove MIDI Dataset",
+      "matchedName": "13 rock 130 beat 4 4",
+      "matchedOrigin": "Rock/13_rock_130_beat_4-4.mid",
+      "similarity": 95.6,
+      "difference": 4.4
+    },
+    {
+      "source": "Groove MIDI Dataset",
       "name": "42 rock 120 beat 4 4",
-      "origin": "rock/42_rock_120_beat_4-4.mid",
-      "matchedSource": "mei-gmd",
+      "origin": "Rock/42_rock_120_beat_4-4.mid",
+      "matchedSource": "Groove MIDI Dataset",
       "matchedName": "30 rock 120 beat 4 4",
-      "matchedOrigin": "rock/30_rock_120_beat_4-4.mid",
+      "matchedOrigin": "Rock/30_rock_120_beat_4-4.mid",
       "similarity": 98.5,
       "difference": 1.5
     }

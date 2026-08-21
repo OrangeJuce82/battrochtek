@@ -25,7 +25,7 @@
         <script>
             document.addEventListener('alpine:init', () => {
                 Alpine.store('ui', {
-                    playing:false, metronome:false, tempoRamp:false, chain:false,
+                    playing:false, metronome:false, practice:false, chain:false,
                     memorySlot:0, undoAvailable:false, redoAvailable:false, masterState:'high'
                 });
             });
@@ -34,6 +34,7 @@
         <script defer src="vendor/alpine/alpine.min.js"></script>
         <script defer src="vendor/qrcode/qrcode.js"></script>
         <script defer src="grooves/external-grooves.js"></script>
+        <script defer src="https://unpkg.com/i18next@26.3.6/i18next.min.js"></script>
         <script defer src="app.js"></script>
 
         </head>
@@ -45,40 +46,41 @@
                     <h1><img src="logo.png" alt="" class="bt-header-logo"> <span>Battrochtek</span></h1>
                     <div class="groove-search-wrap" role="search">
                         <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-                        <input id="groove-search" type="search" autocomplete="off" placeholder="Rechercher un groove…" aria-label="Rechercher dans tous les grooves" aria-expanded="false" aria-controls="groove-search-list" aria-autocomplete="list">
-                        <div id="groove-search-list" class="groove-search-results" role="listbox" aria-label="Résultats de recherche" hidden></div>
+                        <input id="groove-search" type="search" autocomplete="off" placeholder="Rechercher un groove…" data-i18n-placeholder="search.placeholder" aria-label="Rechercher dans tous les grooves" data-i18n-aria="search.aria" aria-expanded="false" aria-controls="groove-search-list" aria-autocomplete="list">
+                        <div id="groove-search-list" class="groove-search-results" role="listbox" aria-label="Résultats de recherche" data-i18n-aria="search.results" hidden></div>
                     </div>
                     <div class="output-tools">
-                        <button type="button" class="ghost small header-icon-button theme-toggle" id="theme-toggle" data-bt-tooltip="Basculer le thème clair / sombre" aria-label="Basculer le thème clair / sombre"><i class="fa-solid fa-moon" id="theme-toggle-icon" aria-hidden="true"></i></button>
-                        <button type="button" class="ghost small header-icon-button share-button" id="share-button" data-bt-tooltip="Partager ou sauvegarder ce groove" aria-label="Partager ou sauvegarder ce groove"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i></button>
+                        <label class="language-control" data-bt-tooltip="Langue" data-i18n-tooltip="language.tooltip"><span class="sr-only">Langue</span><select id="language-select" aria-label="Langue"><option value="fr">FR</option><option value="en">EN</option><option value="es">ES</option></select></label>
+                        <button type="button" class="ghost small header-icon-button theme-toggle" id="theme-toggle" data-bt-tooltip="Basculer le thème clair / sombre" data-i18n-tooltip="theme.toggle" aria-label="Basculer le thème clair / sombre" data-i18n-aria="theme.toggle"><i class="fa-solid fa-moon" id="theme-toggle-icon" aria-hidden="true"></i></button>
+                        <button type="button" class="ghost small header-icon-button share-button" id="share-button" data-bt-tooltip="Partager ou sauvegarder ce groove" data-i18n-tooltip="share.tooltip" aria-label="Partager ou sauvegarder ce groove" data-i18n-aria="share.tooltip"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i></button>
                         <button type="button" class="ghost small header-icon-button master-level-button" id="master-level" data-bt-tooltip="Volume master : fort" aria-label="Volume master : fort"
                             :class="'volume-' + $store.ui.masterState">
                             <i id="master-level-icon" class="fa-solid" :class="{ 'fa-volume-xmark': $store.ui.masterState === 'off', 'fa-volume-low': $store.ui.masterState === 'low', 'fa-volume-high': $store.ui.masterState === 'high' }" aria-hidden="true"></i>
                         </button>
-                        <div class="vu-meter-wrap" data-bt-tooltip="Niveau de sortie audio"><span class="vu-label">OUTPUT</span><div id="vu-meter" class="vu-meter" aria-label="VU-mètre de sortie"></div></div>
+                        <div class="vu-meter-wrap" data-bt-tooltip="Niveau de sortie audio" data-i18n-tooltip="audio.output"><span class="vu-label">OUTPUT</span><div id="vu-meter" class="vu-meter" aria-label="VU-mètre de sortie" data-i18n-aria="audio.outputAria"></div></div>
                     </div>
                 </div>
             </header>
             <div class="bt">
                 <div class="score-toolbar" aria-label="Sélection du style et du groove">
                     <div class="preset-selector" id="preset-selector">
-                        <label class="control-field source-selector" data-field><span>SOURCE</span><select id="preset-source" data-bt-tooltip="Source des grooves"></select></label>
-                        <label class="control-field" data-field><span>STYLE</span><select id="preset-family" data-bt-tooltip="Style musical"></select></label>
-                        <label class="control-field groove" data-field><span>GROOVE</span><select id="preset-groove" data-bt-tooltip="Groove"></select></label>
-                        <button type="button" class="bt-button preset-icon" id="groove-refresh" data-bt-tooltip="Recharger le groove original" aria-label="Recharger le groove original"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i></button>
-                        <button type="button" class="bt-button variation-button" id="random" data-bt-tooltip="Créer une variante musicale du groove courant">VARIANTE</button>
+                        <label class="control-field source-selector" data-field><span data-i18n="toolbar.source">SOURCE</span><select id="preset-source" data-bt-tooltip="Source des grooves" data-i18n-tooltip="toolbar.sourceTooltip"></select></label>
+                        <label class="control-field" data-field><span data-i18n="toolbar.style">STYLE</span><select id="preset-family" data-bt-tooltip="Style musical" data-i18n-tooltip="toolbar.styleTooltip"></select></label>
+                        <label class="control-field groove" data-field><span data-i18n="toolbar.groove">GROOVE</span><select id="preset-groove" data-bt-tooltip="Groove" data-i18n-tooltip="toolbar.grooveTooltip"></select></label>
+                        <button type="button" class="bt-button preset-icon" id="groove-refresh" data-bt-tooltip="Recharger le groove original" data-i18n-tooltip="toolbar.reload" aria-label="Recharger le groove original" data-i18n-aria="toolbar.reload"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i></button>
+                        <button type="button" class="bt-button variation-button" id="random" data-bt-tooltip="Créer une variante musicale du groove courant" data-i18n-tooltip="toolbar.variantTooltip"><span data-i18n="toolbar.variant">VARIANTE</span></button>
                     </div>
                 </div>
 
                 <div class="instrument-toolbar" aria-label="Kit et swing">
-                    <label class="control-field kit-selector" data-field data-bt-tooltip="Kit de batterie">
+                    <label class="control-field kit-selector" data-field data-bt-tooltip="Kit de batterie" data-i18n-tooltip="kit.tooltip">
                         <span class="icon-label" aria-hidden="true"><i class="fa-solid fa-drum"></i></span>
-                        <select id="kit-select" aria-label="Kit de batterie"></select>
+                        <select id="kit-select" aria-label="Kit de batterie" data-i18n-aria="kit.tooltip"></select>
                     </label>
-                    <label class="control-field swing-edit" data-field data-bt-tooltip="Swing en pourcentage">
-                        <span>SWING</span>
+                    <label class="control-field swing-edit" data-field data-bt-tooltip="Swing en pourcentage" data-i18n-tooltip="swing.tooltip">
+                        <span data-i18n="toolbar.swing">SWING</span>
                         <div class="percent-edit">
-                            <input id="swing-input" type="number" min="0" max="100" step="1" value="0" inputmode="numeric" aria-label="Swing en pourcentage">
+                            <input id="swing-input" type="number" min="0" max="100" step="1" value="0" inputmode="numeric" aria-label="Swing en pourcentage" data-i18n-aria="swing.tooltip">
                             <span>%</span>
                         </div>
                     </label>
@@ -93,37 +95,55 @@
                 <div class="drum-machine-clear"></div>
 
                 <div class="transport-bar" aria-label="Transport">
-                    <button type="button" class="transport-button play-toggle" id="play-button" data-bt-tooltip="Lecture / pause (Espace)" aria-label="Lecture / pause" :aria-pressed="$store.ui.playing.toString()" :class="{ 'bt-buttondown': $store.ui.playing }">
-                        <i id="play-pause-icon" class="fa-solid" :class="$store.ui.playing ? 'fa-pause' : 'fa-play'" aria-hidden="true"></i>
+                    <button type="button" class="transport-button play-toggle" id="play-button" data-bt-tooltip="Lecture / stop (Espace)" data-i18n-tooltip="transport.playPause" aria-label="Lecture / stop" data-i18n-aria="transport.playPause" :aria-pressed="$store.ui.playing.toString()" :class="{ 'bt-buttondown': $store.ui.playing }">
+                        <i id="play-pause-icon" class="fa-solid" :class="$store.ui.playing ? 'fa-stop' : 'fa-play'" aria-hidden="true"></i>
                     </button>
-                    <button type="button" class="transport-button tap-modern" id="tap-tempo" data-bt-tooltip="Tap tempo (T)">TAP</button>
-                    <button type="button" class="transport-button tempo-nudge" id="minus-button" data-bt-tooltip="Diminuer le tempo" aria-label="Diminuer le tempo">−</button>
-                    <label class="tempo-edit" data-bt-tooltip="Tempo en BPM">
-                        <input id="metronome-tempo" type="number" min="40" max="240" step="1" value="120" inputmode="numeric" aria-label="Tempo en BPM">
+                    <button type="button" class="transport-button tap-modern" id="tap-tempo" data-bt-tooltip="Tap tempo (T)" data-i18n-tooltip="transport.tap">TAP</button>
+                    <button type="button" class="transport-button tempo-nudge" id="minus-button" data-bt-tooltip="Diminuer le tempo" data-i18n-tooltip="transport.tempoDown" aria-label="Diminuer le tempo" data-i18n-aria="transport.tempoDown">−</button>
+                    <label class="tempo-edit" data-bt-tooltip="Tempo en BPM" data-i18n-tooltip="transport.tempo">
+                        <input id="metronome-tempo" type="number" min="40" max="240" step="1" value="120" inputmode="numeric" aria-label="Tempo en BPM" data-i18n-aria="transport.tempo">
                         <span>BPM</span>
                     </label>
-                    <button type="button" class="transport-button tempo-nudge" id="plus-button" data-bt-tooltip="Augmenter le tempo" aria-label="Augmenter le tempo">+</button>
-                    <button type="button" class="transport-button icon-only tempo-ramp-button" id="tempo-ramp" :aria-pressed="$store.ui.tempoRamp.toString()" :class="{ 'bt-buttondown': $store.ui.tempoRamp }" data-bt-tooltip="Escalier BPM : +1 BPM à chaque tour" aria-label="Activer l’escalier BPM, plus 1 BPM par tour">
-                        <i class="fa-solid fa-stairs" aria-hidden="true"></i>
+                    <button type="button" class="transport-button tempo-nudge" id="plus-button" data-bt-tooltip="Augmenter le tempo" data-i18n-tooltip="transport.tempoUp" aria-label="Augmenter le tempo" data-i18n-aria="transport.tempoUp">+</button>
+                    <button type="button" class="transport-button icon-only practice-button" id="practice-button" data-bt-tooltip="Entraînement" data-i18n-tooltip="transport.practice" aria-label="Afficher l’entraînement" data-i18n-aria="transport.practice" aria-expanded="false">
+                        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
                     </button>
-                    <button type="button" class="transport-button icon-only" id="metronome-button" :aria-pressed="$store.ui.metronome.toString()" :class="{ 'bt-buttondown': $store.ui.metronome }" data-bt-tooltip="Métronome (M)" aria-label="Activer ou désactiver le métronome">
+                    <button type="button" class="transport-button icon-only" id="metronome-button" :aria-pressed="$store.ui.metronome.toString()" :class="{ 'bt-buttondown': $store.ui.metronome }" data-bt-tooltip="Métronome (M)" data-i18n-tooltip="transport.metronome" aria-label="Activer ou désactiver le métronome" data-i18n-aria="transport.metronome">
                         <i class="fa-solid fa-stopwatch" aria-hidden="true"></i>
                     </button>
-                    <div class="signature-control transport-signature" id="signature-button" data-bt-tooltip="Signature rythmique">
+                    <div class="signature-control transport-signature" id="signature-button" data-bt-tooltip="Signature rythmique" data-i18n-tooltip="transport.signature">
                         <div id="signature" class="signature-editor">
                             <select id="signature-numerator" aria-label="Numérateur de signature"><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select><span>/</span><select id="signature-denominator" aria-label="Dénominateur de signature"><option value="4" selected>4</option><option value="8">8</option><option value="16">16</option></select>
                         </div>
                     </div>
                 </div>
+                <section id="practice-panel" class="practice-panel" hidden aria-labelledby="practice-title">
+                    <div class="practice-panel-header">
+                        <div>
+                            <h2 id="practice-title"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> <span data-i18n="practice.title">Entraînement</span></h2>
+                            <p data-i18n="practice.subtitle">Travaille le groove par tempo ou par couches.</p>
+                        </div>
+                        <div id="practice-status" class="practice-status" aria-live="polite" data-i18n="practice.ready">Prêt à démarrer</div>
+                    </div>
+                    <div class="practice-grid">
+                        <label class="practice-field"><span data-i18n="practice.progression">PROGRESSION</span><select id="practice-mode"><option value="tempo" selected data-i18n="practice.modeTempo">Tempo</option><option value="layers" data-i18n="practice.modeLayers">Couches</option><option value="combined" data-i18n="practice.modeCombined">Couches + tempo</option></select></label>
+                        <label class="practice-field"><span data-i18n="practice.start">DÉPART</span><div class="practice-number"><input id="practice-start-tempo" type="number" min="40" max="240" step="1" value="60"><em>BPM</em></div></label>
+                        <label class="practice-field"><span data-i18n="practice.target">OBJECTIF</span><div class="practice-number"><input id="practice-target-tempo" type="number" min="40" max="240" step="1" value="90"><em>BPM</em></div></label>
+                        <label class="practice-field"><span data-i18n="practice.step">PALIER</span><select id="practice-tempo-step"><option value="1">+1 BPM</option><option value="2">+2 BPM</option><option value="3" selected>+3 BPM</option><option value="5">+5 BPM</option></select></label>
+                        <label class="practice-field"><span data-i18n="practice.loops">TOURS / NIVEAU</span><input id="practice-loops" type="number" min="1" max="32" step="1" value="4"></label>
+                        <label class="practice-field"><span data-i18n="practice.countIn">COUNT-IN</span><select id="practice-count-in"><option value="0" data-i18n="common.off">Off</option><option value="1" selected data-i18n="practice.oneBar">1 mesure</option><option value="2" data-i18n="practice.twoBars">2 mesures</option></select></label>
+                    </div>
+                    <div class="practice-explainer" data-i18n="practice.explainer">Couches : charley → caisse claire → kick → autres éléments du groove → accents → ghost notes.</div>
+                </section>
 
                 <div class="memory-toolbar" id="memory" aria-label="Mémoires et édition">
                     <div class="memory-separator" aria-hidden="true"></div>
-                    <button type="button" class="bt-button memory-action icon-only" id="chain" :aria-pressed="$store.ui.chain.toString()" :class="{ 'bt-buttondown': $store.ui.chain }" data-bt-tooltip="Chaîner les mémoires" aria-label="Chaîner les mémoires"><i class="fa-solid fa-link" aria-hidden="true"></i></button>
-                    <button type="button" class="bt-button memory-action icon-only history-button" id="undo" :class="{ 'is-disabled': !$store.ui.undoAvailable }" data-bt-tooltip="Annuler" aria-label="Annuler"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></button>
-                    <button type="button" class="bt-button memory-action icon-only history-button" id="redo" :class="{ 'is-disabled': !$store.ui.redoAvailable }" data-bt-tooltip="Rétablir" aria-label="Rétablir"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i></button>
-                    <button type="button" class="bt-button memory-action icon-only" id="save" data-bt-tooltip="Sauvegarder dans la mémoire sélectionnée (Ctrl+S)" aria-label="Sauvegarder"><i class="fa-solid fa-floppy-disk" aria-hidden="true"></i></button>
-                    <button type="button" class="bt-button memory-action icon-only" id="clear" data-bt-tooltip="Nouveau pattern vierge" aria-label="Nouveau pattern vierge"><i class="fa-solid fa-file" aria-hidden="true"></i></button>
-                    <button type="button" class="bt-button memory-action icon-only danger-icon outline" data-variant="danger" id="cache-clear" data-bt-tooltip="Vider les mémoires" aria-label="Vider les mémoires"><i class="fa-solid fa-trash-can" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only" id="chain" :aria-pressed="$store.ui.chain.toString()" :class="{ 'bt-buttondown': $store.ui.chain }" data-bt-tooltip="Chaîner les mémoires" data-i18n-tooltip="memory.chain" aria-label="Chaîner les mémoires" data-i18n-aria="memory.chain"><i class="fa-solid fa-link" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only history-button" id="undo" :class="{ 'is-disabled': !$store.ui.undoAvailable }" data-bt-tooltip="Annuler" data-i18n-tooltip="memory.undo" aria-label="Annuler" data-i18n-aria="memory.undo"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only history-button" id="redo" :class="{ 'is-disabled': !$store.ui.redoAvailable }" data-bt-tooltip="Rétablir" data-i18n-tooltip="memory.redo" aria-label="Rétablir" data-i18n-aria="memory.redo"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only" id="save" data-bt-tooltip="Sauvegarder dans la mémoire sélectionnée (Ctrl+S)" data-i18n-tooltip="memory.save" aria-label="Sauvegarder" data-i18n-aria="memory.save"><i class="fa-solid fa-floppy-disk" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only" id="clear" data-bt-tooltip="Nouveau pattern vierge" data-i18n-tooltip="memory.new" aria-label="Nouveau pattern vierge" data-i18n-aria="memory.new"><i class="fa-solid fa-file" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only danger-icon outline" data-variant="danger" id="cache-clear" data-bt-tooltip="Vider les mémoires" data-i18n-tooltip="memory.clear" aria-label="Vider les mémoires" data-i18n-aria="memory.clear"><i class="fa-solid fa-trash-can" aria-hidden="true"></i></button>
                 </div>
                 <div class="drum-machine-clear"></div>
                 <div class="drum-machine-clear"></div>
@@ -136,22 +156,22 @@
             <div class="share-dialog-card">
                 <div class="share-dialog-header">
                     <div>
-                        <h2 id="share-dialog-title">Partager ce groove</h2>
-                        <p>Le lien contient le groove courant. Scanne-le, partage-le ou enregistre-le dans tes favoris.</p>
+                        <h2 id="share-dialog-title" data-i18n="share.title">Partager ce groove</h2>
+                        <p data-i18n="share.subtitle">Le lien contient le groove courant. Scanne-le, partage-le ou enregistre-le dans tes favoris.</p>
                     </div>
-                    <button type="button" class="ghost small header-icon-button" id="share-close" aria-label="Fermer"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                    <button type="button" class="ghost small header-icon-button" id="share-close" aria-label="Fermer" data-i18n-aria="common.close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
                 </div>
                 <div class="share-qr-wrap">
                     <canvas id="share-qr" width="280" height="280" aria-label="QR code du groove"></canvas>
                     <p id="share-qr-error" class="share-qr-error" hidden></p>
                 </div>
                 <label class="share-url-field">
-                    <span>LIEN</span>
+                    <span data-i18n="share.link">LIEN</span>
                     <input id="share-url" type="text" readonly spellcheck="false" aria-label="Lien du groove">
                 </label>
                 <div class="share-dialog-actions">
-                    <button type="button" class="bt-button" id="share-copy"><i class="fa-solid fa-copy" aria-hidden="true"></i> Copier le lien</button>
-                    <button type="button" class="bt-button outline" id="share-native" hidden><i class="fa-solid fa-arrow-up-from-bracket" aria-hidden="true"></i> Partager</button>
+                    <button type="button" class="bt-button" id="share-copy"><i class="fa-solid fa-copy" aria-hidden="true"></i> <span data-i18n="share.copy">Copier le lien</span></button>
+                    <button type="button" class="bt-button outline" id="share-native" hidden><i class="fa-solid fa-arrow-up-from-bracket" aria-hidden="true"></i> <span data-i18n="share.share">Partager</span></button>
                 </div>
             </div>
         </dialog>

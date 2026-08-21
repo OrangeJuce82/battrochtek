@@ -40,7 +40,7 @@ Le nouveau logo transparent est décliné automatiquement dans les tailles PWA, 
 
 ## Déploiement GitHub Pages
 
-Le dépôt contient `.github/workflows/deploy-pages.yml`. À chaque push sur `main`, GitHub Actions installe les dépendances, génère les vendors locaux, lance les contrôles, construit `dist/`, puis publie la PWA sur GitHub Pages.
+Le dépôt contient `.github/workflows/deploy-pages.yml`. À chaque push sur `main`, GitHub Actions installe les dépendances avec Node.js 24, génère les vendors locaux, lance les contrôles, construit `dist/`, puis publie la PWA sur GitHub Pages.
 
 Dans **Settings → Pages** du dépôt, sélectionne **GitHub Actions** comme source. Tous les chemins de l’application étant relatifs, le déploiement fonctionne aussi dans un sous-chemin de projet GitHub Pages.
 
@@ -67,6 +67,14 @@ Dans **Settings → Pages** du dépôt, sélectionne **GitHub Actions** comme so
 - `Ctrl/Cmd+D` : duplique vers la mémoire suivante.
 - `Ctrl/Cmd+Z` / `Ctrl/Cmd+Y` : undo / redo.
 
+
+## v22
+
+- GitHub Actions passe à Node.js 24.
+- Le workflow n'active plus le cache npm sans lockfile.
+- Installation CI avec `npm install`, compatible avec le dépôt actuel sans `package-lock.json`.
+- Le pipeline conserve les contrôles puis le build et le déploiement GitHub Pages.
+- Cache PWA `battrochtek-v22`.
 
 ## v21
 

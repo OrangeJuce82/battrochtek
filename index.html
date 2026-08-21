@@ -50,14 +50,14 @@
                         <div id="groove-search-list" class="groove-search-results" role="listbox" aria-label="Résultats de recherche" data-i18n-aria="search.results" hidden></div>
                     </div>
                     <div class="output-tools">
-                        <label class="language-control" data-bt-tooltip="Langue" data-i18n-tooltip="language.tooltip"><span class="sr-only">Langue</span><select id="language-select" aria-label="Langue"><option value="fr">FR</option><option value="en">EN</option><option value="es">ES</option></select></label>
+                        <label class="language-control" data-bt-tooltip="Langue" data-i18n-tooltip="language.tooltip"><span class="sr-only" data-i18n="language.label">Langue</span><select id="language-select" aria-label="Langue"><option value="fr">FR</option><option value="en">EN</option><option value="es">ES</option></select></label>
                         <button type="button" class="ghost small header-icon-button theme-toggle" id="theme-toggle" data-bt-tooltip="Basculer le thème clair / sombre" data-i18n-tooltip="theme.toggle" aria-label="Basculer le thème clair / sombre" data-i18n-aria="theme.toggle"><i class="fa-solid fa-moon" id="theme-toggle-icon" aria-hidden="true"></i></button>
                         <button type="button" class="ghost small header-icon-button share-button" id="share-button" data-bt-tooltip="Partager ou sauvegarder ce groove" data-i18n-tooltip="share.tooltip" aria-label="Partager ou sauvegarder ce groove" data-i18n-aria="share.tooltip"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i></button>
                         <button type="button" class="ghost small header-icon-button master-level-button" id="master-level" data-bt-tooltip="Volume master : fort" aria-label="Volume master : fort"
                             :class="'volume-' + $store.ui.masterState">
                             <i id="master-level-icon" class="fa-solid" :class="{ 'fa-volume-xmark': $store.ui.masterState === 'off', 'fa-volume-low': $store.ui.masterState === 'low', 'fa-volume-high': $store.ui.masterState === 'high' }" aria-hidden="true"></i>
                         </button>
-                        <div class="vu-meter-wrap" data-bt-tooltip="Niveau de sortie audio" data-i18n-tooltip="audio.output"><span class="vu-label">OUTPUT</span><div id="vu-meter" class="vu-meter" aria-label="VU-mètre de sortie" data-i18n-aria="audio.outputAria"></div></div>
+                        <div class="vu-meter-wrap" data-bt-tooltip="Niveau de sortie audio" data-i18n-tooltip="audio.output"><span class="vu-label" data-i18n="audio.outputLabel">SORTIE</span><div id="vu-meter" class="vu-meter" aria-label="VU-mètre de sortie" data-i18n-aria="audio.outputAria"></div></div>
                     </div>
                 </div>
             </header>
@@ -154,30 +154,30 @@
                 <div class="drum-machine-clear"></div>
 
                 <details class="shortcut-help" id="shortcut-help">
-                    <summary><i class="fa-regular fa-keyboard" aria-hidden="true"></i><span>Raccourcis clavier</span><i class="fa-solid fa-chevron-down shortcut-chevron" aria-hidden="true"></i></summary>
+                    <summary><i class="fa-regular fa-keyboard" aria-hidden="true"></i><span data-i18n="shortcut.title">Raccourcis clavier</span><i class="fa-solid fa-chevron-down shortcut-chevron" aria-hidden="true"></i></summary>
                     <div class="shortcut-help-body">
-                        <div class="shortcut-group"><h3>Transport</h3>
-                            <div class="shortcut-item"><span>Lecture / Stop</span><span class="shortcut-keys"><kbd>Espace</kbd></span></div>
-                            <div class="shortcut-item"><span>Tap tempo</span><span class="shortcut-keys"><kbd>T</kbd></span></div>
-                            <div class="shortcut-item"><span>Métronome</span><span class="shortcut-keys"><kbd>M</kbd></span></div>
-                            <div class="shortcut-item"><span>Mémoire 1 à 8</span><span class="shortcut-keys"><kbd>1</kbd>…<kbd>8</kbd></span></div>
+                        <div class="shortcut-group"><h3 data-i18n="shortcut.transport">Transport</h3>
+                            <div class="shortcut-item"><span data-i18n="shortcut.playStop">Lecture / Stop</span><span class="shortcut-keys"><kbd data-i18n="shortcut.space">Espace</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.tap">Tap tempo</span><span class="shortcut-keys"><kbd>T</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.metronome">Métronome</span><span class="shortcut-keys"><kbd>M</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.memories">Mémoire 1 à 8</span><span class="shortcut-keys"><kbd>1</kbd>…<kbd>8</kbd></span></div>
                         </div>
-                        <div class="shortcut-group"><h3>Édition</h3>
-                            <div class="shortcut-item"><span>Annuler</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>Z</kbd></span></div>
-                            <div class="shortcut-item"><span>Rétablir</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘ ⇧" data-win="Ctrl Shift">Ctrl Shift</kbd><kbd>Z</kbd><span class="shortcut-or">/</span><kbd class="win-only">Ctrl</kbd><kbd class="win-only">Y</kbd></span></div>
-                            <div class="shortcut-item"><span>Copier le pattern</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>C</kbd></span></div>
-                            <div class="shortcut-item"><span>Coller le pattern</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>V</kbd></span></div>
-                            <div class="shortcut-item"><span>Dupliquer vers mémoire suivante</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>D</kbd></span></div>
-                            <div class="shortcut-item"><span>Sauvegarder la mémoire</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>S</kbd></span></div>
+                        <div class="shortcut-group"><h3 data-i18n="shortcut.edit">Édition</h3>
+                            <div class="shortcut-item"><span data-i18n="shortcut.undo">Annuler</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>Z</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.redo">Rétablir</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘ ⇧" data-win="Ctrl Shift">Ctrl Shift</kbd><kbd>Z</kbd><span class="shortcut-or">/</span><kbd class="win-only">Ctrl</kbd><kbd class="win-only">Y</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.copy">Copier le pattern</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>C</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.paste">Coller le pattern</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>V</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.duplicate">Dupliquer vers mémoire suivante</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>D</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.save">Sauvegarder la mémoire</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>S</kbd></span></div>
                         </div>
-                        <div class="shortcut-group"><h3>Grille</h3>
-                            <div class="shortcut-item"><span>Changer une cellule</span><span class="shortcut-keys"><kbd>Clic</kbd></span></div>
-                            <div class="shortcut-item"><span>Répéter la position à chaque temps</span><span class="shortcut-keys"><kbd>Shift</kbd><kbd>Clic</kbd></span></div>
-                            <div class="shortcut-item"><span>Effacer une cellule</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>Clic</kbd></span></div>
-                            <div class="shortcut-item"><span>Effacer cette position sur tous les temps</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘ ⇧" data-win="Ctrl Shift">Ctrl Shift</kbd><kbd>Clic</kbd></span></div>
-                            <div class="shortcut-item"><span>Déplacer une piste sur les 2 axes</span><span class="shortcut-keys"><kbd>Alt</kbd><kbd>Glisser</kbd></span></div>
-                            <div class="shortcut-item"><span>Déplacer toute la grille sur les 2 axes</span><span class="shortcut-keys"><kbd>Alt</kbd><kbd>Shift</kbd><kbd>Glisser</kbd></span></div>
-                            <div class="shortcut-item"><span>Décaler avec ‹ › d’un temps</span><span class="shortcut-keys"><kbd>Shift</kbd><kbd>Clic</kbd></span></div>
+                        <div class="shortcut-group"><h3 data-i18n="shortcut.grid">Grille</h3>
+                            <div class="shortcut-item"><span data-i18n="shortcut.cell">Changer une cellule</span><span class="shortcut-keys"><kbd data-i18n="shortcut.click">Clic</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.repeatBeat">Répéter la position à chaque temps</span><span class="shortcut-keys"><kbd>Shift</kbd><kbd data-i18n="shortcut.click">Clic</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.deleteCell">Effacer une cellule</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd data-i18n="shortcut.click">Clic</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.deleteBeat">Effacer cette position sur tous les temps</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘ ⇧" data-win="Ctrl Shift">Ctrl Shift</kbd><kbd data-i18n="shortcut.click">Clic</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.moveTrack">Déplacer une piste sur les 2 axes</span><span class="shortcut-keys"><kbd>Alt</kbd><kbd data-i18n="shortcut.drag">Glisser</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.moveGrid">Déplacer toute la grille sur les 2 axes</span><span class="shortcut-keys"><kbd>Alt</kbd><kbd>Shift</kbd><kbd data-i18n="shortcut.drag">Glisser</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.shiftBeat">Décaler avec ‹ › d’un temps</span><span class="shortcut-keys"><kbd>Shift</kbd><kbd data-i18n="shortcut.click">Clic</kbd></span></div>
                         </div>
                     </div>
                 </details>

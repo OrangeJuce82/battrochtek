@@ -826,13 +826,16 @@
                 mode:this.mode, startTempo:this.startTempo, targetTempo:this.targetTempo, tempoStep:this.tempoStep, loopsPerLevel:this.loopsPerLevel, countInBars:this.countInBars
             });
         }
-        start(options = {}) {
+        activate(options = {}, { announce = false } = {}) {
             this.configure(options);
             this.enabled = true;
             this.resetForTransport({ announce:false });
             this.ui?.renderButtons();
             this.ui?.renderPractice();
-            this.ui?.status(I18N.t("practice.started", { tempo:this.startTempo }));
+            if (announce) this.ui?.status(I18N.t("practice.started", { tempo:this.startTempo }));
+        }
+        start(options = {}) {
+            this.activate(options, { announce:true });
         }
         stop({ silent = false } = {}) {
             if (!this.enabled) return;
@@ -1449,9 +1452,10 @@
             const optionChanged = () => {
                 saveOptions();
                 if (!this.practice.enabled) return;
-                this.scheduler?.stop();
-                this.practice.stop({ silent:true });
-                this.status(I18N.t("practice.changedStopped"));
+                if (this.scheduler?.playing) this.scheduler.stop();
+                // Tant que le panneau Practice est ouvert, le mode reste actif.
+                // Une modification repart simplement du nouveau niveau de départ.
+                this.practice.resetForTransport({ announce:false });
                 this.renderPractice();
             };
             [this.dom.practiceMode, this.dom.practiceStartTempo, this.dom.practiceTargetTempo, this.dom.practiceTempoStep, this.dom.practiceLoops, this.dom.practiceCountIn]
@@ -1460,11 +1464,23 @@
             // Practice est toujours OFF au chargement ; seuls ses paramètres persistent.
             this.dom.practicePanel.hidden = true;
             this.press(this.dom.practiceButton, () => {
-                // Ouvrir/fermer l'entraînement arrête la lecture mais ne réinitialise jamais ses réglages.
                 this.scheduler?.stop();
                 const show = this.dom.practicePanel.hidden;
                 this.dom.practicePanel.hidden = !show;
-                if (!show && this.practice.enabled) this.practice.stop({ silent:true });
+                if (show) {
+                    // Le panneau visible EST le mode Practice : il est armé immédiatement,
+                    // avec son tempo de départ, avant même le premier clic sur Lecture.
+                    this.practice.activate({
+                        mode:this.dom.practiceMode.value,
+                        startTempo:Number(this.dom.practiceStartTempo.value),
+                        targetTempo:Number(this.dom.practiceTargetTempo.value),
+                        tempoStep:Number(this.dom.practiceTempoStep.value),
+                        loopsPerLevel:Number(this.dom.practiceLoops.value),
+                        countInBars:Number(this.dom.practiceCountIn.value)
+                    });
+                } else if (this.practice.enabled) {
+                    this.practice.stop({ silent:true });
+                }
                 this.renderPractice();
             });
         }
@@ -2074,8 +2090,9 @@
             this.dom.play.addEventListener("pointerdown", async e => {
                 e.preventDefault();
                 if (this.scheduler.playing) {
+                    // Stoppe uniquement le transport. Le mode Practice reste armé
+                    // tant que son panneau reste ouvert.
                     this.scheduler.stop();
-                    if (this.practice?.enabled) this.practice.stop({ silent:true });
                     return;
                 }
                 if (this.previewEnabled) this.stopGroovePreview({ silent:true });

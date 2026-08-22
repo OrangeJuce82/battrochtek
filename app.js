@@ -463,7 +463,7 @@
                 await Promise.all(keys.filter(key => key.startsWith("battrochtek-audio-")).map(key => caches.delete(key)));
             }
         }
-        async play({ kitIndex, trackIndex, sampleKey = null, time, trackVolume = 1, masterVolume = 1, pan = 0, velocity = "normal" }) {
+        async play({ kitIndex, trackIndex, sampleKey = null, time, trackVolume = 1, masterVolume = 1, pan = 0, velocity = "normal", gainScale = 1 }) {
             const ctx = this.ensureContext();
             const kit = CONFIG.KITS[Math.round(Util.clamp(kitIndex, 0, CONFIG.KITS.length - 1, 0))] || CONFIG.KITS[0];
             const safeTrack = Math.round(Util.clamp(trackIndex, 0, CONFIG.METRONOME_TRACK_INDEX, 0));
@@ -474,7 +474,7 @@
             const gainNode = ctx.createGain();
             source.buffer = buffer;
             const level = CONFIG.VELOCITY_GAIN[velocity] ?? CONFIG.VELOCITY_GAIN.normal;
-            const gain = Util.clamp(Util.finite(trackVolume, 1) * Util.finite(masterVolume, 1) * level, 0, 1.5, 0);
+            const gain = Util.clamp(Util.finite(trackVolume, 1) * Util.finite(masterVolume, 1) * level * Util.clamp(gainScale, .65, 1.2, 1), 0, 1.5, 0);
             const startTime = Math.max(ctx.currentTime, Util.finite(time, ctx.currentTime));
             gainNode.gain.setValueAtTime(gain, startTime);
             const output = this.analyser || ctx.destination;
@@ -792,6 +792,378 @@
     }
 
 
+    class FeelController {
+        constructor(sequencer) {
+            this.seq = sequencer;
+            this.coreGrid = null;
+            this.coreSignatureIndex = null;
+            this.coreSlot = null;
+            this.cores = new Map();
+            this.previousPerformances = new Map();
+            this.performanceCycles = new Map();
+            this.pendingResolutions = new Map();
+            this.density = 20;
+            this.energy = 50;
+            this.fills = 50;
+            this.seed = 1;
+            this.layers = { hihat:true, ride:false, crash:true, toms:false };
+            this.familyName = "";
+            this.styleOverride = "auto";
+            this.enabled = false;
+            this.auto = true;
+        }
+        cloneGrid(grid) { return grid?.map(part => Array.isArray(part) ? part.slice() : part) || null; }
+        captureCore({ inferLayers = true } = {}) {
+            this.coreGrid = this.seq.gridSnapshot().map(part => Array.isArray(part) ? part.slice() : part);
+            this.coreSignatureIndex = this.seq.signatureIndex;
+            this.coreSlot = this.seq.memorySlot;
+            this.cores.set(this.coreSlot, { signatureIndex:this.coreSignatureIndex, grid:this.cloneGrid(this.coreGrid) });
+            this.previousPerformances.delete(this.coreSlot);
+            this.performanceCycles.set(this.coreSlot, 0);
+            this.pendingResolutions.set(this.coreSlot, false);
+            if (inferLayers) {
+                const active=new Set(this.coreGrid[0]||[]), steps=this.seq.signature.steps, R=TRACK_ROLES;
+                const hasTrack=t=>Array.from(active).some(i=>Math.floor(i/steps)===t);
+                this.layers.hihat=hasTrack(R.closedHat)||hasTrack(R.openHat);
+                this.layers.ride=hasTrack(R.ride);
+                this.layers.crash=hasTrack(R.crash);
+                this.layers.toms=hasTrack(R.tomHigh)||hasTrack(R.tomMid)||hasTrack(R.tomFloor);
+                if (!this.layers.hihat && !this.layers.ride) this.layers.hihat=true;
+            }
+            return this.coreGrid;
+        }
+        invalidate(slot = this.seq.memorySlot) {
+            this.cores.delete(slot);
+            this.previousPerformances.delete(slot);
+            this.performanceCycles.delete(slot);
+            this.pendingResolutions.delete(slot);
+            if (this.coreSlot === slot) { this.coreGrid=null; this.coreSignatureIndex=null; this.coreSlot=null; }
+        }
+        ensureCore() {
+            const saved=this.cores.get(this.seq.memorySlot);
+            if (saved && saved.signatureIndex===this.seq.signatureIndex) {
+                this.coreGrid=this.cloneGrid(saved.grid); this.coreSignatureIndex=saved.signatureIndex; this.coreSlot=this.seq.memorySlot; return;
+            }
+            if (!this.coreGrid || this.coreSignatureIndex !== this.seq.signatureIndex || this.coreSlot !== this.seq.memorySlot) this.captureCore();
+        }
+        reset() {
+            this.ensureCore();
+            this.seq.applyGrid(this.coreGrid);
+            this.previousPerformances.delete(this.seq.memorySlot);
+            this.performanceCycles.set(this.seq.memorySlot, 0);
+            this.pendingResolutions.set(this.seq.memorySlot, false);
+            this.seed=1;
+        }
+        hash(text) {
+            let h = 2166136261 >>> 0;
+            for (let i=0;i<text.length;i++) { h ^= text.charCodeAt(i); h = Math.imul(h, 16777619); }
+            return h >>> 0;
+        }
+        randomFor(key) {
+            let x = this.hash(`${this.seed}|${key}`) || 1;
+            x ^= x << 13; x ^= x >>> 17; x ^= x << 5;
+            return (x >>> 0) / 4294967295;
+        }
+        style() {
+            if(this.styleOverride && this.styleOverride!=="auto") return this.styleOverride;
+            const family=String(this.familyName || "").toLowerCase();
+            if (/funk|soul|motown|r&b|neo.?soul/.test(family)) return "funk";
+            if (/reggae|ska|dub|rocksteady/.test(family)) return "reggae";
+            if (/afro|highlife/.test(family)) return "afrobeat";
+            if (/hip.?hop|trap|boom bap|lo.?fi/.test(family)) return "hiphop";
+            if (/jazz|swing|bebop|bop/.test(family)) return "jazz";
+            if (/latin|bossa|samba|salsa|cuban|cumbia|songo|timba/.test(family)) return "latin";
+            if (/rock|pop|punk|metal/.test(family)) return "rock";
+            return "generic";
+        }
+        profile(style=this.style()) {
+            return ({
+                funk:{ ghostSnare:.62, ghostKick:.36, fill:.95, stability:.82, snareLagMs:7, kickLagMs:1, handLeadMs:-2 },
+                hiphop:{ ghostSnare:.46, ghostKick:.31, fill:.72, stability:.87, snareLagMs:12, kickLagMs:5, handLeadMs:1 },
+                afrobeat:{ ghostSnare:.34, ghostKick:.30, fill:.68, stability:.84, snareLagMs:2, kickLagMs:0, handLeadMs:-3 },
+                jazz:{ ghostSnare:.32, ghostKick:.13, fill:.74, stability:.80, snareLagMs:4, kickLagMs:2, handLeadMs:-4 },
+                reggae:{ ghostSnare:.22, ghostKick:.12, fill:.48, stability:.90, snareLagMs:8, kickLagMs:5, handLeadMs:2 },
+                latin:{ ghostSnare:.24, ghostKick:.20, fill:.70, stability:.84, snareLagMs:1, kickLagMs:0, handLeadMs:-2 },
+                rock:{ ghostSnare:.20, ghostKick:.16, fill:.78, stability:.86, snareLagMs:6, kickLagMs:0, handLeadMs:-1 },
+                generic:{ ghostSnare:.30, ghostKick:.20, fill:.68, stability:.84, snareLagMs:5, kickLagMs:1, handLeadMs:-1 }
+            })[style] || null;
+        }
+        velocitySets(grid) {
+            return { accent:new Set(grid[1]||[]), soft:new Set(grid[2]||[]), strong:new Set(grid[3]||[]), ghost:new Set(grid[4]||[]) };
+        }
+        humanize({ active, accent, soft, strong, ghost, baseActive, fillSteps = new Set(), style = this.style() }) {
+            const steps=this.seq.signature.steps, barSteps=this.seq.signature.barSteps, R=TRACK_ROLES;
+            const clearVelocity=i=>{ accent.delete(i); soft.delete(i); strong.delete(i); ghost.delete(i); };
+            const drop=(track,step)=>{ const i=track*steps+step; active.delete(i); clearVelocity(i); };
+            const has=(track,step)=>active.has(track*steps+step);
+            const isBase=(track,step)=>baseActive.has(track*steps+step);
+            const isCore=(track,step)=>(track===R.kick||track===R.snare)&&isBase(track,step);
+            const isSourceHatStep=step=>isBase(R.closedHat,step)||isBase(R.openHat,step);
+            const isQuiet=(track,step)=>{ const i=track*steps+step; return soft.has(i)||ghost.has(i); };
+            const primaryHand=style==='jazz' ? R.ride : R.closedHat;
+            const priority=(track,step)=>{
+                if(isCore(track,step)) return 1000;
+                // A source hi-hat hit remains structural even if FEEL only changes its articulation.
+                if((track===R.closedHat||track===R.openHat)&&isSourceHatStep(step)) return 770;
+                if(isBase(track,step)) return 760;
+                if(fillSteps.has(step) && (track===R.tomHigh||track===R.tomMid||track===R.tomFloor)) return 710;
+                if(fillSteps.has(step) && track===R.snare) return 700;
+                if(track===R.crash && step%barSteps===0) return 650;
+                if(track===primaryHand) return 590;
+                if(style==='jazz' && track===R.ride) return 600;
+                if(style!=='jazz' && (track===R.openHat||track===R.closedHat)) return 580;
+                if(track===R.snare) return 560;
+                if(track===R.tomHigh||track===R.tomMid||track===R.tomFloor) return 540;
+                if(track===R.crash) return 520;
+                if(track===R.ride) return 500;
+                return 450;
+            };
+            const hands=[R.crash,R.ride,R.openHat,R.closedHat,R.snare,R.tomHigh,R.tomMid,R.tomFloor];
+            for(let step=0;step<steps;step++){
+                // Open/closed hi-hat are articulations of one instrument: never sound both at once.
+                if(has(R.openHat,step)&&has(R.closedHat,step)){
+                    const openBase=isBase(R.openHat,step), closedBase=isBase(R.closedHat,step);
+                    if(openBase&&!closedBase) drop(R.closedHat,step);
+                    else if(closedBase&&!openBase) drop(R.openHat,step);
+                    else if(this.energy>=48) drop(R.closedHat,step);
+                    else drop(R.openHat,step);
+                }
+                let played=hands.filter(track=>has(track,step));
+                if(fillSteps.has(step)){
+                    const fillHands=played.filter(track=>track===R.snare||track===R.tomHigh||track===R.tomMid||track===R.tomFloor);
+                    if(fillHands.length>=1){
+                        const maxCymbalHands=fillHands.length>=2?0:1;
+                        let cymbalsKept=0;
+                        for(const track of played){
+                            const fillHand=fillHands.includes(track);
+                            if(fillHand||isCore(track,step))continue;
+                            if([R.crash,R.ride,R.openHat,R.closedHat].includes(track) && cymbalsKept<maxCymbalHands){cymbalsKept++;continue;}
+                            drop(track,step);
+                        }
+                    }
+                }
+                played=hands.filter(track=>has(track,step));
+                if(played.length<=2) continue;
+                played.sort((a,b)=>{
+                    const pa=priority(a,step)-(isQuiet(a,step)?80:0), pb=priority(b,step)-(isQuiet(b,step)?80:0);
+                    if(pb!==pa) return pb-pa;
+                    return a-b;
+                });
+                const keep=new Set(played.slice(0,2));
+                for(const track of played){ if(!keep.has(track)) drop(track,step); }
+            }
+            return { active, accent, soft, strong, ghost };
+        }
+        performanceTimingOffset(track, step) {
+            if (!this.enabled || !this.cores.has(this.seq.memorySlot)) return 0;
+            const R=TRACK_ROLES, p=this.profile(), tempo=this.seq.tempo;
+            let mean=0;
+            if(track===R.snare) mean=p.snareLagMs;
+            else if(track===R.kick) mean=p.kickLagMs;
+            else if([R.closedHat,R.openHat,R.ride].includes(track)) mean=p.handLeadMs;
+            const tempoScale=Math.max(.55,Math.min(1.15,105/Math.max(55,tempo)));
+            const jitter=(this.randomFor(`timing:${this.seq.memorySlot}:${track}:${step}`)-.5)*5.5;
+            return (mean+jitter)*tempoScale/1000;
+        }
+        performanceGainScale(track, step, velocity) {
+            if (!this.enabled || !this.cores.has(this.seq.memorySlot)) return 1;
+            const R=TRACK_ROLES;
+            const spread=velocity==='ghost'?.16:velocity==='soft'?.11:.065;
+            let scale=1+(this.randomFor(`velocity:${this.seq.memorySlot}:${track}:${step}`)-.5)*spread*2;
+            if(track===R.snare && velocity==='ghost') scale*=.88;
+            if(track===R.kick && velocity==='ghost') scale*=.82;
+            return Math.max(.72,Math.min(1.14,scale));
+        }
+        addGhostPhrases({ add, active, baseActive, baseStep, barSteps, steps, subdivision, style, d }) {
+            const R=TRACK_ROLES, p=this.profile(style);
+            const has=(track,st)=>active.has(track*steps+st), coreHas=(track,st)=>baseActive.has(track*steps+st);
+            const candidatesAround=(track)=>{
+                const out=[];
+                for(let st=baseStep;st<Math.min(steps,baseStep+barSteps);st++){
+                    if(!coreHas(track,st))continue;
+                    for(const delta of [-subdivision,subdivision]){
+                        const c=st+delta;
+                        if(c>=baseStep&&c<Math.min(steps,baseStep+barSteps)&&!has(track,c))out.push(c);
+                    }
+                }
+                return [...new Set(out)];
+            };
+            const snareCandidates=candidatesAround(R.snare);
+            const kickCandidates=candidatesAround(R.kick);
+            // Add response/preparation notes in musically meaningful gaps, not arbitrary cells.
+            for(const st of snareCandidates){
+                const prob=p.ghostSnare*(.18+.82*d);
+                if(this.randomFor(`ghost-sn:${baseStep}:${st}`)<prob)add(R.snare,st,'ghost');
+            }
+            for(const st of kickCandidates){
+                const prob=p.ghostKick*(.12+.72*d);
+                if(this.randomFor(`ghost-k:${baseStep}:${st}`)<prob)add(R.kick,st,'ghost');
+            }
+            // Style-specific response ghosts where the CORE leaves space.
+            for(let st=baseStep+subdivision;st<Math.min(steps,baseStep+barSteps);st+=subdivision){
+                const local=st-baseStep;
+                const offGrid=local%this.seq.signature.group!==0;
+                if(!offGrid)continue;
+                if(!has(R.snare,st) && this.randomFor(`ghost-gap-sn:${baseStep}:${st}`)<p.ghostSnare*d*.22)add(R.snare,st,'ghost');
+                if(!has(R.kick,st) && this.randomFor(`ghost-gap-k:${baseStep}:${st}`)<p.ghostKick*d*.15)add(R.kick,st,'ghost');
+            }
+        }
+        addFillPhrase({ add, remove, active, baseActive, fillSteps, baseStep, bar, bars, barSteps, steps, subdivision, style, f, e, cycle }) {
+            if(f<=0)return false;
+            const R=TRACK_ROLES, p=this.profile(style);
+            const phraseAccent = cycle>0 && (cycle%8===0 ? 1.8 : cycle%4===0 ? 1.45 : cycle%2===0 ? 1.08 : .72);
+            const finalBarFactor=bar===bars-1?1.18:.62;
+            const chance=Math.min(.94, f*p.fill*phraseAccent*finalBarFactor);
+            if(this.randomFor(`fill:${cycle}:${bar}`)>=chance)return false;
+            const intensity=f*.58+e*.42;
+            const maxLen=Math.max(1,Math.min(8,Math.round(1+intensity*6)));
+            const fillLen=Math.max(1,Math.round(maxLen*(.55+this.randomFor(`fill-len:${cycle}:${bar}`)*.45)));
+            const end=Math.min(steps-1,baseStep+barSteps-1);
+            const first=Math.max(baseStep,end-(fillLen-1)*subdivision);
+            const phraseType=this.randomFor(`fill-type:${cycle}:${bar}`);
+            const toms=this.layers.toms;
+            const events=[];
+            for(let n=0,st=first;st<=end;n++,st+=subdivision){
+                let track=R.snare, vel=n===fillLen-1&&e>.62?'accent':n%2?'normal':'strong';
+                if(toms && phraseType>.25){
+                    const progress=fillLen<=1?1:n/(fillLen-1);
+                    if(phraseType<.58) track=progress<.34?R.snare:progress<.58?R.tomHigh:progress<.82?R.tomMid:R.tomFloor;
+                    else if(phraseType<.82) track=[R.snare,R.tomHigh,R.snare,R.tomMid,R.tomFloor][n%5];
+                    else track=[R.tomHigh,R.snare,R.tomMid,R.snare,R.tomFloor][n%5];
+                } else if(phraseType<.34) {
+                    track=n%3===1?R.kick:R.snare; vel=track===R.kick?'strong':(n===fillLen-1?'accent':'normal');
+                } else {
+                    track=R.snare; vel=n===0?'ghost':n===fillLen-1?'accent':n%2?'ghost':'normal';
+                }
+                events.push([track,st,vel]); fillSteps.add(st);
+            }
+            for(const [track,st,vel] of events){
+                if(baseActive.has(track*steps+st) && (track===R.snare||track===R.kick))continue;
+                add(track,st,vel);
+            }
+            // A fill is a gesture: free the right hand instead of mechanically sustaining HH/Ride.
+            for(const st of fillSteps){
+                if(st<first||st>end)continue;
+                if(!baseActive.has(R.closedHat*steps+st))remove(R.closedHat,st);
+                if(!baseActive.has(R.openHat*steps+st))remove(R.openHat,st);
+                if(!baseActive.has(R.ride*steps+st))remove(R.ride,st);
+            }
+            // Resolution on the next 1 when that step exists in this pattern.
+            const resolution=end+1;
+            if(resolution<steps && this.layers.crash && e>.38){ add(R.crash,resolution,e>.66?'accent':'strong'); add(R.kick,resolution,'strong'); }
+            return end===steps-1;
+        }
+        apply({ evolve = false } = {}) {
+            this.ensureCore();
+            const steps=this.seq.signature.steps, barSteps=this.seq.signature.barSteps, group=this.seq.signature.group, R=TRACK_ROLES;
+            const base=this.coreGrid, baseActive=new Set(base[0]||[]), active=new Set();
+            const baseV=this.velocitySets(base), accent=new Set(), soft=new Set(), strong=new Set(), ghost=new Set(), fillSteps=new Set();
+            const clearV=i=>{accent.delete(i);soft.delete(i);strong.delete(i);ghost.delete(i);};
+            const copyVelocity=i=>{ if(baseV.accent.has(i))accent.add(i); else if(baseV.strong.has(i))strong.add(i); else if(baseV.soft.has(i))soft.add(i); else if(baseV.ghost.has(i))ghost.add(i); };
+            const add=(track,step,velocity="normal")=>{ if(step<0||step>=steps||track<0||track>=CONFIG.TRACK_COUNT)return; const i=track*steps+step; active.add(i); clearV(i); if(velocity==="accent")accent.add(i); else if(velocity==="strong")strong.add(i); else if(velocity==="soft")soft.add(i); else if(velocity==="ghost")ghost.add(i); };
+            const remove=(track,step)=>{const i=track*steps+step;active.delete(i);clearV(i);};
+            const isCoreTrack=t=>t===R.kick||t===R.snare;
+            // Orchestration buttons are permissions to embellish, never destructive mutes.
+            // The complete source groove is always copied first so FEEL cannot erase its identity.
+            const isLayerAllowed=t=>{ if(t===R.closedHat||t===R.openHat)return this.layers.hihat; if(t===R.ride)return this.layers.ride; if(t===R.crash)return this.layers.crash; if(t===R.tomHigh||t===R.tomMid||t===R.tomFloor)return this.layers.toms; return true; };
+            for(const i of baseActive){ active.add(i); copyVelocity(i); }
+            const style=this.style(), d=this.density/100, e=this.energy/100, f=this.fills/100, p=this.profile(style);
+            const bars=Math.max(1,Math.ceil(steps/barSteps)), subdivision=Math.max(1,Math.round(group/2));
+            const cycle=this.performanceCycles.get(this.seq.memorySlot)||0;
+            const previous=evolve?this.previousPerformances.get(this.seq.memorySlot):null;
+            if(previous){
+                const pv=this.velocitySets(previous), previousActive=new Set(previous[0]||[]);
+                for(const i of previousActive){
+                    const t=Math.floor(i/steps), st=i%steps;
+                    if(baseActive.has(i)||!isLayerAllowed(t))continue;
+                    if([R.tomHigh,R.tomMid,R.tomFloor,R.crash].includes(t))continue;
+                    if((t===R.kick||t===R.snare) && !pv.ghost.has(i) && !pv.soft.has(i))continue;
+                    if(this.randomFor(`continuity:${cycle}:${i}`)>p.stability)continue;
+                    active.add(i); clearV(i);
+                    if(pv.accent.has(i))accent.add(i); else if(pv.strong.has(i))strong.add(i); else if(pv.soft.has(i))soft.add(i); else if(pv.ghost.has(i))ghost.add(i);
+                }
+            }
+            const addProb=(track,step,prob,vel,key)=>{ if(isLayerAllowed(track)&&this.randomFor(`${key}:${track}:${step}`)<prob)add(track,step,vel); };
+            if(evolve && this.pendingResolutions.get(this.seq.memorySlot)){
+                if(this.layers.crash)add(R.crash,0,e>.62?"accent":"strong");
+                add(R.kick,0,e>.62?"strong":"normal");
+            }
+            let endsWithFill=false;
+            for(let bar=0;bar<bars;bar++){
+                const baseStep=bar*barSteps, barEnd=Math.min(steps,baseStep+barSteps);
+                if(this.layers.hihat){
+                    // Preserve the source hi-hat skeleton. FEEL may articulate existing hits and
+                    // add a small number of local ghost/syncopated ornaments, but never rebuild it.
+                    const sourceHatSteps=[];
+                    for(let st=baseStep;st<barEnd;st++){
+                        if(baseActive.has(R.closedHat*steps+st)||baseActive.has(R.openHat*steps+st))sourceHatSteps.push(st);
+                    }
+                    if(sourceHatSteps.length){
+                        // Closed -> open is an articulation replacement at an existing source position.
+                        const openBudget=Math.min(2,Math.floor(Math.max(0,e-.42)*2.6 + d*.75));
+                        let opened=0;
+                        const openCandidates=sourceHatSteps.filter(st=>baseActive.has(R.closedHat*steps+st)).sort((a,b)=>{
+                            const pa=(a%group?1:0)+(a>=barEnd-group?1:0), pb=(b%group?1:0)+(b>=barEnd-group?1:0);
+                            return pb-pa || a-b;
+                        });
+                        for(const st of openCandidates){
+                            if(opened>=openBudget)break;
+                            const offbeat=(st-baseStep)%group!==0;
+                            const chance=(.08+d*.13+Math.max(0,e-.45)*.42)*(offbeat?1.3:1);
+                            if(this.randomFor(`hh-open:${cycle}:${bar}:${st}`)<chance){
+                                remove(R.closedHat,st); add(R.openHat,st,e>.78?'accent':'strong'); opened++;
+                            }
+                        }
+
+                        // Additions are deliberately capped: at default Density 20% usually 0–1 per bar.
+                        const maxAdds=Math.min(4,Math.max(0,Math.floor(d*3.2 + (d>.72?1:0))));
+                        const existingOrnaments=[];
+                        for(let st=baseStep;st<barEnd;st++){
+                            const source=baseActive.has(R.closedHat*steps+st)||baseActive.has(R.openHat*steps+st);
+                            if(!source&&(active.has(R.closedHat*steps+st)||active.has(R.openHat*steps+st)))existingOrnaments.push(st);
+                        }
+                        let additions=existingOrnaments.length;
+                        if(additions<maxAdds){
+                            const candidates=[];
+                            for(const src of sourceHatSteps){
+                                for(const delta of [-subdivision,subdivision]){
+                                    const st=src+delta;
+                                    if(st<baseStep||st>=barEnd)continue;
+                                    if(baseActive.has(R.closedHat*steps+st)||baseActive.has(R.openHat*steps+st))continue;
+                                    if(!candidates.includes(st))candidates.push(st);
+                                }
+                            }
+                            for(const st of candidates){
+                                if(additions>=maxAdds)break;
+                                if(active.has(R.closedHat*steps+st)||active.has(R.openHat*steps+st))continue;
+                                const offbeat=(st-baseStep)%group!==0;
+                                const chance=(.10+d*.34)*(offbeat?1.18:.72);
+                                if(this.randomFor(`hh-orn:${cycle}:${bar}:${st}`)<chance){
+                                    add(R.closedHat,st,d<.55?'ghost':'soft'); additions++;
+                                }
+                            }
+                        }
+                    }
+                }
+                if(this.layers.ride&&(style==="jazz"||style==="latin"||e>.52)){ const rideStride=style==="jazz"?Math.max(1,subdivision):group; for(let st=0;st<barSteps&&baseStep+st<steps;st+=rideStride)addProb(R.ride,baseStep+st,(.18+d*.55)*(style==="jazz"?1:.72),st%group===0?"strong":"soft",`ride-${cycle}-${bar}`); }
+                if(this.layers.crash&&e>.62&&this.randomFor(`crash:${cycle}:${bar}`)<(e-.52)*1.25)add(R.crash,baseStep,"accent");
+                this.addGhostPhrases({ add, active, baseActive, baseStep, barSteps, steps, subdivision, style, d });
+                endsWithFill = this.addFillPhrase({ add, remove, active, baseActive, fillSteps, baseStep, bar, bars, barSteps, steps, subdivision, style, f, e, cycle }) || endsWithFill;
+            }
+            for(const i of [...active]){ const t=Math.floor(i/steps); if(isCoreTrack(t)&&baseActive.has(i))continue; if(e<.28&&(accent.has(i)||strong.has(i))){clearV(i);soft.add(i);} else if(e>.76&&!ghost.has(i)&&this.randomFor(`energy:${cycle}:${i}`)<(e-.7)*1.25){clearV(i);strong.add(i);} }
+            this.humanize({ active, accent, soft, strong, ghost, baseActive, fillSteps, style });
+            this.seq.activeCells=active; this.seq.accentCells=accent; this.seq.weakCells=soft; this.seq.strongCells=strong; this.seq.ghostCells=ghost;
+            const result=this.seq.gridSnapshot();
+            this.previousPerformances.set(this.seq.memorySlot,this.cloneGrid(result));
+            this.pendingResolutions.set(this.seq.memorySlot,endsWithFill);
+        }
+        regenerate({ evolve = false } = {}) {
+            this.seed=(this.seed+1)>>>0;
+            if(evolve)this.performanceCycles.set(this.seq.memorySlot,(this.performanceCycles.get(this.seq.memorySlot)||0)+1);
+            this.apply({ evolve });
+        }
+    }
+
     class PracticeController {
         constructor(sequencer, audio, preferences = null) {
             this.seq = sequencer;
@@ -1016,6 +1388,7 @@
                 const finishing = this.step === this.seq.signature.steps - 1;
                 this.nextTime += duration;
                 this.step = (this.step + 1) % this.seq.signature.steps;
+                if (finishing) this.ui.onFeelLoopEnd?.();
                 if (finishing && this.seq.chainEnabled) {
                     this.seq.nextChainSlot();
                     this.ui.syncSchedulerStructure();
@@ -1038,15 +1411,18 @@
                 if (!this.seq.activeCells.has(cellIndex) || !this.seq.isTrackAudible(track) || !this.practice?.isCellAllowed(cellIndex, track)) continue;
                 const baseVelocity = this.seq.accentCells.has(cellIndex) ? "accent" : this.seq.strongCells.has(cellIndex) ? "strong" : this.seq.weakCells.has(cellIndex) ? "soft" : this.seq.ghostCells.has(cellIndex) ? "ghost" : "normal";
                 const velocity = this.practice?.velocityForCell(cellIndex, baseVelocity) || baseVelocity;
+                const feelTiming = this.ui?.feel?.performanceTimingOffset?.(track, step) || 0;
+                const feelGain = this.ui?.feel?.performanceGainScale?.(track, step, velocity) || 1;
                 this.audio.play({
                     kitIndex: this.seq.kitIndex,
                     trackIndex: track,
                     sampleKey: this.seq.sampleForTrack(track),
-                    time,
+                    time: time + feelTiming,
                     trackVolume: this.seq.trackVolumes[track],
                     masterVolume: this.seq.masterVolume,
                     pan: this.seq.trackPans[track],
-                    velocity
+                    velocity,
+                    gainScale: feelGain
                 });
             }
         }
@@ -1161,7 +1537,7 @@
 
     class UIController {
         constructor(seq, audio, practice = null, preferences = null) {
-            this.seq = seq; this.audio = audio; this.practice = practice; this.preferences = preferences; this.scheduler = null;
+            this.seq = seq; this.audio = audio; this.practice = practice; this.preferences = preferences; this.scheduler = null; this.feel = new FeelController(seq);
             this.cells = []; this.memoryButtons = []; this.trackLabels = []; this.trackRows = []; this.trackSampleSelects = []; this.trackMuteButtons = []; this.trackSoloButtons = []; this.trackShiftLeftButtons = []; this.trackShiftRightButtons = []; this.trackPanKnobs = []; this.trackVolumeKnobs = []; this.kitButtons = [];
             this.copySnapshot = null; this.playheadTimeouts = []; this.tapTimes = []; this.meterFrame = null; this.gridDrag = null; this.suppressGridClick = false;
             this.undoStack = []; this.redoStack = []; this.historyLimit = 30;
@@ -1187,16 +1563,116 @@
             const $ = id => document.getElementById(id);
             return {
                 sets: $("sets"), leds: $("leds"), tracks: $("tracks"), grid: document.querySelector(".grid"), sliders: $("sliders"),
-                masterButton: $("master-level"), masterIcon: $("master-level-icon"), swingInput: $("swing-input"), vu: $("vu-meter"), presetSource: $("preset-source"), presetFamily: $("preset-family"), presetGroove: $("preset-groove"), groovePreview: $("groove-preview"), grooveAdd: $("groove-add"), gridShiftLeft: $("grid-shift-left"), gridShiftUp: $("grid-shift-up"), gridShiftDown: $("grid-shift-down"), gridShiftRight: $("grid-shift-right"), memory: $("memory"), clear: $("clear"), signatureButton: $("signature-button"),
+                masterButton: $("master-level"), masterIcon: $("master-level-icon"), swingInput: $("swing-input"), swingValue: $("swing-value"), vu: $("vu-meter"), presetSource: $("preset-source"), presetFamily: $("preset-family"), presetGroove: $("preset-groove"), groovePreview: $("groove-preview"), grooveAdd: $("groove-add"), gridShiftLeft: $("grid-shift-left"), gridShiftUp: $("grid-shift-up"), gridShiftDown: $("grid-shift-down"), gridShiftRight: $("grid-shift-right"), memory: $("memory"), clear: $("clear"), signatureButton: $("signature-button"),
                 signature: $("signature"), signatureNumerator: $("signature-numerator"), signatureDenominator: $("signature-denominator"), metro: $("metronome-button"), chain: $("chain"), play: $("play-button"), icon: $("play-pause-icon"),
-                minus: $("minus-button"), plus: $("plus-button"), tap: $("tap-tempo"), tempo: $("metronome-tempo"), random: $("random"),
+                minus: $("minus-button"), plus: $("plus-button"), tap: $("tap-tempo"), tempo: $("metronome-tempo"), random: $("random"), feelPanel: $("feel-panel"), feelXy: $("feel-xy"), feelDot: $("feel-dot"), feelReadout: $("feel-readout"), feelDensity: $("feel-density"), feelDensityValue: $("feel-density-value"), feelAuto: $("feel-auto"), feelStyle: $("feel-style"),
                 undo: $("undo"), redo: $("redo"), practiceButton: $("practice-button"), practicePanel: $("practice-panel"), practiceMode: $("practice-mode"), practiceStartTempo: $("practice-start-tempo"), practiceTargetTempo: $("practice-target-tempo"), practiceTempoStep: $("practice-tempo-step"), practiceLoops: $("practice-loops"), practiceCountIn: $("practice-count-in"), practiceStatus: $("practice-status"), kitSelect: $("kit-select"), cacheClear: $("cache-clear"), languageSelect: $("language-select"), themeToggle: $("theme-toggle"), themeIcon: $("theme-toggle-icon"), themeColorMeta: $("theme-color-meta"),
                 grooveSearch: $("groove-search"), grooveSearchList: $("groove-search-list"), shareButton: $("share-button"), shareDialog: $("share-dialog"), shareClose: $("share-close"), shareQr: $("share-qr"), shareQrError: $("share-qr-error"), shareUrl: $("share-url"), shareCopy: $("share-copy"), shareNative: $("share-native")
             };
         }
         init(scheduler) {
             this.scheduler = scheduler;
-            this.setupLanguage(); this.setupTheme(); this.setupShare(); this.setupPractice(); this.buildKits(); this.buildTrackLabels(); this.buildMemory(); this.buildSliders(); this.buildGrid(); this.buildPresetSelector(); this.buildGlobalSearch(); this.bindControls(); this.bindUnlock(); this.startVuMeter(); this.renderState(); this.makeKeyboardAccessible();
+            this.setupLanguage(); this.setupTheme(); this.setupShare(); this.setupPractice(); this.setupFeel(); this.buildKits(); this.buildTrackLabels(); this.buildMemory(); this.buildSliders(); this.buildGrid(); this.buildPresetSelector(); this.buildGlobalSearch(); this.bindControls(); this.bindUnlock(); this.startVuMeter(); this.renderState(); this.makeKeyboardAccessible();
+        }
+        setupFeel() {
+            if (!this.dom.random || !this.dom.feelPanel || !this.dom.feelXy) return;
+            const familyName = () => this.seq.store.presets.meta?.[Number(this.dom.presetFamily?.value)||0]?.name || "";
+            const commit = (save=true) => {
+                if (!this.feel.enabled) return;
+                this.feel.familyName = familyName();
+                this.feel.apply();
+                this.renderGrid();
+                if (save) this.autoSaveMemory();
+                this.renderFeel();
+            };
+            const setXY = (fills,energy,save=true) => {
+                this.feel.fills = Math.round(Util.clamp(fills,0,100,50));
+                this.feel.energy = Math.round(Util.clamp(energy,0,100,50));
+                commit(save);
+            };
+            const fromPointer = e => {
+                const r=this.dom.feelXy.getBoundingClientRect();
+                if(!r.width||!r.height)return;
+                setXY((e.clientX-r.left)/r.width*100, (1-(e.clientY-r.top)/r.height)*100, false);
+            };
+            let dragging=false, before=null;
+            this.dom.feelXy.addEventListener("pointerdown",e=>{ if(e.button!==0||!this.feel.enabled)return; e.preventDefault(); this.feel.ensureCore(); before=this.captureState(); dragging=true; this.dom.feelXy.setPointerCapture?.(e.pointerId); fromPointer(e); });
+            this.dom.feelXy.addEventListener("pointermove",e=>{ if(dragging)fromPointer(e); });
+            const finish=()=>{ if(!dragging)return; dragging=false; if(before)this.pushHistory(before); this.autoSaveMemory(); before=null; };
+            this.dom.feelXy.addEventListener("pointerup",finish); this.dom.feelXy.addEventListener("pointercancel",finish);
+            this.dom.feelXy.addEventListener("keydown",e=>{ if(!this.feel.enabled)return; const dx=e.key==="ArrowRight"?3:e.key==="ArrowLeft"?-3:0, dy=e.key==="ArrowUp"?3:e.key==="ArrowDown"?-3:0; if(!dx&&!dy)return; e.preventDefault(); this.pushHistory(); setXY(this.feel.fills+dx,this.feel.energy+dy); });
+            this.dom.feelStyle?.addEventListener("change",()=>{ if(!this.feel.enabled)return; this.pushHistory(); this.feel.styleOverride=this.dom.feelStyle.value||"auto"; commit(); this.status(`DRUMMER STYLE : ${this.dom.feelStyle.options[this.dom.feelStyle.selectedIndex]?.text || "AUTO"}.`); });
+            this.dom.feelDensity?.addEventListener("input",()=>{ if(!this.feel.enabled)return; this.feel.density=Number(this.dom.feelDensity.value); commit(false); });
+            this.dom.feelDensity?.addEventListener("change",()=>{ if(this.feel.enabled)this.autoSaveMemory(); });
+            document.querySelectorAll(".feel-layer").forEach(button=>button.addEventListener("click",()=>{ if(!this.feel.enabled)return; this.pushHistory(); const key=button.dataset.layer; this.feel.layers[key]=!this.feel.layers[key]; commit(); }));
+            this.dom.feelAuto?.addEventListener("click",()=>{
+                if(!this.feel.enabled)return;
+                this.feel.auto=!this.feel.auto;
+                this.renderFeel();
+                this.autoSaveMemory();
+                this.status(this.feel.auto ? "FEEL AUTO activé · nouvelle interprétation à chaque tour." : "FEEL AUTO désactivé · performance conservée jusqu’au prochain changement.");
+            });
+        }
+        setFeelEnabled(enabled, { applyNow = true, save = true } = {}) {
+            const next=!!enabled;
+            if(next===this.feel.enabled){
+                this.dom.feelPanel.hidden=!next;
+                this.dom.random.setAttribute("aria-expanded",String(next));
+                if(next && applyNow){
+                    this.feel.familyName=this.seq.store.presets.meta?.[Number(this.dom.presetFamily?.value)||0]?.name || "";
+                    this.feel.ensureCore();
+                    this.feel.apply();
+                    this.renderGrid();
+                    if(save)this.autoSaveMemory();
+                }
+                this.renderFeel();
+                return;
+            }
+            if(next){
+                this.feel.enabled=true;
+                this.feel.auto=true;
+                this.feel.familyName=this.seq.store.presets.meta?.[Number(this.dom.presetFamily?.value)||0]?.name || "";
+                this.feel.ensureCore();
+                this.dom.feelPanel.hidden=false;
+                this.dom.random.setAttribute("aria-expanded","true");
+                if(applyNow)this.feel.apply();
+                this.renderGrid();
+                if(save)this.autoSaveMemory();
+                this.status("FEEL activé · performance automatique à chaque tour.");
+            }else{
+                // FEEL OFF = freeze exactement la performance visible et en faire le nouveau CORE.
+                this.feel.captureCore({ inferLayers:false });
+                this.feel.seed=1;
+                this.feel.enabled=false;
+                this.feel.auto=false;
+                this.dom.feelPanel.hidden=true;
+                this.dom.random.setAttribute("aria-expanded","false");
+                if(save)this.autoSaveMemory();
+                this.renderFeel();
+                this.status("FEEL désactivé · performance figée et sauvegardée comme CORE.");
+            }
+        }
+        renderFeel() {
+            if (!this.dom.feelDot) return;
+            this.dom.feelDot.style.left=`${this.feel.fills}%`;
+            this.dom.feelDot.style.top=`${100-this.feel.energy}%`;
+            if(this.dom.feelReadout)this.dom.feelReadout.textContent=`FILLS ${this.feel.fills} · ÉNERGIE ${this.feel.energy}`;
+            if(this.dom.feelStyle)this.dom.feelStyle.value=this.feel.styleOverride||"auto";
+            if(this.dom.feelDensity)this.dom.feelDensity.value=String(this.feel.density);
+            if(this.dom.feelDensityValue)this.dom.feelDensityValue.textContent=`${this.feel.density}%`;
+            document.querySelectorAll(".feel-layer").forEach(button=>{ const active=!!this.feel.layers[button.dataset.layer]; button.classList.toggle("active",active); button.setAttribute("aria-pressed",String(active)); });
+            if(this.dom.feelAuto){ const active=this.feel.enabled&&this.feel.auto; this.dom.feelAuto.classList.toggle("active",active); this.dom.feelAuto.setAttribute("aria-pressed",String(active)); }
+            this.dom.random?.classList.toggle("active",this.feel.enabled);
+            this.dom.random?.setAttribute("aria-pressed",String(this.feel.enabled));
+        }
+        onFeelLoopEnd() {
+            if (!this.feel.enabled || !this.feel.auto || this.dom.feelPanel?.hidden) return;
+            this.feel.familyName = this.seq.store.presets.meta?.[Number(this.dom.presetFamily?.value)||0]?.name || this.feel.familyName || "";
+            this.feel.ensureCore();
+            this.feel.regenerate({ evolve:true });
+            this.renderGrid();
+            this.autoSaveMemory();
+            this.renderFeel();
         }
         setupLanguage() {
             if (!this.dom.languageSelect) return;
@@ -1842,13 +2318,17 @@
             const previousSlots = this.seq.store.populated().filter(slot => slot < startSlot);
             const previousSlot = previousSlots.length ? previousSlots[previousSlots.length - 1] : null;
             const inheritedTempo = previousSlot === null ? null : this.seq.store.get(previousSlot)?.tempo;
-            entries.forEach((entry, offset) => this.seq.store.set(
-                startSlot + offset, entry.signatureIndex, entry.pattern, inheritedTempo
-            ));
+            entries.forEach((entry, offset) => {
+                this.feel.invalidate(startSlot + offset);
+                this.seq.store.set(startSlot + offset, entry.signatureIndex, entry.pattern, inheritedTempo);
+            });
             this.seq.loadSlot(startSlot);
             this.syncSchedulerStructure();
             this.buildGrid(); this.renderState(); this.makeKeyboardAccessible();
-            this.status(I18N.t("status.patchAdded", { count:entries.length, memory:startSlot + 1 }));
+            this.feel.invalidate(startSlot);
+            this.feel.captureCore();
+            this.setFeelEnabled(true, { applyNow:true, save:true });
+            this.status(`${I18N.t("status.patchAdded", { count:entries.length, memory:startSlot + 1 })} · FEEL activé.`);
         }
         stopGroovePreview({ silent = false } = {}) {
             this.previewEnabled = false;
@@ -2062,6 +2542,7 @@
         pastePatternToCurrentMemory() {
             if (!this.copySnapshot) { this.status(I18N.t("status.nothingToPaste")); return; }
             const before = this.captureState();
+            this.feel.invalidate(this.seq.memorySlot);
             this.seq.store.set(this.seq.memorySlot, this.seq.signatureIndex, this.copySnapshot);
             this.seq.loadSlot(this.seq.memorySlot);
             this.syncSchedulerStructure();
@@ -2072,6 +2553,7 @@
         duplicateToNextMemory() {
             const next = (this.seq.memorySlot + 1) % CONFIG.MEMORY_SLOTS;
             const snapshot = this.seq.snapshot();
+            this.feel.invalidate(next);
             this.seq.store.set(next, this.seq.signatureIndex, snapshot);
             this.seq.loadSlot(next);
             this.syncSchedulerStructure();
@@ -2081,7 +2563,7 @@
             this.status(I18N.t("status.patternDuplicated", { n:next + 1 }));
         }
         bindControls() {
-            this.press(this.dom.clear, () => { this.pushHistory(); this.seq.clear(); this.resetPresetSelectors(); this.renderGrid(); this.autoSaveMemory(); });
+            this.press(this.dom.clear, () => { this.pushHistory(); this.feel.invalidate(); this.seq.clear(); this.resetPresetSelectors(); this.renderGrid(); this.autoSaveMemory(); });
             const applySignature = () => { const n=Number(this.dom.signatureNumerator?.value), d=Number(this.dom.signatureDenominator?.value); const before=this.captureState(); if(this.seq.setSignature(n,d,true)){ this.pushHistory(before); this.syncSchedulerStructure(); this.buildGrid(); this.renderState(); this.makeKeyboardAccessible(); this.autoSaveMemory(); } };
             this.dom.signatureNumerator?.addEventListener("change", applySignature);
             this.dom.signatureDenominator?.addEventListener("change", applySignature);
@@ -2141,9 +2623,10 @@
             };
             this.dom.gridShiftUp?.addEventListener("click", event => { event.preventDefault(); shiftGridTracks(-1); });
             this.dom.gridShiftDown?.addEventListener("click", event => { event.preventDefault(); shiftGridTracks(1); });
-            this.press(this.dom.random, () => { this.pushHistory(); this.seq.variation(this.seq.store.presets.meta?.[Number(this.dom.presetFamily?.value)||0]?.name || ""); this.renderGrid(); this.autoSaveMemory(); });
+            this.press(this.dom.random, () => this.setFeelEnabled(!this.feel.enabled));
             if (this.dom.cacheClear) this.press(this.dom.cacheClear, () => {
                 this.seq.store.resetMemories();
+                this.feel.cores.clear(); this.feel.invalidate();
                 this.seq.memorySlot = 0;
                 this.seq.loadSlot(0);
                 this.syncSchedulerStructure();
@@ -2172,6 +2655,7 @@
                     this.seq.swing = Math.round(Util.clamp(Number(this.dom.swingInput.value), CONFIG.SWING.min, CONFIG.SWING.max, CONFIG.SWING.default));
                     this.renderSwing();
                 };
+                this.dom.swingInput.addEventListener("input", commitSwing);
                 this.dom.swingInput.addEventListener("change", commitSwing);
                 this.dom.swingInput.addEventListener("keydown", e => { if (e.key === "Enter") { commitSwing(); this.dom.swingInput.blur(); } });
                 this.bindNumberWheel(this.dom.swingInput, 1, CONFIG.SWING.min, CONFIG.SWING.max, value => { this.seq.swing = value; this.renderSwing(); });
@@ -2248,7 +2732,7 @@
             const unlock = async () => { try { this.status(I18N.t("status.loadingAudio")); await this.audio.resume(); const buffers = await this.audio.preloadTracks(this.seq.currentTrackSamples()); const missing = buffers.filter(Boolean).length !== buffers.length; this.status(missing ? "Kit chargé partiellement : certains samples sont indisponibles." : "Kit audio prêt."); } catch (e) { console.warn(e); this.status(`Erreur audio : ${e.message || e}`); } };
             ["pointerdown","keydown","touchstart"].forEach(type => document.addEventListener(type, unlock, { once: true, passive: true }));
         }
-        renderState() { this.renderSignature(); this.renderTempo(); this.renderKit(); this.renderGrid(); this.renderSliders(); this.renderSwing(); this.renderTrackControls(); this.renderMemory(); this.renderButtons(); this.renderPractice(); }
+        renderState() { this.renderSignature(); this.renderTempo(); this.renderKit(); this.renderGrid(); this.renderSliders(); this.renderSwing(); this.renderTrackControls(); this.renderMemory(); this.renderButtons(); this.renderPractice(); this.renderFeel(); }
         renderSignature() { if(this.dom.signatureNumerator)this.dom.signatureNumerator.value=String(this.seq.signature.numerator); if(this.dom.signatureDenominator)this.dom.signatureDenominator.value=String(this.seq.signature.denominator); if(this.dom.signature)this.dom.signature.setAttribute("aria-label",`Signature ${this.seq.signature.label}`); }
         renderTempo() { if (this.dom.tempo) this.dom.tempo.value = String(this.seq.tempo); }
         renderKit() {
@@ -2273,6 +2757,7 @@
         }
         renderSwing() {
             if (this.dom.swingInput) this.dom.swingInput.value = String(this.seq.swing);
+            if (this.dom.swingValue) this.dom.swingValue.textContent = `${Math.round(this.seq.swing)}%`;
         }
         renderMaster() {
             if (!this.dom.masterButton) return;

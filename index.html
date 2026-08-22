@@ -68,26 +68,50 @@
                         <label class="control-field" data-field><span data-i18n="toolbar.style">STYLE</span><select id="preset-family" data-bt-tooltip="Style musical" data-i18n-tooltip="toolbar.styleTooltip"></select></label>
                         <label class="control-field groove" data-field><span data-i18n="toolbar.groove">GROOVE</span><select id="preset-groove" data-bt-tooltip="Groove" data-i18n-tooltip="toolbar.grooveTooltip"></select></label>
                         <button type="button" class="bt-button preset-icon groove-preview" id="groove-preview" data-bt-tooltip="Préécouter le groove sélectionné" data-i18n-tooltip="toolbar.preview" aria-label="Préécouter le groove sélectionné" data-i18n-aria="toolbar.preview" aria-pressed="false"><i class="fa-solid fa-headphones" aria-hidden="true"></i></button>
-                        <button type="button" class="bt-button preset-icon groove-add" id="groove-add" data-bt-tooltip="Ajouter le patch à partir de la mémoire sélectionnée" data-i18n-tooltip="toolbar.addPatch" aria-label="Ajouter le patch à partir de la mémoire sélectionnée" data-i18n-aria="toolbar.addPatch"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                        <button type="button" class="bt-button preset-icon groove-add" id="groove-add" data-bt-tooltip="Charger le groove sélectionné et activer FEEL" aria-label="Charger le groove sélectionné et activer FEEL"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
                     </div>
                 </div>
 
-                <div class="instrument-toolbar" aria-label="Swing, variation et kit">
-                    <div class="groove-edit-tools groove-edit-center">
-                        <label class="control-field swing-edit" data-field data-bt-tooltip="Swing en pourcentage" data-i18n-tooltip="swing.tooltip">
-                            <span data-i18n="toolbar.swing">SWING</span>
-                            <div class="percent-edit">
-                                <input id="swing-input" type="number" min="0" max="100" step="1" value="0" inputmode="numeric" aria-label="Swing en pourcentage" data-i18n-aria="swing.tooltip">
-                                <span>%</span>
-                            </div>
-                        </label>
-                        <button type="button" class="bt-button variation-button" id="random" data-bt-tooltip="Créer une variante musicale du groove courant" data-i18n-tooltip="toolbar.variantTooltip"><span data-i18n="toolbar.variant">VARIANTE</span></button>
-                    </div>
+                <div class="instrument-toolbar" aria-label="Feel, swing et kit">
+                    <button type="button" class="bt-button variation-button" id="random" data-bt-tooltip="Activer / désactiver Feel" aria-label="Feel" aria-expanded="false" aria-pressed="false"><span>FEEL</span></button>
+                    <label class="control-field swing-edit swing-slider" data-field data-bt-tooltip="Swing en pourcentage" data-i18n-tooltip="swing.tooltip">
+                        <span data-i18n="toolbar.swing">SWING</span>
+                        <input id="swing-input" type="range" min="0" max="100" step="1" value="0" aria-label="Swing en pourcentage" data-i18n-aria="swing.tooltip">
+                        <output id="swing-value" for="swing-input">0%</output>
+                    </label>
                     <label class="control-field kit-selector" data-field data-bt-tooltip="Kit de batterie" data-i18n-tooltip="kit.tooltip">
                         <span class="icon-label" aria-hidden="true"><i class="fa-solid fa-drum"></i></span>
                         <select id="kit-select" aria-label="Kit de batterie" data-i18n-aria="kit.tooltip"></select>
                     </label>
                 </div>
+
+                <section id="feel-panel" class="feel-panel" hidden aria-labelledby="feel-title">
+                    <div class="feel-header">
+                        <div><h2 id="feel-title"><i class="fa-solid fa-drum" aria-hidden="true"></i> FEEL</h2><p>FEEL actif : le batteur interprète le groove. AUTO fait évoluer la performance à chaque tour.</p></div>
+                        <button type="button" class="bt-button feel-auto active" id="feel-auto" aria-pressed="true" data-bt-tooltip="Nouvelle interprétation à chaque tour"><i class="fa-solid fa-repeat" aria-hidden="true"></i> AUTO</button>
+                    </div>
+                    <div class="feel-body">
+                        <div class="feel-xy-wrap">
+                            <div class="feel-axis-y"><span>ÉNERGIQUE</span><span>INTIME</span></div>
+                            <div id="feel-xy" class="feel-xy" role="application" aria-label="Pad Feel : horizontal fills, vertical énergie" tabindex="0">
+                                <div class="feel-grid-lines" aria-hidden="true"></div>
+                                <div id="feel-dot" class="feel-dot" aria-hidden="true"></div>
+                            </div>
+                            <div class="feel-axis-x"><span>STABLE</span><strong id="feel-readout">FILLS 50 · ÉNERGIE 50</strong><span>FILLS</span></div>
+                        </div>
+                        <div class="feel-controls">
+                            <label class="feel-style"><span>DRUMMER STYLE</span><select id="feel-style" aria-label="Style du batteur"><option value="auto">AUTO · style du groove</option><option value="funk">Funk / Soul</option><option value="hiphop">Hip-Hop / Neo-Soul</option><option value="jazz">Jazz / Swing</option><option value="reggae">Reggae / Ska / Dub</option><option value="afrobeat">Afrobeat / Highlife</option><option value="latin">Latin / Afro-Cuban</option><option value="rock">Rock / Pop</option></select></label>
+                            <div class="feel-layer-title">ORCHESTRATION</div>
+                            <div class="feel-layers" role="group" aria-label="Couches que FEEL peut agrémenter">
+                                <button type="button" class="feel-layer active" data-layer="hihat" aria-pressed="true" data-bt-tooltip="Agrémenter le charley · OFF = conserver exactement le charley source">HH</button>
+                                <button type="button" class="feel-layer" data-layer="ride" aria-pressed="false" data-bt-tooltip="Autoriser FEEL à agrémenter le ride · les notes source restent conservées">RIDE</button>
+                                <button type="button" class="feel-layer active" data-layer="crash" aria-pressed="true" data-bt-tooltip="Autoriser FEEL à agrémenter les crashs · les notes source restent conservées">CRASH</button>
+                                <button type="button" class="feel-layer" data-layer="toms" aria-pressed="false" data-bt-tooltip="Autoriser FEEL à agrémenter les toms · les notes source restent conservées">TOMS</button>
+                            </div>
+                            <label class="feel-fill feel-density"><span>DENSITÉ</span><input id="feel-density" type="range" min="0" max="100" value="20" step="1"><output id="feel-density-value">20%</output></label>
+                        </div>
+                    </div>
+                </section>
 
                 <div class="sequencer-layout">
                     <div class="bt-leds" id="leds"></div>

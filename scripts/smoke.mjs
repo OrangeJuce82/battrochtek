@@ -33,7 +33,7 @@ const checks = [
   [!app.includes('localStorage.getItem("mem")') && !app.includes('localStorage.setItem("mem")'), "localStorage retiré des mémoires"],
   [app.includes("history.replaceState"), "mise à jour du hash sans navigation"],
   [sw.includes('"./vendor/oat/oat.min.css"') && sw.includes('"./vendor/oat/oat.min.js"'), "Oat inclus dans l’app shell PWA"],
-  [sw.includes('battrochtek-v47'), "cache PWA v47"],
+  [sw.includes('battrochtek-v55'), "cache PWA v55"],
   [css.includes('--bt-instrument-text:') && !app.includes('label.style.color'), "couleur des instruments pilotée par le thème"],
   [css.includes('.bt-tooltip') && html.includes('id="bt-tooltip"'), "tooltips adaptatifs présents"],
   [!html.includes('id="bt-help"'), "ancienne aide au survol retirée"],
@@ -83,6 +83,23 @@ const checks = [
   [html.includes('id="grid-shift-up"') && html.includes('id="grid-shift-down"') && app.includes('shiftGridTracks'), "flèches haut/bas de déplacement global présentes"],
   [app.includes('if (this.previewEnabled) this.stopGroovePreview({ silent:true });') && app.includes('if (this.scheduler?.playing) this.scheduler.stop();'), "Play et préécoute sont mutuellement exclusifs"],
   [css.includes('.groove-preview[aria-pressed="true"]') && css.includes('background: var(--bt-accent)'), "préécoute possède un état actif visible"],
+  [html.includes('id="feel-xy"') && html.includes('id="feel-auto"') && !html.includes('id="feel-regenerate"'), "FEEL pad XY + AUTO présents, Regenerate retiré"],
+  [app.includes('class FeelController') && app.includes('randomFor(key)'), "FEEL déterministe par seed présent"],
+  [app.includes('isCoreTrack=t=>t===R.kick||t===R.snare'), "CORE kick/snare verrouillé présent"],
+  [html.includes('data-layer="hihat"') && html.includes('data-layer="ride"') && html.includes('data-layer="crash"') && html.includes('data-layer="toms"'), "couches FEEL HH/Ride/Crash/Toms présentes"],
+  [app.includes('The complete source groove is always copied first') && app.includes('for(const i of baseActive){ active.add(i); copyVelocity(i); }'), "FEEL conserve intégralement le groove source avant tout agrément"],
+  [app.includes('Preserve the source hi-hat skeleton') && app.includes('hh-open:') && app.includes('hh-orn:') && app.includes('maxAdds'), "charley source protégé : articulation + ornements locaux plafonnés"],
+  [html.includes('OFF = conserver exactement le charley source') && html.includes('Couches que FEEL peut agrémenter'), "boutons d’orchestration non destructifs explicités"],
+  [html.includes('horizontal fills') && app.includes('this.feel.fills = Math.round') && html.includes('id="feel-density"'), "FEEL XY Fills/Energy + Density séparée présent"],
+  [app.includes('humanize({ active, accent, soft, strong, ghost') && app.includes('played.length<=2'), "Human Drummer Engine limite les frappes de mains simultanées"],
+  [app.includes('Open/closed hi-hat are articulations of one instrument') && app.includes('drop(R.closedHat,step)') && app.includes('drop(R.openHat,step)'), "Human Drummer Engine rend hi-hat open/closed exclusifs"],
+  [app.includes('fillSteps.has(step)') && app.includes('fillHands.length>=1'), "Human Drummer Engine libère les mains pendant les fills"],
+  [app.includes('this.feel.enabled=false') && app.includes('this.feel.auto=false') && app.includes('this.feel.captureCore({ inferLayers:false })') && app.includes('if (!this.feel.enabled || !this.feel.auto || this.dom.feelPanel?.hidden) return;'), "FEEL OFF coupe l’auto et fige le CORE"],
+  [app.includes('addGhostPhrases') && app.includes("add(R.snare,st,'ghost')") && app.includes("add(R.kick,st,'ghost')"), "ghost phrases kick/snare présentes"],
+  [app.includes('addFillPhrase') && app.includes("phraseType") && app.includes('pendingResolutions'), "fills phrasés et résolution inter-boucle présents"],
+  [app.includes('previousPerformances') && app.includes('continuity:'), "AUTO conserve une continuité de performance"],
+  [app.includes('performanceTimingOffset') && app.includes('performanceGainScale'), "microtiming et vélocité humanisés présents"],
+  [html.includes('id="feel-style"') && app.includes('styleOverride'), "sélecteur DRUMMER STYLE AUTO/manuelle présent"],
 ];
 
 const failed = checks.filter(([ok]) => !ok);
@@ -92,3 +109,4 @@ if (failed.length) {
   for (const [, label] of failed) console.error(`  - ${label}`);
   process.exit(1);
 }
+

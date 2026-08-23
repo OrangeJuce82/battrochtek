@@ -1,9 +1,39 @@
 {
   "version": "3.0.0",
   "taxonomyCount": 213,
-  "playableCount": 186,
-  "needsRebuild": 127,
+  "playableCount": 189,
+  "needsRebuild": 101,
   "entries": [
+    {
+      "id": "CAN-182",
+      "family": "Africa",
+      "tradition": "Central Africa",
+      "archetype": "Bikutsi",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "af76bad832069a09",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-182-bikutsi.json",
+        "midi": "musicology/midi/CAN-182-bikutsi.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "not-mapped",
+          "references": []
+        },
+        "catalogDisambiguation": false
+      }
+    },
     {
       "id": "CAN-181",
       "family": "Africa",
@@ -2163,6 +2193,36 @@
       }
     },
     {
+      "id": "CAN-003",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "8th-note Shuffle",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "7ce045cf5d6cd0d5",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 26,
+        "json": "musicology/canonical-grooves/CAN-003-8th-note-shuffle.json",
+        "midi": "musicology/midi/CAN-003-8th-note-shuffle.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "not-mapped",
+          "references": []
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
       "id": "CAN-016",
       "family": "Foundations / Concepts",
       "tradition": "Core time feels",
@@ -2699,6 +2759,46 @@
         "eventCount": 22,
         "json": "musicology/canonical-grooves/CAN-053-modern-r-b.json",
         "midi": "musicology/midi/CAN-053-modern-r-b.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-045",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Motown",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "ea59cb70b15d1a55",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-045-motown.json",
+        "midi": "musicology/midi/CAN-045-motown.mid"
       },
       "musicology": {
         "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
@@ -4456,29 +4556,31 @@
       "tradition": "Brazil",
       "archetype": "Baião",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "931ea7cd117eed91",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "38a32a25ec4f2bfa",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-144-baiao.json",
         "midi": "musicology/midi/CAN-144-baiao.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "zabumba-derived bass-drum ostinato",
+          "anticipation into beat 2",
+          "triangle/ride subdivision layer"
+        ],
         "references": [
+          "https://digital.library.adelaide.edu.au/dspace/bitstream/2440/106341/2/02whole.pdf",
+          "https://online.berklee.edu/courses/arranging-and-producing-contemporary-music-styles",
           {
             "title": "Latin Piano Styles — Berklee Online",
             "url": "https://online.berklee.edu/courses/latin-piano-styles"
-          },
-          {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
           },
           {
             "title": "South American Rhythms for the Drum Set — Berklee",
@@ -4487,6 +4589,10 @@
           {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -4520,9 +4626,9 @@
       "tradition": "Brazil",
       "archetype": "Bossa Nova",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "fingerprint": "0aec15ecad58215d",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
@@ -4533,9 +4639,19 @@
         "midi": "musicology/midi/CAN-140-bossa-nova.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "bass drum on 1, &2, 3, &4",
+          "soft cross-stick-like 2 and 4",
+          "even restrained time hand"
+        ],
         "references": [
+          {
+            "title": "Drum Set Performance 101 — Berklee Online",
+            "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+          },
+          "https://college.berklee.edu/people/fernando-brandao",
+          "https://www.drumeo.com/beat/5-styles-beginner-drummers/",
           {
             "title": "Latin/Afro-Cuban Styles — Berklee",
             "url": "https://college.berklee.edu/courses/enlt-220"
@@ -4549,20 +4665,16 @@
             "url": "https://online.berklee.edu/courses/latin-piano-styles"
           },
           {
-            "title": "Drum Set Performance 101 — Berklee Online",
-            "url": "https://online.berklee.edu/courses/drum-set-performance-101"
-          },
-          {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
             "title": "South American Rhythms for the Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-357"
           },
           {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -4603,34 +4715,39 @@
       }
     },
     {
-      "id": "CAN-146",
+      "id": "CAN-150",
       "family": "Latin America",
       "tradition": "Brazil",
-      "archetype": "Frevo",
+      "archetype": "Choro / Maxixe Drum-Set Adaptation",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "7d75f31676110590",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "814c0d0a3d721dc1",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 27,
-        "json": "musicology/canonical-grooves/CAN-146-frevo.json",
-        "midi": "musicology/midi/CAN-146-frevo.mid"
+        "eventCount": 32,
+        "json": "musicology/canonical-grooves/CAN-150-choro-maxixe-drum-set-adaptation.json",
+        "midi": "musicology/midi/CAN-150-choro-maxixe-drum-set-adaptation.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "light maxixe/choro drum-set adaptation",
+          "syncopated hand accompaniment",
+          "two-beat Brazilian bass support"
+        ],
         "references": [
           {
             "title": "Latin Piano Styles — Berklee Online",
             "url": "https://online.berklee.edu/courses/latin-piano-styles"
           },
+          "https://college.berklee.edu/people/fernando-brandao",
           {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
+            "title": "Latin/Afro-Cuban Jazz — Berklee",
+            "url": "https://college.berklee.edu/courses/enlt-300"
           },
           {
             "title": "South American Rhythms for the Drum Set — Berklee",
@@ -4639,6 +4756,83 @@
           {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "literature-supported",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Latin/Afro-Cuban Jazz — Berklee",
+              "url": "https://college.berklee.edu/courses/enlt-300"
+            },
+            {
+              "title": "Latin Piano Styles — Berklee Online",
+              "url": "https://online.berklee.edu/courses/latin-piano-styles"
+            },
+            {
+              "title": "South American Rhythms for the Drum Set — Berklee",
+              "url": "https://college.berklee.edu/courses/ilpd-357"
+            },
+            {
+              "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
+              "url": "https://college.berklee.edu/courses/ilpd-211"
+            },
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-146",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Frevo",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "91be03da84332234",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 40,
+        "json": "musicology/canonical-grooves/CAN-146-frevo.json",
+        "midi": "musicology/midi/CAN-146-frevo.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "fast march-derived pulse",
+          "active snare articulation",
+          "bright continuous time"
+        ],
+        "references": [
+          "https://college.berklee.edu/people/fernando-brandao",
+          {
+            "title": "Latin Piano Styles — Berklee Online",
+            "url": "https://online.berklee.edu/courses/latin-piano-styles"
+          },
+          {
+            "title": "South American Rhythms for the Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-357"
+          },
+          {
+            "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -4672,10 +4866,10 @@
       "tradition": "Brazil",
       "archetype": "Ijexá / Afoxê",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "9babaea258196a1b",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "54c1fcdae5e11214",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -4685,9 +4879,15 @@
         "midi": "musicology/midi/CAN-147-ijexa-afoxe.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "ijexá-derived bell/cymbal phrase",
+          "bass drum on 2+ and 4+",
+          "quarter-note cross-stick layer"
+        ],
         "references": [
+          "https://www.drumeo.com/beat/5-drumming-styles-youve-probably-never-heard/",
+          "https://www.berklee.edu/events/viva-brasil",
           {
             "title": "Latin/Afro-Cuban Jazz — Berklee",
             "url": "https://college.berklee.edu/courses/enlt-300"
@@ -4697,16 +4897,16 @@
             "url": "https://online.berklee.edu/courses/latin-piano-styles"
           },
           {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
             "title": "South American Rhythms for the Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-357"
           },
           {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -4744,29 +4944,30 @@
       "tradition": "Brazil",
       "archetype": "Maracatu",
       "playable": true,
-      "status": "high",
-      "confidence": 0.945,
-      "sourceType": "canonical-curated",
-      "fingerprint": "dfb005822b1992b4",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "feb6e55963b392c9",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 30,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-145-maracatu.json",
         "midi": "musicology/midi/CAN-145-maracatu.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "alfaias-inspired low-drum dialogue",
+          "syncopated bell layer",
+          "processional weight"
+        ],
         "references": [
+          "https://college.berklee.edu/people/fernando-brandao",
           {
             "title": "Latin Piano Styles — Berklee Online",
             "url": "https://online.berklee.edu/courses/latin-piano-styles"
-          },
-          {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
           },
           {
             "title": "South American Rhythms for the Drum Set — Berklee",
@@ -4775,6 +4976,10 @@
           {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -4808,22 +5013,28 @@
       "tradition": "Brazil",
       "archetype": "Samba Batucada",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "af5ad55bd6fa48a8",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "6aad9cd12505b5ab",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 36,
+        "eventCount": 56,
         "json": "musicology/canonical-grooves/CAN-141-samba-batucada.json",
         "midi": "musicology/midi/CAN-141-samba-batucada.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "surdo-derived two-beat bass-drum motion",
+          "continuous 16th-note hand flow",
+          "syncopated tamborim/caixa-style hand phrase"
+        ],
         "references": [
+          "https://www.moderndrummer.com/wp-content/uploads/2018/10/MD-469-1218c.pdf",
+          "https://college.berklee.edu/people/fernando-brandao",
           {
             "title": "Latin/Afro-Cuban Styles — Berklee",
             "url": "https://college.berklee.edu/courses/enlt-220"
@@ -4841,16 +5052,16 @@
             "url": "https://online.berklee.edu/courses/drum-set-performance-101"
           },
           {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
             "title": "South American Rhythms for the Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-357"
           },
           {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -4896,22 +5107,28 @@
       "tradition": "Brazil",
       "archetype": "Samba Partido Alto",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "7a835c1d560d26d3",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "6634963e95370c3e",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 27,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-142-samba-partido-alto.json",
         "midi": "musicology/midi/CAN-142-samba-partido-alto.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "two-bar partido-alto-oriented cross-stick phrase",
+          "samba bass-drum ostinato",
+          "phrase asymmetry preserved"
+        ],
         "references": [
+          "https://www.berklee.edu/events/viva-brasil",
+          "https://college.berklee.edu/people/fernando-brandao",
           {
             "title": "Latin/Afro-Cuban Styles — Berklee",
             "url": "https://college.berklee.edu/courses/enlt-220"
@@ -4929,16 +5146,16 @@
             "url": "https://online.berklee.edu/courses/drum-set-performance-101"
           },
           {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
             "title": "South American Rhythms for the Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-357"
           },
           {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -4984,22 +5201,27 @@
       "tradition": "Brazil",
       "archetype": "Samba-Funk",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "e67172ebaf0aca00",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "907eda0ca73dedc3",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 54,
         "json": "musicology/canonical-grooves/CAN-148-samba-funk.json",
         "midi": "musicology/midi/CAN-148-samba-funk.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "samba-derived bass motion",
+          "funk backbeat",
+          "16th-note ghost-note vocabulary"
+        ],
         "references": [
+          "https://college.berklee.edu/people/fernando-brandao",
           {
             "title": "Latin/Afro-Cuban Styles — Berklee",
             "url": "https://college.berklee.edu/courses/enlt-220"
@@ -5017,16 +5239,16 @@
             "url": "https://online.berklee.edu/courses/drum-set-performance-101"
           },
           {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
             "title": "South American Rhythms for the Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-357"
           },
           {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -5072,22 +5294,27 @@
       "tradition": "Brazil",
       "archetype": "Samba-Jazz",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "da14c145fc84710e",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "2ea30015b5ceab0d",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-149-samba-jazz.json",
         "midi": "musicology/midi/CAN-149-samba-jazz.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "ride-led samba orchestration",
+          "surdo-derived bass ostinato",
+          "interactive snare comping"
+        ],
         "references": [
+          "https://college.berklee.edu/people/fernando-brandao",
           {
             "title": "Latin/Afro-Cuban Styles — Berklee",
             "url": "https://college.berklee.edu/courses/enlt-220"
@@ -5105,16 +5332,16 @@
             "url": "https://online.berklee.edu/courses/drum-set-performance-101"
           },
           {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
             "title": "South American Rhythms for the Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-357"
           },
           {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -5160,22 +5387,27 @@
       "tradition": "Brazil",
       "archetype": "Samba-Reggae",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "30cda96a97a5773b",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "9fbbfc9342688fc6",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 27,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-143-samba-reggae.json",
         "midi": "musicology/midi/CAN-143-samba-reggae.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "slower bloco-derived pulse",
+          "strong low-drum foundation",
+          "offbeat hand punctuation"
+        ],
         "references": [
+          "https://college.berklee.edu/people/fernando-brandao",
           {
             "title": "Latin/Afro-Cuban Styles — Berklee",
             "url": "https://college.berklee.edu/courses/enlt-220"
@@ -5193,10 +5425,6 @@
             "url": "https://online.berklee.edu/courses/drum-set-performance-101"
           },
           {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
             "title": "Sly Dunbar on Revolutionizing Reggae Drums — Berklee Online",
             "url": "https://online.berklee.edu/takenote/sly-and-robbie-drummer-sly-dunbar-on-revolutionizing-reggae-drums/"
           },
@@ -5211,6 +5439,10 @@
           {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -5264,22 +5496,30 @@
       "tradition": "Colombia & Venezuela",
       "archetype": "Chandé",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "feac0032a4722a29",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "015ded40bb63729f",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 24,
+        "eventCount": 26,
         "json": "musicology/canonical-grooves/CAN-153-chande.json",
         "midi": "musicology/midi/CAN-153-chande.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "syncopated coastal Colombian drum-set adaptation",
+          "interlocking low/high strokes"
+        ],
         "references": [
+          {
+            "title": "South American Rhythms for the Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-357"
+          },
+          "https://www.moderndrummer.com/wp-content/uploads/2018/10/MD-469-1218c.pdf",
           {
             "title": "Latin Piano Styles — Berklee Online",
             "url": "https://online.berklee.edu/courses/latin-piano-styles"
@@ -5287,10 +5527,6 @@
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
-            "title": "South American Rhythms for the Drum Set — Berklee",
-            "url": "https://college.berklee.edu/courses/ilpd-357"
           }
         ],
         "evidence": {
@@ -5320,29 +5556,34 @@
       "tradition": "Colombia & Venezuela",
       "archetype": "Currulao Drum-Set Adaptation",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "5be5b153d60af1e5",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "c19d5221f506bac6",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 22,
+        "eventCount": 26,
         "json": "musicology/canonical-grooves/CAN-154-currulao-drum-set-adaptation.json",
         "midi": "musicology/midi/CAN-154-currulao-drum-set-adaptation.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "compound-meter Pacific Colombian feel",
+          "interlocking low drum and hand response",
+          "6/8 cyclic phrase"
+        ],
         "references": [
-          {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
           {
             "title": "South American Rhythms for the Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-357"
+          },
+          "https://www.moderndrummer.com/wp-content/uploads/2018/10/MD-469-1218c.pdf",
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -5368,10 +5609,10 @@
       "tradition": "Colombia & Venezuela",
       "archetype": "Joropo",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "55cc708af1d71143",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "262444192d045c20",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5381,9 +5622,18 @@
         "midi": "musicology/midi/CAN-155-joropo.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "fast 6/8 with 3-over-2 articulation",
+          "alternating low/high pulse",
+          "continuous subdivision"
+        ],
         "references": [
+          {
+            "title": "South American Rhythms for the Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-357"
+          },
+          "https://www.moderndrummer.com/wp-content/uploads/2018/10/MD-469-1218c.pdf",
           {
             "title": "Latin/Afro-Cuban Jazz — Berklee",
             "url": "https://college.berklee.edu/courses/enlt-300"
@@ -5395,10 +5645,6 @@
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
-            "title": "South American Rhythms for the Drum Set — Berklee",
-            "url": "https://college.berklee.edu/courses/ilpd-357"
           }
         ],
         "evidence": {
@@ -5432,10 +5678,10 @@
       "tradition": "Colombia & Venezuela",
       "archetype": "Merengue Venezolano",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "5c48276404a210b0",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "27a42e028431dd61",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5445,16 +5691,20 @@
         "midi": "musicology/midi/CAN-156-merengue-venezolano.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "fast compound-meter Venezuelan pulse",
+          "distinct from Dominican merengue"
+        ],
         "references": [
-          {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
           {
             "title": "South American Rhythms for the Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-357"
+          },
+          "https://www.moderndrummer.com/wp-content/uploads/2018/10/MD-469-1218c.pdf",
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -5480,10 +5730,10 @@
       "tradition": "Colombia & Venezuela",
       "archetype": "Porro / Porro Chocoano",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "56af9ad16d4a0714",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "c3de095ccc7863d0",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5493,16 +5743,21 @@
         "midi": "musicology/midi/CAN-152-porro-porro-chocoano.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "brass-band-oriented Colombian pulse",
+          "more active cymbal line than cumbia",
+          "strong quarter-note anchors"
+        ],
         "references": [
-          {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
           {
             "title": "South American Rhythms for the Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-357"
+          },
+          "https://www.moderndrummer.com/wp-content/uploads/2018/10/MD-469-1218c.pdf",
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -5528,10 +5783,10 @@
       "tradition": "Colombia & Venezuela",
       "archetype": "Traditional Colombian Cumbia",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "cbaf9a64e732d523",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "f9d356c44f509b2a",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5541,9 +5796,18 @@
         "midi": "musicology/midi/CAN-151-traditional-colombian-cumbia.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "steady low-drum pulse",
+          "offbeat hand-drum response",
+          "two-bar drum-set adaptation preserving space"
+        ],
         "references": [
+          {
+            "title": "South American Rhythms for the Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-357"
+          },
+          "https://www.moderndrummer.com/wp-content/uploads/2018/10/MD-469-1218c.pdf",
           {
             "title": "Latin Piano Styles — Berklee Online",
             "url": "https://online.berklee.edu/courses/latin-piano-styles"
@@ -5551,10 +5815,6 @@
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
-            "title": "South American Rhythms for the Drum Set — Berklee",
-            "url": "https://college.berklee.edu/courses/ilpd-357"
           }
         ],
         "evidence": {
@@ -5584,25 +5844,34 @@
       "tradition": "Cuba",
       "archetype": "Afro-Cuban 6/8 / Bembé",
       "playable": true,
-      "status": "medium",
-      "confidence": 0.542,
-      "sourceType": "canonical-curated",
-      "fingerprint": "cd778e257e7bba80",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "b76a8ec01da7d8cd",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 33,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-137-afro-cuban-6-8-bembe.json",
         "midi": "musicology/midi/CAN-137-afro-cuban-6-8-bembe.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "12/8 bell-cycle orientation",
+          "four-limb compound-meter coordination",
+          "Afro-Cuban 6/8 drum-set adaptation"
+        ],
         "references": [
           {
             "title": "Advanced Afro-Cuban Rhythms for Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-373"
+          },
+          "https://online.berklee.edu/courses/arranging-and-producing-contemporary-music-styles",
+          {
+            "title": "Drum Set Performance 101 — Berklee Online",
+            "url": "https://online.berklee.edu/courses/drum-set-performance-101"
           },
           {
             "title": "Latin/Afro-Cuban Styles — Berklee",
@@ -5613,16 +5882,12 @@
             "url": "https://college.berklee.edu/courses/enlt-300"
           },
           {
-            "title": "Drum Set Performance 101 — Berklee Online",
-            "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+            "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-211"
           },
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
-            "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
-            "url": "https://college.berklee.edu/courses/ilpd-211"
           }
         ],
         "evidence": {
@@ -5664,29 +5929,35 @@
       "tradition": "Cuba",
       "archetype": "Bolero Cubano",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "46c147c2ffd8474b",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "fcbe190958d5628e",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 27,
+        "eventCount": 24,
         "json": "musicology/canonical-grooves/CAN-132-bolero-cubano.json",
         "midi": "musicology/midi/CAN-132-bolero-cubano.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "slow restrained time",
+          "sparse bass drum",
+          "soft cross-stick-like response"
+        ],
         "references": [
-          {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
+          "https://college.berklee.edu/courses/ilpd-373",
+          "https://online.berklee.edu/courses/arranging-and-producing-contemporary-music-styles",
           {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -5712,22 +5983,32 @@
       "tradition": "Cuba",
       "archetype": "Cha-Cha-Cha",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "afca130dd6aedda6",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "11208e0b70ed9ece",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 27,
+        "eventCount": 18,
         "json": "musicology/canonical-grooves/CAN-131-cha-cha-cha.json",
         "midi": "musicology/midi/CAN-131-cha-cha-cha.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "quarter-note cha-cha bell pulse",
+          "restrained drum-set orchestration",
+          "tumbao-derived bass support"
+        ],
         "references": [
+          "https://college.berklee.edu/courses/ilpd-373",
+          "https://online.berklee.edu/courses/arranging-and-producing-contemporary-music-styles",
+          {
+            "title": "Drum Set Performance 101 — Berklee Online",
+            "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+          },
           {
             "title": "Latin/Afro-Cuban Styles — Berklee",
             "url": "https://college.berklee.edu/courses/enlt-220"
@@ -5737,16 +6018,12 @@
             "url": "https://college.berklee.edu/courses/enlt-300"
           },
           {
-            "title": "Drum Set Performance 101 — Berklee Online",
-            "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+            "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-211"
           },
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
-            "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
-            "url": "https://college.berklee.edu/courses/ilpd-211"
           }
         ],
         "evidence": {
@@ -5784,29 +6061,35 @@
       "tradition": "Cuba",
       "archetype": "Guaguancó Drum-Set",
       "playable": true,
-      "status": "high",
-      "confidence": 0.934,
-      "sourceType": "canonical-curated",
-      "fingerprint": "aa7a48bd4b37397b",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "e494d421a57f5e65",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 20,
+        "eventCount": 22,
         "json": "musicology/canonical-grooves/CAN-136-guaguanco-drum-set.json",
         "midi": "musicology/midi/CAN-136-guaguanco-drum-set.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "rumba-derived two-bar cyclic phrasing",
+          "tumba-style low-drum adaptation",
+          "space around clave-oriented accents"
+        ],
         "references": [
-          {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
+          "https://college.berklee.edu/courses/ilpd-373",
+          "https://online.berklee.edu/courses/arranging-and-producing-contemporary-music-styles",
           {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -5832,22 +6115,28 @@
       "tradition": "Cuba",
       "archetype": "Mambo",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "fccd72827781d3f9",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "cf233ac560e8aa37",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 27,
+        "eventCount": 22,
         "json": "musicology/canonical-grooves/CAN-130-mambo.json",
         "midi": "musicology/midi/CAN-130-mambo.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "bell-led mambo section feel",
+          "tumbao-supporting bass drum",
+          "stronger ensemble punctuation"
+        ],
         "references": [
+          "https://college.berklee.edu/courses/ilpd-373",
+          "https://online.berklee.edu/courses/arranging-and-producing-contemporary-music-styles",
           {
             "title": "Latin/Afro-Cuban Styles — Berklee",
             "url": "https://college.berklee.edu/courses/enlt-220"
@@ -5857,12 +6146,12 @@
             "url": "https://college.berklee.edu/courses/enlt-300"
           },
           {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -5896,10 +6185,10 @@
       "tradition": "Cuba",
       "archetype": "Mozambique",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "92e048a4fdb303bd",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "f6eb67449f8594c7",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5909,16 +6198,22 @@
         "midi": "musicology/midi/CAN-135-mozambique.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "bell-led Mozambique outline",
+          "interlocking tom/snare voice",
+          "two-bar cyclic phrase"
+        ],
         "references": [
-          {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
+          "https://college.berklee.edu/courses/ilpd-373",
+          "https://online.berklee.edu/courses/arranging-and-producing-contemporary-music-styles",
           {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -5944,10 +6239,10 @@
       "tradition": "Cuba",
       "archetype": "Salsa 2-3",
       "playable": true,
-      "status": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "fingerprint": "7ee83152e4322901",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "4fb7b9231b8f7814",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5957,16 +6252,22 @@
         "midi": "musicology/midi/CAN-138-salsa-2-3.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "two-bar 2-3 clave orientation",
+          "cáscara/bell-derived time hand",
+          "tumbao-supporting bass drum"
+        ],
         "references": [
-          {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
+          "https://college.berklee.edu/courses/ilpd-373",
+          "https://online.berklee.edu/courses/arranging-and-producing-contemporary-music-styles",
           {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -5992,29 +6293,35 @@
       "tradition": "Cuba",
       "archetype": "Salsa 3-2",
       "playable": true,
-      "status": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "fingerprint": "38d7e63cae017b9a",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "e13f70e9d167b1a0",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 22,
+        "eventCount": 21,
         "json": "musicology/canonical-grooves/CAN-139-salsa-3-2.json",
         "midi": "musicology/midi/CAN-139-salsa-3-2.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "two-bar 3-2 clave orientation",
+          "cáscara/bell-derived time hand",
+          "tumbao-supporting bass drum"
+        ],
         "references": [
-          {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
+          "https://college.berklee.edu/courses/ilpd-373",
+          "https://online.berklee.edu/courses/arranging-and-producing-contemporary-music-styles",
           {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -6040,26 +6347,31 @@
       "tradition": "Cuba",
       "archetype": "Son",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "fb9ea21a49c95760",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "e91cc8a1b95560aa",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 22,
+        "eventCount": 20,
         "json": "musicology/canonical-grooves/CAN-128-son.json",
         "midi": "musicology/midi/CAN-128-son.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "two-bar son-derived cáscara outline",
+          "sparse tumbao-supporting bass drum",
+          "two-bar phrase preserved"
+        ],
         "references": [
           {
             "title": "Advanced Afro-Cuban Rhythms for Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-373"
           },
+          "https://online.berklee.edu/courses/arranging-and-producing-contemporary-music-styles",
           {
             "title": "Latin/Afro-Cuban Styles — Berklee",
             "url": "https://college.berklee.edu/courses/enlt-220"
@@ -6069,12 +6381,12 @@
             "url": "https://college.berklee.edu/courses/enlt-300"
           },
           {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -6112,26 +6424,31 @@
       "tradition": "Cuba",
       "archetype": "Son Montuno",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "6248948b95d20dcf",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "c8e3ce1ea86d40df",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 26,
+        "eventCount": 20,
         "json": "musicology/canonical-grooves/CAN-129-son-montuno.json",
         "midi": "musicology/midi/CAN-129-son-montuno.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "bell/cáscara-oriented time hand",
+          "more active montuno-section orchestration",
+          "two-bar phrase"
+        ],
         "references": [
           {
             "title": "Advanced Afro-Cuban Rhythms for Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-373"
           },
+          "https://online.berklee.edu/courses/arranging-and-producing-contemporary-music-styles",
           {
             "title": "Latin/Afro-Cuban Styles — Berklee",
             "url": "https://college.berklee.edu/courses/enlt-220"
@@ -6141,12 +6458,12 @@
             "url": "https://college.berklee.edu/courses/enlt-300"
           },
           {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -6184,10 +6501,10 @@
       "tradition": "Cuba",
       "archetype": "Songo",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "26dafc3ca83fb584",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "790c8dd52570dc7b",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -6197,13 +6514,18 @@
         "midi": "musicology/midi/CAN-133-songo.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "drum-set-native Cuban vocabulary",
+          "syncopated kick/snare conversation",
+          "tom integration without abandoning time"
+        ],
         "references": [
           {
             "title": "Advanced Afro-Cuban Rhythms for Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-373"
           },
+          "https://online.berklee.edu/courses/arranging-and-producing-contemporary-music-styles",
           {
             "title": "Latin/Afro-Cuban Styles — Berklee",
             "url": "https://college.berklee.edu/courses/enlt-220"
@@ -6213,12 +6535,12 @@
             "url": "https://college.berklee.edu/courses/enlt-300"
           },
           {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -6256,37 +6578,42 @@
       "tradition": "Cuba",
       "archetype": "Timba",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "1327049665b181fe",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "323adf085431418b",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 38,
+        "eventCount": 42,
         "json": "musicology/canonical-grooves/CAN-134-timba.json",
         "midi": "musicology/midi/CAN-134-timba.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "high-density contemporary Cuban drum-set orchestration",
+          "syncopated kick displacement",
+          "kit-wide interaction"
+        ],
         "references": [
           {
             "title": "Advanced Afro-Cuban Rhythms for Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-373"
           },
+          "https://online.berklee.edu/courses/arranging-and-producing-contemporary-music-styles",
           {
             "title": "Latin/Afro-Cuban Jazz — Berklee",
             "url": "https://college.berklee.edu/courses/enlt-300"
           },
           {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
             "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
             "url": "https://college.berklee.edu/courses/ilpd-211"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
@@ -6320,22 +6647,31 @@
       "tradition": "Peru / Argentina / Uruguay",
       "archetype": "Candombe Uruguayo",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "a19498064ba2dd32",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "5ffca65a581ef88c",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 36,
+        "eventCount": 40,
         "json": "musicology/canonical-grooves/CAN-161-candombe-uruguayo.json",
         "midi": "musicology/midi/CAN-161-candombe-uruguayo.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "three-drum-function-inspired drum-set layering",
+          "syncopated Uruguayan pulse",
+          "continuous interlocking phrase"
+        ],
         "references": [
+          {
+            "title": "South American Rhythms for the Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-357"
+          },
+          "https://www.moderndrummer.com/wp-content/uploads/2018/10/MD-469-1218c.pdf",
           {
             "title": "Latin Piano Styles — Berklee Online",
             "url": "https://online.berklee.edu/courses/latin-piano-styles"
@@ -6343,80 +6679,12 @@
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
-            "title": "South American Rhythms for the Drum Set — Berklee",
-            "url": "https://college.berklee.edu/courses/ilpd-357"
           }
         ],
         "evidence": {
           "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
-            {
-              "title": "Latin Piano Styles — Berklee Online",
-              "url": "https://online.berklee.edu/courses/latin-piano-styles"
-            },
-            {
-              "title": "South American Rhythms for the Drum Set — Berklee",
-              "url": "https://college.berklee.edu/courses/ilpd-357"
-            },
-            {
-              "title": "Groove MIDI Dataset — Magenta",
-              "url": "https://magenta.tensorflow.org/datasets/groove"
-            }
-          ]
-        },
-        "catalogDisambiguation": false
-      }
-    },
-    {
-      "id": "CAN-159",
-      "family": "Latin America",
-      "tradition": "Peru / Argentina / Uruguay",
-      "archetype": "Chacarera",
-      "playable": true,
-      "status": "medium",
-      "confidence": 0.533,
-      "sourceType": "canonical-curated",
-      "fingerprint": "5338e1c171b5c972",
-      "canonical": {
-        "schema": "battrochtek.canonical-groove/v1",
-        "ppq": 960,
-        "phraseBars": 2,
-        "eventCount": 12,
-        "json": "musicology/canonical-grooves/CAN-159-chacarera.json",
-        "midi": "musicology/midi/CAN-159-chacarera.mid"
-      },
-      "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [
-          {
-            "title": "Latin/Afro-Cuban Jazz — Berklee",
-            "url": "https://college.berklee.edu/courses/enlt-300"
-          },
-          {
-            "title": "Latin Piano Styles — Berklee Online",
-            "url": "https://online.berklee.edu/courses/latin-piano-styles"
-          },
-          {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
-            "title": "South American Rhythms for the Drum Set — Berklee",
-            "url": "https://college.berklee.edu/courses/ilpd-357"
-          }
-        ],
-        "evidence": {
-          "taxonomyState": "literature-supported",
-          "performanceEvidence": "human-dataset-available",
-          "references": [
-            {
-              "title": "Latin/Afro-Cuban Jazz — Berklee",
-              "url": "https://college.berklee.edu/courses/enlt-300"
-            },
             {
               "title": "Latin Piano Styles — Berklee Online",
               "url": "https://online.berklee.edu/courses/latin-piano-styles"
@@ -6440,22 +6708,31 @@
       "tradition": "Peru / Argentina / Uruguay",
       "archetype": "Festejo",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "6619a52356e24511",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "813dffbaff049f3e",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 36,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-157-festejo.json",
         "midi": "musicology/midi/CAN-157-festejo.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "Afro-Peruvian compound pulse",
+          "cajón-inspired low/high dialogue",
+          "lively syncopated response"
+        ],
         "references": [
+          {
+            "title": "South American Rhythms for the Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-357"
+          },
+          "https://www.berklee.edu/berklee-now/news/peruvian-music-queen",
           {
             "title": "Latin/Afro-Cuban Jazz — Berklee",
             "url": "https://college.berklee.edu/courses/enlt-300"
@@ -6467,10 +6744,6 @@
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
-            "title": "South American Rhythms for the Drum Set — Berklee",
-            "url": "https://college.berklee.edu/courses/ilpd-357"
           }
         ],
         "evidence": {
@@ -6504,22 +6777,31 @@
       "tradition": "Peru / Argentina / Uruguay",
       "archetype": "Landó",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "9cbeb15ca0160f8d",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "cfac54f178ef83cc",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 36,
+        "eventCount": 30,
         "json": "musicology/canonical-grooves/CAN-158-lando.json",
         "midi": "musicology/midi/CAN-158-lando.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "slower Afro-Peruvian compound cycle",
+          "cajón-inspired low/high dialogue",
+          "greater space than festejo"
+        ],
         "references": [
+          {
+            "title": "South American Rhythms for the Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-357"
+          },
+          "https://www.berklee.edu/berklee-now/news/peruvian-music-queen",
           {
             "title": "Latin Piano Styles — Berklee Online",
             "url": "https://online.berklee.edu/courses/latin-piano-styles"
@@ -6527,10 +6809,6 @@
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
-            "title": "South American Rhythms for the Drum Set — Berklee",
-            "url": "https://college.berklee.edu/courses/ilpd-357"
           }
         ],
         "evidence": {
@@ -6560,22 +6838,30 @@
       "tradition": "Peru / Argentina / Uruguay",
       "archetype": "Milonga",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "a161824d89b2dd67",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "f9c50bb1915bf6e9",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 29,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-163-milonga.json",
         "midi": "musicology/midi/CAN-163-milonga.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "quicker flowing Río de la Plata pulse",
+          "continuous light subdivision",
+          "syncopated bass support"
+        ],
         "references": [
+          {
+            "title": "South American Rhythms for the Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-357"
+          },
           {
             "title": "Latin/Afro-Cuban Jazz — Berklee",
             "url": "https://college.berklee.edu/courses/enlt-300"
@@ -6587,10 +6873,6 @@
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
-            "title": "South American Rhythms for the Drum Set — Berklee",
-            "url": "https://college.berklee.edu/courses/ilpd-357"
           }
         ],
         "evidence": {
@@ -6624,22 +6906,30 @@
       "tradition": "Peru / Argentina / Uruguay",
       "archetype": "Tango",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "81c18cd5a1b315ec",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "6a0cd6017e6c0dd3",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 27,
+        "eventCount": 20,
         "json": "musicology/canonical-grooves/CAN-162-tango.json",
         "midi": "musicology/midi/CAN-162-tango.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "marked tango pulse",
+          "syncopated 3-3-2-adjacent bass support",
+          "restrained cymbal role"
+        ],
         "references": [
+          {
+            "title": "South American Rhythms for the Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-357"
+          },
           {
             "title": "Latin Piano Styles — Berklee Online",
             "url": "https://online.berklee.edu/courses/latin-piano-styles"
@@ -6647,10 +6937,6 @@
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
-            "title": "South American Rhythms for the Drum Set — Berklee",
-            "url": "https://college.berklee.edu/courses/ilpd-357"
           }
         ],
         "evidence": {
@@ -6680,22 +6966,29 @@
       "tradition": "Peru / Argentina / Uruguay",
       "archetype": "Zamba Argentina",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "445f81562c25e606",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "d90a886d78e1a97b",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 19,
+        "eventCount": 20,
         "json": "musicology/canonical-grooves/CAN-160-zamba-argentina.json",
         "midi": "musicology/midi/CAN-160-zamba-argentina.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "slow 6/8 Argentine folkloric pulse",
+          "restrained drum-set adaptation"
+        ],
         "references": [
+          {
+            "title": "South American Rhythms for the Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-357"
+          },
           {
             "title": "Latin Piano Styles — Berklee Online",
             "url": "https://online.berklee.edu/courses/latin-piano-styles"
@@ -6703,10 +6996,6 @@
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
-          },
-          {
-            "title": "South American Rhythms for the Drum Set — Berklee",
-            "url": "https://college.berklee.edu/courses/ilpd-357"
           }
         ],
         "evidence": {
@@ -7971,14 +8260,6 @@
       "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
     },
     {
-      "structuralFingerprint": "f6b258cb3a595338",
-      "winner": "CAN-129",
-      "held": [
-        "CAN-003"
-      ],
-      "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
-    },
-    {
       "structuralFingerprint": "a58263d6cf08f720",
       "winner": "CAN-004",
       "held": [
@@ -8003,10 +8284,8 @@
     },
     {
       "structuralFingerprint": "b998deeb38b389c1",
-      "winner": "CAN-140",
+      "winner": "CAN-045",
       "held": [
-        "CAN-150",
-        "CAN-045",
         "CAN-203"
       ],
       "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
@@ -8072,10 +8351,10 @@
       "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
     },
     {
-      "structuralFingerprint": "700b31d9190346c7",
-      "winner": "CAN-155",
+      "structuralFingerprint": "a50fbf5ee8deb7b7",
+      "winner": "CAN-156",
       "held": [
-        "CAN-182"
+        "CAN-159"
       ],
       "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
     },

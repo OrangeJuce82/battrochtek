@@ -4,172 +4,333 @@
   "family": "Latin America",
   "tradition": "Peru / Argentina / Uruguay",
   "name": "Chacarera",
-  "bpm": 120,
-  "signature": "4/4",
+  "bpm": 112,
+  "signature": "6/8",
   "ppq": 960,
   "phraseBars": 2,
-  "feel": "straight",
+  "feel": "chacarera",
   "swing": 0,
   "events": [
     {
-      "tick": 2880,
-      "duration": 108,
+      "tick": 0,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 120,
-      "velocityClass": "accent",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
-      "tick": 6720,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 120,
-      "velocityClass": "accent",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 2880,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 120,
-      "velocityClass": "accent",
-      "limb": "otherHand",
+      "tick": 0,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 6720,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 120,
-      "velocityClass": "accent",
-      "limb": "otherHand",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 480,
-      "duration": 108,
-      "instrument": "tom",
-      "articulation": "high",
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
       "velocity": 56,
       "velocityClass": "soft",
-      "limb": "otherHand",
-      "role": "ornament",
+      "limb": "timeHand",
+      "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
-      "tick": 1920,
-      "duration": 108,
+      "tick": 480,
+      "duration": 120,
       "instrument": "tom",
-      "articulation": "high",
-      "velocity": 56,
-      "velocityClass": "soft",
+      "articulation": "floor",
+      "velocity": 82,
+      "velocityClass": "normal",
       "limb": "otherHand",
       "role": "ornament",
       "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 4320,
-      "duration": 108,
-      "instrument": "tom",
-      "articulation": "high",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "otherHand",
-      "role": "ornament",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 5760,
-      "duration": 108,
-      "instrument": "tom",
-      "articulation": "high",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "otherHand",
-      "role": "ornament",
-      "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 960,
-      "duration": 108,
-      "instrument": "tom",
-      "articulation": "floor",
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
       "velocity": 56,
       "velocityClass": "soft",
-      "limb": "otherHand",
-      "role": "ornament",
+      "limb": "timeHand",
+      "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 960,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "otherHand",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1440,
-      "duration": 108,
-      "instrument": "tom",
-      "articulation": "floor",
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
       "velocity": 56,
       "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 1440,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 1920,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 1920,
+      "duration": 120,
+      "instrument": "tom",
+      "articulation": "floor",
+      "velocity": 82,
+      "velocityClass": "normal",
       "limb": "otherHand",
       "role": "ornament",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 2400,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 2400,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "otherHand",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 2880,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 2880,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 3360,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 3360,
+      "duration": 120,
+      "instrument": "tom",
+      "articulation": "floor",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "otherHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 3840,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 3840,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "otherHand",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 4320,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 4320,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 4800,
-      "duration": 108,
-      "instrument": "tom",
-      "articulation": "floor",
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
       "velocity": 56,
       "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 4800,
+      "duration": 120,
+      "instrument": "tom",
+      "articulation": "floor",
+      "velocity": 82,
+      "velocityClass": "normal",
       "limb": "otherHand",
       "role": "ornament",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 5280,
-      "duration": 108,
-      "instrument": "tom",
-      "articulation": "floor",
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
       "velocity": 56,
       "velocityClass": "soft",
-      "limb": "otherHand",
-      "role": "ornament",
+      "limb": "timeHand",
+      "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 5280,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "otherHand",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
     }
   ],
   "metadata": {
-    "validationState": "medium",
-    "confidence": 0.533,
-    "sourceType": "canonical-curated",
-    "provenance": {
-      "candidateSource": "Drum Machine Patterns",
-      "candidateName": "Cha ChaBreak",
-      "origin": "Cha Cha/Cha_ChaBreak.mid",
-      "attribution": ""
-    },
-    "feel": "straight",
+    "validationState": "reviewed-pedagogical-adaptation",
+    "confidence": 0.78,
+    "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+    "createdBy": "Battrochtek musicology compiler",
+    "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+    "distinctiveFeatures": [
+      "6/8 folkloric pulse with hemiola implication",
+      "alternating low/high drum function"
+    ],
+    "references": [
+      {
+        "title": "South American Rhythms for the Drum Set — Berklee",
+        "url": "https://college.berklee.edu/courses/ilpd-357"
+      },
+      {
+        "title": "Latin/Afro-Cuban Jazz — Berklee",
+        "url": "https://college.berklee.edu/courses/enlt-300"
+      },
+      {
+        "title": "Latin Piano Styles — Berklee Online",
+        "url": "https://online.berklee.edu/courses/latin-piano-styles"
+      },
+      {
+        "title": "Groove MIDI Dataset — Magenta",
+        "url": "https://magenta.tensorflow.org/datasets/groove"
+      }
+    ],
     "tier": "B",
     "originalCoverage": "RELATED_CANDIDATE",
-    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+    "scoreState": "reviewed-adaptation",
     "evidence": {
       "taxonomyState": "literature-supported",
       "performanceEvidence": "human-dataset-available",
@@ -191,25 +352,6 @@
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
       ]
-    },
-    "scoreState": "candidate",
-    "references": [
-      {
-        "title": "Latin/Afro-Cuban Jazz — Berklee",
-        "url": "https://college.berklee.edu/courses/enlt-300"
-      },
-      {
-        "title": "Latin Piano Styles — Berklee Online",
-        "url": "https://online.berklee.edu/courses/latin-piano-styles"
-      },
-      {
-        "title": "Groove MIDI Dataset — Magenta",
-        "url": "https://magenta.tensorflow.org/datasets/groove"
-      },
-      {
-        "title": "South American Rhythms for the Drum Set — Berklee",
-        "url": "https://college.berklee.edu/courses/ilpd-357"
-      }
-    ]
+    }
   }
 }

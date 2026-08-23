@@ -1,6 +1,6 @@
 {
   "schema": "battrochtek.diversity-report/v1",
-  "generatedAt": "2026-08-23T09:42:15.406Z",
+  "generatedAt": "2026-08-23T09:49:47.352Z",
   "grooveCount": 213,
   "exactStructuralClusters": [
     [
@@ -15,20 +15,6 @@
         "name": "Trap Double-Time Hats",
         "family": "Hip-Hop",
         "tradition": "Hip-Hop"
-      }
-    ],
-    [
-      {
-        "id": "CAN-003",
-        "name": "8th-note Shuffle",
-        "family": "Foundations / Concepts",
-        "tradition": "Core time feels"
-      },
-      {
-        "id": "CAN-129",
-        "name": "Son Montuno",
-        "family": "Latin America",
-        "tradition": "Cuba"
       }
     ],
     [
@@ -107,18 +93,6 @@
         "name": "Motown",
         "family": "Funk / Soul / R&B",
         "tradition": "African-American groove"
-      },
-      {
-        "id": "CAN-140",
-        "name": "Bossa Nova",
-        "family": "Latin America",
-        "tradition": "Brazil"
-      },
-      {
-        "id": "CAN-150",
-        "name": "Choro / Maxixe Drum-Set Adaptation",
-        "family": "Latin America",
-        "tradition": "Brazil"
       },
       {
         "id": "CAN-203",
@@ -251,16 +225,16 @@
     ],
     [
       {
-        "id": "CAN-155",
-        "name": "Joropo",
+        "id": "CAN-156",
+        "name": "Merengue Venezolano",
         "family": "Latin America",
         "tradition": "Colombia & Venezuela"
       },
       {
-        "id": "CAN-182",
-        "name": "Bikutsi",
-        "family": "Africa",
-        "tradition": "Central Africa"
+        "id": "CAN-159",
+        "name": "Chacarera",
+        "family": "Latin America",
+        "tradition": "Peru / Argentina / Uruguay"
       }
     ],
     [
@@ -388,106 +362,6 @@
       "all": 0.929,
       "sameFamily": false,
       "action": "REVIEW"
-    },
-    {
-      "a": "CAN-003",
-      "aName": "8th-note Shuffle",
-      "b": "CAN-129",
-      "bName": "Son Montuno",
-      "structural": 1,
-      "all": 1,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-003",
-      "aName": "8th-note Shuffle",
-      "b": "CAN-130",
-      "bName": "Mambo",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-003",
-      "aName": "8th-note Shuffle",
-      "b": "CAN-131",
-      "bName": "Cha-Cha-Cha",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-003",
-      "aName": "8th-note Shuffle",
-      "b": "CAN-132",
-      "bName": "Bolero Cubano",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-003",
-      "aName": "8th-note Shuffle",
-      "b": "CAN-142",
-      "bName": "Samba Partido Alto",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-003",
-      "aName": "8th-note Shuffle",
-      "b": "CAN-143",
-      "bName": "Samba-Reggae",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-003",
-      "aName": "8th-note Shuffle",
-      "b": "CAN-144",
-      "bName": "Baião",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-003",
-      "aName": "8th-note Shuffle",
-      "b": "CAN-146",
-      "bName": "Frevo",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-003",
-      "aName": "8th-note Shuffle",
-      "b": "CAN-148",
-      "bName": "Samba-Funk",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-003",
-      "aName": "8th-note Shuffle",
-      "b": "CAN-162",
-      "bName": "Tango",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
     },
     {
       "a": "CAN-003",
@@ -1072,36 +946,6 @@
     {
       "a": "CAN-007",
       "aName": "Four-on-the-Floor",
-      "b": "CAN-140",
-      "bName": "Bossa Nova",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-007",
-      "aName": "Four-on-the-Floor",
-      "b": "CAN-150",
-      "bName": "Choro / Maxixe Drum-Set Adaptation",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-007",
-      "aName": "Four-on-the-Floor",
-      "b": "CAN-163",
-      "bName": "Milonga",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-007",
-      "aName": "Four-on-the-Floor",
       "b": "CAN-174",
       "bName": "Highlife",
       "structural": 0.889,
@@ -1412,26 +1256,6 @@
     {
       "a": "CAN-010",
       "aName": "Displaced Backbeat",
-      "b": "CAN-140",
-      "bName": "Bossa Nova",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-010",
-      "aName": "Displaced Backbeat",
-      "b": "CAN-150",
-      "bName": "Choro / Maxixe Drum-Set Adaptation",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-010",
-      "aName": "Displaced Backbeat",
       "b": "CAN-190",
       "bName": "Maghreb Chaabi",
       "structural": 0.889,
@@ -1474,8 +1298,8 @@
       "aName": "6/8 Compound Groove",
       "b": "CAN-160",
       "bName": "Zamba Argentina",
-      "structural": 0.947,
-      "all": 0.947,
+      "structural": 0.9,
+      "all": 0.9,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1632,16 +1456,6 @@
     {
       "a": "CAN-024",
       "aName": "Power Ballad",
-      "b": "CAN-129",
-      "bName": "Son Montuno",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-024",
-      "aName": "Power Ballad",
       "b": "CAN-196",
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.897,
@@ -1690,16 +1504,6 @@
       "action": "REVIEW"
     },
     {
-      "a": "CAN-030",
-      "aName": "Post-Punk / New Wave",
-      "b": "CAN-130",
-      "bName": "Mambo",
-      "structural": 0.9,
-      "all": 0.9,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
       "a": "CAN-031",
       "aName": "Surf Rock",
       "b": "CAN-045",
@@ -1744,36 +1548,6 @@
       "aName": "Surf Rock",
       "b": "CAN-088",
       "bName": "Rockabilly Shuffle",
-      "structural": 0.933,
-      "all": 0.933,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-031",
-      "aName": "Surf Rock",
-      "b": "CAN-140",
-      "bName": "Bossa Nova",
-      "structural": 0.966,
-      "all": 0.966,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-031",
-      "aName": "Surf Rock",
-      "b": "CAN-150",
-      "bName": "Choro / Maxixe Drum-Set Adaptation",
-      "structural": 0.966,
-      "all": 0.966,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-031",
-      "aName": "Surf Rock",
-      "b": "CAN-163",
-      "bName": "Milonga",
       "structural": 0.933,
       "all": 0.933,
       "sameFamily": false,
@@ -1937,6 +1711,16 @@
       "structural": 0.885,
       "all": 0.781,
       "sameFamily": true,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-042",
+      "aName": "New Orleans Funk / Second Line",
+      "b": "CAN-148",
+      "bName": "Samba-Funk",
+      "structural": 0.957,
+      "all": 0.929,
+      "sameFamily": false,
       "action": "REVIEW"
     },
     {
@@ -2154,36 +1938,6 @@
       "aName": "Motown",
       "b": "CAN-088",
       "bName": "Rockabilly Shuffle",
-      "structural": 0.966,
-      "all": 0.966,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-045",
-      "aName": "Motown",
-      "b": "CAN-140",
-      "bName": "Bossa Nova",
-      "structural": 1,
-      "all": 1,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-045",
-      "aName": "Motown",
-      "b": "CAN-150",
-      "bName": "Choro / Maxixe Drum-Set Adaptation",
-      "structural": 1,
-      "all": 1,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-045",
-      "aName": "Motown",
-      "b": "CAN-163",
-      "bName": "Milonga",
       "structural": 0.966,
       "all": 0.966,
       "sameFamily": false,
@@ -2912,86 +2666,6 @@
     {
       "a": "CAN-058",
       "aName": "Texas Shuffle",
-      "b": "CAN-129",
-      "bName": "Son Montuno",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-058",
-      "aName": "Texas Shuffle",
-      "b": "CAN-130",
-      "bName": "Mambo",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-058",
-      "aName": "Texas Shuffle",
-      "b": "CAN-131",
-      "bName": "Cha-Cha-Cha",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-058",
-      "aName": "Texas Shuffle",
-      "b": "CAN-132",
-      "bName": "Bolero Cubano",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-058",
-      "aName": "Texas Shuffle",
-      "b": "CAN-142",
-      "bName": "Samba Partido Alto",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-058",
-      "aName": "Texas Shuffle",
-      "b": "CAN-143",
-      "bName": "Samba-Reggae",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-058",
-      "aName": "Texas Shuffle",
-      "b": "CAN-146",
-      "bName": "Frevo",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-058",
-      "aName": "Texas Shuffle",
-      "b": "CAN-162",
-      "bName": "Tango",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-058",
-      "aName": "Texas Shuffle",
       "b": "CAN-165",
       "bName": "Bachata",
       "structural": 0.897,
@@ -3040,36 +2714,6 @@
       "action": "REVIEW"
     },
     {
-      "a": "CAN-059",
-      "aName": "Slow 12/8 Blues",
-      "b": "CAN-129",
-      "bName": "Son Montuno",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-059",
-      "aName": "Slow 12/8 Blues",
-      "b": "CAN-130",
-      "bName": "Mambo",
-      "structural": 0.931,
-      "all": 0.931,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-059",
-      "aName": "Slow 12/8 Blues",
-      "b": "CAN-148",
-      "bName": "Samba-Funk",
-      "structural": 0.9,
-      "all": 0.9,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
       "a": "CAN-060",
       "aName": "Straight Blues",
       "b": "CAN-064",
@@ -3094,36 +2738,6 @@
       "aName": "Straight Blues",
       "b": "CAN-088",
       "bName": "Rockabilly Shuffle",
-      "structural": 0.933,
-      "all": 0.933,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-060",
-      "aName": "Straight Blues",
-      "b": "CAN-140",
-      "bName": "Bossa Nova",
-      "structural": 0.966,
-      "all": 0.966,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-060",
-      "aName": "Straight Blues",
-      "b": "CAN-150",
-      "bName": "Choro / Maxixe Drum-Set Adaptation",
-      "structural": 0.966,
-      "all": 0.966,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-060",
-      "aName": "Straight Blues",
-      "b": "CAN-163",
-      "bName": "Milonga",
       "structural": 0.933,
       "all": 0.933,
       "sameFamily": false,
@@ -3192,26 +2806,6 @@
     {
       "a": "CAN-062",
       "aName": "Train Shuffle",
-      "b": "CAN-129",
-      "bName": "Son Montuno",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-062",
-      "aName": "Train Shuffle",
-      "b": "CAN-142",
-      "bName": "Samba Partido Alto",
-      "structural": 0.931,
-      "all": 0.931,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-062",
-      "aName": "Train Shuffle",
       "b": "CAN-173",
       "bName": "Afrobeat",
       "structural": 0.9,
@@ -3234,36 +2828,6 @@
       "aName": "Blues Rock Shuffle",
       "b": "CAN-088",
       "bName": "Rockabilly Shuffle",
-      "structural": 0.903,
-      "all": 0.903,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-064",
-      "aName": "Blues Rock Shuffle",
-      "b": "CAN-140",
-      "bName": "Bossa Nova",
-      "structural": 0.933,
-      "all": 0.933,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-064",
-      "aName": "Blues Rock Shuffle",
-      "b": "CAN-150",
-      "bName": "Choro / Maxixe Drum-Set Adaptation",
-      "structural": 0.933,
-      "all": 0.933,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-064",
-      "aName": "Blues Rock Shuffle",
-      "b": "CAN-163",
-      "bName": "Milonga",
       "structural": 0.903,
       "all": 0.903,
       "sameFamily": false,
@@ -3677,36 +3241,6 @@
       "structural": 0.933,
       "all": 0.933,
       "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-081",
-      "aName": "Country Shuffle",
-      "b": "CAN-140",
-      "bName": "Bossa Nova",
-      "structural": 0.966,
-      "all": 0.966,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-081",
-      "aName": "Country Shuffle",
-      "b": "CAN-150",
-      "bName": "Choro / Maxixe Drum-Set Adaptation",
-      "structural": 0.966,
-      "all": 0.966,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-081",
-      "aName": "Country Shuffle",
-      "b": "CAN-163",
-      "bName": "Milonga",
-      "structural": 0.933,
-      "all": 0.933,
-      "sameFamily": false,
       "action": "REVIEW"
     },
     {
@@ -4132,36 +3666,6 @@
     {
       "a": "CAN-088",
       "aName": "Rockabilly Shuffle",
-      "b": "CAN-140",
-      "bName": "Bossa Nova",
-      "structural": 0.966,
-      "all": 0.966,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-088",
-      "aName": "Rockabilly Shuffle",
-      "b": "CAN-150",
-      "bName": "Choro / Maxixe Drum-Set Adaptation",
-      "structural": 0.966,
-      "all": 0.966,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-088",
-      "aName": "Rockabilly Shuffle",
-      "b": "CAN-163",
-      "bName": "Milonga",
-      "structural": 0.933,
-      "all": 0.933,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-088",
-      "aName": "Rockabilly Shuffle",
       "b": "CAN-170",
       "bName": "Kompa",
       "structural": 0.903,
@@ -4374,86 +3878,6 @@
       "aName": "Trap Half-Time",
       "b": "CAN-107",
       "bName": "Early Dancehall",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-098",
-      "aName": "Sample-Break Pocket",
-      "b": "CAN-129",
-      "bName": "Son Montuno",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-098",
-      "aName": "Sample-Break Pocket",
-      "b": "CAN-130",
-      "bName": "Mambo",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-098",
-      "aName": "Sample-Break Pocket",
-      "b": "CAN-131",
-      "bName": "Cha-Cha-Cha",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-098",
-      "aName": "Sample-Break Pocket",
-      "b": "CAN-132",
-      "bName": "Bolero Cubano",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-098",
-      "aName": "Sample-Break Pocket",
-      "b": "CAN-142",
-      "bName": "Samba Partido Alto",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-098",
-      "aName": "Sample-Break Pocket",
-      "b": "CAN-143",
-      "bName": "Samba-Reggae",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-098",
-      "aName": "Sample-Break Pocket",
-      "b": "CAN-146",
-      "bName": "Frevo",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-098",
-      "aName": "Sample-Break Pocket",
-      "b": "CAN-162",
-      "bName": "Tango",
       "structural": 0.897,
       "all": 0.897,
       "sameFamily": false,
@@ -5080,1184 +4504,34 @@
       "action": "MERGE/REVIEW"
     },
     {
-      "a": "CAN-128",
-      "aName": "Son",
-      "b": "CAN-151",
-      "bName": "Traditional Colombian Cumbia",
-      "structural": 0.917,
-      "all": 0.917,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-128",
-      "aName": "Son",
-      "b": "CAN-172",
-      "bName": "Biguine / Beguine",
-      "structural": 0.917,
-      "all": 0.917,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-129",
-      "aName": "Son Montuno",
-      "b": "CAN-130",
-      "bName": "Mambo",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-129",
-      "aName": "Son Montuno",
-      "b": "CAN-131",
-      "bName": "Cha-Cha-Cha",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-129",
-      "aName": "Son Montuno",
-      "b": "CAN-132",
-      "bName": "Bolero Cubano",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-129",
-      "aName": "Son Montuno",
-      "b": "CAN-142",
-      "bName": "Samba Partido Alto",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-129",
-      "aName": "Son Montuno",
-      "b": "CAN-143",
-      "bName": "Samba-Reggae",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-129",
-      "aName": "Son Montuno",
-      "b": "CAN-144",
-      "bName": "Baião",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-129",
-      "aName": "Son Montuno",
-      "b": "CAN-146",
-      "bName": "Frevo",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-129",
-      "aName": "Son Montuno",
-      "b": "CAN-148",
-      "bName": "Samba-Funk",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-129",
-      "aName": "Son Montuno",
-      "b": "CAN-162",
-      "bName": "Tango",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-129",
-      "aName": "Son Montuno",
-      "b": "CAN-165",
-      "bName": "Bachata",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-129",
-      "aName": "Son Montuno",
-      "b": "CAN-166",
-      "bName": "Bomba Drum-Set",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-129",
-      "aName": "Son Montuno",
-      "b": "CAN-173",
-      "bName": "Afrobeat",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-129",
-      "aName": "Son Montuno",
-      "b": "CAN-177",
-      "bName": "Fanga Drum-Set Adaptation",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-129",
-      "aName": "Son Montuno",
-      "b": "CAN-186",
-      "bName": "Amapiano",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-130",
-      "aName": "Mambo",
-      "b": "CAN-131",
-      "bName": "Cha-Cha-Cha",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-130",
-      "aName": "Mambo",
-      "b": "CAN-132",
-      "bName": "Bolero Cubano",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-130",
-      "aName": "Mambo",
-      "b": "CAN-142",
-      "bName": "Samba Partido Alto",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-130",
-      "aName": "Mambo",
-      "b": "CAN-143",
-      "bName": "Samba-Reggae",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-130",
-      "aName": "Mambo",
-      "b": "CAN-144",
-      "bName": "Baião",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-130",
-      "aName": "Mambo",
-      "b": "CAN-146",
-      "bName": "Frevo",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-130",
-      "aName": "Mambo",
-      "b": "CAN-148",
-      "bName": "Samba-Funk",
-      "structural": 0.964,
-      "all": 0.964,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-130",
-      "aName": "Mambo",
-      "b": "CAN-162",
-      "bName": "Tango",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-130",
-      "aName": "Mambo",
-      "b": "CAN-165",
-      "bName": "Bachata",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-130",
-      "aName": "Mambo",
-      "b": "CAN-173",
-      "bName": "Afrobeat",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-130",
-      "aName": "Mambo",
-      "b": "CAN-177",
-      "bName": "Fanga Drum-Set Adaptation",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-130",
-      "aName": "Mambo",
-      "b": "CAN-186",
-      "bName": "Amapiano",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-131",
-      "aName": "Cha-Cha-Cha",
-      "b": "CAN-132",
-      "bName": "Bolero Cubano",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-131",
-      "aName": "Cha-Cha-Cha",
-      "b": "CAN-142",
-      "bName": "Samba Partido Alto",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-131",
-      "aName": "Cha-Cha-Cha",
-      "b": "CAN-143",
-      "bName": "Samba-Reggae",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-131",
-      "aName": "Cha-Cha-Cha",
-      "b": "CAN-144",
-      "bName": "Baião",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-131",
-      "aName": "Cha-Cha-Cha",
-      "b": "CAN-146",
-      "bName": "Frevo",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-131",
-      "aName": "Cha-Cha-Cha",
-      "b": "CAN-148",
-      "bName": "Samba-Funk",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-131",
-      "aName": "Cha-Cha-Cha",
-      "b": "CAN-162",
-      "bName": "Tango",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-131",
-      "aName": "Cha-Cha-Cha",
-      "b": "CAN-165",
-      "bName": "Bachata",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-131",
-      "aName": "Cha-Cha-Cha",
-      "b": "CAN-173",
-      "bName": "Afrobeat",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-131",
-      "aName": "Cha-Cha-Cha",
-      "b": "CAN-177",
-      "bName": "Fanga Drum-Set Adaptation",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-131",
-      "aName": "Cha-Cha-Cha",
-      "b": "CAN-186",
-      "bName": "Amapiano",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-132",
-      "aName": "Bolero Cubano",
-      "b": "CAN-142",
-      "bName": "Samba Partido Alto",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-132",
-      "aName": "Bolero Cubano",
-      "b": "CAN-143",
-      "bName": "Samba-Reggae",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-132",
-      "aName": "Bolero Cubano",
-      "b": "CAN-144",
-      "bName": "Baião",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-132",
-      "aName": "Bolero Cubano",
-      "b": "CAN-146",
-      "bName": "Frevo",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-132",
-      "aName": "Bolero Cubano",
-      "b": "CAN-148",
-      "bName": "Samba-Funk",
-      "structural": 0.964,
-      "all": 0.964,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-132",
-      "aName": "Bolero Cubano",
-      "b": "CAN-162",
-      "bName": "Tango",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-132",
-      "aName": "Bolero Cubano",
-      "b": "CAN-165",
-      "bName": "Bachata",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-132",
-      "aName": "Bolero Cubano",
-      "b": "CAN-173",
-      "bName": "Afrobeat",
-      "structural": 0.964,
-      "all": 0.964,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-132",
-      "aName": "Bolero Cubano",
-      "b": "CAN-177",
-      "bName": "Fanga Drum-Set Adaptation",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-132",
-      "aName": "Bolero Cubano",
-      "b": "CAN-186",
-      "bName": "Amapiano",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
       "a": "CAN-133",
       "aName": "Songo",
       "b": "CAN-178",
       "bName": "Mbalax",
       "structural": 0.882,
-      "all": 0.895,
+      "all": 0.8,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-136",
-      "aName": "Guaguancó Drum-Set",
-      "b": "CAN-138",
-      "bName": "Salsa 2-3",
-      "structural": 0.952,
-      "all": 0.952,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-136",
-      "aName": "Guaguancó Drum-Set",
-      "b": "CAN-139",
-      "bName": "Salsa 3-2",
-      "structural": 0.909,
-      "all": 0.909,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-136",
-      "aName": "Guaguancó Drum-Set",
-      "b": "CAN-193",
-      "bName": "Saidi",
-      "structural": 0.952,
-      "all": 0.952,
+      "a": "CAN-148",
+      "aName": "Samba-Funk",
+      "b": "CAN-208",
+      "bName": "Brazilian Funk",
+      "structural": 0.917,
+      "all": 0.862,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-138",
-      "aName": "Salsa 2-3",
-      "b": "CAN-139",
-      "bName": "Salsa 3-2",
-      "structural": 0.955,
-      "all": 0.955,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-138",
-      "aName": "Salsa 2-3",
-      "b": "CAN-193",
-      "bName": "Saidi",
-      "structural": 0.909,
-      "all": 0.909,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-140",
-      "aName": "Bossa Nova",
-      "b": "CAN-150",
-      "bName": "Choro / Maxixe Drum-Set Adaptation",
+      "a": "CAN-156",
+      "aName": "Merengue Venezolano",
+      "b": "CAN-159",
+      "bName": "Chacarera",
       "structural": 1,
-      "all": 1,
+      "all": 0.833,
       "sameFamily": true,
       "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-140",
-      "aName": "Bossa Nova",
-      "b": "CAN-163",
-      "bName": "Milonga",
-      "structural": 0.966,
-      "all": 0.966,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-140",
-      "aName": "Bossa Nova",
-      "b": "CAN-170",
-      "bName": "Kompa",
-      "structural": 0.933,
-      "all": 0.933,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-140",
-      "aName": "Bossa Nova",
-      "b": "CAN-191",
-      "bName": "Raï",
-      "structural": 0.966,
-      "all": 0.966,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-140",
-      "aName": "Bossa Nova",
-      "b": "CAN-196",
-      "bName": "Baladi / Masmoudi Saghir",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-140",
-      "aName": "Bossa Nova",
-      "b": "CAN-203",
-      "bName": "Bhangra / Dhol Drum-Set",
-      "structural": 1,
-      "all": 1,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-140",
-      "aName": "Bossa Nova",
-      "b": "CAN-209",
-      "bName": "Latin Rock",
-      "structural": 0.933,
-      "all": 0.933,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-142",
-      "aName": "Samba Partido Alto",
-      "b": "CAN-143",
-      "bName": "Samba-Reggae",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-142",
-      "aName": "Samba Partido Alto",
-      "b": "CAN-144",
-      "bName": "Baião",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-142",
-      "aName": "Samba Partido Alto",
-      "b": "CAN-146",
-      "bName": "Frevo",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-142",
-      "aName": "Samba Partido Alto",
-      "b": "CAN-148",
-      "bName": "Samba-Funk",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-142",
-      "aName": "Samba Partido Alto",
-      "b": "CAN-162",
-      "bName": "Tango",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-142",
-      "aName": "Samba Partido Alto",
-      "b": "CAN-165",
-      "bName": "Bachata",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-142",
-      "aName": "Samba Partido Alto",
-      "b": "CAN-173",
-      "bName": "Afrobeat",
-      "structural": 0.964,
-      "all": 0.964,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-142",
-      "aName": "Samba Partido Alto",
-      "b": "CAN-177",
-      "bName": "Fanga Drum-Set Adaptation",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-142",
-      "aName": "Samba Partido Alto",
-      "b": "CAN-186",
-      "bName": "Amapiano",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-143",
-      "aName": "Samba-Reggae",
-      "b": "CAN-144",
-      "bName": "Baião",
-      "structural": 0.964,
-      "all": 0.964,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-143",
-      "aName": "Samba-Reggae",
-      "b": "CAN-146",
-      "bName": "Frevo",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-143",
-      "aName": "Samba-Reggae",
-      "b": "CAN-148",
-      "bName": "Samba-Funk",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-143",
-      "aName": "Samba-Reggae",
-      "b": "CAN-162",
-      "bName": "Tango",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-143",
-      "aName": "Samba-Reggae",
-      "b": "CAN-165",
-      "bName": "Bachata",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-143",
-      "aName": "Samba-Reggae",
-      "b": "CAN-166",
-      "bName": "Bomba Drum-Set",
-      "structural": 0.931,
-      "all": 0.931,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-143",
-      "aName": "Samba-Reggae",
-      "b": "CAN-173",
-      "bName": "Afrobeat",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-143",
-      "aName": "Samba-Reggae",
-      "b": "CAN-177",
-      "bName": "Fanga Drum-Set Adaptation",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-143",
-      "aName": "Samba-Reggae",
-      "b": "CAN-186",
-      "bName": "Amapiano",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-144",
-      "aName": "Baião",
-      "b": "CAN-146",
-      "bName": "Frevo",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-144",
-      "aName": "Baião",
-      "b": "CAN-162",
-      "bName": "Tango",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-144",
-      "aName": "Baião",
-      "b": "CAN-165",
-      "bName": "Bachata",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-144",
-      "aName": "Baião",
-      "b": "CAN-166",
-      "bName": "Bomba Drum-Set",
-      "structural": 0.966,
-      "all": 0.966,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-144",
-      "aName": "Baião",
-      "b": "CAN-177",
-      "bName": "Fanga Drum-Set Adaptation",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-144",
-      "aName": "Baião",
-      "b": "CAN-186",
-      "bName": "Amapiano",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-146",
-      "aName": "Frevo",
-      "b": "CAN-148",
-      "bName": "Samba-Funk",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-146",
-      "aName": "Frevo",
-      "b": "CAN-162",
-      "bName": "Tango",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-146",
-      "aName": "Frevo",
-      "b": "CAN-165",
-      "bName": "Bachata",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-146",
-      "aName": "Frevo",
-      "b": "CAN-173",
-      "bName": "Afrobeat",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-146",
-      "aName": "Frevo",
-      "b": "CAN-177",
-      "bName": "Fanga Drum-Set Adaptation",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-146",
-      "aName": "Frevo",
-      "b": "CAN-186",
-      "bName": "Amapiano",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-147",
-      "aName": "Ijexá / Afoxê",
-      "b": "CAN-167",
-      "bName": "Plena Drum-Set",
-      "structural": 0.96,
-      "all": 0.96,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-148",
-      "aName": "Samba-Funk",
-      "b": "CAN-162",
-      "bName": "Tango",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-148",
-      "aName": "Samba-Funk",
-      "b": "CAN-165",
-      "bName": "Bachata",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-148",
-      "aName": "Samba-Funk",
-      "b": "CAN-173",
-      "bName": "Afrobeat",
-      "structural": 0.931,
-      "all": 0.931,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-148",
-      "aName": "Samba-Funk",
-      "b": "CAN-177",
-      "bName": "Fanga Drum-Set Adaptation",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-148",
-      "aName": "Samba-Funk",
-      "b": "CAN-186",
-      "bName": "Amapiano",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-150",
-      "aName": "Choro / Maxixe Drum-Set Adaptation",
-      "b": "CAN-163",
-      "bName": "Milonga",
-      "structural": 0.966,
-      "all": 0.966,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-150",
-      "aName": "Choro / Maxixe Drum-Set Adaptation",
-      "b": "CAN-170",
-      "bName": "Kompa",
-      "structural": 0.933,
-      "all": 0.933,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-150",
-      "aName": "Choro / Maxixe Drum-Set Adaptation",
-      "b": "CAN-191",
-      "bName": "Raï",
-      "structural": 0.966,
-      "all": 0.966,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-150",
-      "aName": "Choro / Maxixe Drum-Set Adaptation",
-      "b": "CAN-196",
-      "bName": "Baladi / Masmoudi Saghir",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-150",
-      "aName": "Choro / Maxixe Drum-Set Adaptation",
-      "b": "CAN-203",
-      "bName": "Bhangra / Dhol Drum-Set",
-      "structural": 1,
-      "all": 1,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-150",
-      "aName": "Choro / Maxixe Drum-Set Adaptation",
-      "b": "CAN-209",
-      "bName": "Latin Rock",
-      "structural": 0.933,
-      "all": 0.933,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-154",
-      "aName": "Currulao Drum-Set Adaptation",
-      "b": "CAN-156",
-      "bName": "Merengue Venezolano",
-      "structural": 0.909,
-      "all": 0.909,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-154",
-      "aName": "Currulao Drum-Set Adaptation",
-      "b": "CAN-187",
-      "bName": "Sega",
-      "structural": 0.909,
-      "all": 0.909,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-154",
-      "aName": "Currulao Drum-Set Adaptation",
-      "b": "CAN-206",
-      "bName": "Dadra / 6-beat Drum-Set Adaptation",
-      "structural": 0.909,
-      "all": 0.909,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-155",
-      "aName": "Joropo",
-      "b": "CAN-182",
-      "bName": "Bikutsi",
-      "structural": 1,
-      "all": 1,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-157",
-      "aName": "Festejo",
-      "b": "CAN-176",
-      "bName": "Ewe 12/8 / Agbekor Adaptation",
-      "structural": 0.947,
-      "all": 0.947,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-162",
-      "aName": "Tango",
-      "b": "CAN-165",
-      "bName": "Bachata",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-162",
-      "aName": "Tango",
-      "b": "CAN-173",
-      "bName": "Afrobeat",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-162",
-      "aName": "Tango",
-      "b": "CAN-177",
-      "bName": "Fanga Drum-Set Adaptation",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-162",
-      "aName": "Tango",
-      "b": "CAN-186",
-      "bName": "Amapiano",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-163",
-      "aName": "Milonga",
-      "b": "CAN-170",
-      "bName": "Kompa",
-      "structural": 0.903,
-      "all": 0.903,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-163",
-      "aName": "Milonga",
-      "b": "CAN-191",
-      "bName": "Raï",
-      "structural": 0.933,
-      "all": 0.933,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-163",
-      "aName": "Milonga",
-      "b": "CAN-196",
-      "bName": "Baladi / Masmoudi Saghir",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-163",
-      "aName": "Milonga",
-      "b": "CAN-203",
-      "bName": "Bhangra / Dhol Drum-Set",
-      "structural": 0.966,
-      "all": 0.966,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-163",
-      "aName": "Milonga",
-      "b": "CAN-209",
-      "bName": "Latin Rock",
-      "structural": 0.903,
-      "all": 0.903,
-      "sameFamily": false,
-      "action": "REVIEW"
     },
     {
       "a": "CAN-164",

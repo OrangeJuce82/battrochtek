@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "ppq": 960,
   "count": 213,
-  "generatedAt": "2026-08-23T09:42:14.722Z",
+  "generatedAt": "2026-08-23T09:49:46.694Z",
   "entries": [
     {
       "id": "CAN-001",
@@ -1917,13 +1917,13 @@
       "tradition": "Cuba",
       "file": "musicology/canonical-grooves/CAN-128-son.json",
       "midi": "musicology/midi/CAN-128-son.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 22,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 20,
       "signature": "4/4",
-      "bpm": 96,
-      "fingerprint": "b7e3402d94041a73"
+      "bpm": 94,
+      "fingerprint": "c4e8d0ae47fd5bc6"
     },
     {
       "id": "CAN-129",
@@ -1932,13 +1932,13 @@
       "tradition": "Cuba",
       "file": "musicology/canonical-grooves/CAN-129-son-montuno.json",
       "midi": "musicology/midi/CAN-129-son-montuno.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 26,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 20,
       "signature": "4/4",
       "bpm": 104,
-      "fingerprint": "2afc963393174ff7"
+      "fingerprint": "ab6f4c8396e8edd9"
     },
     {
       "id": "CAN-130",
@@ -1947,13 +1947,13 @@
       "tradition": "Cuba",
       "file": "musicology/canonical-grooves/CAN-130-mambo.json",
       "midi": "musicology/midi/CAN-130-mambo.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 27,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 22,
       "signature": "4/4",
-      "bpm": 104,
-      "fingerprint": "0f279d608a32ab4e"
+      "bpm": 118,
+      "fingerprint": "df336e6507d62619"
     },
     {
       "id": "CAN-131",
@@ -1962,13 +1962,13 @@
       "tradition": "Cuba",
       "file": "musicology/canonical-grooves/CAN-131-cha-cha-cha.json",
       "midi": "musicology/midi/CAN-131-cha-cha-cha.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 27,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 18,
       "signature": "4/4",
-      "bpm": 104,
-      "fingerprint": "91e6f4e85fe22048"
+      "bpm": 112,
+      "fingerprint": "b2012445ca706ad1"
     },
     {
       "id": "CAN-132",
@@ -1977,13 +1977,13 @@
       "tradition": "Cuba",
       "file": "musicology/canonical-grooves/CAN-132-bolero-cubano.json",
       "midi": "musicology/midi/CAN-132-bolero-cubano.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 27,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 24,
       "signature": "4/4",
-      "bpm": 104,
-      "fingerprint": "3548b2d050631591"
+      "bpm": 72,
+      "fingerprint": "7dc8553bad215ca3"
     },
     {
       "id": "CAN-133",
@@ -1992,13 +1992,13 @@
       "tradition": "Cuba",
       "file": "musicology/canonical-grooves/CAN-133-songo.json",
       "midi": "musicology/midi/CAN-133-songo.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 36,
       "signature": "4/4",
       "bpm": 104,
-      "fingerprint": "b1d128d6e602141d"
+      "fingerprint": "72b9410004dc3e10"
     },
     {
       "id": "CAN-134",
@@ -2007,13 +2007,13 @@
       "tradition": "Cuba",
       "file": "musicology/canonical-grooves/CAN-134-timba.json",
       "midi": "musicology/midi/CAN-134-timba.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 38,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 42,
       "signature": "4/4",
-      "bpm": 108,
-      "fingerprint": "cf2e0378ed6243b0"
+      "bpm": 112,
+      "fingerprint": "402f55c0ff1b30f2"
     },
     {
       "id": "CAN-135",
@@ -2022,13 +2022,13 @@
       "tradition": "Cuba",
       "file": "musicology/canonical-grooves/CAN-135-mozambique.json",
       "midi": "musicology/midi/CAN-135-mozambique.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 28,
       "signature": "4/4",
-      "bpm": 112,
-      "fingerprint": "1a2fe0fec823623d"
+      "bpm": 116,
+      "fingerprint": "c3c4006b61ebf039"
     },
     {
       "id": "CAN-136",
@@ -2037,13 +2037,13 @@
       "tradition": "Cuba",
       "file": "musicology/canonical-grooves/CAN-136-guaguanco-drum-set.json",
       "midi": "musicology/midi/CAN-136-guaguanco-drum-set.mid",
-      "validationState": "high",
-      "confidence": 0.934,
-      "sourceType": "canonical-curated",
-      "eventCount": 20,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 22,
       "signature": "4/4",
-      "bpm": 92,
-      "fingerprint": "967b656e73a299a6"
+      "bpm": 100,
+      "fingerprint": "47692ab9d2ccc1ce"
     },
     {
       "id": "CAN-137",
@@ -2052,13 +2052,13 @@
       "tradition": "Cuba",
       "file": "musicology/canonical-grooves/CAN-137-afro-cuban-6-8-bembe.json",
       "midi": "musicology/midi/CAN-137-afro-cuban-6-8-bembe.mid",
-      "validationState": "medium",
-      "confidence": 0.542,
-      "sourceType": "canonical-curated",
-      "eventCount": 33,
-      "signature": "4/4",
-      "bpm": 128,
-      "fingerprint": "67f3fa710d31f0e0"
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 28,
+      "signature": "12/8",
+      "bpm": 96,
+      "fingerprint": "35471b555f1d4160"
     },
     {
       "id": "CAN-138",
@@ -2067,13 +2067,13 @@
       "tradition": "Cuba",
       "file": "musicology/canonical-grooves/CAN-138-salsa-2-3.json",
       "midi": "musicology/midi/CAN-138-salsa-2-3.mid",
-      "validationState": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 21,
       "signature": "4/4",
-      "bpm": 98,
-      "fingerprint": "9ec110588b653d05"
+      "bpm": 176,
+      "fingerprint": "20233f0855af8a9e"
     },
     {
       "id": "CAN-139",
@@ -2082,13 +2082,13 @@
       "tradition": "Cuba",
       "file": "musicology/canonical-grooves/CAN-139-salsa-3-2.json",
       "midi": "musicology/midi/CAN-139-salsa-3-2.mid",
-      "validationState": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "eventCount": 22,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 21,
       "signature": "4/4",
-      "bpm": 100,
-      "fingerprint": "ed372c64700c3889"
+      "bpm": 176,
+      "fingerprint": "d49d5ed7c960f96e"
     },
     {
       "id": "CAN-140",
@@ -2097,13 +2097,13 @@
       "tradition": "Brazil",
       "file": "musicology/canonical-grooves/CAN-140-bossa-nova.json",
       "midi": "musicology/midi/CAN-140-bossa-nova.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 28,
       "signature": "4/4",
       "bpm": 132,
-      "fingerprint": "a2875658e3ed3ec2"
+      "fingerprint": "50ce5575ab570f4a"
     },
     {
       "id": "CAN-141",
@@ -2112,13 +2112,13 @@
       "tradition": "Brazil",
       "file": "musicology/canonical-grooves/CAN-141-samba-batucada.json",
       "midi": "musicology/midi/CAN-141-samba-batucada.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 36,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 56,
       "signature": "4/4",
       "bpm": 104,
-      "fingerprint": "0e857cda13005d56"
+      "fingerprint": "001b85bfba975fc6"
     },
     {
       "id": "CAN-142",
@@ -2127,13 +2127,13 @@
       "tradition": "Brazil",
       "file": "musicology/canonical-grooves/CAN-142-samba-partido-alto.json",
       "midi": "musicology/midi/CAN-142-samba-partido-alto.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 27,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
       "signature": "4/4",
-      "bpm": 104,
-      "fingerprint": "e7b7229dd51e766c"
+      "bpm": 112,
+      "fingerprint": "1b5f8d6187552ad8"
     },
     {
       "id": "CAN-143",
@@ -2142,13 +2142,13 @@
       "tradition": "Brazil",
       "file": "musicology/canonical-grooves/CAN-143-samba-reggae.json",
       "midi": "musicology/midi/CAN-143-samba-reggae.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 27,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
       "signature": "4/4",
-      "bpm": 104,
-      "fingerprint": "ab89c2ec5e06a39a"
+      "bpm": 96,
+      "fingerprint": "22978c720223ae61"
     },
     {
       "id": "CAN-144",
@@ -2157,13 +2157,13 @@
       "tradition": "Brazil",
       "file": "musicology/canonical-grooves/CAN-144-baiao.json",
       "midi": "musicology/midi/CAN-144-baiao.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 28,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
       "signature": "4/4",
-      "bpm": 104,
-      "fingerprint": "f1b64afaef6f0b4a"
+      "bpm": 112,
+      "fingerprint": "6ac51fd9f765ac28"
     },
     {
       "id": "CAN-145",
@@ -2172,13 +2172,13 @@
       "tradition": "Brazil",
       "file": "musicology/canonical-grooves/CAN-145-maracatu.json",
       "midi": "musicology/midi/CAN-145-maracatu.mid",
-      "validationState": "high",
-      "confidence": 0.945,
-      "sourceType": "canonical-curated",
-      "eventCount": 30,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
       "signature": "4/4",
-      "bpm": 104,
-      "fingerprint": "f38ec09614e3d0e2"
+      "bpm": 96,
+      "fingerprint": "b9e630bbf5351012"
     },
     {
       "id": "CAN-146",
@@ -2187,13 +2187,13 @@
       "tradition": "Brazil",
       "file": "musicology/canonical-grooves/CAN-146-frevo.json",
       "midi": "musicology/midi/CAN-146-frevo.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 27,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 40,
       "signature": "4/4",
-      "bpm": 104,
-      "fingerprint": "c6ba4a4f2a86d11b"
+      "bpm": 168,
+      "fingerprint": "80e1209e3f4b7d63"
     },
     {
       "id": "CAN-147",
@@ -2202,13 +2202,13 @@
       "tradition": "Brazil",
       "file": "musicology/canonical-grooves/CAN-147-ijexa-afoxe.json",
       "midi": "musicology/midi/CAN-147-ijexa-afoxe.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 24,
       "signature": "4/4",
       "bpm": 104,
-      "fingerprint": "dbb663d80637ef64"
+      "fingerprint": "8e663f42b10a559d"
     },
     {
       "id": "CAN-148",
@@ -2217,13 +2217,13 @@
       "tradition": "Brazil",
       "file": "musicology/canonical-grooves/CAN-148-samba-funk.json",
       "midi": "musicology/midi/CAN-148-samba-funk.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 28,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 54,
       "signature": "4/4",
-      "bpm": 104,
-      "fingerprint": "138cc8d2b306cd7e"
+      "bpm": 108,
+      "fingerprint": "74e069c636a6e6ac"
     },
     {
       "id": "CAN-149",
@@ -2232,13 +2232,13 @@
       "tradition": "Brazil",
       "file": "musicology/canonical-grooves/CAN-149-samba-jazz.json",
       "midi": "musicology/midi/CAN-149-samba-jazz.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 28,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
       "signature": "4/4",
       "bpm": 152,
-      "fingerprint": "b2aab1fff31d8619"
+      "fingerprint": "b20a3c0fc3c0df4f"
     },
     {
       "id": "CAN-150",
@@ -2247,13 +2247,13 @@
       "tradition": "Brazil",
       "file": "musicology/canonical-grooves/CAN-150-choro-maxixe-drum-set-adaptation.json",
       "midi": "musicology/midi/CAN-150-choro-maxixe-drum-set-adaptation.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 28,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
       "signature": "4/4",
-      "bpm": 130,
-      "fingerprint": "808b51c08e67f64c"
+      "bpm": 132,
+      "fingerprint": "364f4b04ac6b4e23"
     },
     {
       "id": "CAN-151",
@@ -2262,13 +2262,13 @@
       "tradition": "Colombia & Venezuela",
       "file": "musicology/canonical-grooves/CAN-151-traditional-colombian-cumbia.json",
       "midi": "musicology/midi/CAN-151-traditional-colombian-cumbia.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 24,
       "signature": "4/4",
       "bpm": 92,
-      "fingerprint": "d41336389a5465e2"
+      "fingerprint": "93335c161cc6f748"
     },
     {
       "id": "CAN-152",
@@ -2277,13 +2277,13 @@
       "tradition": "Colombia & Venezuela",
       "file": "musicology/canonical-grooves/CAN-152-porro-porro-chocoano.json",
       "midi": "musicology/midi/CAN-152-porro-porro-chocoano.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 28,
       "signature": "4/4",
-      "bpm": 104,
-      "fingerprint": "028ffe58b3683153"
+      "bpm": 108,
+      "fingerprint": "963e7974371cb6e1"
     },
     {
       "id": "CAN-153",
@@ -2292,13 +2292,13 @@
       "tradition": "Colombia & Venezuela",
       "file": "musicology/canonical-grooves/CAN-153-chande.json",
       "midi": "musicology/midi/CAN-153-chande.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 24,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 26,
       "signature": "4/4",
       "bpm": 118,
-      "fingerprint": "a2666fe48eba75ba"
+      "fingerprint": "3a90e6bea7fd2022"
     },
     {
       "id": "CAN-154",
@@ -2307,13 +2307,13 @@
       "tradition": "Colombia & Venezuela",
       "file": "musicology/canonical-grooves/CAN-154-currulao-drum-set-adaptation.json",
       "midi": "musicology/midi/CAN-154-currulao-drum-set-adaptation.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 22,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 26,
       "signature": "6/8",
       "bpm": 116,
-      "fingerprint": "db84e96160d38b48"
+      "fingerprint": "98321f189431b25a"
     },
     {
       "id": "CAN-155",
@@ -2322,13 +2322,13 @@
       "tradition": "Colombia & Venezuela",
       "file": "musicology/canonical-grooves/CAN-155-joropo.json",
       "midi": "musicology/midi/CAN-155-joropo.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 24,
       "signature": "6/8",
       "bpm": 168,
-      "fingerprint": "64ced3d7fa19261f"
+      "fingerprint": "eeacbbf01208b62c"
     },
     {
       "id": "CAN-156",
@@ -2337,13 +2337,13 @@
       "tradition": "Colombia & Venezuela",
       "file": "musicology/canonical-grooves/CAN-156-merengue-venezolano.json",
       "midi": "musicology/midi/CAN-156-merengue-venezolano.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 20,
       "signature": "6/8",
       "bpm": 150,
-      "fingerprint": "96dd11eabc11eb03"
+      "fingerprint": "eee72df95cb523df"
     },
     {
       "id": "CAN-157",
@@ -2352,13 +2352,13 @@
       "tradition": "Peru / Argentina / Uruguay",
       "file": "musicology/canonical-grooves/CAN-157-festejo.json",
       "midi": "musicology/midi/CAN-157-festejo.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 36,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
       "signature": "12/8",
       "bpm": 108,
-      "fingerprint": "d48ad14d8753f625"
+      "fingerprint": "5735e27682831eed"
     },
     {
       "id": "CAN-158",
@@ -2367,13 +2367,13 @@
       "tradition": "Peru / Argentina / Uruguay",
       "file": "musicology/canonical-grooves/CAN-158-lando.json",
       "midi": "musicology/midi/CAN-158-lando.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 36,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 30,
       "signature": "12/8",
       "bpm": 82,
-      "fingerprint": "da9e880231180772"
+      "fingerprint": "b954f6f04f7ee080"
     },
     {
       "id": "CAN-159",
@@ -2382,13 +2382,13 @@
       "tradition": "Peru / Argentina / Uruguay",
       "file": "musicology/canonical-grooves/CAN-159-chacarera.json",
       "midi": "musicology/midi/CAN-159-chacarera.mid",
-      "validationState": "medium",
-      "confidence": 0.533,
-      "sourceType": "canonical-curated",
-      "eventCount": 12,
-      "signature": "4/4",
-      "bpm": 120,
-      "fingerprint": "571d940346ceee70"
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 24,
+      "signature": "6/8",
+      "bpm": 112,
+      "fingerprint": "430d23e3e8d1a4b1"
     },
     {
       "id": "CAN-160",
@@ -2397,13 +2397,13 @@
       "tradition": "Peru / Argentina / Uruguay",
       "file": "musicology/canonical-grooves/CAN-160-zamba-argentina.json",
       "midi": "musicology/midi/CAN-160-zamba-argentina.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 19,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 20,
       "signature": "6/8",
       "bpm": 78,
-      "fingerprint": "c45b70fee4ab27ed"
+      "fingerprint": "d43951a1920c4236"
     },
     {
       "id": "CAN-161",
@@ -2412,13 +2412,13 @@
       "tradition": "Peru / Argentina / Uruguay",
       "file": "musicology/canonical-grooves/CAN-161-candombe-uruguayo.json",
       "midi": "musicology/midi/CAN-161-candombe-uruguayo.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 36,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 40,
       "signature": "4/4",
       "bpm": 108,
-      "fingerprint": "de9df01584aff626"
+      "fingerprint": "0607ef1e4aa26e46"
     },
     {
       "id": "CAN-162",
@@ -2427,13 +2427,13 @@
       "tradition": "Peru / Argentina / Uruguay",
       "file": "musicology/canonical-grooves/CAN-162-tango.json",
       "midi": "musicology/midi/CAN-162-tango.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 27,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 20,
       "signature": "4/4",
-      "bpm": 104,
-      "fingerprint": "b1d063128e13ff96"
+      "bpm": 120,
+      "fingerprint": "d815497eb1c17bb4"
     },
     {
       "id": "CAN-163",
@@ -2442,13 +2442,13 @@
       "tradition": "Peru / Argentina / Uruguay",
       "file": "musicology/canonical-grooves/CAN-163-milonga.json",
       "midi": "musicology/midi/CAN-163-milonga.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 29,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
       "signature": "4/4",
-      "bpm": 112,
-      "fingerprint": "3180704cbcde5abb"
+      "bpm": 116,
+      "fingerprint": "602eed371cbff04d"
     },
     {
       "id": "CAN-164",

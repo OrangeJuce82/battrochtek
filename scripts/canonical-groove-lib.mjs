@@ -18,6 +18,11 @@ export const TRACKS = Object.freeze([
 export const TRACK_BY_KEY = new Map(TRACKS.map(x=>[`${x.instrument}:${x.articulation}`,x]));
 export const TRACK_BY_INDEX = new Map(TRACKS.map(x=>[x.track,x]));
 export const GM_BY_TRACK = new Map(TRACKS.map(x=>[x.track,x.gm]));
+const EXTRA_ARTICULATIONS = new Map([
+  ['snare:cross-stick',{track:4,gm:37,limb:'otherHand'}],
+  ['cymbal:ride-bell',{track:1,gm:53,limb:'timeHand'}]
+]);
+function resolveEventDef(ev){ return TRACK_BY_KEY.get(`${ev.instrument}:${ev.articulation}`) || EXTRA_ARTICULATIONS.get(`${ev.instrument}:${ev.articulation}`) || (ev.instrument==='snare'?TRACK_BY_INDEX.get(4):ev.instrument==='kick'?TRACK_BY_INDEX.get(8):null); }
 
 export function parseSignature(value='4/4'){
   const [n,d]=String(value).split('/').map(Number);
@@ -46,7 +51,7 @@ export function canonicalToPattern(groove){
   const active=[],accent=[],soft=[],strong=[],ghost=[];
   const add=(arr,v)=>{ if(!arr.includes(v)) arr.push(v); };
   for(const ev of groove.events||[]){
-    const def=TRACK_BY_KEY.get(`${ev.instrument}:${ev.articulation}`) || (ev.instrument==='snare'?TRACK_BY_INDEX.get(4):ev.instrument==='kick'?TRACK_BY_INDEX.get(8):null); if(!def) continue;
+    const def=resolveEventDef(ev); if(!def) continue;
     const step=Math.max(0,Math.min(totalSteps-1,Math.round((Number(ev.tick)||0)/stepTicks)));
     const cell=def.track*totalSteps+step; add(active,cell);
     const v=ev.velocityClass||velocityMidiToName(Number(ev.velocity)||82);
@@ -65,7 +70,7 @@ export function canonicalToMidi(groove){
   const ev=[];
   ev.push({tick:0,order:0,bytes:[0xff,0x51,0x03,(us>>16)&255,(us>>8)&255,us&255]});
   const dd=Math.log2(sig.denominator)|0; ev.push({tick:0,order:0,bytes:[0xff,0x58,0x04,sig.numerator,dd,24,8]});
-  for(const note of groove.events||[]){ const def=TRACK_BY_KEY.get(`${note.instrument}:${note.articulation}`) || (note.instrument==='snare'?TRACK_BY_INDEX.get(4):note.instrument==='kick'?TRACK_BY_INDEX.get(8):null); if(!def)continue; const t=Math.max(0,Math.round(note.tick||0)); const dur=Math.max(1,Math.round(note.duration||ppq/8)); const vel=Math.max(1,Math.min(127,Math.round(note.velocity||82))); ev.push({tick:t,order:1,bytes:[0x99,def.gm,vel]}); ev.push({tick:t+dur,order:2,bytes:[0x89,def.gm,0]}); }
+  for(const note of groove.events||[]){ const def=resolveEventDef(note); if(!def)continue; const t=Math.max(0,Math.round(note.tick||0)); const dur=Math.max(1,Math.round(note.duration||ppq/8)); const vel=Math.max(1,Math.min(127,Math.round(note.velocity||82))); ev.push({tick:t,order:1,bytes:[0x99,def.gm,vel]}); ev.push({tick:t+dur,order:2,bytes:[0x89,def.gm,0]}); }
   ev.sort((a,b)=>a.tick-b.tick||a.order-b.order);
   const chunks=[]; let last=0; for(const e of ev){chunks.push(midiEvent(e.tick-last,e.bytes));last=e.tick;} chunks.push(midiEvent(0,[0xff,0x2f,0]));
   const track=Buffer.concat(chunks); return Buffer.concat([Buffer.from('MThd'),u32(6),u16(0),u16(1),u16(ppq),Buffer.from('MTrk'),u32(track.length),track]);

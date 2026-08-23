@@ -74,3 +74,7 @@ La v37 transforme la banque en bibliothèque éditoriale : **1239 grooves** au b
 Les métadonnées internes comprennent désormais `family`, `style`, `substyle`, `origin`, `feel`, `signature`, `bpm`, `difficulty`, `sourceType`, `artist`, `song`, `drummer` et `tags`. La recherche globale indexe ces champs sans alourdir l'interface Style → Groove.
 
 Commandes : `npm run grooves:library` régénère la couche éditoriale ; `npm run grooves:build` la régénère puis reconstruit le bundle complet sans suppression automatique ; `npm run grooves:clean` reste disponible pour un audit/dédoublonnage volontaire.
+
+## Musicological build pipeline
+
+The groove catalog is now generated from a 960-PPQ canonical event corpus. `npm run grooves:build` runs evidence mapping, human-feel analysis, structural diversity review, validation reporting, canonical-to-MIDI compilation, and single-library publication. See `musicology/MUSICOLOGY-PIPELINE.md`.

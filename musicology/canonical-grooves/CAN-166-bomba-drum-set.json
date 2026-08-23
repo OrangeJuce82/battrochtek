@@ -368,6 +368,23 @@
     "feel": "latin",
     "tier": "A",
     "originalCoverage": "NAMED_MATCH",
-    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form."
+    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+    "evidence": {
+      "taxonomyState": "literature-supported",
+      "performanceEvidence": "not-mapped",
+      "references": [
+        {
+          "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
+          "url": "https://college.berklee.edu/courses/ilpd-211"
+        }
+      ]
+    },
+    "scoreState": "provisional",
+    "references": [
+      {
+        "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
+        "url": "https://college.berklee.edu/courses/ilpd-211"
+      }
+    ]
   }
 }

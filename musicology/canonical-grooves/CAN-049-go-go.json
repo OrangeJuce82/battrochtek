@@ -740,6 +740,23 @@
     "feel": "syncopated-16",
     "tier": "A",
     "originalCoverage": "RELATED_CANDIDATE",
-    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form."
+    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+    "evidence": {
+      "taxonomyState": "needs-review",
+      "performanceEvidence": "human-dataset-available",
+      "references": [
+        {
+          "title": "Groove MIDI Dataset — Magenta",
+          "url": "https://magenta.tensorflow.org/datasets/groove"
+        }
+      ]
+    },
+    "scoreState": "provisional",
+    "references": [
+      {
+        "title": "Groove MIDI Dataset — Magenta",
+        "url": "https://magenta.tensorflow.org/datasets/groove"
+      }
+    ]
   }
 }

@@ -4,352 +4,196 @@
   "family": "Jamaica",
   "tradition": "Jamaican lineage",
   "name": "Reggae One Drop",
-  "bpm": 94,
+  "bpm": 78,
   "signature": "4/4",
   "ppq": 960,
   "phraseBars": 2,
-  "feel": "dembow",
+  "feel": "reggae",
   "swing": 0,
   "events": [
     {
       "tick": 0,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "literature-guided-revision"
     },
     {
       "tick": 480,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "literature-guided-revision"
     },
     {
       "tick": 960,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "literature-guided-revision"
     },
     {
       "tick": 1440,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "literature-guided-revision"
     },
     {
       "tick": 1920,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "literature-guided-revision"
+    },
+    {
+      "tick": 1920,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "literature-guided-revision"
+    },
+    {
+      "tick": 1920,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "otherHand",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "literature-guided-revision"
     },
     {
       "tick": 2400,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "literature-guided-revision"
     },
     {
       "tick": 2880,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "literature-guided-revision"
     },
     {
       "tick": 3360,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "literature-guided-revision"
     },
     {
       "tick": 3840,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "literature-guided-revision"
     },
     {
       "tick": 4320,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "literature-guided-revision"
     },
     {
       "tick": 4800,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "literature-guided-revision"
     },
     {
       "tick": 5280,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "literature-guided-revision"
     },
     {
       "tick": 5760,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 6240,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 6720,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 7200,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 960,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "otherHand",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 2400,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "otherHand",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 2880,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "otherHand",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 4800,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "otherHand",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 6240,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "otherHand",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 6720,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "otherHand",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 0,
-      "duration": 108,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "rightFoot",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 1440,
-      "duration": 108,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "rightFoot",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 1920,
-      "duration": 108,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "rightFoot",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 3360,
-      "duration": 108,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "rightFoot",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 3840,
-      "duration": 108,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "rightFoot",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 5280,
-      "duration": 108,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "rightFoot",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "literature-guided-revision"
     },
     {
       "tick": 5760,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -357,25 +201,61 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "literature-guided-revision"
+    },
+    {
+      "tick": 5760,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "otherHand",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "literature-guided-revision"
+    },
+    {
+      "tick": 6240,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "literature-guided-revision"
+    },
+    {
+      "tick": 6720,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "literature-guided-revision"
     },
     {
       "tick": 7200,
-      "duration": 108,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "rightFoot",
-      "role": "core",
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "literature-guided-revision"
     }
   ],
   "metadata": {
-    "validationState": "provisional",
-    "confidence": 0.517,
-    "sourceType": "canonical-curated",
+    "validationState": "literature-guided-score-v1",
+    "confidence": 0.93,
+    "sourceType": "literature-guided-drumset-archetype",
     "provenance": {
       "candidateSource": "Battrochtek Library v2",
       "candidateName": "Reggaeton / Dembow",
@@ -385,6 +265,65 @@
     "feel": "dembow",
     "tier": "A",
     "originalCoverage": "MISSING_OR_WEAK",
-    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form."
+    "notes": "Reference-supported one-drop skeleton. Hi-hat is intentionally a neutral eighth-note realization; reggae hi-hat vocabulary varies and FEEL supplies articulation.",
+    "evidence": {
+      "taxonomyState": "literature-supported",
+      "performanceEvidence": "human-dataset-available",
+      "references": [
+        {
+          "title": "Reggae 101: The Steppers Beat — Modern Drummer",
+          "url": "https://www.moderndrummer.com/article/february-2019-reggae-101-the-steppers-beat/"
+        },
+        {
+          "title": "Sly Dunbar on Revolutionizing Reggae Drums — Berklee Online",
+          "url": "https://online.berklee.edu/takenote/sly-and-robbie-drummer-sly-dunbar-on-revolutionizing-reggae-drums/"
+        },
+        {
+          "title": "Wicked Beats / Jamaican ska, rocksteady and reggae — Modern Drummer",
+          "url": "https://www.moderndrummer.com/2011/10/wicked-beatsfeaturing-gil-sharone/"
+        },
+        {
+          "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
+          "url": "https://college.berklee.edu/courses/ilpd-211"
+        },
+        {
+          "title": "Groove MIDI Dataset — Magenta",
+          "url": "https://magenta.tensorflow.org/datasets/groove"
+        }
+      ]
+    },
+    "scoreState": "reference-supported",
+    "references": [
+      {
+        "title": "Reggae 101: The Steppers Beat — Modern Drummer",
+        "url": "https://www.moderndrummer.com/article/february-2019-reggae-101-the-steppers-beat/"
+      },
+      {
+        "title": "Modern Drummer archival reggae interview",
+        "url": "https://www.moderndrummer.com/wp-content/uploads/2017/06/md65cs.pdf"
+      },
+      {
+        "title": "Sly Dunbar on Revolutionizing Reggae Drums — Berklee Online",
+        "url": "https://online.berklee.edu/takenote/sly-and-robbie-drummer-sly-dunbar-on-revolutionizing-reggae-drums/"
+      },
+      {
+        "title": "Wicked Beats / Jamaican ska, rocksteady and reggae — Modern Drummer",
+        "url": "https://www.moderndrummer.com/2011/10/wicked-beatsfeaturing-gil-sharone/"
+      },
+      {
+        "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
+        "url": "https://college.berklee.edu/courses/ilpd-211"
+      },
+      {
+        "title": "Groove MIDI Dataset — Magenta",
+        "url": "https://magenta.tensorflow.org/datasets/groove"
+      }
+    ],
+    "distinctiveFeatures": [
+      "kick and snare drop together on beat 3",
+      "space on beat 1 is structural",
+      "steady time-hand may vary around the archetype"
+    ],
+    "revisionBatch": "jamaica-v17"
   }
 }

@@ -1,0 +1,15 @@
+import { readFile, readdir, writeFile } from 'node:fs/promises';
+import crypto from 'node:crypto';
+const dir=new URL('../musicology/canonical-grooves/',import.meta.url), outJson=new URL('../musicology/diversity-report.json',import.meta.url), outCsv=new URL('../musicology/near-duplicate-review.csv',import.meta.url);
+const files=(await readdir(dir)).filter(x=>x.endsWith('.json')).sort(); const grooves=[];
+const key=e=>`${e.instrument}:${e.articulation}`;
+function features(g){ const barTicks=(g.ppq||960)*(Number(g.signature.split('/')[0])||4)*4/(Number(g.signature.split('/')[1])||4); const total=barTicks*(g.phraseBars||2); const norm=(e)=>`${key(e)}@${((e.tick%total)/total).toFixed(4)}`; const structural=(g.events||[]).filter(e=>!['ghost','ornament'].includes(e.role)).map(norm).sort(); const all=(g.events||[]).map(norm).sort(); const roles=Object.fromEntries(['core','time','ghost','ornament','fill','resolution'].map(r=>[r,(g.events||[]).filter(e=>e.role===r).map(norm).sort()])); return {structural,all,roles}; }
+function jacc(a,b){const A=new Set(a),B=new Set(b),u=new Set([...A,...B]);if(!u.size)return 1;let i=0;for(const x of A)if(B.has(x))i++;return i/u.size;}
+for(const file of files){const g=JSON.parse(await readFile(new URL(`../musicology/canonical-grooves/${file}`,import.meta.url),'utf8'));grooves.push({id:g.id,name:g.name,family:g.family,tradition:g.tradition,file,g,f:features(g)});}
+const pairs=[]; const exact=new Map();
+for(const x of grooves){const fp=crypto.createHash('sha1').update(JSON.stringify([x.g.signature,x.f.structural])).digest('hex').slice(0,16); (exact.get(fp)??exact.set(fp,[]).get(fp)).push(x);}
+for(let i=0;i<grooves.length;i++)for(let j=i+1;j<grooves.length;j++){const a=grooves[i],b=grooves[j];if(a.g.signature!==b.g.signature)continue;const structural=jacc(a.f.structural,b.f.structural),all=jacc(a.f.all,b.f.all);if(structural>=.88||all>=.90)pairs.push({a:a.id,aName:a.name,b:b.id,bName:b.name,structural:+structural.toFixed(3),all:+all.toFixed(3),sameFamily:a.family===b.family,action:structural>=.96?'MERGE/REVIEW':'REVIEW'});}
+const exactClusters=[...exact.values()].filter(a=>a.length>1).map(a=>a.map(x=>({id:x.id,name:x.name,family:x.family,tradition:x.tradition})));
+await writeFile(outJson,JSON.stringify({schema:'battrochtek.diversity-report/v1',generatedAt:new Date().toISOString(),grooveCount:grooves.length,exactStructuralClusters:exactClusters,nearDuplicatePairs:pairs},null,2));
+const esc=v=>`"${String(v??'').replaceAll('"','""')}"`; const header=['a','aName','b','bName','structural','all','sameFamily','action']; await writeFile(outCsv,[header.join(','),...pairs.map(r=>header.map(k=>esc(r[k])).join(','))].join('\n'));
+console.log(`✓ Diversity audit: ${exactClusters.length} exact structural clusters, ${pairs.length} near-duplicate pairs.`);

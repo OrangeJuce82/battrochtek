@@ -361,6 +361,31 @@
     "feel": "straight",
     "tier": "A",
     "originalCoverage": "MISSING_OR_WEAK",
-    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form."
+    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+    "evidence": {
+      "taxonomyState": "literature-supported",
+      "performanceEvidence": "human-dataset-available",
+      "references": [
+        {
+          "title": "Wicked Beats / Jamaican ska, rocksteady and reggae — Modern Drummer",
+          "url": "https://www.moderndrummer.com/2011/10/wicked-beatsfeaturing-gil-sharone/"
+        },
+        {
+          "title": "Groove MIDI Dataset — Magenta",
+          "url": "https://magenta.tensorflow.org/datasets/groove"
+        }
+      ]
+    },
+    "scoreState": "candidate",
+    "references": [
+      {
+        "title": "Groove MIDI Dataset — Magenta",
+        "url": "https://magenta.tensorflow.org/datasets/groove"
+      },
+      {
+        "title": "Wicked Beats / Jamaican ska, rocksteady and reggae — Modern Drummer",
+        "url": "https://www.moderndrummer.com/2011/10/wicked-beatsfeaturing-gil-sharone/"
+      }
+    ]
   }
 }

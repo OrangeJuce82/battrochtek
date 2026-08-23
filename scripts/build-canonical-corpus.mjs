@@ -1,9 +1,7 @@
 import { readFile, writeFile, mkdir, readdir } from 'node:fs/promises';
-import { join } from 'node:path';
 import crypto from 'node:crypto';
-import { PPQ, barSteps, patternToCanonical, canonicalToPattern, writeCanonicalAndMidi } from './canonical-groove-lib.mjs';
+import { PPQ, barSteps, patternToCanonical, writeCanonicalAndMidi } from './canonical-groove-lib.mjs';
 
-const root=new URL('../',import.meta.url);
 const taxonomyPath=new URL('../musicology/canonical-taxonomy-v1.csv',import.meta.url);
 const curatedPath=new URL('../grooves/Battrochtek Curated/curated.json',import.meta.url);
 const outDir=new URL('../musicology/canonical-grooves/',import.meta.url);
@@ -26,7 +24,7 @@ function makeBuilder(row,{signature='4/4',bpm=120,swing=0,feel='straight',phrase
   return {row,steps,events,add,rep,every,finish(extra={}){ return {schema:'battrochtek.canonical-groove/v1',id:row.id,family:row.family,tradition:row.tradition,name:row.archetype,bpm,signature,ppq:PPQ,phraseBars,feel,swing,events:events.sort((a,b)=>a.tick-b.tick),metadata:{validationState:'pedagogical-adaptation-needs-review',confidence,sourceType,createdBy:'Battrochtek musicology compiler',notes,distinctiveFeatures:extra.distinctiveFeatures||[],references:extra.references||[],tier:row.tier,originalCoverage:row.coverage}}; }};
 }
 
-function baseRock(row,opt={}){ const b=makeBuilder(row,{bpm:opt.bpm||124,signature:opt.signature||'4/4',swing:opt.swing||0,feel:opt.feel||'straight',notes:opt.notes||'Drum-set archetype emphasizing backbeat and a stable timekeeping hand.'}); const s=b.steps; b.add(opt.ride?'ride':'hat',b.every(opt.hatStep||2),opt.hatVel||'normal','time'); b.add('snare',b.rep(opt.snare||[4,12]),opt.snareVel||'strong','core'); b.add('kick',b.rep(opt.kick||[0,8,10]),opt.kickVel||'strong','core'); if(opt.open) b.add('openHat',b.rep(opt.open),'strong','ornament'); if(opt.crash!==false)b.add('crash',[0],'accent','resolution'); return b; }
+function baseRock(row,opt={}){ const b=makeBuilder(row,{bpm:opt.bpm||124,signature:opt.signature||'4/4',swing:opt.swing||0,feel:opt.feel||'straight',notes:opt.notes||'Drum-set archetype emphasizing backbeat and a stable timekeeping hand.'}); b.add(opt.ride?'ride':'hat',b.every(opt.hatStep||2),opt.hatVel||'normal','time'); b.add('snare',b.rep(opt.snare||[4,12]),opt.snareVel||'strong','core'); b.add('kick',b.rep(opt.kick||[0,8,10]),opt.kickVel||'strong','core'); if(opt.open) b.add('openHat',b.rep(opt.open),'strong','ornament'); if(opt.crash!==false)b.add('crash',[0],'accent','resolution'); return b; }
 function baseFunk(row,opt={}){ const b=makeBuilder(row,{bpm:opt.bpm||100,swing:opt.swing||0,feel:opt.feel||'syncopated-16',notes:opt.notes||'Syncopated funk pocket with protected backbeat, articulated time hand, and low-level ghost vocabulary.'}); b.add('hat',b.every(opt.hatStep||1),opt.hatVel||'soft','time'); b.add('snare',b.rep(opt.snare||[4,12]),'strong','core'); b.add('kick',b.rep(opt.kick||[0,3,7,10,14]),'strong','core'); b.add('snare',b.rep(opt.ghost||[2,6,11,15]),'ghost','ghost'); if(opt.open)b.add('openHat',b.rep(opt.open),'normal','ornament'); return b; }
 function baseJazz(row,opt={}){ const b=makeBuilder(row,{bpm:opt.bpm||140,signature:opt.signature||'4/4',swing:opt.swing??58,feel:'swing',notes:opt.notes||'Ride-led jazz time with comping treated as a separate voice from the time hand.'}); const ride=opt.ride||[0,3,4,7,8,11,12,15]; b.add('ride',b.rep(ride),'normal','time'); b.add('snare',b.rep(opt.snare||[6,14]),opt.snareVel||'ghost','ornament'); b.add('kick',b.rep(opt.kick||[0,10]),'soft','ornament'); return b; }
 function baseReggae(row,opt={}){ const b=makeBuilder(row,{bpm:opt.bpm||78,feel:'reggae',notes:opt.notes||'Jamaican drum-set archetype preserving space as a structural part of the groove.'}); b.add(opt.ride?'ride':'hat',b.every(2),'soft','time'); b.add('snare',b.rep(opt.snare||[8]),opt.rim?'soft':'strong','core'); b.add('kick',b.rep(opt.kick||[8]),'strong','core'); if(opt.extraKick)b.add('kick',b.rep(opt.extraKick),'normal','ornament'); if(opt.open)b.add('openHat',b.rep(opt.open),'normal','ornament'); return b; }
@@ -165,7 +163,7 @@ function templateFor(row){
     const cycles=n.includes('maqsum')?{k:[0,6,8],s:[4,10,14]}:n.includes('masmoudi kabir')?{k:[0,6,10],s:[4,8,14]}:{k:[0,8],s:[4,12]}; b.add('kick',b.rep(cycles.k),'strong','core');b.add('snare',b.rep(cycles.s),'normal','core');b.add('hat',b.every(2),'soft','time');return b.finish({distinctiveFeatures:['low/high stroke-function adaptation','cyclic accent pattern']});
   }
   if(f==='Balkans / Eastern Europe'){
-    const sig=n.includes('11/8')?'11/8':'9/8'; const b=makeBuilder(row,{signature:sig,bpm:128,feel:'aksak',notes:'Aksak drum-set foundation preserving asymmetric grouping.'}); const st=b.steps; b.add('hat',b.every(2),'soft','time'); const kicks=sig==='11/8'?[0,4,8,14,18]:[0,4,8,12,16]; const snares=sig==='11/8'?[6,12,20]:[6,14]; b.add('kick',b.rep(kicks),'strong','core');b.add('snare',b.rep(snares),'normal','core');return b.finish({distinctiveFeatures:[sig==='11/8'?'asymmetric 11/8 grouping':'asymmetric 9/8 dance grouping']});
+    const sig=n.includes('11/8')?'11/8':'9/8'; const b=makeBuilder(row,{signature:sig,bpm:128,feel:'aksak',notes:'Aksak drum-set foundation preserving asymmetric grouping.'}); b.add('hat',b.every(2),'soft','time'); const kicks=sig==='11/8'?[0,4,8,14,18]:[0,4,8,12,16]; const snares=sig==='11/8'?[6,12,20]:[6,14]; b.add('kick',b.rep(kicks),'strong','core');b.add('snare',b.rep(snares),'normal','core');return b.finish({distinctiveFeatures:[sig==='11/8'?'asymmetric 11/8 grouping':'asymmetric 9/8 dance grouping']});
   }
   if(f==='South Asia'){
     const sig=n.includes('dadra')?'6/8':'4/4'; const b=makeBuilder(row,{signature:sig,bpm:n.includes('bhangra')?104:96,feel:'south-asian-adaptation',notes:'Pedagogical drum-set adaptation of a South Asian rhythmic cycle; does not replace study of dhol/tabla technique.'}); if(sig==='6/8'){b.add('kick',b.rep([0,8]),'strong','core');b.add('snare',b.rep([4,10]),'normal','core');b.add('hat',b.every(2),'soft','time');}else{b.add('kick',b.rep(n.includes('bhangra')?[0,6,8,14]:n.includes('teentaal')?[0,4,8,12]:[0,8]),'strong','core');b.add('snare',b.rep(n.includes('bhangra')?[4,12]:[4,12]),'strong','core');b.add('hat',b.every(2),'soft','time');}return b.finish();
@@ -202,24 +200,33 @@ function disambiguatePedagogical(g,attempt=0){
 }
 
 const taxonomy=parseCsv(await readFile(taxonomyPath,'utf8'));
+// Canonical JSON is the stable source of truth once it exists. Runtime Curated is an output,
+// never an input for later builds; this makes publication holds/merges fully idempotent.
+const existingCanonical=new Map();
+try {
+  for(const file of (await readdir(outDir)).filter(x=>x.endsWith('.json'))){
+    const g=JSON.parse(await readFile(new URL(`../musicology/canonical-grooves/${file}`,import.meta.url),'utf8'));
+    if(g?.id) existingCanonical.set(g.id,g);
+  }
+} catch {}
 const current=JSON.parse(await readFile(curatedPath,'utf8'));
 const oldManifest=JSON.parse(await readFile(manifestPath,'utf8'));
 const collisionIds=new Set((oldManifest.duplicateConflicts||[]).flatMap(c=>[c.winner,...(c.conflicts||[]).map(x=>x.id)]));
 const existing=new Map((current.grooves||[]).map(g=>[g.canonicalId,g]));
 await mkdir(outDir,{recursive:true}); await mkdir(midiDir,{recursive:true});
 const corpus=[];
-const seenFingerprints=new Set();
 for(const row of taxonomy){
   let groove;
+  const prior=existingCanonical.get(row.id);
   const source=existing.get(row.id);
-  if(source && !collisionIds.has(row.id)){ groove=patternToCanonical({id:row.id,family:row.family,tradition:row.tradition,name:row.archetype,bpm:source.bpm,signature:source.signature,pattern:source.pattern,metadata:{validationState:source.validationState||'candidate-transcoded',confidence:source.confidence||.7,sourceType:source.sourceType||'canonical-curated',provenance:source.provenance||{},feel:source.feel||'straight',tier:row.tier,originalCoverage:row.coverage,notes:'Transcoded from the best currently selected source pattern; retained for review in canonical event form.'}}); }
+  if(prior){
+    groove={...prior,id:row.id,family:row.family,tradition:row.tradition,name:row.archetype,metadata:{...(prior.metadata||{}),tier:row.tier,originalCoverage:row.coverage}};
+  } else if(source && !collisionIds.has(row.id)){ groove=patternToCanonical({id:row.id,family:row.family,tradition:row.tradition,name:row.archetype,bpm:source.bpm,signature:source.signature,pattern:source.pattern,metadata:{validationState:source.validationState||'candidate-transcoded',confidence:source.confidence||.7,sourceType:source.sourceType||'canonical-curated',provenance:source.provenance||{},feel:source.feel||'straight',tier:row.tier,originalCoverage:row.coverage,notes:'Transcoded from the best currently selected source pattern; retained for review in canonical event form.'}}); }
   else groove=templateFor(row);
-  let fp=grooveFingerprint(groove), attempt=0;
-  while(seenFingerprints.has(fp) && attempt<64){ groove=disambiguatePedagogical(groove,attempt++); fp=grooveFingerprint(groove); }
-  seenFingerprints.add(fp);
+  const fp=grooveFingerprint(groove);
   const file=`${row.id}-${slug(row.archetype)}.json`, midi=`${row.id}-${slug(row.archetype)}.mid`;
   await writeCanonicalAndMidi(groove,new URL(`../musicology/canonical-grooves/${file}`,import.meta.url),new URL(`../musicology/midi/${midi}`,import.meta.url));
   corpus.push({id:row.id,name:row.archetype,family:row.family,tradition:row.tradition,file:`musicology/canonical-grooves/${file}`,midi:`musicology/midi/${midi}`,validationState:groove.metadata?.validationState,confidence:groove.metadata?.confidence,sourceType:groove.metadata?.sourceType,eventCount:groove.events.length,signature:groove.signature,bpm:groove.bpm,fingerprint:fp});
 }
 await writeFile(indexPath,JSON.stringify({schema:'battrochtek.canonical-corpus-index/v1',version:'1.0.0',ppq:PPQ,count:corpus.length,generatedAt:new Date().toISOString(),entries:corpus},null,2));
-console.log(`✓ Canonical corpus: ${corpus.length} JSON grooves + ${corpus.length} Standard MIDI Files.`);
+console.log(`✓ Canonical corpus: ${corpus.length} archetypes + ${corpus.length} Standard MIDI Files (duplicates are preserved for review, never cosmetically altered).`);

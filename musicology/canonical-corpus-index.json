@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "ppq": 960,
   "count": 213,
-  "generatedAt": "2026-08-23T09:26:56.785Z",
+  "generatedAt": "2026-08-23T09:42:14.722Z",
   "entries": [
     {
       "id": "CAN-001",
@@ -1527,13 +1527,13 @@
       "tradition": "Jamaican lineage",
       "file": "musicology/canonical-grooves/CAN-102-reggae-one-drop.json",
       "midi": "musicology/midi/CAN-102-reggae-one-drop.mid",
-      "validationState": "provisional",
-      "confidence": 0.517,
-      "sourceType": "canonical-curated",
-      "eventCount": 30,
+      "validationState": "literature-guided-score-v1",
+      "confidence": 0.93,
+      "sourceType": "literature-guided-drumset-archetype",
+      "eventCount": 20,
       "signature": "4/4",
-      "bpm": 94,
-      "fingerprint": "9ae0f192222f522a"
+      "bpm": 78,
+      "fingerprint": "ee551c2e00a1bcdf"
     },
     {
       "id": "CAN-103",
@@ -1542,13 +1542,13 @@
       "tradition": "Jamaican lineage",
       "file": "musicology/canonical-grooves/CAN-103-reggae-rockers.json",
       "midi": "musicology/midi/CAN-103-reggae-rockers.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 20,
+      "validationState": "literature-guided-score-v1",
+      "confidence": 0.82,
+      "sourceType": "literature-guided-drumset-archetype",
+      "eventCount": 50,
       "signature": "4/4",
-      "bpm": 78,
-      "fingerprint": "b7dea0d9dab03231"
+      "bpm": 76,
+      "fingerprint": "a7151a00cca004f0"
     },
     {
       "id": "CAN-104",
@@ -1557,13 +1557,13 @@
       "tradition": "Jamaican lineage",
       "file": "musicology/canonical-grooves/CAN-104-reggae-steppers.json",
       "midi": "musicology/midi/CAN-104-reggae-steppers.mid",
-      "validationState": "provisional",
-      "confidence": 0.432,
-      "sourceType": "canonical-curated",
+      "validationState": "literature-guided-score-v1",
+      "confidence": 0.95,
+      "sourceType": "literature-guided-drumset-archetype",
       "eventCount": 26,
       "signature": "4/4",
-      "bpm": 120,
-      "fingerprint": "9559a71464e219d2"
+      "bpm": 78,
+      "fingerprint": "fb213a2933ad6b5f"
     },
     {
       "id": "CAN-105",

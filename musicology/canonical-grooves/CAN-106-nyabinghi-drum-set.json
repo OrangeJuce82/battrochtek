@@ -325,6 +325,23 @@
     "feel": "triplet",
     "tier": "A",
     "originalCoverage": "NAMED_MATCH",
-    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form."
+    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+    "evidence": {
+      "taxonomyState": "literature-supported",
+      "performanceEvidence": "not-mapped",
+      "references": [
+        {
+          "title": "Wicked Beats / Jamaican ska, rocksteady and reggae — Modern Drummer",
+          "url": "https://www.moderndrummer.com/2011/10/wicked-beatsfeaturing-gil-sharone/"
+        }
+      ]
+    },
+    "scoreState": "candidate",
+    "references": [
+      {
+        "title": "Wicked Beats / Jamaican ska, rocksteady and reggae — Modern Drummer",
+        "url": "https://www.moderndrummer.com/2011/10/wicked-beatsfeaturing-gil-sharone/"
+      }
+    ]
   }
 }

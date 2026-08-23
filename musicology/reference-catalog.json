@@ -1,0 +1,186 @@
+{
+  "schema": "battrochtek.musicology-references/v1",
+  "generatedAt": "2026-08-23T09:42:14.855Z",
+  "references": {
+    "berkleeCuba": {
+      "title": "Advanced Afro-Cuban Rhythms for Drum Set — Berklee",
+      "url": "https://college.berklee.edu/courses/ilpd-373",
+      "scope": [
+        "son",
+        "son montuno",
+        "rumba",
+        "songo",
+        "timba",
+        "afro-cuban"
+      ]
+    },
+    "berkleeLatin": {
+      "title": "Latin/Afro-Cuban Styles — Berklee",
+      "url": "https://college.berklee.edu/courses/enlt-220",
+      "scope": [
+        "son",
+        "descarga",
+        "cha-cha",
+        "mambo",
+        "danzon",
+        "songo",
+        "bembe",
+        "bossa",
+        "samba",
+        "partido alto"
+      ]
+    },
+    "berkleeLatinJazz": {
+      "title": "Latin/Afro-Cuban Jazz — Berklee",
+      "url": "https://college.berklee.edu/courses/enlt-300",
+      "scope": [
+        "son",
+        "descarga",
+        "cha-cha",
+        "mambo",
+        "danzon",
+        "songo",
+        "bembe",
+        "abaku",
+        "timba",
+        "bossa",
+        "samba",
+        "partido alto",
+        "choro",
+        "afoxe",
+        "festejo",
+        "joropo",
+        "milonga",
+        "chacarera"
+      ]
+    },
+    "berkleeBrazil": {
+      "title": "Latin Piano Styles — Berklee Online",
+      "url": "https://online.berklee.edu/courses/latin-piano-styles",
+      "scope": [
+        "maxixe",
+        "choro",
+        "samba",
+        "bossa",
+        "baiao",
+        "afoxe",
+        "ijexa",
+        "frevo",
+        "maracatu",
+        "festejo",
+        "lando",
+        "chacarera",
+        "zamba",
+        "candombe",
+        "milonga",
+        "tango",
+        "joropo",
+        "cumbia",
+        "chande"
+      ]
+    },
+    "berkleeDrums": {
+      "title": "Drum Set Performance 101 — Berklee Online",
+      "url": "https://online.berklee.edu/courses/drum-set-performance-101",
+      "scope": [
+        "bossa",
+        "samba",
+        "half-time shuffle",
+        "afro-cuban 6/8",
+        "jazz shuffle",
+        "swing",
+        "cha cha"
+      ]
+    },
+    "modernReggae": {
+      "title": "Reggae 101: The Steppers Beat — Modern Drummer",
+      "url": "https://www.moderndrummer.com/article/february-2019-reggae-101-the-steppers-beat/",
+      "scope": [
+        "steppers",
+        "rockers",
+        "one drop",
+        "one-drop"
+      ]
+    },
+    "berkleeSly": {
+      "title": "Sly Dunbar on Revolutionizing Reggae Drums — Berklee Online",
+      "url": "https://online.berklee.edu/takenote/sly-and-robbie-drummer-sly-dunbar-on-revolutionizing-reggae-drums/",
+      "scope": [
+        "rockers",
+        "one drop",
+        "one-drop",
+        "reggae"
+      ]
+    },
+    "modernJamaican": {
+      "title": "Wicked Beats / Jamaican ska, rocksteady and reggae — Modern Drummer",
+      "url": "https://www.moderndrummer.com/2011/10/wicked-beatsfeaturing-gil-sharone/",
+      "scope": [
+        "ska",
+        "rocksteady",
+        "reggae",
+        "nyabinghi",
+        "dancehall"
+      ]
+    },
+    "berkleeSouthAmerica": {
+      "title": "South American Rhythms for the Drum Set — Berklee",
+      "url": "https://college.berklee.edu/courses/ilpd-357",
+      "scope": [
+        "peru",
+        "brazil",
+        "uruguay",
+        "argentina",
+        "venezuela",
+        "colombia",
+        "cumbia",
+        "joropo",
+        "candombe",
+        "festejo",
+        "lando"
+      ]
+    },
+    "berkleeBrazilCubaDrums": {
+      "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
+      "url": "https://college.berklee.edu/courses/ilpd-211",
+      "scope": [
+        "brazil",
+        "cuba",
+        "bossa",
+        "samba",
+        "afro-cuban",
+        "reggae",
+        "soca",
+        "bomba"
+      ]
+    },
+    "gmd": {
+      "title": "Groove MIDI Dataset — Magenta",
+      "url": "https://magenta.tensorflow.org/datasets/groove",
+      "scope": [
+        "afrobeat",
+        "afro-cuban",
+        "blues",
+        "country",
+        "funk",
+        "gospel",
+        "highlife",
+        "hip-hop",
+        "jazz",
+        "latin",
+        "middle eastern",
+        "new orleans",
+        "pop",
+        "punk",
+        "reggae",
+        "rock",
+        "soul"
+      ]
+    }
+  },
+  "summary": {
+    "canonicalGrooves": 213,
+    "taxonomyLiteratureSupported": 65,
+    "humanDatasetSupported": 132
+  }
+}

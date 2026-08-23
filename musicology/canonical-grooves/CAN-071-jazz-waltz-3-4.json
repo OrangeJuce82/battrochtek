@@ -265,6 +265,31 @@
     "feel": "straight",
     "tier": "A",
     "originalCoverage": "RELATED_CANDIDATE",
-    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form."
+    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+    "evidence": {
+      "taxonomyState": "literature-supported",
+      "performanceEvidence": "human-dataset-available",
+      "references": [
+        {
+          "title": "Drum Set Performance 101 — Berklee Online",
+          "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+        },
+        {
+          "title": "Groove MIDI Dataset — Magenta",
+          "url": "https://magenta.tensorflow.org/datasets/groove"
+        }
+      ]
+    },
+    "scoreState": "candidate",
+    "references": [
+      {
+        "title": "Drum Set Performance 101 — Berklee Online",
+        "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+      },
+      {
+        "title": "Groove MIDI Dataset — Magenta",
+        "url": "https://magenta.tensorflow.org/datasets/groove"
+      }
+    ]
   }
 }

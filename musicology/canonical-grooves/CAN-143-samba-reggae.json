@@ -344,6 +344,87 @@
     "feel": "latin",
     "tier": "A",
     "originalCoverage": "NAMED_MATCH",
-    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form."
+    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+    "evidence": {
+      "taxonomyState": "literature-supported",
+      "performanceEvidence": "human-dataset-available",
+      "references": [
+        {
+          "title": "Latin/Afro-Cuban Styles — Berklee",
+          "url": "https://college.berklee.edu/courses/enlt-220"
+        },
+        {
+          "title": "Latin/Afro-Cuban Jazz — Berklee",
+          "url": "https://college.berklee.edu/courses/enlt-300"
+        },
+        {
+          "title": "Latin Piano Styles — Berklee Online",
+          "url": "https://online.berklee.edu/courses/latin-piano-styles"
+        },
+        {
+          "title": "Drum Set Performance 101 — Berklee Online",
+          "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+        },
+        {
+          "title": "Sly Dunbar on Revolutionizing Reggae Drums — Berklee Online",
+          "url": "https://online.berklee.edu/takenote/sly-and-robbie-drummer-sly-dunbar-on-revolutionizing-reggae-drums/"
+        },
+        {
+          "title": "Wicked Beats / Jamaican ska, rocksteady and reggae — Modern Drummer",
+          "url": "https://www.moderndrummer.com/2011/10/wicked-beatsfeaturing-gil-sharone/"
+        },
+        {
+          "title": "South American Rhythms for the Drum Set — Berklee",
+          "url": "https://college.berklee.edu/courses/ilpd-357"
+        },
+        {
+          "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
+          "url": "https://college.berklee.edu/courses/ilpd-211"
+        },
+        {
+          "title": "Groove MIDI Dataset — Magenta",
+          "url": "https://magenta.tensorflow.org/datasets/groove"
+        }
+      ]
+    },
+    "scoreState": "provisional",
+    "references": [
+      {
+        "title": "Latin/Afro-Cuban Styles — Berklee",
+        "url": "https://college.berklee.edu/courses/enlt-220"
+      },
+      {
+        "title": "Latin/Afro-Cuban Jazz — Berklee",
+        "url": "https://college.berklee.edu/courses/enlt-300"
+      },
+      {
+        "title": "Latin Piano Styles — Berklee Online",
+        "url": "https://online.berklee.edu/courses/latin-piano-styles"
+      },
+      {
+        "title": "Drum Set Performance 101 — Berklee Online",
+        "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+      },
+      {
+        "title": "Groove MIDI Dataset — Magenta",
+        "url": "https://magenta.tensorflow.org/datasets/groove"
+      },
+      {
+        "title": "Sly Dunbar on Revolutionizing Reggae Drums — Berklee Online",
+        "url": "https://online.berklee.edu/takenote/sly-and-robbie-drummer-sly-dunbar-on-revolutionizing-reggae-drums/"
+      },
+      {
+        "title": "Wicked Beats / Jamaican ska, rocksteady and reggae — Modern Drummer",
+        "url": "https://www.moderndrummer.com/2011/10/wicked-beatsfeaturing-gil-sharone/"
+      },
+      {
+        "title": "South American Rhythms for the Drum Set — Berklee",
+        "url": "https://college.berklee.edu/courses/ilpd-357"
+      },
+      {
+        "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
+        "url": "https://college.berklee.edu/courses/ilpd-211"
+      }
+    ]
   }
 }

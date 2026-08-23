@@ -361,6 +361,13 @@
     "feel": "four-floor",
     "tier": "B",
     "originalCoverage": "NAMED_MATCH",
-    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form."
+    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+    "evidence": {
+      "taxonomyState": "needs-review",
+      "performanceEvidence": "not-mapped",
+      "references": []
+    },
+    "scoreState": "candidate",
+    "references": []
   }
 }

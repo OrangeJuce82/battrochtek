@@ -889,7 +889,7 @@
             return "generic";
         }
         profile(style=this.style()) {
-            return ({
+            const base=({
                 funk:{ ghostSnare:.68, ghostKick:.40, fill:.88, stability:.84, snareLagMs:7, kickLagMs:1, handLeadMs:-2, hhOpen:.85, hhOrn:1.08, ride:.24, crash:.52, toms:.42 },
                 hiphop:{ ghostSnare:.54, ghostKick:.36, fill:.62, stability:.90, snareLagMs:12, kickLagMs:5, handLeadMs:1, hhOpen:.38, hhOrn:1.16, ride:.10, crash:.22, toms:.20 },
                 afrobeat:{ ghostSnare:.36, ghostKick:.34, fill:.60, stability:.86, snareLagMs:2, kickLagMs:0, handLeadMs:-3, hhOpen:.48, hhOrn:1.22, ride:.62, crash:.24, toms:.54 },
@@ -899,6 +899,22 @@
                 rock:{ ghostSnare:.16, ghostKick:.14, fill:.82, stability:.88, snareLagMs:6, kickLagMs:0, handLeadMs:-1, hhOpen:.74, hhOrn:.52, ride:.70, crash:1.08, toms:.88 },
                 generic:{ ghostSnare:.30, ghostKick:.20, fill:.65, stability:.86, snareLagMs:5, kickLagMs:1, handLeadMs:-1, hhOpen:.55, hhOrn:.72, ride:.45, crash:.55, toms:.55 }
             })[style] || null;
+            if(!base) return null;
+            // Human timing is measured offline from the local Groove MIDI Dataset.
+            // We only replace timing tendencies when enough human observations exist;
+            // musical density/orchestration remain explicit grammar rules.
+            const human=window.BATTROCHTEK_HUMAN_FEEL_PROFILES?.[style];
+            if(!human?.tracks) return base;
+            const get=(name)=>human.tracks[name];
+            const sn=get("Snare"), kick=get("Kick");
+            const timeTracks=style==="jazz"?[get("Ride"),get("HH Closed")]:[get("HH Closed"),get("HH Open"),get("Ride")];
+            const valid=arr=>arr.filter(x=>x&&x.timingN>=24);
+            const weightedMean=arr=>{const a=valid(arr);const n=a.reduce((sum,x)=>sum+x.timingN,0);return n?a.reduce((sum,x)=>sum+x.microTimingMeanMs*x.timingN,0)/n:null;};
+            const result={...base};
+            if(sn?.timingN>=24) result.snareLagMs=Math.max(-18,Math.min(18,sn.microTimingMeanMs));
+            if(kick?.timingN>=24) result.kickLagMs=Math.max(-18,Math.min(18,kick.microTimingMeanMs));
+            const hand=weightedMean(timeTracks); if(hand!==null) result.handLeadMs=Math.max(-18,Math.min(18,hand));
+            return result;
         }
         defaultOrchestrationForStyle(style=this.style()) {
             return ({
@@ -1126,7 +1142,6 @@
             const copyVelocity=i=>{ if(baseV.accent.has(i))accent.add(i); else if(baseV.strong.has(i))strong.add(i); else if(baseV.soft.has(i))soft.add(i); else if(baseV.ghost.has(i))ghost.add(i); };
             const add=(track,step,velocity="normal")=>{ if(step<0||step>=steps||track<0||track>=CONFIG.TRACK_COUNT)return; const i=track*steps+step; active.add(i); clearV(i); if(velocity==="accent")accent.add(i); else if(velocity==="strong")strong.add(i); else if(velocity==="soft")soft.add(i); else if(velocity==="ghost")ghost.add(i); };
             const remove=(track,step)=>{const i=track*steps+step;active.delete(i);clearV(i);};
-            const isCoreTrack=t=>t===R.kick||t===R.snare;
             // Orchestration buttons are permissions to embellish, never destructive mutes.
             // The complete source groove is always copied first so FEEL cannot erase its identity.
             const isLayerAllowed=t=>{ if(t===R.closedHat||t===R.openHat)return this.layers.hihat; if(t===R.ride)return this.layers.ride; if(t===R.crash)return this.layers.crash; if(t===R.tomHigh||t===R.tomMid||t===R.tomFloor)return this.layers.toms; return true; };

@@ -1850,3 +1850,6 @@ button i {
         margin-left: 0;
     }
 }
+
+/* v58 — FEEL Energy is a single bipolar axis label */
+.feel-axis-y { justify-content: center; }

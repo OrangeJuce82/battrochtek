@@ -68,7 +68,7 @@
                         <label class="control-field" data-field><span data-i18n="toolbar.style">STYLE</span><select id="preset-family" data-bt-tooltip="Style musical" data-i18n-tooltip="toolbar.styleTooltip"></select></label>
                         <label class="control-field groove" data-field><span data-i18n="toolbar.groove">GROOVE</span><select id="preset-groove" data-bt-tooltip="Groove" data-i18n-tooltip="toolbar.grooveTooltip"></select></label>
                         <button type="button" class="bt-button preset-icon groove-preview" id="groove-preview" data-bt-tooltip="Préécouter le groove sélectionné" data-i18n-tooltip="toolbar.preview" aria-label="Préécouter le groove sélectionné" data-i18n-aria="toolbar.preview" aria-pressed="false"><i class="fa-solid fa-headphones" aria-hidden="true"></i></button>
-                        <button type="button" class="bt-button preset-icon groove-add" id="groove-add" data-bt-tooltip="Charger le groove sélectionné et activer FEEL" aria-label="Charger le groove sélectionné et activer FEEL"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                        <button type="button" class="bt-button preset-icon groove-add" id="groove-add" data-bt-tooltip="Charger le groove sélectionné dans la mémoire" aria-label="Charger le groove sélectionné dans la mémoire"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
                     </div>
                 </div>
 
@@ -87,28 +87,28 @@
 
                 <section id="feel-panel" class="feel-panel" hidden aria-labelledby="feel-title">
                     <div class="feel-header">
-                        <div><h2 id="feel-title"><i class="fa-solid fa-drum" aria-hidden="true"></i> FEEL</h2><p>FEEL actif : le batteur interprète le groove. AUTO fait évoluer la performance à chaque tour.</p></div>
-                        <button type="button" class="bt-button feel-auto active" id="feel-auto" aria-pressed="true" data-bt-tooltip="Nouvelle interprétation à chaque tour"><i class="fa-solid fa-repeat" aria-hidden="true"></i> AUTO</button>
+                        <div><h2 id="feel-title"><i class="fa-solid fa-drum" aria-hidden="true"></i> <span data-i18n="feel.title">FEEL</span></h2><p data-i18n="feel.subtitle">FEEL actif : le batteur interprète le groove. AUTO fait évoluer la performance à chaque tour.</p></div>
+                        <button type="button" class="bt-button feel-auto active" id="feel-auto" aria-pressed="true" data-bt-tooltip="Nouvelle interprétation à chaque tour" data-i18n-tooltip="feel.autoTooltip"><i class="fa-solid fa-repeat" aria-hidden="true"></i> <span data-i18n="feel.auto">AUTO</span></button>
                     </div>
                     <div class="feel-body">
                         <div class="feel-xy-wrap">
-                            <div class="feel-axis-y"><span>ÉNERGIQUE</span><span>INTIME</span></div>
-                            <div id="feel-xy" class="feel-xy" role="application" aria-label="Pad Feel : horizontal fills, vertical énergie" tabindex="0">
+                            <div class="feel-axis-y"><span data-i18n="feel.energy">ÉNERGIE</span></div>
+                            <div id="feel-xy" class="feel-xy" role="application" aria-label="Pad Feel : horizontal fills, vertical énergie" data-i18n-aria="feel.xyAria" tabindex="0">
                                 <div class="feel-grid-lines" aria-hidden="true"></div>
                                 <div id="feel-dot" class="feel-dot" aria-hidden="true"></div>
                             </div>
-                            <div class="feel-axis-x"><span>STABLE</span><strong id="feel-readout">FILLS 50 · ÉNERGIE 50</strong><span>FILLS</span></div>
+                            <div class="feel-axis-x"><span data-i18n="feel.stable">STABLE</span><strong id="feel-readout">FILLS 50 · ÉNERGIE 50</strong><span data-i18n="feel.fills">FILLS</span></div>
                         </div>
                         <div class="feel-controls">
-                            <label class="feel-style"><span>DRUMMER STYLE</span><select id="feel-style" aria-label="Style du batteur"><option value="auto">AUTO · style du groove</option><option value="funk">Funk / Soul</option><option value="hiphop">Hip-Hop / Neo-Soul</option><option value="jazz">Jazz / Swing</option><option value="reggae">Reggae / Ska / Dub</option><option value="afrobeat">Afrobeat / Highlife</option><option value="latin">Latin / Afro-Cuban</option><option value="rock">Rock / Pop</option></select></label>
-                            <div class="feel-layer-title">ORCHESTRATION</div>
-                            <div class="feel-layers" role="group" aria-label="Couches que FEEL peut agrémenter">
-                                <button type="button" class="feel-layer active" data-layer="hihat" aria-pressed="true" data-bt-tooltip="Agrémenter le charley · OFF = conserver exactement le charley source">HH</button>
-                                <button type="button" class="feel-layer" data-layer="ride" aria-pressed="false" data-bt-tooltip="Autoriser FEEL à agrémenter le ride · les notes source restent conservées">RIDE</button>
-                                <button type="button" class="feel-layer active" data-layer="crash" aria-pressed="true" data-bt-tooltip="Autoriser FEEL à agrémenter les crashs · les notes source restent conservées">CRASH</button>
-                                <button type="button" class="feel-layer" data-layer="toms" aria-pressed="false" data-bt-tooltip="Autoriser FEEL à agrémenter les toms · les notes source restent conservées">TOMS</button>
+                            <label class="feel-style"><span data-i18n="feel.drummerStyle">STYLE DE BATTEUR</span><select id="feel-style" aria-label="Style du batteur"><option value="auto" data-i18n="feel.styleAuto">AUTO · style du groove</option><option value="funk" data-i18n="feel.styleFunk">Funk / Soul</option><option value="hiphop" data-i18n="feel.styleHipHop">Hip-Hop / Neo-Soul</option><option value="jazz" data-i18n="feel.styleJazz">Jazz / Swing</option><option value="reggae" data-i18n="feel.styleReggae">Reggae / Ska / Dub</option><option value="afrobeat" data-i18n="feel.styleAfrobeat">Afrobeat / Highlife</option><option value="latin" data-i18n="feel.styleLatin">Latin / Afro-Cuban</option><option value="rock" data-i18n="feel.styleRock">Rock / Pop</option></select></label>
+                            <div class="feel-layer-title" data-i18n="feel.orchestration">ORCHESTRATION</div>
+                            <div class="feel-layers" role="group" aria-label="Couches que FEEL peut agrémenter" data-i18n-aria="feel.layersAria">
+                                <button type="button" class="feel-layer active" data-layer="hihat" aria-pressed="true" data-bt-tooltip="Agrémenter le charley · OFF = conserver exactement le charley source" data-i18n-tooltip="feel.hhTooltip">HH</button>
+                                <button type="button" class="feel-layer" data-layer="ride" aria-pressed="false" data-bt-tooltip="Autoriser FEEL à agrémenter le ride · les notes source restent conservées" data-i18n-tooltip="feel.rideTooltip">RIDE</button>
+                                <button type="button" class="feel-layer active" data-layer="crash" aria-pressed="true" data-bt-tooltip="Autoriser FEEL à agrémenter les crashs · les notes source restent conservées" data-i18n-tooltip="feel.crashTooltip">CRASH</button>
+                                <button type="button" class="feel-layer" data-layer="toms" aria-pressed="false" data-bt-tooltip="Autoriser FEEL à agrémenter les toms · les notes source restent conservées" data-i18n-tooltip="feel.tomsTooltip">TOMS</button>
                             </div>
-                            <label class="feel-fill feel-density"><span>DENSITÉ</span><input id="feel-density" type="range" min="0" max="100" value="20" step="1"><output id="feel-density-value">20%</output></label>
+                            <label class="feel-fill feel-density"><span data-i18n="feel.density">DENSITÉ</span><input id="feel-density" type="range" min="0" max="100" value="20" step="1"><output id="feel-density-value">20%</output></label>
                         </div>
                     </div>
                 </section>

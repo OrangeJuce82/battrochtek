@@ -33,7 +33,7 @@ const checks = [
   [!app.includes('localStorage.getItem("mem")') && !app.includes('localStorage.setItem("mem")'), "localStorage retiré des mémoires"],
   [app.includes("history.replaceState"), "mise à jour du hash sans navigation"],
   [sw.includes('"./vendor/oat/oat.min.css"') && sw.includes('"./vendor/oat/oat.min.js"'), "Oat inclus dans l’app shell PWA"],
-  [sw.includes('battrochtek-v55'), "cache PWA v55"],
+  [sw.includes('battrochtek-v58'), "cache PWA v58"],
   [css.includes('--bt-instrument-text:') && !app.includes('label.style.color'), "couleur des instruments pilotée par le thème"],
   [css.includes('.bt-tooltip') && html.includes('id="bt-tooltip"'), "tooltips adaptatifs présents"],
   [!html.includes('id="bt-help"'), "ancienne aide au survol retirée"],
@@ -62,6 +62,10 @@ const checks = [
   [sw.includes('./grooves/external-grooves.js'), "corpus externes inclus dans la PWA"],
   [app.includes('TRACK_COUNT: 9') && app.includes('tomFloor:7') && app.includes('kick:8'), "grille GMD étendue à 9 pistes"],
   [app.includes('addSelectedPatch()') && app.includes('const available = CONFIG.MEMORY_SLOTS - startSlot') && app.includes('selected.entries.slice(0, available)'), "import du patch tronqué à partir de la mémoire active"],
+  [app.includes('const feelWasEnabled = this.feel.enabled') && app.includes('const autoWasEnabled = this.feel.auto') && !app.includes('this.setFeelEnabled(true, { applyNow:true, save:true })'), "ajouter groove préserve FEEL et AUTO"],
+  [app.includes('if(next===this.feel.enabled)') && app.includes('Idempotent by design'), "setFeelEnabled idempotent sans régénération parasite"],
+  [app.includes('if (!this.feel.enabled) this.feel.captureCore({ inferLayers:false })'), "édition mémoire FEEL OFF synchronise le CORE"],
+  [app.includes('this.feel.captureCore({ inferLayers:false });\n                this.feel.enabled=true'), "activation FEEL repart de la grille courante"],
   [app.includes('const previousSlots = this.seq.store.populated().filter(slot => slot < startSlot)') && app.includes('entry.pattern, inheritedTempo'), "groove importé hérite du BPM de la dernière mémoire précédente"],
   [html.includes('id="groove-search"'), "recherche globale de grooves présente"],
   [html.includes('class="groove-search-results"') && !html.includes('<datalist id="groove-search-list"'), "autocomplete global sous la recherche sans datalist natif"],
@@ -100,6 +104,10 @@ const checks = [
   [app.includes('previousPerformances') && app.includes('continuity:'), "AUTO conserve une continuité de performance"],
   [app.includes('performanceTimingOffset') && app.includes('performanceGainScale'), "microtiming et vélocité humanisés présents"],
   [html.includes('id="feel-style"') && app.includes('styleOverride'), "sélecteur DRUMMER STYLE AUTO/manuelle présent"],
+  [app.includes('orchestrationPreset(style=this.style())') && app.includes('applyOrchestrationPreset(this.feel.style())'), "Drummer Style pilote les permissions d’orchestration"],
+  [app.includes('if(f<=.05)return false') && app.includes('fillAmount=Math.pow'), "Fills possède une vraie zone zéro 0–5%"],
+  [app.includes('ENERGY is bipolar around 50%') && app.includes('const calm=(.5-e)/.5') && app.includes('const drive=(e-.5)/.5'), "Energy atténue ou renforce les accents autour de 50%"],
+  [html.includes('data-i18n="feel.energy"') && !html.includes('<span>INTIME</span>'), "axe Energy simplifié et traduit"],
 ];
 
 const failed = checks.filter(([ok]) => !ok);

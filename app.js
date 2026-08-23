@@ -819,7 +819,7 @@
             this.familyName = "";
             this.orchestrationMode = "auto";
             this.autoOrchestration = false;
-            this.autoOrchestrationEvery = 4;
+            this.autoOrchestrationEvery = "auto";
             this.autoOrchestrationPlan = { nextCycle: null, returnCycle: null, returnMode: null };
             this.enabled = false;
             this.auto = true;
@@ -1833,6 +1833,7 @@
             this.copySnapshot = null; this.playheadTimeouts = []; this.tapTimes = []; this.meterFrame = null; this.gridDrag = null; this.suppressGridClick = false;
             this.undoStack = []; this.redoStack = []; this.historyLimit = 30;
             this.previewTimer = null; this.previewEnabled = false; this.previewStep = 0; this.previewNextTime = 0; this.previewData = null;
+            this.soundUrlTimer = null;
             this.dom = this.cacheDom();
         }
         alpineUi() {
@@ -2049,6 +2050,54 @@
             });
             systemDark?.addEventListener?.("change", () => { if (!explicitTheme) apply(null); });
         }
+        compactSoundState() {
+            const volumes = this.seq.trackVolumes.map(value => Math.round(Util.clamp(value, 0, 1, 1) * 100));
+            const pans = this.seq.trackPans.map(value => Math.round(Util.clamp(value, -1, 1, 0) * 100));
+            return [
+                1,
+                this.seq.kitIndex,
+                this.seq.customTracks ? this.seq.customTracks.slice() : null,
+                volumes,
+                pans,
+                Math.round(Util.clamp(this.seq.masterVolume, 0, 1, 1) * 100),
+                Math.round(Util.clamp(this.seq.swing, CONFIG.SWING.min, CONFIG.SWING.max, CONFIG.SWING.default))
+            ];
+        }
+        restoreSoundState(value) {
+            if (!Array.isArray(value) || value[0] !== 1) return false;
+            const kitIndex = Math.round(Util.clamp(value[1], 0, CONFIG.KITS.length - 1, 0));
+            const custom = Array.isArray(value[2])
+                ? Array.from({ length:CONFIG.TRACK_COUNT }, (_, i) => SAMPLE_INDEX[value[2][i]] ? value[2][i] : CONFIG.KITS[kitIndex].tracks[i])
+                : null;
+            this.seq.kitIndex = kitIndex;
+            this.seq.customTracks = custom;
+            this.seq.trackVolumes = Array.from({ length:CONFIG.TRACK_COUNT }, (_, i) => Util.clamp(Number(value[3]?.[i]) / 100, 0, 1, 1));
+            this.seq.trackPans = Array.from({ length:CONFIG.TRACK_COUNT }, (_, i) => Util.clamp(Number(value[4]?.[i]) / 100, -1, 1, 0));
+            this.seq.masterVolume = Util.clamp(Number(value[5]) / 100, 0, 1, 1);
+            this.seq.swing = Math.round(Util.clamp(Number(value[6]), CONFIG.SWING.min, CONFIG.SWING.max, CONFIG.SWING.default));
+            this.renderKit();
+            this.renderSliders();
+            this.renderSwing();
+            this.renderMaster();
+            this.audio.preloadTracks(this.seq.currentTrackSamples()).catch(error => console.warn("Préchargement du kit URL impossible.", error));
+            return true;
+        }
+        saveSoundStateToUrl({ immediate = false } = {}) {
+            const write = () => {
+                try {
+                    const params = new URLSearchParams(location.hash.slice(1));
+                    params.set("snd", StorageManager.encode(this.compactSoundState()));
+                    history.replaceState(null, "", `${location.pathname}${location.search}#${params.toString()}`);
+                } catch (error) {
+                    console.warn("Impossible d’écrire l’état audio dans l’URL.", error);
+                } finally {
+                    this.soundUrlTimer = null;
+                }
+            };
+            clearTimeout(this.soundUrlTimer);
+            if (immediate) write();
+            else this.soundUrlTimer = setTimeout(write, 120);
+        }
         compactPageState() {
             const state = this.capturePageState();
             const muted = state.muted.reduce((mask, value, i) => value ? mask | (1 << i) : mask, 0);
@@ -2199,6 +2248,7 @@
                 const shareLocation = new URL(location.href);
                 const shareParams = new URLSearchParams();
                 shareParams.set("mem", StorageManager.encode(StorageManager.compactShareSlots(this.seq.store.slots)));
+                shareParams.set("snd", StorageManager.encode(this.compactSoundState()));
                 shareLocation.hash = shareParams.toString();
                 const url = shareLocation.href;
                 const appUrl = `${location.origin}${location.pathname}${location.search}`;
@@ -2323,6 +2373,7 @@
                 if (this.dom.kitSelect.value === "custom") return;
                 this.seq.selectKit(Number(this.dom.kitSelect.value));
                 this.renderKit();
+                this.saveSoundStateToUrl();
                 const kit = CONFIG.KITS[this.seq.kitIndex];
                 this.status(I18N.t("status.loadingKit", { kit:kit.name }));
                 const buffers = await this.audio.preloadTracks(this.seq.currentTrackSamples());
@@ -2351,6 +2402,7 @@
                     this.pushHistory();
                     if (!this.seq.setTrackSample(i, event.target.value)) return;
                     this.renderKit();
+                    this.saveSoundStateToUrl();
                     await this.audio.loadSample(event.target.value);
                     this.status(I18N.t("track.custom", { n:i + 1, sample:SAMPLE_INDEX[event.target.value]?.label || event.target.value }));
                 });
@@ -2386,7 +2438,7 @@
                 this.dom.memory.insertBefore(button, separator); this.memoryButtons.push(button);
             }
         }
-        makeRotary({ label, tooltip, min, max, step, value, defaultValue = value, onChange }) {
+        makeRotary({ label, tooltip, min, max, step, value, defaultValue = value, onChange, onCommit = null }) {
             const knob = document.createElement("button");
             knob.type = "button"; knob.className = "rotary-knob"; knob.textContent = label;
             knob.setAttribute("role", "slider"); knob.setAttribute("aria-label", tooltip); knob.dataset.btTooltip = tooltip;
@@ -2414,14 +2466,14 @@
                 if (Math.abs(e.clientY - drag.y) > 1) drag.moved = true;
                 setValue(next);
             });
-            const finish = e => { if (!drag || drag.id !== e.pointerId) return; const before=drag.before, moved=drag.moved; drag=null; if (moved) this.pushHistory(before); };
+            const finish = e => { if (!drag || drag.id !== e.pointerId) return; const before=drag.before, moved=drag.moved; drag=null; if (moved) { this.pushHistory(before); onCommit?.(); } };
             knob.addEventListener("pointerup", finish); knob.addEventListener("pointercancel", finish);
             knob.addEventListener("keydown", e => {
                 const dir = e.key === "ArrowUp" || e.key === "ArrowRight" ? 1 : e.key === "ArrowDown" || e.key === "ArrowLeft" ? -1 : 0;
-                if (!dir) return; e.preventDefault(); this.pushHistory(); setValue(Number(knob.dataset.value || value) + dir * step * (e.shiftKey ? 5 : 1));
+                if (!dir) return; e.preventDefault(); this.pushHistory(); setValue(Number(knob.dataset.value || value) + dir * step * (e.shiftKey ? 5 : 1)); onCommit?.();
             });
-            knob.addEventListener("wheel", e => { e.preventDefault(); this.pushHistory(); setValue(Number(knob.dataset.value || value) + (e.deltaY < 0 ? step : -step)); }, { passive:false });
-            knob.addEventListener("dblclick", e => { e.preventDefault(); e.stopPropagation(); this.pushHistory(); setValue(defaultValue); });
+            knob.addEventListener("wheel", e => { e.preventDefault(); this.pushHistory(); setValue(Number(knob.dataset.value || value) + (e.deltaY < 0 ? step : -step)); onCommit?.(); }, { passive:false });
+            knob.addEventListener("dblclick", e => { e.preventDefault(); e.stopPropagation(); this.pushHistory(); setValue(defaultValue); onCommit?.(); });
             knob.dataset.btTooltip = `${tooltip} — ${I18N.t("rotary.reset")}`;
             knob.setAttribute("aria-label", `${tooltip}. ${I18N.t("rotary.reset")}`);
             setValue(value);
@@ -2436,8 +2488,8 @@
                 const solo = document.createElement("button"); solo.type = "button"; solo.className = "track-toggle solo mix-toggle"; solo.textContent = "S"; solo.dataset.btTooltip = I18N.t("track.solo", { n:i + 1 }); solo.setAttribute("aria-label", I18N.t("track.solo", { n:i + 1 })); solo.setAttribute("aria-pressed", "false");
                 mute.addEventListener("click", e => { e.stopPropagation(); this.seq.toggleMute(i); this.renderTrackControls(); });
                 solo.addEventListener("click", e => { e.stopPropagation(); this.seq.toggleSolo(i); this.renderTrackControls(); });
-                const pan = this.makeRotary({ label:"P", tooltip:I18N.t("track.pan", { n:i + 1 }), min:-1, max:1, step:0.05, value:this.seq.trackPans[i], defaultValue:0, onChange:v => { this.seq.trackPans[i] = v; } });
-                const volume = this.makeRotary({ label:"V", tooltip:I18N.t("track.volume", { n:i + 1 }), min:0, max:1, step:0.02, value:this.seq.trackVolumes[i], defaultValue:1, onChange:v => { this.seq.trackVolumes[i] = v; } });
+                const pan = this.makeRotary({ label:"P", tooltip:I18N.t("track.pan", { n:i + 1 }), min:-1, max:1, step:0.05, value:this.seq.trackPans[i], defaultValue:0, onChange:v => { this.seq.trackPans[i] = v; }, onCommit:() => this.saveSoundStateToUrl() });
+                const volume = this.makeRotary({ label:"V", tooltip:I18N.t("track.volume", { n:i + 1 }), min:0, max:1, step:0.02, value:this.seq.trackVolumes[i], defaultValue:1, onChange:v => { this.seq.trackVolumes[i] = v; }, onCommit:() => this.saveSoundStateToUrl() });
                 row.append(mute, solo, pan, volume);
                 this.dom.sliders.appendChild(row);
                 this.trackMuteButtons.push(mute); this.trackSoloButtons.push(solo); this.trackPanKnobs.push(pan); this.trackVolumeKnobs.push(volume);
@@ -3011,11 +3063,12 @@
                 const commitSwing = () => {
                     this.seq.swing = Math.round(Util.clamp(Number(this.dom.swingInput.value), CONFIG.SWING.min, CONFIG.SWING.max, CONFIG.SWING.default));
                     this.renderSwing();
+                    this.saveSoundStateToUrl();
                 };
                 this.dom.swingInput.addEventListener("input", commitSwing);
                 this.dom.swingInput.addEventListener("change", commitSwing);
                 this.dom.swingInput.addEventListener("keydown", e => { if (e.key === "Enter") { commitSwing(); this.dom.swingInput.blur(); } });
-                this.bindNumberWheel(this.dom.swingInput, 1, CONFIG.SWING.min, CONFIG.SWING.max, value => { this.seq.swing = value; this.renderSwing(); });
+                this.bindNumberWheel(this.dom.swingInput, 1, CONFIG.SWING.min, CONFIG.SWING.max, value => { this.seq.swing = value; this.renderSwing(); this.saveSoundStateToUrl(); });
             }
             if (this.dom.masterButton) this.press(this.dom.masterButton, () => this.cycleMasterLevel());
             window.addEventListener("keydown", e => {
@@ -3061,6 +3114,7 @@
             this.seq.masterVolume = levels[(currentIndex + 1) % levels.length];
             this.preferences?.setAudio({ masterVolume:this.seq.masterVolume });
             this.renderMaster();
+            this.saveSoundStateToUrl();
         }
         handleTapTempo() {
             const now = performance.now();
@@ -3249,8 +3303,10 @@
                 const params = new URLSearchParams(location.hash.slice(1));
                 const encodedState = params.get("state");
                 if (encodedState) ui.restorePageState(ui.expandPageState(StorageManager.decode(encodedState)));
+                const encodedSound = params.get("snd");
+                if (encodedSound) ui.restoreSoundState(StorageManager.decode(encodedSound));
             } catch (error) {
-                console.warn("État complet de page invalide, réglages par défaut conservés.", error);
+                console.warn("État de page ou audio invalide, réglages sûrs conservés.", error);
             }
             window.Battrochtek = { CONFIG, TRACK_ROLES, store, sequencer, audio, scheduler, practice, ui, preferences };
         }

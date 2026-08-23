@@ -13,7 +13,7 @@
   "events": [
     {
       "tick": 0,
-      "duration": 108,
+      "duration": 120,
       "instrument": "cymbal",
       "articulation": "ride-bow",
       "velocity": 82,
@@ -21,342 +21,359 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 720,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 960,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 1680,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 1920,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 2640,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 2880,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 3600,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 3840,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 4560,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 4800,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 5520,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 5760,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 6480,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 6720,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 7440,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 960,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "otherHand",
-      "role": "ghost",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 2880,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "otherHand",
-      "role": "ghost",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 3360,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "otherHand",
-      "role": "ghost",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 4800,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "otherHand",
-      "role": "ghost",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 6720,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "otherHand",
-      "role": "ghost",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 7200,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "otherHand",
-      "role": "ghost",
-      "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 0,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "core",
+      "role": "ornament",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 720,
+      "duration": 120,
+      "instrument": "cymbal",
+      "articulation": "ride-bow",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 960,
+      "duration": 120,
+      "instrument": "cymbal",
+      "articulation": "ride-bow",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 960,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "otherHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 1680,
+      "duration": 120,
+      "instrument": "cymbal",
+      "articulation": "ride-bow",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1920,
-      "duration": 108,
+      "duration": 120,
+      "instrument": "cymbal",
+      "articulation": "ride-bow",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 1920,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "core",
+      "role": "ornament",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 2640,
+      "duration": 120,
+      "instrument": "cymbal",
+      "articulation": "ride-bow",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 2880,
+      "duration": 120,
+      "instrument": "cymbal",
+      "articulation": "ride-bow",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 2880,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "otherHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 3360,
-      "duration": 108,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "otherHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 3360,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "core",
+      "role": "ornament",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 3600,
+      "duration": 120,
+      "instrument": "cymbal",
+      "articulation": "ride-bow",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 3840,
-      "duration": 108,
+      "duration": 120,
+      "instrument": "cymbal",
+      "articulation": "ride-bow",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 3840,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "core",
+      "role": "ornament",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 4560,
+      "duration": 120,
+      "instrument": "cymbal",
+      "articulation": "ride-bow",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 4800,
+      "duration": 120,
+      "instrument": "cymbal",
+      "articulation": "ride-bow",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 4800,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "otherHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 5520,
+      "duration": 120,
+      "instrument": "cymbal",
+      "articulation": "ride-bow",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 5760,
-      "duration": 108,
+      "duration": 120,
+      "instrument": "cymbal",
+      "articulation": "ride-bow",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 5760,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "core",
+      "role": "ornament",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 6480,
+      "duration": 120,
+      "instrument": "cymbal",
+      "articulation": "ride-bow",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 6720,
+      "duration": 120,
+      "instrument": "cymbal",
+      "articulation": "ride-bow",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 6720,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "otherHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 7200,
-      "duration": 108,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "otherHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 7200,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "core",
+      "role": "ornament",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 7440,
+      "duration": 120,
+      "instrument": "cymbal",
+      "articulation": "ride-bow",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
     }
   ],
   "metadata": {
-    "validationState": "pedagogical-adaptation-needs-review",
-    "confidence": 0.68,
-    "sourceType": "battrochtek-pedagogical-adaptation",
-    "provenance": {},
-    "feel": "swing",
+    "validationState": "reviewed-pedagogical-adaptation",
+    "confidence": 0.82,
+    "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+    "createdBy": "Battrochtek musicology compiler",
+    "notes": "Reviewed jazz drum-set adaptation: time voice, comping and bass-drum roles are separated.",
+    "distinctiveFeatures": [
+      "ride time with ensemble figures",
+      "stronger setup/ensemble punctuation"
+    ],
+    "references": [
+      "https://www.moderndrummer.com/2013/01/md-education-team-weighs-in-on-learning-jazz/",
+      "https://www.moderndrummer.com/article/up-tempo-jazz-ride-playing/",
+      {
+        "title": "Drum Set Performance 101 — Berklee Online",
+        "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+      },
+      {
+        "title": "Groove MIDI Dataset — Magenta",
+        "url": "https://magenta.tensorflow.org/datasets/groove"
+      }
+    ],
     "tier": "A",
     "originalCoverage": "RELATED_CANDIDATE",
-    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+    "scoreState": "reviewed-adaptation",
+    "leftFootRole": "hi-hat 2 and 4 (semantic; dedicated pedal lane pending)",
     "evidence": {
       "taxonomyState": "literature-supported",
       "performanceEvidence": "human-dataset-available",
@@ -370,17 +387,6 @@
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
       ]
-    },
-    "scoreState": "provisional",
-    "references": [
-      {
-        "title": "Drum Set Performance 101 — Berklee Online",
-        "url": "https://online.berklee.edu/courses/drum-set-performance-101"
-      },
-      {
-        "title": "Groove MIDI Dataset — Magenta",
-        "url": "https://magenta.tensorflow.org/datasets/groove"
-      }
-    ]
+    }
   }
 }

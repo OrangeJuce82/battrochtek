@@ -78,3 +78,7 @@ Commandes : `npm run grooves:library` régénère la couche éditoriale ; `npm r
 ## Musicological build pipeline
 
 The groove catalog is now generated from a 960-PPQ canonical event corpus. `npm run grooves:build` runs evidence mapping, human-feel analysis, structural diversity review, validation reporting, canonical-to-MIDI compilation, and single-library publication. See `musicology/MUSICOLOGY-PIPELINE.md`.
+
+
+## v19 Musicology
+See `README-MUSICOLOGY-V19.md` for the completeness gate, Jazz/Funk rebuild and FEEL limb-role grammar.

@@ -42,6 +42,11 @@ function latinCanonical(row,opt={}){
 }
 
 const LATIN_REBUILD_IDS=new Set(Array.from({length:36},(_,i)=>`CAN-${128+i}`));
+const V19_REBUILD_IDS=new Set([
+  'CAN-017','CAN-118',
+  ...Array.from({length:16},(_,i)=>`CAN-${String(41+i).padStart(3,'0')}`),
+  ...Array.from({length:14},(_,i)=>`CAN-${String(65+i).padStart(3,'0')}`)
+]);
 
 function templateFor(row){
   const n=row.archetype.toLowerCase(), f=row.family, id=row.id;
@@ -54,6 +59,7 @@ function templateFor(row){
   if(n==='3/4 groove'){const b=makeBuilder(row,{signature:'3/4',bpm:110,feel:'straight',notes:'General 3/4 drum-set foundation.'});b.add('hat',b.every(2),'soft','time');b.add('kick',b.rep([0]),'strong','core');b.add('snare',b.rep([4,8]),'normal','core');return b.finish();}
   // Rock / metal
   if(f==='Rock / Pop'){
+    if(n.includes('early rock')||n.includes('lindy')){const b=makeBuilder(row,{bpm:164,swing:62,feel:'early-rock-shuffle',notes:'Complete early rock-and-roll/Lindy-derived drum-set adaptation.'});b.add('ride',b.rep([0,3,4,7,8,11,12,15]),'normal','time');b.add('snare',b.rep([4,12]),'strong','core');b.add('kick',b.rep([0,6,8,14]),'strong','core');return b.finish({distinctiveFeatures:['audible shuffle time voice','backbeat on 2 and 4','walking/shuffle bass-drum support']});}
     if(n.includes('classic rock 16'))return baseRock(row,{bpm:112,hatStep:1,kick:[0,6,10,14]}).finish();
     if(n.includes('half-time'))return baseRock(row,{bpm:96,snare:[8],kick:[0,6,12],hatStep:2}).finish({distinctiveFeatures:['half-time backbeat on beat 3']});
     if(n.includes('hard rock'))return baseRock(row,{bpm:126,kick:[0,6,8,10,14],open:[14]}).finish();
@@ -70,29 +76,45 @@ function templateFor(row){
     if(n.includes('stoner'))return baseRock(row,{bpm:82,swing:60,kick:[0,5,8,11,14],hatStep:2,feel:'heavy-shuffle'}).finish();
     return baseRock(row,{bpm:124,kick:[0,6,8,10]}).finish();
   }
-  // Funk/Soul
+  // Funk / Soul / R&B — reviewed role-based drum-set archetypes.
   if(f==='Funk / Soul / R&B'){
-    if(n.includes('james brown'))return baseFunk(row,{bpm:104,kick:[0,3,6,10,14],ghost:[2,7,11,15],open:[14]}).finish({distinctiveFeatures:['one-oriented kick emphasis','dense ghost-note conversation']});
-    if(n.includes('second line')){const b=baseFunk(row,{bpm:104,swing:57,kick:[0,3,8,11,14],snare:[4,12],ghost:[2,6,10,15],feel:'second-line'});return b.finish({distinctiveFeatures:['second-line-derived syncopation','loose swung sixteenth feel']});}
-    if(n.includes('motown'))return baseRock(row,{bpm:112,kick:[0,6,8,14],hatStep:2,snare:[4,12],crash:false}).finish({distinctiveFeatures:['steady eighth-note timekeeping','compact soul backbeat']});
-    if(n.includes('stax'))return baseRock(row,{bpm:98,kick:[0,7,10],hatStep:2,snare:[4,12],crash:false}).finish();
-    if(n.includes('go-go'))return baseFunk(row,{bpm:100,kick:[0,3,6,8,11,14],ghost:[2,5,10,13],open:[7,15]}).finish();
-    if(n.includes('gospel pocket'))return baseFunk(row,{bpm:92,kick:[0,3,7,10,14],ghost:[2,6,11,15],open:[14]}).finish();
-    return baseFunk(row).finish();
+    const refs=['https://www.moderndrummer.com/2011/06/uriel-jones-architect-of-the-motown-sound/','https://www.moderndrummer.com/2016/08/video-lesson-groove-construction-part-6-w-jost-nickel/'];
+    const reviewed=(opt)=>{const b=makeBuilder(row,{bpm:opt.bpm||100,feel:opt.feel||'funk',notes:'Reviewed role-based Funk/Soul/R&B drum-set adaptation.',confidence:.8,sourceType:'battrochtek-reviewed-pedagogical-adaptation'});b.add(opt.timeVoice||'hat',b.rep(opt.time||[0,2,4,6,8,10,12,14]),opt.timeVel||'soft','time');b.add('kick',b.rep(opt.kick||[0,7,10]),opt.kickVel||'strong','core');b.add(opt.crossStick?'crossStick':'snare',b.rep(opt.snare||[4,12]),opt.snareVel||'strong','core');if(opt.ghost?.length)b.add('snare',b.rep(opt.ghost),'ghost','ghost');if(opt.open?.length)b.add('openHat',b.rep(opt.open),'normal','ornament');if(opt.tom?.length)b.add('midTom',b.rep(opt.tom),'normal','ornament');const g=b.finish({distinctiveFeatures:opt.features||[],references:[...refs,...(opt.references||[])]});g.metadata.validationState='reviewed-pedagogical-adaptation';g.metadata.scoreState='reviewed-adaptation';return g;};
+    if(n.includes('james brown'))return reviewed({bpm:104,time:[0,4,8,12],kick:[0,3,6,10,14],snare:[4,12],ghost:[2,7,11,15],open:[14],features:['one-oriented kick emphasis','quarter-note/space-aware time hand','ghost-note conversation around protected backbeat']});
+    if(n.includes('new orleans')||n.includes('second line'))return reviewed({bpm:104,feel:'second-line',time:[0,3,4,7,8,11,12,15],kick:[0,3,8,11,14],snare:[4,12],ghost:[2,6,10,15],features:['second-line-derived syncopation','loose triplet-informed hand feel','bass/snare conversation']});
+    if(n.includes('motown'))return reviewed({bpm:112,time:[0,2,4,6,8,10,12,14],kick:[0,3,6,8,11,14],snare:[4,12],ghost:[15],tom:[14],features:['steady eighth-note time','syncopated bass-drum pickups interacting with bass line','strong backbeat with signature pickup vocabulary'],references:['https://www.moderndrummer.com/2009/06/secrets-of-motown/']});
+    if(n.includes('stax')||n.includes('southern soul'))return reviewed({bpm:98,time:[0,2,4,6,8,10,12,14],kick:[0,7,10],snare:[4,12],features:['spacious southern-soul pocket','less busy kick than Motown','firm backbeat']});
+    if(n.includes('philly'))return reviewed({bpm:108,time:[0,2,4,6,8,10,12,14],kick:[0,6,8,11,14],snare:[4,12],open:[14],features:['smooth eighth-note soul time','dance-oriented bass drum','light open-hat lift']});
+    if(n.includes('p-funk'))return reviewed({bpm:100,time:[0,2,4,6,8,10,12,14],kick:[0,3,7,10,14],snare:[4,12],ghost:[2,6,11,15],open:[7,15],features:['syncopated sixteenth pocket','ghost-note conversation','open-hat punctuation']});
+    if(n.includes('boogaloo'))return reviewed({bpm:108,time:[0,3,4,7,8,11,12,15],kick:[0,6,10,14],snare:[4,12],ghost:[7,15],features:['Latin/R&B-influenced syncopation','broken time-hand phrase','backbeat retained']});
+    if(n.includes('go-go'))return reviewed({bpm:100,time:[0,2,4,6,8,10,12,14],kick:[0,3,6,8,11,14],snare:[4,12],ghost:[2,5,10,13],open:[7,15],features:['continuous dance pocket','busy interlocking kick/ghost vocabulary','open-hat lift']});
+    if(n.includes('gospel'))return reviewed({bpm:n.includes('shout')?150:92,time:[0,2,4,6,8,10,12,14],kick:n.includes('shout')?[0,4,8,12]:[0,3,7,10,14],snare:[4,12],ghost:[2,6,11,15],open:[14],features:['church-derived backbeat vocabulary','dynamic ghost notes','section-driving cymbal articulation']});
+    if(n.includes('neo-soul')||n.includes('dilla'))return reviewed({bpm:84,feel:'laid-back-neo-soul',time:[0,2,4,6,8,10,12,14],kick:[0,3,7,10,14],snare:[4,12],ghost:[2,6,11,15],features:['laid-back backbeat','soft ghost-note lattice','broken bass-drum support']});
+    if(n.includes('modern r&b'))return reviewed({bpm:88,time:[0,2,4,6,8,10,12,14],kick:[0,7,10,15],snare:[4,12],ghost:[11],features:['sparse contemporary pocket','late-feeling backbeat handled by FEEL','restrained ornamentation']});
+    return reviewed({bpm:100,kick:[0,3,7,10,14],snare:[4,12],ghost:[2,6,11,15],features:['general funk syncopation','protected backbeat','ghost-note vocabulary']});
   }
   if(f==='Blues / Shuffle'){
     if(n==='straight blues')return baseRock(row,{bpm:88,kick:[0,6,8,14],hatStep:2,crash:false}).finish();
     return baseRock(row,{bpm:n.includes('slow')?66:102,swing:66,kick:n.includes('rock')?[0,6,8,10,14]:[0,6,10,14],hatStep:2,feel:'shuffle',crash:false}).finish();
   }
   if(f==='Jazz'){
-    if(n.includes('up-tempo')||n.includes('bebop swing'))return baseJazz(row,{bpm:220,snare:[3,6,11,14],kick:[0,7,10,15]}).finish();
-    if(n.includes('brush ballad'))return baseJazz(row,{bpm:68,ride:[0,2,4,6,8,10,12,14],snare:[4,12],snareVel:'soft'}).finish();
-    if(n.includes('jazz shuffle'))return baseJazz(row,{bpm:110,swing:66,ride:[0,3,4,7,8,11,12,15],snare:[4,12],kick:[0,8]}).finish();
-    if(n.includes('big band'))return baseJazz(row,{bpm:152,snare:[4,12,14],kick:[0,8,14]}).finish();
-    if(n.includes('bebop comping'))return baseJazz(row,{bpm:184,snare:[2,6,9,14],kick:[0,7,13]}).finish();
-    if(n.includes('straight-8')){const b=makeBuilder(row,{bpm:112,feel:'straight-8-jazz',notes:'Straight-eighth modern jazz/ECM archetype.'});b.add('ride',b.every(2),'soft','time');b.add('snare',b.rep([6,13]),'ghost','ornament');b.add('kick',b.rep([0,9]),'soft','ornament');return b.finish();}
-    if(n==='fusion')return baseFunk(row,{bpm:116,kick:[0,3,7,8,10,14],ghost:[2,6,11,15],open:[14]}).finish({distinctiveFeatures:['funk-derived syncopation','jazz-oriented dynamic independence']});
-    return baseJazz(row,{bpm:n.includes('medium')?140:126}).finish();
+    const refs=['https://www.moderndrummer.com/2013/01/md-education-team-weighs-in-on-learning-jazz/','https://www.moderndrummer.com/article/up-tempo-jazz-ride-playing/'];
+    const jazz=(opt)=>{const b=makeBuilder(row,{bpm:opt.bpm||140,signature:opt.signature||'4/4',swing:opt.swing??58,feel:opt.feel||'swing',notes:'Reviewed jazz drum-set adaptation: time voice, comping and bass-drum roles are separated.',confidence:.82,sourceType:'battrochtek-reviewed-pedagogical-adaptation'});b.add(opt.timeVoice||'ride',b.rep(opt.time||[0,3,4,7,8,11,12,15]),opt.timeVel||'normal','time');if(opt.snare?.length)b.add('snare',b.rep(opt.snare),opt.snareVel||'ghost','ornament');if(opt.kick?.length)b.add('kick',b.rep(opt.kick),opt.kickVel||'soft','ornament');if(opt.cross?.length)b.add('crossStick',b.rep(opt.cross),'soft','ornament');if(opt.open?.length)b.add('openHat',b.rep(opt.open),'soft','time');const g=b.finish({distinctiveFeatures:opt.features||[],references:[...refs,...(opt.references||[])]});g.metadata.validationState='reviewed-pedagogical-adaptation';g.metadata.scoreState='reviewed-adaptation';g.metadata.leftFootRole=opt.leftFoot||'hi-hat 2 and 4 (semantic; dedicated pedal lane pending)';return g;};
+    if(n==='medium swing')return jazz({bpm:140,snare:[6,14],kick:[0,10],features:['ride cymbal is primary voice','light snare comping','soft bass-drum support','left-foot hi-hat on 2 and 4 represented semantically']});
+    if(n.includes('up-tempo')||n.includes('bebop swing'))return jazz({bpm:220,time:[0,2,4,6,8,10,12,14],snare:[3,6,11,14],kick:[7,15],features:['up-tempo ride straightens toward eighth-note flow','broken snare comping','very light sparse bass drum']});
+    if(n.includes('two-feel'))return jazz({bpm:132,time:[0,3,4,7,8,11,12,15],snare:[6,14],kick:[0,8],features:['two-beat bass foundation on 1 and 3','ride swing remains primary voice','sparse comping']});
+    if(n==='jazz ballad')return jazz({bpm:72,time:[0,3,4,7,8,11,12,15],snare:[6,14],snareVel:'ghost',kick:[0,8],features:['slow ride-led swing','very sparse snare comping','soft two-beat bass support']});
+    if(n.includes('brush ballad'))return jazz({bpm:68,timeVoice:'hat',time:[0,2,4,6,8,10,12,14],snare:[4,12],snareVel:'soft',kick:[0,8],features:['brush-ballad time represented as soft continuous hand pulse','restrained cross/backbeat gesture','minimal bass drum']});
+    if(n.includes('brush swing'))return jazz({bpm:116,timeVoice:'hat',time:[0,2,4,6,8,10,12,14],snare:[3,7,11,15],snareVel:'ghost',kick:[0,8],features:['brush sweep pulse separated from stick ride pattern','light comping','two-beat bass support']});
+    if(n.includes('jazz waltz'))return jazz({signature:'3/4',bpm:126,time:[0,3,4,7,8,11],snare:[5,10],kick:[0,8],features:['3/4 swing ride phrase','light comping across three-beat bar','soft bass support']});
+    if(n.includes('jazz shuffle'))return jazz({bpm:110,swing:66,time:[0,3,4,7,8,11,12,15],snare:[4,12],snareVel:'normal',kick:[0,8],features:['triplet shuffle surface','jazz balance with ride leading','backbeat more explicit than medium swing']});
+    if(n.includes('big band'))return jazz({bpm:152,snare:[4,12,14],snareVel:'normal',kick:[0,8,14],features:['ride time with ensemble figures','stronger setup/ensemble punctuation']});
+    if(n.includes('bebop comping'))return jazz({bpm:184,snare:[2,6,9,14],kick:[7,13],features:['independent snare comping','sparse bomb-style bass-drum accents','ride remains uninterrupted']});
+    if(n.includes('straight-8'))return jazz({bpm:112,swing:0,feel:'straight-8-jazz',time:[0,2,4,6,8,10,12,14],snare:[6,13],kick:[9],features:['straight-eighth ride time','open modern-jazz comping','space prioritized']});
+    if(n.includes('afro-cuban jazz 6/8'))return jazz({signature:'12/8',bpm:108,swing:0,feel:'afro-cuban-jazz-6-8',time:[0,4,6,10,12,16,18,22],snare:[6,18],kick:[0,12],features:['compound 6/8 bell/ride orientation','jazz comping layered over Afro-Cuban cycle','compound-meter bass support']});
+    if(n==='jazz-funk')return jazz({bpm:116,swing:0,feel:'jazz-funk',timeVoice:'hat',time:[0,2,4,6,8,10,12,14],snare:[4,12,15],snareVel:'normal',kick:[0,3,7,10,14],features:['complete funk backbeat and bass-drum pocket','jazz-derived dynamic independence','single time-hand voice rather than simultaneous ride/hi-hat']});
+    if(n==='fusion')return jazz({bpm:124,swing:0,feel:'fusion',time:[0,2,4,6,8,10,12,14],snare:[4,11,12],snareVel:'normal',kick:[0,3,7,8,10,14],features:['ride-led fusion time','syncopated funk-derived bass drum','active snare interaction']});
+    return jazz({bpm:126,snare:[6,14],kick:[0,10],features:['ride-led jazz time','independent comping']});
   }
   if(f==='Country / Americana'){
     if(n.includes('shuffle')||n.includes('rockabilly'))return baseRock(row,{bpm:n.includes('rockabilly')?170:112,swing:66,kick:[0,6,8,14],hatStep:2,feel:'shuffle',crash:false}).finish();
@@ -108,6 +130,7 @@ function templateFor(row){
     return baseReggae(row).finish();
   }
   if(f==='Electronic / Dance'){
+    if(n.includes('breakbeat')||n.includes('big beat')){const b=makeBuilder(row,{bpm:126,feel:'breakbeat',notes:'Complete breakbeat/Big Beat drum-set archetype with a stable subdivision layer and broken kick/snare phrase.'});b.add('hat',b.every(1),'ghost','time');b.add('hat',b.rep([0,4,8,12]),'normal','time');b.add('snare',b.rep([4,12]),'accent','core');b.add('snare',b.rep([7,15]),'ghost','ghost');b.add('kick',b.rep([0,3,6,10,14]),'strong','core');b.add('openHat',b.rep([11]),'normal','ornament');return b.finish({distinctiveFeatures:['complete sixteenth subdivision layer','broken syncopated bass-drum phrase','strong sampled-break backbeats','ghost pickup vocabulary']});}
     if(n.includes('drum & bass')){const b=makeBuilder(row,{bpm:174,feel:'breakbeat'});b.add('hat',b.every(1),'soft','time');b.add('snare',b.rep([4,12]),'accent','core');b.add('kick',b.rep([0,6,10,15]),'strong','core');return b.finish();}
     if(n.includes('dubstep'))return baseHouse(row,{bpm:140,kick:[0,10],snare:[8],hat:[2,6,10,14]}).finish();
     if(n.includes('footwork')||n.includes('juke')){const b=makeBuilder(row,{bpm:160,feel:'footwork'});b.add('hat',b.every(1),'soft','time');b.add('snare',b.rep([4,10,12]),'strong','core');b.add('kick',b.rep([0,3,7,9,14]),'strong','core');return b.finish();}
@@ -213,23 +236,6 @@ function templateFor(row){
 
 
 function grooveFingerprint(g){ return crypto.createHash('sha1').update(JSON.stringify([g.signature,(g.events||[]).map(e=>[e.tick,e.instrument,e.articulation,e.velocityClass])])).digest('hex').slice(0,16); }
-function disambiguatePedagogical(g,attempt=0){
-  const steps=barSteps(g.signature||'4/4'), total=steps*Math.max(1,g.phraseBars||2), seed=(hashInt(g.id)+attempt*17)>>>0;
-  const candidates=[]; for(let i=1;i<total;i+=2)candidates.push(i);
-  const occupied=new Set((g.events||[]).map(e=>`${Math.round(e.tick/(PPQ/4))}:${e.instrument}:${e.articulation}`));
-  const start=seed%Math.max(1,candidates.length);
-  for(let k=0;k<candidates.length*2;k++){
-    const step=candidates[(start+k)%candidates.length];
-    const preferSnare=g.family==='Jazz'||k>=candidates.length; const instrument=preferSnare?'snare':'hihat'; const articulation=preferSnare?'center':'closed'; const key=`${step}:${instrument}:${articulation}`;
-    if(occupied.has(key)) continue;
-    g.events.push({tick:Math.round(step*(PPQ/4)),duration:Math.round(PPQ/8),instrument,articulation,velocity:preferSnare?28:44,velocityClass:'ghost',limb:preferSnare?'otherHand':'timeHand',role:'ornament',microTimingMs:0,source:'catalog-disambiguation'});
-    g.events.sort((a,b)=>a.tick-b.tick);
-    g.metadata={...(g.metadata||{}),catalogDisambiguation:true,notes:`${g.metadata?.notes||''} Catalog-only low-level ornament added to avoid an exact duplicate canonical score; expert review remains required.`.trim(),confidence:Math.min(Number(g.metadata?.confidence||.6),.62)};
-    return g;
-  }
-  return g;
-}
-
 const taxonomy=parseCsv(await readFile(taxonomyPath,'utf8'));
 // Canonical JSON is the stable source of truth once it exists. Runtime Curated is an output,
 // never an input for later builds; this makes publication holds/merges fully idempotent.
@@ -250,7 +256,7 @@ for(const row of taxonomy){
   let groove;
   const prior=existingCanonical.get(row.id);
   const source=existing.get(row.id);
-  if(LATIN_REBUILD_IDS.has(row.id)){
+  if(LATIN_REBUILD_IDS.has(row.id)||V19_REBUILD_IDS.has(row.id)){
     groove=templateFor(row);
   } else if(prior){
     groove={...prior,id:row.id,family:row.family,tradition:row.tradition,name:row.archetype,metadata:{...(prior.metadata||{}),tier:row.tier,originalCoverage:row.coverage}};

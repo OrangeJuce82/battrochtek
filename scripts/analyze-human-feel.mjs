@@ -1,11 +1,10 @@
-import { readFile, readdir, stat, writeFile } from 'node:fs/promises';
+import { readFile, readdir, writeFile } from 'node:fs/promises';
 import { join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseMidi, TRACK_NAMES } from './groove-import-lib.mjs';
 
 const root = new URL('../grooves/Groove MIDI Dataset/', import.meta.url);
 const out = new URL('../musicology/human-feel-profiles.json', import.meta.url);
-const dirs = await readdir(root, { withFileTypes: true });
 const files=[];
 async function walk(dir){
   for(const ent of await readdir(dir,{withFileTypes:true})){

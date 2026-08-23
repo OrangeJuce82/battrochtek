@@ -922,6 +922,28 @@
                 afrobeat:"percussive", latin:"percussive", rock:"openkit", generic:"pocket"
             })[style] || "pocket";
         }
+        roleGrammar(style=this.style()) {
+            // Roles model a drummer's limbs/functions rather than independent instrument toggles.
+            return ({
+                jazz:{ time:"ride", otherHand:"comping", rightFoot:"feather-comping", leftFoot:"2-and-4", densityOrder:["snare-comping","kick-comping","broken-time","kit-color"] },
+                funk:{ time:"hihat", otherHand:"backbeat-ghosts", rightFoot:"syncopated-pocket", leftFoot:"optional-chick", densityOrder:["snare-ghosts","kick-ghosts","hihat-articulation","linear-interaction"] },
+                hiphop:{ time:"hihat", otherHand:"backbeat-ghosts", rightFoot:"broken-pocket", leftFoot:"minimal", densityOrder:["hihat-detail","snare-ghosts","kick-ghosts","linear-interaction"] },
+                reggae:{ time:"hihat", otherHand:"cross-stick-backbeat", rightFoot:"style-foundation", leftFoot:"optional", densityOrder:["hihat-articulation","kick-response","snare-ornament"] },
+                afrobeat:{ time:"hihat", otherHand:"interlocking", rightFoot:"cyclic-support", leftFoot:"optional", densityOrder:["time-articulation","interlock","kick-response","kit-color"] },
+                latin:{ time:"source", otherHand:"percussion-function", rightFoot:"low-drum-function", leftFoot:"optional", densityOrder:["time-articulation","percussion-response","low-drum-response","kit-color"] },
+                rock:{ time:"hihat", otherHand:"backbeat", rightFoot:"foundation", leftFoot:"minimal", densityOrder:["hihat-articulation","kick-support","crash-punctuation","tom-movement"] },
+                generic:{ time:"source", otherHand:"backbeat", rightFoot:"foundation", leftFoot:"minimal", densityOrder:["ornament","kick-support","kit-color"] }
+            })[style] || null;
+        }
+        densityVocabulary(style=this.style(), density=this.density/100) {
+            // Density unlocks style-specific vocabulary in stages instead of scaling every note equally.
+            const d=Math.max(0,Math.min(1,density));
+            const stage=d<.2?0:d<.4?1:d<.6?2:d<.8?3:4;
+            if(style==="jazz") return { stage, snare:stage>=1?d:0, kick:stage>=2?d*.65:0, time:stage>=3?d*.35:0, kit:stage>=4?d*.35:0 };
+            if(style==="funk") return { stage, snare:stage>=1?d:0, kick:stage>=2?d*.75:0, time:stage>=3?d*.55:0, kit:stage>=4?d*.35:0 };
+            if(style==="hiphop") return { stage, snare:stage>=2?d*.8:0, kick:stage>=3?d*.6:0, time:stage>=1?d*.55:0, kit:stage>=4?d*.2:0 };
+            return { stage, snare:stage>=1?d*.7:0, kick:stage>=2?d*.55:0, time:stage>=2?d*.45:0, kit:stage>=4?d*.3:0 };
+        }
         resolvedOrchestration(mode=this.orchestrationMode) {
             return mode==="auto" ? this.defaultOrchestrationForStyle(this.style()) : mode;
         }
@@ -947,6 +969,7 @@
             const resolved=this.resolvedOrchestration(mode);
             if(resolved==="ride") return "ride";
             if(resolved==="hihat"||resolved==="pocket"||resolved==="percussive") return "hihat";
+            if(mode==="auto") return this.roleGrammar()?.time || "source";
             return "source";
         }
         applyOrchestrationPreset(mode=this.orchestrationMode) {
@@ -1042,7 +1065,7 @@
             return Math.max(.72,Math.min(1.14,scale));
         }
         addGhostPhrases({ add, active, baseActive, baseStep, barSteps, steps, subdivision, style, d }) {
-            const R=TRACK_ROLES, p=this.profile(style);
+            const R=TRACK_ROLES, p=this.profile(style), vocab=this.densityVocabulary(style,d);
             const has=(track,st)=>active.has(track*steps+st), coreHas=(track,st)=>baseActive.has(track*steps+st);
             const candidatesAround=(track)=>{
                 const out=[];
@@ -1059,11 +1082,11 @@
             const kickCandidates=candidatesAround(R.kick);
             // Add response/preparation notes in musically meaningful gaps, not arbitrary cells.
             for(const st of snareCandidates){
-                const prob=p.ghostSnare*(.18+.82*d);
+                const prob=p.ghostSnare*(.18+.82*vocab.snare);
                 if(this.randomFor(`ghost-sn:${baseStep}:${st}`)<prob)add(R.snare,st,'ghost');
             }
             for(const st of kickCandidates){
-                const prob=p.ghostKick*(.12+.72*d);
+                const prob=p.ghostKick*(.12+.72*vocab.kick);
                 if(this.randomFor(`ghost-k:${baseStep}:${st}`)<prob)add(R.kick,st,'ghost');
             }
             // Style-specific response ghosts where the CORE leaves space.
@@ -1071,11 +1094,11 @@
                 const local=st-baseStep;
                 const offGrid=local%this.seq.signature.group!==0;
                 if(!offGrid)continue;
-                if(!has(R.snare,st) && this.randomFor(`ghost-gap-sn:${baseStep}:${st}`)<p.ghostSnare*d*.22)add(R.snare,st,'ghost');
-                if(!has(R.kick,st) && this.randomFor(`ghost-gap-k:${baseStep}:${st}`)<p.ghostKick*d*.15)add(R.kick,st,'ghost');
+                if(!has(R.snare,st) && this.randomFor(`ghost-gap-sn:${baseStep}:${st}`)<p.ghostSnare*vocab.snare*.22)add(R.snare,st,'ghost');
+                if(!has(R.kick,st) && this.randomFor(`ghost-gap-k:${baseStep}:${st}`)<p.ghostKick*vocab.kick*.15)add(R.kick,st,'ghost');
             }
         }
-        addFillPhrase({ add, remove, active, baseActive, fillSteps, baseStep, bar, bars, barSteps, steps, subdivision, style, f, e, cycle }) {
+        addFillPhrase({ add, remove, baseActive, fillSteps, baseStep, bar, bars, barSteps, steps, subdivision, style, f, e, cycle }) {
             // Strict contract: Fills = 0 never creates a fill note. Energy is independent and
             // still reshapes accents/dynamics later in apply(). Above zero, use a gentle curve
             // so very low values retain a small margin of manoeuvre without behaving like 50%.
@@ -1167,7 +1190,7 @@
             if(previous){
                 const pv=this.velocitySets(previous), previousActive=new Set(previous[0]||[]);
                 for(const i of previousActive){
-                    const t=Math.floor(i/steps), st=i%steps;
+                    const t=Math.floor(i/steps);
                     if(baseActive.has(i)||!isLayerAllowed(t))continue;
                     if([R.tomHigh,R.tomMid,R.tomFloor,R.crash].includes(t))continue;
                     if((t===R.kick||t===R.snare) && !pv.ghost.has(i) && !pv.soft.has(i))continue;
@@ -1248,7 +1271,7 @@
                 }
                 if(this.layers.crash&&e>.54&&this.randomFor(`crash:${cycle}:${bar}`)<Math.min(.9,(e-.48)*p.crash))add(R.crash,baseStep,e>.78?"accent":"strong");
                 this.addGhostPhrases({ add, active, baseActive, baseStep, barSteps, steps, subdivision, style, d });
-                endsWithFill = this.addFillPhrase({ add, remove, active, baseActive, fillSteps, baseStep, bar, bars, barSteps, steps, subdivision, style, f, e, cycle }) || endsWithFill;
+                endsWithFill = this.addFillPhrase({ add, remove, baseActive, fillSteps, baseStep, bar, bars, barSteps, steps, subdivision, style, f, e, cycle }) || endsWithFill;
             }
             // ENERGY is bipolar around 50%. Low energy keeps the rhythmic CORE but softens
             // accents and dynamics; high energy increases contrast without inventing extra notes.
@@ -3072,3 +3095,4 @@
         window.setTimeout(reportMissingAlpine, 500);
     }
 })();
+hi

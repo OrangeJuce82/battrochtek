@@ -125,7 +125,7 @@
     const I18N_RESOURCES = Object.freeze({
         fr: { translation: {
             "toolbar.source":"SOURCE", "toolbar.style":"STYLE", "toolbar.groove":"GROOVE", "toolbar.variant":"VARIANTE", "toolbar.swing":"SWING",
-            "feel.title":"FEEL", "feel.subtitle":"FEEL actif : le batteur interprète le groove. AUTO fait évoluer la performance à chaque tour.", "feel.auto":"AUTO", "feel.autoTooltip":"Nouvelle interprétation à chaque tour", "feel.energy":"ÉNERGIE", "feel.stable":"STABLE", "feel.fills":"FILLS", "feel.density":"DENSITÉ", "feel.drummerStyle":"STYLE DE BATTEUR", "feel.orchestration":"ORCHESTRATION", "feel.xyAria":"Pad Feel : horizontal fills, vertical énergie", "feel.layersAria":"Couches que FEEL peut agrémenter", "feel.styleAuto":"AUTO · style du groove", "feel.styleFunk":"Funk / Soul", "feel.styleHipHop":"Hip-Hop / Neo-Soul", "feel.styleJazz":"Jazz / Swing", "feel.styleReggae":"Reggae / Ska / Dub", "feel.styleAfrobeat":"Afrobeat / Highlife", "feel.styleLatin":"Latin / Afro-Cubain", "feel.styleRock":"Rock / Pop", "feel.hhTooltip":"Agrémenter le charley · OFF = conserver exactement le charley source", "feel.rideTooltip":"Autoriser FEEL à agrémenter le ride · les notes source restent conservées", "feel.crashTooltip":"Autoriser FEEL à agrémenter les crashs · les notes source restent conservées", "feel.tomsTooltip":"Autoriser FEEL à agrémenter les toms · les notes source restent conservées",
+            "feel.title":"FEEL", "feel.subtitle":"FEEL actif : le batteur interprète le groove. AUTO fait évoluer la performance à chaque tour.", "feel.auto":"AUTO", "feel.autoTooltip":"Nouvelle interprétation à chaque tour", "feel.energy":"ÉNERGIE", "feel.stable":"STABLE", "feel.fills":"FILLS", "feel.density":"DENSITÉ", "feel.orchestrationProfile":"ORCHESTRATION", "feel.orchestration":"INSTRUMENTS", "feel.xyAria":"Pad Feel : horizontal fills, vertical énergie", "feel.layersAria":"Couches que FEEL peut agrémenter", "feel.orchAuto":"AUTO · selon le groove", "feel.orchPocket":"Pocket", "feel.orchHihat":"Hi-Hat", "feel.orchRide":"Ride", "feel.orchOpenKit":"Open Kit", "feel.orchPercussive":"Percussif", "feel.orchFullKit":"Full Kit", "feel.hhTooltip":"Agrémenter le charley · OFF = conserver exactement le charley source", "feel.rideTooltip":"Autoriser FEEL à agrémenter le ride · les notes source restent conservées", "feel.crashTooltip":"Autoriser FEEL à agrémenter les crashs · les notes source restent conservées", "feel.tomsTooltip":"Autoriser FEEL à agrémenter les toms · les notes source restent conservées", "feel.orchInfoAuto":"Choisit le rôle de la main de time selon le groove, sans modifier le CORE.", "feel.orchInfoPocket":"Main de time au hi-hat, jeu compact, cymbales et toms très discrets.", "feel.orchInfoHihat":"Conserve la main de time au hi-hat et privilégie ses articulations.", "feel.orchInfoRide":"Déplace la main de time du hi-hat vers le ride en conservant le même rythme.", "feel.orchInfoOpenKit":"Autorise des passages naturels entre hi-hat, ride et crash ; toms surtout en transition.", "feel.orchInfoPercussive":"Garde le time stable et ouvre davantage les déplacements vers les toms.", "feel.orchInfoFullKit":"Tout le kit est disponible, toujours sous les contraintes des deux mains et deux pieds.",
             "search.placeholder":"Rechercher un groove…", "search.aria":"Rechercher dans tous les grooves", "search.results":"Résultats de recherche", "common.off":"Désactivé", "language.tooltip":"Langue", "theme.toggle":"Basculer le thème clair / sombre", "share.tooltip":"Partager ou sauvegarder ce groove", "audio.output":"Niveau de sortie audio", "audio.outputAria":"VU-mètre de sortie", "toolbar.sourceTooltip":"Source des grooves", "toolbar.styleTooltip":"Style musical", "toolbar.grooveTooltip":"Groove", "toolbar.preview":"Préécouter le groove sélectionné", "toolbar.addPatch":"Ajouter le patch à partir de la mémoire sélectionnée", "toolbar.variantTooltip":"Créer une variante musicale du groove courant", "kit.tooltip":"Kit de batterie", "swing.tooltip":"Swing en pourcentage", "transport.playPause":"Lecture / arrêt (Espace)","transport.stop":"Arrêt", "transport.tap":"Tap tempo (T)", "transport.tempoDown":"Diminuer le tempo", "transport.tempoUp":"Augmenter le tempo", "transport.tempo":"Tempo en BPM", "transport.signature":"Signature rythmique", "practice.countIn":"DÉCOMPTE", "memory.chain":"Chaîner les mémoires", "memory.undo":"Annuler", "memory.redo":"Rétablir", "memory.save":"Sauvegarder dans la mémoire sélectionnée (Ctrl+S)", "memory.new":"Nouveau motif vierge", "memory.clear":"Vider les mémoires",
             "practice.title":"Entraînement", "practice.subtitle":"Configure l’entraînement, puis appuie sur Lecture pour démarrer.", "practice.progression":"PROGRESSION", "practice.modeTempo":"Tempo", "practice.modeLayers":"Couches", "practice.modeCombined":"Couches + tempo", "practice.start":"DÉPART", "practice.target":"OBJECTIF", "practice.step":"PALIER", "practice.loops":"TOURS / NIVEAU", "practice.oneBar":"1 mesure", "practice.twoBars":"2 mesures", "practice.startButton":"Démarrer", "practice.stopButton":"Arrêter", "practice.ready":"Prêt à démarrer", "practice.explainer":"Couches : charley → caisse claire → grosse caisse → autres éléments du groove → accents → notes fantômes.",
             "practice.hihat":"Charley", "practice.snare":"Charley + caisse claire", "practice.kick":"Charley + caisse claire + grosse caisse", "practice.accents":"+ accents", "practice.ghosts":"+ notes fantômes", "practice.tempoStatus":"{{tempo}} → {{target}} BPM", "practice.loop":"tour {{current}}/{{total}}", "practice.started":"Entraînement démarré à {{tempo}} BPM.", "practice.stopped":"Entraînement arrêté.", "practice.targetReached":"Objectif atteint : {{tempo}} BPM. On continue.", "practice.layersDone":"Toutes les couches sont en place.", "practice.layersToTempo":"Couches acquises. Progression tempo vers {{target}} BPM.", "practice.level":"Entraînement : {{label}}.", "practice.tempo":"Entraînement : {{tempo}} BPM.", "practice.changedStopped":"Entraînement arrêté : les réglages ont été modifiés.",
@@ -140,7 +140,7 @@
         }},
         en: { translation: {
             "toolbar.source":"SOURCE", "toolbar.style":"STYLE", "toolbar.groove":"GROOVE", "toolbar.variant":"VARIATION", "toolbar.swing":"SWING",
-            "feel.title":"FEEL", "feel.subtitle":"FEEL active: the drummer interprets the groove. AUTO evolves the performance each loop.", "feel.auto":"AUTO", "feel.autoTooltip":"New interpretation each loop", "feel.energy":"ENERGY", "feel.stable":"STABLE", "feel.fills":"FILLS", "feel.density":"DENSITY", "feel.drummerStyle":"DRUMMER STYLE", "feel.orchestration":"ORCHESTRATION", "feel.xyAria":"Feel pad: fills horizontally, energy vertically", "feel.layersAria":"Layers FEEL may embellish", "feel.styleAuto":"AUTO · groove style", "feel.styleFunk":"Funk / Soul", "feel.styleHipHop":"Hip-Hop / Neo-Soul", "feel.styleJazz":"Jazz / Swing", "feel.styleReggae":"Reggae / Ska / Dub", "feel.styleAfrobeat":"Afrobeat / Highlife", "feel.styleLatin":"Latin / Afro-Cuban", "feel.styleRock":"Rock / Pop", "feel.hhTooltip":"Embellish hi-hat · OFF = preserve the source hi-hat exactly", "feel.rideTooltip":"Allow FEEL to embellish ride · source notes stay preserved", "feel.crashTooltip":"Allow FEEL to embellish crashes · source notes stay preserved", "feel.tomsTooltip":"Allow FEEL to embellish toms · source notes stay preserved",
+            "feel.title":"FEEL", "feel.subtitle":"FEEL active: the drummer interprets the groove. AUTO evolves the performance each loop.", "feel.auto":"AUTO", "feel.autoTooltip":"New interpretation each loop", "feel.energy":"ENERGY", "feel.stable":"STABLE", "feel.fills":"FILLS", "feel.density":"DENSITY", "feel.orchestrationProfile":"ORCHESTRATION", "feel.orchestration":"INSTRUMENTS", "feel.xyAria":"Feel pad: fills horizontally, energy vertically", "feel.layersAria":"Layers FEEL may embellish", "feel.orchAuto":"AUTO · from groove", "feel.orchPocket":"Pocket", "feel.orchHihat":"Hi-Hat", "feel.orchRide":"Ride", "feel.orchOpenKit":"Open Kit", "feel.orchPercussive":"Percussive", "feel.orchFullKit":"Full Kit", "feel.hhTooltip":"Embellish hi-hat · OFF = preserve the source hi-hat exactly", "feel.rideTooltip":"Allow FEEL to embellish ride · source notes stay preserved", "feel.crashTooltip":"Allow FEEL to embellish crashes · source notes stay preserved", "feel.tomsTooltip":"Allow FEEL to embellish toms · source notes stay preserved", "feel.orchInfoAuto":"Chooses the time-hand role from the groove without changing the CORE.", "feel.orchInfoPocket":"Time hand stays on hi-hat; compact playing with very restrained cymbals and toms.", "feel.orchInfoHihat":"Keeps the time hand on hi-hat and focuses on hi-hat articulations.", "feel.orchInfoRide":"Moves the time hand from hi-hat to ride while preserving the same rhythm.", "feel.orchInfoOpenKit":"Allows natural moves between hi-hat, ride and crash; toms mainly for transitions.", "feel.orchInfoPercussive":"Keeps time stable while allowing more movement toward the toms.", "feel.orchInfoFullKit":"The whole kit is available, still constrained by two hands and two feet.",
             "search.placeholder":"Search grooves…", "search.aria":"Search all grooves", "search.results":"Search results", "common.off":"Off", "language.tooltip":"Language", "theme.toggle":"Toggle light / dark theme", "share.tooltip":"Share or save this groove", "audio.output":"Audio output level", "audio.outputAria":"Output VU meter", "toolbar.sourceTooltip":"Groove source", "toolbar.styleTooltip":"Music style", "toolbar.grooveTooltip":"Groove", "toolbar.preview":"Preview selected groove", "toolbar.addPatch":"Add the patch from the selected memory onward", "toolbar.variantTooltip":"Create a musical variation of the current groove", "kit.tooltip":"Drum kit", "swing.tooltip":"Swing percentage", "transport.playPause":"Play / stop (Space)","transport.stop":"Stop", "transport.tap":"Tap tempo (T)", "transport.tempoDown":"Decrease tempo", "transport.tempoUp":"Increase tempo", "transport.tempo":"Tempo in BPM", "transport.signature":"Time signature", "practice.countIn":"COUNT-IN", "memory.chain":"Chain memories", "memory.undo":"Undo", "memory.redo":"Redo", "memory.save":"Save to selected memory (Ctrl+S)", "memory.new":"New empty pattern", "memory.clear":"Clear memories",
             "practice.title":"Practice", "practice.subtitle":"Practice the groove by tempo or by layers.", "practice.progression":"PROGRESSION", "practice.modeTempo":"Tempo", "practice.modeLayers":"Layers", "practice.modeCombined":"Layers + tempo", "practice.start":"START", "practice.target":"TARGET", "practice.step":"STEP", "practice.loops":"LOOPS / LEVEL", "practice.oneBar":"1 bar", "practice.twoBars":"2 bars", "practice.startButton":"Start", "practice.stopButton":"Stop", "practice.ready":"Ready to start", "practice.explainer":"Layers: hi-hat → snare → kick → other groove parts → accents → ghost notes.",
             "practice.hihat":"Hi-hat", "practice.snare":"Hi-hat + snare", "practice.kick":"Hi-hat + snare + kick", "practice.accents":"+ accents", "practice.ghosts":"+ ghost notes", "practice.tempoStatus":"{{tempo}} → {{target}} BPM", "practice.loop":"loop {{current}}/{{total}}", "practice.started":"Practice started at {{tempo}} BPM.", "practice.stopped":"Practice stopped.", "practice.targetReached":"Target reached: {{tempo}} BPM. Keep going.", "practice.layersDone":"All layers are active.", "practice.layersToTempo":"Layers complete. Tempo progression to {{target}} BPM.", "practice.level":"Practice: {{label}}.", "practice.tempo":"Practice: {{tempo}} BPM.", "practice.changedStopped":"Practice stopped because its settings changed.",
@@ -155,7 +155,7 @@
         }},
         es: { translation: {
             "toolbar.source":"FUENTE", "toolbar.style":"ESTILO", "toolbar.groove":"GROOVE", "toolbar.variant":"VARIACIÓN", "toolbar.swing":"SWING",
-            "feel.title":"FEEL", "feel.subtitle":"FEEL activo: el baterista interpreta el groove. AUTO hace evolucionar la interpretación en cada vuelta.", "feel.auto":"AUTO", "feel.autoTooltip":"Nueva interpretación en cada vuelta", "feel.energy":"ENERGÍA", "feel.stable":"ESTABLE", "feel.fills":"FILLS", "feel.density":"DENSIDAD", "feel.drummerStyle":"ESTILO DE BATERISTA", "feel.orchestration":"ORQUESTACIÓN", "feel.xyAria":"Pad Feel: fills en horizontal, energía en vertical", "feel.layersAria":"Capas que FEEL puede ornamentar", "feel.styleAuto":"AUTO · estilo del groove", "feel.styleFunk":"Funk / Soul", "feel.styleHipHop":"Hip-Hop / Neo-Soul", "feel.styleJazz":"Jazz / Swing", "feel.styleReggae":"Reggae / Ska / Dub", "feel.styleAfrobeat":"Afrobeat / Highlife", "feel.styleLatin":"Latin / Afrocubano", "feel.styleRock":"Rock / Pop", "feel.hhTooltip":"Ornamentar el charles · OFF = conservar exactamente el charles fuente", "feel.rideTooltip":"Permitir que FEEL ornamente el ride · las notas fuente se conservan", "feel.crashTooltip":"Permitir que FEEL ornamente los crashes · las notas fuente se conservan", "feel.tomsTooltip":"Permitir que FEEL ornamente los toms · las notas fuente se conservan",
+            "feel.title":"FEEL", "feel.subtitle":"FEEL activo: el baterista interpreta el groove. AUTO hace evolucionar la interpretación en cada vuelta.", "feel.auto":"AUTO", "feel.autoTooltip":"Nueva interpretación en cada vuelta", "feel.energy":"ENERGÍA", "feel.stable":"ESTABLE", "feel.fills":"FILLS", "feel.density":"DENSIDAD", "feel.orchestrationProfile":"ORQUESTACIÓN", "feel.orchestration":"INSTRUMENTOS", "feel.xyAria":"Pad Feel: fills en horizontal, energía en vertical", "feel.layersAria":"Capas que FEEL puede ornamentar", "feel.orchAuto":"AUTO · según el groove", "feel.orchPocket":"Pocket", "feel.orchHihat":"Hi-Hat", "feel.orchRide":"Ride", "feel.orchOpenKit":"Kit abierto", "feel.orchPercussive":"Percusivo", "feel.orchFullKit":"Kit completo", "feel.hhTooltip":"Ornamentar el charles · OFF = conservar exactamente el charles fuente", "feel.rideTooltip":"Permitir que FEEL ornamente el ride · las notas fuente se conservan", "feel.crashTooltip":"Permitir que FEEL ornamente los crashes · las notas fuente se conservan", "feel.tomsTooltip":"Permitir que FEEL ornamente los toms · las notas fuente se conservan", "feel.orchInfoAuto":"Elige el papel de la mano de tiempo según el groove sin modificar el CORE.", "feel.orchInfoPocket":"La mano de tiempo queda en el charles; juego compacto con platos y toms muy discretos.", "feel.orchInfoHihat":"Mantiene la mano de tiempo en el charles y prioriza sus articulaciones.", "feel.orchInfoRide":"Mueve la mano de tiempo del charles al ride conservando el mismo ritmo.", "feel.orchInfoOpenKit":"Permite cambios naturales entre charles, ride y crash; toms sobre todo en transiciones.", "feel.orchInfoPercussive":"Mantiene el tiempo estable y permite más desplazamientos hacia los toms.", "feel.orchInfoFullKit":"Todo el kit está disponible, siempre limitado por dos manos y dos pies.",
             "search.placeholder":"Buscar grooves…", "search.aria":"Buscar en todos los grooves", "search.results":"Resultados de búsqueda", "common.off":"Off", "language.tooltip":"Idioma", "theme.toggle":"Cambiar tema claro / oscuro", "share.tooltip":"Compartir o guardar este groove", "audio.output":"Nivel de salida de audio", "audio.outputAria":"VU-metro de salida", "toolbar.sourceTooltip":"Fuente de grooves", "toolbar.styleTooltip":"Estilo musical", "toolbar.grooveTooltip":"Groove", "toolbar.preview":"Preescuchar el groove seleccionado", "toolbar.addPatch":"Añadir el patch desde la memoria seleccionada", "toolbar.variantTooltip":"Crear una variación musical del groove actual", "kit.tooltip":"Kit de batería", "swing.tooltip":"Swing en porcentaje", "transport.playPause":"Reproducir / stop (Espacio)","transport.stop":"Stop", "transport.tap":"Tap tempo (T)", "transport.tempoDown":"Disminuir tempo", "transport.tempoUp":"Aumentar tempo", "transport.tempo":"Tempo en BPM", "transport.signature":"Compás", "practice.countIn":"COUNT-IN", "memory.chain":"Encadenar memorias", "memory.undo":"Deshacer", "memory.redo":"Rehacer", "memory.save":"Guardar en la memoria seleccionada (Ctrl+S)", "memory.new":"Nuevo patrón vacío", "memory.clear":"Vaciar memorias",
             "practice.title":"Práctica", "practice.subtitle":"Practica el groove por tempo o por capas.", "practice.progression":"PROGRESIÓN", "practice.modeTempo":"Tempo", "practice.modeLayers":"Capas", "practice.modeCombined":"Capas + tempo", "practice.start":"INICIO", "practice.target":"OBJETIVO", "practice.step":"PASO", "practice.loops":"VUELTAS / NIVEL", "practice.oneBar":"1 compás", "practice.twoBars":"2 compases", "practice.startButton":"Empezar", "practice.stopButton":"Parar", "practice.ready":"Listo para empezar", "practice.explainer":"Capas: charles → caja → bombo → otras partes del groove → acentos → ghost notes.",
             "practice.hihat":"Charles", "practice.snare":"Charles + caja", "practice.kick":"Charles + caja + bombo", "practice.accents":"+ acentos", "practice.ghosts":"+ ghost notes", "practice.tempoStatus":"{{tempo}} → {{target}} BPM", "practice.loop":"vuelta {{current}}/{{total}}", "practice.started":"Práctica iniciada a {{tempo}} BPM.", "practice.stopped":"Práctica detenida.", "practice.targetReached":"Objetivo alcanzado: {{tempo}} BPM. Continúa.", "practice.layersDone":"Todas las capas están activas.", "practice.layersToTempo":"Capas completadas. Progresión de tempo hasta {{target}} BPM.", "practice.level":"Práctica: {{label}}.", "practice.tempo":"Práctica: {{tempo}} BPM.", "practice.changedStopped":"Práctica detenida porque cambiaron sus ajustes.",
@@ -809,9 +809,11 @@
             this.energy = 50;
             this.fills = 50;
             this.seed = 1;
+            // Stable player identity: AUTO changes phrases, not the drummer's underlying pocket.
+            this.playerSeed = 0x5d31;
             this.layers = { hihat:true, ride:false, crash:true, toms:false };
             this.familyName = "";
-            this.styleOverride = "auto";
+            this.orchestrationMode = "auto";
             this.enabled = false;
             this.auto = true;
         }
@@ -867,8 +869,12 @@
             x ^= x << 13; x ^= x >>> 17; x ^= x << 5;
             return (x >>> 0) / 4294967295;
         }
+        playerRandomFor(key) {
+            let x = this.hash(`${this.playerSeed}|${key}`) || 1;
+            x ^= x << 13; x ^= x >>> 17; x ^= x << 5;
+            return (x >>> 0) / 4294967295;
+        }
         style() {
-            if(this.styleOverride && this.styleOverride!=="auto") return this.styleOverride;
             const family=String(this.familyName || "").toLowerCase();
             if (/funk|soul|motown|r&b|neo.?soul/.test(family)) return "funk";
             if (/reggae|ska|dub|rocksteady/.test(family)) return "reggae";
@@ -891,21 +897,41 @@
                 generic:{ ghostSnare:.30, ghostKick:.20, fill:.65, stability:.86, snareLagMs:5, kickLagMs:1, handLeadMs:-1, hhOpen:.55, hhOrn:.72, ride:.45, crash:.55, toms:.55 }
             })[style] || null;
         }
-        orchestrationPreset(style=this.style()) {
-            const presets={
-                funk:{ hihat:true, ride:false, crash:true, toms:false },
-                hiphop:{ hihat:true, ride:false, crash:false, toms:false },
-                jazz:{ hihat:false, ride:true, crash:false, toms:true },
-                reggae:{ hihat:true, ride:true, crash:false, toms:false },
-                afrobeat:{ hihat:true, ride:true, crash:false, toms:true },
-                latin:{ hihat:true, ride:true, crash:true, toms:true },
-                rock:{ hihat:true, ride:true, crash:true, toms:true },
-                generic:{ hihat:true, ride:false, crash:true, toms:false }
-            };
-            return { ...(presets[style] || presets.generic) };
+        defaultOrchestrationForStyle(style=this.style()) {
+            return ({
+                funk:"hihat", hiphop:"pocket", jazz:"ride", reggae:"hihat",
+                afrobeat:"percussive", latin:"percussive", rock:"openkit", generic:"pocket"
+            })[style] || "pocket";
         }
-        applyOrchestrationPreset(style=this.style()) {
-            this.layers=this.orchestrationPreset(style);
+        resolvedOrchestration(mode=this.orchestrationMode) {
+            return mode==="auto" ? this.defaultOrchestrationForStyle(this.style()) : mode;
+        }
+        orchestrationPreset(mode=this.orchestrationMode) {
+            const resolved=this.resolvedOrchestration(mode);
+            // These switches are permissions/roles, not mutes. In particular, Ride means
+            // "move the time hand to ride"; it does not imply tom activity.
+            const presets={
+                pocket:{ hihat:true, ride:false, crash:false, toms:false },
+                hihat:{ hihat:true, ride:false, crash:false, toms:false },
+                ride:{ hihat:false, ride:true, crash:false, toms:false },
+                openkit:{ hihat:true, ride:true, crash:true, toms:false },
+                percussive:{ hihat:true, ride:false, crash:false, toms:true },
+                fullkit:{ hihat:true, ride:true, crash:true, toms:true }
+            };
+            return { ...(presets[resolved] || presets.pocket) };
+        }
+        orchestrationInfoKey(mode=this.orchestrationMode) {
+            const resolved=mode==="auto" ? "auto" : this.resolvedOrchestration(mode);
+            return `feel.orchInfo${({auto:"Auto",pocket:"Pocket",hihat:"Hihat",ride:"Ride",openkit:"OpenKit",percussive:"Percussive",fullkit:"FullKit"})[resolved]||"Auto"}`;
+        }
+        timeVoice(mode=this.orchestrationMode) {
+            const resolved=this.resolvedOrchestration(mode);
+            if(resolved==="ride") return "ride";
+            if(resolved==="hihat"||resolved==="pocket"||resolved==="percussive") return "hihat";
+            return "source";
+        }
+        applyOrchestrationPreset(mode=this.orchestrationMode) {
+            this.layers=this.orchestrationPreset(mode);
             return this.layers;
         }
         velocitySets(grid) {
@@ -920,11 +946,12 @@
             const isCore=(track,step)=>(track===R.kick||track===R.snare)&&isBase(track,step);
             const isSourceHatStep=step=>isBase(R.closedHat,step)||isBase(R.openHat,step);
             const isQuiet=(track,step)=>{ const i=track*steps+step; return soft.has(i)||ghost.has(i); };
-            const primaryHand=style==='jazz' ? R.ride : R.closedHat;
+            const primaryHand=this.timeVoice()==='ride' ? R.ride : R.closedHat;
             const priority=(track,step)=>{
                 if(isCore(track,step)) return 1000;
                 // A source hi-hat hit remains structural even if FEEL only changes its articulation.
                 if((track===R.closedHat||track===R.openHat)&&isSourceHatStep(step)) return 770;
+                if(track===R.ride && this.timeVoice()==='ride' && isSourceHatStep(step)) return 770;
                 if(isBase(track,step)) return 760;
                 if(fillSteps.has(step) && (track===R.tomHigh||track===R.tomMid||track===R.tomFloor)) return 710;
                 if(fillSteps.has(step) && track===R.snare) return 700;
@@ -982,14 +1009,15 @@
             else if(track===R.kick) mean=p.kickLagMs;
             else if([R.closedHat,R.openHat,R.ride].includes(track)) mean=p.handLeadMs;
             const tempoScale=Math.max(.55,Math.min(1.15,105/Math.max(55,tempo)));
-            const jitter=(this.randomFor(`timing:${this.seq.memorySlot}:${track}:${step}`)-.5)*5.5;
+            const limb=[R.closedHat,R.openHat,R.ride,R.crash].includes(track)?"timeHand":track===R.snare||[R.tomHigh,R.tomMid,R.tomFloor].includes(track)?"otherHand":track===R.kick?"rightFoot":"other";
+            const jitter=(this.playerRandomFor(`timing:${limb}:${track}:${step}`)-.5)*5.5;
             return (mean+jitter)*tempoScale/1000;
         }
         performanceGainScale(track, step, velocity) {
             if (!this.enabled || !this.cores.has(this.seq.memorySlot)) return 1;
             const R=TRACK_ROLES;
             const spread=velocity==='ghost'?.16:velocity==='soft'?.11:.065;
-            let scale=1+(this.randomFor(`velocity:${this.seq.memorySlot}:${track}:${step}`)-.5)*spread*2;
+            let scale=1+(this.playerRandomFor(`velocity:${track}:${step}`)-.5)*spread*2;
             if(track===R.snare && velocity==='ghost') scale*=.88;
             if(track===R.kick && velocity==='ghost') scale*=.82;
             return Math.max(.72,Math.min(1.14,scale));
@@ -1029,36 +1057,46 @@
             }
         }
         addFillPhrase({ add, remove, active, baseActive, fillSteps, baseStep, bar, bars, barSteps, steps, subdivision, style, f, e, cycle }) {
-            // 0–5% is a true no-fill zone. Above it, the response rises progressively so
-            // very low settings leave breathing room instead of sneaking in extra transitions.
-            if(f<=.05)return false;
+            // Strict contract: Fills = 0 never creates a fill note. Energy is independent and
+            // still reshapes accents/dynamics later in apply(). Above zero, use a gentle curve
+            // so very low values retain a small margin of manoeuvre without behaving like 50%.
+            if(f<=0)return false;
             const R=TRACK_ROLES, p=this.profile(style);
-            const fillAmount=Math.pow((f-.05)/.95,1.35);
+            const fillAmount=Math.pow(f,1.75);
             const phraseAccent = cycle>0 && (cycle%8===0 ? 1.8 : cycle%4===0 ? 1.45 : cycle%2===0 ? 1.08 : .72);
             const finalBarFactor=bar===bars-1?1.18:.62;
             const chance=Math.min(.94, fillAmount*p.fill*phraseAccent*finalBarFactor);
             if(this.randomFor(`fill:${cycle}:${bar}`)>=chance)return false;
             const intensity=fillAmount*.58+e*.42;
-            const maxLen=Math.max(1,Math.min(8,Math.round(1+intensity*6)));
+            const tempo=this.seq.tempo;
+            const speedLimit=tempo>=180?4:tempo>=145?6:8;
+            const maxLen=Math.max(1,Math.min(speedLimit,Math.round(1+intensity*6)));
             const fillLen=Math.max(1,Math.round(maxLen*(.55+this.randomFor(`fill-len:${cycle}:${bar}`)*.45)));
             const end=Math.min(steps-1,baseStep+barSteps-1);
             const first=Math.max(baseStep,end-(fillLen-1)*subdivision);
             const phraseType=this.randomFor(`fill-type:${cycle}:${bar}`);
             const toms=this.layers.toms;
+            // Sticking vocabulary: the pattern determines which hand continues the gesture.
+            // Surface choices then follow reachable, mostly adjacent movements around the kit.
+            const stickings=[["R","L"],["R","L","L","R"],["R","R","L","L"],["R","L","R","R","L","R"]];
+            const sticking=stickings[Math.floor(this.randomFor(`sticking:${cycle}:${bar}`)*stickings.length)%stickings.length];
+            const tomPath=[R.snare,R.tomHigh,R.tomMid,R.tomFloor];
             const events=[];
             for(let n=0,st=first;st<=end;n++,st+=subdivision){
+                const hand=sticking[n%sticking.length];
                 let track=R.snare, vel=n===fillLen-1&&e>.62?'accent':n%2?'normal':'strong';
                 if(toms && phraseType>.25){
+                    // At higher tempi avoid implausible large jumps: descend through adjacent surfaces.
                     const progress=fillLen<=1?1:n/(fillLen-1);
-                    if(phraseType<.58) track=progress<.34?R.snare:progress<.58?R.tomHigh:progress<.82?R.tomMid:R.tomFloor;
-                    else if(phraseType<.82) track=[R.snare,R.tomHigh,R.snare,R.tomMid,R.tomFloor][n%5];
-                    else track=[R.tomHigh,R.snare,R.tomMid,R.snare,R.tomFloor][n%5];
+                    let pathIndex=Math.min(tomPath.length-1,Math.floor(progress*tomPath.length));
+                    if(hand==="L" && pathIndex>0 && this.randomFor(`stick-reach:${cycle}:${bar}:${n}`)<.28)pathIndex--;
+                    track=tomPath[pathIndex];
                 } else if(phraseType<.34) {
                     track=n%3===1?R.kick:R.snare; vel=track===R.kick?'strong':(n===fillLen-1?'accent':'normal');
                 } else {
                     track=R.snare; vel=n===0?'ghost':n===fillLen-1?'accent':n%2?'ghost':'normal';
                 }
-                events.push([track,st,vel]); fillSteps.add(st);
+                events.push([track,st,vel,hand]); fillSteps.add(st);
             }
             for(const [track,st,vel] of events){
                 if(baseActive.has(track*steps+st) && (track===R.snare||track===R.kick))continue;
@@ -1090,6 +1128,20 @@
             // The complete source groove is always copied first so FEEL cannot erase its identity.
             const isLayerAllowed=t=>{ if(t===R.closedHat||t===R.openHat)return this.layers.hihat; if(t===R.ride)return this.layers.ride; if(t===R.crash)return this.layers.crash; if(t===R.tomHigh||t===R.tomMid||t===R.tomFloor)return this.layers.toms; return true; };
             for(const i of baseActive){ active.add(i); copyVelocity(i); }
+            const timeVoice=this.timeVoice();
+            // Limb orchestration: moving to Ride transfers the source hi-hat time pattern to the
+            // ride instead of layering a second independent rhythm. CORE is never modified, so
+            // switching back restores the original hi-hat exactly.
+            if(timeVoice==="ride"){
+                for(let st=0;st<steps;st++){
+                    const closedIdx=R.closedHat*steps+st, openIdx=R.openHat*steps+st, rideIdx=R.ride*steps+st;
+                    const sourceIdx=baseActive.has(openIdx)?openIdx:(baseActive.has(closedIdx)?closedIdx:null);
+                    if(sourceIdx===null)continue;
+                    active.delete(closedIdx); active.delete(openIdx); clearV(closedIdx); clearV(openIdx);
+                    active.add(rideIdx); clearV(rideIdx);
+                    if(baseV.accent.has(sourceIdx))accent.add(rideIdx); else if(baseV.strong.has(sourceIdx))strong.add(rideIdx); else if(baseV.soft.has(sourceIdx))soft.add(rideIdx); else if(baseV.ghost.has(sourceIdx))ghost.add(rideIdx);
+                }
+            }
             const style=this.style(), d=this.density/100, e=this.energy/100, f=this.fills/100, p=this.profile(style);
             const bars=Math.max(1,Math.ceil(steps/barSteps)), subdivision=Math.max(1,Math.round(group/2));
             const cycle=this.performanceCycles.get(this.seq.memorySlot)||0;
@@ -1108,13 +1160,16 @@
             }
             const addProb=(track,step,prob,vel,key)=>{ if(isLayerAllowed(track)&&this.randomFor(`${key}:${track}:${step}`)<prob)add(track,step,vel); };
             if(evolve && this.pendingResolutions.get(this.seq.memorySlot)){
-                if(this.layers.crash)add(R.crash,0,e>.62?"accent":"strong");
+                const destination=this.timeVoice();
+                if(this.layers.crash && e>.68)add(R.crash,0,"accent");
+                else if(destination==="ride")add(R.ride,0,e>.62?"strong":"normal");
+                else if(destination==="hihat")add(R.closedHat,0,e>.62?"strong":"normal");
                 add(R.kick,0,e>.62?"strong":"normal");
             }
             let endsWithFill=false;
             for(let bar=0;bar<bars;bar++){
                 const baseStep=bar*barSteps, barEnd=Math.min(steps,baseStep+barSteps);
-                if(this.layers.hihat){
+                if(this.layers.hihat && timeVoice!=="ride"){
                     // Preserve the source hi-hat skeleton. FEEL may articulate existing hits and
                     // add a small number of local ghost/syncopated ornaments, but never rebuild it.
                     const sourceHatSteps=[];
@@ -1168,7 +1223,7 @@
                         }
                     }
                 }
-                if(this.layers.ride && p.ride>0){
+                if(this.layers.ride && p.ride>0 && timeVoice!=="ride"){
                     const rideStride=style==="jazz"?Math.max(1,subdivision):(style==="afrobeat"||style==="latin"?subdivision:group);
                     const rideChance=(.10+d*.42+Math.max(0,e-.5)*.18)*p.ride;
                     for(let st=0;st<barSteps&&baseStep+st<steps;st+=rideStride)addProb(R.ride,baseStep+st,Math.min(.92,rideChance),st%group===0?"strong":"soft",`ride-${cycle}-${bar}`);
@@ -1613,7 +1668,7 @@
                 sets: $("sets"), leds: $("leds"), tracks: $("tracks"), grid: document.querySelector(".grid"), sliders: $("sliders"),
                 masterButton: $("master-level"), masterIcon: $("master-level-icon"), swingInput: $("swing-input"), swingValue: $("swing-value"), vu: $("vu-meter"), presetSource: $("preset-source"), presetFamily: $("preset-family"), presetGroove: $("preset-groove"), groovePreview: $("groove-preview"), grooveAdd: $("groove-add"), gridShiftLeft: $("grid-shift-left"), gridShiftUp: $("grid-shift-up"), gridShiftDown: $("grid-shift-down"), gridShiftRight: $("grid-shift-right"), memory: $("memory"), clear: $("clear"), signatureButton: $("signature-button"),
                 signature: $("signature"), signatureNumerator: $("signature-numerator"), signatureDenominator: $("signature-denominator"), metro: $("metronome-button"), chain: $("chain"), play: $("play-button"), icon: $("play-pause-icon"),
-                minus: $("minus-button"), plus: $("plus-button"), tap: $("tap-tempo"), tempo: $("metronome-tempo"), random: $("random"), feelPanel: $("feel-panel"), feelXy: $("feel-xy"), feelDot: $("feel-dot"), feelReadout: $("feel-readout"), feelDensity: $("feel-density"), feelDensityValue: $("feel-density-value"), feelAuto: $("feel-auto"), feelStyle: $("feel-style"),
+                minus: $("minus-button"), plus: $("plus-button"), tap: $("tap-tempo"), tempo: $("metronome-tempo"), random: $("random"), feelPanel: $("feel-panel"), feelXy: $("feel-xy"), feelDot: $("feel-dot"), feelReadout: $("feel-readout"), feelDensity: $("feel-density"), feelDensityValue: $("feel-density-value"), feelAuto: $("feel-auto"), feelStyle: $("feel-style"), feelOrchInfo: $("feel-orchestration-info"),
                 undo: $("undo"), redo: $("redo"), practiceButton: $("practice-button"), practicePanel: $("practice-panel"), practiceMode: $("practice-mode"), practiceStartTempo: $("practice-start-tempo"), practiceTargetTempo: $("practice-target-tempo"), practiceTempoStep: $("practice-tempo-step"), practiceLoops: $("practice-loops"), practiceCountIn: $("practice-count-in"), practiceStatus: $("practice-status"), kitSelect: $("kit-select"), cacheClear: $("cache-clear"), languageSelect: $("language-select"), themeToggle: $("theme-toggle"), themeIcon: $("theme-toggle-icon"), themeColorMeta: $("theme-color-meta"),
                 grooveSearch: $("groove-search"), grooveSearchList: $("groove-search-list"), shareButton: $("share-button"), shareDialog: $("share-dialog"), shareClose: $("share-close"), shareQr: $("share-qr"), shareQrError: $("share-qr-error"), shareUrl: $("share-url"), shareCopy: $("share-copy"), shareNative: $("share-native")
             };
@@ -1652,10 +1707,10 @@
             this.dom.feelStyle?.addEventListener("change",()=>{
                 if(!this.feel.enabled)return;
                 this.pushHistory();
-                this.feel.styleOverride=this.dom.feelStyle.value||"auto";
-                this.feel.applyOrchestrationPreset(this.feel.style());
+                this.feel.orchestrationMode=this.dom.feelStyle.value||"auto";
+                this.feel.applyOrchestrationPreset(this.feel.orchestrationMode);
                 commit();
-                this.status(`DRUMMER STYLE : ${this.dom.feelStyle.options[this.dom.feelStyle.selectedIndex]?.text || "AUTO"} · orchestration adaptée.`);
+                this.status(`${I18N.t("feel.orchestrationProfile")} : ${this.dom.feelStyle.options[this.dom.feelStyle.selectedIndex]?.text || "AUTO"}`);
             });
             this.dom.feelDensity?.addEventListener("input",()=>{ if(!this.feel.enabled)return; this.feel.density=Number(this.dom.feelDensity.value); commit(false); });
             this.dom.feelDensity?.addEventListener("change",()=>{ if(this.feel.enabled)this.autoSaveMemory(); });
@@ -1710,7 +1765,8 @@
             this.dom.feelDot.style.left=`${this.feel.fills}%`;
             this.dom.feelDot.style.top=`${100-this.feel.energy}%`;
             if(this.dom.feelReadout)this.dom.feelReadout.textContent=`${I18N.t("feel.fills")} ${this.feel.fills} · ${I18N.t("feel.energy")} ${this.feel.energy}`;
-            if(this.dom.feelStyle)this.dom.feelStyle.value=this.feel.styleOverride||"auto";
+            if(this.dom.feelStyle)this.dom.feelStyle.value=this.feel.orchestrationMode||"auto";
+            if(this.dom.feelOrchInfo)this.dom.feelOrchInfo.textContent=I18N.t(this.feel.orchestrationInfoKey());
             if(this.dom.feelDensity)this.dom.feelDensity.value=String(this.feel.density);
             if(this.dom.feelDensityValue)this.dom.feelDensityValue.textContent=`${this.feel.density}%`;
             document.querySelectorAll(".feel-layer").forEach(button=>{ const active=!!this.feel.layers[button.dataset.layer]; button.classList.toggle("active",active); button.setAttribute("aria-pressed",String(active)); });

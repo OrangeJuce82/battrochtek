@@ -1853,3 +1853,4 @@ button i {
 
 /* v58 — FEEL Energy is a single bipolar axis label */
 .feel-axis-y { justify-content: center; }
+.feel-orchestration-info{margin:-5px 0 0;padding:6px 8px;border-left:2px solid color-mix(in srgb,var(--bt-active) 55%,var(--bt-border));border-radius:3px;background:color-mix(in srgb,var(--bt-control) 72%,transparent);color:var(--bt-muted);font-size:.61rem;line-height:1.35;min-height:2.7em}

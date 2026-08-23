@@ -1,0 +1,162 @@
+{
+  "schema": "battrochtek.canonical-groove/v1",
+  "id": "CAN-017",
+  "family": "Rock / Pop",
+  "tradition": "Foundational rock",
+  "name": "Early Rock & Roll / Lindy Beat",
+  "bpm": 200,
+  "signature": "4/4",
+  "ppq": 960,
+  "phraseBars": 2,
+  "feel": "straight",
+  "swing": 0,
+  "events": [
+    {
+      "tick": 2640,
+      "duration": 108,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "otherHand",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
+      "tick": 2880,
+      "duration": 108,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 120,
+      "velocityClass": "accent",
+      "limb": "otherHand",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
+      "tick": 4800,
+      "duration": 108,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 120,
+      "velocityClass": "accent",
+      "limb": "otherHand",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
+      "tick": 5520,
+      "duration": 108,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "ghost",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
+      "tick": 5760,
+      "duration": 108,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "ghost",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
+      "tick": 6240,
+      "duration": 108,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "ghost",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
+      "tick": 6720,
+      "duration": 108,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 120,
+      "velocityClass": "accent",
+      "limb": "otherHand",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
+      "tick": 7200,
+      "duration": 108,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "ghost",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
+      "tick": 7440,
+      "duration": 108,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "ghost",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
+      "tick": 3840,
+      "duration": 108,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
+      "tick": 4560,
+      "duration": 108,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    }
+  ],
+  "metadata": {
+    "validationState": "provisional",
+    "confidence": 0.515,
+    "sourceType": "canonical-curated",
+    "provenance": {
+      "candidateSource": "Groove MIDI Dataset",
+      "candidateName": "3 rock rockabilly 200 beat 4 4",
+      "origin": "Rock/3_rock-rockabilly_200_beat_4-4.mid",
+      "attribution": ""
+    },
+    "feel": "straight",
+    "tier": "A",
+    "originalCoverage": "MISSING_OR_WEAK",
+    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form."
+  }
+}

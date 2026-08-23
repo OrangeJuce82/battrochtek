@@ -1,12 +1,12 @@
 import { readFile } from "node:fs/promises";
 
-const [app, html, sw, css, manifest, basicGrooves, syncGrooves, grooveImport, cleanGrooves, grooveConfig] = await Promise.all([
+const [app, html, sw, css, manifest, externalGrooves, syncGrooves, grooveImport, cleanGrooves, grooveConfig] = await Promise.all([
   readFile("app.js", "utf8"),
   readFile("index.html", "utf8"),
   readFile("service-worker.js", "utf8"),
   readFile("styles.css", "utf8"),
   readFile("manifest.webmanifest", "utf8"),
-  readFile("grooves/Basic Grooves/basic-grooves.json", "utf8"),
+  readFile("grooves/external-grooves.js", "utf8"),
   readFile("scripts/sync-grooves.mjs", "utf8"),
   readFile("scripts/groove-import-lib.mjs", "utf8"),
   readFile("scripts/clean-grooves.mjs", "utf8"),
@@ -33,7 +33,7 @@ const checks = [
   [!app.includes('localStorage.getItem("mem")') && !app.includes('localStorage.setItem("mem")'), "localStorage retiré des mémoires"],
   [app.includes("history.replaceState"), "mise à jour du hash sans navigation"],
   [sw.includes('"./vendor/oat/oat.min.css"') && sw.includes('"./vendor/oat/oat.min.js"'), "Oat inclus dans l’app shell PWA"],
-  [sw.includes('battrochtek-v60'), "cache PWA v60"],
+  [sw.includes('battrochtek-v62'), "cache PWA v62"],
   [css.includes('--bt-instrument-text:') && !app.includes('label.style.color'), "couleur des instruments pilotée par le thème"],
   [css.includes('.bt-tooltip') && html.includes('id="bt-tooltip"'), "tooltips adaptatifs présents"],
   [!html.includes('id="bt-help"'), "ancienne aide au survol retirée"],
@@ -57,7 +57,7 @@ const checks = [
   [app.includes('e.code === "Space" && !mod') && app.indexOf('e.code === "Space" && !mod') < app.indexOf('if (editing || mod || e.altKey) return;'), "Espace prioritaire même dans les selects"],
   [app.includes('i % this.seq.signature.barSteps === 0'), "bar-accent sur chaque début de mesure"],
   [css.includes(".grid .cell.capo { box-shadow: inset 2px 0 0 var(--bt-accent-strong); }"), "capo utilise la même bordure que first"],
-  [basicGrooves.includes('"sourceLabel": "Basic Grooves"') && html.includes('id="preset-source"'), "Basic Grooves dans ./grooves et sélecteur de source présents"],
+  [externalGrooves.includes('Battrochtek Curated') && externalGrooves.includes('canonicalId') && html.includes('id="preset-source"'), "bibliothèque Curated unique avec métadonnées canoniques présente"],
   [html.includes('grooves/external-grooves.js'), "bundle de corpus externes chargé"],
   [sw.includes('./grooves/external-grooves.js'), "corpus externes inclus dans la PWA"],
   [app.includes('TRACK_COUNT: 9') && app.includes('tomFloor:7') && app.includes('kick:8'), "grille GMD étendue à 9 pistes"],

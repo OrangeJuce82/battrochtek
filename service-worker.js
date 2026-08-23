@@ -1,4 +1,4 @@
-const CACHE_NAME = "battrochtek-v60";
+const CACHE_NAME = "battrochtek-v62";
 const AUDIO_CACHE = "battrochtek-audio-v2";
 
 // Alpine n'est volontairement pas pré-caché ici : il est généré localement par

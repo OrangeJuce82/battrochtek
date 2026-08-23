@@ -231,8 +231,11 @@
                     name:groove.name || `Groove ${index+1}`, signatureIndex,
                     signature:CONFIG.SIGNATURES[signatureIndex].label, bpm:Number(groove.bpm)||120,
                     source:group.source, sourceLabel:group.sourceLabel,
-                    attribution:groove.attribution||"", origin:groove.origin||"",
-                    style:groove.style||group.name, substyle:groove.substyle||"", feel:groove.feel||"",
+                    canonicalId:groove.canonicalId||"", tradition:groove.tradition||groove.substyle||"",
+                    validationState:groove.validationState||"", confidence:Number(groove.confidence)||0,
+                    provenance:groove.provenance||null, mergedFrom:Array.isArray(groove.mergedFrom)?groove.mergedFrom:[],
+                    attribution:groove.attribution||groove.provenance?.attribution||"", origin:groove.origin||groove.provenance?.origin||"",
+                    style:groove.style||group.name, substyle:groove.substyle||groove.tradition||"", feel:groove.feel||"",
                     difficulty:groove.difficulty||"", sourceType:groove.sourceType||"",
                     artist:groove.artist||"", song:groove.song||"", drummer:groove.drummer||"",
                     tags:Array.isArray(groove.tags)?groove.tags:[],
@@ -2264,7 +2267,8 @@
             this.dom.presetGroove.replaceChildren(...family.grooves.map((groove, i) => {
                 const option = document.createElement("option");
                 option.value = String(i);
-                option.textContent = `${String(i + 1).padStart(2,"0")} · ${groove.name} · ${groove.signature}`;
+                const tradition = groove.tradition && groove.tradition !== family.name ? `${groove.tradition} · ` : "";
+                option.textContent = `${String(i + 1).padStart(2,"0")} · ${tradition}${groove.name} · ${groove.signature}`;
                 return option;
             }));
             this.dom.presetGroove.dataset.btTooltip = family.sourceLabel || "Groove";
@@ -2284,11 +2288,12 @@
                     groove:groove.name,
                     signature:groove.signature||"",
                     bpm:groove.bpm||"",
-                    style:groove.style||"", substyle:groove.substyle||"", feel:groove.feel||"",
+                    style:groove.style||"", substyle:groove.substyle||"", tradition:groove.tradition||"", feel:groove.feel||"",
+                    canonicalId:groove.canonicalId||"", validationState:groove.validationState||"", confidence:groove.confidence||0,
                     difficulty:groove.difficulty||"", origin:groove.origin||"", sourceType:groove.sourceType||"",
                     artist:groove.artist||"", song:groove.song||"", drummer:groove.drummer||"", tags:groove.tags||[]
                 };
-                entry.search=`${entry.groove} ${entry.family} ${entry.sourceLabel} ${entry.signature} ${entry.bpm} ${entry.style} ${entry.substyle} ${entry.feel} ${entry.difficulty} ${entry.origin} ${entry.sourceType} ${entry.artist} ${entry.song} ${entry.drummer} ${(entry.tags||[]).join(" ")}`.toLocaleLowerCase();
+                entry.search=`${entry.groove} ${entry.family} ${entry.tradition} ${entry.canonicalId} ${entry.sourceLabel} ${entry.signature} ${entry.bpm} ${entry.style} ${entry.substyle} ${entry.feel} ${entry.difficulty} ${entry.origin} ${entry.sourceType} ${entry.artist} ${entry.song} ${entry.drummer} ${(entry.tags||[]).join(" ")}`.toLocaleLowerCase();
                 this.grooveSearchEntries.push(entry);
             }));
 

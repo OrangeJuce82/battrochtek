@@ -1,0 +1,5334 @@
+{
+  "version": "2.0.0",
+  "taxonomyCount": 213,
+  "playableCount": 213,
+  "needsRebuild": 154,
+  "entries": [
+    {
+      "id": "CAN-182",
+      "family": "Africa",
+      "tradition": "Central Africa",
+      "archetype": "Bikutsi",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "af76bad832069a09",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-182-bikutsi.json",
+        "midi": "musicology/midi/CAN-182-bikutsi.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-181",
+      "family": "Africa",
+      "tradition": "Central Africa",
+      "archetype": "Makossa",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.62,
+      "sourceType": "canonical-curated",
+      "fingerprint": "a0c1987dd6d4c97b",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 32,
+        "json": "musicology/canonical-grooves/CAN-181-makossa.json",
+        "midi": "musicology/midi/CAN-181-makossa.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-183",
+      "family": "Africa",
+      "tradition": "Central Africa",
+      "archetype": "Mangambe",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "83b5f2b12fbdb1b5",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 22,
+        "json": "musicology/canonical-grooves/CAN-183-mangambe.json",
+        "midi": "musicology/midi/CAN-183-mangambe.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-180",
+      "family": "Africa",
+      "tradition": "Central Africa",
+      "archetype": "Soukous",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "0cc340fddc75ab47",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 30,
+        "json": "musicology/canonical-grooves/CAN-180-soukous.json",
+        "midi": "musicology/midi/CAN-180-soukous.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-188",
+      "family": "Africa",
+      "tradition": "Indian Ocean",
+      "archetype": "Maloya",
+      "playable": true,
+      "status": "medium",
+      "confidence": 0.549,
+      "sourceType": "canonical-curated",
+      "fingerprint": "f795493bd29a2fad",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 16,
+        "json": "musicology/canonical-grooves/CAN-188-maloya.json",
+        "midi": "musicology/midi/CAN-188-maloya.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-187",
+      "family": "Africa",
+      "tradition": "Indian Ocean",
+      "archetype": "Sega",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "a46467ca5f0221e2",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 20,
+        "json": "musicology/canonical-grooves/CAN-187-sega.json",
+        "midi": "musicology/midi/CAN-187-sega.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-186",
+      "family": "Africa",
+      "tradition": "Southern Africa",
+      "archetype": "Amapiano",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "c2d820e47be07617",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 27,
+        "json": "musicology/canonical-grooves/CAN-186-amapiano.json",
+        "midi": "musicology/midi/CAN-186-amapiano.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-184",
+      "family": "Africa",
+      "tradition": "Southern Africa",
+      "archetype": "Mbaqanga",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "ca90cae1ee83e4d7",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-184-mbaqanga.json",
+        "midi": "musicology/midi/CAN-184-mbaqanga.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-185",
+      "family": "Africa",
+      "tradition": "Southern Africa",
+      "archetype": "South African House",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "aad4c51f11a2c8c1",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 21,
+        "json": "musicology/canonical-grooves/CAN-185-south-african-house.json",
+        "midi": "musicology/midi/CAN-185-south-african-house.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-173",
+      "family": "Africa",
+      "tradition": "West Africa",
+      "archetype": "Afrobeat",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "e0982ab2a2374f59",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-173-afrobeat.json",
+        "midi": "musicology/midi/CAN-173-afrobeat.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-176",
+      "family": "Africa",
+      "tradition": "West Africa",
+      "archetype": "Ewe 12/8 / Agbekor Adaptation",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "1132ea94cf18b296",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 38,
+        "json": "musicology/canonical-grooves/CAN-176-ewe-12-8-agbekor-adaptation.json",
+        "midi": "musicology/midi/CAN-176-ewe-12-8-agbekor-adaptation.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-177",
+      "family": "Africa",
+      "tradition": "West Africa",
+      "archetype": "Fanga Drum-Set Adaptation",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "149ef6692ad842fe",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 27,
+        "json": "musicology/canonical-grooves/CAN-177-fanga-drum-set-adaptation.json",
+        "midi": "musicology/midi/CAN-177-fanga-drum-set-adaptation.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-174",
+      "family": "Africa",
+      "tradition": "West Africa",
+      "archetype": "Highlife",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.62,
+      "sourceType": "canonical-curated",
+      "fingerprint": "2b64633b5a9f6e84",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-174-highlife.json",
+        "midi": "musicology/midi/CAN-174-highlife.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-179",
+      "family": "Africa",
+      "tradition": "West Africa",
+      "archetype": "Jùjú / Yoruba-derived Drum-Set",
+      "playable": true,
+      "status": "medium",
+      "confidence": 0.535,
+      "sourceType": "canonical-curated",
+      "fingerprint": "e6e7bb6375406d36",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-179-juju-yoruba-derived-drum-set.json",
+        "midi": "musicology/midi/CAN-179-juju-yoruba-derived-drum-set.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-175",
+      "family": "Africa",
+      "tradition": "West Africa",
+      "archetype": "Kpanlogo Drum-Set",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.62,
+      "sourceType": "canonical-curated",
+      "fingerprint": "278fade7469e7c0b",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-175-kpanlogo-drum-set.json",
+        "midi": "musicology/midi/CAN-175-kpanlogo-drum-set.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-178",
+      "family": "Africa",
+      "tradition": "West Africa",
+      "archetype": "Mbalax",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "b45e74733edfe5de",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 36,
+        "json": "musicology/canonical-grooves/CAN-178-mbalax.json",
+        "midi": "musicology/midi/CAN-178-mbalax.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-201",
+      "family": "Balkans / Eastern Europe",
+      "tradition": "Aksak & regional",
+      "archetype": "Balkan 11/8",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "b0b71399e744976e",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 38,
+        "json": "musicology/canonical-grooves/CAN-201-balkan-11-8.json",
+        "midi": "musicology/midi/CAN-201-balkan-11-8.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-199",
+      "family": "Balkans / Eastern Europe",
+      "tradition": "Aksak & regional",
+      "archetype": "Balkan 7/8",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "55a108149182a1f9",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 32,
+        "json": "musicology/canonical-grooves/CAN-199-balkan-7-8.json",
+        "midi": "musicology/midi/CAN-199-balkan-7-8.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-200",
+      "family": "Balkans / Eastern Europe",
+      "tradition": "Aksak & regional",
+      "archetype": "Balkan 9/8",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.853,
+      "sourceType": "canonical-curated",
+      "fingerprint": "5de2f39615e060ac",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 30,
+        "json": "musicology/canonical-grooves/CAN-200-balkan-9-8.json",
+        "midi": "musicology/midi/CAN-200-balkan-9-8.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-202",
+      "family": "Balkans / Eastern Europe",
+      "tradition": "Aksak & regional",
+      "archetype": "Čoček / 9/8 Dance",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "a4f4b68587e57cfa",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 33,
+        "json": "musicology/canonical-grooves/CAN-202-cocek-9-8-dance.json",
+        "midi": "musicology/midi/CAN-202-cocek-9-8-dance.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-064",
+      "family": "Blues / Shuffle",
+      "tradition": "Blues",
+      "archetype": "Blues Rock Shuffle",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "092e29e6b1ac8892",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 30,
+        "json": "musicology/canonical-grooves/CAN-064-blues-rock-shuffle.json",
+        "midi": "musicology/midi/CAN-064-blues-rock-shuffle.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-057",
+      "family": "Blues / Shuffle",
+      "tradition": "Blues",
+      "archetype": "Chicago Shuffle",
+      "playable": true,
+      "status": "high",
+      "confidence": 1.02,
+      "sourceType": "canonical-curated",
+      "fingerprint": "6a72c012e78cfd73",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-057-chicago-shuffle.json",
+        "midi": "musicology/midi/CAN-057-chicago-shuffle.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-063",
+      "family": "Blues / Shuffle",
+      "tradition": "Blues",
+      "archetype": "Half-Time Shuffle",
+      "playable": true,
+      "status": "high",
+      "confidence": 1.02,
+      "sourceType": "canonical-curated",
+      "fingerprint": "277f34f12de91964",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 22,
+        "json": "musicology/canonical-grooves/CAN-063-half-time-shuffle.json",
+        "midi": "musicology/midi/CAN-063-half-time-shuffle.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-061",
+      "family": "Blues / Shuffle",
+      "tradition": "Blues",
+      "archetype": "Jump Blues",
+      "playable": true,
+      "status": "provisional",
+      "confidence": 0.512,
+      "sourceType": "canonical-curated",
+      "fingerprint": "1c02fbc1786b0d9a",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 36,
+        "json": "musicology/canonical-grooves/CAN-061-jump-blues.json",
+        "midi": "musicology/midi/CAN-061-jump-blues.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-059",
+      "family": "Blues / Shuffle",
+      "tradition": "Blues",
+      "archetype": "Slow 12/8 Blues",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "4fbfd33309146ce7",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 29,
+        "json": "musicology/canonical-grooves/CAN-059-slow-12-8-blues.json",
+        "midi": "musicology/midi/CAN-059-slow-12-8-blues.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-060",
+      "family": "Blues / Shuffle",
+      "tradition": "Blues",
+      "archetype": "Straight Blues",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "7e2d13d7d09434a9",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 29,
+        "json": "musicology/canonical-grooves/CAN-060-straight-blues.json",
+        "midi": "musicology/midi/CAN-060-straight-blues.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-058",
+      "family": "Blues / Shuffle",
+      "tradition": "Blues",
+      "archetype": "Texas Shuffle",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "6e91915cf3fdb854",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-058-texas-shuffle.json",
+        "midi": "musicology/midi/CAN-058-texas-shuffle.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-062",
+      "family": "Blues / Shuffle",
+      "tradition": "Blues",
+      "archetype": "Train Shuffle",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "db0a3c675e7ac7ab",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 29,
+        "json": "musicology/canonical-grooves/CAN-062-train-shuffle.json",
+        "midi": "musicology/midi/CAN-062-train-shuffle.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-165",
+      "family": "Caribbean",
+      "tradition": "Dominican Republic / Puerto Rico",
+      "archetype": "Bachata",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "7324bc59a3a3e8a9",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 27,
+        "json": "musicology/canonical-grooves/CAN-165-bachata.json",
+        "midi": "musicology/midi/CAN-165-bachata.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-166",
+      "family": "Caribbean",
+      "tradition": "Dominican Republic / Puerto Rico",
+      "archetype": "Bomba Drum-Set",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "5f323c2d40b95a50",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 29,
+        "json": "musicology/canonical-grooves/CAN-166-bomba-drum-set.json",
+        "midi": "musicology/midi/CAN-166-bomba-drum-set.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-164",
+      "family": "Caribbean",
+      "tradition": "Dominican Republic / Puerto Rico",
+      "archetype": "Merengue",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "8ed23635272249b5",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 32,
+        "json": "musicology/canonical-grooves/CAN-164-merengue.json",
+        "midi": "musicology/midi/CAN-164-merengue.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-167",
+      "family": "Caribbean",
+      "tradition": "Dominican Republic / Puerto Rico",
+      "archetype": "Plena Drum-Set",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "dbf58c45783b7889",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-167-plena-drum-set.json",
+        "midi": "musicology/midi/CAN-167-plena-drum-set.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-172",
+      "family": "Caribbean",
+      "tradition": "Trinidad & Lesser Antilles",
+      "archetype": "Biguine / Beguine",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "bcf9b5cc86e72c60",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-172-biguine-beguine.json",
+        "midi": "musicology/midi/CAN-172-biguine-beguine.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-168",
+      "family": "Caribbean",
+      "tradition": "Trinidad & Lesser Antilles",
+      "archetype": "Calypso",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "830dedda0d020b65",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-168-calypso.json",
+        "midi": "musicology/midi/CAN-168-calypso.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-170",
+      "family": "Caribbean",
+      "tradition": "Trinidad & Lesser Antilles",
+      "archetype": "Kompa",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "1ffff3b0d22dcc2b",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 30,
+        "json": "musicology/canonical-grooves/CAN-170-kompa.json",
+        "midi": "musicology/midi/CAN-170-kompa.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-169",
+      "family": "Caribbean",
+      "tradition": "Trinidad & Lesser Antilles",
+      "archetype": "Soca",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.62,
+      "sourceType": "canonical-curated",
+      "fingerprint": "26f34e367ec98252",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 26,
+        "json": "musicology/canonical-grooves/CAN-169-soca.json",
+        "midi": "musicology/midi/CAN-169-soca.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-171",
+      "family": "Caribbean",
+      "tradition": "Trinidad & Lesser Antilles",
+      "archetype": "Zouk",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "7a8212ae9c2588ed",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 32,
+        "json": "musicology/canonical-grooves/CAN-171-zouk.json",
+        "midi": "musicology/midi/CAN-171-zouk.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-086",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Brush Country",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "592fa6f6bf9996db",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-086-brush-country.json",
+        "midi": "musicology/midi/CAN-086-brush-country.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-085",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Country Rock",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "9c07c7c5dbf826e6",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-085-country-rock.json",
+        "midi": "musicology/midi/CAN-085-country-rock.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-081",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Country Shuffle",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "b30dd8d0b887f13e",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 29,
+        "json": "musicology/canonical-grooves/CAN-081-country-shuffle.json",
+        "midi": "musicology/midi/CAN-081-country-shuffle.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-080",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Country Two-Step",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "4509890bedc8a3fa",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-080-country-two-step.json",
+        "midi": "musicology/midi/CAN-080-country-two-step.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-082",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Country Waltz",
+      "playable": true,
+      "status": "high",
+      "confidence": 1.02,
+      "sourceType": "canonical-curated",
+      "fingerprint": "07c56adca9c7c599",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 12,
+        "json": "musicology/canonical-grooves/CAN-082-country-waltz.json",
+        "midi": "musicology/midi/CAN-082-country-waltz.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-083",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Honky-Tonk",
+      "playable": true,
+      "status": "high",
+      "confidence": 1.02,
+      "sourceType": "canonical-curated",
+      "fingerprint": "9825e346ced67f21",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-083-honky-tonk.json",
+        "midi": "musicology/midi/CAN-083-honky-tonk.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-087",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Modern Bluegrass Drum-Set",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.62,
+      "sourceType": "canonical-curated",
+      "fingerprint": "e24a8c5351689b4e",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 29,
+        "json": "musicology/canonical-grooves/CAN-087-modern-bluegrass-drum-set.json",
+        "midi": "musicology/midi/CAN-087-modern-bluegrass-drum-set.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-084",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Nashville Straight 8ths",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "adbaf74725d879f3",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-084-nashville-straight-8ths.json",
+        "midi": "musicology/midi/CAN-084-nashville-straight-8ths.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-088",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Rockabilly Shuffle",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "53c56754c3eae9fd",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 29,
+        "json": "musicology/canonical-grooves/CAN-088-rockabilly-shuffle.json",
+        "midi": "musicology/midi/CAN-088-rockabilly-shuffle.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-079",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Train Beat",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "ab0a925217d8f953",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-079-train-beat.json",
+        "midi": "musicology/midi/CAN-079-train-beat.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-127",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Afro House",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "fe611e27b0432ec7",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-127-afro-house.json",
+        "midi": "musicology/midi/CAN-127-afro-house.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-126",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Amapiano",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "9268ebe346585df9",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 20,
+        "json": "musicology/canonical-grooves/CAN-126-amapiano.json",
+        "midi": "musicology/midi/CAN-126-amapiano.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-118",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Breakbeat / Big Beat",
+      "playable": true,
+      "status": "medium",
+      "confidence": 0.579,
+      "sourceType": "canonical-curated",
+      "fingerprint": "625f064162b630f1",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 18,
+        "json": "musicology/canonical-grooves/CAN-118-breakbeat-big-beat.json",
+        "midi": "musicology/midi/CAN-118-breakbeat-big-beat.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-111",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Classic House",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "f43acbb737597bf5",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 20,
+        "json": "musicology/canonical-grooves/CAN-111-classic-house.json",
+        "midi": "musicology/midi/CAN-111-classic-house.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-112",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Deep House",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "a76997be6afae055",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 21,
+        "json": "musicology/canonical-grooves/CAN-112-deep-house.json",
+        "midi": "musicology/midi/CAN-112-deep-house.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-115",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Detroit Electro",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "bcbecff0494dde3b",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 20,
+        "json": "musicology/canonical-grooves/CAN-115-detroit-electro.json",
+        "midi": "musicology/midi/CAN-115-detroit-electro.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-110",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Disco",
+      "playable": true,
+      "status": "medium",
+      "confidence": 0.686,
+      "sourceType": "canonical-curated",
+      "fingerprint": "90eadcdc48422083",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-110-disco.json",
+        "midi": "musicology/midi/CAN-110-disco.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-120",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Drum & Bass",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "1ce79d1623e75e8f",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 44,
+        "json": "musicology/canonical-grooves/CAN-120-drum-bass.json",
+        "midi": "musicology/midi/CAN-120-drum-bass.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-123",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Dubstep Half-Time",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "9e41625250020af1",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 14,
+        "json": "musicology/canonical-grooves/CAN-123-dubstep-half-time.json",
+        "midi": "musicology/midi/CAN-123-dubstep-half-time.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-116",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Electro-Funk",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.62,
+      "sourceType": "canonical-curated",
+      "fingerprint": "f4ab255676dfc4bf",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-116-electro-funk.json",
+        "midi": "musicology/midi/CAN-116-electro-funk.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-124",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Footwork / Juke",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "f2a5832c1b6e9205",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 48,
+        "json": "musicology/canonical-grooves/CAN-124-footwork-juke.json",
+        "midi": "musicology/midi/CAN-124-footwork-juke.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-113",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Funky House",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "823f55138fca3f24",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 21,
+        "json": "musicology/canonical-grooves/CAN-113-funky-house.json",
+        "midi": "musicology/midi/CAN-113-funky-house.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-119",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Jungle",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.62,
+      "sourceType": "canonical-curated",
+      "fingerprint": "4ee5c03f9631d00f",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 32,
+        "json": "musicology/canonical-grooves/CAN-119-jungle.json",
+        "midi": "musicology/midi/CAN-119-jungle.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-125",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Synthwave",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.62,
+      "sourceType": "canonical-curated",
+      "fingerprint": "baa90d929dda61c5",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 29,
+        "json": "musicology/canonical-grooves/CAN-125-synthwave.json",
+        "midi": "musicology/midi/CAN-125-synthwave.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-114",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Techno",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.9,
+      "sourceType": "canonical-curated",
+      "fingerprint": "29f2f75341321217",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-114-techno.json",
+        "midi": "musicology/midi/CAN-114-techno.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-122",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Trance",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "83d57a36c80e4b4a",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-122-trance.json",
+        "midi": "musicology/midi/CAN-122-trance.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-121",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Trip-Hop",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.62,
+      "sourceType": "canonical-curated",
+      "fingerprint": "5c635f89c5a25eca",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-121-trip-hop.json",
+        "midi": "musicology/midi/CAN-121-trip-hop.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-117",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "UK Garage / 2-Step",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.62,
+      "sourceType": "canonical-curated",
+      "fingerprint": "86a893e5bc150599",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-117-uk-garage-2-step.json",
+        "midi": "musicology/midi/CAN-117-uk-garage-2-step.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-011",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "12/8 Ballad",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "d85592ceed6fb84d",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 32,
+        "json": "musicology/canonical-grooves/CAN-011-12-8-ballad.json",
+        "midi": "musicology/midi/CAN-011-12-8-ballad.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-004",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "16th-note Shuffle",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "f30f58ed4bce1fc6",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 50,
+        "json": "musicology/canonical-grooves/CAN-004-16th-note-shuffle.json",
+        "midi": "musicology/midi/CAN-004-16th-note-shuffle.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-013",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "3/4 Groove",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "0e66e415aa3ff333",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 18,
+        "json": "musicology/canonical-grooves/CAN-013-3-4-groove.json",
+        "midi": "musicology/midi/CAN-013-3-4-groove.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-014",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "5/4 Foundation",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.87,
+      "sourceType": "canonical-curated",
+      "fingerprint": "75b47536162a2b8f",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-014-5-4-foundation.json",
+        "midi": "musicology/midi/CAN-014-5-4-foundation.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-012",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "6/8 Compound Groove",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "4b1dd60cf6ae2f06",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 18,
+        "json": "musicology/canonical-grooves/CAN-012-6-8-compound-groove.json",
+        "midi": "musicology/midi/CAN-012-6-8-compound-groove.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-015",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "7/8 Foundation",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.45,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "457bcd55292d8d67",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 31,
+        "json": "musicology/canonical-grooves/CAN-015-7-8-foundation.json",
+        "midi": "musicology/midi/CAN-015-7-8-foundation.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-003",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "8th-note Shuffle",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "7ce045cf5d6cd0d5",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 26,
+        "json": "musicology/canonical-grooves/CAN-003-8th-note-shuffle.json",
+        "midi": "musicology/midi/CAN-003-8th-note-shuffle.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-016",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "9/8 Foundation",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.45,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "3842c5469beda5e0",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 30,
+        "json": "musicology/canonical-grooves/CAN-016-9-8-foundation.json",
+        "midi": "musicology/midi/CAN-016-9-8-foundation.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-010",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "Displaced Backbeat",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.45,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "123d45af5ab7044a",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 27,
+        "json": "musicology/canonical-grooves/CAN-010-displaced-backbeat.json",
+        "midi": "musicology/midi/CAN-010-displaced-backbeat.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-006",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "Double-Time",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.45,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "b7d253618df246a1",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 26,
+        "json": "musicology/canonical-grooves/CAN-006-double-time.json",
+        "midi": "musicology/midi/CAN-006-double-time.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-007",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "Four-on-the-Floor",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.45,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "2bb834c14707d711",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 26,
+        "json": "musicology/canonical-grooves/CAN-007-four-on-the-floor.json",
+        "midi": "musicology/midi/CAN-007-four-on-the-floor.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-009",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "Ghost-Note Pocket",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.87,
+      "sourceType": "canonical-curated",
+      "fingerprint": "7705bfd4fd97ac97",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 30,
+        "json": "musicology/canonical-grooves/CAN-009-ghost-note-pocket.json",
+        "midi": "musicology/midi/CAN-009-ghost-note-pocket.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-005",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "Half-Time",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.45,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "b9863f45bbb59bbe",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 30,
+        "json": "musicology/canonical-grooves/CAN-005-half-time.json",
+        "midi": "musicology/midi/CAN-005-half-time.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-008",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "Linear Groove",
+      "playable": true,
+      "status": "medium",
+      "confidence": 0.548,
+      "sourceType": "canonical-curated",
+      "fingerprint": "4b50507845ee6c5a",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 32,
+        "json": "musicology/canonical-grooves/CAN-008-linear-groove.json",
+        "midi": "musicology/midi/CAN-008-linear-groove.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-002",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "Straight 16ths",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "96efff7b33c1231e",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 42,
+        "json": "musicology/canonical-grooves/CAN-002-straight-16ths.json",
+        "midi": "musicology/midi/CAN-002-straight-16ths.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-001",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "Straight 8ths",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.45,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "89e650d6227ad6b6",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 30,
+        "json": "musicology/canonical-grooves/CAN-001-straight-8ths.json",
+        "midi": "musicology/midi/CAN-001-straight-8ths.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-048",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Boogaloo Funk",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.907,
+      "sourceType": "canonical-curated",
+      "fingerprint": "d1e41b46fbfe2e9d",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 31,
+        "json": "musicology/canonical-grooves/CAN-048-boogaloo-funk.json",
+        "midi": "musicology/midi/CAN-048-boogaloo-funk.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-056",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Disco-Funk / Chic",
+      "playable": true,
+      "status": "provisional",
+      "confidence": 0.482,
+      "sourceType": "canonical-curated",
+      "fingerprint": "b43456862da3c02a",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 56,
+        "json": "musicology/canonical-grooves/CAN-056-disco-funk-chic.json",
+        "midi": "musicology/midi/CAN-056-disco-funk-chic.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-055",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Ghost-Note Funk",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "2e9b47f847a4add4",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 55,
+        "json": "musicology/canonical-grooves/CAN-055-ghost-note-funk.json",
+        "midi": "musicology/midi/CAN-055-ghost-note-funk.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-049",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Go-Go",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "5aa71f88b4fa9947",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 60,
+        "json": "musicology/canonical-grooves/CAN-049-go-go.json",
+        "midi": "musicology/midi/CAN-049-go-go.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-050",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Gospel Pocket",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "a1a94272faf21fa8",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 56,
+        "json": "musicology/canonical-grooves/CAN-050-gospel-pocket.json",
+        "midi": "musicology/midi/CAN-050-gospel-pocket.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-051",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Gospel Shout",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.92,
+      "sourceType": "canonical-curated",
+      "fingerprint": "4b35de59dfdd2c69",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-051-gospel-shout.json",
+        "midi": "musicology/midi/CAN-051-gospel-shout.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-041",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "James Brown Funk",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "51a17a2635fecfce",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 56,
+        "json": "musicology/canonical-grooves/CAN-041-james-brown-funk.json",
+        "midi": "musicology/midi/CAN-041-james-brown-funk.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-054",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Linear Funk",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.62,
+      "sourceType": "canonical-curated",
+      "fingerprint": "1f8c760de10c0f75",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 33,
+        "json": "musicology/canonical-grooves/CAN-054-linear-funk.json",
+        "midi": "musicology/midi/CAN-054-linear-funk.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-043",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Meters-style New Orleans Funk",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "0463f2acce451923",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 54,
+        "json": "musicology/canonical-grooves/CAN-043-meters-style-new-orleans-funk.json",
+        "midi": "musicology/midi/CAN-043-meters-style-new-orleans-funk.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-053",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Modern R&B",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.907,
+      "sourceType": "canonical-curated",
+      "fingerprint": "b9ecc544883777a7",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 22,
+        "json": "musicology/canonical-grooves/CAN-053-modern-r-b.json",
+        "midi": "musicology/midi/CAN-053-modern-r-b.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-045",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Motown",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "ea59cb70b15d1a55",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-045-motown.json",
+        "midi": "musicology/midi/CAN-045-motown.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-052",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Neo-Soul",
+      "playable": true,
+      "status": "medium",
+      "confidence": 0.62,
+      "sourceType": "canonical-curated",
+      "fingerprint": "a4215cf0e9ae58f4",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-052-neo-soul.json",
+        "midi": "musicology/midi/CAN-052-neo-soul.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-042",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "New Orleans Funk / Second Line",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "f843de77659bc45e",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 54,
+        "json": "musicology/canonical-grooves/CAN-042-new-orleans-funk-second-line.json",
+        "midi": "musicology/midi/CAN-042-new-orleans-funk-second-line.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-044",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "P-Funk",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "7b0aa802fa7786a3",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 55,
+        "json": "musicology/canonical-grooves/CAN-044-p-funk.json",
+        "midi": "musicology/midi/CAN-044-p-funk.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-047",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Philly Soul",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "f029c242f4eb83fe",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 55,
+        "json": "musicology/canonical-grooves/CAN-047-philly-soul.json",
+        "midi": "musicology/midi/CAN-047-philly-soul.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-046",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Stax / Southern Soul",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "c489b12076e4a647",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 26,
+        "json": "musicology/canonical-grooves/CAN-046-stax-southern-soul.json",
+        "midi": "musicology/midi/CAN-046-stax-southern-soul.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-207",
+      "family": "Global / Hybrid",
+      "tradition": "Contemporary hybrids",
+      "archetype": "Afro-Cuban Funk",
+      "playable": true,
+      "status": "medium",
+      "confidence": 0.572,
+      "sourceType": "canonical-curated",
+      "fingerprint": "b9487e9f0d3ed941",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 30,
+        "json": "musicology/canonical-grooves/CAN-207-afro-cuban-funk.json",
+        "midi": "musicology/midi/CAN-207-afro-cuban-funk.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-212",
+      "family": "Global / Hybrid",
+      "tradition": "Contemporary hybrids",
+      "archetype": "Afrobeat-Funk",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "8219d31ee89f2f6b",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 54,
+        "json": "musicology/canonical-grooves/CAN-212-afrobeat-funk.json",
+        "midi": "musicology/midi/CAN-212-afrobeat-funk.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-208",
+      "family": "Global / Hybrid",
+      "tradition": "Contemporary hybrids",
+      "archetype": "Brazilian Funk",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "3823036f1b94fa24",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 54,
+        "json": "musicology/canonical-grooves/CAN-208-brazilian-funk.json",
+        "midi": "musicology/midi/CAN-208-brazilian-funk.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-211",
+      "family": "Global / Hybrid",
+      "tradition": "Contemporary hybrids",
+      "archetype": "Jazz-Rock Fusion",
+      "playable": true,
+      "status": "provisional",
+      "confidence": 0.473,
+      "sourceType": "canonical-curated",
+      "fingerprint": "5dbce4f5ea0d6592",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 33,
+        "json": "musicology/canonical-grooves/CAN-211-jazz-rock-fusion.json",
+        "midi": "musicology/midi/CAN-211-jazz-rock-fusion.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-209",
+      "family": "Global / Hybrid",
+      "tradition": "Contemporary hybrids",
+      "archetype": "Latin Rock",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "7335f8d61052888b",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 30,
+        "json": "musicology/canonical-grooves/CAN-209-latin-rock.json",
+        "midi": "musicology/midi/CAN-209-latin-rock.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-210",
+      "family": "Global / Hybrid",
+      "tradition": "Contemporary hybrids",
+      "archetype": "Reggae Rock",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "a1c0525a247df836",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-210-reggae-rock.json",
+        "midi": "musicology/midi/CAN-210-reggae-rock.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-213",
+      "family": "Global / Hybrid",
+      "tradition": "Contemporary hybrids",
+      "archetype": "World 6/8 Fusion",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "accea6f3483bdfd3",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 21,
+        "json": "musicology/canonical-grooves/CAN-213-world-6-8-fusion.json",
+        "midi": "musicology/midi/CAN-213-world-6-8-fusion.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-090",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Boom Bap",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "9a4226211424c9ba",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 27,
+        "json": "musicology/canonical-grooves/CAN-090-boom-bap.json",
+        "midi": "musicology/midi/CAN-090-boom-bap.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-092",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Dilla / Drunk Pocket",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.62,
+      "sourceType": "canonical-curated",
+      "fingerprint": "76b1d579bc15b4b8",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 32,
+        "json": "musicology/canonical-grooves/CAN-092-dilla-drunk-pocket.json",
+        "midi": "musicology/midi/CAN-092-dilla-drunk-pocket.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-096",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Drill",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.62,
+      "sourceType": "canonical-curated",
+      "fingerprint": "c2300101b329d52c",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 23,
+        "json": "musicology/canonical-grooves/CAN-096-drill.json",
+        "midi": "musicology/midi/CAN-096-drill.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-097",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Jersey Club",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "bbc7f9cdabd7924c",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 32,
+        "json": "musicology/canonical-grooves/CAN-097-jersey-club.json",
+        "midi": "musicology/midi/CAN-097-jersey-club.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-093",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Lo-Fi Hip-Hop",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "e40e5e74e2f954df",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-093-lo-fi-hip-hop.json",
+        "midi": "musicology/midi/CAN-093-lo-fi-hip-hop.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-089",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Old-School Breakbeat",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "5b818a2a6acaab0e",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 26,
+        "json": "musicology/canonical-grooves/CAN-089-old-school-breakbeat.json",
+        "midi": "musicology/midi/CAN-089-old-school-breakbeat.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-098",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Sample-Break Pocket",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "398c32ccbcb5b6c6",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-098-sample-break-pocket.json",
+        "midi": "musicology/midi/CAN-098-sample-break-pocket.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-095",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Trap Double-Time Hats",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "3665df0b11314186",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 42,
+        "json": "musicology/canonical-grooves/CAN-095-trap-double-time-hats.json",
+        "midi": "musicology/midi/CAN-095-trap-double-time-hats.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-094",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Trap Half-Time",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "e84d46c30242c035",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 27,
+        "json": "musicology/canonical-grooves/CAN-094-trap-half-time.json",
+        "midi": "musicology/midi/CAN-094-trap-half-time.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-091",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "West Coast / G-Funk",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "d5ce2671b07b7c6b",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 30,
+        "json": "musicology/canonical-grooves/CAN-091-west-coast-g-funk.json",
+        "midi": "musicology/midi/CAN-091-west-coast-g-funk.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-108",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Digital Dancehall / Ragga",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "01f1911bb88c2a6d",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 29,
+        "json": "musicology/canonical-grooves/CAN-108-digital-dancehall-ragga.json",
+        "midi": "musicology/midi/CAN-108-digital-dancehall-ragga.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-105",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Dub",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "a0fc0ea9c2252e5b",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 21,
+        "json": "musicology/canonical-grooves/CAN-105-dub.json",
+        "midi": "musicology/midi/CAN-105-dub.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-107",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Early Dancehall",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "850781b2ad3b378a",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-107-early-dancehall.json",
+        "midi": "musicology/midi/CAN-107-early-dancehall.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-099",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Mento Drum-Set Adaptation",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "88fc416d47c0b5b5",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-099-mento-drum-set-adaptation.json",
+        "midi": "musicology/midi/CAN-099-mento-drum-set-adaptation.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-109",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Modern Dancehall",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "62a605acd7d996bd",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 29,
+        "json": "musicology/canonical-grooves/CAN-109-modern-dancehall.json",
+        "midi": "musicology/midi/CAN-109-modern-dancehall.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-106",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Nyabinghi Drum-Set",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.62,
+      "sourceType": "canonical-curated",
+      "fingerprint": "e1ad2073720a790a",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-106-nyabinghi-drum-set.json",
+        "midi": "musicology/midi/CAN-106-nyabinghi-drum-set.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-102",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Reggae One Drop",
+      "playable": true,
+      "status": "provisional",
+      "confidence": 0.517,
+      "sourceType": "canonical-curated",
+      "fingerprint": "210cce99a61444ef",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 30,
+        "json": "musicology/canonical-grooves/CAN-102-reggae-one-drop.json",
+        "midi": "musicology/midi/CAN-102-reggae-one-drop.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-103",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Reggae Rockers",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "2080a9c9dd3c4f35",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 20,
+        "json": "musicology/canonical-grooves/CAN-103-reggae-rockers.json",
+        "midi": "musicology/midi/CAN-103-reggae-rockers.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-104",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Reggae Steppers",
+      "playable": true,
+      "status": "provisional",
+      "confidence": 0.432,
+      "sourceType": "canonical-curated",
+      "fingerprint": "d4cf782bb285b5aa",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 26,
+        "json": "musicology/canonical-grooves/CAN-104-reggae-steppers.json",
+        "midi": "musicology/midi/CAN-104-reggae-steppers.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-101",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Rocksteady",
+      "playable": true,
+      "status": "provisional",
+      "confidence": 0.42,
+      "sourceType": "canonical-curated",
+      "fingerprint": "bcc89b31b654c850",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-101-rocksteady.json",
+        "midi": "musicology/midi/CAN-101-rocksteady.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-100",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Ska",
+      "playable": true,
+      "status": "medium",
+      "confidence": 0.66,
+      "sourceType": "canonical-curated",
+      "fingerprint": "a635493cf68172cd",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 16,
+        "json": "musicology/canonical-grooves/CAN-100-ska.json",
+        "midi": "musicology/midi/CAN-100-ska.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-078",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Afro-Cuban Jazz 6/8",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "3066b7d52ba8dc98",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-078-afro-cuban-jazz-6-8.json",
+        "midi": "musicology/midi/CAN-078-afro-cuban-jazz-6-8.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-074",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Bebop Comping",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "49011fc0be0e2a99",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 30,
+        "json": "musicology/canonical-grooves/CAN-074-bebop-comping.json",
+        "midi": "musicology/midi/CAN-074-bebop-comping.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-073",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Big Band Swing",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "1a24ec07d3fc7dfc",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-073-big-band-swing.json",
+        "midi": "musicology/midi/CAN-073-big-band-swing.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-069",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Brush Ballad",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "bf4c00f0f2cbd420",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-069-brush-ballad.json",
+        "midi": "musicology/midi/CAN-069-brush-ballad.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-070",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Brush Swing",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "e26852e0cee448ab",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-070-brush-swing.json",
+        "midi": "musicology/midi/CAN-070-brush-swing.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-077",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Fusion",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "8b95061dfc6a2775",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 58,
+        "json": "musicology/canonical-grooves/CAN-077-fusion.json",
+        "midi": "musicology/midi/CAN-077-fusion.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-068",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Jazz Ballad",
+      "playable": true,
+      "status": "provisional",
+      "confidence": 0.46,
+      "sourceType": "canonical-curated",
+      "fingerprint": "5c7677f5542617ab",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 26,
+        "json": "musicology/canonical-grooves/CAN-068-jazz-ballad.json",
+        "midi": "musicology/midi/CAN-068-jazz-ballad.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-072",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Jazz Shuffle",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "33fde561036a1340",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-072-jazz-shuffle.json",
+        "midi": "musicology/midi/CAN-072-jazz-shuffle.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-071",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Jazz Waltz 3/4",
+      "playable": true,
+      "status": "medium",
+      "confidence": 0.639,
+      "sourceType": "canonical-curated",
+      "fingerprint": "329c3f1b3fffd086",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 20,
+        "json": "musicology/canonical-grooves/CAN-071-jazz-waltz-3-4.json",
+        "midi": "musicology/midi/CAN-071-jazz-waltz-3-4.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-076",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Jazz-Funk",
+      "playable": true,
+      "status": "medium",
+      "confidence": 0.528,
+      "sourceType": "canonical-curated",
+      "fingerprint": "47c830133be787ad",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 33,
+        "json": "musicology/canonical-grooves/CAN-076-jazz-funk.json",
+        "midi": "musicology/midi/CAN-076-jazz-funk.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-065",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Medium Swing",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "cf57d19ff3bb654c",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-065-medium-swing.json",
+        "midi": "musicology/midi/CAN-065-medium-swing.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-075",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Straight-8 / ECM",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "f1c2770e9cff2e37",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-075-straight-8-ecm.json",
+        "midi": "musicology/midi/CAN-075-straight-8-ecm.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-067",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Two-Feel Swing",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "c21d9e1def48f156",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-067-two-feel-swing.json",
+        "midi": "musicology/midi/CAN-067-two-feel-swing.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-066",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Up-Tempo / Bebop Swing",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "66ae170cad628e1f",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 32,
+        "json": "musicology/canonical-grooves/CAN-066-up-tempo-bebop-swing.json",
+        "midi": "musicology/midi/CAN-066-up-tempo-bebop-swing.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-144",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Baião",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "931ea7cd117eed91",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-144-baiao.json",
+        "midi": "musicology/midi/CAN-144-baiao.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-140",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Bossa Nova",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "0aec15ecad58215d",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-140-bossa-nova.json",
+        "midi": "musicology/midi/CAN-140-bossa-nova.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-150",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Choro / Maxixe Drum-Set Adaptation",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "472d74e92b90e03a",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-150-choro-maxixe-drum-set-adaptation.json",
+        "midi": "musicology/midi/CAN-150-choro-maxixe-drum-set-adaptation.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-146",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Frevo",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "7d75f31676110590",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 27,
+        "json": "musicology/canonical-grooves/CAN-146-frevo.json",
+        "midi": "musicology/midi/CAN-146-frevo.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-147",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Ijexá / Afoxê",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "9babaea258196a1b",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-147-ijexa-afoxe.json",
+        "midi": "musicology/midi/CAN-147-ijexa-afoxe.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-145",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Maracatu",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.945,
+      "sourceType": "canonical-curated",
+      "fingerprint": "dfb005822b1992b4",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 30,
+        "json": "musicology/canonical-grooves/CAN-145-maracatu.json",
+        "midi": "musicology/midi/CAN-145-maracatu.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-141",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Samba Batucada",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "af5ad55bd6fa48a8",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 36,
+        "json": "musicology/canonical-grooves/CAN-141-samba-batucada.json",
+        "midi": "musicology/midi/CAN-141-samba-batucada.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-142",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Samba Partido Alto",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "7a835c1d560d26d3",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 27,
+        "json": "musicology/canonical-grooves/CAN-142-samba-partido-alto.json",
+        "midi": "musicology/midi/CAN-142-samba-partido-alto.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-148",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Samba-Funk",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "e67172ebaf0aca00",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-148-samba-funk.json",
+        "midi": "musicology/midi/CAN-148-samba-funk.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-149",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Samba-Jazz",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "da14c145fc84710e",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-149-samba-jazz.json",
+        "midi": "musicology/midi/CAN-149-samba-jazz.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-143",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Samba-Reggae",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "30cda96a97a5773b",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 27,
+        "json": "musicology/canonical-grooves/CAN-143-samba-reggae.json",
+        "midi": "musicology/midi/CAN-143-samba-reggae.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-153",
+      "family": "Latin America",
+      "tradition": "Colombia & Venezuela",
+      "archetype": "Chandé",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "feac0032a4722a29",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-153-chande.json",
+        "midi": "musicology/midi/CAN-153-chande.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-154",
+      "family": "Latin America",
+      "tradition": "Colombia & Venezuela",
+      "archetype": "Currulao Drum-Set Adaptation",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "5be5b153d60af1e5",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 22,
+        "json": "musicology/canonical-grooves/CAN-154-currulao-drum-set-adaptation.json",
+        "midi": "musicology/midi/CAN-154-currulao-drum-set-adaptation.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-155",
+      "family": "Latin America",
+      "tradition": "Colombia & Venezuela",
+      "archetype": "Joropo",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "55cc708af1d71143",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-155-joropo.json",
+        "midi": "musicology/midi/CAN-155-joropo.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-156",
+      "family": "Latin America",
+      "tradition": "Colombia & Venezuela",
+      "archetype": "Merengue Venezolano",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "5c48276404a210b0",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 20,
+        "json": "musicology/canonical-grooves/CAN-156-merengue-venezolano.json",
+        "midi": "musicology/midi/CAN-156-merengue-venezolano.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-152",
+      "family": "Latin America",
+      "tradition": "Colombia & Venezuela",
+      "archetype": "Porro / Porro Chocoano",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "56af9ad16d4a0714",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-152-porro-porro-chocoano.json",
+        "midi": "musicology/midi/CAN-152-porro-porro-chocoano.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-151",
+      "family": "Latin America",
+      "tradition": "Colombia & Venezuela",
+      "archetype": "Traditional Colombian Cumbia",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "cbaf9a64e732d523",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-151-traditional-colombian-cumbia.json",
+        "midi": "musicology/midi/CAN-151-traditional-colombian-cumbia.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-137",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Afro-Cuban 6/8 / Bembé",
+      "playable": true,
+      "status": "medium",
+      "confidence": 0.542,
+      "sourceType": "canonical-curated",
+      "fingerprint": "cd778e257e7bba80",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 33,
+        "json": "musicology/canonical-grooves/CAN-137-afro-cuban-6-8-bembe.json",
+        "midi": "musicology/midi/CAN-137-afro-cuban-6-8-bembe.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-132",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Bolero Cubano",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "46c147c2ffd8474b",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 27,
+        "json": "musicology/canonical-grooves/CAN-132-bolero-cubano.json",
+        "midi": "musicology/midi/CAN-132-bolero-cubano.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-131",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Cha-Cha-Cha",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "afca130dd6aedda6",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 27,
+        "json": "musicology/canonical-grooves/CAN-131-cha-cha-cha.json",
+        "midi": "musicology/midi/CAN-131-cha-cha-cha.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-136",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Guaguancó Drum-Set",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.934,
+      "sourceType": "canonical-curated",
+      "fingerprint": "aa7a48bd4b37397b",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 20,
+        "json": "musicology/canonical-grooves/CAN-136-guaguanco-drum-set.json",
+        "midi": "musicology/midi/CAN-136-guaguanco-drum-set.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-130",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Mambo",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "fccd72827781d3f9",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 27,
+        "json": "musicology/canonical-grooves/CAN-130-mambo.json",
+        "midi": "musicology/midi/CAN-130-mambo.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-135",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Mozambique",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "92e048a4fdb303bd",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-135-mozambique.json",
+        "midi": "musicology/midi/CAN-135-mozambique.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-138",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Salsa 2-3",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.62,
+      "sourceType": "canonical-curated",
+      "fingerprint": "7ee83152e4322901",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 21,
+        "json": "musicology/canonical-grooves/CAN-138-salsa-2-3.json",
+        "midi": "musicology/midi/CAN-138-salsa-2-3.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-139",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Salsa 3-2",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.62,
+      "sourceType": "canonical-curated",
+      "fingerprint": "38d7e63cae017b9a",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 22,
+        "json": "musicology/canonical-grooves/CAN-139-salsa-3-2.json",
+        "midi": "musicology/midi/CAN-139-salsa-3-2.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-128",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Son",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "fb9ea21a49c95760",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 22,
+        "json": "musicology/canonical-grooves/CAN-128-son.json",
+        "midi": "musicology/midi/CAN-128-son.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-129",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Son Montuno",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "6248948b95d20dcf",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 26,
+        "json": "musicology/canonical-grooves/CAN-129-son-montuno.json",
+        "midi": "musicology/midi/CAN-129-son-montuno.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-133",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Songo",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "26dafc3ca83fb584",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 36,
+        "json": "musicology/canonical-grooves/CAN-133-songo.json",
+        "midi": "musicology/midi/CAN-133-songo.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-134",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Timba",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "1327049665b181fe",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 38,
+        "json": "musicology/canonical-grooves/CAN-134-timba.json",
+        "midi": "musicology/midi/CAN-134-timba.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-161",
+      "family": "Latin America",
+      "tradition": "Peru / Argentina / Uruguay",
+      "archetype": "Candombe Uruguayo",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "a19498064ba2dd32",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 36,
+        "json": "musicology/canonical-grooves/CAN-161-candombe-uruguayo.json",
+        "midi": "musicology/midi/CAN-161-candombe-uruguayo.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-159",
+      "family": "Latin America",
+      "tradition": "Peru / Argentina / Uruguay",
+      "archetype": "Chacarera",
+      "playable": true,
+      "status": "medium",
+      "confidence": 0.533,
+      "sourceType": "canonical-curated",
+      "fingerprint": "5338e1c171b5c972",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 12,
+        "json": "musicology/canonical-grooves/CAN-159-chacarera.json",
+        "midi": "musicology/midi/CAN-159-chacarera.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-157",
+      "family": "Latin America",
+      "tradition": "Peru / Argentina / Uruguay",
+      "archetype": "Festejo",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "6619a52356e24511",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 36,
+        "json": "musicology/canonical-grooves/CAN-157-festejo.json",
+        "midi": "musicology/midi/CAN-157-festejo.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-158",
+      "family": "Latin America",
+      "tradition": "Peru / Argentina / Uruguay",
+      "archetype": "Landó",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "9cbeb15ca0160f8d",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 36,
+        "json": "musicology/canonical-grooves/CAN-158-lando.json",
+        "midi": "musicology/midi/CAN-158-lando.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-163",
+      "family": "Latin America",
+      "tradition": "Peru / Argentina / Uruguay",
+      "archetype": "Milonga",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "a161824d89b2dd67",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 29,
+        "json": "musicology/canonical-grooves/CAN-163-milonga.json",
+        "midi": "musicology/midi/CAN-163-milonga.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-162",
+      "family": "Latin America",
+      "tradition": "Peru / Argentina / Uruguay",
+      "archetype": "Tango",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "81c18cd5a1b315ec",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 27,
+        "json": "musicology/canonical-grooves/CAN-162-tango.json",
+        "midi": "musicology/midi/CAN-162-tango.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-160",
+      "family": "Latin America",
+      "tradition": "Peru / Argentina / Uruguay",
+      "archetype": "Zamba Argentina",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "445f81562c25e606",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 19,
+        "json": "musicology/canonical-grooves/CAN-160-zamba-argentina.json",
+        "midi": "musicology/midi/CAN-160-zamba-argentina.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-195",
+      "family": "North Africa / Middle East",
+      "tradition": "Arabic rhythmic cycles",
+      "archetype": "Ayoub",
+      "playable": true,
+      "status": "medium",
+      "confidence": 0.525,
+      "sourceType": "canonical-curated",
+      "fingerprint": "b904e4e9e455dc6a",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 13,
+        "json": "musicology/canonical-grooves/CAN-195-ayoub.json",
+        "midi": "musicology/midi/CAN-195-ayoub.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-196",
+      "family": "North Africa / Middle East",
+      "tradition": "Arabic rhythmic cycles",
+      "archetype": "Baladi / Masmoudi Saghir",
+      "playable": true,
+      "status": "provisional",
+      "confidence": 0.378,
+      "sourceType": "canonical-curated",
+      "fingerprint": "9be2404bfe5e8889",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 26,
+        "json": "musicology/canonical-grooves/CAN-196-baladi-masmoudi-saghir.json",
+        "midi": "musicology/midi/CAN-196-baladi-masmoudi-saghir.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-198",
+      "family": "North Africa / Middle East",
+      "tradition": "Arabic rhythmic cycles",
+      "archetype": "Chiftetelli",
+      "playable": true,
+      "status": "provisional",
+      "confidence": 0.353,
+      "sourceType": "canonical-curated",
+      "fingerprint": "996221a8a481d46f",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 33,
+        "json": "musicology/canonical-grooves/CAN-198-chiftetelli.json",
+        "midi": "musicology/midi/CAN-198-chiftetelli.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-194",
+      "family": "North Africa / Middle East",
+      "tradition": "Arabic rhythmic cycles",
+      "archetype": "Malfuf",
+      "playable": true,
+      "status": "medium",
+      "confidence": 0.556,
+      "sourceType": "canonical-curated",
+      "fingerprint": "fc2bdf3f19ffddb0",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 12,
+        "json": "musicology/canonical-grooves/CAN-194-malfuf.json",
+        "midi": "musicology/midi/CAN-194-malfuf.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-192",
+      "family": "North Africa / Middle East",
+      "tradition": "Arabic rhythmic cycles",
+      "archetype": "Maqsum",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "d8c67da8d48802b0",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-192-maqsum.json",
+        "midi": "musicology/midi/CAN-192-maqsum.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-197",
+      "family": "North Africa / Middle East",
+      "tradition": "Arabic rhythmic cycles",
+      "archetype": "Masmoudi Kabir",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "ea74feb266691770",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-197-masmoudi-kabir.json",
+        "midi": "musicology/midi/CAN-197-masmoudi-kabir.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-193",
+      "family": "North Africa / Middle East",
+      "tradition": "Arabic rhythmic cycles",
+      "archetype": "Saidi",
+      "playable": true,
+      "status": "medium",
+      "confidence": 0.525,
+      "sourceType": "canonical-curated",
+      "fingerprint": "bf25067fda8d46d3",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 21,
+        "json": "musicology/canonical-grooves/CAN-193-saidi.json",
+        "midi": "musicology/midi/CAN-193-saidi.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-189",
+      "family": "North Africa / Middle East",
+      "tradition": "North Africa",
+      "archetype": "Gnawa Drum-Set",
+      "playable": true,
+      "status": "high",
+      "confidence": 0.62,
+      "sourceType": "canonical-curated",
+      "fingerprint": "9bb8e91805884c21",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 17,
+        "json": "musicology/canonical-grooves/CAN-189-gnawa-drum-set.json",
+        "midi": "musicology/midi/CAN-189-gnawa-drum-set.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-190",
+      "family": "North Africa / Middle East",
+      "tradition": "North Africa",
+      "archetype": "Maghreb Chaabi",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "f38c75b88ad516d8",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-190-maghreb-chaabi.json",
+        "midi": "musicology/midi/CAN-190-maghreb-chaabi.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-191",
+      "family": "North Africa / Middle East",
+      "tradition": "North Africa",
+      "archetype": "Raï",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "6a9d56b536a18a95",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 29,
+        "json": "musicology/canonical-grooves/CAN-191-rai.json",
+        "midi": "musicology/midi/CAN-191-rai.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-027",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Alternative / Grunge",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "e2d8767903451c7d",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 31,
+        "json": "musicology/canonical-grooves/CAN-027-alternative-grunge.json",
+        "midi": "musicology/midi/CAN-027-alternative-grunge.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-023",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Arena Rock",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "3d64da222298dc66",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 35,
+        "json": "musicology/canonical-grooves/CAN-023-arena-rock.json",
+        "midi": "musicology/midi/CAN-023-arena-rock.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-019",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Classic Rock 16ths",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "045e0f9d73ee88d5",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 45,
+        "json": "musicology/canonical-grooves/CAN-019-classic-rock-16ths.json",
+        "midi": "musicology/midi/CAN-019-classic-rock-16ths.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-018",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Classic Rock 8ths",
+      "playable": true,
+      "status": "provisional",
+      "confidence": 0.413,
+      "sourceType": "canonical-curated",
+      "fingerprint": "78a9f0beaba6cf51",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 22,
+        "json": "musicology/canonical-grooves/CAN-018-classic-rock-8ths.json",
+        "midi": "musicology/midi/CAN-018-classic-rock-8ths.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-038",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Double-Kick Metal",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "cbc999582265972a",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 45,
+        "json": "musicology/canonical-grooves/CAN-038-double-kick-metal.json",
+        "midi": "musicology/midi/CAN-038-double-kick-metal.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-017",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Early Rock & Roll / Lindy Beat",
+      "playable": true,
+      "status": "provisional",
+      "confidence": 0.515,
+      "sourceType": "canonical-curated",
+      "fingerprint": "38f0c3ec262979f0",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 11,
+        "json": "musicology/canonical-grooves/CAN-017-early-rock-roll-lindy-beat.json",
+        "midi": "musicology/midi/CAN-017-early-rock-roll-lindy-beat.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-032",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Glam Rock",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "e5c4badead5e3819",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 33,
+        "json": "musicology/canonical-grooves/CAN-032-glam-rock.json",
+        "midi": "musicology/midi/CAN-032-glam-rock.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-021",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Half-Time Rock",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "a2adb462035ae881",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-021-half-time-rock.json",
+        "midi": "musicology/midi/CAN-021-half-time-rock.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-022",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Hard Rock",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "58c638bc87a23b95",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 33,
+        "json": "musicology/canonical-grooves/CAN-022-hard-rock.json",
+        "midi": "musicology/midi/CAN-022-hard-rock.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-026",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Indie Rock",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "18f89a6cb844d5f4",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-026-indie-rock.json",
+        "midi": "musicology/midi/CAN-026-indie-rock.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-036",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Metal Half-Time",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "e4ca34c87b745940",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 26,
+        "json": "musicology/canonical-grooves/CAN-036-metal-half-time.json",
+        "midi": "musicology/midi/CAN-036-metal-half-time.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-035",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Metal Straight-8",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "9713f96a02b5e533",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 37,
+        "json": "musicology/canonical-grooves/CAN-035-metal-straight-8.json",
+        "midi": "musicology/midi/CAN-035-metal-straight-8.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-039",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Metalcore Half-Time",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "cbd3db663562dd18",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 26,
+        "json": "musicology/canonical-grooves/CAN-039-metalcore-half-time.json",
+        "midi": "musicology/midi/CAN-039-metalcore-half-time.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-034",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Odd-Meter Rock",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "6a390249629bee52",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-034-odd-meter-rock.json",
+        "midi": "musicology/midi/CAN-034-odd-meter-rock.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-025",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Pop Rock",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "578f413abb610ebd",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 30,
+        "json": "musicology/canonical-grooves/CAN-025-pop-rock.json",
+        "midi": "musicology/midi/CAN-025-pop-rock.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-029",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Pop-Punk",
+      "playable": true,
+      "status": "provisional",
+      "confidence": 0.41,
+      "sourceType": "canonical-curated",
+      "fingerprint": "8f80ad52f7e4d9e9",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 40,
+        "json": "musicology/canonical-grooves/CAN-029-pop-punk.json",
+        "midi": "musicology/midi/CAN-029-pop-punk.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-030",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Post-Punk / New Wave",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "30ac0f8aaa5e0a76",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 30,
+        "json": "musicology/canonical-grooves/CAN-030-post-punk-new-wave.json",
+        "midi": "musicology/midi/CAN-030-post-punk-new-wave.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-024",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Power Ballad",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "3490ce9190ef5862",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 29,
+        "json": "musicology/canonical-grooves/CAN-024-power-ballad.json",
+        "midi": "musicology/midi/CAN-024-power-ballad.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-033",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Progressive Rock",
+      "playable": true,
+      "status": "provisional",
+      "confidence": 0.393,
+      "sourceType": "canonical-curated",
+      "fingerprint": "51f3c3a487a0c491",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 32,
+        "json": "musicology/canonical-grooves/CAN-033-progressive-rock.json",
+        "midi": "musicology/midi/CAN-033-progressive-rock.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-028",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Punk Rock",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "2c261c073d0411dd",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 44,
+        "json": "musicology/canonical-grooves/CAN-028-punk-rock.json",
+        "midi": "musicology/midi/CAN-028-punk-rock.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-020",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Rock Shuffle",
+      "playable": true,
+      "status": "medium",
+      "confidence": 0.577,
+      "sourceType": "canonical-curated",
+      "fingerprint": "e8106092ad262c3e",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 66,
+        "json": "musicology/canonical-grooves/CAN-020-rock-shuffle.json",
+        "midi": "musicology/midi/CAN-020-rock-shuffle.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-040",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Stoner / Heavy Shuffle",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "0c0936bfa70db937",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 31,
+        "json": "musicology/canonical-grooves/CAN-040-stoner-heavy-shuffle.json",
+        "midi": "musicology/midi/CAN-040-stoner-heavy-shuffle.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-031",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Surf Rock",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "91aba1c0e840cd70",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 29,
+        "json": "musicology/canonical-grooves/CAN-031-surf-rock.json",
+        "midi": "musicology/midi/CAN-031-surf-rock.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-037",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Thrash Metal",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "2248fb9e9b512d3b",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 48,
+        "json": "musicology/canonical-grooves/CAN-037-thrash-metal.json",
+        "midi": "musicology/midi/CAN-037-thrash-metal.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-203",
+      "family": "South Asia",
+      "tradition": "Indian & Punjabi adaptations",
+      "archetype": "Bhangra / Dhol Drum-Set",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "2b0e227a887573cb",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-203-bhangra-dhol-drum-set.json",
+        "midi": "musicology/midi/CAN-203-bhangra-dhol-drum-set.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-206",
+      "family": "South Asia",
+      "tradition": "Indian & Punjabi adaptations",
+      "archetype": "Dadra / 6-beat Drum-Set Adaptation",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "9a1e2cf7262524c7",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 20,
+        "json": "musicology/canonical-grooves/CAN-206-dadra-6-beat-drum-set-adaptation.json",
+        "midi": "musicology/midi/CAN-206-dadra-6-beat-drum-set-adaptation.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-205",
+      "family": "South Asia",
+      "tradition": "Indian & Punjabi adaptations",
+      "archetype": "Keherwa / 8-beat Drum-Set Adaptation",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "67dba730336162c2",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-205-keherwa-8-beat-drum-set-adaptation.json",
+        "midi": "musicology/midi/CAN-205-keherwa-8-beat-drum-set-adaptation.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-204",
+      "family": "South Asia",
+      "tradition": "Indian & Punjabi adaptations",
+      "archetype": "Teentaal 16-beat Drum-Set Adaptation",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "75791126f8d88e9a",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-204-teentaal-16-beat-drum-set-adaptation.json",
+        "midi": "musicology/midi/CAN-204-teentaal-16-beat-drum-set-adaptation.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "catalogDisambiguation": false
+      }
+    }
+  ],
+  "duplicateConflicts": []
+}

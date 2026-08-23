@@ -125,7 +125,7 @@
     const I18N_RESOURCES = Object.freeze({
         fr: { translation: {
             "toolbar.source":"SOURCE", "toolbar.style":"STYLE", "toolbar.groove":"GROOVE", "toolbar.variant":"VARIANTE", "toolbar.swing":"SWING",
-            "feel.title":"FEEL", "feel.subtitle":"FEEL actif : le batteur interprète le groove. AUTO fait évoluer la performance à chaque tour.", "feel.auto":"AUTO", "feel.autoTooltip":"Nouvelle interprétation à chaque tour", "feel.energy":"ÉNERGIE", "feel.stable":"STABLE", "feel.fills":"FILLS", "feel.density":"DENSITÉ", "feel.orchestrationProfile":"ORCHESTRATION", "feel.orchestration":"INSTRUMENTS", "feel.xyAria":"Pad Feel : horizontal fills, vertical énergie", "feel.layersAria":"Couches que FEEL peut agrémenter", "feel.orchAuto":"AUTO · selon le groove", "feel.orchPocket":"Pocket", "feel.orchHihat":"Hi-Hat", "feel.orchRide":"Ride", "feel.orchOpenKit":"Open Kit", "feel.orchPercussive":"Percussif", "feel.orchFullKit":"Full Kit", "feel.hhTooltip":"Agrémenter le charley · OFF = conserver exactement le charley source", "feel.rideTooltip":"Autoriser FEEL à agrémenter le ride · les notes source restent conservées", "feel.crashTooltip":"Autoriser FEEL à agrémenter les crashs · les notes source restent conservées", "feel.tomsTooltip":"Autoriser FEEL à agrémenter les toms · les notes source restent conservées", "feel.orchInfoAuto":"Choisit le rôle de la main de time selon le groove, sans modifier le CORE.", "feel.orchInfoPocket":"Main de time au hi-hat, jeu compact, cymbales et toms très discrets.", "feel.orchInfoHihat":"Conserve la main de time au hi-hat et privilégie ses articulations.", "feel.orchInfoRide":"Déplace la main de time du hi-hat vers le ride en conservant le même rythme.", "feel.orchInfoOpenKit":"Autorise des passages naturels entre hi-hat, ride et crash ; toms surtout en transition.", "feel.orchInfoPercussive":"Garde le time stable et ouvre davantage les déplacements vers les toms.", "feel.orchInfoFullKit":"Tout le kit est disponible, toujours sous les contraintes des deux mains et deux pieds.",
+            "feel.title":"FEEL", "feel.subtitle":"FEEL actif : le batteur interprète le groove. AUTO fait évoluer la performance à chaque tour.", "feel.auto":"AUTO", "feel.autoTooltip":"Nouvelle interprétation à chaque tour", "feel.energy":"ÉNERGIE", "feel.stable":"STABLE", "feel.fills":"FILLS", "feel.density":"DENSITÉ", "feel.orchestrationProfile":"ORCHESTRATION", "feel.orchestration":"INSTRUMENTS", "feel.xyAria":"Pad Feel : horizontal fills, vertical énergie", "feel.layersAria":"Couches que FEEL peut agrémenter", "feel.orchAuto":"AUTO · selon le groove", "feel.orchestrationProfileAria":"Choisir l’orchestration", "feel.orchPocket":"Compact", "feel.orchHihat":"Charley", "feel.orchRide":"Ride", "feel.orchOpenKit":"Kit ouvert", "feel.orchPercussive":"Percussif", "feel.orchFullKit":"Kit complet", "feel.hhTooltip":"Agrémenter le charley · OFF = conserver exactement le charley source", "feel.rideTooltip":"Autoriser FEEL à agrémenter le ride · les notes source restent conservées", "feel.crashTooltip":"Autoriser FEEL à agrémenter les crashs · les notes source restent conservées", "feel.tomsTooltip":"Autoriser FEEL à agrémenter les toms · les notes source restent conservées", "feel.orchInfoAuto":"Adapte automatiquement l’orchestration au groove sans modifier son rythme de base.", "feel.orchInfoPocket":"Jeu compact centré sur le charley, avec peu de cymbales et de toms.", "feel.orchInfoHihat":"Le charley porte le groove ; FEEL travaille surtout ses ouvertures, accents et nuances.", "feel.orchInfoRide":"Le motif joué au charley est déplacé sur le ride ; le charley au pied peut rester présent si le style le demande.", "feel.orchInfoOpenKit":"Le jeu peut s’ouvrir du charley vers le ride et les crashs ; les toms servent surtout aux transitions.", "feel.orchInfoPercussive":"Le groove reste stable tandis que les toms et les déplacements autour du kit deviennent plus présents.", "feel.orchInfoFullKit":"Tout le kit peut être utilisé, dans les limites réalistes des deux mains et des deux pieds.", "feel.autoOrchestrationAria":"Orchestration automatique", "feel.autoOrchestrationTooltip":"Changer automatiquement l’orchestration selon l’intervalle choisi", "feel.autoOrchestrationOn":"Orchestration automatique activée · changement tous les {{loops}} tours.", "feel.autoOrchestrationOff":"Orchestration automatique désactivée.", "feel.autoOrchestrationEveryAria":"Intervalle de changement d’orchestration", "feel.autoOrchestrationEveryTooltip":"Changer l’orchestration tous les {{loops}} tours", "feel.autoOrchestrationEveryStatus":"Orchestration automatique : changement tous les {{loops}} tours.", "feel.autoOrchestrationAuto":"-", "feel.autoOrchestrationAutoTooltip":"AUTO : choisit musicalement quand changer et peut utiliser une courte transition avant de revenir au charley ou au ride.", "feel.autoOrchestrationAutoStatus":"Orchestration automatique : durée et transitions choisies musicalement.",
             "search.placeholder":"Rechercher un groove…", "search.aria":"Rechercher dans tous les grooves", "search.results":"Résultats de recherche", "common.off":"Désactivé", "language.tooltip":"Langue", "theme.toggle":"Basculer le thème clair / sombre", "share.tooltip":"Partager ou sauvegarder ce groove", "audio.output":"Niveau de sortie audio", "audio.outputAria":"VU-mètre de sortie", "toolbar.sourceTooltip":"Source des grooves", "toolbar.styleTooltip":"Style musical", "toolbar.grooveTooltip":"Groove", "toolbar.preview":"Préécouter le groove sélectionné", "toolbar.addPatch":"Ajouter le patch à partir de la mémoire sélectionnée", "toolbar.variantTooltip":"Créer une variante musicale du groove courant", "kit.tooltip":"Kit de batterie", "swing.tooltip":"Swing en pourcentage", "transport.playPause":"Lecture / arrêt (Espace)","transport.stop":"Arrêt", "transport.tap":"Tap tempo (T)", "transport.tempoDown":"Diminuer le tempo", "transport.tempoUp":"Augmenter le tempo", "transport.tempo":"Tempo en BPM", "transport.signature":"Signature rythmique", "practice.countIn":"DÉCOMPTE", "memory.chain":"Chaîner les mémoires", "memory.undo":"Annuler", "memory.redo":"Rétablir", "memory.save":"Sauvegarder dans la mémoire sélectionnée (Ctrl+S)", "memory.new":"Nouveau motif vierge", "memory.clear":"Vider les mémoires",
             "practice.title":"Entraînement", "practice.subtitle":"Configure l’entraînement, puis appuie sur Lecture pour démarrer.", "practice.progression":"PROGRESSION", "practice.modeTempo":"Tempo", "practice.modeLayers":"Couches", "practice.modeCombined":"Couches + tempo", "practice.start":"DÉPART", "practice.target":"OBJECTIF", "practice.step":"PALIER", "practice.loops":"TOURS / NIVEAU", "practice.oneBar":"1 mesure", "practice.twoBars":"2 mesures", "practice.startButton":"Démarrer", "practice.stopButton":"Arrêter", "practice.ready":"Prêt à démarrer", "practice.explainer":"Couches : charley → caisse claire → grosse caisse → autres éléments du groove → accents → notes fantômes.",
             "practice.hihat":"Charley", "practice.snare":"Charley + caisse claire", "practice.kick":"Charley + caisse claire + grosse caisse", "practice.accents":"+ accents", "practice.ghosts":"+ notes fantômes", "practice.tempoStatus":"{{tempo}} → {{target}} BPM", "practice.loop":"tour {{current}}/{{total}}", "practice.started":"Entraînement démarré à {{tempo}} BPM.", "practice.stopped":"Entraînement arrêté.", "practice.targetReached":"Objectif atteint : {{tempo}} BPM. On continue.", "practice.layersDone":"Toutes les couches sont en place.", "practice.layersToTempo":"Couches acquises. Progression tempo vers {{target}} BPM.", "practice.level":"Entraînement : {{label}}.", "practice.tempo":"Entraînement : {{tempo}} BPM.", "practice.changedStopped":"Entraînement arrêté : les réglages ont été modifiés.",
@@ -140,7 +140,7 @@
         }},
         en: { translation: {
             "toolbar.source":"SOURCE", "toolbar.style":"STYLE", "toolbar.groove":"GROOVE", "toolbar.variant":"VARIATION", "toolbar.swing":"SWING",
-            "feel.title":"FEEL", "feel.subtitle":"FEEL active: the drummer interprets the groove. AUTO evolves the performance each loop.", "feel.auto":"AUTO", "feel.autoTooltip":"New interpretation each loop", "feel.energy":"ENERGY", "feel.stable":"STABLE", "feel.fills":"FILLS", "feel.density":"DENSITY", "feel.orchestrationProfile":"ORCHESTRATION", "feel.orchestration":"INSTRUMENTS", "feel.xyAria":"Feel pad: fills horizontally, energy vertically", "feel.layersAria":"Layers FEEL may embellish", "feel.orchAuto":"AUTO · from groove", "feel.orchPocket":"Pocket", "feel.orchHihat":"Hi-Hat", "feel.orchRide":"Ride", "feel.orchOpenKit":"Open Kit", "feel.orchPercussive":"Percussive", "feel.orchFullKit":"Full Kit", "feel.hhTooltip":"Embellish hi-hat · OFF = preserve the source hi-hat exactly", "feel.rideTooltip":"Allow FEEL to embellish ride · source notes stay preserved", "feel.crashTooltip":"Allow FEEL to embellish crashes · source notes stay preserved", "feel.tomsTooltip":"Allow FEEL to embellish toms · source notes stay preserved", "feel.orchInfoAuto":"Chooses the time-hand role from the groove without changing the CORE.", "feel.orchInfoPocket":"Time hand stays on hi-hat; compact playing with very restrained cymbals and toms.", "feel.orchInfoHihat":"Keeps the time hand on hi-hat and focuses on hi-hat articulations.", "feel.orchInfoRide":"Moves the time hand from hi-hat to ride while preserving the same rhythm.", "feel.orchInfoOpenKit":"Allows natural moves between hi-hat, ride and crash; toms mainly for transitions.", "feel.orchInfoPercussive":"Keeps time stable while allowing more movement toward the toms.", "feel.orchInfoFullKit":"The whole kit is available, still constrained by two hands and two feet.",
+            "feel.title":"FEEL", "feel.subtitle":"FEEL active: the drummer interprets the groove. AUTO evolves the performance each loop.", "feel.auto":"AUTO", "feel.autoTooltip":"New interpretation each loop", "feel.energy":"ENERGY", "feel.stable":"STABLE", "feel.fills":"FILLS", "feel.density":"DENSITY", "feel.orchestrationProfile":"ORCHESTRATION", "feel.orchestration":"INSTRUMENTS", "feel.xyAria":"Feel pad: fills horizontally, energy vertically", "feel.layersAria":"Layers FEEL may embellish", "feel.orchAuto":"AUTO · from groove", "feel.orchestrationProfileAria":"Choose orchestration", "feel.orchPocket":"Pocket", "feel.orchHihat":"Hi-Hat", "feel.orchRide":"Ride", "feel.orchOpenKit":"Open Kit", "feel.orchPercussive":"Percussive", "feel.orchFullKit":"Full Kit", "feel.hhTooltip":"Embellish hi-hat · OFF = preserve the source hi-hat exactly", "feel.rideTooltip":"Allow FEEL to embellish ride · source notes stay preserved", "feel.crashTooltip":"Allow FEEL to embellish crashes · source notes stay preserved", "feel.tomsTooltip":"Allow FEEL to embellish toms · source notes stay preserved", "feel.orchInfoAuto":"Adapts the orchestration to the groove without changing its rhythmic identity.", "feel.orchInfoPocket":"Compact hi-hat-led playing with restrained cymbals and toms.", "feel.orchInfoHihat":"The hi-hat carries the groove; FEEL mainly shapes openings, accents and dynamics.", "feel.orchInfoRide":"The hi-hat time pattern moves to the ride; left-foot hi-hat may remain when the style calls for it.", "feel.orchInfoOpenKit":"The groove can open from hi-hat to ride and crashes; toms are used mainly for transitions.", "feel.orchInfoPercussive":"The groove stays stable while toms and movement around the kit become more prominent.", "feel.orchInfoFullKit":"The whole kit may be used within realistic two-hand/two-foot constraints.", "feel.autoOrchestrationAria":"Automatic orchestration", "feel.autoOrchestrationTooltip":"Automatically change orchestration at the selected interval", "feel.autoOrchestrationOn":"Automatic orchestration on · change every {{loops}} loops.", "feel.autoOrchestrationOff":"Automatic orchestration off.", "feel.autoOrchestrationEveryAria":"Orchestration change interval", "feel.autoOrchestrationEveryTooltip":"Change orchestration every {{loops}} loops", "feel.autoOrchestrationEveryStatus":"Automatic orchestration: change every {{loops}} loops.", "feel.autoOrchestrationAuto":"-", "feel.autoOrchestrationAutoTooltip":"AUTO: musically chooses when to change and may use a short transition before returning to hi-hat or ride.", "feel.autoOrchestrationAutoStatus":"Automatic orchestration: musical timing and transitions.",
             "search.placeholder":"Search grooves…", "search.aria":"Search all grooves", "search.results":"Search results", "common.off":"Off", "language.tooltip":"Language", "theme.toggle":"Toggle light / dark theme", "share.tooltip":"Share or save this groove", "audio.output":"Audio output level", "audio.outputAria":"Output VU meter", "toolbar.sourceTooltip":"Groove source", "toolbar.styleTooltip":"Music style", "toolbar.grooveTooltip":"Groove", "toolbar.preview":"Preview selected groove", "toolbar.addPatch":"Add the patch from the selected memory onward", "toolbar.variantTooltip":"Create a musical variation of the current groove", "kit.tooltip":"Drum kit", "swing.tooltip":"Swing percentage", "transport.playPause":"Play / stop (Space)","transport.stop":"Stop", "transport.tap":"Tap tempo (T)", "transport.tempoDown":"Decrease tempo", "transport.tempoUp":"Increase tempo", "transport.tempo":"Tempo in BPM", "transport.signature":"Time signature", "practice.countIn":"COUNT-IN", "memory.chain":"Chain memories", "memory.undo":"Undo", "memory.redo":"Redo", "memory.save":"Save to selected memory (Ctrl+S)", "memory.new":"New empty pattern", "memory.clear":"Clear memories",
             "practice.title":"Practice", "practice.subtitle":"Practice the groove by tempo or by layers.", "practice.progression":"PROGRESSION", "practice.modeTempo":"Tempo", "practice.modeLayers":"Layers", "practice.modeCombined":"Layers + tempo", "practice.start":"START", "practice.target":"TARGET", "practice.step":"STEP", "practice.loops":"LOOPS / LEVEL", "practice.oneBar":"1 bar", "practice.twoBars":"2 bars", "practice.startButton":"Start", "practice.stopButton":"Stop", "practice.ready":"Ready to start", "practice.explainer":"Layers: hi-hat → snare → kick → other groove parts → accents → ghost notes.",
             "practice.hihat":"Hi-hat", "practice.snare":"Hi-hat + snare", "practice.kick":"Hi-hat + snare + kick", "practice.accents":"+ accents", "practice.ghosts":"+ ghost notes", "practice.tempoStatus":"{{tempo}} → {{target}} BPM", "practice.loop":"loop {{current}}/{{total}}", "practice.started":"Practice started at {{tempo}} BPM.", "practice.stopped":"Practice stopped.", "practice.targetReached":"Target reached: {{tempo}} BPM. Keep going.", "practice.layersDone":"All layers are active.", "practice.layersToTempo":"Layers complete. Tempo progression to {{target}} BPM.", "practice.level":"Practice: {{label}}.", "practice.tempo":"Practice: {{tempo}} BPM.", "practice.changedStopped":"Practice stopped because its settings changed.",
@@ -155,7 +155,7 @@
         }},
         es: { translation: {
             "toolbar.source":"FUENTE", "toolbar.style":"ESTILO", "toolbar.groove":"GROOVE", "toolbar.variant":"VARIACIÓN", "toolbar.swing":"SWING",
-            "feel.title":"FEEL", "feel.subtitle":"FEEL activo: el baterista interpreta el groove. AUTO hace evolucionar la interpretación en cada vuelta.", "feel.auto":"AUTO", "feel.autoTooltip":"Nueva interpretación en cada vuelta", "feel.energy":"ENERGÍA", "feel.stable":"ESTABLE", "feel.fills":"FILLS", "feel.density":"DENSIDAD", "feel.orchestrationProfile":"ORQUESTACIÓN", "feel.orchestration":"INSTRUMENTOS", "feel.xyAria":"Pad Feel: fills en horizontal, energía en vertical", "feel.layersAria":"Capas que FEEL puede ornamentar", "feel.orchAuto":"AUTO · según el groove", "feel.orchPocket":"Pocket", "feel.orchHihat":"Hi-Hat", "feel.orchRide":"Ride", "feel.orchOpenKit":"Kit abierto", "feel.orchPercussive":"Percusivo", "feel.orchFullKit":"Kit completo", "feel.hhTooltip":"Ornamentar el charles · OFF = conservar exactamente el charles fuente", "feel.rideTooltip":"Permitir que FEEL ornamente el ride · las notas fuente se conservan", "feel.crashTooltip":"Permitir que FEEL ornamente los crashes · las notas fuente se conservan", "feel.tomsTooltip":"Permitir que FEEL ornamente los toms · las notas fuente se conservan", "feel.orchInfoAuto":"Elige el papel de la mano de tiempo según el groove sin modificar el CORE.", "feel.orchInfoPocket":"La mano de tiempo queda en el charles; juego compacto con platos y toms muy discretos.", "feel.orchInfoHihat":"Mantiene la mano de tiempo en el charles y prioriza sus articulaciones.", "feel.orchInfoRide":"Mueve la mano de tiempo del charles al ride conservando el mismo ritmo.", "feel.orchInfoOpenKit":"Permite cambios naturales entre charles, ride y crash; toms sobre todo en transiciones.", "feel.orchInfoPercussive":"Mantiene el tiempo estable y permite más desplazamientos hacia los toms.", "feel.orchInfoFullKit":"Todo el kit está disponible, siempre limitado por dos manos y dos pies.",
+            "feel.title":"FEEL", "feel.subtitle":"FEEL activo: el baterista interpreta el groove. AUTO hace evolucionar la interpretación en cada vuelta.", "feel.auto":"AUTO", "feel.autoTooltip":"Nueva interpretación en cada vuelta", "feel.energy":"ENERGÍA", "feel.stable":"ESTABLE", "feel.fills":"FILLS", "feel.density":"DENSIDAD", "feel.orchestrationProfile":"ORQUESTACIÓN", "feel.orchestration":"INSTRUMENTOS", "feel.xyAria":"Pad Feel: fills en horizontal, energía en vertical", "feel.layersAria":"Capas que FEEL puede ornamentar", "feel.orchAuto":"AUTO · según el groove", "feel.orchestrationProfileAria":"Elegir orquestación", "feel.orchPocket":"Compacto", "feel.orchHihat":"Charles", "feel.orchRide":"Ride", "feel.orchOpenKit":"Kit abierto", "feel.orchPercussive":"Percusivo", "feel.orchFullKit":"Kit completo", "feel.hhTooltip":"Ornamentar el charles · OFF = conservar exactamente el charles fuente", "feel.rideTooltip":"Permitir que FEEL ornamente el ride · las notas fuente se conservan", "feel.crashTooltip":"Permitir que FEEL ornamente los crashes · las notas fuente se conservan", "feel.tomsTooltip":"Permitir que FEEL ornamente los toms · las notas fuente se conservan", "feel.orchInfoAuto":"Adapta automáticamente la orquestación al groove sin cambiar su identidad rítmica.", "feel.orchInfoPocket":"Interpretación compacta centrada en el charles, con pocos platos y toms.", "feel.orchInfoHihat":"El charles lleva el groove; FEEL trabaja sobre todo aperturas, acentos y matices.", "feel.orchInfoRide":"El patrón del charles se traslada al ride; el charles con el pie puede mantenerse cuando el estilo lo pide.", "feel.orchInfoOpenKit":"El juego puede abrirse del charles al ride y los crashes; los toms se usan sobre todo en transiciones.", "feel.orchInfoPercussive":"El groove se mantiene estable mientras los toms y los desplazamientos por el kit ganan presencia.", "feel.orchInfoFullKit":"Puede utilizarse todo el kit respetando los límites reales de dos manos y dos pies.", "feel.autoOrchestrationAria":"Orquestación automática", "feel.autoOrchestrationTooltip":"Cambiar automáticamente la orquestación según el intervalo elegido", "feel.autoOrchestrationOn":"Orquestación automática activada · cambio cada {{loops}} vueltas.", "feel.autoOrchestrationOff":"Orquestación automática desactivada.", "feel.autoOrchestrationEveryAria":"Intervalo de cambio de orquestación", "feel.autoOrchestrationEveryTooltip":"Cambiar la orquestación cada {{loops}} vueltas", "feel.autoOrchestrationEveryStatus":"Orquestación automática: cambio cada {{loops}} vueltas.", "feel.autoOrchestrationAuto":"-", "feel.autoOrchestrationAutoTooltip":"AUTO: elige musicalmente cuándo cambiar y puede usar una transición corta antes de volver al charles o al ride.", "feel.autoOrchestrationAutoStatus":"Orquestación automática: duración y transiciones elegidas musicalmente.",
             "search.placeholder":"Buscar grooves…", "search.aria":"Buscar en todos los grooves", "search.results":"Resultados de búsqueda", "common.off":"Off", "language.tooltip":"Idioma", "theme.toggle":"Cambiar tema claro / oscuro", "share.tooltip":"Compartir o guardar este groove", "audio.output":"Nivel de salida de audio", "audio.outputAria":"VU-metro de salida", "toolbar.sourceTooltip":"Fuente de grooves", "toolbar.styleTooltip":"Estilo musical", "toolbar.grooveTooltip":"Groove", "toolbar.preview":"Preescuchar el groove seleccionado", "toolbar.addPatch":"Añadir el patch desde la memoria seleccionada", "toolbar.variantTooltip":"Crear una variación musical del groove actual", "kit.tooltip":"Kit de batería", "swing.tooltip":"Swing en porcentaje", "transport.playPause":"Reproducir / stop (Espacio)","transport.stop":"Stop", "transport.tap":"Tap tempo (T)", "transport.tempoDown":"Disminuir tempo", "transport.tempoUp":"Aumentar tempo", "transport.tempo":"Tempo en BPM", "transport.signature":"Compás", "practice.countIn":"COUNT-IN", "memory.chain":"Encadenar memorias", "memory.undo":"Deshacer", "memory.redo":"Rehacer", "memory.save":"Guardar en la memoria seleccionada (Ctrl+S)", "memory.new":"Nuevo patrón vacío", "memory.clear":"Vaciar memorias",
             "practice.title":"Práctica", "practice.subtitle":"Practica el groove por tempo o por capas.", "practice.progression":"PROGRESIÓN", "practice.modeTempo":"Tempo", "practice.modeLayers":"Capas", "practice.modeCombined":"Capas + tempo", "practice.start":"INICIO", "practice.target":"OBJETIVO", "practice.step":"PASO", "practice.loops":"VUELTAS / NIVEL", "practice.oneBar":"1 compás", "practice.twoBars":"2 compases", "practice.startButton":"Empezar", "practice.stopButton":"Parar", "practice.ready":"Listo para empezar", "practice.explainer":"Capas: charles → caja → bombo → otras partes del groove → acentos → ghost notes.",
             "practice.hihat":"Charles", "practice.snare":"Charles + caja", "practice.kick":"Charles + caja + bombo", "practice.accents":"+ acentos", "practice.ghosts":"+ ghost notes", "practice.tempoStatus":"{{tempo}} → {{target}} BPM", "practice.loop":"vuelta {{current}}/{{total}}", "practice.started":"Práctica iniciada a {{tempo}} BPM.", "practice.stopped":"Práctica detenida.", "practice.targetReached":"Objetivo alcanzado: {{tempo}} BPM. Continúa.", "practice.layersDone":"Todas las capas están activas.", "practice.layersToTempo":"Capas completadas. Progresión de tempo hasta {{target}} BPM.", "practice.level":"Práctica: {{label}}.", "practice.tempo":"Práctica: {{tempo}} BPM.", "practice.changedStopped":"Práctica detenida porque cambiaron sus ajustes.",
@@ -808,6 +808,7 @@
             this.previousPerformances = new Map();
             this.performanceCycles = new Map();
             this.pendingResolutions = new Map();
+            this.performanceLeftFootSteps = new Set();
             this.density = 20;
             this.energy = 50;
             this.fills = 50;
@@ -817,6 +818,9 @@
             this.layers = { hihat:true, ride:false, crash:true, toms:false };
             this.familyName = "";
             this.orchestrationMode = "auto";
+            this.autoOrchestration = false;
+            this.autoOrchestrationEvery = 4;
+            this.autoOrchestrationPlan = { nextCycle: null, returnCycle: null, returnMode: null };
             this.enabled = false;
             this.auto = true;
         }
@@ -829,6 +833,7 @@
             this.previousPerformances.delete(this.coreSlot);
             this.performanceCycles.set(this.coreSlot, 0);
             this.pendingResolutions.set(this.coreSlot, false);
+            this.performanceLeftFootSteps.clear();
             if (inferLayers) {
                 const active=new Set(this.coreGrid[0]||[]), steps=this.seq.signature.steps, R=TRACK_ROLES;
                 const hasTrack=t=>Array.from(active).some(i=>Math.floor(i/steps)===t);
@@ -845,6 +850,7 @@
             this.previousPerformances.delete(slot);
             this.performanceCycles.delete(slot);
             this.pendingResolutions.delete(slot);
+            this.performanceLeftFootSteps.clear();
             if (this.coreSlot === slot) { this.coreGrid=null; this.coreSignatureIndex=null; this.coreSlot=null; }
         }
         ensureCore() {
@@ -860,6 +866,7 @@
             this.previousPerformances.delete(this.seq.memorySlot);
             this.performanceCycles.set(this.seq.memorySlot, 0);
             this.pendingResolutions.set(this.seq.memorySlot, false);
+            this.performanceLeftFootSteps.clear();
             this.seed=1;
         }
         hash(text) {
@@ -965,21 +972,148 @@
             const resolved=mode==="auto" ? "auto" : this.resolvedOrchestration(mode);
             return `feel.orchInfo${({auto:"Auto",pocket:"Pocket",hihat:"Hihat",ride:"Ride",openkit:"OpenKit",percussive:"Percussive",fullkit:"FullKit"})[resolved]||"Auto"}`;
         }
+        sourceTimeVoice() {
+            this.ensureCore();
+            const steps=this.seq.signature.steps, R=TRACK_ROLES, active=new Set(this.coreGrid?.[0]||[]);
+            let hats=0, ride=0;
+            for(const i of active){
+                const track=Math.floor(i/steps);
+                if(track===R.closedHat||track===R.openHat)hats++;
+                else if(track===R.ride)ride++;
+            }
+            return ride>hats ? "ride" : "hihat";
+        }
         timeVoice(mode=this.orchestrationMode) {
-            const resolved=this.resolvedOrchestration(mode);
+            const resolved=this.resolvedOrchestration(mode), source=this.sourceTimeVoice();
             if(resolved==="ride") return "ride";
             if(resolved==="hihat"||resolved==="pocket"||resolved==="percussive") return "hihat";
-            if(mode==="auto") return this.roleGrammar()?.time || "source";
-            return "source";
+            if(resolved==="openkit"||resolved==="fullkit") {
+                // An open kit is a phrase-level migration of the time hand, not two concurrent
+                // timekeeping lines. Stay on the source most bars and move at phrase boundaries.
+                const cycle=this.performanceCycles.get(this.seq.memorySlot)||0;
+                if(cycle>0 && cycle%4===0) return source==="ride" ? "hihat" : "ride";
+                return source;
+            }
+            if(mode==="auto") {
+                const role=this.roleGrammar()?.time;
+                if(role==="ride"||role==="hihat")return role;
+            }
+            return source;
+        }
+        leftFootHatPattern(timeVoice=this.timeVoice()) {
+            const style=this.style(), role=this.roleGrammar(style)?.leftFoot || "minimal";
+            if(timeVoice!=="ride" || !/2-and-4|chick/.test(role))return [];
+            const {barSteps,steps,group}=this.seq.signature;
+            if(group!==4)return [];
+            const out=[];
+            for(let base=0;base<steps;base+=barSteps){
+                for(const local of [group,group*3]) if(base+local<Math.min(steps,base+barSteps))out.push(base+local);
+            }
+            return out;
         }
         applyOrchestrationPreset(mode=this.orchestrationMode) {
             this.layers=this.orchestrationPreset(mode);
             return this.layers;
         }
+        orchestrationTransitionWeights(style=this.style()) {
+            return ({
+                jazz:{ ride:46, openkit:22, hihat:12, pocket:8, percussive:8, fullkit:4 },
+                funk:{ hihat:38, pocket:27, openkit:18, ride:7, percussive:6, fullkit:4 },
+                hiphop:{ pocket:48, hihat:32, openkit:8, percussive:7, ride:3, fullkit:2 },
+                reggae:{ hihat:42, pocket:30, ride:14, openkit:9, percussive:4, fullkit:1 },
+                afrobeat:{ hihat:27, percussive:31, ride:17, openkit:15, pocket:6, fullkit:4 },
+                latin:{ percussive:34, hihat:22, ride:18, openkit:16, pocket:5, fullkit:5 },
+                rock:{ openkit:34, hihat:28, ride:18, fullkit:11, pocket:6, percussive:3 },
+                generic:{ pocket:30, hihat:28, openkit:18, ride:12, percussive:8, fullkit:4 }
+            })[style] || null;
+        }
+        chooseWeightedOrchestration(current, key) {
+            const weights=this.orchestrationTransitionWeights() || {};
+            const entries=Object.entries(weights).filter(([mode,weight])=>mode!==current && weight>0);
+            if(!entries.length)return null;
+            const total=entries.reduce((sum,[,weight])=>sum+weight,0);
+            let cursor=this.randomFor(key)*total;
+            let chosen=entries[entries.length-1][0];
+            for(const [mode,weight] of entries){ cursor-=weight; if(cursor<=0){chosen=mode;break;} }
+            return chosen;
+        }
+        autoOrchestrationDuration(cycle, phase="stable") {
+            // Musical durations only. More fills/energy makes shorter sections a little more likely,
+            // but AUTO still prefers 4/8-bar stability over constant motion.
+            const activity=(this.fills*0.58+this.energy*0.42)/100;
+            const options=phase==="transition" ? [[1,100]] : [[2,18+activity*24],[4,48],[8,34-activity*16]];
+            const total=options.reduce((sum,[,weight])=>sum+Math.max(1,weight),0);
+            let cursor=this.randomFor(`orch-duration:${cycle}:${phase}`)*total;
+            for(const [bars,weight] of options){ cursor-=Math.max(1,weight); if(cursor<=0)return bars; }
+            return options[options.length-1][0];
+        }
+        scheduleAutoOrchestration(cycle, duration=null) {
+            const bars=duration ?? this.autoOrchestrationDuration(cycle);
+            this.autoOrchestrationPlan.nextCycle=cycle+bars;
+            return bars;
+        }
+        resetAutoOrchestrationPlan() {
+            this.autoOrchestrationPlan={ nextCycle:null, returnCycle:null, returnMode:null };
+        }
+        maybeAdvanceOrchestration() {
+            if(!this.enabled || !this.autoOrchestration)return false;
+            const cycle=this.performanceCycles.get(this.seq.memorySlot)||0;
+            const nextCycle=cycle+1;
+            const interval=this.autoOrchestrationEvery;
+            const current=this.resolvedOrchestration(this.orchestrationMode);
+
+            // Explicit mode: change exactly every 2/4/8/16 loops.
+            if(interval!=="auto"){
+                const every=[2,4,8,16].includes(Number(interval)) ? Number(interval) : 4;
+                if(nextCycle%every!==0)return false;
+                const chosen=this.chooseWeightedOrchestration(current,`orch-pick:${nextCycle}:every-${every}`);
+                if(!chosen)return false;
+                this.orchestrationMode=chosen;
+                this.applyOrchestrationPreset(chosen);
+                return true;
+            }
+
+            // Musical AUTO mode: keep stable sections, allow brief transition states,
+            // and always give a transition a destination instead of leaving it hanging.
+            const plan=this.autoOrchestrationPlan;
+            if(plan.returnCycle!==null && nextCycle>=plan.returnCycle && plan.returnMode){
+                this.orchestrationMode=plan.returnMode;
+                this.applyOrchestrationPreset(plan.returnMode);
+                plan.returnCycle=null; plan.returnMode=null;
+                this.scheduleAutoOrchestration(nextCycle);
+                return true;
+            }
+            if(plan.nextCycle===null)this.scheduleAutoOrchestration(cycle);
+            if(nextCycle<plan.nextCycle)return false;
+
+            let chosen=this.chooseWeightedOrchestration(current,`orch-auto-pick:${nextCycle}`);
+            if(!chosen){ this.scheduleAutoOrchestration(nextCycle); return false; }
+
+            // A percussive/open-kit move may act as a one-bar break before returning
+            // to a stable time surface. Fill controls how often this phrase shape is used.
+            const transitionChance=Math.max(0,Math.min(0.72,(this.fills-18)/115 + Math.max(0,this.energy-55)/260));
+            const makeTransition=(chosen==="percussive" || chosen==="openkit") && this.randomFor(`orch-transition:${nextCycle}`)<transitionChance;
+            if(makeTransition){
+                const styleHome=this.defaultOrchestrationForStyle(this.style());
+                const candidates=[current,styleHome,"hihat","ride"].filter((mode,index,list)=>mode && mode!==chosen && list.indexOf(mode)===index);
+                const returnMode=candidates[Math.floor(this.randomFor(`orch-return:${nextCycle}`)*candidates.length)] || "hihat";
+                this.orchestrationMode=chosen;
+                this.applyOrchestrationPreset(chosen);
+                plan.returnMode=returnMode;
+                plan.returnCycle=nextCycle+this.autoOrchestrationDuration(nextCycle,"transition");
+                plan.nextCycle=null;
+                return true;
+            }
+
+            this.orchestrationMode=chosen;
+            this.applyOrchestrationPreset(chosen);
+            this.scheduleAutoOrchestration(nextCycle);
+            return true;
+        }
         velocitySets(grid) {
             return { accent:new Set(grid[1]||[]), soft:new Set(grid[2]||[]), strong:new Set(grid[3]||[]), ghost:new Set(grid[4]||[]) };
         }
-        humanize({ active, accent, soft, strong, ghost, baseActive, fillSteps = new Set(), style = this.style() }) {
+        humanize({ active, accent, soft, strong, ghost, baseActive, fillSteps = new Set(), leftFootSteps = new Set(), style = this.style() }) {
             const steps=this.seq.signature.steps, barSteps=this.seq.signature.barSteps, R=TRACK_ROLES;
             const clearVelocity=i=>{ accent.delete(i); soft.delete(i); strong.delete(i); ghost.delete(i); };
             const drop=(track,step)=>{ const i=track*steps+step; active.delete(i); clearVelocity(i); };
@@ -1009,6 +1143,7 @@
             };
             const hands=[R.crash,R.ride,R.openHat,R.closedHat,R.snare,R.tomHigh,R.tomMid,R.tomFloor];
             for(let step=0;step<steps;step++){
+                const isLeftFootHat=track=>track===R.closedHat&&leftFootSteps.has(step);
                 // Open/closed hi-hat are articulations of one instrument: never sound both at once.
                 if(has(R.openHat,step)&&has(R.closedHat,step)){
                     const openBase=isBase(R.openHat,step), closedBase=isBase(R.closedHat,step);
@@ -1017,7 +1152,7 @@
                     else if(this.energy>=48) drop(R.closedHat,step);
                     else drop(R.openHat,step);
                 }
-                let played=hands.filter(track=>has(track,step));
+                let played=hands.filter(track=>has(track,step)&&!isLeftFootHat(track));
                 if(fillSteps.has(step)){
                     const fillHands=played.filter(track=>track===R.snare||track===R.tomHigh||track===R.tomMid||track===R.tomFloor);
                     if(fillHands.length>=1){
@@ -1031,7 +1166,7 @@
                         }
                     }
                 }
-                played=hands.filter(track=>has(track,step));
+                played=hands.filter(track=>has(track,step)&&!isLeftFootHat(track));
                 if(played.length<=2) continue;
                 played.sort((a,b)=>{
                     const pa=priority(a,step)-(isQuiet(a,step)?80:0), pb=priority(b,step)-(isQuiet(b,step)?80:0);
@@ -1051,7 +1186,7 @@
             else if(track===R.kick) mean=p.kickLagMs;
             else if([R.closedHat,R.openHat,R.ride].includes(track)) mean=p.handLeadMs;
             const tempoScale=Math.max(.55,Math.min(1.15,105/Math.max(55,tempo)));
-            const limb=[R.closedHat,R.openHat,R.ride,R.crash].includes(track)?"timeHand":track===R.snare||[R.tomHigh,R.tomMid,R.tomFloor].includes(track)?"otherHand":track===R.kick?"rightFoot":"other";
+            const limb=track===R.closedHat&&this.performanceLeftFootSteps.has(step)?"leftFoot":[R.closedHat,R.openHat,R.ride,R.crash].includes(track)?"timeHand":track===R.snare||[R.tomHigh,R.tomMid,R.tomFloor].includes(track)?"otherHand":track===R.kick?"rightFoot":"other";
             const jitter=(this.playerRandomFor(`timing:${limb}:${track}:${step}`)-.5)*5.5;
             return (mean+jitter)*tempoScale/1000;
         }
@@ -1160,7 +1295,8 @@
             this.ensureCore();
             const steps=this.seq.signature.steps, barSteps=this.seq.signature.barSteps, group=this.seq.signature.group, R=TRACK_ROLES;
             const base=this.coreGrid, baseActive=new Set(base[0]||[]), active=new Set();
-            const baseV=this.velocitySets(base), accent=new Set(), soft=new Set(), strong=new Set(), ghost=new Set(), fillSteps=new Set();
+            const baseV=this.velocitySets(base), accent=new Set(), soft=new Set(), strong=new Set(), ghost=new Set(), fillSteps=new Set(), leftFootSteps=new Set();
+            this.performanceLeftFootSteps=leftFootSteps;
             const clearV=i=>{accent.delete(i);soft.delete(i);strong.delete(i);ghost.delete(i);};
             const copyVelocity=i=>{ if(baseV.accent.has(i))accent.add(i); else if(baseV.strong.has(i))strong.add(i); else if(baseV.soft.has(i))soft.add(i); else if(baseV.ghost.has(i))ghost.add(i); };
             const add=(track,step,velocity="normal")=>{ if(step<0||step>=steps||track<0||track>=CONFIG.TRACK_COUNT)return; const i=track*steps+step; active.add(i); clearV(i); if(velocity==="accent")accent.add(i); else if(velocity==="strong")strong.add(i); else if(velocity==="soft")soft.add(i); else if(velocity==="ghost")ghost.add(i); };
@@ -1181,6 +1317,13 @@
                     active.delete(closedIdx); active.delete(openIdx); clearV(closedIdx); clearV(openIdx);
                     active.add(rideIdx); clearV(rideIdx);
                     if(baseV.accent.has(sourceIdx))accent.add(rideIdx); else if(baseV.strong.has(sourceIdx))strong.add(rideIdx); else if(baseV.soft.has(sourceIdx))soft.add(rideIdx); else if(baseV.ghost.has(sourceIdx))ghost.add(rideIdx);
+                }
+                // Jazz-style left foot is a separate limb. The current 9-lane grid has no dedicated
+                // HH-pedal lane yet, so we render the chick on Closed HH while explicitly excluding
+                // those steps from the two-hand collision budget.
+                for(const st of this.leftFootHatPattern(timeVoice)){
+                    const i=R.closedHat*steps+st;
+                    active.add(i); clearV(i); soft.add(i); leftFootSteps.add(st);
                 }
             }
             const style=this.style(), d=this.density/100, e=this.energy/100, f=this.fills/100, p=this.profile(style);
@@ -1295,7 +1438,7 @@
                     else if(!isAccent&&!isStrong&&!isSoft && this.randomFor(`energy-strong:${cycle}:${i}`)<drive*.26){ strong.add(i); }
                 }
             }
-            this.humanize({ active, accent, soft, strong, ghost, baseActive, fillSteps, style });
+            this.humanize({ active, accent, soft, strong, ghost, baseActive, fillSteps, leftFootSteps, style });
             this.seq.activeCells=active; this.seq.accentCells=accent; this.seq.weakCells=soft; this.seq.strongCells=strong; this.seq.ghostCells=ghost;
             const result=this.seq.gridSnapshot();
             this.previousPerformances.set(this.seq.memorySlot,this.cloneGrid(result));
@@ -1532,13 +1675,17 @@
                 const finishing = this.step === this.seq.signature.steps - 1;
                 this.nextTime += duration;
                 this.step = (this.step + 1) % this.seq.signature.steps;
-                if (finishing) this.ui.onFeelLoopEnd?.();
                 if (finishing && this.seq.chainEnabled) {
+                    // A memory boundary is atomic: freeze/save the current memory and close FEEL
+                    // before loading the next slot. No unseen FEEL regeneration may leak across Chain.
+                    this.ui.closeFeelForMemoryChange?.();
                     this.seq.nextChainSlot();
                     this.ui.syncSchedulerStructure();
                     this.ui.buildGrid();
                     this.ui.renderState();
                     this.ui.makeKeyboardAccessible();
+                } else if (finishing) {
+                    this.ui.onFeelLoopEnd?.();
                 }
                 if (finishing && this.practice?.enabled) this.practice.onLoopEnd();
             }
@@ -1709,7 +1856,7 @@
                 sets: $("sets"), leds: $("leds"), tracks: $("tracks"), grid: document.querySelector(".grid"), sliders: $("sliders"),
                 masterButton: $("master-level"), masterIcon: $("master-level-icon"), swingInput: $("swing-input"), swingValue: $("swing-value"), vu: $("vu-meter"), presetSource: $("preset-source"), presetFamily: $("preset-family"), presetGroove: $("preset-groove"), groovePreview: $("groove-preview"), grooveAdd: $("groove-add"), gridShiftLeft: $("grid-shift-left"), gridShiftUp: $("grid-shift-up"), gridShiftDown: $("grid-shift-down"), gridShiftRight: $("grid-shift-right"), memory: $("memory"), clear: $("clear"), signatureButton: $("signature-button"),
                 signature: $("signature"), signatureNumerator: $("signature-numerator"), signatureDenominator: $("signature-denominator"), metro: $("metronome-button"), chain: $("chain"), play: $("play-button"), icon: $("play-pause-icon"),
-                minus: $("minus-button"), plus: $("plus-button"), tap: $("tap-tempo"), tempo: $("metronome-tempo"), random: $("random"), feelPanel: $("feel-panel"), feelXy: $("feel-xy"), feelDot: $("feel-dot"), feelReadout: $("feel-readout"), feelDensity: $("feel-density"), feelDensityValue: $("feel-density-value"), feelAuto: $("feel-auto"), feelStyle: $("feel-style"), feelOrchInfo: $("feel-orchestration-info"),
+                minus: $("minus-button"), plus: $("plus-button"), tap: $("tap-tempo"), tempo: $("metronome-tempo"), random: $("random"), feelPanel: $("feel-panel"), feelXy: $("feel-xy"), feelDot: $("feel-dot"), feelReadout: $("feel-readout"), feelDensity: $("feel-density"), feelDensityValue: $("feel-density-value"), feelAuto: $("feel-auto"), feelStyle: $("feel-style"), feelOrchAuto: $("feel-orchestration-auto"), feelOrchEvery: $("feel-orchestration-every"), feelOrchInfo: $("feel-orchestration-info"),
                 undo: $("undo"), redo: $("redo"), practiceButton: $("practice-button"), practicePanel: $("practice-panel"), practiceMode: $("practice-mode"), practiceStartTempo: $("practice-start-tempo"), practiceTargetTempo: $("practice-target-tempo"), practiceTempoStep: $("practice-tempo-step"), practiceLoops: $("practice-loops"), practiceCountIn: $("practice-count-in"), practiceStatus: $("practice-status"), kitSelect: $("kit-select"), cacheClear: $("cache-clear"), languageSelect: $("language-select"), themeToggle: $("theme-toggle"), themeIcon: $("theme-toggle-icon"), themeColorMeta: $("theme-color-meta"),
                 grooveSearch: $("groove-search"), grooveSearchList: $("groove-search-list"), shareButton: $("share-button"), shareDialog: $("share-dialog"), shareClose: $("share-close"), shareQr: $("share-qr"), shareQrError: $("share-qr-error"), shareUrl: $("share-url"), shareCopy: $("share-copy"), shareNative: $("share-native")
             };
@@ -1753,6 +1900,25 @@
                 commit();
                 this.status(`${I18N.t("feel.orchestrationProfile")} : ${this.dom.feelStyle.options[this.dom.feelStyle.selectedIndex]?.text || "AUTO"}`);
             });
+            this.dom.feelOrchAuto?.addEventListener("click",()=>{
+                if(!this.feel.enabled)return;
+                this.feel.autoOrchestration=!this.feel.autoOrchestration;
+                this.feel.resetAutoOrchestrationPlan();
+                this.renderFeel();
+                if(this.feel.autoOrchestration){
+                    const key=this.feel.autoOrchestrationEvery==="auto" ? "feel.autoOrchestrationAutoStatus" : "feel.autoOrchestrationOn";
+                    this.status(I18N.t(key,{loops:this.feel.autoOrchestrationEvery}));
+                }else this.status(I18N.t("feel.autoOrchestrationOff"));
+            });
+            this.dom.feelOrchEvery?.addEventListener("change",()=>{
+                const raw=this.dom.feelOrchEvery.value;
+                const value=raw==="auto" ? "auto" : Number(raw);
+                this.feel.autoOrchestrationEvery=value==="auto" || [2,4,8,16].includes(value) ? value : "auto";
+                this.feel.resetAutoOrchestrationPlan();
+                this.renderFeel();
+                const key=this.feel.autoOrchestrationEvery==="auto" ? "feel.autoOrchestrationAutoStatus" : "feel.autoOrchestrationEveryStatus";
+                this.status(I18N.t(key, {loops:this.feel.autoOrchestrationEvery}));
+            });
             this.dom.feelDensity?.addEventListener("input",()=>{ if(!this.feel.enabled)return; this.feel.density=Number(this.dom.feelDensity.value); commit(false); });
             this.dom.feelDensity?.addEventListener("change",()=>{ if(this.feel.enabled)this.autoSaveMemory(); });
             document.querySelectorAll(".feel-layer").forEach(button=>button.addEventListener("click",()=>{ if(!this.feel.enabled)return; this.pushHistory(); const key=button.dataset.layer; this.feel.layers[key]=!this.feel.layers[key]; commit(); }));
@@ -1781,6 +1947,8 @@
                 this.feel.captureCore({ inferLayers:false });
                 this.feel.enabled=true;
                 this.feel.auto=true;
+                this.feel.autoOrchestration=false;
+                this.feel.resetAutoOrchestrationPlan();
                 this.feel.familyName=this.seq.store.presets.meta?.[Number(this.dom.presetFamily?.value)||0]?.name || "";
                 this.dom.feelPanel.hidden=false;
                 this.dom.random.setAttribute("aria-expanded","true");
@@ -1794,6 +1962,8 @@
                 this.feel.seed=1;
                 this.feel.enabled=false;
                 this.feel.auto=false;
+                this.feel.autoOrchestration=false;
+                this.feel.resetAutoOrchestrationPlan();
                 this.dom.feelPanel.hidden=true;
                 this.dom.random.setAttribute("aria-expanded","false");
                 if(save)this.autoSaveMemory();
@@ -1812,6 +1982,15 @@
             if(this.dom.feelDensityValue)this.dom.feelDensityValue.textContent=`${this.feel.density}%`;
             document.querySelectorAll(".feel-layer").forEach(button=>{ const active=!!this.feel.layers[button.dataset.layer]; button.classList.toggle("active",active); button.setAttribute("aria-pressed",String(active)); });
             if(this.dom.feelAuto){ const active=this.feel.enabled&&this.feel.auto; this.dom.feelAuto.classList.toggle("active",active); this.dom.feelAuto.setAttribute("aria-pressed",String(active)); }
+            if(this.dom.feelOrchAuto){ const active=this.feel.enabled&&this.feel.autoOrchestration; this.dom.feelOrchAuto.classList.toggle("active",active); this.dom.feelOrchAuto.setAttribute("aria-pressed",String(active)); }
+            if(this.dom.feelOrchEvery){
+                this.dom.feelOrchEvery.value=String(this.feel.autoOrchestrationEvery||"auto");
+                this.dom.feelOrchEvery.disabled=!this.feel.enabled;
+                const autoMode=this.feel.autoOrchestrationEvery==="auto";
+                const label=I18N.t(autoMode ? "feel.autoOrchestrationAutoTooltip" : "feel.autoOrchestrationEveryTooltip", {loops:this.feel.autoOrchestrationEvery});
+                this.dom.feelOrchEvery.setAttribute("aria-label",label);
+                this.dom.feelOrchEvery.setAttribute("data-bt-tooltip",label);
+            }
             this.dom.random?.classList.toggle("active",this.feel.enabled);
             this.dom.random?.setAttribute("aria-pressed",String(this.feel.enabled));
         }
@@ -1819,6 +1998,7 @@
             if (!this.feel.enabled || !this.feel.auto || this.dom.feelPanel?.hidden) return;
             this.feel.familyName = this.seq.store.presets.meta?.[Number(this.dom.presetFamily?.value)||0]?.name || this.feel.familyName || "";
             this.feel.ensureCore();
+            this.feel.maybeAdvanceOrchestration();
             this.feel.regenerate({ evolve:true });
             this.renderGrid();
             this.autoSaveMemory();
@@ -1838,6 +2018,7 @@
                 this.renderTrackControls();
                 this.renderMemory();
                 this.renderPractice();
+                this.renderFeel();
                 this.setPlaying(!!this.scheduler?.playing);
                 this.makeKeyboardAccessible();
             });
@@ -2695,8 +2876,14 @@
             if (!this.feel.enabled) this.feel.captureCore({ inferLayers:false });
             this.renderMemory();
         }
+        closeFeelForMemoryChange() {
+            if(this.feel.enabled)this.setFeelEnabled(false,{ applyNow:false, save:true });
+            else this.feel.autoOrchestration=false;
+        }
         selectMemorySlot(index) {
             const slot = Math.round(Util.clamp(index, 0, CONFIG.MEMORY_SLOTS - 1, 0));
+            if(slot===this.seq.memorySlot)return;
+            this.closeFeelForMemoryChange();
             this.seq.loadSlot(slot);
             this.syncSchedulerStructure();
             this.buildGrid();
@@ -2724,6 +2911,7 @@
             const snapshot = this.seq.snapshot();
             this.feel.invalidate(next);
             this.seq.store.set(next, this.seq.signatureIndex, snapshot);
+            this.closeFeelForMemoryChange();
             this.seq.loadSlot(next);
             this.syncSchedulerStructure();
             this.buildGrid();

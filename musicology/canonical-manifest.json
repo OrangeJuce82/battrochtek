@@ -1,8 +1,8 @@
 {
   "version": "3.0.0",
   "taxonomyCount": 213,
-  "playableCount": 183,
-  "needsRebuild": 92,
+  "playableCount": 213,
+  "needsRebuild": 76,
   "entries": [
     {
       "id": "CAN-182",
@@ -201,6 +201,36 @@
         "eventCount": 27,
         "json": "musicology/canonical-grooves/CAN-186-amapiano.json",
         "midi": "musicology/midi/CAN-186-amapiano.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "not-mapped",
+          "references": []
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-184",
+      "family": "Africa",
+      "tradition": "Southern Africa",
+      "archetype": "Mbaqanga",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "ca90cae1ee83e4d7",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-184-mbaqanga.json",
+        "midi": "musicology/midi/CAN-184-mbaqanga.mid"
       },
       "musicology": {
         "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
@@ -1253,6 +1283,46 @@
       }
     },
     {
+      "id": "CAN-085",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Country Rock",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "9c07c7c5dbf826e6",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-085-country-rock.json",
+        "midi": "musicology/midi/CAN-085-country-rock.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
       "id": "CAN-081",
       "family": "Country / Americana",
       "tradition": "Country",
@@ -1453,6 +1523,46 @@
       }
     },
     {
+      "id": "CAN-084",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Nashville Straight 8ths",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.62,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "adbaf74725d879f3",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 25,
+        "json": "musicology/canonical-grooves/CAN-084-nashville-straight-8ths.json",
+        "midi": "musicology/midi/CAN-084-nashville-straight-8ths.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
       "id": "CAN-088",
       "family": "Country / Americana",
       "tradition": "Country",
@@ -1469,6 +1579,46 @@
         "eventCount": 29,
         "json": "musicology/canonical-grooves/CAN-088-rockabilly-shuffle.json",
         "midi": "musicology/midi/CAN-088-rockabilly-shuffle.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-079",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Train Beat",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "ab0a925217d8f953",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-079-train-beat.json",
+        "midi": "musicology/midi/CAN-079-train-beat.mid"
       },
       "musicology": {
         "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
@@ -2584,6 +2734,235 @@
       }
     },
     {
+      "id": "CAN-056",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Disco-Funk / Chic",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "b27a9822f559d850",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 32,
+        "json": "musicology/canonical-grooves/CAN-056-disco-funk-chic.json",
+        "midi": "musicology/midi/CAN-056-disco-funk-chic.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed role-based Funk/Soul/R&B drum-set adaptation.",
+        "distinctiveFeatures": [
+          "four-on-floor dance foundation",
+          "steady eighth-note time",
+          "offbeat open-hat punctuation"
+        ],
+        "references": [
+          "https://www.moderndrummer.com/2011/06/uriel-jones-architect-of-the-motown-sound/",
+          "https://www.moderndrummer.com/2016/08/video-lesson-groove-construction-part-6-w-jost-nickel/",
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-055",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Ghost-Note Funk",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "d147ca2b44dfb910",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 44,
+        "json": "musicology/canonical-grooves/CAN-055-ghost-note-funk.json",
+        "midi": "musicology/midi/CAN-055-ghost-note-funk.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed role-based Funk/Soul/R&B drum-set adaptation.",
+        "distinctiveFeatures": [
+          "protected backbeat surrounded by dense low-level snare vocabulary",
+          "restrained kick leaves room for ghosts"
+        ],
+        "references": [
+          "https://www.moderndrummer.com/2011/06/uriel-jones-architect-of-the-motown-sound/",
+          "https://www.moderndrummer.com/2016/08/video-lesson-groove-construction-part-6-w-jost-nickel/",
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-049",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Go-Go",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "c57b4166aba200ca",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 48,
+        "json": "musicology/canonical-grooves/CAN-049-go-go.json",
+        "midi": "musicology/midi/CAN-049-go-go.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed role-based Funk/Soul/R&B drum-set adaptation.",
+        "distinctiveFeatures": [
+          "continuous syncopated time-hand phrase",
+          "busy interlocking kick/ghost vocabulary",
+          "open-hat lift"
+        ],
+        "references": [
+          "https://www.moderndrummer.com/2011/06/uriel-jones-architect-of-the-motown-sound/",
+          "https://www.moderndrummer.com/2016/08/video-lesson-groove-construction-part-6-w-jost-nickel/",
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-050",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Gospel Pocket",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "99260b0572a5b0d0",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 42,
+        "json": "musicology/canonical-grooves/CAN-050-gospel-pocket.json",
+        "midi": "musicology/midi/CAN-050-gospel-pocket.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed role-based Funk/Soul/R&B drum-set adaptation.",
+        "distinctiveFeatures": [
+          "syncopated church pocket",
+          "busy ghost-note preparation around backbeat",
+          "bass-drum response distinct from P-Funk"
+        ],
+        "references": [
+          "https://www.moderndrummer.com/2011/06/uriel-jones-architect-of-the-motown-sound/",
+          "https://www.moderndrummer.com/2016/08/video-lesson-groove-construction-part-6-w-jost-nickel/",
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-051",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Gospel Shout",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "208a5fbfe68c59ef",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 40,
+        "json": "musicology/canonical-grooves/CAN-051-gospel-shout.json",
+        "midi": "musicology/midi/CAN-051-gospel-shout.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed role-based Funk/Soul/R&B drum-set adaptation.",
+        "distinctiveFeatures": [
+          "shout-derived driving backbeats",
+          "quarter-note kick drive",
+          "section-driving cymbal articulation"
+        ],
+        "references": [
+          "https://www.moderndrummer.com/2011/06/uriel-jones-architect-of-the-motown-sound/",
+          "https://www.moderndrummer.com/2016/08/video-lesson-groove-construction-part-6-w-jost-nickel/",
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
       "id": "CAN-041",
       "family": "Funk / Soul / R&B",
       "tradition": "African-American groove",
@@ -2607,6 +2986,98 @@
           "one-oriented kick emphasis",
           "quarter-note/space-aware time hand",
           "ghost-note conversation around protected backbeat"
+        ],
+        "references": [
+          "https://www.moderndrummer.com/2011/06/uriel-jones-architect-of-the-motown-sound/",
+          "https://www.moderndrummer.com/2016/08/video-lesson-groove-construction-part-6-w-jost-nickel/",
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-054",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Linear Funk",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "d6e96cf9f3c7d242",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 32,
+        "json": "musicology/canonical-grooves/CAN-054-linear-funk.json",
+        "midi": "musicology/midi/CAN-054-linear-funk.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed role-based Funk/Soul/R&B drum-set adaptation.",
+        "distinctiveFeatures": [
+          "linearized hand-foot conversation",
+          "fewer simultaneous time/backbeat attacks",
+          "syncopated sixteenth flow"
+        ],
+        "references": [
+          "https://www.moderndrummer.com/2011/06/uriel-jones-architect-of-the-motown-sound/",
+          "https://www.moderndrummer.com/2016/08/video-lesson-groove-construction-part-6-w-jost-nickel/",
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-043",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Meters-style New Orleans Funk",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "4a1669f546a3d5b5",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 38,
+        "json": "musicology/canonical-grooves/CAN-043-meters-style-new-orleans-funk.json",
+        "midi": "musicology/midi/CAN-043-meters-style-new-orleans-funk.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed role-based Funk/Soul/R&B drum-set adaptation.",
+        "distinctiveFeatures": [
+          "broken sixteenth time-hand phrase",
+          "syncopated New Orleans bass-drum pocket",
+          "ghost-note counterline"
         ],
         "references": [
           "https://www.moderndrummer.com/2011/06/uriel-jones-architect-of-the-motown-sound/",
@@ -2704,6 +3175,52 @@
           "https://www.moderndrummer.com/2011/06/uriel-jones-architect-of-the-motown-sound/",
           "https://www.moderndrummer.com/2016/08/video-lesson-groove-construction-part-6-w-jost-nickel/",
           "https://www.moderndrummer.com/2009/06/secrets-of-motown/",
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-052",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Neo-Soul",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "1442fb1970d64b3c",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 38,
+        "json": "musicology/canonical-grooves/CAN-052-neo-soul.json",
+        "midi": "musicology/midi/CAN-052-neo-soul.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed role-based Funk/Soul/R&B drum-set adaptation.",
+        "distinctiveFeatures": [
+          "laid-back backbeat",
+          "soft ghost-note lattice",
+          "broken bass-drum support"
+        ],
+        "references": [
+          "https://www.moderndrummer.com/2011/06/uriel-jones-architect-of-the-motown-sound/",
+          "https://www.moderndrummer.com/2016/08/video-lesson-groove-construction-part-6-w-jost-nickel/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -3238,26 +3755,32 @@
       "tradition": "Hip-Hop",
       "archetype": "Boom Bap",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "9a4226211424c9ba",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "3f2548c844279d8f",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 27,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-090-boom-bap.json",
         "midi": "musicology/midi/CAN-090-boom-bap.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Hip-Hop/Breakbeat drum-set archetype. Canonical score carries the skeleton; FEEL supplies style-specific pocket and microtiming.",
+        "distinctiveFeatures": [
+          "sparse eighth-note hand",
+          "hard backbeat",
+          "asymmetric kick phrase",
+          "late snare feel delegated to FEEL"
+        ],
         "references": [
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
-          }
+          },
+          "https://www.moderndrummer.com/"
         ],
         "evidence": {
           "taxonomyState": "needs-review",
@@ -3278,26 +3801,31 @@
       "tradition": "Hip-Hop",
       "archetype": "Dilla / Drunk Pocket",
       "playable": true,
-      "status": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "fingerprint": "76b1d579bc15b4b8",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "47bf1bb80a82637d",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 32,
+        "eventCount": 36,
         "json": "musicology/canonical-grooves/CAN-092-dilla-drunk-pocket.json",
         "midi": "musicology/midi/CAN-092-dilla-drunk-pocket.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Hip-Hop/Breakbeat drum-set archetype. Canonical score carries the skeleton; FEEL supplies style-specific pocket and microtiming.",
+        "distinctiveFeatures": [
+          "intentionally sparse canonical grid",
+          "drunk/late microtiming delegated to human-feel layer",
+          "soft kick/snare ghost lattice"
+        ],
         "references": [
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
-          }
+          },
+          "https://www.moderndrummer.com/"
         ],
         "evidence": {
           "taxonomyState": "needs-review",
@@ -3318,26 +3846,31 @@
       "tradition": "Hip-Hop",
       "archetype": "Drill",
       "playable": true,
-      "status": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "fingerprint": "c2300101b329d52c",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "5fedda51a0cea3fb",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 23,
+        "eventCount": 46,
         "json": "musicology/canonical-grooves/CAN-096-drill.json",
         "midi": "musicology/midi/CAN-096-drill.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Hip-Hop/Breakbeat drum-set archetype. Canonical score carries the skeleton; FEEL supplies style-specific pocket and microtiming.",
+        "distinctiveFeatures": [
+          "half-time backbeat",
+          "syncopated drill kick placement",
+          "continuous hat grid for FEEL articulation"
+        ],
         "references": [
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
-          }
+          },
+          "https://www.moderndrummer.com/"
         ],
         "evidence": {
           "taxonomyState": "needs-review",
@@ -3358,10 +3891,10 @@
       "tradition": "Hip-Hop",
       "archetype": "Jersey Club",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "bbc7f9cdabd7924c",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "d9fc95ac8af04b21",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3371,13 +3904,108 @@
         "midi": "musicology/midi/CAN-097-jersey-club.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Hip-Hop/Breakbeat drum-set archetype. Canonical score carries the skeleton; FEEL supplies style-specific pocket and microtiming.",
+        "distinctiveFeatures": [
+          "fast club-oriented kick syncopation",
+          "multiple clap/snare anchors",
+          "compact eighth-note time"
+        ],
         "references": [
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
-          }
+          },
+          "https://www.moderndrummer.com/"
+        ],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-093",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Lo-Fi Hip-Hop",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "9f0f5ead6c4c8f55",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 30,
+        "json": "musicology/canonical-grooves/CAN-093-lo-fi-hip-hop.json",
+        "midi": "musicology/midi/CAN-093-lo-fi-hip-hop.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed complete Hip-Hop/Breakbeat drum-set archetype. Canonical score carries the skeleton; FEEL supplies style-specific pocket and microtiming.",
+        "distinctiveFeatures": [
+          "restrained low-density pocket",
+          "soft ghost pickups",
+          "minimal kick support"
+        ],
+        "references": [
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          },
+          "https://www.moderndrummer.com/"
+        ],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-089",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Old-School Breakbeat",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "2fcc6328742dbfd1",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 50,
+        "json": "musicology/canonical-grooves/CAN-089-old-school-breakbeat.json",
+        "midi": "musicology/midi/CAN-089-old-school-breakbeat.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed complete Hip-Hop/Breakbeat drum-set archetype. Canonical score carries the skeleton; FEEL supplies style-specific pocket and microtiming.",
+        "distinctiveFeatures": [
+          "sample-break-derived sixteenth hand layer",
+          "broken kick phrase",
+          "strong 2 and 4 backbeat with ghost pickups"
+        ],
+        "references": [
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          },
+          "https://www.moderndrummer.com/"
         ],
         "evidence": {
           "taxonomyState": "needs-review",
@@ -3398,26 +4026,76 @@
       "tradition": "Hip-Hop",
       "archetype": "Sample-Break Pocket",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "398c32ccbcb5b6c6",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "c9d4cec760625350",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 96,
         "json": "musicology/canonical-grooves/CAN-098-sample-break-pocket.json",
         "midi": "musicology/midi/CAN-098-sample-break-pocket.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Hip-Hop/Breakbeat drum-set archetype. Canonical score carries the skeleton; FEEL supplies style-specific pocket and microtiming.",
+        "distinctiveFeatures": [
+          "two-bar sampled-break phrase",
+          "bar-to-bar kick variation",
+          "ghost-note pickups around backbeats"
+        ],
         "references": [
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
-          }
+          },
+          "https://www.moderndrummer.com/"
+        ],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-095",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Trap Double-Time Hats",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "9be791dce6fa9409",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 44,
+        "json": "musicology/canonical-grooves/CAN-095-trap-double-time-hats.json",
+        "midi": "musicology/midi/CAN-095-trap-double-time-hats.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed complete Hip-Hop/Breakbeat drum-set archetype. Canonical score carries the skeleton; FEEL supplies style-specific pocket and microtiming.",
+        "distinctiveFeatures": [
+          "half-time backbeat with double-time sixteenth hats",
+          "syncopated kick phrase",
+          "hat-roll detail delegated to Density"
+        ],
+        "references": [
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          },
+          "https://www.moderndrummer.com/"
         ],
         "evidence": {
           "taxonomyState": "needs-review",
@@ -3438,26 +4116,31 @@
       "tradition": "Hip-Hop",
       "archetype": "Trap Half-Time",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "e84d46c30242c035",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "45143710136c0bf3",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 27,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-094-trap-half-time.json",
         "midi": "musicology/midi/CAN-094-trap-half-time.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Hip-Hop/Breakbeat drum-set archetype. Canonical score carries the skeleton; FEEL supplies style-specific pocket and microtiming.",
+        "distinctiveFeatures": [
+          "half-time clap/snare on beat 3",
+          "syncopated low-end phrase",
+          "eighth-note hat foundation"
+        ],
         "references": [
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
-          }
+          },
+          "https://www.moderndrummer.com/"
         ],
         "evidence": {
           "taxonomyState": "needs-review",
@@ -3478,26 +4161,31 @@
       "tradition": "Hip-Hop",
       "archetype": "West Coast / G-Funk",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "d5ce2671b07b7c6b",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "ca927b6913d5fecf",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 30,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-091-west-coast-g-funk.json",
         "midi": "musicology/midi/CAN-091-west-coast-g-funk.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Hip-Hop/Breakbeat drum-set archetype. Canonical score carries the skeleton; FEEL supplies style-specific pocket and microtiming.",
+        "distinctiveFeatures": [
+          "laid-back West Coast pocket",
+          "open-hat lift",
+          "syncopated kick under stable backbeat"
+        ],
         "references": [
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
-          }
+          },
+          "https://www.moderndrummer.com/"
         ],
         "evidence": {
           "taxonomyState": "needs-review",
@@ -3618,6 +4306,36 @@
               "url": "https://www.moderndrummer.com/2011/10/wicked-beatsfeaturing-gil-sharone/"
             }
           ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-099",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Mento Drum-Set Adaptation",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "88fc416d47c0b5b5",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-099-mento-drum-set-adaptation.json",
+        "midi": "musicology/midi/CAN-099-mento-drum-set-adaptation.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "not-mapped",
+          "references": []
         },
         "catalogDisambiguation": false
       }
@@ -4097,6 +4815,113 @@
       }
     },
     {
+      "id": "CAN-074",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Bebop Comping",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "9c5d1b2739e08196",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-074-bebop-comping.json",
+        "midi": "musicology/midi/CAN-074-bebop-comping.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed jazz drum-set adaptation: time voice, comping and bass-drum roles are separated.",
+        "distinctiveFeatures": [
+          "independent snare comping",
+          "sparse bomb-style bass-drum accents",
+          "ride remains uninterrupted"
+        ],
+        "references": [
+          "https://www.moderndrummer.com/2013/01/md-education-team-weighs-in-on-learning-jazz/",
+          "https://www.moderndrummer.com/article/up-tempo-jazz-ride-playing/",
+          {
+            "title": "Drum Set Performance 101 — Berklee Online",
+            "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "literature-supported",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Drum Set Performance 101 — Berklee Online",
+              "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+            },
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-073",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Big Band Swing",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "7367735893895aeb",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-073-big-band-swing.json",
+        "midi": "musicology/midi/CAN-073-big-band-swing.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed jazz drum-set adaptation: time voice, comping and bass-drum roles are separated.",
+        "distinctiveFeatures": [
+          "ride time with ensemble figures",
+          "stronger setup/ensemble punctuation"
+        ],
+        "references": [
+          "https://www.moderndrummer.com/2013/01/md-education-team-weighs-in-on-learning-jazz/",
+          "https://www.moderndrummer.com/article/up-tempo-jazz-ride-playing/",
+          {
+            "title": "Drum Set Performance 101 — Berklee Online",
+            "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "literature-supported",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Drum Set Performance 101 — Berklee Online",
+              "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+            },
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
       "id": "CAN-069",
       "family": "Jazz",
       "tradition": "Swing & modern",
@@ -4120,6 +4945,222 @@
           "brush-ballad time represented as soft continuous hand pulse",
           "restrained cross/backbeat gesture",
           "minimal bass drum"
+        ],
+        "references": [
+          "https://www.moderndrummer.com/2013/01/md-education-team-weighs-in-on-learning-jazz/",
+          "https://www.moderndrummer.com/article/up-tempo-jazz-ride-playing/",
+          {
+            "title": "Drum Set Performance 101 — Berklee Online",
+            "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "literature-supported",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Drum Set Performance 101 — Berklee Online",
+              "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+            },
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-070",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Brush Swing",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "257d5d185c3cdf99",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-070-brush-swing.json",
+        "midi": "musicology/midi/CAN-070-brush-swing.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed jazz drum-set adaptation: time voice, comping and bass-drum roles are separated.",
+        "distinctiveFeatures": [
+          "brush sweep pulse separated from stick ride pattern",
+          "light comping",
+          "two-beat bass support"
+        ],
+        "references": [
+          "https://www.moderndrummer.com/2013/01/md-education-team-weighs-in-on-learning-jazz/",
+          "https://www.moderndrummer.com/article/up-tempo-jazz-ride-playing/",
+          {
+            "title": "Drum Set Performance 101 — Berklee Online",
+            "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "literature-supported",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Drum Set Performance 101 — Berklee Online",
+              "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+            },
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-077",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Fusion",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "8ee2f5add967534c",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 34,
+        "json": "musicology/canonical-grooves/CAN-077-fusion.json",
+        "midi": "musicology/midi/CAN-077-fusion.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed jazz drum-set adaptation: time voice, comping and bass-drum roles are separated.",
+        "distinctiveFeatures": [
+          "ride-led fusion time",
+          "syncopated funk-derived bass drum",
+          "active snare interaction"
+        ],
+        "references": [
+          "https://www.moderndrummer.com/2013/01/md-education-team-weighs-in-on-learning-jazz/",
+          "https://www.moderndrummer.com/article/up-tempo-jazz-ride-playing/",
+          {
+            "title": "Drum Set Performance 101 — Berklee Online",
+            "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "literature-supported",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Drum Set Performance 101 — Berklee Online",
+              "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+            },
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-068",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Jazz Ballad",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "2b5f7c5337eb2b9a",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 22,
+        "json": "musicology/canonical-grooves/CAN-068-jazz-ballad.json",
+        "midi": "musicology/midi/CAN-068-jazz-ballad.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed jazz drum-set adaptation: time voice, comping and bass-drum roles are separated.",
+        "distinctiveFeatures": [
+          "slow ride-led swing",
+          "very sparse conversational snare comping",
+          "bass drum used as occasional color rather than two-feel foundation"
+        ],
+        "references": [
+          "https://www.moderndrummer.com/2013/01/md-education-team-weighs-in-on-learning-jazz/",
+          "https://www.moderndrummer.com/article/up-tempo-jazz-ride-playing/",
+          {
+            "title": "Drum Set Performance 101 — Berklee Online",
+            "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "literature-supported",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Drum Set Performance 101 — Berklee Online",
+              "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+            },
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-072",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Jazz Shuffle",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "c1e8fdf1d6340162",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-072-jazz-shuffle.json",
+        "midi": "musicology/midi/CAN-072-jazz-shuffle.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed jazz drum-set adaptation: time voice, comping and bass-drum roles are separated.",
+        "distinctiveFeatures": [
+          "triplet shuffle surface",
+          "jazz balance with ride leading",
+          "backbeat more explicit than medium swing"
         ],
         "references": [
           "https://www.moderndrummer.com/2013/01/md-education-team-weighs-in-on-learning-jazz/",
@@ -4205,6 +5246,60 @@
       }
     },
     {
+      "id": "CAN-076",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Jazz-Funk",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "3fd8d93bddd83687",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 32,
+        "json": "musicology/canonical-grooves/CAN-076-jazz-funk.json",
+        "midi": "musicology/midi/CAN-076-jazz-funk.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed jazz drum-set adaptation: time voice, comping and bass-drum roles are separated.",
+        "distinctiveFeatures": [
+          "complete funk backbeat and bass-drum pocket",
+          "jazz-derived dynamic independence",
+          "single time-hand voice rather than simultaneous ride/hi-hat"
+        ],
+        "references": [
+          "https://www.moderndrummer.com/2013/01/md-education-team-weighs-in-on-learning-jazz/",
+          "https://www.moderndrummer.com/article/up-tempo-jazz-ride-playing/",
+          {
+            "title": "Drum Set Performance 101 — Berklee Online",
+            "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "literature-supported",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Drum Set Performance 101 — Berklee Online",
+              "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+            },
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
       "id": "CAN-065",
       "family": "Jazz",
       "tradition": "Swing & modern",
@@ -4229,6 +5324,114 @@
           "light snare comping",
           "soft bass-drum support",
           "left-foot hi-hat on 2 and 4 represented semantically"
+        ],
+        "references": [
+          "https://www.moderndrummer.com/2013/01/md-education-team-weighs-in-on-learning-jazz/",
+          "https://www.moderndrummer.com/article/up-tempo-jazz-ride-playing/",
+          {
+            "title": "Drum Set Performance 101 — Berklee Online",
+            "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "literature-supported",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Drum Set Performance 101 — Berklee Online",
+              "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+            },
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-075",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Straight-8 / ECM",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "dd2b5530765ce9a7",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 22,
+        "json": "musicology/canonical-grooves/CAN-075-straight-8-ecm.json",
+        "midi": "musicology/midi/CAN-075-straight-8-ecm.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed jazz drum-set adaptation: time voice, comping and bass-drum roles are separated.",
+        "distinctiveFeatures": [
+          "straight-eighth ride time",
+          "open modern-jazz comping",
+          "space prioritized"
+        ],
+        "references": [
+          "https://www.moderndrummer.com/2013/01/md-education-team-weighs-in-on-learning-jazz/",
+          "https://www.moderndrummer.com/article/up-tempo-jazz-ride-playing/",
+          {
+            "title": "Drum Set Performance 101 — Berklee Online",
+            "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "literature-supported",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Drum Set Performance 101 — Berklee Online",
+              "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+            },
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-067",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Two-Feel Swing",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "1fbfc76947d640ef",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-067-two-feel-swing.json",
+        "midi": "musicology/midi/CAN-067-two-feel-swing.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed jazz drum-set adaptation: time voice, comping and bass-drum roles are separated.",
+        "distinctiveFeatures": [
+          "two-beat bass foundation on 1 and 3",
+          "ride swing remains primary voice",
+          "sparse comping"
         ],
         "references": [
           "https://www.moderndrummer.com/2013/01/md-education-team-weighs-in-on-learning-jazz/",
@@ -6466,6 +7669,73 @@
       }
     },
     {
+      "id": "CAN-159",
+      "family": "Latin America",
+      "tradition": "Peru / Argentina / Uruguay",
+      "archetype": "Chacarera",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "c96712549133ea37",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-159-chacarera.json",
+        "midi": "musicology/midi/CAN-159-chacarera.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "6/8 folkloric pulse with hemiola implication",
+          "alternating low/high drum function"
+        ],
+        "references": [
+          {
+            "title": "South American Rhythms for the Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-357"
+          },
+          {
+            "title": "Latin/Afro-Cuban Jazz — Berklee",
+            "url": "https://college.berklee.edu/courses/enlt-300"
+          },
+          {
+            "title": "Latin Piano Styles — Berklee Online",
+            "url": "https://online.berklee.edu/courses/latin-piano-styles"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "literature-supported",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Latin/Afro-Cuban Jazz — Berklee",
+              "url": "https://college.berklee.edu/courses/enlt-300"
+            },
+            {
+              "title": "Latin Piano Styles — Berklee Online",
+              "url": "https://online.berklee.edu/courses/latin-piano-styles"
+            },
+            {
+              "title": "South American Rhythms for the Drum Set — Berklee",
+              "url": "https://college.berklee.edu/courses/ilpd-357"
+            },
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
       "id": "CAN-157",
       "family": "Latin America",
       "tradition": "Peru / Argentina / Uruguay",
@@ -7023,6 +8293,36 @@
       }
     },
     {
+      "id": "CAN-190",
+      "family": "North Africa / Middle East",
+      "tradition": "North Africa",
+      "archetype": "Maghreb Chaabi",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "f38c75b88ad516d8",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-190-maghreb-chaabi.json",
+        "midi": "musicology/midi/CAN-190-maghreb-chaabi.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "not-mapped",
+          "references": []
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
       "id": "CAN-191",
       "family": "North Africa / Middle East",
       "tradition": "North Africa",
@@ -7058,22 +8358,28 @@
       "tradition": "Foundational rock",
       "archetype": "Alternative / Grunge",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "e2d8767903451c7d",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "56b8119a435820ca",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 31,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-027-alternative-grunge.json",
         "midi": "musicology/midi/CAN-027-alternative-grunge.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "heavy backbeat",
+          "dynamic open-hat lift",
+          "dense kick support"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7098,22 +8404,28 @@
       "tradition": "Foundational rock",
       "archetype": "Arena Rock",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "3d64da222298dc66",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "d48b63c8c2dac230",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 35,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-023-arena-rock.json",
         "midi": "musicology/midi/CAN-023-arena-rock.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "broad ride-led time",
+          "quarter-note bass-drum weight",
+          "large backbeat and section crash"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7138,22 +8450,28 @@
       "tradition": "Foundational rock",
       "archetype": "Classic Rock 16ths",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "045e0f9d73ee88d5",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "b935bbf2999a7c14",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 45,
+        "eventCount": 48,
         "json": "musicology/canonical-grooves/CAN-019-classic-rock-16ths.json",
         "midi": "musicology/midi/CAN-019-classic-rock-16ths.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "continuous sixteenth-note time hand",
+          "classic backbeat",
+          "sixteenth-note bass-drum pickups"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7178,22 +8496,28 @@
       "tradition": "Foundational rock",
       "archetype": "Classic Rock 8ths",
       "playable": true,
-      "status": "provisional",
-      "confidence": 0.413,
-      "sourceType": "canonical-curated",
-      "fingerprint": "78a9f0beaba6cf51",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "5b3c4ea46646bb2c",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 22,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-018-classic-rock-8ths.json",
         "midi": "musicology/midi/CAN-018-classic-rock-8ths.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "eighth-note hi-hat foundation",
+          "2 and 4 backbeat",
+          "syncopated bass-drum support"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7218,22 +8542,28 @@
       "tradition": "Foundational rock",
       "archetype": "Double-Kick Metal",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "cbc999582265972a",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "d8b54a5a04ad079f",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 45,
+        "eventCount": 44,
         "json": "musicology/canonical-grooves/CAN-038-double-kick-metal.json",
         "midi": "musicology/midi/CAN-038-double-kick-metal.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "sustained double-kick sixteenth figures",
+          "stable cymbal pulse",
+          "2 and 4 backbeat"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7258,9 +8588,9 @@
       "tradition": "Foundational rock",
       "archetype": "Early Rock & Roll / Lindy Beat",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "fingerprint": "8d7056148cdf7f42",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
@@ -7271,13 +8601,15 @@
         "midi": "musicology/midi/CAN-017-early-rock-roll-lindy-beat.mid"
       },
       "musicology": {
-        "notes": "Complete early rock-and-roll/Lindy-derived drum-set adaptation.",
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
         "distinctiveFeatures": [
-          "audible shuffle time voice",
+          "shuffle-derived time voice",
           "backbeat on 2 and 4",
-          "walking/shuffle bass-drum support"
+          "walking bass-drum support"
         ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7302,22 +8634,28 @@
       "tradition": "Foundational rock",
       "archetype": "Glam Rock",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "e5c4badead5e3819",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "7e63d90bef13f384",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 33,
+        "eventCount": 24,
         "json": "musicology/canonical-grooves/CAN-032-glam-rock.json",
         "midi": "musicology/midi/CAN-032-glam-rock.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "stomping quarter-note cymbal pulse",
+          "quarter-note kick weight",
+          "large 2 and 4 backbeat"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7342,22 +8680,28 @@
       "tradition": "Foundational rock",
       "archetype": "Half-Time Rock",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "a2adb462035ae881",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "cc91d5b06dfaa2e9",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 25,
+        "eventCount": 26,
         "json": "musicology/canonical-grooves/CAN-021-half-time-rock.json",
         "midi": "musicology/midi/CAN-021-half-time-rock.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "half-time backbeat on beat 3",
+          "eighth-note time voice",
+          "syncopated kick support"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7382,22 +8726,28 @@
       "tradition": "Foundational rock",
       "archetype": "Hard Rock",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "58c638bc87a23b95",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "d082b0600994c4a4",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 33,
+        "eventCount": 36,
         "json": "musicology/canonical-grooves/CAN-022-hard-rock.json",
         "midi": "musicology/midi/CAN-022-hard-rock.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "heavy backbeat",
+          "denser bass-drum support",
+          "open-hat accents"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7422,22 +8772,28 @@
       "tradition": "Foundational rock",
       "archetype": "Indie Rock",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "18f89a6cb844d5f4",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "0fe7126a7bfec123",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 30,
         "json": "musicology/canonical-grooves/CAN-026-indie-rock.json",
         "midi": "musicology/midi/CAN-026-indie-rock.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "off-beat bass-drum movement",
+          "steady eighth-note hand",
+          "dry backbeat"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7462,22 +8818,28 @@
       "tradition": "Foundational rock",
       "archetype": "Metal Half-Time",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "e4ca34c87b745940",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "05159d8013fcb3f9",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 26,
+        "eventCount": 34,
         "json": "musicology/canonical-grooves/CAN-036-metal-half-time.json",
         "midi": "musicology/midi/CAN-036-metal-half-time.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "half-time snare on beat 3",
+          "double-kick bursts",
+          "steady cymbal grid"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7502,22 +8864,28 @@
       "tradition": "Foundational rock",
       "archetype": "Metal Straight-8",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "9713f96a02b5e533",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "e46df728bd9567a8",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 37,
+        "eventCount": 36,
         "json": "musicology/canonical-grooves/CAN-035-metal-straight-8.json",
         "midi": "musicology/midi/CAN-035-metal-straight-8.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "straight eighth-note cymbal time",
+          "continuous eighth-note kick drive",
+          "accented backbeat"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7542,22 +8910,28 @@
       "tradition": "Foundational rock",
       "archetype": "Metalcore Half-Time",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "cbd3db663562dd18",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "3642f89d6b2afdb7",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 26,
+        "eventCount": 36,
         "json": "musicology/canonical-grooves/CAN-039-metalcore-half-time.json",
         "midi": "musicology/midi/CAN-039-metalcore-half-time.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "breakdown-oriented half-time backbeat",
+          "syncopated double-kick bursts",
+          "open-hat setup"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7582,22 +8956,28 @@
       "tradition": "Foundational rock",
       "archetype": "Odd-Meter Rock",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "6a390249629bee52",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "d373a64fe592eb70",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 25,
+        "eventCount": 24,
         "json": "musicology/canonical-grooves/CAN-034-odd-meter-rock.json",
         "midi": "musicology/midi/CAN-034-odd-meter-rock.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "7/8 grouping 2+2+3",
+          "time voice preserves asymmetric pulse",
+          "backbeat adapted to meter"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7622,22 +9002,28 @@
       "tradition": "Foundational rock",
       "archetype": "Pop Rock",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "578f413abb610ebd",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "e0d1a0bd4a022341",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 30,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-025-pop-rock.json",
         "midi": "musicology/midi/CAN-025-pop-rock.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "clean eighth-note time",
+          "economical pop backbeat",
+          "moderate kick syncopation"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7662,22 +9048,28 @@
       "tradition": "Foundational rock",
       "archetype": "Pop-Punk",
       "playable": true,
-      "status": "provisional",
-      "confidence": 0.41,
-      "sourceType": "canonical-curated",
-      "fingerprint": "8f80ad52f7e4d9e9",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "3e2f401c44f95626",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 40,
+        "eventCount": 48,
         "json": "musicology/canonical-grooves/CAN-029-pop-punk.json",
         "midi": "musicology/midi/CAN-029-pop-punk.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "fast sixteenth/eighth hand flow",
+          "syncopated kick pickups",
+          "bright backbeat"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7702,22 +9094,28 @@
       "tradition": "Foundational rock",
       "archetype": "Post-Punk / New Wave",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "30ac0f8aaa5e0a76",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "e6f3f2f036e9bf5d",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 30,
+        "eventCount": 48,
         "json": "musicology/canonical-grooves/CAN-030-post-punk-new-wave.json",
         "midi": "musicology/midi/CAN-030-post-punk-new-wave.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "dance-derived sixteenth-note hand",
+          "four-on-floor bass drum",
+          "offbeat open-hat color"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7742,22 +9140,28 @@
       "tradition": "Foundational rock",
       "archetype": "Power Ballad",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "3490ce9190ef5862",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "dbb7ef7cc4473137",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 29,
+        "eventCount": 36,
         "json": "musicology/canonical-grooves/CAN-024-power-ballad.json",
         "midi": "musicology/midi/CAN-024-power-ballad.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "12/8 subdivision",
+          "large ballad backbeat",
+          "open-hat/cymbal lift"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7782,22 +9186,28 @@
       "tradition": "Foundational rock",
       "archetype": "Progressive Rock",
       "playable": true,
-      "status": "provisional",
-      "confidence": 0.393,
-      "sourceType": "canonical-curated",
-      "fingerprint": "51f3c3a487a0c491",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "d329d64d54c96d63",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 32,
+        "eventCount": 34,
         "json": "musicology/canonical-grooves/CAN-033-progressive-rock.json",
         "midi": "musicology/midi/CAN-033-progressive-rock.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "5/4 phrase",
+          "backbeat displaced by asymmetric meter",
+          "stable subdivision through bar line"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7822,22 +9232,28 @@
       "tradition": "Foundational rock",
       "archetype": "Punk Rock",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "2c261c073d0411dd",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "07869635428590aa",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 44,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-028-punk-rock.json",
         "midi": "musicology/midi/CAN-028-punk-rock.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "fast driving eighth-note time",
+          "quarter-note kick drive",
+          "hard backbeat"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7862,22 +9278,28 @@
       "tradition": "Foundational rock",
       "archetype": "Rock Shuffle",
       "playable": true,
-      "status": "medium",
-      "confidence": 0.577,
-      "sourceType": "canonical-curated",
-      "fingerprint": "e8106092ad262c3e",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "8029197c82d958fc",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 66,
+        "eventCount": 30,
         "json": "musicology/canonical-grooves/CAN-020-rock-shuffle.json",
         "midi": "musicology/midi/CAN-020-rock-shuffle.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "triplet-derived shuffle pulse",
+          "strong 2 and 4",
+          "open-hat lift into the bar line"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7902,22 +9324,28 @@
       "tradition": "Foundational rock",
       "archetype": "Stoner / Heavy Shuffle",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "0c0936bfa70db937",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "ee34c806a2d8a5c3",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 31,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-040-stoner-heavy-shuffle.json",
         "midi": "musicology/midi/CAN-040-stoner-heavy-shuffle.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "slow heavy shuffle",
+          "behind-the-beat backbeat handled by FEEL",
+          "wide open-hat lift"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7942,22 +9370,28 @@
       "tradition": "Foundational rock",
       "archetype": "Surf Rock",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "91aba1c0e840cd70",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "f203f92ed538eebd",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 29,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-031-surf-rock.json",
         "midi": "musicology/midi/CAN-031-surf-rock.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "fast ride-led drive",
+          "straight backbeat",
+          "propulsive kick pattern"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -7982,10 +9416,10 @@
       "tradition": "Foundational rock",
       "archetype": "Thrash Metal",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "2248fb9e9b512d3b",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "aa62295e2f20fdcc",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -7995,9 +9429,15 @@
         "midi": "musicology/midi/CAN-037-thrash-metal.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
+        "distinctiveFeatures": [
+          "very fast continuous time hand",
+          "aggressive backbeat",
+          "syncopated double-bass support"
+        ],
         "references": [
+          "https://online.berklee.edu/courses/drum-set-performance-101",
+          "https://www.moderndrummer.com/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -8045,136 +9485,97 @@
         },
         "catalogDisambiguation": false
       }
+    },
+    {
+      "id": "CAN-206",
+      "family": "South Asia",
+      "tradition": "Indian & Punjabi adaptations",
+      "archetype": "Dadra / 6-beat Drum-Set Adaptation",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "9a1e2cf7262524c7",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 20,
+        "json": "musicology/canonical-grooves/CAN-206-dadra-6-beat-drum-set-adaptation.json",
+        "midi": "musicology/midi/CAN-206-dadra-6-beat-drum-set-adaptation.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "not-mapped",
+          "references": []
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-205",
+      "family": "South Asia",
+      "tradition": "Indian & Punjabi adaptations",
+      "archetype": "Keherwa / 8-beat Drum-Set Adaptation",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "67dba730336162c2",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 24,
+        "json": "musicology/canonical-grooves/CAN-205-keherwa-8-beat-drum-set-adaptation.json",
+        "midi": "musicology/midi/CAN-205-keherwa-8-beat-drum-set-adaptation.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "not-mapped",
+          "references": []
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-204",
+      "family": "South Asia",
+      "tradition": "Indian & Punjabi adaptations",
+      "archetype": "Teentaal 16-beat Drum-Set Adaptation",
+      "playable": true,
+      "status": "pedagogical-adaptation-needs-review",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-pedagogical-adaptation",
+      "fingerprint": "75791126f8d88e9a",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-204-teentaal-16-beat-drum-set-adaptation.json",
+        "midi": "musicology/midi/CAN-204-teentaal-16-beat-drum-set-adaptation.mid"
+      },
+      "musicology": {
+        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+        "distinctiveFeatures": [],
+        "references": [],
+        "evidence": {
+          "taxonomyState": "needs-review",
+          "performanceEvidence": "not-mapped",
+          "references": []
+        },
+        "catalogDisambiguation": false
+      }
     }
   ],
-  "duplicateConflicts": [
-    {
-      "structuralFingerprint": "42793ecbb38a22ea",
-      "winner": "CAN-002",
-      "held": [
-        "CAN-095"
-      ],
-      "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
-    },
-    {
-      "structuralFingerprint": "372a3c19f1bb93a3",
-      "winner": "CAN-009",
-      "held": [
-        "CAN-079",
-        "CAN-099",
-        "CAN-190",
-        "CAN-205"
-      ],
-      "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
-    },
-    {
-      "structuralFingerprint": "87ec4c3c4da2a5f0",
-      "winner": "CAN-042",
-      "held": [
-        "CAN-043"
-      ],
-      "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
-    },
-    {
-      "structuralFingerprint": "3f9de18198697586",
-      "winner": "CAN-044",
-      "held": [
-        "CAN-050",
-        "CAN-052",
-        "CAN-054",
-        "CAN-055",
-        "CAN-056"
-      ],
-      "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
-    },
-    {
-      "structuralFingerprint": "a8d3d1d0830d40e6",
-      "winner": "CAN-045",
-      "held": [
-        "CAN-049"
-      ],
-      "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
-    },
-    {
-      "structuralFingerprint": "c7619e6d2b3706fe",
-      "winner": "CAN-046",
-      "held": [
-        "CAN-089",
-        "CAN-093"
-      ],
-      "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
-    },
-    {
-      "structuralFingerprint": "03402ac9ac6ed5bc",
-      "winner": "CAN-114",
-      "held": [
-        "CAN-051",
-        "CAN-184",
-        "CAN-204"
-      ],
-      "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
-    },
-    {
-      "structuralFingerprint": "c2883ae443c2af62",
-      "winner": "CAN-065",
-      "held": [
-        "CAN-067",
-        "CAN-068",
-        "CAN-072",
-        "CAN-073",
-        "CAN-074"
-      ],
-      "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
-    },
-    {
-      "structuralFingerprint": "d4de609877101a12",
-      "winner": "CAN-066",
-      "held": [
-        "CAN-075",
-        "CAN-077"
-      ],
-      "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
-    },
-    {
-      "structuralFingerprint": "ef5f1826cc128cd5",
-      "winner": "CAN-069",
-      "held": [
-        "CAN-070",
-        "CAN-076"
-      ],
-      "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
-    },
-    {
-      "structuralFingerprint": "77eef84159d67e2e",
-      "winner": "CAN-121",
-      "held": [
-        "CAN-084"
-      ],
-      "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
-    },
-    {
-      "structuralFingerprint": "7014eb99bc32fbb7",
-      "winner": "CAN-117",
-      "held": [
-        "CAN-085"
-      ],
-      "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
-    },
-    {
-      "structuralFingerprint": "a50fbf5ee8deb7b7",
-      "winner": "CAN-156",
-      "held": [
-        "CAN-159"
-      ],
-      "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
-    },
-    {
-      "structuralFingerprint": "c07701bfaaf71f71",
-      "winner": "CAN-187",
-      "held": [
-        "CAN-206"
-      ],
-      "reason": "identical structural score; held from runtime until score-level review distinguishes or merges it legitimately"
-    }
-  ]
+  "duplicateConflicts": []
 }

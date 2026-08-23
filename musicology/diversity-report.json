@@ -1,301 +1,8 @@
 {
   "schema": "battrochtek.diversity-report/v1",
-  "generatedAt": "2026-08-23T10:00:37.986Z",
+  "generatedAt": "2026-08-23T10:08:37.977Z",
   "grooveCount": 213,
-  "exactStructuralClusters": [
-    [
-      {
-        "id": "CAN-002",
-        "name": "Straight 16ths",
-        "family": "Foundations / Concepts",
-        "tradition": "Core time feels"
-      },
-      {
-        "id": "CAN-095",
-        "name": "Trap Double-Time Hats",
-        "family": "Hip-Hop",
-        "tradition": "Hip-Hop"
-      }
-    ],
-    [
-      {
-        "id": "CAN-009",
-        "name": "Ghost-Note Pocket",
-        "family": "Foundations / Concepts",
-        "tradition": "Core time feels"
-      },
-      {
-        "id": "CAN-079",
-        "name": "Train Beat",
-        "family": "Country / Americana",
-        "tradition": "Country"
-      },
-      {
-        "id": "CAN-099",
-        "name": "Mento Drum-Set Adaptation",
-        "family": "Jamaica",
-        "tradition": "Jamaican lineage"
-      },
-      {
-        "id": "CAN-190",
-        "name": "Maghreb Chaabi",
-        "family": "North Africa / Middle East",
-        "tradition": "North Africa"
-      },
-      {
-        "id": "CAN-205",
-        "name": "Keherwa / 8-beat Drum-Set Adaptation",
-        "family": "South Asia",
-        "tradition": "Indian & Punjabi adaptations"
-      }
-    ],
-    [
-      {
-        "id": "CAN-042",
-        "name": "New Orleans Funk / Second Line",
-        "family": "Funk / Soul / R&B",
-        "tradition": "African-American groove"
-      },
-      {
-        "id": "CAN-043",
-        "name": "Meters-style New Orleans Funk",
-        "family": "Funk / Soul / R&B",
-        "tradition": "African-American groove"
-      }
-    ],
-    [
-      {
-        "id": "CAN-044",
-        "name": "P-Funk",
-        "family": "Funk / Soul / R&B",
-        "tradition": "African-American groove"
-      },
-      {
-        "id": "CAN-050",
-        "name": "Gospel Pocket",
-        "family": "Funk / Soul / R&B",
-        "tradition": "African-American groove"
-      },
-      {
-        "id": "CAN-052",
-        "name": "Neo-Soul",
-        "family": "Funk / Soul / R&B",
-        "tradition": "African-American groove"
-      },
-      {
-        "id": "CAN-054",
-        "name": "Linear Funk",
-        "family": "Funk / Soul / R&B",
-        "tradition": "African-American groove"
-      },
-      {
-        "id": "CAN-055",
-        "name": "Ghost-Note Funk",
-        "family": "Funk / Soul / R&B",
-        "tradition": "African-American groove"
-      },
-      {
-        "id": "CAN-056",
-        "name": "Disco-Funk / Chic",
-        "family": "Funk / Soul / R&B",
-        "tradition": "African-American groove"
-      }
-    ],
-    [
-      {
-        "id": "CAN-045",
-        "name": "Motown",
-        "family": "Funk / Soul / R&B",
-        "tradition": "African-American groove"
-      },
-      {
-        "id": "CAN-049",
-        "name": "Go-Go",
-        "family": "Funk / Soul / R&B",
-        "tradition": "African-American groove"
-      }
-    ],
-    [
-      {
-        "id": "CAN-046",
-        "name": "Stax / Southern Soul",
-        "family": "Funk / Soul / R&B",
-        "tradition": "African-American groove"
-      },
-      {
-        "id": "CAN-089",
-        "name": "Old-School Breakbeat",
-        "family": "Hip-Hop",
-        "tradition": "Hip-Hop"
-      },
-      {
-        "id": "CAN-093",
-        "name": "Lo-Fi Hip-Hop",
-        "family": "Hip-Hop",
-        "tradition": "Hip-Hop"
-      }
-    ],
-    [
-      {
-        "id": "CAN-051",
-        "name": "Gospel Shout",
-        "family": "Funk / Soul / R&B",
-        "tradition": "African-American groove"
-      },
-      {
-        "id": "CAN-114",
-        "name": "Techno",
-        "family": "Electronic / Dance",
-        "tradition": "Club music"
-      },
-      {
-        "id": "CAN-184",
-        "name": "Mbaqanga",
-        "family": "Africa",
-        "tradition": "Southern Africa"
-      },
-      {
-        "id": "CAN-204",
-        "name": "Teentaal 16-beat Drum-Set Adaptation",
-        "family": "South Asia",
-        "tradition": "Indian & Punjabi adaptations"
-      }
-    ],
-    [
-      {
-        "id": "CAN-065",
-        "name": "Medium Swing",
-        "family": "Jazz",
-        "tradition": "Swing & modern"
-      },
-      {
-        "id": "CAN-067",
-        "name": "Two-Feel Swing",
-        "family": "Jazz",
-        "tradition": "Swing & modern"
-      },
-      {
-        "id": "CAN-068",
-        "name": "Jazz Ballad",
-        "family": "Jazz",
-        "tradition": "Swing & modern"
-      },
-      {
-        "id": "CAN-072",
-        "name": "Jazz Shuffle",
-        "family": "Jazz",
-        "tradition": "Swing & modern"
-      },
-      {
-        "id": "CAN-073",
-        "name": "Big Band Swing",
-        "family": "Jazz",
-        "tradition": "Swing & modern"
-      },
-      {
-        "id": "CAN-074",
-        "name": "Bebop Comping",
-        "family": "Jazz",
-        "tradition": "Swing & modern"
-      }
-    ],
-    [
-      {
-        "id": "CAN-066",
-        "name": "Up-Tempo / Bebop Swing",
-        "family": "Jazz",
-        "tradition": "Swing & modern"
-      },
-      {
-        "id": "CAN-075",
-        "name": "Straight-8 / ECM",
-        "family": "Jazz",
-        "tradition": "Swing & modern"
-      },
-      {
-        "id": "CAN-077",
-        "name": "Fusion",
-        "family": "Jazz",
-        "tradition": "Swing & modern"
-      }
-    ],
-    [
-      {
-        "id": "CAN-069",
-        "name": "Brush Ballad",
-        "family": "Jazz",
-        "tradition": "Swing & modern"
-      },
-      {
-        "id": "CAN-070",
-        "name": "Brush Swing",
-        "family": "Jazz",
-        "tradition": "Swing & modern"
-      },
-      {
-        "id": "CAN-076",
-        "name": "Jazz-Funk",
-        "family": "Jazz",
-        "tradition": "Swing & modern"
-      }
-    ],
-    [
-      {
-        "id": "CAN-084",
-        "name": "Nashville Straight 8ths",
-        "family": "Country / Americana",
-        "tradition": "Country"
-      },
-      {
-        "id": "CAN-121",
-        "name": "Trip-Hop",
-        "family": "Electronic / Dance",
-        "tradition": "Club music"
-      }
-    ],
-    [
-      {
-        "id": "CAN-085",
-        "name": "Country Rock",
-        "family": "Country / Americana",
-        "tradition": "Country"
-      },
-      {
-        "id": "CAN-117",
-        "name": "UK Garage / 2-Step",
-        "family": "Electronic / Dance",
-        "tradition": "Club music"
-      }
-    ],
-    [
-      {
-        "id": "CAN-156",
-        "name": "Merengue Venezolano",
-        "family": "Latin America",
-        "tradition": "Colombia & Venezuela"
-      },
-      {
-        "id": "CAN-159",
-        "name": "Chacarera",
-        "family": "Latin America",
-        "tradition": "Peru / Argentina / Uruguay"
-      }
-    ],
-    [
-      {
-        "id": "CAN-187",
-        "name": "Sega",
-        "family": "Africa",
-        "tradition": "Indian Ocean"
-      },
-      {
-        "id": "CAN-206",
-        "name": "Dadra / 6-beat Drum-Set Adaptation",
-        "family": "South Asia",
-        "tradition": "Indian & Punjabi adaptations"
-      }
-    ]
-  ],
+  "exactStructuralClusters": [],
   "nearDuplicatePairs": [
     {
       "a": "CAN-002",
@@ -304,26 +11,40 @@
       "bName": "16th-note Shuffle",
       "structural": 0.913,
       "all": 0.84,
+      "feelMatch": false,
       "sameFamily": true,
       "action": "REVIEW"
     },
     {
       "a": "CAN-002",
       "aName": "Straight 16ths",
-      "b": "CAN-095",
-      "bName": "Trap Double-Time Hats",
-      "structural": 1,
-      "all": 1,
+      "b": "CAN-019",
+      "bName": "Classic Rock 16ths",
+      "structural": 0.913,
+      "all": 0.875,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-002",
+      "aName": "Straight 16ths",
+      "b": "CAN-089",
+      "bName": "Old-School Breakbeat",
+      "structural": 0.913,
+      "all": 0.84,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
     },
     {
       "a": "CAN-003",
       "aName": "8th-note Shuffle",
-      "b": "CAN-024",
-      "bName": "Power Ballad",
-      "structural": 0.897,
-      "all": 0.897,
+      "b": "CAN-018",
+      "bName": "Classic Rock 8ths",
+      "structural": 0.929,
+      "all": 0.929,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -334,6 +55,7 @@
       "bName": "Texas Shuffle",
       "structural": 0.929,
       "all": 0.929,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -344,6 +66,7 @@
       "bName": "Slow 12/8 Blues",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -354,16 +77,7 @@
       "bName": "Train Shuffle",
       "structural": 0.897,
       "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-003",
-      "aName": "8th-note Shuffle",
-      "b": "CAN-098",
-      "bName": "Sample-Break Pocket",
-      "structural": 0.929,
-      "all": 0.929,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -374,8 +88,9 @@
       "bName": "Bachata",
       "structural": 0.963,
       "all": 0.963,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-003",
@@ -384,6 +99,7 @@
       "bName": "Bomba Drum-Set",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -394,6 +110,7 @@
       "bName": "Afrobeat",
       "structural": 0.929,
       "all": 0.929,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -404,8 +121,9 @@
       "bName": "Fanga Drum-Set Adaptation",
       "structural": 0.963,
       "all": 0.963,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-003",
@@ -414,16 +132,51 @@
       "bName": "Amapiano",
       "structural": 0.963,
       "all": 0.963,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-004",
       "aName": "16th-note Shuffle",
-      "b": "CAN-095",
-      "bName": "Trap Double-Time Hats",
-      "structural": 0.913,
-      "all": 0.84,
+      "b": "CAN-019",
+      "bName": "Classic Rock 16ths",
+      "structural": 1,
+      "all": 0.96,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-004",
+      "aName": "16th-note Shuffle",
+      "b": "CAN-029",
+      "bName": "Pop-Punk",
+      "structural": 0.88,
+      "all": 0.815,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-004",
+      "aName": "16th-note Shuffle",
+      "b": "CAN-089",
+      "bName": "Old-School Breakbeat",
+      "structural": 1,
+      "all": 0.852,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-004",
+      "aName": "16th-note Shuffle",
+      "b": "CAN-098",
+      "bName": "Sample-Break Pocket",
+      "structural": 0.88,
+      "all": 0.759,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -434,6 +187,7 @@
       "bName": "Breakbeat / Big Beat",
       "structural": 0.917,
       "all": 0.759,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -444,6 +198,7 @@
       "bName": "Footwork / Juke",
       "structural": 0.88,
       "all": 0.815,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -454,6 +209,7 @@
       "bName": "Afrobeat-Funk",
       "structural": 0.958,
       "all": 0.926,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -464,6 +220,7 @@
       "bName": "7/8 Foundation",
       "structural": 0.968,
       "all": 0.968,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "MERGE/REVIEW"
     },
@@ -474,16 +231,29 @@
       "bName": "Ghost-Note Pocket",
       "structural": 0.923,
       "all": 0.75,
+      "feelMatch": false,
       "sameFamily": true,
       "action": "REVIEW"
     },
     {
       "a": "CAN-006",
       "aName": "Double-Time",
-      "b": "CAN-051",
-      "bName": "Gospel Shout",
+      "b": "CAN-028",
+      "bName": "Punk Rock",
       "structural": 0.929,
-      "all": 0.684,
+      "all": 0.929,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-006",
+      "aName": "Double-Time",
+      "b": "CAN-056",
+      "bName": "Disco-Funk / Chic",
+      "structural": 0.929,
+      "all": 0.813,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -492,8 +262,9 @@
       "aName": "Double-Time",
       "b": "CAN-069",
       "bName": "Brush Ballad",
-      "structural": 0.615,
+      "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -504,6 +275,7 @@
       "bName": "Train Beat",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -514,6 +286,7 @@
       "bName": "Country Two-Step",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -524,6 +297,7 @@
       "bName": "Nashville Straight 8ths",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -534,6 +308,7 @@
       "bName": "Country Rock",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -544,6 +319,7 @@
       "bName": "Brush Country",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -554,6 +330,7 @@
       "bName": "Mento Drum-Set Adaptation",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -564,6 +341,7 @@
       "bName": "Nyabinghi Drum-Set",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -574,6 +352,7 @@
       "bName": "Techno",
       "structural": 0.929,
       "all": 0.929,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -584,6 +363,7 @@
       "bName": "Electro-Funk",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -594,6 +374,7 @@
       "bName": "UK Garage / 2-Step",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -604,6 +385,7 @@
       "bName": "Trip-Hop",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -614,6 +396,7 @@
       "bName": "Synthwave",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -624,6 +407,7 @@
       "bName": "Highlife",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -634,6 +418,7 @@
       "bName": "Kpanlogo Drum-Set",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -644,6 +429,7 @@
       "bName": "Mbaqanga",
       "structural": 0.929,
       "all": 0.929,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -654,6 +440,7 @@
       "bName": "Maghreb Chaabi",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -664,6 +451,7 @@
       "bName": "Teentaal 16-beat Drum-Set Adaptation",
       "structural": 0.929,
       "all": 0.929,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -674,6 +462,7 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -684,6 +473,7 @@
       "bName": "Reggae Rock",
       "structural": 0.929,
       "all": 0.929,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -694,6 +484,7 @@
       "bName": "Ghost-Note Pocket",
       "structural": 0.923,
       "all": 0.75,
+      "feelMatch": false,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -704,16 +495,29 @@
       "bName": "Displaced Backbeat",
       "structural": 0.963,
       "all": 0.963,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "MERGE/REVIEW"
     },
     {
       "a": "CAN-007",
       "aName": "Four-on-the-Floor",
-      "b": "CAN-031",
-      "bName": "Surf Rock",
-      "structural": 0.897,
-      "all": 0.897,
+      "b": "CAN-020",
+      "bName": "Rock Shuffle",
+      "structural": 0.929,
+      "all": 0.867,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-007",
+      "aName": "Four-on-the-Floor",
+      "b": "CAN-025",
+      "bName": "Pop Rock",
+      "structural": 0.929,
+      "all": 0.929,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -724,6 +528,7 @@
       "bName": "Straight Blues",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -732,8 +537,9 @@
       "aName": "Four-on-the-Floor",
       "b": "CAN-069",
       "bName": "Brush Ballad",
-      "structural": 0.615,
+      "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -744,6 +550,7 @@
       "bName": "Train Beat",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -754,6 +561,7 @@
       "bName": "Country Two-Step",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -764,6 +572,7 @@
       "bName": "Country Shuffle",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -774,6 +583,7 @@
       "bName": "Nashville Straight 8ths",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -784,6 +594,7 @@
       "bName": "Country Rock",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -794,6 +605,7 @@
       "bName": "Brush Country",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -804,6 +616,7 @@
       "bName": "Rockabilly Shuffle",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -814,6 +627,7 @@
       "bName": "Mento Drum-Set Adaptation",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -824,6 +638,7 @@
       "bName": "Nyabinghi Drum-Set",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -834,6 +649,7 @@
       "bName": "Electro-Funk",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -844,6 +660,7 @@
       "bName": "UK Garage / 2-Step",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -854,6 +671,7 @@
       "bName": "Trip-Hop",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -864,6 +682,7 @@
       "bName": "Highlife",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -874,6 +693,7 @@
       "bName": "Kpanlogo Drum-Set",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -884,6 +704,7 @@
       "bName": "Maghreb Chaabi",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -894,6 +715,7 @@
       "bName": "Raï",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -904,6 +726,7 @@
       "bName": "Bhangra / Dhol Drum-Set",
       "structural": 0.929,
       "all": 0.929,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -914,6 +737,7 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -924,7 +748,19 @@
       "bName": "Displaced Backbeat",
       "structural": 0.889,
       "all": 0.727,
+      "feelMatch": false,
       "sameFamily": true,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-009",
+      "aName": "Ghost-Note Pocket",
+      "b": "CAN-069",
+      "bName": "Brush Ballad",
+      "structural": 1,
+      "all": 0.8,
+      "feelMatch": false,
+      "sameFamily": false,
       "action": "REVIEW"
     },
     {
@@ -934,8 +770,9 @@
       "bName": "Train Beat",
       "structural": 1,
       "all": 0.8,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-009",
@@ -944,8 +781,9 @@
       "bName": "Country Two-Step",
       "structural": 0.96,
       "all": 0.774,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-009",
@@ -954,8 +792,9 @@
       "bName": "Nashville Straight 8ths",
       "structural": 0.96,
       "all": 0.774,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-009",
@@ -964,8 +803,9 @@
       "bName": "Country Rock",
       "structural": 0.96,
       "all": 0.774,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-009",
@@ -974,8 +814,9 @@
       "bName": "Brush Country",
       "structural": 0.96,
       "all": 0.774,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-009",
@@ -984,8 +825,9 @@
       "bName": "Mento Drum-Set Adaptation",
       "structural": 1,
       "all": 0.8,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-009",
@@ -994,8 +836,9 @@
       "bName": "Nyabinghi Drum-Set",
       "structural": 0.96,
       "all": 0.774,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-009",
@@ -1004,8 +847,9 @@
       "bName": "Electro-Funk",
       "structural": 0.96,
       "all": 0.774,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-009",
@@ -1014,8 +858,9 @@
       "bName": "UK Garage / 2-Step",
       "structural": 0.96,
       "all": 0.774,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-009",
@@ -1024,8 +869,9 @@
       "bName": "Trip-Hop",
       "structural": 0.96,
       "all": 0.774,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-009",
@@ -1034,6 +880,7 @@
       "bName": "Soca",
       "structural": 0.923,
       "all": 0.75,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1044,8 +891,9 @@
       "bName": "Highlife",
       "structural": 0.96,
       "all": 0.774,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-009",
@@ -1054,8 +902,9 @@
       "bName": "Kpanlogo Drum-Set",
       "structural": 0.96,
       "all": 0.774,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-009",
@@ -1064,8 +913,9 @@
       "bName": "Maghreb Chaabi",
       "structural": 1,
       "all": 0.8,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-009",
@@ -1074,6 +924,7 @@
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.923,
       "all": 0.75,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1084,8 +935,42 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 1,
       "all": 0.8,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-010",
+      "aName": "Displaced Backbeat",
+      "b": "CAN-020",
+      "bName": "Rock Shuffle",
+      "structural": 0.897,
+      "all": 0.839,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-010",
+      "aName": "Displaced Backbeat",
+      "b": "CAN-025",
+      "bName": "Pop Rock",
+      "structural": 0.897,
+      "all": 0.897,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-010",
+      "aName": "Displaced Backbeat",
+      "b": "CAN-069",
+      "bName": "Brush Ballad",
+      "structural": 0.889,
+      "all": 0.889,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
     },
     {
       "a": "CAN-010",
@@ -1094,6 +979,7 @@
       "bName": "Train Beat",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1104,6 +990,7 @@
       "bName": "Brush Country",
       "structural": 0.926,
       "all": 0.926,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1114,6 +1001,7 @@
       "bName": "Mento Drum-Set Adaptation",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1124,6 +1012,7 @@
       "bName": "Maghreb Chaabi",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1134,6 +1023,7 @@
       "bName": "Raï",
       "structural": 0.931,
       "all": 0.931,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1144,6 +1034,7 @@
       "bName": "Bhangra / Dhol Drum-Set",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1154,6 +1045,7 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1164,6 +1056,7 @@
       "bName": "Zamba Argentina",
       "structural": 0.9,
       "all": 0.9,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1174,17 +1067,107 @@
       "bName": "Maloya",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-018",
+      "aName": "Classic Rock 8ths",
+      "b": "CAN-027",
+      "bName": "Alternative / Grunge",
+      "structural": 0.933,
+      "all": 0.875,
+      "feelMatch": true,
+      "sameFamily": true,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-018",
+      "aName": "Classic Rock 8ths",
+      "b": "CAN-064",
+      "bName": "Blues Rock Shuffle",
+      "structural": 0.933,
+      "all": 0.933,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-018",
+      "aName": "Classic Rock 8ths",
+      "b": "CAN-165",
+      "bName": "Bachata",
+      "structural": 0.897,
+      "all": 0.897,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-018",
+      "aName": "Classic Rock 8ths",
+      "b": "CAN-177",
+      "bName": "Fanga Drum-Set Adaptation",
+      "structural": 0.897,
+      "all": 0.897,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-018",
+      "aName": "Classic Rock 8ths",
+      "b": "CAN-186",
+      "bName": "Amapiano",
+      "structural": 0.897,
+      "all": 0.897,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-018",
+      "aName": "Classic Rock 8ths",
+      "b": "CAN-196",
+      "bName": "Baladi / Masmoudi Saghir",
+      "structural": 0.929,
+      "all": 0.929,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
       "a": "CAN-019",
       "aName": "Classic Rock 16ths",
-      "b": "CAN-037",
-      "bName": "Thrash Metal",
-      "structural": 0.898,
-      "all": 0.898,
+      "b": "CAN-029",
+      "bName": "Pop-Punk",
+      "structural": 0.88,
+      "all": 0.846,
+      "feelMatch": true,
       "sameFamily": true,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-019",
+      "aName": "Classic Rock 16ths",
+      "b": "CAN-089",
+      "bName": "Old-School Breakbeat",
+      "structural": 1,
+      "all": 0.885,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-019",
+      "aName": "Classic Rock 16ths",
+      "b": "CAN-098",
+      "bName": "Sample-Break Pocket",
+      "structural": 0.88,
+      "all": 0.786,
+      "feelMatch": false,
+      "sameFamily": false,
       "action": "REVIEW"
     },
     {
@@ -1192,138 +1175,218 @@
       "aName": "Classic Rock 16ths",
       "b": "CAN-118",
       "bName": "Breakbeat / Big Beat",
-      "structural": 0.936,
-      "all": 0.83,
+      "structural": 0.917,
+      "all": 0.786,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
       "a": "CAN-019",
       "aName": "Classic Rock 16ths",
-      "b": "CAN-120",
-      "bName": "Drum & Bass",
-      "structural": 0.894,
-      "all": 0.894,
+      "b": "CAN-124",
+      "bName": "Footwork / Juke",
+      "structural": 0.88,
+      "all": 0.846,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-021",
-      "aName": "Half-Time Rock",
-      "b": "CAN-036",
-      "bName": "Metal Half-Time",
-      "structural": 0.962,
-      "all": 0.962,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-021",
-      "aName": "Half-Time Rock",
-      "b": "CAN-039",
-      "bName": "Metalcore Half-Time",
-      "structural": 0.962,
-      "all": 0.962,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-022",
-      "aName": "Hard Rock",
-      "b": "CAN-027",
-      "bName": "Alternative / Grunge",
-      "structural": 0.939,
-      "all": 0.939,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-022",
-      "aName": "Hard Rock",
-      "b": "CAN-064",
-      "bName": "Blues Rock Shuffle",
-      "structural": 0.909,
-      "all": 0.909,
+      "a": "CAN-019",
+      "aName": "Classic Rock 16ths",
+      "b": "CAN-212",
+      "bName": "Afrobeat-Funk",
+      "structural": 0.958,
+      "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-022",
-      "aName": "Hard Rock",
-      "b": "CAN-170",
-      "bName": "Kompa",
-      "structural": 0.909,
-      "all": 0.909,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-023",
-      "aName": "Arena Rock",
-      "b": "CAN-032",
-      "bName": "Glam Rock",
-      "structural": 0.943,
-      "all": 0.943,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-023",
-      "aName": "Arena Rock",
-      "b": "CAN-164",
-      "bName": "Merengue",
-      "structural": 0.914,
-      "all": 0.914,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-024",
-      "aName": "Power Ballad",
+      "a": "CAN-020",
+      "aName": "Rock Shuffle",
       "b": "CAN-025",
       "bName": "Pop Rock",
-      "structural": 0.967,
-      "all": 0.967,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-024",
-      "aName": "Power Ballad",
-      "b": "CAN-027",
-      "bName": "Alternative / Grunge",
-      "structural": 0.935,
-      "all": 0.935,
+      "structural": 1,
+      "all": 0.933,
+      "feelMatch": false,
       "sameFamily": true,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-024",
-      "aName": "Power Ballad",
-      "b": "CAN-030",
-      "bName": "Post-Punk / New Wave",
-      "structural": 0.967,
-      "all": 0.967,
+      "a": "CAN-020",
+      "aName": "Rock Shuffle",
+      "b": "CAN-027",
+      "bName": "Alternative / Grunge",
+      "structural": 0.933,
+      "all": 0.938,
+      "feelMatch": false,
       "sameFamily": true,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
-      "a": "CAN-024",
-      "aName": "Power Ballad",
+      "a": "CAN-020",
+      "aName": "Rock Shuffle",
+      "b": "CAN-047",
+      "bName": "Philly Soul",
+      "structural": 0.933,
+      "all": 0.938,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-020",
+      "aName": "Rock Shuffle",
+      "b": "CAN-060",
+      "bName": "Straight Blues",
+      "structural": 0.966,
+      "all": 0.903,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-020",
+      "aName": "Rock Shuffle",
       "b": "CAN-064",
       "bName": "Blues Rock Shuffle",
-      "structural": 0.903,
-      "all": 0.903,
+      "structural": 0.933,
+      "all": 0.875,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-024",
-      "aName": "Power Ballad",
+      "a": "CAN-020",
+      "aName": "Rock Shuffle",
+      "b": "CAN-081",
+      "bName": "Country Shuffle",
+      "structural": 0.966,
+      "all": 0.903,
+      "feelMatch": true,
+      "sameFamily": false,
+      "action": "MERGE/REVIEW"
+    },
+    {
+      "a": "CAN-020",
+      "aName": "Rock Shuffle",
+      "b": "CAN-088",
+      "bName": "Rockabilly Shuffle",
+      "structural": 0.966,
+      "all": 0.903,
+      "feelMatch": true,
+      "sameFamily": false,
+      "action": "MERGE/REVIEW"
+    },
+    {
+      "a": "CAN-020",
+      "aName": "Rock Shuffle",
+      "b": "CAN-170",
+      "bName": "Kompa",
+      "structural": 0.933,
+      "all": 1,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-020",
+      "aName": "Rock Shuffle",
+      "b": "CAN-191",
+      "bName": "Raï",
+      "structural": 0.966,
+      "all": 0.903,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-020",
+      "aName": "Rock Shuffle",
       "b": "CAN-196",
       "bName": "Baladi / Masmoudi Saghir",
-      "structural": 0.897,
-      "all": 0.897,
+      "structural": 0.929,
+      "all": 0.867,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-020",
+      "aName": "Rock Shuffle",
+      "b": "CAN-203",
+      "bName": "Bhangra / Dhol Drum-Set",
+      "structural": 1,
+      "all": 0.933,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-020",
+      "aName": "Rock Shuffle",
+      "b": "CAN-209",
+      "bName": "Latin Rock",
+      "structural": 0.933,
+      "all": 0.875,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-022",
+      "aName": "Hard Rock",
+      "b": "CAN-027",
+      "bName": "Alternative / Grunge",
+      "structural": 0.938,
+      "all": 0.889,
+      "feelMatch": true,
+      "sameFamily": true,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-022",
+      "aName": "Hard Rock",
+      "b": "CAN-045",
+      "bName": "Motown",
+      "structural": 0.882,
+      "all": 0.714,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-022",
+      "aName": "Hard Rock",
+      "b": "CAN-050",
+      "bName": "Gospel Pocket",
+      "structural": 0.938,
+      "all": 0.696,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-022",
+      "aName": "Hard Rock",
+      "b": "CAN-055",
+      "bName": "Ghost-Note Funk",
+      "structural": 0.938,
+      "all": 0.6,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-022",
+      "aName": "Hard Rock",
+      "b": "CAN-064",
+      "bName": "Blues Rock Shuffle",
+      "structural": 0.938,
+      "all": 0.833,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1332,19 +1395,142 @@
       "aName": "Pop Rock",
       "b": "CAN-027",
       "bName": "Alternative / Grunge",
-      "structural": 0.906,
-      "all": 0.906,
+      "structural": 0.933,
+      "all": 0.875,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
     {
       "a": "CAN-025",
       "aName": "Pop Rock",
-      "b": "CAN-030",
-      "bName": "Post-Punk / New Wave",
-      "structural": 0.935,
-      "all": 0.935,
-      "sameFamily": true,
+      "b": "CAN-047",
+      "bName": "Philly Soul",
+      "structural": 0.933,
+      "all": 0.875,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-025",
+      "aName": "Pop Rock",
+      "b": "CAN-060",
+      "bName": "Straight Blues",
+      "structural": 0.966,
+      "all": 0.966,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-025",
+      "aName": "Pop Rock",
+      "b": "CAN-064",
+      "bName": "Blues Rock Shuffle",
+      "structural": 0.933,
+      "all": 0.933,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-025",
+      "aName": "Pop Rock",
+      "b": "CAN-081",
+      "bName": "Country Shuffle",
+      "structural": 0.966,
+      "all": 0.966,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-025",
+      "aName": "Pop Rock",
+      "b": "CAN-088",
+      "bName": "Rockabilly Shuffle",
+      "structural": 0.966,
+      "all": 0.966,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-025",
+      "aName": "Pop Rock",
+      "b": "CAN-170",
+      "bName": "Kompa",
+      "structural": 0.933,
+      "all": 0.933,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-025",
+      "aName": "Pop Rock",
+      "b": "CAN-191",
+      "bName": "Raï",
+      "structural": 0.966,
+      "all": 0.966,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-025",
+      "aName": "Pop Rock",
+      "b": "CAN-196",
+      "bName": "Baladi / Masmoudi Saghir",
+      "structural": 0.929,
+      "all": 0.929,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-025",
+      "aName": "Pop Rock",
+      "b": "CAN-203",
+      "bName": "Bhangra / Dhol Drum-Set",
+      "structural": 1,
+      "all": 1,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-025",
+      "aName": "Pop Rock",
+      "b": "CAN-209",
+      "bName": "Latin Rock",
+      "structural": 0.933,
+      "all": 0.933,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-026",
+      "aName": "Indie Rock",
+      "b": "CAN-045",
+      "bName": "Motown",
+      "structural": 0.938,
+      "all": 0.833,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-026",
+      "aName": "Indie Rock",
+      "b": "CAN-090",
+      "bName": "Boom Bap",
+      "structural": 1,
+      "all": 0.938,
+      "feelMatch": false,
+      "sameFamily": false,
       "action": "REVIEW"
     },
     {
@@ -1352,138 +1538,218 @@
       "aName": "Indie Rock",
       "b": "CAN-091",
       "bName": "West Coast / G-Funk",
-      "structural": 0.933,
-      "all": 0.933,
+      "structural": 1,
+      "all": 0.938,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
       "a": "CAN-027",
       "aName": "Alternative / Grunge",
-      "b": "CAN-030",
-      "bName": "Post-Punk / New Wave",
-      "structural": 0.906,
-      "all": 0.906,
-      "sameFamily": true,
+      "b": "CAN-058",
+      "bName": "Texas Shuffle",
+      "structural": 0.933,
+      "all": 0.875,
+      "feelMatch": false,
+      "sameFamily": false,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-031",
-      "aName": "Surf Rock",
-      "b": "CAN-047",
-      "bName": "Philly Soul",
+      "a": "CAN-027",
+      "aName": "Alternative / Grunge",
+      "b": "CAN-059",
+      "bName": "Slow 12/8 Blues",
       "structural": 0.903,
       "all": 0.848,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-031",
-      "aName": "Surf Rock",
+      "a": "CAN-027",
+      "aName": "Alternative / Grunge",
       "b": "CAN-060",
       "bName": "Straight Blues",
-      "structural": 0.933,
-      "all": 0.933,
+      "structural": 0.903,
+      "all": 0.848,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-031",
-      "aName": "Surf Rock",
+      "a": "CAN-027",
+      "aName": "Alternative / Grunge",
+      "b": "CAN-062",
+      "bName": "Train Shuffle",
+      "structural": 0.903,
+      "all": 0.848,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-027",
+      "aName": "Alternative / Grunge",
       "b": "CAN-064",
       "bName": "Blues Rock Shuffle",
-      "structural": 0.903,
-      "all": 0.903,
+      "structural": 1,
+      "all": 0.938,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-031",
-      "aName": "Surf Rock",
+      "a": "CAN-027",
+      "aName": "Alternative / Grunge",
       "b": "CAN-081",
       "bName": "Country Shuffle",
-      "structural": 0.933,
-      "all": 0.933,
+      "structural": 0.903,
+      "all": 0.848,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-031",
-      "aName": "Surf Rock",
+      "a": "CAN-027",
+      "aName": "Alternative / Grunge",
       "b": "CAN-088",
       "bName": "Rockabilly Shuffle",
-      "structural": 0.933,
-      "all": 0.933,
+      "structural": 0.903,
+      "all": 0.848,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-031",
-      "aName": "Surf Rock",
+      "a": "CAN-027",
+      "aName": "Alternative / Grunge",
       "b": "CAN-170",
       "bName": "Kompa",
-      "structural": 0.903,
-      "all": 0.903,
+      "structural": 0.875,
+      "all": 0.938,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-031",
-      "aName": "Surf Rock",
+      "a": "CAN-027",
+      "aName": "Alternative / Grunge",
       "b": "CAN-191",
       "bName": "Raï",
-      "structural": 0.933,
-      "all": 0.933,
+      "structural": 0.903,
+      "all": 0.848,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-031",
-      "aName": "Surf Rock",
-      "b": "CAN-196",
-      "bName": "Baladi / Masmoudi Saghir",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-031",
-      "aName": "Surf Rock",
+      "a": "CAN-027",
+      "aName": "Alternative / Grunge",
       "b": "CAN-203",
       "bName": "Bhangra / Dhol Drum-Set",
+      "structural": 0.933,
+      "all": 0.875,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-028",
+      "aName": "Punk Rock",
+      "b": "CAN-056",
+      "bName": "Disco-Funk / Chic",
+      "structural": 1,
+      "all": 0.875,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-028",
+      "aName": "Punk Rock",
+      "b": "CAN-114",
+      "bName": "Techno",
+      "structural": 1,
+      "all": 1,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-028",
+      "aName": "Punk Rock",
+      "b": "CAN-125",
+      "bName": "Synthwave",
       "structural": 0.966,
       "all": 0.966,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
-      "a": "CAN-031",
-      "aName": "Surf Rock",
-      "b": "CAN-209",
-      "bName": "Latin Rock",
-      "structural": 0.967,
-      "all": 0.967,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-032",
-      "aName": "Glam Rock",
-      "b": "CAN-164",
-      "bName": "Merengue",
-      "structural": 0.97,
-      "all": 0.97,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-032",
-      "aName": "Glam Rock",
+      "a": "CAN-028",
+      "aName": "Punk Rock",
       "b": "CAN-180",
       "bName": "Soukous",
-      "structural": 0.909,
-      "all": 0.909,
+      "structural": 0.933,
+      "all": 0.933,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-028",
+      "aName": "Punk Rock",
+      "b": "CAN-184",
+      "bName": "Mbaqanga",
+      "structural": 1,
+      "all": 1,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-028",
+      "aName": "Punk Rock",
+      "b": "CAN-204",
+      "bName": "Teentaal 16-beat Drum-Set Adaptation",
+      "structural": 1,
+      "all": 1,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-029",
+      "aName": "Pop-Punk",
+      "b": "CAN-089",
+      "bName": "Old-School Breakbeat",
+      "structural": 0.88,
+      "all": 0.815,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-029",
+      "aName": "Pop-Punk",
+      "b": "CAN-098",
+      "bName": "Sample-Break Pocket",
+      "structural": 0.92,
+      "all": 0.852,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-029",
+      "aName": "Pop-Punk",
+      "b": "CAN-118",
+      "bName": "Breakbeat / Big Beat",
+      "structural": 0.958,
+      "all": 0.852,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1492,40 +1758,11 @@
       "aName": "Metal Half-Time",
       "b": "CAN-039",
       "bName": "Metalcore Half-Time",
-      "structural": 0.926,
-      "all": 0.926,
+      "structural": 0.889,
+      "all": 0.842,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
-    },
-    {
-      "a": "CAN-037",
-      "aName": "Thrash Metal",
-      "b": "CAN-118",
-      "bName": "Breakbeat / Big Beat",
-      "structural": 0.88,
-      "all": 0.786,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-042",
-      "aName": "New Orleans Funk / Second Line",
-      "b": "CAN-043",
-      "bName": "Meters-style New Orleans Funk",
-      "structural": 1,
-      "all": 1,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-044",
-      "aName": "P-Funk",
-      "b": "CAN-050",
-      "bName": "Gospel Pocket",
-      "structural": 1,
-      "all": 0.864,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
     },
     {
       "a": "CAN-044",
@@ -1534,38 +1771,31 @@
       "bName": "Neo-Soul",
       "structural": 1,
       "all": 0.905,
+      "feelMatch": false,
       "sameFamily": true,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-044",
       "aName": "P-Funk",
-      "b": "CAN-054",
-      "bName": "Linear Funk",
-      "structural": 1,
-      "all": 0.905,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
+      "b": "CAN-076",
+      "bName": "Jazz-Funk",
+      "structural": 0.938,
+      "all": 0.762,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
     },
     {
       "a": "CAN-044",
       "aName": "P-Funk",
-      "b": "CAN-055",
-      "bName": "Ghost-Note Funk",
+      "b": "CAN-092",
+      "bName": "Dilla / Drunk Pocket",
       "structural": 1,
-      "all": 0.905,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-044",
-      "aName": "P-Funk",
-      "b": "CAN-056",
-      "bName": "Disco-Funk / Chic",
-      "structural": 1,
-      "all": 0.905,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
+      "all": 0.773,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
     },
     {
       "a": "CAN-045",
@@ -1574,6 +1804,7 @@
       "bName": "Philly Soul",
       "structural": 0.938,
       "all": 0.789,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -1582,10 +1813,22 @@
       "aName": "Motown",
       "b": "CAN-049",
       "bName": "Go-Go",
-      "structural": 1,
-      "all": 0.667,
+      "structural": 0.889,
+      "all": 0.68,
+      "feelMatch": true,
       "sameFamily": true,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-045",
+      "aName": "Motown",
+      "b": "CAN-090",
+      "bName": "Boom Bap",
+      "structural": 0.938,
+      "all": 0.889,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
     },
     {
       "a": "CAN-045",
@@ -1593,7 +1836,8 @@
       "b": "CAN-091",
       "bName": "West Coast / G-Funk",
       "structural": 0.938,
-      "all": 0.833,
+      "all": 0.789,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1604,28 +1848,9 @@
       "bName": "Modern R&B",
       "structural": 0.929,
       "all": 0.867,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
-    },
-    {
-      "a": "CAN-046",
-      "aName": "Stax / Southern Soul",
-      "b": "CAN-089",
-      "bName": "Old-School Breakbeat",
-      "structural": 1,
-      "all": 1,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-046",
-      "aName": "Stax / Southern Soul",
-      "b": "CAN-090",
-      "bName": "Boom Bap",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
     },
     {
       "a": "CAN-046",
@@ -1633,19 +1858,10 @@
       "b": "CAN-093",
       "bName": "Lo-Fi Hip-Hop",
       "structural": 1,
-      "all": 0.929,
+      "all": 0.867,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-046",
-      "aName": "Stax / Southern Soul",
-      "b": "CAN-094",
-      "bName": "Trap Half-Time",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-046",
@@ -1654,6 +1870,7 @@
       "bName": "Early Dancehall",
       "structural": 0.929,
       "all": 0.929,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1664,6 +1881,7 @@
       "bName": "Digital Dancehall / Ragga",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1674,17 +1892,8 @@
       "bName": "Modern Dancehall",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-047",
-      "aName": "Philly Soul",
-      "b": "CAN-049",
-      "bName": "Go-Go",
-      "structural": 0.938,
-      "all": 0.652,
-      "sameFamily": true,
       "action": "REVIEW"
     },
     {
@@ -1694,6 +1903,7 @@
       "bName": "Straight Blues",
       "structural": 0.903,
       "all": 0.848,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1704,6 +1914,7 @@
       "bName": "Country Shuffle",
       "structural": 0.903,
       "all": 0.848,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1714,6 +1925,7 @@
       "bName": "Rockabilly Shuffle",
       "structural": 0.903,
       "all": 0.848,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1724,6 +1936,7 @@
       "bName": "Kompa",
       "structural": 0.875,
       "all": 0.938,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1734,6 +1947,7 @@
       "bName": "Raï",
       "structural": 0.903,
       "all": 0.848,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1744,156 +1958,62 @@
       "bName": "Bhangra / Dhol Drum-Set",
       "structural": 0.933,
       "all": 0.875,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-049",
-      "aName": "Go-Go",
-      "b": "CAN-091",
-      "bName": "West Coast / G-Funk",
-      "structural": 0.938,
-      "all": 0.682,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
       "a": "CAN-050",
       "aName": "Gospel Pocket",
-      "b": "CAN-052",
-      "bName": "Neo-Soul",
-      "structural": 1,
-      "all": 0.95,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-050",
-      "aName": "Gospel Pocket",
-      "b": "CAN-054",
-      "bName": "Linear Funk",
-      "structural": 1,
-      "all": 0.95,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-050",
-      "aName": "Gospel Pocket",
-      "b": "CAN-055",
-      "bName": "Ghost-Note Funk",
-      "structural": 1,
-      "all": 0.95,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-050",
-      "aName": "Gospel Pocket",
-      "b": "CAN-056",
-      "bName": "Disco-Funk / Chic",
-      "structural": 1,
-      "all": 0.95,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-051",
-      "aName": "Gospel Shout",
-      "b": "CAN-114",
-      "bName": "Techno",
-      "structural": 1,
-      "all": 0.737,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-051",
-      "aName": "Gospel Shout",
-      "b": "CAN-125",
-      "bName": "Synthwave",
-      "structural": 0.966,
-      "all": 0.718,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-051",
-      "aName": "Gospel Shout",
-      "b": "CAN-180",
-      "bName": "Soukous",
+      "b": "CAN-058",
+      "bName": "Texas Shuffle",
       "structural": 0.933,
-      "all": 0.789,
+      "all": 0.667,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-051",
-      "aName": "Gospel Shout",
-      "b": "CAN-184",
-      "bName": "Mbaqanga",
-      "structural": 1,
-      "all": 0.737,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-051",
-      "aName": "Gospel Shout",
-      "b": "CAN-204",
-      "bName": "Teentaal 16-beat Drum-Set Adaptation",
-      "structural": 1,
-      "all": 0.737,
-      "sameFamily": false,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-052",
-      "aName": "Neo-Soul",
-      "b": "CAN-054",
-      "bName": "Linear Funk",
-      "structural": 1,
-      "all": 1,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-052",
-      "aName": "Neo-Soul",
-      "b": "CAN-055",
-      "bName": "Ghost-Note Funk",
-      "structural": 1,
-      "all": 1,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-052",
-      "aName": "Neo-Soul",
-      "b": "CAN-056",
-      "bName": "Disco-Funk / Chic",
-      "structural": 1,
-      "all": 1,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-053",
-      "aName": "Modern R&B",
-      "b": "CAN-089",
-      "bName": "Old-School Breakbeat",
-      "structural": 0.929,
-      "all": 0.867,
+      "a": "CAN-050",
+      "aName": "Gospel Pocket",
+      "b": "CAN-059",
+      "bName": "Slow 12/8 Blues",
+      "structural": 0.903,
+      "all": 0.651,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-053",
-      "aName": "Modern R&B",
-      "b": "CAN-090",
-      "bName": "Boom Bap",
-      "structural": 0.897,
-      "all": 0.839,
+      "a": "CAN-050",
+      "aName": "Gospel Pocket",
+      "b": "CAN-062",
+      "bName": "Train Shuffle",
+      "structural": 0.903,
+      "all": 0.651,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-052",
+      "aName": "Neo-Soul",
+      "b": "CAN-076",
+      "bName": "Jazz-Funk",
+      "structural": 0.938,
+      "all": 0.842,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-052",
+      "aName": "Neo-Soul",
+      "b": "CAN-092",
+      "bName": "Dilla / Drunk Pocket",
+      "structural": 1,
+      "all": 0.85,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1903,49 +2023,76 @@
       "b": "CAN-093",
       "bName": "Lo-Fi Hip-Hop",
       "structural": 0.929,
-      "all": 0.933,
+      "all": 0.875,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-053",
-      "aName": "Modern R&B",
-      "b": "CAN-094",
-      "bName": "Trap Half-Time",
-      "structural": 0.897,
-      "all": 0.839,
+      "a": "CAN-056",
+      "aName": "Disco-Funk / Chic",
+      "b": "CAN-114",
+      "bName": "Techno",
+      "structural": 1,
+      "all": 0.875,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-054",
-      "aName": "Linear Funk",
-      "b": "CAN-055",
-      "bName": "Ghost-Note Funk",
-      "structural": 1,
-      "all": 1,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
+      "a": "CAN-056",
+      "aName": "Disco-Funk / Chic",
+      "b": "CAN-125",
+      "bName": "Synthwave",
+      "structural": 0.966,
+      "all": 0.848,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
     },
     {
-      "a": "CAN-054",
-      "aName": "Linear Funk",
-      "b": "CAN-056",
-      "bName": "Disco-Funk / Chic",
-      "structural": 1,
+      "a": "CAN-056",
+      "aName": "Disco-Funk / Chic",
+      "b": "CAN-164",
+      "bName": "Merengue",
+      "structural": 0.875,
       "all": 1,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
     },
     {
-      "a": "CAN-055",
-      "aName": "Ghost-Note Funk",
-      "b": "CAN-056",
-      "bName": "Disco-Funk / Chic",
+      "a": "CAN-056",
+      "aName": "Disco-Funk / Chic",
+      "b": "CAN-180",
+      "bName": "Soukous",
+      "structural": 0.933,
+      "all": 0.938,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-056",
+      "aName": "Disco-Funk / Chic",
+      "b": "CAN-184",
+      "bName": "Mbaqanga",
       "structural": 1,
-      "all": 1,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
+      "all": 0.875,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-056",
+      "aName": "Disco-Funk / Chic",
+      "b": "CAN-204",
+      "bName": "Teentaal 16-beat Drum-Set Adaptation",
+      "structural": 1,
+      "all": 0.875,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
     },
     {
       "a": "CAN-058",
@@ -1954,6 +2101,7 @@
       "bName": "Slow 12/8 Blues",
       "structural": 0.966,
       "all": 0.966,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "MERGE/REVIEW"
     },
@@ -1964,6 +2112,7 @@
       "bName": "Train Shuffle",
       "structural": 0.966,
       "all": 0.966,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "MERGE/REVIEW"
     },
@@ -1974,6 +2123,7 @@
       "bName": "Blues Rock Shuffle",
       "structural": 0.933,
       "all": 0.933,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -1984,6 +2134,7 @@
       "bName": "Bachata",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -1994,6 +2145,7 @@
       "bName": "Fanga Drum-Set Adaptation",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2004,6 +2156,7 @@
       "bName": "Amapiano",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2014,6 +2167,7 @@
       "bName": "Train Shuffle",
       "structural": 0.933,
       "all": 0.933,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -2024,6 +2178,7 @@
       "bName": "Blues Rock Shuffle",
       "structural": 0.903,
       "all": 0.903,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -2034,6 +2189,7 @@
       "bName": "Blues Rock Shuffle",
       "structural": 0.903,
       "all": 0.903,
+      "feelMatch": false,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -2044,6 +2200,7 @@
       "bName": "Country Shuffle",
       "structural": 0.933,
       "all": 0.933,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2054,6 +2211,7 @@
       "bName": "Rockabilly Shuffle",
       "structural": 0.933,
       "all": 0.933,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2064,6 +2222,7 @@
       "bName": "Kompa",
       "structural": 0.903,
       "all": 0.903,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2074,6 +2233,7 @@
       "bName": "Raï",
       "structural": 0.933,
       "all": 0.933,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2084,6 +2244,7 @@
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2094,8 +2255,9 @@
       "bName": "Bhangra / Dhol Drum-Set",
       "structural": 0.966,
       "all": 0.966,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-060",
@@ -2104,6 +2266,7 @@
       "bName": "Latin Rock",
       "structural": 0.903,
       "all": 0.903,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2114,6 +2277,7 @@
       "bName": "Blues Rock Shuffle",
       "structural": 0.903,
       "all": 0.903,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -2124,6 +2288,7 @@
       "bName": "Afrobeat",
       "structural": 0.9,
       "all": 0.9,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2134,6 +2299,7 @@
       "bName": "Country Shuffle",
       "structural": 0.903,
       "all": 0.903,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2144,6 +2310,7 @@
       "bName": "Rockabilly Shuffle",
       "structural": 0.903,
       "all": 0.903,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2154,6 +2321,7 @@
       "bName": "Raï",
       "structural": 0.903,
       "all": 0.903,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2164,176 +2332,18 @@
       "bName": "Bhangra / Dhol Drum-Set",
       "structural": 0.933,
       "all": 0.933,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
-    },
-    {
-      "a": "CAN-065",
-      "aName": "Medium Swing",
-      "b": "CAN-067",
-      "bName": "Two-Feel Swing",
-      "structural": 1,
-      "all": 0.846,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-065",
-      "aName": "Medium Swing",
-      "b": "CAN-068",
-      "bName": "Jazz Ballad",
-      "structural": 1,
-      "all": 0.846,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-065",
-      "aName": "Medium Swing",
-      "b": "CAN-072",
-      "bName": "Jazz Shuffle",
-      "structural": 1,
-      "all": 0.6,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-065",
-      "aName": "Medium Swing",
-      "b": "CAN-073",
-      "bName": "Big Band Swing",
-      "structural": 1,
-      "all": 0.625,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-065",
-      "aName": "Medium Swing",
-      "b": "CAN-074",
-      "bName": "Bebop Comping",
-      "structural": 1,
-      "all": 0.625,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-066",
-      "aName": "Up-Tempo / Bebop Swing",
-      "b": "CAN-075",
-      "bName": "Straight-8 / ECM",
-      "structural": 1,
-      "all": 0.563,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-066",
-      "aName": "Up-Tempo / Bebop Swing",
-      "b": "CAN-077",
-      "bName": "Fusion",
-      "structural": 1,
-      "all": 0.476,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-067",
-      "aName": "Two-Feel Swing",
-      "b": "CAN-068",
-      "bName": "Jazz Ballad",
-      "structural": 1,
-      "all": 1,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-067",
-      "aName": "Two-Feel Swing",
-      "b": "CAN-072",
-      "bName": "Jazz Shuffle",
-      "structural": 1,
-      "all": 0.714,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-067",
-      "aName": "Two-Feel Swing",
-      "b": "CAN-073",
-      "bName": "Big Band Swing",
-      "structural": 1,
-      "all": 0.733,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-067",
-      "aName": "Two-Feel Swing",
-      "b": "CAN-074",
-      "bName": "Bebop Comping",
-      "structural": 1,
-      "all": 0.625,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-068",
-      "aName": "Jazz Ballad",
-      "b": "CAN-072",
-      "bName": "Jazz Shuffle",
-      "structural": 1,
-      "all": 0.714,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-068",
-      "aName": "Jazz Ballad",
-      "b": "CAN-073",
-      "bName": "Big Band Swing",
-      "structural": 1,
-      "all": 0.733,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-068",
-      "aName": "Jazz Ballad",
-      "b": "CAN-074",
-      "bName": "Bebop Comping",
-      "structural": 1,
-      "all": 0.625,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-069",
-      "aName": "Brush Ballad",
-      "b": "CAN-070",
-      "bName": "Brush Swing",
-      "structural": 1,
-      "all": 0.625,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-069",
-      "aName": "Brush Ballad",
-      "b": "CAN-076",
-      "bName": "Jazz-Funk",
-      "structural": 1,
-      "all": 0.647,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
     },
     {
       "a": "CAN-069",
       "aName": "Brush Ballad",
       "b": "CAN-079",
       "bName": "Train Beat",
-      "structural": 0.667,
+      "structural": 1,
       "all": 1,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2342,8 +2352,9 @@
       "aName": "Brush Ballad",
       "b": "CAN-080",
       "bName": "Country Two-Step",
-      "structural": 0.64,
+      "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2352,8 +2363,9 @@
       "aName": "Brush Ballad",
       "b": "CAN-084",
       "bName": "Nashville Straight 8ths",
-      "structural": 0.64,
+      "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2362,8 +2374,9 @@
       "aName": "Brush Ballad",
       "b": "CAN-085",
       "bName": "Country Rock",
-      "structural": 0.64,
+      "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2372,8 +2385,9 @@
       "aName": "Brush Ballad",
       "b": "CAN-086",
       "bName": "Brush Country",
-      "structural": 0.64,
+      "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2382,8 +2396,9 @@
       "aName": "Brush Ballad",
       "b": "CAN-099",
       "bName": "Mento Drum-Set Adaptation",
-      "structural": 0.667,
+      "structural": 1,
       "all": 1,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2392,8 +2407,9 @@
       "aName": "Brush Ballad",
       "b": "CAN-106",
       "bName": "Nyabinghi Drum-Set",
-      "structural": 0.64,
+      "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2402,8 +2418,9 @@
       "aName": "Brush Ballad",
       "b": "CAN-116",
       "bName": "Electro-Funk",
-      "structural": 0.64,
+      "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2412,8 +2429,9 @@
       "aName": "Brush Ballad",
       "b": "CAN-117",
       "bName": "UK Garage / 2-Step",
-      "structural": 0.64,
+      "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2422,8 +2440,9 @@
       "aName": "Brush Ballad",
       "b": "CAN-121",
       "bName": "Trip-Hop",
-      "structural": 0.64,
+      "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2432,8 +2451,9 @@
       "aName": "Brush Ballad",
       "b": "CAN-169",
       "bName": "Soca",
-      "structural": 0.615,
+      "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2442,8 +2462,9 @@
       "aName": "Brush Ballad",
       "b": "CAN-174",
       "bName": "Highlife",
-      "structural": 0.64,
+      "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2452,8 +2473,9 @@
       "aName": "Brush Ballad",
       "b": "CAN-175",
       "bName": "Kpanlogo Drum-Set",
-      "structural": 0.64,
+      "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2462,8 +2484,9 @@
       "aName": "Brush Ballad",
       "b": "CAN-190",
       "bName": "Maghreb Chaabi",
-      "structural": 0.667,
+      "structural": 1,
       "all": 1,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2472,8 +2495,9 @@
       "aName": "Brush Ballad",
       "b": "CAN-196",
       "bName": "Baladi / Masmoudi Saghir",
-      "structural": 0.615,
+      "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2482,60 +2506,33 @@
       "aName": "Brush Ballad",
       "b": "CAN-205",
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
-      "structural": 0.667,
+      "structural": 1,
       "all": 1,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
-      "a": "CAN-070",
-      "aName": "Brush Swing",
-      "b": "CAN-076",
-      "bName": "Jazz-Funk",
-      "structural": 1,
-      "all": 0.5,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
+      "a": "CAN-076",
+      "aName": "Jazz-Funk",
+      "b": "CAN-092",
+      "bName": "Dilla / Drunk Pocket",
+      "structural": 0.938,
+      "all": 0.789,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
     },
     {
-      "a": "CAN-072",
-      "aName": "Jazz Shuffle",
-      "b": "CAN-073",
-      "bName": "Big Band Swing",
+      "a": "CAN-078",
+      "aName": "Afro-Cuban Jazz 6/8",
+      "b": "CAN-137",
+      "bName": "Afro-Cuban 6/8 / Bembé",
       "structural": 1,
       "all": 0.857,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-072",
-      "aName": "Jazz Shuffle",
-      "b": "CAN-074",
-      "bName": "Bebop Comping",
-      "structural": 1,
-      "all": 0.444,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-073",
-      "aName": "Big Band Swing",
-      "b": "CAN-074",
-      "bName": "Bebop Comping",
-      "structural": 1,
-      "all": 0.474,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-075",
-      "aName": "Straight-8 / ECM",
-      "b": "CAN-077",
-      "bName": "Fusion",
-      "structural": 1,
-      "all": 0.4,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
     },
     {
       "a": "CAN-079",
@@ -2544,6 +2541,7 @@
       "bName": "Country Two-Step",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "MERGE/REVIEW"
     },
@@ -2554,6 +2552,7 @@
       "bName": "Nashville Straight 8ths",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "MERGE/REVIEW"
     },
@@ -2564,6 +2563,7 @@
       "bName": "Country Rock",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "MERGE/REVIEW"
     },
@@ -2574,6 +2574,7 @@
       "bName": "Brush Country",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "MERGE/REVIEW"
     },
@@ -2584,8 +2585,9 @@
       "bName": "Mento Drum-Set Adaptation",
       "structural": 1,
       "all": 1,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-079",
@@ -2594,8 +2596,9 @@
       "bName": "Nyabinghi Drum-Set",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-079",
@@ -2604,8 +2607,9 @@
       "bName": "Electro-Funk",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-079",
@@ -2614,8 +2618,9 @@
       "bName": "UK Garage / 2-Step",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-079",
@@ -2624,8 +2629,9 @@
       "bName": "Trip-Hop",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-079",
@@ -2634,6 +2640,7 @@
       "bName": "Soca",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2644,8 +2651,9 @@
       "bName": "Highlife",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-079",
@@ -2654,8 +2662,9 @@
       "bName": "Kpanlogo Drum-Set",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-079",
@@ -2664,8 +2673,9 @@
       "bName": "Maghreb Chaabi",
       "structural": 1,
       "all": 1,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-079",
@@ -2674,6 +2684,7 @@
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2684,8 +2695,9 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 1,
       "all": 1,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-080",
@@ -2694,6 +2706,7 @@
       "bName": "Nashville Straight 8ths",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -2704,6 +2717,7 @@
       "bName": "Country Rock",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -2714,6 +2728,7 @@
       "bName": "Brush Country",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -2724,8 +2739,9 @@
       "bName": "Mento Drum-Set Adaptation",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-080",
@@ -2734,6 +2750,7 @@
       "bName": "Nyabinghi Drum-Set",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2744,6 +2761,7 @@
       "bName": "Electro-Funk",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2754,6 +2772,7 @@
       "bName": "UK Garage / 2-Step",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2764,6 +2783,7 @@
       "bName": "Trip-Hop",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2774,6 +2794,7 @@
       "bName": "Soca",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2784,6 +2805,7 @@
       "bName": "Highlife",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2794,6 +2816,7 @@
       "bName": "Kpanlogo Drum-Set",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2804,8 +2827,9 @@
       "bName": "Maghreb Chaabi",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-080",
@@ -2814,6 +2838,7 @@
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2824,8 +2849,9 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-081",
@@ -2834,6 +2860,7 @@
       "bName": "Rockabilly Shuffle",
       "structural": 0.933,
       "all": 0.933,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -2844,6 +2871,7 @@
       "bName": "Kompa",
       "structural": 0.903,
       "all": 0.903,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2854,6 +2882,7 @@
       "bName": "Raï",
       "structural": 0.933,
       "all": 0.933,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2864,6 +2893,7 @@
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2874,8 +2904,9 @@
       "bName": "Bhangra / Dhol Drum-Set",
       "structural": 0.966,
       "all": 0.966,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-081",
@@ -2884,6 +2915,7 @@
       "bName": "Latin Rock",
       "structural": 0.903,
       "all": 0.903,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2894,8 +2926,9 @@
       "bName": "Modern Bluegrass Drum-Set",
       "structural": 0.966,
       "all": 0.966,
+      "feelMatch": false,
       "sameFamily": true,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-084",
@@ -2904,6 +2937,7 @@
       "bName": "Country Rock",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -2914,6 +2948,7 @@
       "bName": "Brush Country",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -2924,8 +2959,9 @@
       "bName": "Mento Drum-Set Adaptation",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-084",
@@ -2934,6 +2970,7 @@
       "bName": "Nyabinghi Drum-Set",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2944,6 +2981,7 @@
       "bName": "Electro-Funk",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2954,6 +2992,7 @@
       "bName": "UK Garage / 2-Step",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2964,8 +3003,9 @@
       "bName": "Trip-Hop",
       "structural": 1,
       "all": 1,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-084",
@@ -2974,8 +3014,9 @@
       "bName": "Soca",
       "structural": 0.962,
       "all": 0.962,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-084",
@@ -2984,6 +3025,7 @@
       "bName": "Highlife",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -2994,6 +3036,7 @@
       "bName": "Kpanlogo Drum-Set",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3004,8 +3047,9 @@
       "bName": "Maghreb Chaabi",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-084",
@@ -3014,6 +3058,7 @@
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3024,8 +3069,9 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-085",
@@ -3034,6 +3080,7 @@
       "bName": "Brush Country",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -3044,8 +3091,9 @@
       "bName": "Mento Drum-Set Adaptation",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-085",
@@ -3054,6 +3102,7 @@
       "bName": "Nyabinghi Drum-Set",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3064,6 +3113,7 @@
       "bName": "Electro-Funk",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3074,8 +3124,9 @@
       "bName": "UK Garage / 2-Step",
       "structural": 1,
       "all": 1,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-085",
@@ -3084,6 +3135,7 @@
       "bName": "Trip-Hop",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3094,6 +3146,7 @@
       "bName": "Soca",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3104,6 +3157,7 @@
       "bName": "Highlife",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3114,6 +3168,7 @@
       "bName": "Kpanlogo Drum-Set",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3124,8 +3179,9 @@
       "bName": "Maghreb Chaabi",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-085",
@@ -3134,6 +3190,7 @@
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3144,8 +3201,9 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-086",
@@ -3154,8 +3212,9 @@
       "bName": "Mento Drum-Set Adaptation",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-086",
@@ -3164,6 +3223,7 @@
       "bName": "Nyabinghi Drum-Set",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3174,6 +3234,7 @@
       "bName": "Electro-Funk",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3184,6 +3245,7 @@
       "bName": "UK Garage / 2-Step",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3194,6 +3256,7 @@
       "bName": "Trip-Hop",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3204,6 +3267,7 @@
       "bName": "Soca",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3214,6 +3278,7 @@
       "bName": "Highlife",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3224,6 +3289,7 @@
       "bName": "Kpanlogo Drum-Set",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3234,8 +3300,9 @@
       "bName": "Maghreb Chaabi",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-086",
@@ -3244,6 +3311,7 @@
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3254,8 +3322,9 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-088",
@@ -3264,6 +3333,7 @@
       "bName": "Kompa",
       "structural": 0.903,
       "all": 0.903,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3274,6 +3344,7 @@
       "bName": "Raï",
       "structural": 0.933,
       "all": 0.933,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3284,6 +3355,7 @@
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3294,8 +3366,9 @@
       "bName": "Bhangra / Dhol Drum-Set",
       "structural": 0.966,
       "all": 0.966,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-088",
@@ -3304,138 +3377,64 @@
       "bName": "Latin Rock",
       "structural": 0.903,
       "all": 0.903,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
       "a": "CAN-089",
       "aName": "Old-School Breakbeat",
-      "b": "CAN-090",
-      "bName": "Boom Bap",
-      "structural": 0.963,
-      "all": 0.963,
+      "b": "CAN-098",
+      "bName": "Sample-Break Pocket",
+      "structural": 0.88,
+      "all": 0.889,
+      "feelMatch": true,
       "sameFamily": true,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-089",
       "aName": "Old-School Breakbeat",
-      "b": "CAN-093",
-      "bName": "Lo-Fi Hip-Hop",
+      "b": "CAN-118",
+      "bName": "Breakbeat / Big Beat",
+      "structural": 0.917,
+      "all": 0.889,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-089",
+      "aName": "Old-School Breakbeat",
+      "b": "CAN-124",
+      "bName": "Footwork / Juke",
+      "structural": 0.88,
+      "all": 0.815,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-089",
+      "aName": "Old-School Breakbeat",
+      "b": "CAN-212",
+      "bName": "Afrobeat-Funk",
+      "structural": 0.958,
+      "all": 0.793,
+      "feelMatch": false,
+      "sameFamily": false,
+      "action": "REVIEW"
+    },
+    {
+      "a": "CAN-090",
+      "aName": "Boom Bap",
+      "b": "CAN-091",
+      "bName": "West Coast / G-Funk",
       "structural": 1,
-      "all": 0.929,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-089",
-      "aName": "Old-School Breakbeat",
-      "b": "CAN-094",
-      "bName": "Trap Half-Time",
-      "structural": 0.963,
-      "all": 0.963,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-089",
-      "aName": "Old-School Breakbeat",
-      "b": "CAN-107",
-      "bName": "Early Dancehall",
-      "structural": 0.929,
-      "all": 0.929,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-089",
-      "aName": "Old-School Breakbeat",
-      "b": "CAN-108",
-      "bName": "Digital Dancehall / Ragga",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-089",
-      "aName": "Old-School Breakbeat",
-      "b": "CAN-109",
-      "bName": "Modern Dancehall",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-090",
-      "aName": "Boom Bap",
-      "b": "CAN-093",
-      "bName": "Lo-Fi Hip-Hop",
-      "structural": 0.963,
-      "all": 0.897,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-090",
-      "aName": "Boom Bap",
-      "b": "CAN-094",
-      "bName": "Trap Half-Time",
-      "structural": 0.929,
-      "all": 0.929,
+      "all": 0.882,
+      "feelMatch": false,
       "sameFamily": true,
       "action": "REVIEW"
-    },
-    {
-      "a": "CAN-090",
-      "aName": "Boom Bap",
-      "b": "CAN-107",
-      "bName": "Early Dancehall",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-092",
-      "aName": "Dilla / Drunk Pocket",
-      "b": "CAN-119",
-      "bName": "Jungle",
-      "structural": 0.939,
-      "all": 0.939,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-092",
-      "aName": "Dilla / Drunk Pocket",
-      "b": "CAN-181",
-      "bName": "Makossa",
-      "structural": 0.939,
-      "all": 0.939,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-092",
-      "aName": "Dilla / Drunk Pocket",
-      "b": "CAN-198",
-      "bName": "Chiftetelli",
-      "structural": 0.912,
-      "all": 0.912,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-093",
-      "aName": "Lo-Fi Hip-Hop",
-      "b": "CAN-094",
-      "bName": "Trap Half-Time",
-      "structural": 0.963,
-      "all": 0.897,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
     },
     {
       "a": "CAN-093",
@@ -3443,7 +3442,8 @@
       "b": "CAN-107",
       "bName": "Early Dancehall",
       "structural": 0.929,
-      "all": 0.867,
+      "all": 0.813,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3453,7 +3453,8 @@
       "b": "CAN-108",
       "bName": "Digital Dancehall / Ragga",
       "structural": 0.897,
-      "all": 0.839,
+      "all": 0.788,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3463,47 +3464,30 @@
       "b": "CAN-109",
       "bName": "Modern Dancehall",
       "structural": 0.897,
-      "all": 0.839,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-094",
-      "aName": "Trap Half-Time",
-      "b": "CAN-107",
-      "bName": "Early Dancehall",
-      "structural": 0.897,
-      "all": 0.897,
+      "all": 0.788,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
       "a": "CAN-098",
       "aName": "Sample-Break Pocket",
-      "b": "CAN-165",
-      "bName": "Bachata",
-      "structural": 0.897,
-      "all": 0.897,
+      "b": "CAN-118",
+      "bName": "Breakbeat / Big Beat",
+      "structural": 0.958,
+      "all": 0.926,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
     {
       "a": "CAN-098",
       "aName": "Sample-Break Pocket",
-      "b": "CAN-177",
-      "bName": "Fanga Drum-Set Adaptation",
-      "structural": 0.897,
-      "all": 0.897,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-098",
-      "aName": "Sample-Break Pocket",
-      "b": "CAN-186",
-      "bName": "Amapiano",
-      "structural": 0.897,
-      "all": 0.897,
+      "b": "CAN-120",
+      "bName": "Drum & Bass",
+      "structural": 0.917,
+      "all": 0.846,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3514,8 +3498,9 @@
       "bName": "Nyabinghi Drum-Set",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": true,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-099",
@@ -3524,8 +3509,9 @@
       "bName": "Electro-Funk",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-099",
@@ -3534,8 +3520,9 @@
       "bName": "UK Garage / 2-Step",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-099",
@@ -3544,8 +3531,9 @@
       "bName": "Trip-Hop",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-099",
@@ -3554,6 +3542,7 @@
       "bName": "Soca",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3564,8 +3553,9 @@
       "bName": "Highlife",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-099",
@@ -3574,8 +3564,9 @@
       "bName": "Kpanlogo Drum-Set",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-099",
@@ -3584,8 +3575,9 @@
       "bName": "Maghreb Chaabi",
       "structural": 1,
       "all": 1,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-099",
@@ -3594,6 +3586,7 @@
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3604,8 +3597,9 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 1,
       "all": 1,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-102",
@@ -3614,6 +3608,7 @@
       "bName": "Dub",
       "structural": 0.952,
       "all": 0.952,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -3624,6 +3619,7 @@
       "bName": "Electro-Funk",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3634,6 +3630,7 @@
       "bName": "UK Garage / 2-Step",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3644,6 +3641,7 @@
       "bName": "Trip-Hop",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3654,6 +3652,7 @@
       "bName": "Soca",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3664,6 +3663,7 @@
       "bName": "Highlife",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3674,6 +3674,7 @@
       "bName": "Kpanlogo Drum-Set",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3684,8 +3685,9 @@
       "bName": "Maghreb Chaabi",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-106",
@@ -3694,6 +3696,7 @@
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3704,8 +3707,9 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-107",
@@ -3714,6 +3718,7 @@
       "bName": "Digital Dancehall / Ragga",
       "structural": 0.966,
       "all": 0.966,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "MERGE/REVIEW"
     },
@@ -3724,6 +3729,7 @@
       "bName": "Modern Dancehall",
       "structural": 0.966,
       "all": 0.966,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "MERGE/REVIEW"
     },
@@ -3734,6 +3740,7 @@
       "bName": "Modern Dancehall",
       "structural": 0.933,
       "all": 0.933,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -3744,6 +3751,7 @@
       "bName": "Deep House",
       "structural": 0.952,
       "all": 0.952,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -3754,6 +3762,7 @@
       "bName": "Funky House",
       "structural": 0.952,
       "all": 0.952,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -3764,6 +3773,7 @@
       "bName": "South African House",
       "structural": 0.952,
       "all": 0.952,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3774,6 +3784,7 @@
       "bName": "Funky House",
       "structural": 0.909,
       "all": 0.909,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -3784,6 +3795,7 @@
       "bName": "South African House",
       "structural": 0.909,
       "all": 0.909,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3794,6 +3806,7 @@
       "bName": "South African House",
       "structural": 0.909,
       "all": 0.909,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3804,6 +3817,7 @@
       "bName": "Synthwave",
       "structural": 0.966,
       "all": 0.966,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "MERGE/REVIEW"
     },
@@ -3814,6 +3828,7 @@
       "bName": "Soukous",
       "structural": 0.933,
       "all": 0.933,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3824,8 +3839,9 @@
       "bName": "Mbaqanga",
       "structural": 1,
       "all": 1,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-114",
@@ -3834,8 +3850,9 @@
       "bName": "Teentaal 16-beat Drum-Set Adaptation",
       "structural": 1,
       "all": 1,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-116",
@@ -3844,6 +3861,7 @@
       "bName": "UK Garage / 2-Step",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -3854,6 +3872,7 @@
       "bName": "Trip-Hop",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -3864,6 +3883,7 @@
       "bName": "Soca",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3874,6 +3894,7 @@
       "bName": "Highlife",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3884,6 +3905,7 @@
       "bName": "Kpanlogo Drum-Set",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3894,8 +3916,9 @@
       "bName": "Maghreb Chaabi",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-116",
@@ -3904,6 +3927,7 @@
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3914,8 +3938,9 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-117",
@@ -3924,6 +3949,7 @@
       "bName": "Trip-Hop",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -3934,6 +3960,7 @@
       "bName": "Soca",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3944,6 +3971,7 @@
       "bName": "Highlife",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3954,6 +3982,7 @@
       "bName": "Kpanlogo Drum-Set",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3964,8 +3993,9 @@
       "bName": "Maghreb Chaabi",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-117",
@@ -3974,6 +4004,7 @@
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -3984,8 +4015,9 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-118",
@@ -3994,6 +4026,7 @@
       "bName": "Afrobeat-Funk",
       "structural": 0.88,
       "all": 0.71,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4004,6 +4037,7 @@
       "bName": "Makossa",
       "structural": 0.939,
       "all": 0.939,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4014,8 +4048,9 @@
       "bName": "Chiftetelli",
       "structural": 0.97,
       "all": 0.97,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-121",
@@ -4024,8 +4059,9 @@
       "bName": "Soca",
       "structural": 0.962,
       "all": 0.962,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-121",
@@ -4034,6 +4070,7 @@
       "bName": "Highlife",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4044,6 +4081,7 @@
       "bName": "Kpanlogo Drum-Set",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4054,8 +4092,9 @@
       "bName": "Maghreb Chaabi",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-121",
@@ -4064,6 +4103,7 @@
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4074,8 +4114,9 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-125",
@@ -4084,6 +4125,7 @@
       "bName": "Soukous",
       "structural": 0.903,
       "all": 0.903,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4094,8 +4136,9 @@
       "bName": "Mbaqanga",
       "structural": 0.966,
       "all": 0.966,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-125",
@@ -4104,8 +4147,9 @@
       "bName": "Teentaal 16-beat Drum-Set Adaptation",
       "structural": 0.966,
       "all": 0.966,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-133",
@@ -4114,6 +4158,7 @@
       "bName": "Mbalax",
       "structural": 0.882,
       "all": 0.8,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4124,6 +4169,7 @@
       "bName": "Brazilian Funk",
       "structural": 0.917,
       "all": 0.862,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4134,8 +4180,9 @@
       "bName": "Chacarera",
       "structural": 1,
       "all": 0.833,
+      "feelMatch": false,
       "sameFamily": true,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-164",
@@ -4144,6 +4191,7 @@
       "bName": "Soukous",
       "structural": 0.938,
       "all": 0.938,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4154,6 +4202,7 @@
       "bName": "Afrobeat",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4164,6 +4213,7 @@
       "bName": "Fanga Drum-Set Adaptation",
       "structural": 0.929,
       "all": 0.929,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4174,6 +4224,7 @@
       "bName": "Amapiano",
       "structural": 0.929,
       "all": 0.929,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4184,6 +4235,7 @@
       "bName": "Highlife",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4194,6 +4246,7 @@
       "bName": "Kpanlogo Drum-Set",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4204,6 +4257,7 @@
       "bName": "Maghreb Chaabi",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4214,6 +4268,7 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4224,6 +4279,7 @@
       "bName": "Raï",
       "structural": 0.903,
       "all": 0.903,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4234,6 +4290,7 @@
       "bName": "Bhangra / Dhol Drum-Set",
       "structural": 0.933,
       "all": 0.933,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4244,6 +4301,7 @@
       "bName": "Fanga Drum-Set Adaptation",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -4254,6 +4312,7 @@
       "bName": "Amapiano",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -4264,6 +4323,7 @@
       "bName": "Kpanlogo Drum-Set",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -4274,8 +4334,9 @@
       "bName": "Maghreb Chaabi",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-174",
@@ -4284,6 +4345,7 @@
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4294,8 +4356,9 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-175",
@@ -4304,8 +4367,9 @@
       "bName": "Maghreb Chaabi",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-175",
@@ -4314,6 +4378,7 @@
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.889,
       "all": 0.889,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4324,8 +4389,9 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 0.96,
       "all": 0.96,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-177",
@@ -4334,6 +4400,7 @@
       "bName": "Amapiano",
       "structural": 0.929,
       "all": 0.929,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -4344,6 +4411,7 @@
       "bName": "Mbaqanga",
       "structural": 0.933,
       "all": 0.933,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -4354,6 +4422,7 @@
       "bName": "Teentaal 16-beat Drum-Set Adaptation",
       "structural": 0.933,
       "all": 0.933,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4364,6 +4433,7 @@
       "bName": "Reggae Rock",
       "structural": 0.933,
       "all": 0.933,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4374,8 +4444,9 @@
       "bName": "Chiftetelli",
       "structural": 0.97,
       "all": 0.97,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-184",
@@ -4384,8 +4455,9 @@
       "bName": "Teentaal 16-beat Drum-Set Adaptation",
       "structural": 1,
       "all": 1,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-187",
@@ -4394,8 +4466,9 @@
       "bName": "Dadra / 6-beat Drum-Set Adaptation",
       "structural": 1,
       "all": 1,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-187",
@@ -4404,6 +4477,7 @@
       "bName": "World 6/8 Fusion",
       "structural": 0.952,
       "all": 0.952,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4414,6 +4488,7 @@
       "bName": "Gnawa Drum-Set",
       "structural": 0.941,
       "all": 0.941,
+      "feelMatch": true,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4424,6 +4499,7 @@
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -4434,8 +4510,9 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 1,
       "all": 1,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-191",
@@ -4444,6 +4521,7 @@
       "bName": "Baladi / Masmoudi Saghir",
       "structural": 0.897,
       "all": 0.897,
+      "feelMatch": false,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -4454,8 +4532,9 @@
       "bName": "Bhangra / Dhol Drum-Set",
       "structural": 0.966,
       "all": 0.966,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "MERGE/REVIEW"
+      "action": "REVIEW"
     },
     {
       "a": "CAN-191",
@@ -4464,6 +4543,7 @@
       "bName": "Latin Rock",
       "structural": 0.903,
       "all": 0.903,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4474,6 +4554,7 @@
       "bName": "Ayoub",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "REVIEW"
     },
@@ -4484,6 +4565,7 @@
       "bName": "Bhangra / Dhol Drum-Set",
       "structural": 0.929,
       "all": 0.929,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4494,6 +4576,7 @@
       "bName": "Keherwa / 8-beat Drum-Set Adaptation",
       "structural": 0.923,
       "all": 0.923,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4504,6 +4587,7 @@
       "bName": "Čoček / 9/8 Dance",
       "structural": 0.97,
       "all": 0.97,
+      "feelMatch": true,
       "sameFamily": true,
       "action": "MERGE/REVIEW"
     },
@@ -4514,6 +4598,7 @@
       "bName": "Latin Rock",
       "structural": 0.933,
       "all": 0.933,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     },
@@ -4524,6 +4609,7 @@
       "bName": "World 6/8 Fusion",
       "structural": 0.952,
       "all": 0.952,
+      "feelMatch": false,
       "sameFamily": false,
       "action": "REVIEW"
     }

@@ -18,7 +18,7 @@ Each event contains:
 - `articulation`: e.g. `closed`, `open`, `ride-bow`, `crash`, `center`, `high`, `mid`, `floor`.
 - `velocity` and `velocityClass`: MIDI velocity plus Battrochtek's human-readable dynamic class.
 - `limb`: `timeHand`, `otherHand`, or `rightFoot` in v1. A future model can add an explicit left-foot hi-hat voice.
-- `role`: `core`, `time`, `ghost`, `ornament`, `fill`, `setup`, or `resolution`.
+- `role`: `core`, `time`, `comping`, `left-foot`, `ghost`, `ornament`, `fill`, `setup`, or `resolution`.
 - `source`: provenance of the individual event when needed.
 
 ## MIDI export

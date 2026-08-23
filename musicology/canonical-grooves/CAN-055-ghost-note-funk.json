@@ -4,7 +4,7 @@
   "family": "Funk / Soul / R&B",
   "tradition": "African-American groove",
   "name": "Ghost-Note Funk",
-  "bpm": 100,
+  "bpm": 102,
   "signature": "4/4",
   "ppq": 960,
   "phraseBars": 2,
@@ -32,6 +32,18 @@
       "velocityClass": "strong",
       "limb": "rightFoot",
       "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 240,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "ghost",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -122,12 +134,12 @@
     {
       "tick": 1680,
       "duration": 120,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "rightFoot",
-      "role": "core",
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "ghost",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -140,6 +152,30 @@
       "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 1920,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 2160,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "ghost",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -264,6 +300,18 @@
       "source": "pedagogical-adaptation"
     },
     {
+      "tick": 4080,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "ghost",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
       "tick": 4320,
       "duration": 120,
       "instrument": "hihat",
@@ -350,12 +398,12 @@
     {
       "tick": 5520,
       "duration": 120,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "rightFoot",
-      "role": "core",
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "ghost",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -368,6 +416,30 @@
       "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 5760,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 6000,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "ghost",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -475,9 +547,8 @@
     "createdBy": "Battrochtek musicology compiler",
     "notes": "Reviewed role-based Funk/Soul/R&B drum-set adaptation.",
     "distinctiveFeatures": [
-      "general funk syncopation",
-      "protected backbeat",
-      "ghost-note vocabulary"
+      "protected backbeat surrounded by dense low-level snare vocabulary",
+      "restrained kick leaves room for ghosts"
     ],
     "references": [
       "https://www.moderndrummer.com/2011/06/uriel-jones-architect-of-the-motown-sound/",

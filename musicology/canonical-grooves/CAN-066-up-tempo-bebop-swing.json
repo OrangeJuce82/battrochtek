@@ -43,7 +43,7 @@
       "velocity": 32,
       "velocityClass": "ghost",
       "limb": "otherHand",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -79,7 +79,7 @@
       "velocity": 32,
       "velocityClass": "ghost",
       "limb": "otherHand",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -91,7 +91,7 @@
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -127,7 +127,7 @@
       "velocity": 32,
       "velocityClass": "ghost",
       "limb": "otherHand",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -163,7 +163,7 @@
       "velocity": 32,
       "velocityClass": "ghost",
       "limb": "otherHand",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -175,7 +175,7 @@
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -211,7 +211,7 @@
       "velocity": 32,
       "velocityClass": "ghost",
       "limb": "otherHand",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -247,7 +247,7 @@
       "velocity": 32,
       "velocityClass": "ghost",
       "limb": "otherHand",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -259,7 +259,7 @@
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -295,7 +295,7 @@
       "velocity": 32,
       "velocityClass": "ghost",
       "limb": "otherHand",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -331,7 +331,7 @@
       "velocity": 32,
       "velocityClass": "ghost",
       "limb": "otherHand",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -343,7 +343,7 @@
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     }

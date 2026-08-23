@@ -8,7 +8,7 @@ const outputUrl=new URL('../grooves/Battrochtek Curated/curated.json',import.met
 const manifestUrl=new URL('../musicology/canonical-manifest.json',import.meta.url);
 
 function patternFingerprint(pattern){return crypto.createHash('sha1').update(JSON.stringify(pattern)).digest('hex').slice(0,16);}
-function structuralFingerprint(g){const structural=(g.events||[]).filter(e=>!['ghost','ornament'].includes(e.role)).map(e=>[e.tick,e.instrument,e.articulation,e.role]).sort((a,b)=>a[0]-b[0]||String(a[1]).localeCompare(String(b[1])));return crypto.createHash('sha1').update(JSON.stringify([g.signature,g.phraseBars||2,structural])).digest('hex').slice(0,16);}
+function structuralFingerprint(g){const structural=(g.events||[]).filter(e=>!['ghost','ornament'].includes(e.role)).map(e=>[e.tick,e.instrument,e.articulation,e.role]).sort((a,b)=>a[0]-b[0]||String(a[1]).localeCompare(String(b[1])));return crypto.createHash('sha1').update(JSON.stringify([g.signature,g.phraseBars||2,g.feel||'straight',Math.round(Number(g.swing||0)),structural])).digest('hex').slice(0,16);}
 const index=JSON.parse(await readFile(indexUrl,'utf8'));
 const files=(await readdir(corpusDir)).filter(x=>x.endsWith('.json')).sort();
 const candidates=[];

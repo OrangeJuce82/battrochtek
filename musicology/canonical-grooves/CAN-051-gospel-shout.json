@@ -52,10 +52,10 @@
       "duration": 120,
       "instrument": "snare",
       "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
+      "velocity": 104,
+      "velocityClass": "strong",
       "limb": "otherHand",
-      "role": "ghost",
+      "role": "core",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -84,14 +84,14 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 960,
+      "tick": 1200,
       "duration": 120,
       "instrument": "snare",
       "articulation": "center",
-      "velocity": 104,
-      "velocityClass": "strong",
+      "velocity": 32,
+      "velocityClass": "ghost",
       "limb": "otherHand",
-      "role": "core",
+      "role": "ghost",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -112,10 +112,10 @@
       "duration": 120,
       "instrument": "snare",
       "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
+      "velocity": 104,
+      "velocityClass": "strong",
       "limb": "otherHand",
-      "role": "ghost",
+      "role": "core",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -156,14 +156,14 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 2640,
+      "tick": 2400,
       "duration": 120,
       "instrument": "snare",
       "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
+      "velocity": 104,
+      "velocityClass": "strong",
       "limb": "otherHand",
-      "role": "ghost",
+      "role": "core",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -192,14 +192,14 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 2880,
+      "tick": 3120,
       "duration": 120,
       "instrument": "snare",
       "articulation": "center",
-      "velocity": 104,
-      "velocityClass": "strong",
+      "velocity": 32,
+      "velocityClass": "ghost",
       "limb": "otherHand",
-      "role": "core",
+      "role": "ghost",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -212,6 +212,30 @@
       "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 3360,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 3360,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "otherHand",
+      "role": "core",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -228,18 +252,6 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 3600,
-      "duration": 120,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "otherHand",
-      "role": "ghost",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
       "tick": 3840,
       "duration": 120,
       "instrument": "hihat",
@@ -280,10 +292,10 @@
       "duration": 120,
       "instrument": "snare",
       "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
+      "velocity": 104,
+      "velocityClass": "strong",
       "limb": "otherHand",
-      "role": "ghost",
+      "role": "core",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -312,14 +324,14 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 4800,
+      "tick": 5040,
       "duration": 120,
       "instrument": "snare",
       "articulation": "center",
-      "velocity": 104,
-      "velocityClass": "strong",
+      "velocity": 32,
+      "velocityClass": "ghost",
       "limb": "otherHand",
-      "role": "core",
+      "role": "ghost",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -340,10 +352,10 @@
       "duration": 120,
       "instrument": "snare",
       "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
+      "velocity": 104,
+      "velocityClass": "strong",
       "limb": "otherHand",
-      "role": "ghost",
+      "role": "core",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -384,14 +396,14 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 6480,
+      "tick": 6240,
       "duration": 120,
       "instrument": "snare",
       "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
+      "velocity": 104,
+      "velocityClass": "strong",
       "limb": "otherHand",
-      "role": "ghost",
+      "role": "core",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -420,14 +432,14 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 6720,
+      "tick": 6960,
       "duration": 120,
       "instrument": "snare",
       "articulation": "center",
-      "velocity": 104,
-      "velocityClass": "strong",
+      "velocity": 32,
+      "velocityClass": "ghost",
       "limb": "otherHand",
-      "role": "core",
+      "role": "ghost",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -446,24 +458,36 @@
     {
       "tick": 7200,
       "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 7200,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "otherHand",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 7200,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "open",
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "timeHand",
       "role": "ornament",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 7440,
-      "duration": 120,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "otherHand",
-      "role": "ghost",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     }
@@ -475,8 +499,8 @@
     "createdBy": "Battrochtek musicology compiler",
     "notes": "Reviewed role-based Funk/Soul/R&B drum-set adaptation.",
     "distinctiveFeatures": [
-      "church-derived backbeat vocabulary",
-      "dynamic ghost notes",
+      "shout-derived driving backbeats",
+      "quarter-note kick drive",
       "section-driving cymbal articulation"
     ],
     "references": [

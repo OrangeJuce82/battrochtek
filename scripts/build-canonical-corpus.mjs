@@ -47,6 +47,10 @@ const V19_REBUILD_IDS=new Set([
   ...Array.from({length:16},(_,i)=>`CAN-${String(41+i).padStart(3,'0')}`),
   ...Array.from({length:14},(_,i)=>`CAN-${String(65+i).padStart(3,'0')}`)
 ]);
+const V20_REBUILD_IDS=new Set([
+  ...Array.from({length:23},(_,i)=>`CAN-${String(18+i).padStart(3,'0')}`),
+  ...Array.from({length:10},(_,i)=>`CAN-${String(89+i).padStart(3,'0')}`)
+]);
 
 function templateFor(row){
   const n=row.archetype.toLowerCase(), f=row.family, id=row.id;
@@ -57,38 +61,69 @@ function templateFor(row){
   if(n==='12/8 ballad'){return baseCompound(row,{signature:'12/8',bpm:68,kick:[0,12,18],snare:[12]}).finish({distinctiveFeatures:['four dotted-quarter pulses','ballad backbeat']});}
   if(n==='6/8 compound groove'){return baseCompound(row,{signature:'6/8',bpm:96,kick:[0,8],snare:[6]}).finish({distinctiveFeatures:['two-beat compound pulse']});}
   if(n==='3/4 groove'){const b=makeBuilder(row,{signature:'3/4',bpm:110,feel:'straight',notes:'General 3/4 drum-set foundation.'});b.add('hat',b.every(2),'soft','time');b.add('kick',b.rep([0]),'strong','core');b.add('snare',b.rep([4,8]),'normal','core');return b.finish();}
-  // Rock / metal
+  // Rock / Pop / Metal — reviewed complete drum-set archetypes.
   if(f==='Rock / Pop'){
-    if(n.includes('early rock')||n.includes('lindy')){const b=makeBuilder(row,{bpm:164,swing:62,feel:'early-rock-shuffle',notes:'Complete early rock-and-roll/Lindy-derived drum-set adaptation.'});b.add('ride',b.rep([0,3,4,7,8,11,12,15]),'normal','time');b.add('snare',b.rep([4,12]),'strong','core');b.add('kick',b.rep([0,6,8,14]),'strong','core');return b.finish({distinctiveFeatures:['audible shuffle time voice','backbeat on 2 and 4','walking/shuffle bass-drum support']});}
-    if(n.includes('classic rock 16'))return baseRock(row,{bpm:112,hatStep:1,kick:[0,6,10,14]}).finish();
-    if(n.includes('half-time'))return baseRock(row,{bpm:96,snare:[8],kick:[0,6,12],hatStep:2}).finish({distinctiveFeatures:['half-time backbeat on beat 3']});
-    if(n.includes('hard rock'))return baseRock(row,{bpm:126,kick:[0,6,8,10,14],open:[14]}).finish();
-    if(n.includes('arena rock'))return baseRock(row,{bpm:118,kick:[0,4,8,10,12],open:[6,14],snareVel:'accent'}).finish();
-    if(n.includes('indie'))return baseRock(row,{bpm:132,kick:[0,3,8,11],hatStep:2,crash:false}).finish();
-    if(n.includes('grunge'))return baseRock(row,{bpm:116,kick:[0,6,8,10],open:[14],snareVel:'accent'}).finish();
-    if(n.includes('punk rock'))return baseRock(row,{bpm:184,kick:[0,4,8,12],hatStep:1,snare:[4,12],crash:false}).finish();
-    if(n.includes('surf'))return baseRock(row,{bpm:160,kick:[0,6,8,14],hatStep:2,feel:'driving'}).finish();
-    if(n.includes('glam'))return baseRock(row,{bpm:124,kick:[0,4,8,12],hatStep:2,open:[6,14]}).finish();
-    if(n.includes('odd-meter')){const b=baseRock(row,{signature:'7/8',bpm:126,kick:[0,6,10],snare:[4,12],hatStep:2});return b.finish({distinctiveFeatures:['7/8 grouping 2+2+3']});}
-    if(n.includes('metal straight'))return baseRock(row,{bpm:150,kick:[0,2,4,6,8,10,12,14],hatStep:2,snareVel:'accent'}).finish();
-    if(n.includes('thrash'))return baseRock(row,{bpm:196,kick:[0,2,6,8,10,14],hatStep:1,snareVel:'accent',crash:false}).finish();
-    if(n.includes('double-kick')){const b=baseRock(row,{bpm:176,kick:[0,1,2,3,6,7,8,9,10,11,14,15],hatStep:2,snareVel:'accent'});return b.finish({distinctiveFeatures:['continuous double-kick figures','2/4 backbeat']});}
-    if(n.includes('stoner'))return baseRock(row,{bpm:82,swing:60,kick:[0,5,8,11,14],hatStep:2,feel:'heavy-shuffle'}).finish();
-    return baseRock(row,{bpm:124,kick:[0,6,8,10]}).finish();
+    const refs=['https://online.berklee.edu/courses/drum-set-performance-101','https://www.moderndrummer.com/'];
+    const rock=(opt)=>{
+      const b=makeBuilder(row,{bpm:opt.bpm||124,signature:opt.signature||'4/4',swing:opt.swing||0,feel:opt.feel||'rock',notes:'Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.',confidence:.8,sourceType:'battrochtek-reviewed-pedagogical-adaptation'});
+      const time=opt.time||[0,2,4,6,8,10,12,14];
+      b.add(opt.timeVoice||'hat',b.rep(time),opt.timeVel||'normal','time');
+      if(opt.kick?.length)b.add('kick',b.rep(opt.kick),opt.kickVel||'strong','core');
+      if(opt.snare?.length)b.add('snare',b.rep(opt.snare),opt.snareVel||'strong','core');
+      if(opt.ghost?.length)b.add('snare',b.rep(opt.ghost),'ghost','ghost');
+      if(opt.open?.length)b.add('openHat',b.rep(opt.open),opt.openVel||'strong','ornament');
+      if(opt.crash?.length)b.add('crash',opt.crash,'accent','resolution');
+      if(opt.highTom?.length)b.add('highTom',b.rep(opt.highTom),'normal','ornament');
+      if(opt.floorTom?.length)b.add('floorTom',b.rep(opt.floorTom),'normal','ornament');
+      const g=b.finish({distinctiveFeatures:opt.features||[],references:[...refs,...(opt.references||[])]});
+      g.metadata.validationState='reviewed-pedagogical-adaptation'; g.metadata.scoreState='reviewed-adaptation';
+      g.metadata.roleModel={timeHand:opt.timeVoice==='ride'?'ride':'hihat',otherHand:'backbeat',rightFoot:opt.rightFoot||'foundation',leftFoot:opt.leftFoot||'minimal'};
+      return g;
+    };
+    if(n.includes('early rock')||n.includes('lindy'))return rock({bpm:164,swing:62,feel:'early-rock-shuffle',timeVoice:'ride',time:[0,3,4,7,8,11,12,15],kick:[0,6,8,14],snare:[4,12],features:['shuffle-derived time voice','backbeat on 2 and 4','walking bass-drum support']});
+    if(n==='classic rock 8ths')return rock({bpm:118,kick:[0,6,8,10],snare:[4,12],features:['eighth-note hi-hat foundation','2 and 4 backbeat','syncopated bass-drum support']});
+    if(n.includes('classic rock 16'))return rock({bpm:108,time:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],timeVel:'soft',kick:[0,3,7,10,14],snare:[4,12],ghost:[11],features:['continuous sixteenth-note time hand','classic backbeat','sixteenth-note bass-drum pickups']});
+    if(n==='rock shuffle')return rock({bpm:104,swing:66,feel:'shuffle',kick:[0,6,8,14],snare:[4,12],open:[14],features:['triplet-derived shuffle pulse','strong 2 and 4','open-hat lift into the bar line']});
+    if(n==='half-time rock')return rock({bpm:96,kick:[0,6,10,14],snare:[8],features:['half-time backbeat on beat 3','eighth-note time voice','syncopated kick support']});
+    if(n==='hard rock')return rock({bpm:126,kick:[0,3,6,8,10,14],snare:[4,12],open:[6,14],snareVel:'accent',features:['heavy backbeat','denser bass-drum support','open-hat accents']});
+    if(n==='arena rock')return rock({bpm:116,timeVoice:'ride',kick:[0,4,8,10,12],snare:[4,12],snareVel:'accent',crash:[0,16],features:['broad ride-led time','quarter-note bass-drum weight','large backbeat and section crash']});
+    if(n==='power ballad')return rock({signature:'12/8',bpm:68,feel:'12-8-ballad',time:[0,2,4,6,8,10,12,14,16,18,20,22],kick:[0,12,18],snare:[6,18],open:[22],features:['12/8 subdivision','large ballad backbeat','open-hat/cymbal lift']});
+    if(n==='pop rock')return rock({bpm:120,kick:[0,6,8,14],snare:[4,12],features:['clean eighth-note time','economical pop backbeat','moderate kick syncopation']});
+    if(n==='indie rock')return rock({bpm:132,kick:[0,3,8,11,14],snare:[4,12],time:[0,2,4,6,8,10,12,14],features:['off-beat bass-drum movement','steady eighth-note hand','dry backbeat']});
+    if(n.includes('alternative')||n.includes('grunge'))return rock({bpm:116,kick:[0,6,8,10,14],snare:[4,12],snareVel:'accent',open:[14],features:['heavy backbeat','dynamic open-hat lift','dense kick support']});
+    if(n==='punk rock')return rock({bpm:184,time:[0,2,4,6,8,10,12,14],timeVel:'strong',kick:[0,4,8,12],snare:[4,12],features:['fast driving eighth-note time','quarter-note kick drive','hard backbeat']});
+    if(n==='pop-punk')return rock({bpm:176,time:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],timeVel:'normal',kick:[0,3,6,8,10,14],snare:[4,12],features:['fast sixteenth/eighth hand flow','syncopated kick pickups','bright backbeat']});
+    if(n.includes('post-punk')||n.includes('new wave'))return rock({bpm:138,time:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],timeVel:'soft',kick:[0,4,8,12],snare:[4,12],open:[6,14],features:['dance-derived sixteenth-note hand','four-on-floor bass drum','offbeat open-hat color']});
+    if(n==='surf rock')return rock({bpm:160,timeVoice:'ride',time:[0,2,4,6,8,10,12,14],kick:[0,6,8,14],snare:[4,12],features:['fast ride-led drive','straight backbeat','propulsive kick pattern']});
+    if(n==='glam rock')return rock({bpm:124,time:[0,4,8,12],timeVel:'strong',kick:[0,4,8,12],snare:[4,12],open:[6,14],features:['stomping quarter-note cymbal pulse','quarter-note kick weight','large 2 and 4 backbeat']});
+    if(n==='progressive rock')return rock({signature:'5/4',bpm:122,time:[0,2,4,6,8,10,12,14,16,18],kick:[0,6,10,16],snare:[4,12,18],features:['5/4 phrase','backbeat displaced by asymmetric meter','stable subdivision through bar line']});
+    if(n.includes('odd-meter'))return rock({signature:'7/8',bpm:126,time:[0,2,4,6,8,10,12],kick:[0,6,10],snare:[4,12],features:['7/8 grouping 2+2+3','time voice preserves asymmetric pulse','backbeat adapted to meter']});
+    if(n==='metal straight-8')return rock({bpm:150,time:[0,2,4,6,8,10,12,14],timeVel:'strong',kick:[0,2,4,6,8,10,12,14],snare:[4,12],snareVel:'accent',features:['straight eighth-note cymbal time','continuous eighth-note kick drive','accented backbeat']});
+    if(n==='metal half-time')return rock({bpm:132,time:[0,2,4,6,8,10,12,14],kick:[0,1,3,6,8,10,14,15],snare:[8],snareVel:'accent',features:['half-time snare on beat 3','double-kick bursts','steady cymbal grid']});
+    if(n==='thrash metal')return rock({bpm:196,timeVoice:'ride',time:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],timeVel:'strong',kick:[0,2,6,8,10,14],snare:[4,12],snareVel:'accent',features:['very fast continuous time hand','aggressive backbeat','syncopated double-bass support']});
+    if(n==='double-kick metal')return rock({bpm:176,time:[0,2,4,6,8,10,12,14],kick:[0,1,2,3,6,7,8,9,10,11,14,15],snare:[4,12],snareVel:'accent',features:['sustained double-kick sixteenth figures','stable cymbal pulse','2 and 4 backbeat']});
+    if(n==='metalcore half-time')return rock({bpm:150,time:[0,2,4,6,8,10,12,14],kick:[0,1,3,6,9,10,14,15],snare:[8],snareVel:'accent',open:[14],features:['breakdown-oriented half-time backbeat','syncopated double-kick bursts','open-hat setup']});
+    if(n.includes('stoner')||n.includes('heavy shuffle'))return rock({bpm:82,swing:60,feel:'heavy-shuffle',kick:[0,5,8,11,14],snare:[4,12],open:[14],features:['slow heavy shuffle','behind-the-beat backbeat handled by FEEL','wide open-hat lift']});
+    return rock({bpm:124,kick:[0,6,8,10],snare:[4,12],features:['general rock backbeat','stable time hand','bass-drum foundation']});
   }
   // Funk / Soul / R&B — reviewed role-based drum-set archetypes.
   if(f==='Funk / Soul / R&B'){
     const refs=['https://www.moderndrummer.com/2011/06/uriel-jones-architect-of-the-motown-sound/','https://www.moderndrummer.com/2016/08/video-lesson-groove-construction-part-6-w-jost-nickel/'];
     const reviewed=(opt)=>{const b=makeBuilder(row,{bpm:opt.bpm||100,feel:opt.feel||'funk',notes:'Reviewed role-based Funk/Soul/R&B drum-set adaptation.',confidence:.8,sourceType:'battrochtek-reviewed-pedagogical-adaptation'});b.add(opt.timeVoice||'hat',b.rep(opt.time||[0,2,4,6,8,10,12,14]),opt.timeVel||'soft','time');b.add('kick',b.rep(opt.kick||[0,7,10]),opt.kickVel||'strong','core');b.add(opt.crossStick?'crossStick':'snare',b.rep(opt.snare||[4,12]),opt.snareVel||'strong','core');if(opt.ghost?.length)b.add('snare',b.rep(opt.ghost),'ghost','ghost');if(opt.open?.length)b.add('openHat',b.rep(opt.open),'normal','ornament');if(opt.tom?.length)b.add('midTom',b.rep(opt.tom),'normal','ornament');const g=b.finish({distinctiveFeatures:opt.features||[],references:[...refs,...(opt.references||[])]});g.metadata.validationState='reviewed-pedagogical-adaptation';g.metadata.scoreState='reviewed-adaptation';return g;};
     if(n.includes('james brown'))return reviewed({bpm:104,time:[0,4,8,12],kick:[0,3,6,10,14],snare:[4,12],ghost:[2,7,11,15],open:[14],features:['one-oriented kick emphasis','quarter-note/space-aware time hand','ghost-note conversation around protected backbeat']});
+    if(n.includes('meters-style'))return reviewed({bpm:98,feel:'new-orleans-funk',time:[0,2,4,7,8,10,12,15],kick:[0,3,7,10,14],snare:[4,12],ghost:[2,6,11,15],features:['broken sixteenth time-hand phrase','syncopated New Orleans bass-drum pocket','ghost-note counterline']});
     if(n.includes('new orleans')||n.includes('second line'))return reviewed({bpm:104,feel:'second-line',time:[0,3,4,7,8,11,12,15],kick:[0,3,8,11,14],snare:[4,12],ghost:[2,6,10,15],features:['second-line-derived syncopation','loose triplet-informed hand feel','bass/snare conversation']});
     if(n.includes('motown'))return reviewed({bpm:112,time:[0,2,4,6,8,10,12,14],kick:[0,3,6,8,11,14],snare:[4,12],ghost:[15],tom:[14],features:['steady eighth-note time','syncopated bass-drum pickups interacting with bass line','strong backbeat with signature pickup vocabulary'],references:['https://www.moderndrummer.com/2009/06/secrets-of-motown/']});
     if(n.includes('stax')||n.includes('southern soul'))return reviewed({bpm:98,time:[0,2,4,6,8,10,12,14],kick:[0,7,10],snare:[4,12],features:['spacious southern-soul pocket','less busy kick than Motown','firm backbeat']});
     if(n.includes('philly'))return reviewed({bpm:108,time:[0,2,4,6,8,10,12,14],kick:[0,6,8,11,14],snare:[4,12],open:[14],features:['smooth eighth-note soul time','dance-oriented bass drum','light open-hat lift']});
     if(n.includes('p-funk'))return reviewed({bpm:100,time:[0,2,4,6,8,10,12,14],kick:[0,3,7,10,14],snare:[4,12],ghost:[2,6,11,15],open:[7,15],features:['syncopated sixteenth pocket','ghost-note conversation','open-hat punctuation']});
     if(n.includes('boogaloo'))return reviewed({bpm:108,time:[0,3,4,7,8,11,12,15],kick:[0,6,10,14],snare:[4,12],ghost:[7,15],features:['Latin/R&B-influenced syncopation','broken time-hand phrase','backbeat retained']});
-    if(n.includes('go-go'))return reviewed({bpm:100,time:[0,2,4,6,8,10,12,14],kick:[0,3,6,8,11,14],snare:[4,12],ghost:[2,5,10,13],open:[7,15],features:['continuous dance pocket','busy interlocking kick/ghost vocabulary','open-hat lift']});
-    if(n.includes('gospel'))return reviewed({bpm:n.includes('shout')?150:92,time:[0,2,4,6,8,10,12,14],kick:n.includes('shout')?[0,4,8,12]:[0,3,7,10,14],snare:[4,12],ghost:[2,6,11,15],open:[14],features:['church-derived backbeat vocabulary','dynamic ghost notes','section-driving cymbal articulation']});
+    if(n.includes('go-go'))return reviewed({bpm:100,time:[0,2,4,5,6,8,10,12,13,14],kick:[0,3,6,8,11,14],snare:[4,12],ghost:[2,7,10,15],open:[7,15],features:['continuous syncopated time-hand phrase','busy interlocking kick/ghost vocabulary','open-hat lift']});
+    if(n==='gospel pocket')return reviewed({bpm:92,time:[0,2,4,6,8,10,12,14],kick:[0,3,6,10,14],snare:[4,12],ghost:[2,5,7,11,15],open:[14],features:['syncopated church pocket','busy ghost-note preparation around backbeat','bass-drum response distinct from P-Funk']});
+    if(n.includes('gospel'))return reviewed({bpm:150,time:[0,2,4,6,8,10,12,14],kick:[0,4,8,12,14],snare:[2,6,10,14],ghost:[5,13],open:[14],features:['shout-derived driving backbeats','quarter-note kick drive','section-driving cymbal articulation']});
+    if(n.includes('linear funk'))return reviewed({bpm:96,time:[0,2,5,8,10,13],kick:[0,3,7,10,14],snare:[4,9,12],ghost:[6,15],features:['linearized hand-foot conversation','fewer simultaneous time/backbeat attacks','syncopated sixteenth flow']});
+    if(n.includes('ghost-note funk'))return reviewed({bpm:102,time:[0,2,4,6,8,10,12,14],kick:[0,3,8,10,14],snare:[4,12],ghost:[1,2,6,7,9,11,15],features:['protected backbeat surrounded by dense low-level snare vocabulary','restrained kick leaves room for ghosts']});
+    if(n.includes('disco-funk')||n.includes('chic'))return reviewed({bpm:118,time:[0,2,4,6,8,10,12,14],kick:[0,4,8,12],snare:[4,12],open:[6,14],features:['four-on-floor dance foundation','steady eighth-note time','offbeat open-hat punctuation']});
     if(n.includes('neo-soul')||n.includes('dilla'))return reviewed({bpm:84,feel:'laid-back-neo-soul',time:[0,2,4,6,8,10,12,14],kick:[0,3,7,10,14],snare:[4,12],ghost:[2,6,11,15],features:['laid-back backbeat','soft ghost-note lattice','broken bass-drum support']});
     if(n.includes('modern r&b'))return reviewed({bpm:88,time:[0,2,4,6,8,10,12,14],kick:[0,7,10,15],snare:[4,12],ghost:[11],features:['sparse contemporary pocket','late-feeling backbeat handled by FEEL','restrained ornamentation']});
     return reviewed({bpm:100,kick:[0,3,7,10,14],snare:[4,12],ghost:[2,6,11,15],features:['general funk syncopation','protected backbeat','ghost-note vocabulary']});
@@ -99,11 +134,11 @@ function templateFor(row){
   }
   if(f==='Jazz'){
     const refs=['https://www.moderndrummer.com/2013/01/md-education-team-weighs-in-on-learning-jazz/','https://www.moderndrummer.com/article/up-tempo-jazz-ride-playing/'];
-    const jazz=(opt)=>{const b=makeBuilder(row,{bpm:opt.bpm||140,signature:opt.signature||'4/4',swing:opt.swing??58,feel:opt.feel||'swing',notes:'Reviewed jazz drum-set adaptation: time voice, comping and bass-drum roles are separated.',confidence:.82,sourceType:'battrochtek-reviewed-pedagogical-adaptation'});b.add(opt.timeVoice||'ride',b.rep(opt.time||[0,3,4,7,8,11,12,15]),opt.timeVel||'normal','time');if(opt.snare?.length)b.add('snare',b.rep(opt.snare),opt.snareVel||'ghost','ornament');if(opt.kick?.length)b.add('kick',b.rep(opt.kick),opt.kickVel||'soft','ornament');if(opt.cross?.length)b.add('crossStick',b.rep(opt.cross),'soft','ornament');if(opt.open?.length)b.add('openHat',b.rep(opt.open),'soft','time');const g=b.finish({distinctiveFeatures:opt.features||[],references:[...refs,...(opt.references||[])]});g.metadata.validationState='reviewed-pedagogical-adaptation';g.metadata.scoreState='reviewed-adaptation';g.metadata.leftFootRole=opt.leftFoot||'hi-hat 2 and 4 (semantic; dedicated pedal lane pending)';return g;};
+    const jazz=(opt)=>{const b=makeBuilder(row,{bpm:opt.bpm||140,signature:opt.signature||'4/4',swing:opt.swing??58,feel:opt.feel||'swing',notes:'Reviewed jazz drum-set adaptation: time voice, comping and bass-drum roles are separated.',confidence:.82,sourceType:'battrochtek-reviewed-pedagogical-adaptation'});b.add(opt.timeVoice||'ride',b.rep(opt.time||[0,3,4,7,8,11,12,15]),opt.timeVel||'normal','time');if(opt.snare?.length)b.add('snare',b.rep(opt.snare),opt.snareVel||'ghost','comping');if(opt.kick?.length)b.add('kick',b.rep(opt.kick),opt.kickVel||'soft','comping');if(opt.cross?.length)b.add('crossStick',b.rep(opt.cross),'soft','comping');if(opt.open?.length)b.add('openHat',b.rep(opt.open),'soft','time');const g=b.finish({distinctiveFeatures:opt.features||[],references:[...refs,...(opt.references||[])]});g.metadata.validationState='reviewed-pedagogical-adaptation';g.metadata.scoreState='reviewed-adaptation';g.metadata.leftFootRole=opt.leftFoot||'hi-hat 2 and 4 (semantic; dedicated pedal lane pending)';return g;};
     if(n==='medium swing')return jazz({bpm:140,snare:[6,14],kick:[0,10],features:['ride cymbal is primary voice','light snare comping','soft bass-drum support','left-foot hi-hat on 2 and 4 represented semantically']});
     if(n.includes('up-tempo')||n.includes('bebop swing'))return jazz({bpm:220,time:[0,2,4,6,8,10,12,14],snare:[3,6,11,14],kick:[7,15],features:['up-tempo ride straightens toward eighth-note flow','broken snare comping','very light sparse bass drum']});
     if(n.includes('two-feel'))return jazz({bpm:132,time:[0,3,4,7,8,11,12,15],snare:[6,14],kick:[0,8],features:['two-beat bass foundation on 1 and 3','ride swing remains primary voice','sparse comping']});
-    if(n==='jazz ballad')return jazz({bpm:72,time:[0,3,4,7,8,11,12,15],snare:[6,14],snareVel:'ghost',kick:[0,8],features:['slow ride-led swing','very sparse snare comping','soft two-beat bass support']});
+    if(n==='jazz ballad')return jazz({bpm:72,time:[0,3,4,7,8,11,12,15],snare:[7,14],snareVel:'ghost',kick:[0],features:['slow ride-led swing','very sparse conversational snare comping','bass drum used as occasional color rather than two-feel foundation']});
     if(n.includes('brush ballad'))return jazz({bpm:68,timeVoice:'hat',time:[0,2,4,6,8,10,12,14],snare:[4,12],snareVel:'soft',kick:[0,8],features:['brush-ballad time represented as soft continuous hand pulse','restrained cross/backbeat gesture','minimal bass drum']});
     if(n.includes('brush swing'))return jazz({bpm:116,timeVoice:'hat',time:[0,2,4,6,8,10,12,14],snare:[3,7,11,15],snareVel:'ghost',kick:[0,8],features:['brush sweep pulse separated from stick ride pattern','light comping','two-beat bass support']});
     if(n.includes('jazz waltz'))return jazz({signature:'3/4',bpm:126,time:[0,3,4,7,8,11],snare:[5,10],kick:[0,8],features:['3/4 swing ride phrase','light comping across three-beat bar','soft bass support']});
@@ -121,8 +156,31 @@ function templateFor(row){
     return baseRock(row,{bpm:120,kick:[0,8],hatStep:2,crash:false}).finish();
   }
   if(f==='Hip-Hop'){
-    const b=makeBuilder(row,{bpm:n.includes('trap')?140:n.includes('jersey')?136:88,feel:n.includes('lo-fi')?'laid-back':'hip-hop',notes:'Hip-hop archetype; grid is canonical score while FEEL supplies pocket/microtiming.'});
-    b.add('snare',b.rep(n.includes('jersey')?[4,10,12]:[4,12]),'strong','core'); b.add('kick',b.rep(n.includes('g-funk')?[0,3,8,11,14]:n.includes('sample-break')?[0,6,10,15]:[0,7,10]),'strong','core'); b.add('hat',b.every(n.includes('double-time')?1:2),'soft','time'); if(n.includes('lo-fi'))b.add('snare',b.rep([11]),'ghost','ghost'); if(n.includes('jersey'))b.add('kick',b.rep([6,14]),'normal','ornament'); return b.finish();
+    const refs=['https://magenta.tensorflow.org/datasets/groove','https://www.moderndrummer.com/'];
+    const hip=(opt)=>{
+      const b=makeBuilder(row,{bpm:opt.bpm||90,feel:opt.feel||'hip-hop',notes:'Reviewed complete Hip-Hop/Breakbeat drum-set archetype. Canonical score carries the skeleton; FEEL supplies style-specific pocket and microtiming.',confidence:.79,sourceType:'battrochtek-reviewed-pedagogical-adaptation'});
+      b.add('hat',b.rep(opt.time||[0,2,4,6,8,10,12,14]),opt.timeVel||'soft','time');
+      b.add('kick',b.rep(opt.kick||[0,7,10]),opt.kickVel||'strong','core');
+      b.add('snare',b.rep(opt.snare||[4,12]),opt.snareVel||'strong','core');
+      if(opt.ghost?.length)b.add('snare',b.rep(opt.ghost),'ghost','ghost');
+      if(opt.kickGhost?.length)b.add('kick',b.rep(opt.kickGhost),'ghost','ghost');
+      if(opt.open?.length)b.add('openHat',b.rep(opt.open),'normal','ornament');
+      const g=b.finish({distinctiveFeatures:opt.features||[],references:[...refs,...(opt.references||[])]});
+      g.metadata.validationState='reviewed-pedagogical-adaptation'; g.metadata.scoreState='reviewed-adaptation';
+      g.metadata.roleModel={timeHand:'hihat',otherHand:'backbeat/ghosts',rightFoot:opt.rightFoot||'broken-pocket',leftFoot:'minimal'};
+      return g;
+    };
+    if(n==='old-school breakbeat')return hip({bpm:104,time:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],kick:[0,3,7,10,14],snare:[4,12],ghost:[7,15],features:['sample-break-derived sixteenth hand layer','broken kick phrase','strong 2 and 4 backbeat with ghost pickups']});
+    if(n==='boom bap')return hip({bpm:92,kick:[0,3,8,11,14],snare:[4,12],ghost:[15],features:['sparse eighth-note hand','hard backbeat','asymmetric kick phrase','late snare feel delegated to FEEL']});
+    if(n.includes('g-funk'))return hip({bpm:94,feel:'laid-back-west-coast',time:[0,2,4,6,8,10,12,14],kick:[0,3,8,11,14],snare:[4,12],open:[14],features:['laid-back West Coast pocket','open-hat lift','syncopated kick under stable backbeat']});
+    if(n.includes('dilla')||n.includes('drunk'))return hip({bpm:82,feel:'drunk-pocket',time:[0,2,4,6,8,10,12,14],kick:[0,3,7,10,14],kickGhost:[15],snare:[4,12],ghost:[6,11],features:['intentionally sparse canonical grid','drunk/late microtiming delegated to human-feel layer','soft kick/snare ghost lattice']});
+    if(n.includes('lo-fi'))return hip({bpm:76,feel:'laid-back',time:[0,2,4,6,8,10,12,14],kick:[0,7,10],snare:[4,12],ghost:[11,15],features:['restrained low-density pocket','soft ghost pickups','minimal kick support']});
+    if(n==='trap half-time')return hip({bpm:140,time:[0,2,4,6,8,10,12,14],kick:[0,3,7,10,14],snare:[8],features:['half-time clap/snare on beat 3','syncopated low-end phrase','eighth-note hat foundation']});
+    if(n.includes('trap double-time'))return hip({bpm:140,time:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],timeVel:'soft',kick:[0,3,7,10,14],snare:[8],features:['half-time backbeat with double-time sixteenth hats','syncopated kick phrase','hat-roll detail delegated to Density']});
+    if(n==='drill')return hip({bpm:142,time:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],kick:[0,3,6,11,14],snare:[8],ghost:[15],features:['half-time backbeat','syncopated drill kick placement','continuous hat grid for FEEL articulation']});
+    if(n==='jersey club')return hip({bpm:136,time:[0,2,4,6,8,10,12,14],kick:[0,3,6,10,13],snare:[4,10,12],features:['fast club-oriented kick syncopation','multiple clap/snare anchors','compact eighth-note time']});
+    if(n.includes('sample-break'))return hip({bpm:98,time:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31],kick:[0,6,10,15,16,19,26,30],snare:[4,12,20,28],ghost:[7,15,23,31],features:['two-bar sampled-break phrase','bar-to-bar kick variation','ghost-note pickups around backbeats']});
+    return hip({bpm:90,kick:[0,7,10],snare:[4,12],features:['general hip-hop pocket','stable backbeat','broken bass-drum phrase']});
   }
   if(f==='Jamaica'){
     if(n.includes('mento'))return baseReggae(row,{bpm:104,kick:[0,8],snare:[4,12],rim:true}).finish({distinctiveFeatures:['pre-reggae Caribbean offbeat feel','light drum-set adaptation']});
@@ -256,7 +314,7 @@ for(const row of taxonomy){
   let groove;
   const prior=existingCanonical.get(row.id);
   const source=existing.get(row.id);
-  if(LATIN_REBUILD_IDS.has(row.id)||V19_REBUILD_IDS.has(row.id)){
+  if(LATIN_REBUILD_IDS.has(row.id)||V19_REBUILD_IDS.has(row.id)||V20_REBUILD_IDS.has(row.id)){
     groove=templateFor(row);
   } else if(prior){
     groove={...prior,id:row.id,family:row.family,tradition:row.tradition,name:row.archetype,metadata:{...(prior.metadata||{}),tier:row.tier,originalCoverage:row.coverage}};

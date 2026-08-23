@@ -349,17 +349,19 @@
     }
   ],
   "metadata": {
-    "validationState": "pedagogical-adaptation-needs-review",
-    "confidence": 0.68,
-    "sourceType": "battrochtek-pedagogical-adaptation",
+    "validationState": "reviewed-pedagogical-adaptation",
+    "confidence": 0.8,
+    "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
     "createdBy": "Battrochtek musicology compiler",
-    "notes": "Complete early rock-and-roll/Lindy-derived drum-set adaptation.",
+    "notes": "Reviewed complete Rock/Pop drum-set archetype: stable time voice, explicit backbeat role and style-specific bass-drum function.",
     "distinctiveFeatures": [
-      "audible shuffle time voice",
+      "shuffle-derived time voice",
       "backbeat on 2 and 4",
-      "walking/shuffle bass-drum support"
+      "walking bass-drum support"
     ],
     "references": [
+      "https://online.berklee.edu/courses/drum-set-performance-101",
+      "https://www.moderndrummer.com/",
       {
         "title": "Groove MIDI Dataset — Magenta",
         "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -367,6 +369,13 @@
     ],
     "tier": "A",
     "originalCoverage": "MISSING_OR_WEAK",
+    "scoreState": "reviewed-adaptation",
+    "roleModel": {
+      "timeHand": "ride",
+      "otherHand": "backbeat",
+      "rightFoot": "foundation",
+      "leftFoot": "minimal"
+    },
     "evidence": {
       "taxonomyState": "needs-review",
       "performanceEvidence": "human-dataset-available",
@@ -376,7 +385,6 @@
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
       ]
-    },
-    "scoreState": "provisional"
+    }
   }
 }

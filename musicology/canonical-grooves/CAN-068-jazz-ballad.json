@@ -31,7 +31,7 @@
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -60,18 +60,6 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 1440,
-      "duration": 120,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "otherHand",
-      "role": "ornament",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
       "tick": 1680,
       "duration": 120,
       "instrument": "cymbal",
@@ -84,6 +72,18 @@
       "source": "pedagogical-adaptation"
     },
     {
+      "tick": 1680,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "comping",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
       "tick": 1920,
       "duration": 120,
       "instrument": "cymbal",
@@ -92,18 +92,6 @@
       "velocityClass": "normal",
       "limb": "timeHand",
       "role": "time",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 1920,
-      "duration": 120,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "rightFoot",
-      "role": "ornament",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -139,7 +127,7 @@
       "velocity": 32,
       "velocityClass": "ghost",
       "limb": "otherHand",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -175,7 +163,7 @@
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -204,18 +192,6 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 5280,
-      "duration": 120,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "otherHand",
-      "role": "ornament",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
       "tick": 5520,
       "duration": 120,
       "instrument": "cymbal",
@@ -228,6 +204,18 @@
       "source": "pedagogical-adaptation"
     },
     {
+      "tick": 5520,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "comping",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
       "tick": 5760,
       "duration": 120,
       "instrument": "cymbal",
@@ -236,18 +224,6 @@
       "velocityClass": "normal",
       "limb": "timeHand",
       "role": "time",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 5760,
-      "duration": 120,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "rightFoot",
-      "role": "ornament",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -283,7 +259,7 @@
       "velocity": 32,
       "velocityClass": "ghost",
       "limb": "otherHand",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -308,8 +284,8 @@
     "notes": "Reviewed jazz drum-set adaptation: time voice, comping and bass-drum roles are separated.",
     "distinctiveFeatures": [
       "slow ride-led swing",
-      "very sparse snare comping",
-      "soft two-beat bass support"
+      "very sparse conversational snare comping",
+      "bass drum used as occasional color rather than two-feel foundation"
     ],
     "references": [
       "https://www.moderndrummer.com/2013/01/md-education-team-weighs-in-on-learning-jazz/",

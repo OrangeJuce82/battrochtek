@@ -31,7 +31,7 @@
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -55,7 +55,7 @@
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -79,7 +79,7 @@
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "otherHand",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -103,7 +103,7 @@
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -127,7 +127,7 @@
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -151,7 +151,7 @@
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -163,7 +163,7 @@
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "otherHand",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -187,7 +187,7 @@
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "otherHand",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -211,7 +211,7 @@
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -235,7 +235,7 @@
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -259,7 +259,7 @@
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -283,7 +283,7 @@
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "otherHand",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -307,7 +307,7 @@
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -331,7 +331,7 @@
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -355,7 +355,7 @@
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -367,7 +367,7 @@
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "otherHand",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -391,7 +391,7 @@
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "otherHand",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -415,7 +415,7 @@
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "rightFoot",
-      "role": "ornament",
+      "role": "comping",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     }

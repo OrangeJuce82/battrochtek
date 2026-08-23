@@ -4,11 +4,11 @@
   "family": "Funk / Soul / R&B",
   "tradition": "African-American groove",
   "name": "Meters-style New Orleans Funk",
-  "bpm": 104,
+  "bpm": 98,
   "signature": "4/4",
   "ppq": 960,
   "phraseBars": 2,
-  "feel": "second-line",
+  "feel": "new-orleans-funk",
   "swing": 0,
   "events": [
     {
@@ -38,24 +38,24 @@
     {
       "tick": 480,
       "duration": 120,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "otherHand",
-      "role": "ghost",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 720,
-      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 480,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "ghost",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -120,6 +120,18 @@
       "source": "pedagogical-adaptation"
     },
     {
+      "tick": 1680,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
       "tick": 1920,
       "duration": 120,
       "instrument": "hihat",
@@ -132,7 +144,19 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 1920,
+      "tick": 2400,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 2400,
       "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
@@ -144,7 +168,7 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 2400,
+      "tick": 2640,
       "duration": 120,
       "instrument": "snare",
       "articulation": "center",
@@ -152,30 +176,6 @@
       "velocityClass": "ghost",
       "limb": "otherHand",
       "role": "ghost",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 2640,
-      "duration": 120,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 2640,
-      "duration": 120,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "rightFoot",
-      "role": "core",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -266,24 +266,24 @@
     {
       "tick": 4320,
       "duration": 120,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "otherHand",
-      "role": "ghost",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 4560,
-      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 4320,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "ghost",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -348,6 +348,18 @@
       "source": "pedagogical-adaptation"
     },
     {
+      "tick": 5520,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
       "tick": 5760,
       "duration": 120,
       "instrument": "hihat",
@@ -360,7 +372,19 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 5760,
+      "tick": 6240,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 6240,
       "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
@@ -372,7 +396,7 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 6240,
+      "tick": 6480,
       "duration": 120,
       "instrument": "snare",
       "articulation": "center",
@@ -380,30 +404,6 @@
       "velocityClass": "ghost",
       "limb": "otherHand",
       "role": "ghost",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 6480,
-      "duration": 120,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 6480,
-      "duration": 120,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "rightFoot",
-      "role": "core",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -475,9 +475,9 @@
     "createdBy": "Battrochtek musicology compiler",
     "notes": "Reviewed role-based Funk/Soul/R&B drum-set adaptation.",
     "distinctiveFeatures": [
-      "second-line-derived syncopation",
-      "loose triplet-informed hand feel",
-      "bass/snare conversation"
+      "broken sixteenth time-hand phrase",
+      "syncopated New Orleans bass-drum pocket",
+      "ghost-note counterline"
     ],
     "references": [
       "https://www.moderndrummer.com/2011/06/uriel-jones-architect-of-the-motown-sound/",

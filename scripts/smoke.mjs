@@ -13,6 +13,8 @@ const [app, html, sw, css, manifest, externalGrooves, syncGrooves, grooveImport,
   readFile(".groovesrc.json", "utf8"),
 ]);
 
+const diversity = JSON.parse(await readFile("musicology/diversity-report.json", "utf8"));
+
 const checks = [
   [html.includes('href="vendor/oat/oat.min.css"'), "Oat UI local référencé"],
   [html.includes('src="vendor/alpine/alpine.min.js"'), "Alpine local référencé"],
@@ -33,7 +35,7 @@ const checks = [
   [!app.includes('localStorage.getItem("mem")') && !app.includes('localStorage.setItem("mem")'), "localStorage retiré des mémoires"],
   [app.includes("history.replaceState"), "mise à jour du hash sans navigation"],
   [sw.includes('"./vendor/oat/oat.min.css"') && sw.includes('"./vendor/oat/oat.min.js"'), "Oat inclus dans l’app shell PWA"],
-  [sw.includes('battrochtek-v65'), "cache PWA v65"],
+  [sw.includes('battrochtek-v70'), "cache PWA v70"],
   [css.includes('--bt-instrument-text:') && !app.includes('label.style.color'), "couleur des instruments pilotée par le thème"],
   [css.includes('.bt-tooltip') && html.includes('id="bt-tooltip"'), "tooltips adaptatifs présents"],
   [!html.includes('id="bt-help"'), "ancienne aide au survol retirée"],
@@ -88,6 +90,12 @@ const checks = [
   [app.includes('if (this.previewEnabled) this.stopGroovePreview({ silent:true });') && app.includes('if (this.scheduler?.playing) this.scheduler.stop();'), "Play et préécoute sont mutuellement exclusifs"],
   [css.includes('.groove-preview[aria-pressed="true"]') && css.includes('background: var(--bt-accent)'), "préécoute possède un état actif visible"],
   [html.includes('id="feel-xy"') && html.includes('id="feel-auto"') && !html.includes('id="feel-regenerate"'), "FEEL pad XY + AUTO présents, Regenerate retiré"],
+  [html.includes('id="feel-orchestration-auto"') && html.includes('fa-shuffle'), "AUTO Orchestration toggle shuffle présent"],
+  [html.includes('id="feel-orchestration-every"') && html.includes('<option value="auto"') && html.includes('<option value="16">16</option>'), "intervalle AUTO Orchestration AUTO/2/4/8/16 présent"],
+  [app.includes('nextCycle%every!==0') && app.includes('mode!==current'), "AUTO Orchestration change exactement à l’intervalle et exclut le preset courant"],
+  [app.includes('this.autoOrchestrationEvery = 4'), "AUTO Orchestration intervalle par défaut 4 tours"],
+  [app.includes('maybeAdvanceOrchestration()') && app.includes('nextCycle%every!==0') && app.includes('orchestrationTransitionWeights'), "AUTO Orchestration intervalle explicite et choix pondéré présent"],
+  [app.includes('closeFeelForMemoryChange()') && app.includes('this.ui.closeFeelForMemoryChange?.();'), "tout changement de mémoire ferme FEEL, Chain incluse"],
   [app.includes('class FeelController') && app.includes('randomFor(key)'), "FEEL déterministe par seed présent"],
   [app.includes('baseActive.has(track*steps+st) && (track===R.snare||track===R.kick)') && app.includes('The complete source groove is always copied first'), "CORE kick/snare verrouillé présent"],
   [html.includes('data-layer="hihat"') && html.includes('data-layer="ride"') && html.includes('data-layer="crash"') && html.includes('data-layer="toms"'), "couches FEEL HH/Ride/Crash/Toms présentes"],
@@ -108,6 +116,9 @@ const checks = [
   [app.includes('if(f<=0)return false') && app.includes('fillAmount=Math.pow(f,1.75)') && app.includes('ENERGY is bipolar around 50%'), "Fills 0 interdit les notes de fill tandis qu’Energy reste indépendant"],
   [app.includes('ENERGY is bipolar around 50%') && app.includes('const calm=(.5-e)/.5') && app.includes('const drive=(e-.5)/.5'), "Energy atténue ou renforce les accents autour de 50%"],
   [html.includes('data-i18n="feel.energy"') && !html.includes('<span>INTIME</span>'), "axe Energy simplifié et traduit"],
+  [app.includes('leftFootHatPattern') && app.includes('performanceLeftFootSteps') && app.includes('!isLeftFootHat(track)'), "pied gauche HH séparé du budget des deux mains"],
+  [app.includes('sourceTimeVoice()') && app.includes('cycle%4===0'), "Open Kit migre la main de time par phrase sans superposition permanente"],
+  [Array.isArray(diversity.exactStructuralClusters) && diversity.exactStructuralClusters.length===0, "aucune collision structurelle exacte dans les 213 archétypes"],
 ];
 
 const failed = checks.filter(([ok]) => !ok);

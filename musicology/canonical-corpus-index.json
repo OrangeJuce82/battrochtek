@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "ppq": 960,
   "count": 213,
-  "generatedAt": "2026-08-23T10:00:37.325Z",
+  "generatedAt": "2026-08-23T10:08:37.191Z",
   "entries": [
     {
       "id": "CAN-001",
@@ -252,9 +252,9 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-017-early-rock-roll-lindy-beat.json",
       "midi": "musicology/midi/CAN-017-early-rock-roll-lindy-beat.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 28,
       "signature": "4/4",
       "bpm": 164,
@@ -267,13 +267,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-018-classic-rock-8ths.json",
       "midi": "musicology/midi/CAN-018-classic-rock-8ths.mid",
-      "validationState": "provisional",
-      "confidence": 0.413,
-      "sourceType": "canonical-curated",
-      "eventCount": 22,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 28,
       "signature": "4/4",
-      "bpm": 86,
-      "fingerprint": "6b15e4049ceee8a5"
+      "bpm": 118,
+      "fingerprint": "cf6e4e89f1b15494"
     },
     {
       "id": "CAN-019",
@@ -282,13 +282,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-019-classic-rock-16ths.json",
       "midi": "musicology/midi/CAN-019-classic-rock-16ths.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 45,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 48,
       "signature": "4/4",
-      "bpm": 112,
-      "fingerprint": "5cf6daa18561d77b"
+      "bpm": 108,
+      "fingerprint": "160c83025afc6243"
     },
     {
       "id": "CAN-020",
@@ -297,13 +297,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-020-rock-shuffle.json",
       "midi": "musicology/midi/CAN-020-rock-shuffle.mid",
-      "validationState": "medium",
-      "confidence": 0.577,
-      "sourceType": "canonical-curated",
-      "eventCount": 66,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 30,
       "signature": "4/4",
-      "bpm": 85,
-      "fingerprint": "674e3f7a44ae0b8b"
+      "bpm": 104,
+      "fingerprint": "b8c18ff2cb0c7644"
     },
     {
       "id": "CAN-021",
@@ -312,13 +312,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-021-half-time-rock.json",
       "midi": "musicology/midi/CAN-021-half-time-rock.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 25,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 26,
       "signature": "4/4",
       "bpm": 96,
-      "fingerprint": "5f08f8b2bbe5c21f"
+      "fingerprint": "1c824d3fd67823d1"
     },
     {
       "id": "CAN-022",
@@ -327,13 +327,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-022-hard-rock.json",
       "midi": "musicology/midi/CAN-022-hard-rock.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 33,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 36,
       "signature": "4/4",
       "bpm": 126,
-      "fingerprint": "7bee6688ea18335e"
+      "fingerprint": "a105bae5f1545395"
     },
     {
       "id": "CAN-023",
@@ -342,13 +342,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-023-arena-rock.json",
       "midi": "musicology/midi/CAN-023-arena-rock.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 35,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
       "signature": "4/4",
-      "bpm": 118,
-      "fingerprint": "d26481bad0e9e938"
+      "bpm": 116,
+      "fingerprint": "b8ca0d0c4f7f7578"
     },
     {
       "id": "CAN-024",
@@ -357,13 +357,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-024-power-ballad.json",
       "midi": "musicology/midi/CAN-024-power-ballad.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 29,
-      "signature": "4/4",
-      "bpm": 124,
-      "fingerprint": "58c4bf030f27bf9a"
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 36,
+      "signature": "12/8",
+      "bpm": 68,
+      "fingerprint": "216b9d69e876cc9f"
     },
     {
       "id": "CAN-025",
@@ -372,13 +372,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-025-pop-rock.json",
       "midi": "musicology/midi/CAN-025-pop-rock.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 30,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 28,
       "signature": "4/4",
-      "bpm": 124,
-      "fingerprint": "186e8b5bf51d2c19"
+      "bpm": 120,
+      "fingerprint": "692e67235e32a4ab"
     },
     {
       "id": "CAN-026",
@@ -387,13 +387,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-026-indie-rock.json",
       "midi": "musicology/midi/CAN-026-indie-rock.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 28,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 30,
       "signature": "4/4",
       "bpm": 132,
-      "fingerprint": "3eb5948a3688dd91"
+      "fingerprint": "cb3b682981eaebf1"
     },
     {
       "id": "CAN-027",
@@ -402,13 +402,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-027-alternative-grunge.json",
       "midi": "musicology/midi/CAN-027-alternative-grunge.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 31,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
       "signature": "4/4",
       "bpm": 116,
-      "fingerprint": "815278fe8df755b6"
+      "fingerprint": "dfbd03f68bc8e23b"
     },
     {
       "id": "CAN-028",
@@ -417,13 +417,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-028-punk-rock.json",
       "midi": "musicology/midi/CAN-028-punk-rock.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 44,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 28,
       "signature": "4/4",
       "bpm": 184,
-      "fingerprint": "0fc51f8b1b2ab98f"
+      "fingerprint": "c7e36b13e1acc015"
     },
     {
       "id": "CAN-029",
@@ -432,13 +432,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-029-pop-punk.json",
       "midi": "musicology/midi/CAN-029-pop-punk.mid",
-      "validationState": "provisional",
-      "confidence": 0.41,
-      "sourceType": "canonical-curated",
-      "eventCount": 40,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 48,
       "signature": "4/4",
-      "bpm": 120,
-      "fingerprint": "e8d49287a216a93a"
+      "bpm": 176,
+      "fingerprint": "4642dc160c4d7d40"
     },
     {
       "id": "CAN-030",
@@ -447,13 +447,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-030-post-punk-new-wave.json",
       "midi": "musicology/midi/CAN-030-post-punk-new-wave.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 30,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 48,
       "signature": "4/4",
-      "bpm": 124,
-      "fingerprint": "7307a851af9ac8ac"
+      "bpm": 138,
+      "fingerprint": "7242cb13027e5094"
     },
     {
       "id": "CAN-031",
@@ -462,13 +462,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-031-surf-rock.json",
       "midi": "musicology/midi/CAN-031-surf-rock.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 29,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 28,
       "signature": "4/4",
       "bpm": 160,
-      "fingerprint": "5cb88d4ef729cb2f"
+      "fingerprint": "ec7c22a125f25e8a"
     },
     {
       "id": "CAN-032",
@@ -477,13 +477,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-032-glam-rock.json",
       "midi": "musicology/midi/CAN-032-glam-rock.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 33,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 24,
       "signature": "4/4",
       "bpm": 124,
-      "fingerprint": "fb2845bad3e855ae"
+      "fingerprint": "dd1e19a8168ea6a4"
     },
     {
       "id": "CAN-033",
@@ -492,13 +492,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-033-progressive-rock.json",
       "midi": "musicology/midi/CAN-033-progressive-rock.mid",
-      "validationState": "provisional",
-      "confidence": 0.393,
-      "sourceType": "canonical-curated",
-      "eventCount": 32,
-      "signature": "4/4",
-      "bpm": 120,
-      "fingerprint": "d5c067267dac59b5"
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 34,
+      "signature": "5/4",
+      "bpm": 122,
+      "fingerprint": "e5f5b2e70b9fe21c"
     },
     {
       "id": "CAN-034",
@@ -507,13 +507,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-034-odd-meter-rock.json",
       "midi": "musicology/midi/CAN-034-odd-meter-rock.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 25,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 24,
       "signature": "7/8",
       "bpm": 126,
-      "fingerprint": "643600ba4a25e2dd"
+      "fingerprint": "eca07312cf80a835"
     },
     {
       "id": "CAN-035",
@@ -522,13 +522,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-035-metal-straight-8.json",
       "midi": "musicology/midi/CAN-035-metal-straight-8.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 37,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 36,
       "signature": "4/4",
       "bpm": 150,
-      "fingerprint": "aa6e843fe4d8e7ec"
+      "fingerprint": "0ad70e33f5f3d732"
     },
     {
       "id": "CAN-036",
@@ -537,13 +537,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-036-metal-half-time.json",
       "midi": "musicology/midi/CAN-036-metal-half-time.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 26,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 34,
       "signature": "4/4",
-      "bpm": 96,
-      "fingerprint": "d556a721d4959c21"
+      "bpm": 132,
+      "fingerprint": "c6e68f33c449b18b"
     },
     {
       "id": "CAN-037",
@@ -552,13 +552,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-037-thrash-metal.json",
       "midi": "musicology/midi/CAN-037-thrash-metal.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 48,
       "signature": "4/4",
       "bpm": 196,
-      "fingerprint": "e01778f10139fe3b"
+      "fingerprint": "5ddc3ba2652f7bed"
     },
     {
       "id": "CAN-038",
@@ -567,13 +567,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-038-double-kick-metal.json",
       "midi": "musicology/midi/CAN-038-double-kick-metal.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 45,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 44,
       "signature": "4/4",
       "bpm": 176,
-      "fingerprint": "0a61b1080ed833ab"
+      "fingerprint": "31c91175c45164a2"
     },
     {
       "id": "CAN-039",
@@ -582,13 +582,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-039-metalcore-half-time.json",
       "midi": "musicology/midi/CAN-039-metalcore-half-time.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 26,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 36,
       "signature": "4/4",
-      "bpm": 96,
-      "fingerprint": "ee7fe60d6daa26fc"
+      "bpm": 150,
+      "fingerprint": "69a9689e381833d9"
     },
     {
       "id": "CAN-040",
@@ -597,13 +597,13 @@
       "tradition": "Foundational rock",
       "file": "musicology/canonical-grooves/CAN-040-stoner-heavy-shuffle.json",
       "midi": "musicology/midi/CAN-040-stoner-heavy-shuffle.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 31,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
       "signature": "4/4",
       "bpm": 82,
-      "fingerprint": "c96931fa43480ab9"
+      "fingerprint": "6071f7cd3c0f1915"
     },
     {
       "id": "CAN-041",
@@ -647,8 +647,8 @@
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 38,
       "signature": "4/4",
-      "bpm": 104,
-      "fingerprint": "2f5676a094294b8a"
+      "bpm": 98,
+      "fingerprint": "e98aaae09285602c"
     },
     {
       "id": "CAN-044",
@@ -735,10 +735,10 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 44,
+      "eventCount": 48,
       "signature": "4/4",
       "bpm": 100,
-      "fingerprint": "7c56b1319ad8ef5a"
+      "fingerprint": "aa9c473d0ec0018a"
     },
     {
       "id": "CAN-050",
@@ -750,10 +750,10 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 40,
+      "eventCount": 42,
       "signature": "4/4",
       "bpm": 92,
-      "fingerprint": "f0f387f1ab55dedf"
+      "fingerprint": "73deb93f3fc1ab78"
     },
     {
       "id": "CAN-051",
@@ -765,10 +765,10 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 38,
+      "eventCount": 40,
       "signature": "4/4",
       "bpm": 150,
-      "fingerprint": "50cbd7ddb322ba25"
+      "fingerprint": "20f273901dba5987"
     },
     {
       "id": "CAN-052",
@@ -810,10 +810,10 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 38,
+      "eventCount": 32,
       "signature": "4/4",
-      "bpm": 100,
-      "fingerprint": "18fda8e9574ef61d"
+      "bpm": 96,
+      "fingerprint": "de1cc0d68c33d155"
     },
     {
       "id": "CAN-055",
@@ -825,10 +825,10 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 38,
+      "eventCount": 44,
       "signature": "4/4",
-      "bpm": 100,
-      "fingerprint": "18fda8e9574ef61d"
+      "bpm": 102,
+      "fingerprint": "41cd0f2aefc82338"
     },
     {
       "id": "CAN-056",
@@ -840,10 +840,10 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 38,
+      "eventCount": 32,
       "signature": "4/4",
-      "bpm": 100,
-      "fingerprint": "18fda8e9574ef61d"
+      "bpm": 118,
+      "fingerprint": "a83e5f4e57c252ca"
     },
     {
       "id": "CAN-057",
@@ -1020,10 +1020,10 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 24,
+      "eventCount": 22,
       "signature": "4/4",
       "bpm": 72,
-      "fingerprint": "6e5b93aa734bd9c4"
+      "fingerprint": "066a7370386dafa2"
     },
     {
       "id": "CAN-069",
@@ -1332,13 +1332,13 @@
       "tradition": "Hip-Hop",
       "file": "musicology/canonical-grooves/CAN-089-old-school-breakbeat.json",
       "midi": "musicology/midi/CAN-089-old-school-breakbeat.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 26,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 50,
       "signature": "4/4",
-      "bpm": 88,
-      "fingerprint": "8ab195d27254f4ca"
+      "bpm": 104,
+      "fingerprint": "7cc09f87dea70835"
     },
     {
       "id": "CAN-090",
@@ -1347,13 +1347,13 @@
       "tradition": "Hip-Hop",
       "file": "musicology/canonical-grooves/CAN-090-boom-bap.json",
       "midi": "musicology/midi/CAN-090-boom-bap.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 27,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
       "signature": "4/4",
-      "bpm": 88,
-      "fingerprint": "863a47f5f60c6fd4"
+      "bpm": 92,
+      "fingerprint": "72d246758d4ad01d"
     },
     {
       "id": "CAN-091",
@@ -1362,13 +1362,13 @@
       "tradition": "Hip-Hop",
       "file": "musicology/canonical-grooves/CAN-091-west-coast-g-funk.json",
       "midi": "musicology/midi/CAN-091-west-coast-g-funk.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 30,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
       "signature": "4/4",
-      "bpm": 88,
-      "fingerprint": "b3946bdbe4167fc8"
+      "bpm": 94,
+      "fingerprint": "905d11787c3aace7"
     },
     {
       "id": "CAN-092",
@@ -1377,13 +1377,13 @@
       "tradition": "Hip-Hop",
       "file": "musicology/canonical-grooves/CAN-092-dilla-drunk-pocket.json",
       "midi": "musicology/midi/CAN-092-dilla-drunk-pocket.mid",
-      "validationState": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "eventCount": 32,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 36,
       "signature": "4/4",
-      "bpm": 84,
-      "fingerprint": "d139237881bb1ab3"
+      "bpm": 82,
+      "fingerprint": "504e7dd137fe61a7"
     },
     {
       "id": "CAN-093",
@@ -1392,13 +1392,13 @@
       "tradition": "Hip-Hop",
       "file": "musicology/canonical-grooves/CAN-093-lo-fi-hip-hop.json",
       "midi": "musicology/midi/CAN-093-lo-fi-hip-hop.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 28,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 30,
       "signature": "4/4",
-      "bpm": 88,
-      "fingerprint": "05dafe4f35855024"
+      "bpm": 76,
+      "fingerprint": "1d81acddc9d1d1c5"
     },
     {
       "id": "CAN-094",
@@ -1407,13 +1407,13 @@
       "tradition": "Hip-Hop",
       "file": "musicology/canonical-grooves/CAN-094-trap-half-time.json",
       "midi": "musicology/midi/CAN-094-trap-half-time.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 27,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 28,
       "signature": "4/4",
       "bpm": 140,
-      "fingerprint": "c9667d0c2ec112c7"
+      "fingerprint": "5d45168550514ca6"
     },
     {
       "id": "CAN-095",
@@ -1422,13 +1422,13 @@
       "tradition": "Hip-Hop",
       "file": "musicology/canonical-grooves/CAN-095-trap-double-time-hats.json",
       "midi": "musicology/midi/CAN-095-trap-double-time-hats.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 42,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 44,
       "signature": "4/4",
       "bpm": 140,
-      "fingerprint": "78ce441b6dc2a0d4"
+      "fingerprint": "9154572f6310c224"
     },
     {
       "id": "CAN-096",
@@ -1437,13 +1437,13 @@
       "tradition": "Hip-Hop",
       "file": "musicology/canonical-grooves/CAN-096-drill.json",
       "midi": "musicology/midi/CAN-096-drill.mid",
-      "validationState": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "eventCount": 23,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 46,
       "signature": "4/4",
       "bpm": 142,
-      "fingerprint": "dff703173f6af11a"
+      "fingerprint": "1ee03cfc1b23e569"
     },
     {
       "id": "CAN-097",
@@ -1452,13 +1452,13 @@
       "tradition": "Hip-Hop",
       "file": "musicology/canonical-grooves/CAN-097-jersey-club.json",
       "midi": "musicology/midi/CAN-097-jersey-club.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 32,
       "signature": "4/4",
       "bpm": 136,
-      "fingerprint": "b85d96aed489c290"
+      "fingerprint": "a5fb02faed6afeba"
     },
     {
       "id": "CAN-098",
@@ -1467,13 +1467,13 @@
       "tradition": "Hip-Hop",
       "file": "musicology/canonical-grooves/CAN-098-sample-break-pocket.json",
       "midi": "musicology/midi/CAN-098-sample-break-pocket.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 28,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.79,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 96,
       "signature": "4/4",
-      "bpm": 88,
-      "fingerprint": "ccec291b03ccb596"
+      "bpm": 98,
+      "fingerprint": "23c7cd51e44b4063"
     },
     {
       "id": "CAN-099",

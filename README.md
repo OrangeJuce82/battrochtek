@@ -1,152 +1,138 @@
+<div align="center">
 
-### v52 — FEEL UI & layout
-
-- FEEL et Aide deviennent des accordéons pleine largeur.
-- FEEL expose Orchestration, Main droite, Energy/Transformation/Density/Swing et une Influence avancée repliée.
-- Orchestration devient un macro-preset : Minimal, Pocket, Standard, Busy, Wild.
-- Le switch FEEL contrôle uniquement la génération : les réglages restent éditables FEEL OFF.
-- La détection des membres reste interne ; le mode Main droite TOMS réorchestre le rythme source sur les toms.
 # 🥁 Battrochtek
 
-Battrochtek est un séquenceur de batterie PWA pensé pour explorer des grooves et travailler la batterie.
+### A drum sequencer that plays *with* you.
 
-## Installation
+**Build beats. Explore real grooves. Push them live with FEEL.**
 
-Prérequis : **Node.js 24+** et npm.
+Battrochtek is a browser-based drum workstation for musicians who want the speed of a drum machine, the freedom of a sequencer, and grooves that still feel like they were played by a drummer.
+
+[GitHub](https://github.com/orangejuce82/battrochtek) · MIT licensed · PWA / offline ready
+
+</div>
+
+![Battrochtek interface](docs/images/battrochtek-ui.png)
+
+## Make a beat. Then make it breathe.
+
+Start from a curated groove, program your own pattern, or play the kit from your computer keyboard. Battrochtek keeps the grid immediate and familiar, then adds a performance layer on top instead of forcing you to redraw the beat every time you want more movement.
+
+The heart of the project is **FEEL**: a non-destructive drummer engine that interprets the groove while keeping the original pattern safe underneath.
+
+- **Orchestration** moves from restrained to wild playing styles.
+- **Transformation × Density** controls how far the drummer can reshape and enrich the pattern.
+- **Swing × Energy** changes how the groove sits and how hard it pushes.
+- **Right Hand** lets the groove live naturally on Hi-Hat or Ride, with Open Hat / Ride Bell used as musical colour.
+- **Influence** tells FEEL what it is actually allowed to touch: kick, snare, cymbal colour, toms, crash and ghost notes.
+
+Turn FEEL off and the original groove is still there. Turn it back on and the drummer comes back.
+
+## Built for playing, not just programming
+
+Battrochtek is designed to work as both a beat sketchpad and a small live rhythm instrument.
+
+**Break** behaves like a performance gesture: hold it to drop the drums, release it for a style-aware return fill. **Variation** asks the drummer for another interpretation without destroying your pattern. Eight memory slots let you prepare sections, reorder them by drag & drop, duplicate ideas and jump between parts quickly.
+
+The keyboard can be used like a pad controller, notes can be recorded into the running grid with quantization, and editing follows familiar DAW gestures: marquee selection, multi-select, drag, duplicate, velocity editing, undo and redo.
+
+MIDI control is the next natural layer; the internal performance actions are deliberately separated from the UI so they can later be mapped through MIDI Learn, footswitches and expression pedals.
+
+## Grooves with a point of view
+
+Battrochtek does not aim to win by shipping thousands of differently named copies of the same beat.
+
+The groove library is curated around **musically distinct rhythmic archetypes**. Style, phrasing, orchestration and tradition matter. Human performances are used to inform timing and dynamics, while FEEL handles interpretation and variation rather than bloating the library with endless near-duplicates.
+
+That means Rock can feel like Rock, a Jazz ride can breathe differently from a straight Hi-Hat pattern, and traditional rhythmic ideas are not reduced to generic kick/snare templates when their original percussion roles matter.
+
+## Sounds that behave like instruments
+
+The sample engine understands more than a filename. It supports velocity layers, articulations and round-robin playback, including distinctions such as:
+
+**Hi-Hat Closed / Open / Pedal · Ride / Bell · Snare / Cross-stick / Rimshot · Toms · Percussion**
+
+The sound browser is searchable and filterable, with acoustic and electronic kits kept intentionally focused rather than turning the project into a sample warehouse.
+
+## Practice without leaving the groove
+
+The **Training** panel can progressively build a beat layer by layer, move through tempo stages and keep you looping at the target speed. It is useful for learning the library as a drummer, not only listening to it as a programmer.
+
+## Quick start
+
+Battrochtek requires **Node.js 24+**.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Puis ouvre `http://localhost:8000`.
+Open:
 
-## Fonctions principales
-
-- Séquenceur 9 pistes avec plusieurs niveaux de vélocité.
-- Bibliothèque canonique unique de grooves maintenue dans le projet.
-- 8 mémoires **autosauvegardées** dans l’URL : chaque mémoire contient uniquement sa grille et sa signature.
-- Le kit, le mix, le tempo, le volume master et le swing restent globaux quand on change de mémoire.
-- Kits de batterie, volumes et panoramiques par piste, swing et métronome.
-- Undo / redo, copie, collage et duplication.
-- QR code vers l’application seule ; le bouton **Copier le lien** inclut les huit mémoires.
-- PWA utilisable hors ligne, sans CDN JavaScript.
-- Interface responsive **FR / EN / ES**.
-
-## Entraînement
-
-Le bouton 🎓 affiche le panneau d’entraînement. Configure les options puis appuie sur **Lecture** pour démarrer.
-
-- **Tempo** : départ, objectif, palier et nombre de boucles.
-- **Couches** : charley → caisse claire → grosse caisse → autres éléments → accents → notes fantômes.
-- **Couches + tempo** : apprend d’abord le groove puis augmente le tempo.
-- Décompte de 0, 1 ou 2 mesures.
-- À chaque nouvelle Lecture, l’entraînement repart du début.
-- Modifier une option pendant l’entraînement arrête immédiatement la session avant d’appliquer une nouvelle configuration.
-- Une fois le tempo cible atteint, la lecture continue à ce tempo.
-
-## Commandes utiles
-
-```bash
-npm run dev          # serveur local
-npm run check        # syntaxe + ESLint + tests
-npm test             # smoke tests
-npm run build        # build GitHub Pages
-npm run grooves:sync # importe les grooves
-npm run grooves:clean
+```text
+http://localhost:8000
 ```
 
-## Raccourcis
+For a production build:
 
-### Édition de la grille
+```bash
+npm run check
+npm run build
+```
 
-- `Espace` : lecture / stop
-- `T` : tap tempo
-- `M` : métronome
-- `1` à `5` : choisir la vélocité d’écriture ; si des notes sont sélectionnées, appliquer immédiatement cette vélocité
-- `Ctrl/Cmd + A` : sélectionner toutes les notes actives
-- `Ctrl/Cmd + I` : inverser la sélection des notes actives
-- `Ctrl/Cmd + C / V / D` : copier / coller / dupliquer la sélection
-- `Ctrl/Cmd + Z / Y` : undo / redo
-- `Suppr / Backspace` : supprimer la sélection
-- `Flèches` : déplacer la sélection
-- `Shift` : ajouter à la sélection
-- `Ctrl/Cmd + clic` : basculer une note dans la sélection
+The generated GitHub Pages build is written to `dist/`.
 
-### Performance FEEL
+## A few shortcuts worth knowing
 
-- `B` : appui court = fill ; appui long = break ; relâchement = fill de reprise
-- `V` : nouvelle variation FEEL
-- `H` : changer la destination de la main droite
-- `G` : orchestration suivante
-- `J / K` : énergie − / +
-- `Shift + J / K` : transformation − / +
+| Action | Shortcut |
+|---|---|
+| Play / Stop | `Space` |
+| Tap tempo | `T` |
+| Metronome | `M` |
+| Training panel | `L` |
+| Velocity | `1` … `5` |
+| Select all notes | `Ctrl/Cmd + A` |
+| Invert selection | `Ctrl/Cmd + I` |
+| Copy / Paste / Duplicate selection | `Ctrl/Cmd + C / V / D` |
+| Undo / Redo | `Ctrl/Cmd + Z / Y` |
+| FEEL Break / return fill | hold / release `B` |
+| New FEEL variation | `V` |
+| Next right-hand surface | `H` |
+| Next orchestration | `G` |
+| Fullscreen sequencer | `Shift + X` |
+| Memory 1…8 | `Alt/Option + 1…8` |
 
-Le raccourci `F` dédié au Fill a été supprimé ; le Fill reste intégré au geste Break.
+There is a complete shortcut panel directly below the sequencer.
 
-### Mémoires
+## Share a groove, not a project file
 
-- `Alt/Option + 1…8` : ouvrir une mémoire
-- `Pavé numérique 1…8` : ouvrir une mémoire
-- Les mémoires peuvent être réordonnées par glisser-déposer.
-- Le bouton **Dupliquer** copie explicitement la mémoire active.
+Patterns, memories and performance state can travel in the Battrochtek URL. Copy a link or generate a QR code and reopen the same setup in another browser without exporting a session file.
 
-## Grooves
+Battrochtek is also installable as a **PWA** and is designed to keep working offline once its assets are cached.
 
-La bibliothèque canonique visible est maintenue dans `grooves/`. Les scripts de synchronisation et de normalisation sont des outils de maintenance du projet et ne font pas partie du workflow utilisateur.
+## For contributors
 
-## Déploiement
+The project deliberately keeps the visible app simple while maintaining validation tools behind it.
 
-Le workflow GitHub Actions construit et publie automatiquement la PWA sur GitHub Pages depuis `main`.
+```bash
+npm test             # smoke tests + kit/sample audits
+npm run check        # syntax + lint + tests
+npm run build        # GitHub Pages build
+npm run grooves:build
+```
 
-## Groove Library v2
+Technical notes live in `docs/` and the musicology pipeline lives in `musicology/`.
 
-La v38 conserve la banque validée et consolide l’éditeur de grille. La v37 transformait la banque en bibliothèque éditoriale : **1239 grooves** au build actuel, dont **132 grooves Battrochtek Library v2** ciblés sur les zones sous-représentées (Cumbia/Latin, Afrique/World, Country, électronique, Hip-Hop, Jazz moderne, Concepts). Les grooves v2 disposent de 4 mémoires évolutives, et les Cumbia de 8 mémoires.
+## License & samples
 
-Les métadonnées internes comprennent désormais `family`, `style`, `substyle`, `origin`, `feel`, `signature`, `bpm`, `difficulty`, `sourceType`, `artist`, `song`, `drummer` et `tags`. La recherche globale indexe ces champs sans alourdir l'interface Style → Groove.
+The Battrochtek code is released under the **MIT License**.
 
-Commandes : `npm run grooves:library` régénère la couche éditoriale ; `npm run grooves:build` la régénère puis reconstruit le bundle complet sans suppression automatique ; `npm run grooves:clean` reste disponible pour un audit/dédoublonnage volontaire.
+Third-party samples keep their original licenses. The project includes openly licensed material such as CC0 sources from Virtuosity / ferrosintesis, Big Rusty Drums and VCSL. See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) and the sample source metadata for details.
 
-## Documentation technique
+---
 
-- `docs/INTERACTION.md` : modèle d’interaction clavier/souris, sélection, vélocité et mémoires.
-- `docs/SAMPLES.md` : architecture audio, resolver, articulations et validation des samples.
-- `docs/FEEL.md` : orchestration et comportement FEEL.
-- `docs/MUSICOLOGY.md` : état courant de la validation musicologique.
-- `musicology/MUSICOLOGY-PIPELINE.md` et `musicology/CANONICAL-GROOVE-SPEC.md` : pipeline et format canonique détaillés.
+<div align="center">
 
-Le catalogue est généré depuis le corpus canonique 960 PPQ. `npm run grooves:build` exécute la chaîne de validation, analyse de diversité, génération MIDI et publication de la bibliothèque Curated.
+**Battrochtek — write the beat, then let it move.**
 
-## Licence
-
-Le code de Battrochtek est distribué sous **MIT**. Les samples et bibliothèques
-tierces conservent leurs licences d’origine : notamment CC0 pour les imports
-Virtuosity/ferrosintesis, Big Rusty Drums et VCSL. Voir `LICENSE`,
-`THIRD_PARTY_NOTICES.md` et `samples/EXTERNAL-SOURCES.md`.
-
-> Les anciens samples marqués `license: "unspecified"` ne sont pas couverts par
-> la licence MIT du code et doivent être audités/remplacés avant une
-> redistribution publique qui exige une provenance entièrement vérifiée.
-
-
-### Raccourcis v39
-
-- `L` : ouvrir/fermer le panneau Entraînement.
-- `+` / `-` : augmenter/diminuer la vélocité de la sélection.
-
-## Navigation par favoris
-
-Les changements de lien Battrochtek dans le même onglet (favoris, historique, changement de hash) sont appliqués immédiatement : mémoires, groove et état audio sont relus sans rechargement complet de la page.
-
-
-## FEEL / Live Performance v44
-
-FEEL sépare maintenant le CORE (Kick/Snare), la main droite et les enrichissements. Le CORE peut être LOCKED, SOFT ou FREE. L'influence visible Kick/Snare/Right Hand/Ghosts/Toms est réglable sur 0–3. ENERGY contrôle l'intensité; DEVIATION contrôle la liberté de transformation. RIGHT HAND peut forcer Auto, Hi-Hat, Ride, Ride Bell ou Perc.
-
-Live: F = Fill, B court = Fill, B maintenu = Break puis reprise/fill au relâchement, C = Crash, V = variation FEEL, N = mémoire suivante au prochain tour, H = main droite suivante. Les actions sont exposées dans `window.Battrochtek.actions` pour préparer le futur MIDI Learn.
-
-Raccourcis FEEL: G = CORE suivant; H = Right Hand suivant; J/K = Energy -/+; Shift+J/K = Deviation -/+.
-
-### v49 — FEEL mémorisé + ergonomie live
-
-FEEL détecte maintenant les rôles de membres à partir du groove source (main droite, main gauche, pied droit, pied gauche). Un groove piloté au ride conserve donc cette main droite en AUTO et peut être migré vers hi-hat/ride/percussion sans réécrire son rythme. Le panneau FEEL propose une vue compacte Sliders ou Pad, les anciens boutons instrument redondants ont été retirés, et les actions Live visibles sont regroupées autour de Fill, Break, Variation et Next (Crash reste disponible au clavier).
+</div>

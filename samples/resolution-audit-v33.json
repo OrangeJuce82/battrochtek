@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-24T15:38:19.864Z",
+  "generatedAt": "2026-08-24T22:50:20.517Z",
   "kits": 10,
   "samples": 268,
-  "checks": 500,
+  "checks": 550,
   "errors": [],
   "rows": [
     {
@@ -58,6 +58,61 @@
     {
       "kit": "STUDIO PUNCH",
       "track": 1,
+      "key": "vintage_rock_ridebell_vl3_rr1",
+      "velocity": "ghost",
+      "group": "vintage-rock|ride",
+      "candidates": [
+        "vintage_rock_ridebell_vl1_rr1",
+        "vintage_rock_ridebell_vl1_rr2"
+      ]
+    },
+    {
+      "kit": "STUDIO PUNCH",
+      "track": 1,
+      "key": "vintage_rock_ridebell_vl3_rr1",
+      "velocity": "soft",
+      "group": "vintage-rock|ride",
+      "candidates": [
+        "vintage_rock_ridebell_vl1_rr1",
+        "vintage_rock_ridebell_vl1_rr2"
+      ]
+    },
+    {
+      "kit": "STUDIO PUNCH",
+      "track": 1,
+      "key": "vintage_rock_ridebell_vl3_rr1",
+      "velocity": "normal",
+      "group": "vintage-rock|ride",
+      "candidates": [
+        "vintage_rock_ridebell_vl3_rr1",
+        "vintage_rock_ridebell_vl3_rr2"
+      ]
+    },
+    {
+      "kit": "STUDIO PUNCH",
+      "track": 1,
+      "key": "vintage_rock_ridebell_vl3_rr1",
+      "velocity": "strong",
+      "group": "vintage-rock|ride",
+      "candidates": [
+        "vintage_rock_ridebell_vl4_rr1",
+        "vintage_rock_ridebell_vl4_rr2"
+      ]
+    },
+    {
+      "kit": "STUDIO PUNCH",
+      "track": 1,
+      "key": "vintage_rock_ridebell_vl3_rr1",
+      "velocity": "accent",
+      "group": "vintage-rock|ride",
+      "candidates": [
+        "vintage_rock_ridebell_vl4_rr1",
+        "vintage_rock_ridebell_vl4_rr2"
+      ]
+    },
+    {
+      "kit": "STUDIO PUNCH",
+      "track": 2,
       "key": "legacy_ride1",
       "velocity": "ghost",
       "group": "legacy|legacy_ride1",
@@ -67,7 +122,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 1,
+      "track": 2,
       "key": "legacy_ride1",
       "velocity": "soft",
       "group": "legacy|legacy_ride1",
@@ -77,7 +132,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 1,
+      "track": 2,
       "key": "legacy_ride1",
       "velocity": "normal",
       "group": "legacy|legacy_ride1",
@@ -87,7 +142,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 1,
+      "track": 2,
       "key": "legacy_ride1",
       "velocity": "strong",
       "group": "legacy|legacy_ride1",
@@ -97,7 +152,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 1,
+      "track": 2,
       "key": "legacy_ride1",
       "velocity": "accent",
       "group": "legacy|legacy_ride1",
@@ -107,7 +162,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 2,
+      "track": 3,
       "key": "legacy_hat_open_1",
       "velocity": "ghost",
       "group": "legacy|legacy_hat_open_1",
@@ -117,7 +172,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 2,
+      "track": 3,
       "key": "legacy_hat_open_1",
       "velocity": "soft",
       "group": "legacy|legacy_hat_open_1",
@@ -127,7 +182,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 2,
+      "track": 3,
       "key": "legacy_hat_open_1",
       "velocity": "normal",
       "group": "legacy|legacy_hat_open_1",
@@ -137,7 +192,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 2,
+      "track": 3,
       "key": "legacy_hat_open_1",
       "velocity": "strong",
       "group": "legacy|legacy_hat_open_1",
@@ -147,7 +202,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 2,
+      "track": 3,
       "key": "legacy_hat_open_1",
       "velocity": "accent",
       "group": "legacy|legacy_hat_open_1",
@@ -157,7 +212,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 3,
+      "track": 4,
       "key": "legacy_hat_closed_1",
       "velocity": "ghost",
       "group": "legacy|legacy_hat_closed_1",
@@ -167,7 +222,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 3,
+      "track": 4,
       "key": "legacy_hat_closed_1",
       "velocity": "soft",
       "group": "legacy|legacy_hat_closed_1",
@@ -177,7 +232,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 3,
+      "track": 4,
       "key": "legacy_hat_closed_1",
       "velocity": "normal",
       "group": "legacy|legacy_hat_closed_1",
@@ -187,7 +242,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 3,
+      "track": 4,
       "key": "legacy_hat_closed_1",
       "velocity": "strong",
       "group": "legacy|legacy_hat_closed_1",
@@ -197,7 +252,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 3,
+      "track": 4,
       "key": "legacy_hat_closed_1",
       "velocity": "accent",
       "group": "legacy|legacy_hat_closed_1",
@@ -207,7 +262,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 4,
+      "track": 5,
       "key": "studio_snare_a",
       "velocity": "ghost",
       "group": "studio|studio_snare_a",
@@ -217,7 +272,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 4,
+      "track": 5,
       "key": "studio_snare_a",
       "velocity": "soft",
       "group": "studio|studio_snare_a",
@@ -227,7 +282,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 4,
+      "track": 5,
       "key": "studio_snare_a",
       "velocity": "normal",
       "group": "studio|studio_snare_a",
@@ -237,7 +292,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 4,
+      "track": 5,
       "key": "studio_snare_a",
       "velocity": "strong",
       "group": "studio|studio_snare_a",
@@ -247,7 +302,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 4,
+      "track": 5,
       "key": "studio_snare_a",
       "velocity": "accent",
       "group": "studio|studio_snare_a",
@@ -257,7 +312,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 5,
+      "track": 6,
       "key": "studio_tom_a",
       "velocity": "ghost",
       "group": "studio|studio_tom_a",
@@ -267,7 +322,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 5,
+      "track": 6,
       "key": "studio_tom_a",
       "velocity": "soft",
       "group": "studio|studio_tom_a",
@@ -277,7 +332,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 5,
+      "track": 6,
       "key": "studio_tom_a",
       "velocity": "normal",
       "group": "studio|studio_tom_a",
@@ -287,7 +342,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 5,
+      "track": 6,
       "key": "studio_tom_a",
       "velocity": "strong",
       "group": "studio|studio_tom_a",
@@ -297,7 +352,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 5,
+      "track": 6,
       "key": "studio_tom_a",
       "velocity": "accent",
       "group": "studio|studio_tom_a",
@@ -307,7 +362,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 6,
+      "track": 7,
       "key": "studio_tom_b",
       "velocity": "ghost",
       "group": "studio|studio_tom_b",
@@ -317,7 +372,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 6,
+      "track": 7,
       "key": "studio_tom_b",
       "velocity": "soft",
       "group": "studio|studio_tom_b",
@@ -327,7 +382,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 6,
+      "track": 7,
       "key": "studio_tom_b",
       "velocity": "normal",
       "group": "studio|studio_tom_b",
@@ -337,7 +392,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 6,
+      "track": 7,
       "key": "studio_tom_b",
       "velocity": "strong",
       "group": "studio|studio_tom_b",
@@ -347,7 +402,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 6,
+      "track": 7,
       "key": "studio_tom_b",
       "velocity": "accent",
       "group": "studio|studio_tom_b",
@@ -357,7 +412,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 7,
+      "track": 8,
       "key": "deep_tom_b",
       "velocity": "ghost",
       "group": "deep|deep_tom_b",
@@ -367,7 +422,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 7,
+      "track": 8,
       "key": "deep_tom_b",
       "velocity": "soft",
       "group": "deep|deep_tom_b",
@@ -377,7 +432,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 7,
+      "track": 8,
       "key": "deep_tom_b",
       "velocity": "normal",
       "group": "deep|deep_tom_b",
@@ -387,7 +442,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 7,
+      "track": 8,
       "key": "deep_tom_b",
       "velocity": "strong",
       "group": "deep|deep_tom_b",
@@ -397,7 +452,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 7,
+      "track": 8,
       "key": "deep_tom_b",
       "velocity": "accent",
       "group": "deep|deep_tom_b",
@@ -407,7 +462,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 8,
+      "track": 9,
       "key": "studio_kick_a",
       "velocity": "ghost",
       "group": "studio|studio_kick_a",
@@ -417,7 +472,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 8,
+      "track": 9,
       "key": "studio_kick_a",
       "velocity": "soft",
       "group": "studio|studio_kick_a",
@@ -427,7 +482,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 8,
+      "track": 9,
       "key": "studio_kick_a",
       "velocity": "normal",
       "group": "studio|studio_kick_a",
@@ -437,7 +492,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 8,
+      "track": 9,
       "key": "studio_kick_a",
       "velocity": "strong",
       "group": "studio|studio_kick_a",
@@ -447,7 +502,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 8,
+      "track": 9,
       "key": "studio_kick_a",
       "velocity": "accent",
       "group": "studio|studio_kick_a",
@@ -457,7 +512,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "ghost",
       "group": "general|metronome_tick",
@@ -467,7 +522,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "soft",
       "group": "general|metronome_tick",
@@ -477,7 +532,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "normal",
       "group": "general|metronome_tick",
@@ -487,7 +542,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "strong",
       "group": "general|metronome_tick",
@@ -497,7 +552,7 @@
     },
     {
       "kit": "STUDIO PUNCH",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "accent",
       "group": "general|metronome_tick",
@@ -558,6 +613,61 @@
     {
       "kit": "SOUL POCKET",
       "track": 1,
+      "key": "vintage_rock_ridebell_vl3_rr1",
+      "velocity": "ghost",
+      "group": "vintage-rock|ride",
+      "candidates": [
+        "vintage_rock_ridebell_vl1_rr1",
+        "vintage_rock_ridebell_vl1_rr2"
+      ]
+    },
+    {
+      "kit": "SOUL POCKET",
+      "track": 1,
+      "key": "vintage_rock_ridebell_vl3_rr1",
+      "velocity": "soft",
+      "group": "vintage-rock|ride",
+      "candidates": [
+        "vintage_rock_ridebell_vl1_rr1",
+        "vintage_rock_ridebell_vl1_rr2"
+      ]
+    },
+    {
+      "kit": "SOUL POCKET",
+      "track": 1,
+      "key": "vintage_rock_ridebell_vl3_rr1",
+      "velocity": "normal",
+      "group": "vintage-rock|ride",
+      "candidates": [
+        "vintage_rock_ridebell_vl3_rr1",
+        "vintage_rock_ridebell_vl3_rr2"
+      ]
+    },
+    {
+      "kit": "SOUL POCKET",
+      "track": 1,
+      "key": "vintage_rock_ridebell_vl3_rr1",
+      "velocity": "strong",
+      "group": "vintage-rock|ride",
+      "candidates": [
+        "vintage_rock_ridebell_vl4_rr1",
+        "vintage_rock_ridebell_vl4_rr2"
+      ]
+    },
+    {
+      "kit": "SOUL POCKET",
+      "track": 1,
+      "key": "vintage_rock_ridebell_vl3_rr1",
+      "velocity": "accent",
+      "group": "vintage-rock|ride",
+      "candidates": [
+        "vintage_rock_ridebell_vl4_rr1",
+        "vintage_rock_ridebell_vl4_rr2"
+      ]
+    },
+    {
+      "kit": "SOUL POCKET",
+      "track": 2,
       "key": "legacy_ride1",
       "velocity": "ghost",
       "group": "legacy|legacy_ride1",
@@ -567,7 +677,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 1,
+      "track": 2,
       "key": "legacy_ride1",
       "velocity": "soft",
       "group": "legacy|legacy_ride1",
@@ -577,7 +687,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 1,
+      "track": 2,
       "key": "legacy_ride1",
       "velocity": "normal",
       "group": "legacy|legacy_ride1",
@@ -587,7 +697,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 1,
+      "track": 2,
       "key": "legacy_ride1",
       "velocity": "strong",
       "group": "legacy|legacy_ride1",
@@ -597,7 +707,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 1,
+      "track": 2,
       "key": "legacy_ride1",
       "velocity": "accent",
       "group": "legacy|legacy_ride1",
@@ -607,7 +717,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 2,
+      "track": 3,
       "key": "legacy_hat_open_2",
       "velocity": "ghost",
       "group": "legacy|legacy_hat_open_2",
@@ -617,7 +727,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 2,
+      "track": 3,
       "key": "legacy_hat_open_2",
       "velocity": "soft",
       "group": "legacy|legacy_hat_open_2",
@@ -627,7 +737,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 2,
+      "track": 3,
       "key": "legacy_hat_open_2",
       "velocity": "normal",
       "group": "legacy|legacy_hat_open_2",
@@ -637,7 +747,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 2,
+      "track": 3,
       "key": "legacy_hat_open_2",
       "velocity": "strong",
       "group": "legacy|legacy_hat_open_2",
@@ -647,7 +757,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 2,
+      "track": 3,
       "key": "legacy_hat_open_2",
       "velocity": "accent",
       "group": "legacy|legacy_hat_open_2",
@@ -657,7 +767,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 3,
+      "track": 4,
       "key": "legacy_hat_closed_2",
       "velocity": "ghost",
       "group": "legacy|legacy_hat_closed_2",
@@ -667,7 +777,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 3,
+      "track": 4,
       "key": "legacy_hat_closed_2",
       "velocity": "soft",
       "group": "legacy|legacy_hat_closed_2",
@@ -677,7 +787,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 3,
+      "track": 4,
       "key": "legacy_hat_closed_2",
       "velocity": "normal",
       "group": "legacy|legacy_hat_closed_2",
@@ -687,7 +797,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 3,
+      "track": 4,
       "key": "legacy_hat_closed_2",
       "velocity": "strong",
       "group": "legacy|legacy_hat_closed_2",
@@ -697,7 +807,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 3,
+      "track": 4,
       "key": "legacy_hat_closed_2",
       "velocity": "accent",
       "group": "legacy|legacy_hat_closed_2",
@@ -707,7 +817,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 4,
+      "track": 5,
       "key": "warm_snare_a",
       "velocity": "ghost",
       "group": "warm|warm_snare_a",
@@ -717,7 +827,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 4,
+      "track": 5,
       "key": "warm_snare_a",
       "velocity": "soft",
       "group": "warm|warm_snare_a",
@@ -727,7 +837,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 4,
+      "track": 5,
       "key": "warm_snare_a",
       "velocity": "normal",
       "group": "warm|warm_snare_a",
@@ -737,7 +847,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 4,
+      "track": 5,
       "key": "warm_snare_a",
       "velocity": "strong",
       "group": "warm|warm_snare_a",
@@ -747,7 +857,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 4,
+      "track": 5,
       "key": "warm_snare_a",
       "velocity": "accent",
       "group": "warm|warm_snare_a",
@@ -757,7 +867,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 5,
+      "track": 6,
       "key": "warm_tom_a",
       "velocity": "ghost",
       "group": "warm|warm_tom_a",
@@ -767,7 +877,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 5,
+      "track": 6,
       "key": "warm_tom_a",
       "velocity": "soft",
       "group": "warm|warm_tom_a",
@@ -777,7 +887,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 5,
+      "track": 6,
       "key": "warm_tom_a",
       "velocity": "normal",
       "group": "warm|warm_tom_a",
@@ -787,7 +897,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 5,
+      "track": 6,
       "key": "warm_tom_a",
       "velocity": "strong",
       "group": "warm|warm_tom_a",
@@ -797,7 +907,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 5,
+      "track": 6,
       "key": "warm_tom_a",
       "velocity": "accent",
       "group": "warm|warm_tom_a",
@@ -807,7 +917,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 6,
+      "track": 7,
       "key": "warm_tom_b",
       "velocity": "ghost",
       "group": "warm|warm_tom_b",
@@ -817,7 +927,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 6,
+      "track": 7,
       "key": "warm_tom_b",
       "velocity": "soft",
       "group": "warm|warm_tom_b",
@@ -827,7 +937,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 6,
+      "track": 7,
       "key": "warm_tom_b",
       "velocity": "normal",
       "group": "warm|warm_tom_b",
@@ -837,7 +947,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 6,
+      "track": 7,
       "key": "warm_tom_b",
       "velocity": "strong",
       "group": "warm|warm_tom_b",
@@ -847,7 +957,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 6,
+      "track": 7,
       "key": "warm_tom_b",
       "velocity": "accent",
       "group": "warm|warm_tom_b",
@@ -857,7 +967,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 7,
+      "track": 8,
       "key": "deep_tom_a",
       "velocity": "ghost",
       "group": "deep|deep_tom_a",
@@ -867,7 +977,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 7,
+      "track": 8,
       "key": "deep_tom_a",
       "velocity": "soft",
       "group": "deep|deep_tom_a",
@@ -877,7 +987,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 7,
+      "track": 8,
       "key": "deep_tom_a",
       "velocity": "normal",
       "group": "deep|deep_tom_a",
@@ -887,7 +997,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 7,
+      "track": 8,
       "key": "deep_tom_a",
       "velocity": "strong",
       "group": "deep|deep_tom_a",
@@ -897,7 +1007,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 7,
+      "track": 8,
       "key": "deep_tom_a",
       "velocity": "accent",
       "group": "deep|deep_tom_a",
@@ -907,49 +1017,9 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 8,
+      "track": 9,
       "key": "warm_kick_a",
       "velocity": "ghost",
-      "group": "warm|warm_kick_a",
-      "candidates": [
-        "warm_kick_a"
-      ]
-    },
-    {
-      "kit": "SOUL POCKET",
-      "track": 8,
-      "key": "warm_kick_a",
-      "velocity": "soft",
-      "group": "warm|warm_kick_a",
-      "candidates": [
-        "warm_kick_a"
-      ]
-    },
-    {
-      "kit": "SOUL POCKET",
-      "track": 8,
-      "key": "warm_kick_a",
-      "velocity": "normal",
-      "group": "warm|warm_kick_a",
-      "candidates": [
-        "warm_kick_a"
-      ]
-    },
-    {
-      "kit": "SOUL POCKET",
-      "track": 8,
-      "key": "warm_kick_a",
-      "velocity": "strong",
-      "group": "warm|warm_kick_a",
-      "candidates": [
-        "warm_kick_a"
-      ]
-    },
-    {
-      "kit": "SOUL POCKET",
-      "track": 8,
-      "key": "warm_kick_a",
-      "velocity": "accent",
       "group": "warm|warm_kick_a",
       "candidates": [
         "warm_kick_a"
@@ -958,6 +1028,46 @@
     {
       "kit": "SOUL POCKET",
       "track": 9,
+      "key": "warm_kick_a",
+      "velocity": "soft",
+      "group": "warm|warm_kick_a",
+      "candidates": [
+        "warm_kick_a"
+      ]
+    },
+    {
+      "kit": "SOUL POCKET",
+      "track": 9,
+      "key": "warm_kick_a",
+      "velocity": "normal",
+      "group": "warm|warm_kick_a",
+      "candidates": [
+        "warm_kick_a"
+      ]
+    },
+    {
+      "kit": "SOUL POCKET",
+      "track": 9,
+      "key": "warm_kick_a",
+      "velocity": "strong",
+      "group": "warm|warm_kick_a",
+      "candidates": [
+        "warm_kick_a"
+      ]
+    },
+    {
+      "kit": "SOUL POCKET",
+      "track": 9,
+      "key": "warm_kick_a",
+      "velocity": "accent",
+      "group": "warm|warm_kick_a",
+      "candidates": [
+        "warm_kick_a"
+      ]
+    },
+    {
+      "kit": "SOUL POCKET",
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "ghost",
       "group": "general|metronome_tick",
@@ -967,7 +1077,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "soft",
       "group": "general|metronome_tick",
@@ -977,7 +1087,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "normal",
       "group": "general|metronome_tick",
@@ -987,7 +1097,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "strong",
       "group": "general|metronome_tick",
@@ -997,7 +1107,7 @@
     },
     {
       "kit": "SOUL POCKET",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "accent",
       "group": "general|metronome_tick",
@@ -1058,6 +1168,61 @@
     {
       "kit": "JAZZ CLUB",
       "track": 1,
+      "key": "jazz_club_ridebell_vl1_rr1",
+      "velocity": "ghost",
+      "group": "jazz-club|ride",
+      "candidates": [
+        "jazz_club_ridebell_vl1_rr1",
+        "jazz_club_ridebell_vl1_rr2"
+      ]
+    },
+    {
+      "kit": "JAZZ CLUB",
+      "track": 1,
+      "key": "jazz_club_ridebell_vl1_rr1",
+      "velocity": "soft",
+      "group": "jazz-club|ride",
+      "candidates": [
+        "jazz_club_ridebell_vl2_rr1",
+        "jazz_club_ridebell_vl2_rr2"
+      ]
+    },
+    {
+      "kit": "JAZZ CLUB",
+      "track": 1,
+      "key": "jazz_club_ridebell_vl1_rr1",
+      "velocity": "normal",
+      "group": "jazz-club|ride",
+      "candidates": [
+        "jazz_club_ridebell_vl2_rr1",
+        "jazz_club_ridebell_vl2_rr2"
+      ]
+    },
+    {
+      "kit": "JAZZ CLUB",
+      "track": 1,
+      "key": "jazz_club_ridebell_vl1_rr1",
+      "velocity": "strong",
+      "group": "jazz-club|ride",
+      "candidates": [
+        "jazz_club_ridebell_vl3_rr1",
+        "jazz_club_ridebell_vl3_rr2"
+      ]
+    },
+    {
+      "kit": "JAZZ CLUB",
+      "track": 1,
+      "key": "jazz_club_ridebell_vl1_rr1",
+      "velocity": "accent",
+      "group": "jazz-club|ride",
+      "candidates": [
+        "jazz_club_ridebell_vl3_rr1",
+        "jazz_club_ridebell_vl3_rr2"
+      ]
+    },
+    {
+      "kit": "JAZZ CLUB",
+      "track": 2,
       "key": "jazz_club_ride_vl1_rr1",
       "velocity": "ghost",
       "group": "jazz-club|ride",
@@ -1068,7 +1233,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 1,
+      "track": 2,
       "key": "jazz_club_ride_vl1_rr1",
       "velocity": "soft",
       "group": "jazz-club|ride",
@@ -1079,7 +1244,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 1,
+      "track": 2,
       "key": "jazz_club_ride_vl1_rr1",
       "velocity": "normal",
       "group": "jazz-club|ride",
@@ -1090,7 +1255,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 1,
+      "track": 2,
       "key": "jazz_club_ride_vl1_rr1",
       "velocity": "strong",
       "group": "jazz-club|ride",
@@ -1101,7 +1266,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 1,
+      "track": 2,
       "key": "jazz_club_ride_vl1_rr1",
       "velocity": "accent",
       "group": "jazz-club|ride",
@@ -1112,7 +1277,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 2,
+      "track": 3,
       "key": "jazz_club_hho_vl1_rr1",
       "velocity": "ghost",
       "group": "jazz-club|hihat",
@@ -1123,7 +1288,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 2,
+      "track": 3,
       "key": "jazz_club_hho_vl1_rr1",
       "velocity": "soft",
       "group": "jazz-club|hihat",
@@ -1134,7 +1299,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 2,
+      "track": 3,
       "key": "jazz_club_hho_vl1_rr1",
       "velocity": "normal",
       "group": "jazz-club|hihat",
@@ -1145,7 +1310,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 2,
+      "track": 3,
       "key": "jazz_club_hho_vl1_rr1",
       "velocity": "strong",
       "group": "jazz-club|hihat",
@@ -1156,7 +1321,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 2,
+      "track": 3,
       "key": "jazz_club_hho_vl1_rr1",
       "velocity": "accent",
       "group": "jazz-club|hihat",
@@ -1167,7 +1332,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 3,
+      "track": 4,
       "key": "jazz_club_hhc_vl1_rr1",
       "velocity": "ghost",
       "group": "jazz-club|hihat",
@@ -1178,7 +1343,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 3,
+      "track": 4,
       "key": "jazz_club_hhc_vl1_rr1",
       "velocity": "soft",
       "group": "jazz-club|hihat",
@@ -1189,7 +1354,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 3,
+      "track": 4,
       "key": "jazz_club_hhc_vl1_rr1",
       "velocity": "normal",
       "group": "jazz-club|hihat",
@@ -1200,7 +1365,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 3,
+      "track": 4,
       "key": "jazz_club_hhc_vl1_rr1",
       "velocity": "strong",
       "group": "jazz-club|hihat",
@@ -1211,7 +1376,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 3,
+      "track": 4,
       "key": "jazz_club_hhc_vl1_rr1",
       "velocity": "accent",
       "group": "jazz-club|hihat",
@@ -1222,7 +1387,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 4,
+      "track": 5,
       "key": "jazz_club_snare_vl1_rr1",
       "velocity": "ghost",
       "group": "jazz-club|snare",
@@ -1233,7 +1398,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 4,
+      "track": 5,
       "key": "jazz_club_snare_vl1_rr1",
       "velocity": "soft",
       "group": "jazz-club|snare",
@@ -1244,7 +1409,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 4,
+      "track": 5,
       "key": "jazz_club_snare_vl1_rr1",
       "velocity": "normal",
       "group": "jazz-club|snare",
@@ -1255,7 +1420,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 4,
+      "track": 5,
       "key": "jazz_club_snare_vl1_rr1",
       "velocity": "strong",
       "group": "jazz-club|snare",
@@ -1266,7 +1431,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 4,
+      "track": 5,
       "key": "jazz_club_snare_vl1_rr1",
       "velocity": "accent",
       "group": "jazz-club|snare",
@@ -1277,7 +1442,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 5,
+      "track": 6,
       "key": "jazz_club_tomhi_vl1_rr1",
       "velocity": "ghost",
       "group": "jazz-club|jazz_club_tomhi",
@@ -1288,7 +1453,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 5,
+      "track": 6,
       "key": "jazz_club_tomhi_vl1_rr1",
       "velocity": "soft",
       "group": "jazz-club|jazz_club_tomhi",
@@ -1299,7 +1464,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 5,
+      "track": 6,
       "key": "jazz_club_tomhi_vl1_rr1",
       "velocity": "normal",
       "group": "jazz-club|jazz_club_tomhi",
@@ -1310,7 +1475,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 5,
+      "track": 6,
       "key": "jazz_club_tomhi_vl1_rr1",
       "velocity": "strong",
       "group": "jazz-club|jazz_club_tomhi",
@@ -1321,7 +1486,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 5,
+      "track": 6,
       "key": "jazz_club_tomhi_vl1_rr1",
       "velocity": "accent",
       "group": "jazz-club|jazz_club_tomhi",
@@ -1332,7 +1497,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 6,
+      "track": 7,
       "key": "jazz_club_tommid_vl1_rr1",
       "velocity": "ghost",
       "group": "jazz-club|jazz_club_tommid",
@@ -1343,7 +1508,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 6,
+      "track": 7,
       "key": "jazz_club_tommid_vl1_rr1",
       "velocity": "soft",
       "group": "jazz-club|jazz_club_tommid",
@@ -1354,7 +1519,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 6,
+      "track": 7,
       "key": "jazz_club_tommid_vl1_rr1",
       "velocity": "normal",
       "group": "jazz-club|jazz_club_tommid",
@@ -1365,7 +1530,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 6,
+      "track": 7,
       "key": "jazz_club_tommid_vl1_rr1",
       "velocity": "strong",
       "group": "jazz-club|jazz_club_tommid",
@@ -1376,7 +1541,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 6,
+      "track": 7,
       "key": "jazz_club_tommid_vl1_rr1",
       "velocity": "accent",
       "group": "jazz-club|jazz_club_tommid",
@@ -1387,7 +1552,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 7,
+      "track": 8,
       "key": "jazz_club_tomlo_vl1_rr1",
       "velocity": "ghost",
       "group": "jazz-club|jazz_club_tomlo",
@@ -1398,7 +1563,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 7,
+      "track": 8,
       "key": "jazz_club_tomlo_vl1_rr1",
       "velocity": "soft",
       "group": "jazz-club|jazz_club_tomlo",
@@ -1409,7 +1574,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 7,
+      "track": 8,
       "key": "jazz_club_tomlo_vl1_rr1",
       "velocity": "normal",
       "group": "jazz-club|jazz_club_tomlo",
@@ -1420,7 +1585,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 7,
+      "track": 8,
       "key": "jazz_club_tomlo_vl1_rr1",
       "velocity": "strong",
       "group": "jazz-club|jazz_club_tomlo",
@@ -1431,7 +1596,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 7,
+      "track": 8,
       "key": "jazz_club_tomlo_vl1_rr1",
       "velocity": "accent",
       "group": "jazz-club|jazz_club_tomlo",
@@ -1442,7 +1607,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 8,
+      "track": 9,
       "key": "jazz_club_kick_vl1_rr1",
       "velocity": "ghost",
       "group": "jazz-club|jazz_club_kick",
@@ -1453,7 +1618,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 8,
+      "track": 9,
       "key": "jazz_club_kick_vl1_rr1",
       "velocity": "soft",
       "group": "jazz-club|jazz_club_kick",
@@ -1464,7 +1629,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 8,
+      "track": 9,
       "key": "jazz_club_kick_vl1_rr1",
       "velocity": "normal",
       "group": "jazz-club|jazz_club_kick",
@@ -1475,7 +1640,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 8,
+      "track": 9,
       "key": "jazz_club_kick_vl1_rr1",
       "velocity": "strong",
       "group": "jazz-club|jazz_club_kick",
@@ -1486,7 +1651,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 8,
+      "track": 9,
       "key": "jazz_club_kick_vl1_rr1",
       "velocity": "accent",
       "group": "jazz-club|jazz_club_kick",
@@ -1497,7 +1662,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "ghost",
       "group": "general|metronome_tick",
@@ -1507,7 +1672,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "soft",
       "group": "general|metronome_tick",
@@ -1517,7 +1682,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "normal",
       "group": "general|metronome_tick",
@@ -1527,7 +1692,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "strong",
       "group": "general|metronome_tick",
@@ -1537,7 +1702,7 @@
     },
     {
       "kit": "JAZZ CLUB",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "accent",
       "group": "general|metronome_tick",
@@ -1603,6 +1768,61 @@
     {
       "kit": "VINTAGE ROCK",
       "track": 1,
+      "key": "vintage_rock_ridebell_vl3_rr1",
+      "velocity": "ghost",
+      "group": "vintage-rock|ride",
+      "candidates": [
+        "vintage_rock_ridebell_vl1_rr1",
+        "vintage_rock_ridebell_vl1_rr2"
+      ]
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "track": 1,
+      "key": "vintage_rock_ridebell_vl3_rr1",
+      "velocity": "soft",
+      "group": "vintage-rock|ride",
+      "candidates": [
+        "vintage_rock_ridebell_vl1_rr1",
+        "vintage_rock_ridebell_vl1_rr2"
+      ]
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "track": 1,
+      "key": "vintage_rock_ridebell_vl3_rr1",
+      "velocity": "normal",
+      "group": "vintage-rock|ride",
+      "candidates": [
+        "vintage_rock_ridebell_vl3_rr1",
+        "vintage_rock_ridebell_vl3_rr2"
+      ]
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "track": 1,
+      "key": "vintage_rock_ridebell_vl3_rr1",
+      "velocity": "strong",
+      "group": "vintage-rock|ride",
+      "candidates": [
+        "vintage_rock_ridebell_vl4_rr1",
+        "vintage_rock_ridebell_vl4_rr2"
+      ]
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "track": 1,
+      "key": "vintage_rock_ridebell_vl3_rr1",
+      "velocity": "accent",
+      "group": "vintage-rock|ride",
+      "candidates": [
+        "vintage_rock_ridebell_vl4_rr1",
+        "vintage_rock_ridebell_vl4_rr2"
+      ]
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "track": 2,
       "key": "vintage_rock_ride_vl10_rr1",
       "velocity": "ghost",
       "group": "vintage-rock|ride",
@@ -1613,7 +1833,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 1,
+      "track": 2,
       "key": "vintage_rock_ride_vl10_rr1",
       "velocity": "soft",
       "group": "vintage-rock|ride",
@@ -1624,7 +1844,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 1,
+      "track": 2,
       "key": "vintage_rock_ride_vl10_rr1",
       "velocity": "normal",
       "group": "vintage-rock|ride",
@@ -1635,7 +1855,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 1,
+      "track": 2,
       "key": "vintage_rock_ride_vl10_rr1",
       "velocity": "strong",
       "group": "vintage-rock|ride",
@@ -1646,7 +1866,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 1,
+      "track": 2,
       "key": "vintage_rock_ride_vl10_rr1",
       "velocity": "accent",
       "group": "vintage-rock|ride",
@@ -1657,7 +1877,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 2,
+      "track": 3,
       "key": "vintage_rock_hho_vl1_rr1",
       "velocity": "ghost",
       "group": "vintage-rock|hihat",
@@ -1668,7 +1888,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 2,
+      "track": 3,
       "key": "vintage_rock_hho_vl1_rr1",
       "velocity": "soft",
       "group": "vintage-rock|hihat",
@@ -1679,7 +1899,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 2,
+      "track": 3,
       "key": "vintage_rock_hho_vl1_rr1",
       "velocity": "normal",
       "group": "vintage-rock|hihat",
@@ -1690,7 +1910,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 2,
+      "track": 3,
       "key": "vintage_rock_hho_vl1_rr1",
       "velocity": "strong",
       "group": "vintage-rock|hihat",
@@ -1701,7 +1921,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 2,
+      "track": 3,
       "key": "vintage_rock_hho_vl1_rr1",
       "velocity": "accent",
       "group": "vintage-rock|hihat",
@@ -1712,7 +1932,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 3,
+      "track": 4,
       "key": "vintage_rock_hhc_vl1_rr1",
       "velocity": "ghost",
       "group": "vintage-rock|hihat",
@@ -1723,7 +1943,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 3,
+      "track": 4,
       "key": "vintage_rock_hhc_vl1_rr1",
       "velocity": "soft",
       "group": "vintage-rock|hihat",
@@ -1734,7 +1954,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 3,
+      "track": 4,
       "key": "vintage_rock_hhc_vl1_rr1",
       "velocity": "normal",
       "group": "vintage-rock|hihat",
@@ -1745,7 +1965,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 3,
+      "track": 4,
       "key": "vintage_rock_hhc_vl1_rr1",
       "velocity": "strong",
       "group": "vintage-rock|hihat",
@@ -1756,7 +1976,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 3,
+      "track": 4,
       "key": "vintage_rock_hhc_vl1_rr1",
       "velocity": "accent",
       "group": "vintage-rock|hihat",
@@ -1767,7 +1987,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 4,
+      "track": 5,
       "key": "vintage_rock_snare_vl10_rr1",
       "velocity": "ghost",
       "group": "vintage-rock|snare",
@@ -1778,7 +1998,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 4,
+      "track": 5,
       "key": "vintage_rock_snare_vl10_rr1",
       "velocity": "soft",
       "group": "vintage-rock|snare",
@@ -1789,7 +2009,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 4,
+      "track": 5,
       "key": "vintage_rock_snare_vl10_rr1",
       "velocity": "normal",
       "group": "vintage-rock|snare",
@@ -1800,7 +2020,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 4,
+      "track": 5,
       "key": "vintage_rock_snare_vl10_rr1",
       "velocity": "strong",
       "group": "vintage-rock|snare",
@@ -1811,7 +2031,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 4,
+      "track": 5,
       "key": "vintage_rock_snare_vl10_rr1",
       "velocity": "accent",
       "group": "vintage-rock|snare",
@@ -1822,7 +2042,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 5,
+      "track": 6,
       "key": "vintage_rock_tomhi_vl1_rr1",
       "velocity": "ghost",
       "group": "vintage-rock|vintage_rock_tomhi",
@@ -1833,7 +2053,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 5,
+      "track": 6,
       "key": "vintage_rock_tomhi_vl1_rr1",
       "velocity": "soft",
       "group": "vintage-rock|vintage_rock_tomhi",
@@ -1844,7 +2064,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 5,
+      "track": 6,
       "key": "vintage_rock_tomhi_vl1_rr1",
       "velocity": "normal",
       "group": "vintage-rock|vintage_rock_tomhi",
@@ -1855,7 +2075,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 5,
+      "track": 6,
       "key": "vintage_rock_tomhi_vl1_rr1",
       "velocity": "strong",
       "group": "vintage-rock|vintage_rock_tomhi",
@@ -1866,7 +2086,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 5,
+      "track": 6,
       "key": "vintage_rock_tomhi_vl1_rr1",
       "velocity": "accent",
       "group": "vintage-rock|vintage_rock_tomhi",
@@ -1877,7 +2097,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 6,
+      "track": 7,
       "key": "vintage_rock_tommid_vl1_rr1",
       "velocity": "ghost",
       "group": "vintage-rock|vintage_rock_tommid",
@@ -1888,7 +2108,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 6,
+      "track": 7,
       "key": "vintage_rock_tommid_vl1_rr1",
       "velocity": "soft",
       "group": "vintage-rock|vintage_rock_tommid",
@@ -1899,7 +2119,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 6,
+      "track": 7,
       "key": "vintage_rock_tommid_vl1_rr1",
       "velocity": "normal",
       "group": "vintage-rock|vintage_rock_tommid",
@@ -1910,7 +2130,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 6,
+      "track": 7,
       "key": "vintage_rock_tommid_vl1_rr1",
       "velocity": "strong",
       "group": "vintage-rock|vintage_rock_tommid",
@@ -1921,7 +2141,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 6,
+      "track": 7,
       "key": "vintage_rock_tommid_vl1_rr1",
       "velocity": "accent",
       "group": "vintage-rock|vintage_rock_tommid",
@@ -1932,53 +2152,9 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 7,
+      "track": 8,
       "key": "vintage_rock_tomlo_vl1_rr1",
       "velocity": "ghost",
-      "group": "vintage-rock|vintage_rock_tomlo",
-      "candidates": [
-        "vintage_rock_tomlo_vl1_rr1",
-        "vintage_rock_tomlo_vl1_rr2"
-      ]
-    },
-    {
-      "kit": "VINTAGE ROCK",
-      "track": 7,
-      "key": "vintage_rock_tomlo_vl1_rr1",
-      "velocity": "soft",
-      "group": "vintage-rock|vintage_rock_tomlo",
-      "candidates": [
-        "vintage_rock_tomlo_vl1_rr1",
-        "vintage_rock_tomlo_vl1_rr2"
-      ]
-    },
-    {
-      "kit": "VINTAGE ROCK",
-      "track": 7,
-      "key": "vintage_rock_tomlo_vl1_rr1",
-      "velocity": "normal",
-      "group": "vintage-rock|vintage_rock_tomlo",
-      "candidates": [
-        "vintage_rock_tomlo_vl1_rr1",
-        "vintage_rock_tomlo_vl1_rr2"
-      ]
-    },
-    {
-      "kit": "VINTAGE ROCK",
-      "track": 7,
-      "key": "vintage_rock_tomlo_vl1_rr1",
-      "velocity": "strong",
-      "group": "vintage-rock|vintage_rock_tomlo",
-      "candidates": [
-        "vintage_rock_tomlo_vl1_rr1",
-        "vintage_rock_tomlo_vl1_rr2"
-      ]
-    },
-    {
-      "kit": "VINTAGE ROCK",
-      "track": 7,
-      "key": "vintage_rock_tomlo_vl1_rr1",
-      "velocity": "accent",
       "group": "vintage-rock|vintage_rock_tomlo",
       "candidates": [
         "vintage_rock_tomlo_vl1_rr1",
@@ -1988,6 +2164,50 @@
     {
       "kit": "VINTAGE ROCK",
       "track": 8,
+      "key": "vintage_rock_tomlo_vl1_rr1",
+      "velocity": "soft",
+      "group": "vintage-rock|vintage_rock_tomlo",
+      "candidates": [
+        "vintage_rock_tomlo_vl1_rr1",
+        "vintage_rock_tomlo_vl1_rr2"
+      ]
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "track": 8,
+      "key": "vintage_rock_tomlo_vl1_rr1",
+      "velocity": "normal",
+      "group": "vintage-rock|vintage_rock_tomlo",
+      "candidates": [
+        "vintage_rock_tomlo_vl1_rr1",
+        "vintage_rock_tomlo_vl1_rr2"
+      ]
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "track": 8,
+      "key": "vintage_rock_tomlo_vl1_rr1",
+      "velocity": "strong",
+      "group": "vintage-rock|vintage_rock_tomlo",
+      "candidates": [
+        "vintage_rock_tomlo_vl1_rr1",
+        "vintage_rock_tomlo_vl1_rr2"
+      ]
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "track": 8,
+      "key": "vintage_rock_tomlo_vl1_rr1",
+      "velocity": "accent",
+      "group": "vintage-rock|vintage_rock_tomlo",
+      "candidates": [
+        "vintage_rock_tomlo_vl1_rr1",
+        "vintage_rock_tomlo_vl1_rr2"
+      ]
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "track": 9,
       "key": "vintage_rock_kick_vl10_rr1",
       "velocity": "ghost",
       "group": "vintage-rock|vintage_rock_kick",
@@ -1998,7 +2218,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 8,
+      "track": 9,
       "key": "vintage_rock_kick_vl10_rr1",
       "velocity": "soft",
       "group": "vintage-rock|vintage_rock_kick",
@@ -2009,7 +2229,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 8,
+      "track": 9,
       "key": "vintage_rock_kick_vl10_rr1",
       "velocity": "normal",
       "group": "vintage-rock|vintage_rock_kick",
@@ -2020,7 +2240,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 8,
+      "track": 9,
       "key": "vintage_rock_kick_vl10_rr1",
       "velocity": "strong",
       "group": "vintage-rock|vintage_rock_kick",
@@ -2031,7 +2251,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 8,
+      "track": 9,
       "key": "vintage_rock_kick_vl10_rr1",
       "velocity": "accent",
       "group": "vintage-rock|vintage_rock_kick",
@@ -2042,7 +2262,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "ghost",
       "group": "general|metronome_tick",
@@ -2052,7 +2272,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "soft",
       "group": "general|metronome_tick",
@@ -2062,7 +2282,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "normal",
       "group": "general|metronome_tick",
@@ -2072,7 +2292,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "strong",
       "group": "general|metronome_tick",
@@ -2082,7 +2302,7 @@
     },
     {
       "kit": "VINTAGE ROCK",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "accent",
       "group": "general|metronome_tick",
@@ -2143,46 +2363,96 @@
     {
       "kit": "WORLD PERCUSSION",
       "track": 1,
-      "key": "world_agogo",
+      "key": "world_cowbell",
       "velocity": "ghost",
-      "group": "world-vcsl|world_agogo",
+      "group": "world-vcsl|world_cowbell",
       "candidates": [
-        "world_agogo"
+        "world_cowbell"
       ]
     },
     {
       "kit": "WORLD PERCUSSION",
       "track": 1,
-      "key": "world_agogo",
+      "key": "world_cowbell",
       "velocity": "soft",
-      "group": "world-vcsl|world_agogo",
+      "group": "world-vcsl|world_cowbell",
       "candidates": [
-        "world_agogo"
+        "world_cowbell"
       ]
     },
     {
       "kit": "WORLD PERCUSSION",
       "track": 1,
-      "key": "world_agogo",
+      "key": "world_cowbell",
       "velocity": "normal",
-      "group": "world-vcsl|world_agogo",
+      "group": "world-vcsl|world_cowbell",
       "candidates": [
-        "world_agogo"
+        "world_cowbell"
       ]
     },
     {
       "kit": "WORLD PERCUSSION",
       "track": 1,
-      "key": "world_agogo",
+      "key": "world_cowbell",
       "velocity": "strong",
-      "group": "world-vcsl|world_agogo",
+      "group": "world-vcsl|world_cowbell",
       "candidates": [
-        "world_agogo"
+        "world_cowbell"
       ]
     },
     {
       "kit": "WORLD PERCUSSION",
       "track": 1,
+      "key": "world_cowbell",
+      "velocity": "accent",
+      "group": "world-vcsl|world_cowbell",
+      "candidates": [
+        "world_cowbell"
+      ]
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "track": 2,
+      "key": "world_agogo",
+      "velocity": "ghost",
+      "group": "world-vcsl|world_agogo",
+      "candidates": [
+        "world_agogo"
+      ]
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "track": 2,
+      "key": "world_agogo",
+      "velocity": "soft",
+      "group": "world-vcsl|world_agogo",
+      "candidates": [
+        "world_agogo"
+      ]
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "track": 2,
+      "key": "world_agogo",
+      "velocity": "normal",
+      "group": "world-vcsl|world_agogo",
+      "candidates": [
+        "world_agogo"
+      ]
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "track": 2,
+      "key": "world_agogo",
+      "velocity": "strong",
+      "group": "world-vcsl|world_agogo",
+      "candidates": [
+        "world_agogo"
+      ]
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "track": 2,
       "key": "world_agogo",
       "velocity": "accent",
       "group": "world-vcsl|world_agogo",
@@ -2192,7 +2462,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 2,
+      "track": 3,
       "key": "world_shaker",
       "velocity": "ghost",
       "group": "world-vcsl|world_shaker",
@@ -2202,7 +2472,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 2,
+      "track": 3,
       "key": "world_shaker",
       "velocity": "soft",
       "group": "world-vcsl|world_shaker",
@@ -2212,7 +2482,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 2,
+      "track": 3,
       "key": "world_shaker",
       "velocity": "normal",
       "group": "world-vcsl|world_shaker",
@@ -2222,7 +2492,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 2,
+      "track": 3,
       "key": "world_shaker",
       "velocity": "strong",
       "group": "world-vcsl|world_shaker",
@@ -2232,7 +2502,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 2,
+      "track": 3,
       "key": "world_shaker",
       "velocity": "accent",
       "group": "world-vcsl|world_shaker",
@@ -2242,7 +2512,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 3,
+      "track": 4,
       "key": "world_claves",
       "velocity": "ghost",
       "group": "world-vcsl|world_claves",
@@ -2252,7 +2522,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 3,
+      "track": 4,
       "key": "world_claves",
       "velocity": "soft",
       "group": "world-vcsl|world_claves",
@@ -2262,7 +2532,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 3,
+      "track": 4,
       "key": "world_claves",
       "velocity": "normal",
       "group": "world-vcsl|world_claves",
@@ -2272,7 +2542,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 3,
+      "track": 4,
       "key": "world_claves",
       "velocity": "strong",
       "group": "world-vcsl|world_claves",
@@ -2282,7 +2552,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 3,
+      "track": 4,
       "key": "world_claves",
       "velocity": "accent",
       "group": "world-vcsl|world_claves",
@@ -2292,7 +2562,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 4,
+      "track": 5,
       "key": "world_cajon",
       "velocity": "ghost",
       "group": "world-vcsl|world_cajon",
@@ -2302,7 +2572,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 4,
+      "track": 5,
       "key": "world_cajon",
       "velocity": "soft",
       "group": "world-vcsl|world_cajon",
@@ -2312,7 +2582,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 4,
+      "track": 5,
       "key": "world_cajon",
       "velocity": "normal",
       "group": "world-vcsl|world_cajon",
@@ -2322,7 +2592,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 4,
+      "track": 5,
       "key": "world_cajon",
       "velocity": "strong",
       "group": "world-vcsl|world_cajon",
@@ -2332,7 +2602,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 4,
+      "track": 5,
       "key": "world_cajon",
       "velocity": "accent",
       "group": "world-vcsl|world_cajon",
@@ -2342,7 +2612,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 5,
+      "track": 6,
       "key": "world_cowbell",
       "velocity": "ghost",
       "group": "world-vcsl|world_cowbell",
@@ -2352,7 +2622,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 5,
+      "track": 6,
       "key": "world_cowbell",
       "velocity": "soft",
       "group": "world-vcsl|world_cowbell",
@@ -2362,7 +2632,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 5,
+      "track": 6,
       "key": "world_cowbell",
       "velocity": "normal",
       "group": "world-vcsl|world_cowbell",
@@ -2372,7 +2642,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 5,
+      "track": 6,
       "key": "world_cowbell",
       "velocity": "strong",
       "group": "world-vcsl|world_cowbell",
@@ -2382,7 +2652,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 5,
+      "track": 6,
       "key": "world_cowbell",
       "velocity": "accent",
       "group": "world-vcsl|world_cowbell",
@@ -2392,7 +2662,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 6,
+      "track": 7,
       "key": "world_darbuka",
       "velocity": "ghost",
       "group": "world-vcsl|world_darbuka",
@@ -2402,7 +2672,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 6,
+      "track": 7,
       "key": "world_darbuka",
       "velocity": "soft",
       "group": "world-vcsl|world_darbuka",
@@ -2412,7 +2682,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 6,
+      "track": 7,
       "key": "world_darbuka",
       "velocity": "normal",
       "group": "world-vcsl|world_darbuka",
@@ -2422,7 +2692,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 6,
+      "track": 7,
       "key": "world_darbuka",
       "velocity": "strong",
       "group": "world-vcsl|world_darbuka",
@@ -2432,7 +2702,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 6,
+      "track": 7,
       "key": "world_darbuka",
       "velocity": "accent",
       "group": "world-vcsl|world_darbuka",
@@ -2442,7 +2712,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 7,
+      "track": 8,
       "key": "world_frame_small",
       "velocity": "ghost",
       "group": "world-vcsl|world_frame_small",
@@ -2452,7 +2722,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 7,
+      "track": 8,
       "key": "world_frame_small",
       "velocity": "soft",
       "group": "world-vcsl|world_frame_small",
@@ -2462,7 +2732,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 7,
+      "track": 8,
       "key": "world_frame_small",
       "velocity": "normal",
       "group": "world-vcsl|world_frame_small",
@@ -2472,7 +2742,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 7,
+      "track": 8,
       "key": "world_frame_small",
       "velocity": "strong",
       "group": "world-vcsl|world_frame_small",
@@ -2482,7 +2752,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 7,
+      "track": 8,
       "key": "world_frame_small",
       "velocity": "accent",
       "group": "world-vcsl|world_frame_small",
@@ -2492,49 +2762,9 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 8,
+      "track": 9,
       "key": "world_frame_large",
       "velocity": "ghost",
-      "group": "world-vcsl|world_frame_large",
-      "candidates": [
-        "world_frame_large"
-      ]
-    },
-    {
-      "kit": "WORLD PERCUSSION",
-      "track": 8,
-      "key": "world_frame_large",
-      "velocity": "soft",
-      "group": "world-vcsl|world_frame_large",
-      "candidates": [
-        "world_frame_large"
-      ]
-    },
-    {
-      "kit": "WORLD PERCUSSION",
-      "track": 8,
-      "key": "world_frame_large",
-      "velocity": "normal",
-      "group": "world-vcsl|world_frame_large",
-      "candidates": [
-        "world_frame_large"
-      ]
-    },
-    {
-      "kit": "WORLD PERCUSSION",
-      "track": 8,
-      "key": "world_frame_large",
-      "velocity": "strong",
-      "group": "world-vcsl|world_frame_large",
-      "candidates": [
-        "world_frame_large"
-      ]
-    },
-    {
-      "kit": "WORLD PERCUSSION",
-      "track": 8,
-      "key": "world_frame_large",
-      "velocity": "accent",
       "group": "world-vcsl|world_frame_large",
       "candidates": [
         "world_frame_large"
@@ -2543,6 +2773,46 @@
     {
       "kit": "WORLD PERCUSSION",
       "track": 9,
+      "key": "world_frame_large",
+      "velocity": "soft",
+      "group": "world-vcsl|world_frame_large",
+      "candidates": [
+        "world_frame_large"
+      ]
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "track": 9,
+      "key": "world_frame_large",
+      "velocity": "normal",
+      "group": "world-vcsl|world_frame_large",
+      "candidates": [
+        "world_frame_large"
+      ]
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "track": 9,
+      "key": "world_frame_large",
+      "velocity": "strong",
+      "group": "world-vcsl|world_frame_large",
+      "candidates": [
+        "world_frame_large"
+      ]
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "track": 9,
+      "key": "world_frame_large",
+      "velocity": "accent",
+      "group": "world-vcsl|world_frame_large",
+      "candidates": [
+        "world_frame_large"
+      ]
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "ghost",
       "group": "general|metronome_tick",
@@ -2552,7 +2822,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "soft",
       "group": "general|metronome_tick",
@@ -2562,7 +2832,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "normal",
       "group": "general|metronome_tick",
@@ -2572,7 +2842,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "strong",
       "group": "general|metronome_tick",
@@ -2582,7 +2852,7 @@
     },
     {
       "kit": "WORLD PERCUSSION",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "accent",
       "group": "general|metronome_tick",
@@ -2643,46 +2913,96 @@
     {
       "kit": "ANALOG CLASSIC",
       "track": 1,
-      "key": "bt_analog_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "ghost",
-      "group": "bt-analog|bt_analog_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_analog_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "ANALOG CLASSIC",
       "track": 1,
-      "key": "bt_analog_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "soft",
-      "group": "bt-analog|bt_analog_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_analog_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "ANALOG CLASSIC",
       "track": 1,
-      "key": "bt_analog_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "normal",
-      "group": "bt-analog|bt_analog_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_analog_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "ANALOG CLASSIC",
       "track": 1,
-      "key": "bt_analog_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "strong",
-      "group": "bt-analog|bt_analog_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_analog_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "ANALOG CLASSIC",
       "track": 1,
+      "key": "bt_detroit_ride_bell",
+      "velocity": "accent",
+      "group": "bt-detroit|bt_detroit_ride_bell",
+      "candidates": [
+        "bt_detroit_ride_bell"
+      ]
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "track": 2,
+      "key": "bt_analog_ride",
+      "velocity": "ghost",
+      "group": "bt-analog|bt_analog_ride",
+      "candidates": [
+        "bt_analog_ride"
+      ]
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "track": 2,
+      "key": "bt_analog_ride",
+      "velocity": "soft",
+      "group": "bt-analog|bt_analog_ride",
+      "candidates": [
+        "bt_analog_ride"
+      ]
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "track": 2,
+      "key": "bt_analog_ride",
+      "velocity": "normal",
+      "group": "bt-analog|bt_analog_ride",
+      "candidates": [
+        "bt_analog_ride"
+      ]
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "track": 2,
+      "key": "bt_analog_ride",
+      "velocity": "strong",
+      "group": "bt-analog|bt_analog_ride",
+      "candidates": [
+        "bt_analog_ride"
+      ]
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "track": 2,
       "key": "bt_analog_ride",
       "velocity": "accent",
       "group": "bt-analog|bt_analog_ride",
@@ -2692,7 +3012,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 2,
+      "track": 3,
       "key": "bt_analog_hho_rr1",
       "velocity": "ghost",
       "group": "bt-analog|bt_analog_hho",
@@ -2703,7 +3023,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 2,
+      "track": 3,
       "key": "bt_analog_hho_rr1",
       "velocity": "soft",
       "group": "bt-analog|bt_analog_hho",
@@ -2714,7 +3034,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 2,
+      "track": 3,
       "key": "bt_analog_hho_rr1",
       "velocity": "normal",
       "group": "bt-analog|bt_analog_hho",
@@ -2725,7 +3045,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 2,
+      "track": 3,
       "key": "bt_analog_hho_rr1",
       "velocity": "strong",
       "group": "bt-analog|bt_analog_hho",
@@ -2736,7 +3056,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 2,
+      "track": 3,
       "key": "bt_analog_hho_rr1",
       "velocity": "accent",
       "group": "bt-analog|bt_analog_hho",
@@ -2747,7 +3067,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 3,
+      "track": 4,
       "key": "bt_analog_hhc_rr1",
       "velocity": "ghost",
       "group": "bt-analog|bt_analog_hhc",
@@ -2758,7 +3078,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 3,
+      "track": 4,
       "key": "bt_analog_hhc_rr1",
       "velocity": "soft",
       "group": "bt-analog|bt_analog_hhc",
@@ -2769,7 +3089,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 3,
+      "track": 4,
       "key": "bt_analog_hhc_rr1",
       "velocity": "normal",
       "group": "bt-analog|bt_analog_hhc",
@@ -2780,7 +3100,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 3,
+      "track": 4,
       "key": "bt_analog_hhc_rr1",
       "velocity": "strong",
       "group": "bt-analog|bt_analog_hhc",
@@ -2791,7 +3111,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 3,
+      "track": 4,
       "key": "bt_analog_hhc_rr1",
       "velocity": "accent",
       "group": "bt-analog|bt_analog_hhc",
@@ -2802,7 +3122,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 4,
+      "track": 5,
       "key": "bt_analog_snare_rr1",
       "velocity": "ghost",
       "group": "bt-analog|bt_analog_snare",
@@ -2813,7 +3133,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 4,
+      "track": 5,
       "key": "bt_analog_snare_rr1",
       "velocity": "soft",
       "group": "bt-analog|bt_analog_snare",
@@ -2824,7 +3144,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 4,
+      "track": 5,
       "key": "bt_analog_snare_rr1",
       "velocity": "normal",
       "group": "bt-analog|bt_analog_snare",
@@ -2835,7 +3155,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 4,
+      "track": 5,
       "key": "bt_analog_snare_rr1",
       "velocity": "strong",
       "group": "bt-analog|bt_analog_snare",
@@ -2846,7 +3166,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 4,
+      "track": 5,
       "key": "bt_analog_snare_rr1",
       "velocity": "accent",
       "group": "bt-analog|bt_analog_snare",
@@ -2857,7 +3177,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 5,
+      "track": 6,
       "key": "bt_analog_tom_high",
       "velocity": "ghost",
       "group": "bt-analog|bt_analog_tom_high",
@@ -2867,7 +3187,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 5,
+      "track": 6,
       "key": "bt_analog_tom_high",
       "velocity": "soft",
       "group": "bt-analog|bt_analog_tom_high",
@@ -2877,7 +3197,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 5,
+      "track": 6,
       "key": "bt_analog_tom_high",
       "velocity": "normal",
       "group": "bt-analog|bt_analog_tom_high",
@@ -2887,7 +3207,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 5,
+      "track": 6,
       "key": "bt_analog_tom_high",
       "velocity": "strong",
       "group": "bt-analog|bt_analog_tom_high",
@@ -2897,7 +3217,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 5,
+      "track": 6,
       "key": "bt_analog_tom_high",
       "velocity": "accent",
       "group": "bt-analog|bt_analog_tom_high",
@@ -2907,7 +3227,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 6,
+      "track": 7,
       "key": "bt_analog_tom_mid",
       "velocity": "ghost",
       "group": "bt-analog|bt_analog_tom_mid",
@@ -2917,7 +3237,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 6,
+      "track": 7,
       "key": "bt_analog_tom_mid",
       "velocity": "soft",
       "group": "bt-analog|bt_analog_tom_mid",
@@ -2927,7 +3247,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 6,
+      "track": 7,
       "key": "bt_analog_tom_mid",
       "velocity": "normal",
       "group": "bt-analog|bt_analog_tom_mid",
@@ -2937,7 +3257,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 6,
+      "track": 7,
       "key": "bt_analog_tom_mid",
       "velocity": "strong",
       "group": "bt-analog|bt_analog_tom_mid",
@@ -2947,7 +3267,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 6,
+      "track": 7,
       "key": "bt_analog_tom_mid",
       "velocity": "accent",
       "group": "bt-analog|bt_analog_tom_mid",
@@ -2957,7 +3277,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 7,
+      "track": 8,
       "key": "bt_analog_tom_low",
       "velocity": "ghost",
       "group": "bt-analog|bt_analog_tom_low",
@@ -2967,7 +3287,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 7,
+      "track": 8,
       "key": "bt_analog_tom_low",
       "velocity": "soft",
       "group": "bt-analog|bt_analog_tom_low",
@@ -2977,7 +3297,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 7,
+      "track": 8,
       "key": "bt_analog_tom_low",
       "velocity": "normal",
       "group": "bt-analog|bt_analog_tom_low",
@@ -2987,7 +3307,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 7,
+      "track": 8,
       "key": "bt_analog_tom_low",
       "velocity": "strong",
       "group": "bt-analog|bt_analog_tom_low",
@@ -2997,7 +3317,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 7,
+      "track": 8,
       "key": "bt_analog_tom_low",
       "velocity": "accent",
       "group": "bt-analog|bt_analog_tom_low",
@@ -3007,53 +3327,9 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 8,
+      "track": 9,
       "key": "bt_analog_kick_rr1",
       "velocity": "ghost",
-      "group": "bt-analog|bt_analog_kick",
-      "candidates": [
-        "bt_analog_kick_rr1",
-        "bt_analog_kick_rr2"
-      ]
-    },
-    {
-      "kit": "ANALOG CLASSIC",
-      "track": 8,
-      "key": "bt_analog_kick_rr1",
-      "velocity": "soft",
-      "group": "bt-analog|bt_analog_kick",
-      "candidates": [
-        "bt_analog_kick_rr1",
-        "bt_analog_kick_rr2"
-      ]
-    },
-    {
-      "kit": "ANALOG CLASSIC",
-      "track": 8,
-      "key": "bt_analog_kick_rr1",
-      "velocity": "normal",
-      "group": "bt-analog|bt_analog_kick",
-      "candidates": [
-        "bt_analog_kick_rr1",
-        "bt_analog_kick_rr2"
-      ]
-    },
-    {
-      "kit": "ANALOG CLASSIC",
-      "track": 8,
-      "key": "bt_analog_kick_rr1",
-      "velocity": "strong",
-      "group": "bt-analog|bt_analog_kick",
-      "candidates": [
-        "bt_analog_kick_rr1",
-        "bt_analog_kick_rr2"
-      ]
-    },
-    {
-      "kit": "ANALOG CLASSIC",
-      "track": 8,
-      "key": "bt_analog_kick_rr1",
-      "velocity": "accent",
       "group": "bt-analog|bt_analog_kick",
       "candidates": [
         "bt_analog_kick_rr1",
@@ -3063,6 +3339,50 @@
     {
       "kit": "ANALOG CLASSIC",
       "track": 9,
+      "key": "bt_analog_kick_rr1",
+      "velocity": "soft",
+      "group": "bt-analog|bt_analog_kick",
+      "candidates": [
+        "bt_analog_kick_rr1",
+        "bt_analog_kick_rr2"
+      ]
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "track": 9,
+      "key": "bt_analog_kick_rr1",
+      "velocity": "normal",
+      "group": "bt-analog|bt_analog_kick",
+      "candidates": [
+        "bt_analog_kick_rr1",
+        "bt_analog_kick_rr2"
+      ]
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "track": 9,
+      "key": "bt_analog_kick_rr1",
+      "velocity": "strong",
+      "group": "bt-analog|bt_analog_kick",
+      "candidates": [
+        "bt_analog_kick_rr1",
+        "bt_analog_kick_rr2"
+      ]
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "track": 9,
+      "key": "bt_analog_kick_rr1",
+      "velocity": "accent",
+      "group": "bt-analog|bt_analog_kick",
+      "candidates": [
+        "bt_analog_kick_rr1",
+        "bt_analog_kick_rr2"
+      ]
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "ghost",
       "group": "general|metronome_tick",
@@ -3072,7 +3392,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "soft",
       "group": "general|metronome_tick",
@@ -3082,7 +3402,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "normal",
       "group": "general|metronome_tick",
@@ -3092,7 +3412,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "strong",
       "group": "general|metronome_tick",
@@ -3102,7 +3422,7 @@
     },
     {
       "kit": "ANALOG CLASSIC",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "accent",
       "group": "general|metronome_tick",
@@ -3163,46 +3483,96 @@
     {
       "kit": "DETROIT HYBRID",
       "track": 1,
-      "key": "bt_detroit_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "ghost",
-      "group": "bt-detroit|bt_detroit_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_detroit_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "DETROIT HYBRID",
       "track": 1,
-      "key": "bt_detroit_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "soft",
-      "group": "bt-detroit|bt_detroit_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_detroit_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "DETROIT HYBRID",
       "track": 1,
-      "key": "bt_detroit_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "normal",
-      "group": "bt-detroit|bt_detroit_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_detroit_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "DETROIT HYBRID",
       "track": 1,
-      "key": "bt_detroit_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "strong",
-      "group": "bt-detroit|bt_detroit_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_detroit_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "DETROIT HYBRID",
       "track": 1,
+      "key": "bt_detroit_ride_bell",
+      "velocity": "accent",
+      "group": "bt-detroit|bt_detroit_ride_bell",
+      "candidates": [
+        "bt_detroit_ride_bell"
+      ]
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "track": 2,
+      "key": "bt_detroit_ride",
+      "velocity": "ghost",
+      "group": "bt-detroit|bt_detroit_ride",
+      "candidates": [
+        "bt_detroit_ride"
+      ]
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "track": 2,
+      "key": "bt_detroit_ride",
+      "velocity": "soft",
+      "group": "bt-detroit|bt_detroit_ride",
+      "candidates": [
+        "bt_detroit_ride"
+      ]
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "track": 2,
+      "key": "bt_detroit_ride",
+      "velocity": "normal",
+      "group": "bt-detroit|bt_detroit_ride",
+      "candidates": [
+        "bt_detroit_ride"
+      ]
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "track": 2,
+      "key": "bt_detroit_ride",
+      "velocity": "strong",
+      "group": "bt-detroit|bt_detroit_ride",
+      "candidates": [
+        "bt_detroit_ride"
+      ]
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "track": 2,
       "key": "bt_detroit_ride",
       "velocity": "accent",
       "group": "bt-detroit|bt_detroit_ride",
@@ -3212,7 +3582,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 2,
+      "track": 3,
       "key": "bt_detroit_hho_rr1",
       "velocity": "ghost",
       "group": "bt-detroit|bt_detroit_hho",
@@ -3223,7 +3593,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 2,
+      "track": 3,
       "key": "bt_detroit_hho_rr1",
       "velocity": "soft",
       "group": "bt-detroit|bt_detroit_hho",
@@ -3234,7 +3604,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 2,
+      "track": 3,
       "key": "bt_detroit_hho_rr1",
       "velocity": "normal",
       "group": "bt-detroit|bt_detroit_hho",
@@ -3245,7 +3615,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 2,
+      "track": 3,
       "key": "bt_detroit_hho_rr1",
       "velocity": "strong",
       "group": "bt-detroit|bt_detroit_hho",
@@ -3256,7 +3626,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 2,
+      "track": 3,
       "key": "bt_detroit_hho_rr1",
       "velocity": "accent",
       "group": "bt-detroit|bt_detroit_hho",
@@ -3267,7 +3637,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 3,
+      "track": 4,
       "key": "bt_detroit_hhc_rr1",
       "velocity": "ghost",
       "group": "bt-detroit|bt_detroit_hhc",
@@ -3278,7 +3648,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 3,
+      "track": 4,
       "key": "bt_detroit_hhc_rr1",
       "velocity": "soft",
       "group": "bt-detroit|bt_detroit_hhc",
@@ -3289,7 +3659,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 3,
+      "track": 4,
       "key": "bt_detroit_hhc_rr1",
       "velocity": "normal",
       "group": "bt-detroit|bt_detroit_hhc",
@@ -3300,7 +3670,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 3,
+      "track": 4,
       "key": "bt_detroit_hhc_rr1",
       "velocity": "strong",
       "group": "bt-detroit|bt_detroit_hhc",
@@ -3311,7 +3681,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 3,
+      "track": 4,
       "key": "bt_detroit_hhc_rr1",
       "velocity": "accent",
       "group": "bt-detroit|bt_detroit_hhc",
@@ -3322,7 +3692,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 4,
+      "track": 5,
       "key": "bt_detroit_snare_rr1",
       "velocity": "ghost",
       "group": "bt-detroit|bt_detroit_snare",
@@ -3333,7 +3703,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 4,
+      "track": 5,
       "key": "bt_detroit_snare_rr1",
       "velocity": "soft",
       "group": "bt-detroit|bt_detroit_snare",
@@ -3344,7 +3714,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 4,
+      "track": 5,
       "key": "bt_detroit_snare_rr1",
       "velocity": "normal",
       "group": "bt-detroit|bt_detroit_snare",
@@ -3355,7 +3725,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 4,
+      "track": 5,
       "key": "bt_detroit_snare_rr1",
       "velocity": "strong",
       "group": "bt-detroit|bt_detroit_snare",
@@ -3366,7 +3736,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 4,
+      "track": 5,
       "key": "bt_detroit_snare_rr1",
       "velocity": "accent",
       "group": "bt-detroit|bt_detroit_snare",
@@ -3377,7 +3747,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 5,
+      "track": 6,
       "key": "bt_detroit_tom_high",
       "velocity": "ghost",
       "group": "bt-detroit|bt_detroit_tom_high",
@@ -3387,7 +3757,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 5,
+      "track": 6,
       "key": "bt_detroit_tom_high",
       "velocity": "soft",
       "group": "bt-detroit|bt_detroit_tom_high",
@@ -3397,7 +3767,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 5,
+      "track": 6,
       "key": "bt_detroit_tom_high",
       "velocity": "normal",
       "group": "bt-detroit|bt_detroit_tom_high",
@@ -3407,7 +3777,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 5,
+      "track": 6,
       "key": "bt_detroit_tom_high",
       "velocity": "strong",
       "group": "bt-detroit|bt_detroit_tom_high",
@@ -3417,7 +3787,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 5,
+      "track": 6,
       "key": "bt_detroit_tom_high",
       "velocity": "accent",
       "group": "bt-detroit|bt_detroit_tom_high",
@@ -3427,7 +3797,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 6,
+      "track": 7,
       "key": "bt_detroit_tom_mid",
       "velocity": "ghost",
       "group": "bt-detroit|bt_detroit_tom_mid",
@@ -3437,7 +3807,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 6,
+      "track": 7,
       "key": "bt_detroit_tom_mid",
       "velocity": "soft",
       "group": "bt-detroit|bt_detroit_tom_mid",
@@ -3447,7 +3817,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 6,
+      "track": 7,
       "key": "bt_detroit_tom_mid",
       "velocity": "normal",
       "group": "bt-detroit|bt_detroit_tom_mid",
@@ -3457,7 +3827,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 6,
+      "track": 7,
       "key": "bt_detroit_tom_mid",
       "velocity": "strong",
       "group": "bt-detroit|bt_detroit_tom_mid",
@@ -3467,7 +3837,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 6,
+      "track": 7,
       "key": "bt_detroit_tom_mid",
       "velocity": "accent",
       "group": "bt-detroit|bt_detroit_tom_mid",
@@ -3477,7 +3847,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 7,
+      "track": 8,
       "key": "bt_detroit_tom_low",
       "velocity": "ghost",
       "group": "bt-detroit|bt_detroit_tom_low",
@@ -3487,7 +3857,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 7,
+      "track": 8,
       "key": "bt_detroit_tom_low",
       "velocity": "soft",
       "group": "bt-detroit|bt_detroit_tom_low",
@@ -3497,7 +3867,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 7,
+      "track": 8,
       "key": "bt_detroit_tom_low",
       "velocity": "normal",
       "group": "bt-detroit|bt_detroit_tom_low",
@@ -3507,7 +3877,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 7,
+      "track": 8,
       "key": "bt_detroit_tom_low",
       "velocity": "strong",
       "group": "bt-detroit|bt_detroit_tom_low",
@@ -3517,7 +3887,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 7,
+      "track": 8,
       "key": "bt_detroit_tom_low",
       "velocity": "accent",
       "group": "bt-detroit|bt_detroit_tom_low",
@@ -3527,53 +3897,9 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 8,
+      "track": 9,
       "key": "bt_detroit_kick_rr1",
       "velocity": "ghost",
-      "group": "bt-detroit|bt_detroit_kick",
-      "candidates": [
-        "bt_detroit_kick_rr1",
-        "bt_detroit_kick_rr2"
-      ]
-    },
-    {
-      "kit": "DETROIT HYBRID",
-      "track": 8,
-      "key": "bt_detroit_kick_rr1",
-      "velocity": "soft",
-      "group": "bt-detroit|bt_detroit_kick",
-      "candidates": [
-        "bt_detroit_kick_rr1",
-        "bt_detroit_kick_rr2"
-      ]
-    },
-    {
-      "kit": "DETROIT HYBRID",
-      "track": 8,
-      "key": "bt_detroit_kick_rr1",
-      "velocity": "normal",
-      "group": "bt-detroit|bt_detroit_kick",
-      "candidates": [
-        "bt_detroit_kick_rr1",
-        "bt_detroit_kick_rr2"
-      ]
-    },
-    {
-      "kit": "DETROIT HYBRID",
-      "track": 8,
-      "key": "bt_detroit_kick_rr1",
-      "velocity": "strong",
-      "group": "bt-detroit|bt_detroit_kick",
-      "candidates": [
-        "bt_detroit_kick_rr1",
-        "bt_detroit_kick_rr2"
-      ]
-    },
-    {
-      "kit": "DETROIT HYBRID",
-      "track": 8,
-      "key": "bt_detroit_kick_rr1",
-      "velocity": "accent",
       "group": "bt-detroit|bt_detroit_kick",
       "candidates": [
         "bt_detroit_kick_rr1",
@@ -3583,6 +3909,50 @@
     {
       "kit": "DETROIT HYBRID",
       "track": 9,
+      "key": "bt_detroit_kick_rr1",
+      "velocity": "soft",
+      "group": "bt-detroit|bt_detroit_kick",
+      "candidates": [
+        "bt_detroit_kick_rr1",
+        "bt_detroit_kick_rr2"
+      ]
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "track": 9,
+      "key": "bt_detroit_kick_rr1",
+      "velocity": "normal",
+      "group": "bt-detroit|bt_detroit_kick",
+      "candidates": [
+        "bt_detroit_kick_rr1",
+        "bt_detroit_kick_rr2"
+      ]
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "track": 9,
+      "key": "bt_detroit_kick_rr1",
+      "velocity": "strong",
+      "group": "bt-detroit|bt_detroit_kick",
+      "candidates": [
+        "bt_detroit_kick_rr1",
+        "bt_detroit_kick_rr2"
+      ]
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "track": 9,
+      "key": "bt_detroit_kick_rr1",
+      "velocity": "accent",
+      "group": "bt-detroit|bt_detroit_kick",
+      "candidates": [
+        "bt_detroit_kick_rr1",
+        "bt_detroit_kick_rr2"
+      ]
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "ghost",
       "group": "general|metronome_tick",
@@ -3592,7 +3962,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "soft",
       "group": "general|metronome_tick",
@@ -3602,7 +3972,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "normal",
       "group": "general|metronome_tick",
@@ -3612,7 +3982,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "strong",
       "group": "general|metronome_tick",
@@ -3622,7 +3992,7 @@
     },
     {
       "kit": "DETROIT HYBRID",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "accent",
       "group": "general|metronome_tick",
@@ -3683,46 +4053,96 @@
     {
       "kit": "DIGITAL 80",
       "track": 1,
-      "key": "bt_digital80_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "ghost",
-      "group": "bt-digital80|bt_digital80_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_digital80_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "DIGITAL 80",
       "track": 1,
-      "key": "bt_digital80_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "soft",
-      "group": "bt-digital80|bt_digital80_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_digital80_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "DIGITAL 80",
       "track": 1,
-      "key": "bt_digital80_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "normal",
-      "group": "bt-digital80|bt_digital80_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_digital80_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "DIGITAL 80",
       "track": 1,
-      "key": "bt_digital80_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "strong",
-      "group": "bt-digital80|bt_digital80_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_digital80_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "DIGITAL 80",
       "track": 1,
+      "key": "bt_detroit_ride_bell",
+      "velocity": "accent",
+      "group": "bt-detroit|bt_detroit_ride_bell",
+      "candidates": [
+        "bt_detroit_ride_bell"
+      ]
+    },
+    {
+      "kit": "DIGITAL 80",
+      "track": 2,
+      "key": "bt_digital80_ride",
+      "velocity": "ghost",
+      "group": "bt-digital80|bt_digital80_ride",
+      "candidates": [
+        "bt_digital80_ride"
+      ]
+    },
+    {
+      "kit": "DIGITAL 80",
+      "track": 2,
+      "key": "bt_digital80_ride",
+      "velocity": "soft",
+      "group": "bt-digital80|bt_digital80_ride",
+      "candidates": [
+        "bt_digital80_ride"
+      ]
+    },
+    {
+      "kit": "DIGITAL 80",
+      "track": 2,
+      "key": "bt_digital80_ride",
+      "velocity": "normal",
+      "group": "bt-digital80|bt_digital80_ride",
+      "candidates": [
+        "bt_digital80_ride"
+      ]
+    },
+    {
+      "kit": "DIGITAL 80",
+      "track": 2,
+      "key": "bt_digital80_ride",
+      "velocity": "strong",
+      "group": "bt-digital80|bt_digital80_ride",
+      "candidates": [
+        "bt_digital80_ride"
+      ]
+    },
+    {
+      "kit": "DIGITAL 80",
+      "track": 2,
       "key": "bt_digital80_ride",
       "velocity": "accent",
       "group": "bt-digital80|bt_digital80_ride",
@@ -3732,7 +4152,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 2,
+      "track": 3,
       "key": "bt_digital80_hho",
       "velocity": "ghost",
       "group": "bt-digital80|bt_digital80_hho",
@@ -3742,7 +4162,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 2,
+      "track": 3,
       "key": "bt_digital80_hho",
       "velocity": "soft",
       "group": "bt-digital80|bt_digital80_hho",
@@ -3752,7 +4172,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 2,
+      "track": 3,
       "key": "bt_digital80_hho",
       "velocity": "normal",
       "group": "bt-digital80|bt_digital80_hho",
@@ -3762,7 +4182,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 2,
+      "track": 3,
       "key": "bt_digital80_hho",
       "velocity": "strong",
       "group": "bt-digital80|bt_digital80_hho",
@@ -3772,7 +4192,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 2,
+      "track": 3,
       "key": "bt_digital80_hho",
       "velocity": "accent",
       "group": "bt-digital80|bt_digital80_hho",
@@ -3782,49 +4202,9 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 3,
+      "track": 4,
       "key": "bt_digital80_hhc",
       "velocity": "ghost",
-      "group": "bt-digital80|bt_digital80_hhc",
-      "candidates": [
-        "bt_digital80_hhc"
-      ]
-    },
-    {
-      "kit": "DIGITAL 80",
-      "track": 3,
-      "key": "bt_digital80_hhc",
-      "velocity": "soft",
-      "group": "bt-digital80|bt_digital80_hhc",
-      "candidates": [
-        "bt_digital80_hhc"
-      ]
-    },
-    {
-      "kit": "DIGITAL 80",
-      "track": 3,
-      "key": "bt_digital80_hhc",
-      "velocity": "normal",
-      "group": "bt-digital80|bt_digital80_hhc",
-      "candidates": [
-        "bt_digital80_hhc"
-      ]
-    },
-    {
-      "kit": "DIGITAL 80",
-      "track": 3,
-      "key": "bt_digital80_hhc",
-      "velocity": "strong",
-      "group": "bt-digital80|bt_digital80_hhc",
-      "candidates": [
-        "bt_digital80_hhc"
-      ]
-    },
-    {
-      "kit": "DIGITAL 80",
-      "track": 3,
-      "key": "bt_digital80_hhc",
-      "velocity": "accent",
       "group": "bt-digital80|bt_digital80_hhc",
       "candidates": [
         "bt_digital80_hhc"
@@ -3833,6 +4213,46 @@
     {
       "kit": "DIGITAL 80",
       "track": 4,
+      "key": "bt_digital80_hhc",
+      "velocity": "soft",
+      "group": "bt-digital80|bt_digital80_hhc",
+      "candidates": [
+        "bt_digital80_hhc"
+      ]
+    },
+    {
+      "kit": "DIGITAL 80",
+      "track": 4,
+      "key": "bt_digital80_hhc",
+      "velocity": "normal",
+      "group": "bt-digital80|bt_digital80_hhc",
+      "candidates": [
+        "bt_digital80_hhc"
+      ]
+    },
+    {
+      "kit": "DIGITAL 80",
+      "track": 4,
+      "key": "bt_digital80_hhc",
+      "velocity": "strong",
+      "group": "bt-digital80|bt_digital80_hhc",
+      "candidates": [
+        "bt_digital80_hhc"
+      ]
+    },
+    {
+      "kit": "DIGITAL 80",
+      "track": 4,
+      "key": "bt_digital80_hhc",
+      "velocity": "accent",
+      "group": "bt-digital80|bt_digital80_hhc",
+      "candidates": [
+        "bt_digital80_hhc"
+      ]
+    },
+    {
+      "kit": "DIGITAL 80",
+      "track": 5,
       "key": "bt_digital80_snare_rr1",
       "velocity": "ghost",
       "group": "bt-digital80|bt_digital80_snare",
@@ -3843,7 +4263,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 4,
+      "track": 5,
       "key": "bt_digital80_snare_rr1",
       "velocity": "soft",
       "group": "bt-digital80|bt_digital80_snare",
@@ -3854,7 +4274,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 4,
+      "track": 5,
       "key": "bt_digital80_snare_rr1",
       "velocity": "normal",
       "group": "bt-digital80|bt_digital80_snare",
@@ -3865,7 +4285,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 4,
+      "track": 5,
       "key": "bt_digital80_snare_rr1",
       "velocity": "strong",
       "group": "bt-digital80|bt_digital80_snare",
@@ -3876,7 +4296,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 4,
+      "track": 5,
       "key": "bt_digital80_snare_rr1",
       "velocity": "accent",
       "group": "bt-digital80|bt_digital80_snare",
@@ -3887,7 +4307,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 5,
+      "track": 6,
       "key": "bt_digital80_tom_high",
       "velocity": "ghost",
       "group": "bt-digital80|bt_digital80_tom_high",
@@ -3897,7 +4317,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 5,
+      "track": 6,
       "key": "bt_digital80_tom_high",
       "velocity": "soft",
       "group": "bt-digital80|bt_digital80_tom_high",
@@ -3907,7 +4327,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 5,
+      "track": 6,
       "key": "bt_digital80_tom_high",
       "velocity": "normal",
       "group": "bt-digital80|bt_digital80_tom_high",
@@ -3917,7 +4337,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 5,
+      "track": 6,
       "key": "bt_digital80_tom_high",
       "velocity": "strong",
       "group": "bt-digital80|bt_digital80_tom_high",
@@ -3927,7 +4347,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 5,
+      "track": 6,
       "key": "bt_digital80_tom_high",
       "velocity": "accent",
       "group": "bt-digital80|bt_digital80_tom_high",
@@ -3937,7 +4357,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 6,
+      "track": 7,
       "key": "bt_digital80_tom_mid",
       "velocity": "ghost",
       "group": "bt-digital80|bt_digital80_tom_mid",
@@ -3947,7 +4367,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 6,
+      "track": 7,
       "key": "bt_digital80_tom_mid",
       "velocity": "soft",
       "group": "bt-digital80|bt_digital80_tom_mid",
@@ -3957,7 +4377,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 6,
+      "track": 7,
       "key": "bt_digital80_tom_mid",
       "velocity": "normal",
       "group": "bt-digital80|bt_digital80_tom_mid",
@@ -3967,7 +4387,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 6,
+      "track": 7,
       "key": "bt_digital80_tom_mid",
       "velocity": "strong",
       "group": "bt-digital80|bt_digital80_tom_mid",
@@ -3977,7 +4397,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 6,
+      "track": 7,
       "key": "bt_digital80_tom_mid",
       "velocity": "accent",
       "group": "bt-digital80|bt_digital80_tom_mid",
@@ -3987,7 +4407,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 7,
+      "track": 8,
       "key": "bt_digital80_tom_low",
       "velocity": "ghost",
       "group": "bt-digital80|bt_digital80_tom_low",
@@ -3997,7 +4417,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 7,
+      "track": 8,
       "key": "bt_digital80_tom_low",
       "velocity": "soft",
       "group": "bt-digital80|bt_digital80_tom_low",
@@ -4007,7 +4427,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 7,
+      "track": 8,
       "key": "bt_digital80_tom_low",
       "velocity": "normal",
       "group": "bt-digital80|bt_digital80_tom_low",
@@ -4017,7 +4437,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 7,
+      "track": 8,
       "key": "bt_digital80_tom_low",
       "velocity": "strong",
       "group": "bt-digital80|bt_digital80_tom_low",
@@ -4027,7 +4447,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 7,
+      "track": 8,
       "key": "bt_digital80_tom_low",
       "velocity": "accent",
       "group": "bt-digital80|bt_digital80_tom_low",
@@ -4037,53 +4457,9 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 8,
+      "track": 9,
       "key": "bt_digital80_kick_rr1",
       "velocity": "ghost",
-      "group": "bt-digital80|bt_digital80_kick",
-      "candidates": [
-        "bt_digital80_kick_rr1",
-        "bt_digital80_kick_rr2"
-      ]
-    },
-    {
-      "kit": "DIGITAL 80",
-      "track": 8,
-      "key": "bt_digital80_kick_rr1",
-      "velocity": "soft",
-      "group": "bt-digital80|bt_digital80_kick",
-      "candidates": [
-        "bt_digital80_kick_rr1",
-        "bt_digital80_kick_rr2"
-      ]
-    },
-    {
-      "kit": "DIGITAL 80",
-      "track": 8,
-      "key": "bt_digital80_kick_rr1",
-      "velocity": "normal",
-      "group": "bt-digital80|bt_digital80_kick",
-      "candidates": [
-        "bt_digital80_kick_rr1",
-        "bt_digital80_kick_rr2"
-      ]
-    },
-    {
-      "kit": "DIGITAL 80",
-      "track": 8,
-      "key": "bt_digital80_kick_rr1",
-      "velocity": "strong",
-      "group": "bt-digital80|bt_digital80_kick",
-      "candidates": [
-        "bt_digital80_kick_rr1",
-        "bt_digital80_kick_rr2"
-      ]
-    },
-    {
-      "kit": "DIGITAL 80",
-      "track": 8,
-      "key": "bt_digital80_kick_rr1",
-      "velocity": "accent",
       "group": "bt-digital80|bt_digital80_kick",
       "candidates": [
         "bt_digital80_kick_rr1",
@@ -4093,6 +4469,50 @@
     {
       "kit": "DIGITAL 80",
       "track": 9,
+      "key": "bt_digital80_kick_rr1",
+      "velocity": "soft",
+      "group": "bt-digital80|bt_digital80_kick",
+      "candidates": [
+        "bt_digital80_kick_rr1",
+        "bt_digital80_kick_rr2"
+      ]
+    },
+    {
+      "kit": "DIGITAL 80",
+      "track": 9,
+      "key": "bt_digital80_kick_rr1",
+      "velocity": "normal",
+      "group": "bt-digital80|bt_digital80_kick",
+      "candidates": [
+        "bt_digital80_kick_rr1",
+        "bt_digital80_kick_rr2"
+      ]
+    },
+    {
+      "kit": "DIGITAL 80",
+      "track": 9,
+      "key": "bt_digital80_kick_rr1",
+      "velocity": "strong",
+      "group": "bt-digital80|bt_digital80_kick",
+      "candidates": [
+        "bt_digital80_kick_rr1",
+        "bt_digital80_kick_rr2"
+      ]
+    },
+    {
+      "kit": "DIGITAL 80",
+      "track": 9,
+      "key": "bt_digital80_kick_rr1",
+      "velocity": "accent",
+      "group": "bt-digital80|bt_digital80_kick",
+      "candidates": [
+        "bt_digital80_kick_rr1",
+        "bt_digital80_kick_rr2"
+      ]
+    },
+    {
+      "kit": "DIGITAL 80",
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "ghost",
       "group": "general|metronome_tick",
@@ -4102,7 +4522,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "soft",
       "group": "general|metronome_tick",
@@ -4112,7 +4532,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "normal",
       "group": "general|metronome_tick",
@@ -4122,7 +4542,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "strong",
       "group": "general|metronome_tick",
@@ -4132,7 +4552,7 @@
     },
     {
       "kit": "DIGITAL 80",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "accent",
       "group": "general|metronome_tick",
@@ -4193,46 +4613,96 @@
     {
       "kit": "SP DUST",
       "track": 1,
-      "key": "bt_analog_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "ghost",
-      "group": "bt-analog|bt_analog_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_analog_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "SP DUST",
       "track": 1,
-      "key": "bt_analog_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "soft",
-      "group": "bt-analog|bt_analog_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_analog_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "SP DUST",
       "track": 1,
-      "key": "bt_analog_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "normal",
-      "group": "bt-analog|bt_analog_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_analog_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "SP DUST",
       "track": 1,
-      "key": "bt_analog_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "strong",
-      "group": "bt-analog|bt_analog_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_analog_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "SP DUST",
       "track": 1,
+      "key": "bt_detroit_ride_bell",
+      "velocity": "accent",
+      "group": "bt-detroit|bt_detroit_ride_bell",
+      "candidates": [
+        "bt_detroit_ride_bell"
+      ]
+    },
+    {
+      "kit": "SP DUST",
+      "track": 2,
+      "key": "bt_analog_ride",
+      "velocity": "ghost",
+      "group": "bt-analog|bt_analog_ride",
+      "candidates": [
+        "bt_analog_ride"
+      ]
+    },
+    {
+      "kit": "SP DUST",
+      "track": 2,
+      "key": "bt_analog_ride",
+      "velocity": "soft",
+      "group": "bt-analog|bt_analog_ride",
+      "candidates": [
+        "bt_analog_ride"
+      ]
+    },
+    {
+      "kit": "SP DUST",
+      "track": 2,
+      "key": "bt_analog_ride",
+      "velocity": "normal",
+      "group": "bt-analog|bt_analog_ride",
+      "candidates": [
+        "bt_analog_ride"
+      ]
+    },
+    {
+      "kit": "SP DUST",
+      "track": 2,
+      "key": "bt_analog_ride",
+      "velocity": "strong",
+      "group": "bt-analog|bt_analog_ride",
+      "candidates": [
+        "bt_analog_ride"
+      ]
+    },
+    {
+      "kit": "SP DUST",
+      "track": 2,
       "key": "bt_analog_ride",
       "velocity": "accent",
       "group": "bt-analog|bt_analog_ride",
@@ -4242,7 +4712,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 2,
+      "track": 3,
       "key": "bt_analog_hho_rr1",
       "velocity": "ghost",
       "group": "bt-analog|bt_analog_hho",
@@ -4253,7 +4723,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 2,
+      "track": 3,
       "key": "bt_analog_hho_rr1",
       "velocity": "soft",
       "group": "bt-analog|bt_analog_hho",
@@ -4264,7 +4734,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 2,
+      "track": 3,
       "key": "bt_analog_hho_rr1",
       "velocity": "normal",
       "group": "bt-analog|bt_analog_hho",
@@ -4275,7 +4745,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 2,
+      "track": 3,
       "key": "bt_analog_hho_rr1",
       "velocity": "strong",
       "group": "bt-analog|bt_analog_hho",
@@ -4286,7 +4756,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 2,
+      "track": 3,
       "key": "bt_analog_hho_rr1",
       "velocity": "accent",
       "group": "bt-analog|bt_analog_hho",
@@ -4297,7 +4767,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 3,
+      "track": 4,
       "key": "electro_hat_closed_metal_01",
       "velocity": "ghost",
       "group": "electro|electro_hat_closed_metal_01",
@@ -4307,7 +4777,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 3,
+      "track": 4,
       "key": "electro_hat_closed_metal_01",
       "velocity": "soft",
       "group": "electro|electro_hat_closed_metal_01",
@@ -4317,7 +4787,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 3,
+      "track": 4,
       "key": "electro_hat_closed_metal_01",
       "velocity": "normal",
       "group": "electro|electro_hat_closed_metal_01",
@@ -4327,7 +4797,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 3,
+      "track": 4,
       "key": "electro_hat_closed_metal_01",
       "velocity": "strong",
       "group": "electro|electro_hat_closed_metal_01",
@@ -4337,7 +4807,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 3,
+      "track": 4,
       "key": "electro_hat_closed_metal_01",
       "velocity": "accent",
       "group": "electro|electro_hat_closed_metal_01",
@@ -4347,7 +4817,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 4,
+      "track": 5,
       "key": "electro_snare_distorted_01",
       "velocity": "ghost",
       "group": "electro|electro_snare_distorted_01",
@@ -4357,7 +4827,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 4,
+      "track": 5,
       "key": "electro_snare_distorted_01",
       "velocity": "soft",
       "group": "electro|electro_snare_distorted_01",
@@ -4367,7 +4837,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 4,
+      "track": 5,
       "key": "electro_snare_distorted_01",
       "velocity": "normal",
       "group": "electro|electro_snare_distorted_01",
@@ -4377,7 +4847,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 4,
+      "track": 5,
       "key": "electro_snare_distorted_01",
       "velocity": "strong",
       "group": "electro|electro_snare_distorted_01",
@@ -4387,7 +4857,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 4,
+      "track": 5,
       "key": "electro_snare_distorted_01",
       "velocity": "accent",
       "group": "electro|electro_snare_distorted_01",
@@ -4397,7 +4867,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 5,
+      "track": 6,
       "key": "bt_analog_tom_high",
       "velocity": "ghost",
       "group": "bt-analog|bt_analog_tom_high",
@@ -4407,7 +4877,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 5,
+      "track": 6,
       "key": "bt_analog_tom_high",
       "velocity": "soft",
       "group": "bt-analog|bt_analog_tom_high",
@@ -4417,7 +4887,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 5,
+      "track": 6,
       "key": "bt_analog_tom_high",
       "velocity": "normal",
       "group": "bt-analog|bt_analog_tom_high",
@@ -4427,7 +4897,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 5,
+      "track": 6,
       "key": "bt_analog_tom_high",
       "velocity": "strong",
       "group": "bt-analog|bt_analog_tom_high",
@@ -4437,7 +4907,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 5,
+      "track": 6,
       "key": "bt_analog_tom_high",
       "velocity": "accent",
       "group": "bt-analog|bt_analog_tom_high",
@@ -4447,7 +4917,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 6,
+      "track": 7,
       "key": "bt_analog_tom_mid",
       "velocity": "ghost",
       "group": "bt-analog|bt_analog_tom_mid",
@@ -4457,7 +4927,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 6,
+      "track": 7,
       "key": "bt_analog_tom_mid",
       "velocity": "soft",
       "group": "bt-analog|bt_analog_tom_mid",
@@ -4467,7 +4937,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 6,
+      "track": 7,
       "key": "bt_analog_tom_mid",
       "velocity": "normal",
       "group": "bt-analog|bt_analog_tom_mid",
@@ -4477,7 +4947,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 6,
+      "track": 7,
       "key": "bt_analog_tom_mid",
       "velocity": "strong",
       "group": "bt-analog|bt_analog_tom_mid",
@@ -4487,7 +4957,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 6,
+      "track": 7,
       "key": "bt_analog_tom_mid",
       "velocity": "accent",
       "group": "bt-analog|bt_analog_tom_mid",
@@ -4497,7 +4967,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 7,
+      "track": 8,
       "key": "bt_analog_tom_low",
       "velocity": "ghost",
       "group": "bt-analog|bt_analog_tom_low",
@@ -4507,7 +4977,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 7,
+      "track": 8,
       "key": "bt_analog_tom_low",
       "velocity": "soft",
       "group": "bt-analog|bt_analog_tom_low",
@@ -4517,7 +4987,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 7,
+      "track": 8,
       "key": "bt_analog_tom_low",
       "velocity": "normal",
       "group": "bt-analog|bt_analog_tom_low",
@@ -4527,7 +4997,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 7,
+      "track": 8,
       "key": "bt_analog_tom_low",
       "velocity": "strong",
       "group": "bt-analog|bt_analog_tom_low",
@@ -4537,7 +5007,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 7,
+      "track": 8,
       "key": "bt_analog_tom_low",
       "velocity": "accent",
       "group": "bt-analog|bt_analog_tom_low",
@@ -4547,49 +5017,9 @@
     },
     {
       "kit": "SP DUST",
-      "track": 8,
+      "track": 9,
       "key": "electro_kick_distorted_01",
       "velocity": "ghost",
-      "group": "electro|electro_kick_distorted_01",
-      "candidates": [
-        "electro_kick_distorted_01"
-      ]
-    },
-    {
-      "kit": "SP DUST",
-      "track": 8,
-      "key": "electro_kick_distorted_01",
-      "velocity": "soft",
-      "group": "electro|electro_kick_distorted_01",
-      "candidates": [
-        "electro_kick_distorted_01"
-      ]
-    },
-    {
-      "kit": "SP DUST",
-      "track": 8,
-      "key": "electro_kick_distorted_01",
-      "velocity": "normal",
-      "group": "electro|electro_kick_distorted_01",
-      "candidates": [
-        "electro_kick_distorted_01"
-      ]
-    },
-    {
-      "kit": "SP DUST",
-      "track": 8,
-      "key": "electro_kick_distorted_01",
-      "velocity": "strong",
-      "group": "electro|electro_kick_distorted_01",
-      "candidates": [
-        "electro_kick_distorted_01"
-      ]
-    },
-    {
-      "kit": "SP DUST",
-      "track": 8,
-      "key": "electro_kick_distorted_01",
-      "velocity": "accent",
       "group": "electro|electro_kick_distorted_01",
       "candidates": [
         "electro_kick_distorted_01"
@@ -4598,6 +5028,46 @@
     {
       "kit": "SP DUST",
       "track": 9,
+      "key": "electro_kick_distorted_01",
+      "velocity": "soft",
+      "group": "electro|electro_kick_distorted_01",
+      "candidates": [
+        "electro_kick_distorted_01"
+      ]
+    },
+    {
+      "kit": "SP DUST",
+      "track": 9,
+      "key": "electro_kick_distorted_01",
+      "velocity": "normal",
+      "group": "electro|electro_kick_distorted_01",
+      "candidates": [
+        "electro_kick_distorted_01"
+      ]
+    },
+    {
+      "kit": "SP DUST",
+      "track": 9,
+      "key": "electro_kick_distorted_01",
+      "velocity": "strong",
+      "group": "electro|electro_kick_distorted_01",
+      "candidates": [
+        "electro_kick_distorted_01"
+      ]
+    },
+    {
+      "kit": "SP DUST",
+      "track": 9,
+      "key": "electro_kick_distorted_01",
+      "velocity": "accent",
+      "group": "electro|electro_kick_distorted_01",
+      "candidates": [
+        "electro_kick_distorted_01"
+      ]
+    },
+    {
+      "kit": "SP DUST",
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "ghost",
       "group": "general|metronome_tick",
@@ -4607,7 +5077,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "soft",
       "group": "general|metronome_tick",
@@ -4617,7 +5087,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "normal",
       "group": "general|metronome_tick",
@@ -4627,7 +5097,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "strong",
       "group": "general|metronome_tick",
@@ -4637,7 +5107,7 @@
     },
     {
       "kit": "SP DUST",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "accent",
       "group": "general|metronome_tick",
@@ -4698,46 +5168,96 @@
     {
       "kit": "GLITCH LAB",
       "track": 1,
-      "key": "bt_digital80_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "ghost",
-      "group": "bt-digital80|bt_digital80_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_digital80_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "GLITCH LAB",
       "track": 1,
-      "key": "bt_digital80_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "soft",
-      "group": "bt-digital80|bt_digital80_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_digital80_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "GLITCH LAB",
       "track": 1,
-      "key": "bt_digital80_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "normal",
-      "group": "bt-digital80|bt_digital80_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_digital80_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "GLITCH LAB",
       "track": 1,
-      "key": "bt_digital80_ride",
+      "key": "bt_detroit_ride_bell",
       "velocity": "strong",
-      "group": "bt-digital80|bt_digital80_ride",
+      "group": "bt-detroit|bt_detroit_ride_bell",
       "candidates": [
-        "bt_digital80_ride"
+        "bt_detroit_ride_bell"
       ]
     },
     {
       "kit": "GLITCH LAB",
       "track": 1,
+      "key": "bt_detroit_ride_bell",
+      "velocity": "accent",
+      "group": "bt-detroit|bt_detroit_ride_bell",
+      "candidates": [
+        "bt_detroit_ride_bell"
+      ]
+    },
+    {
+      "kit": "GLITCH LAB",
+      "track": 2,
+      "key": "bt_digital80_ride",
+      "velocity": "ghost",
+      "group": "bt-digital80|bt_digital80_ride",
+      "candidates": [
+        "bt_digital80_ride"
+      ]
+    },
+    {
+      "kit": "GLITCH LAB",
+      "track": 2,
+      "key": "bt_digital80_ride",
+      "velocity": "soft",
+      "group": "bt-digital80|bt_digital80_ride",
+      "candidates": [
+        "bt_digital80_ride"
+      ]
+    },
+    {
+      "kit": "GLITCH LAB",
+      "track": 2,
+      "key": "bt_digital80_ride",
+      "velocity": "normal",
+      "group": "bt-digital80|bt_digital80_ride",
+      "candidates": [
+        "bt_digital80_ride"
+      ]
+    },
+    {
+      "kit": "GLITCH LAB",
+      "track": 2,
+      "key": "bt_digital80_ride",
+      "velocity": "strong",
+      "group": "bt-digital80|bt_digital80_ride",
+      "candidates": [
+        "bt_digital80_ride"
+      ]
+    },
+    {
+      "kit": "GLITCH LAB",
+      "track": 2,
       "key": "bt_digital80_ride",
       "velocity": "accent",
       "group": "bt-digital80|bt_digital80_ride",
@@ -4747,7 +5267,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 2,
+      "track": 3,
       "key": "bt_digital80_hho",
       "velocity": "ghost",
       "group": "bt-digital80|bt_digital80_hho",
@@ -4757,7 +5277,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 2,
+      "track": 3,
       "key": "bt_digital80_hho",
       "velocity": "soft",
       "group": "bt-digital80|bt_digital80_hho",
@@ -4767,7 +5287,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 2,
+      "track": 3,
       "key": "bt_digital80_hho",
       "velocity": "normal",
       "group": "bt-digital80|bt_digital80_hho",
@@ -4777,7 +5297,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 2,
+      "track": 3,
       "key": "bt_digital80_hho",
       "velocity": "strong",
       "group": "bt-digital80|bt_digital80_hho",
@@ -4787,7 +5307,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 2,
+      "track": 3,
       "key": "bt_digital80_hho",
       "velocity": "accent",
       "group": "bt-digital80|bt_digital80_hho",
@@ -4797,7 +5317,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 3,
+      "track": 4,
       "key": "electro_hat_closed_distorted_01",
       "velocity": "ghost",
       "group": "electro|electro_hat_closed_distorted_01",
@@ -4807,7 +5327,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 3,
+      "track": 4,
       "key": "electro_hat_closed_distorted_01",
       "velocity": "soft",
       "group": "electro|electro_hat_closed_distorted_01",
@@ -4817,7 +5337,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 3,
+      "track": 4,
       "key": "electro_hat_closed_distorted_01",
       "velocity": "normal",
       "group": "electro|electro_hat_closed_distorted_01",
@@ -4827,7 +5347,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 3,
+      "track": 4,
       "key": "electro_hat_closed_distorted_01",
       "velocity": "strong",
       "group": "electro|electro_hat_closed_distorted_01",
@@ -4837,7 +5357,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 3,
+      "track": 4,
       "key": "electro_hat_closed_distorted_01",
       "velocity": "accent",
       "group": "electro|electro_hat_closed_distorted_01",
@@ -4847,7 +5367,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 4,
+      "track": 5,
       "key": "electro_snare_distorted_02",
       "velocity": "ghost",
       "group": "electro|electro_snare_distorted_02",
@@ -4857,7 +5377,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 4,
+      "track": 5,
       "key": "electro_snare_distorted_02",
       "velocity": "soft",
       "group": "electro|electro_snare_distorted_02",
@@ -4867,7 +5387,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 4,
+      "track": 5,
       "key": "electro_snare_distorted_02",
       "velocity": "normal",
       "group": "electro|electro_snare_distorted_02",
@@ -4877,7 +5397,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 4,
+      "track": 5,
       "key": "electro_snare_distorted_02",
       "velocity": "strong",
       "group": "electro|electro_snare_distorted_02",
@@ -4887,7 +5407,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 4,
+      "track": 5,
       "key": "electro_snare_distorted_02",
       "velocity": "accent",
       "group": "electro|electro_snare_distorted_02",
@@ -4897,7 +5417,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 5,
+      "track": 6,
       "key": "bt_digital80_tom_high",
       "velocity": "ghost",
       "group": "bt-digital80|bt_digital80_tom_high",
@@ -4907,7 +5427,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 5,
+      "track": 6,
       "key": "bt_digital80_tom_high",
       "velocity": "soft",
       "group": "bt-digital80|bt_digital80_tom_high",
@@ -4917,7 +5437,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 5,
+      "track": 6,
       "key": "bt_digital80_tom_high",
       "velocity": "normal",
       "group": "bt-digital80|bt_digital80_tom_high",
@@ -4927,7 +5447,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 5,
+      "track": 6,
       "key": "bt_digital80_tom_high",
       "velocity": "strong",
       "group": "bt-digital80|bt_digital80_tom_high",
@@ -4937,7 +5457,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 5,
+      "track": 6,
       "key": "bt_digital80_tom_high",
       "velocity": "accent",
       "group": "bt-digital80|bt_digital80_tom_high",
@@ -4947,7 +5467,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 6,
+      "track": 7,
       "key": "bt_digital80_tom_mid",
       "velocity": "ghost",
       "group": "bt-digital80|bt_digital80_tom_mid",
@@ -4957,7 +5477,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 6,
+      "track": 7,
       "key": "bt_digital80_tom_mid",
       "velocity": "soft",
       "group": "bt-digital80|bt_digital80_tom_mid",
@@ -4967,7 +5487,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 6,
+      "track": 7,
       "key": "bt_digital80_tom_mid",
       "velocity": "normal",
       "group": "bt-digital80|bt_digital80_tom_mid",
@@ -4977,7 +5497,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 6,
+      "track": 7,
       "key": "bt_digital80_tom_mid",
       "velocity": "strong",
       "group": "bt-digital80|bt_digital80_tom_mid",
@@ -4987,7 +5507,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 6,
+      "track": 7,
       "key": "bt_digital80_tom_mid",
       "velocity": "accent",
       "group": "bt-digital80|bt_digital80_tom_mid",
@@ -4997,7 +5517,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 7,
+      "track": 8,
       "key": "bt_digital80_tom_low",
       "velocity": "ghost",
       "group": "bt-digital80|bt_digital80_tom_low",
@@ -5007,7 +5527,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 7,
+      "track": 8,
       "key": "bt_digital80_tom_low",
       "velocity": "soft",
       "group": "bt-digital80|bt_digital80_tom_low",
@@ -5017,7 +5537,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 7,
+      "track": 8,
       "key": "bt_digital80_tom_low",
       "velocity": "normal",
       "group": "bt-digital80|bt_digital80_tom_low",
@@ -5027,7 +5547,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 7,
+      "track": 8,
       "key": "bt_digital80_tom_low",
       "velocity": "strong",
       "group": "bt-digital80|bt_digital80_tom_low",
@@ -5037,7 +5557,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 7,
+      "track": 8,
       "key": "bt_digital80_tom_low",
       "velocity": "accent",
       "group": "bt-digital80|bt_digital80_tom_low",
@@ -5047,49 +5567,9 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 8,
+      "track": 9,
       "key": "electro_kick_distorted_02",
       "velocity": "ghost",
-      "group": "electro|electro_kick_distorted_02",
-      "candidates": [
-        "electro_kick_distorted_02"
-      ]
-    },
-    {
-      "kit": "GLITCH LAB",
-      "track": 8,
-      "key": "electro_kick_distorted_02",
-      "velocity": "soft",
-      "group": "electro|electro_kick_distorted_02",
-      "candidates": [
-        "electro_kick_distorted_02"
-      ]
-    },
-    {
-      "kit": "GLITCH LAB",
-      "track": 8,
-      "key": "electro_kick_distorted_02",
-      "velocity": "normal",
-      "group": "electro|electro_kick_distorted_02",
-      "candidates": [
-        "electro_kick_distorted_02"
-      ]
-    },
-    {
-      "kit": "GLITCH LAB",
-      "track": 8,
-      "key": "electro_kick_distorted_02",
-      "velocity": "strong",
-      "group": "electro|electro_kick_distorted_02",
-      "candidates": [
-        "electro_kick_distorted_02"
-      ]
-    },
-    {
-      "kit": "GLITCH LAB",
-      "track": 8,
-      "key": "electro_kick_distorted_02",
-      "velocity": "accent",
       "group": "electro|electro_kick_distorted_02",
       "candidates": [
         "electro_kick_distorted_02"
@@ -5098,6 +5578,46 @@
     {
       "kit": "GLITCH LAB",
       "track": 9,
+      "key": "electro_kick_distorted_02",
+      "velocity": "soft",
+      "group": "electro|electro_kick_distorted_02",
+      "candidates": [
+        "electro_kick_distorted_02"
+      ]
+    },
+    {
+      "kit": "GLITCH LAB",
+      "track": 9,
+      "key": "electro_kick_distorted_02",
+      "velocity": "normal",
+      "group": "electro|electro_kick_distorted_02",
+      "candidates": [
+        "electro_kick_distorted_02"
+      ]
+    },
+    {
+      "kit": "GLITCH LAB",
+      "track": 9,
+      "key": "electro_kick_distorted_02",
+      "velocity": "strong",
+      "group": "electro|electro_kick_distorted_02",
+      "candidates": [
+        "electro_kick_distorted_02"
+      ]
+    },
+    {
+      "kit": "GLITCH LAB",
+      "track": 9,
+      "key": "electro_kick_distorted_02",
+      "velocity": "accent",
+      "group": "electro|electro_kick_distorted_02",
+      "candidates": [
+        "electro_kick_distorted_02"
+      ]
+    },
+    {
+      "kit": "GLITCH LAB",
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "ghost",
       "group": "general|metronome_tick",
@@ -5107,7 +5627,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "soft",
       "group": "general|metronome_tick",
@@ -5117,7 +5637,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "normal",
       "group": "general|metronome_tick",
@@ -5127,7 +5647,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "strong",
       "group": "general|metronome_tick",
@@ -5137,7 +5657,7 @@
     },
     {
       "kit": "GLITCH LAB",
-      "track": 9,
+      "track": 10,
       "key": "metronome_tick",
       "velocity": "accent",
       "group": "general|metronome_tick",

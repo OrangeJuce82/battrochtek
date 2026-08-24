@@ -13,7 +13,7 @@ const kits = vm.runInNewContext(`(${m[1]})`);
 
 const errors=[]; const rows=[];
 for (const kit of kits) {
-  if (!Array.isArray(kit.tracks) || kit.tracks.length !== 10) errors.push(`${kit.name}: tracks=${kit.tracks?.length}`);
+  if (!Array.isArray(kit.tracks) || kit.tracks.length !== 11) errors.push(`${kit.name}: tracks=${kit.tracks?.length}`);
   kit.tracks.forEach((key, i) => {
     const meta=sampleIndex.get(key);
     const row={kit:kit.name,category:kit.category,track:i,key,manifest:!!meta,file:false,size:0};

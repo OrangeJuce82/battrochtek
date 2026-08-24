@@ -45,7 +45,7 @@
         <div class="drum-machine-container" id="Drum-Machine-Online-Sequencer">
             <header>
                 <div class="bt-header" aria-label="Battrochtek">
-                    <h1><img src="logo.png" alt="" class="bt-header-logo"> <span>Battrochtek</span><span class="bt-version" aria-label="Version 52">v52</span></h1>
+                    <h1><img src="logo.png" alt="" class="bt-header-logo"> <span>Battrochtek</span><span class="bt-version" aria-label="Version 58">v70</span></h1>
                     <div class="groove-search-wrap" role="search">
                         <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                         <input id="groove-search" type="search" autocomplete="off" placeholder="Rechercher un groove…" data-i18n-placeholder="search.placeholder" aria-label="Rechercher dans tous les grooves" data-i18n-aria="search.aria" aria-expanded="false" aria-controls="groove-search-list" aria-autocomplete="list">
@@ -68,6 +68,7 @@
                             <i id="master-level-icon" class="fa-solid" :class="{ 'fa-volume-xmark': $store.ui.masterState === 'off', 'fa-volume-low': $store.ui.masterState === 'low', 'fa-volume-high': $store.ui.masterState === 'high' }" aria-hidden="true"></i>
                         </button>
                         <div class="vu-meter-wrap" data-bt-tooltip="Niveau de sortie audio" data-i18n-tooltip="audio.output"><span class="vu-label" data-i18n="audio.outputLabel">SORTIE</span><div id="vu-meter" class="vu-meter" aria-label="VU-mètre de sortie" data-i18n-aria="audio.outputAria"></div></div>
+                        <button type="button" class="ghost small header-icon-button fullscreen-toggle" id="fullscreen-toggle" data-bt-tooltip="Plein écran (Shift+X)" aria-label="Passer en plein écran" aria-pressed="false"><i class="fa-solid fa-expand" aria-hidden="true"></i></button>
                     </div>
                 </div>
                 <div class="score-toolbar" aria-label="Sélection du style, du groove et du kit">
@@ -90,7 +91,18 @@
                             <i class="fa-solid fa-drum" aria-hidden="true"></i><span id="feel-title" data-i18n="feel.title">FEEL</span><small data-i18n="feel.subtitle">Interprétation du groove mémorisée avec chaque mémoire.</small>
                         </div>
                         <div class="feel-header-actions" id="feel-header-actions">
+                            <button type="button" class="bt-button feel-break" id="live-break" data-bt-tooltip="Appui court : Fill · appui long : Break · relâchement : reprise (B)" data-i18n-tooltip="feel.liveBreak"><span class="break-stop-sign" aria-hidden="true"></span></button>
+                            <button type="button" class="bt-button feel-icon-action" id="live-variation" data-bt-tooltip="Nouvelle variation FEEL (V)" data-i18n-tooltip="feel.liveVariation" aria-label="Nouvelle variation FEEL" data-i18n-aria="feel.liveVariation"><i class="fa-solid fa-shuffle" aria-hidden="true"></i></button>
+                            <button type="button" class="bt-button feel-randomize" id="feel-randomize" data-bt-tooltip="Randomiser musicalement les paramètres FEEL" data-i18n-tooltip="feel.randomizeTooltip" aria-label="Randomiser musicalement les paramètres FEEL" data-i18n-aria="feel.randomizeTooltip"><i class="fa-solid fa-dice" aria-hidden="true"></i></button>
                             <button type="button" class="bt-button feel-reset" id="feel-reset" data-bt-tooltip="Réinitialiser les paramètres FEEL" data-i18n-tooltip="feel.resetTooltip" aria-label="Réinitialiser les paramètres FEEL" data-i18n-aria="feel.resetTooltip"><i class="fa-solid fa-arrow-rotate-left" aria-hidden="true"></i></button>
+                            <span class="feel-action-separator" aria-hidden="true"></span>
+                            <button type="button" class="bt-button feel-icon-action" id="feel-set-core"
+                                data-bt-tooltip="Définir la grille affichée comme nouveau CORE"
+                                data-i18n-tooltip="feel.setCoreTooltip"
+                                aria-label="Définir comme nouveau CORE"
+                                data-i18n-aria="feel.setCoreTooltip">
+                                <i class="fa-solid fa-floppy-disk" aria-hidden="true"></i>
+                            </button>
                         </div>
                     </summary>
                     <div class="feel-content">
@@ -98,35 +110,49 @@
                             <div class="feel-left-column">
                                 <div class="feel-pad-stack" id="feel-pad-view">
                                     <div class="feel-xy-wrap">
-                                        <div class="feel-axis-y"><span data-i18n="feel.energy">ÉNERGIE</span></div>
-                                        <div id="feel-xy" class="feel-xy" role="application" aria-label="Pad FEEL : transformation horizontale, énergie verticale" data-i18n-aria="feel.xyAria" tabindex="0"><div class="feel-grid-lines" aria-hidden="true"></div><div id="feel-dot" class="feel-dot" aria-hidden="true"></div></div>
-                                        <div class="feel-axis-x"><span data-i18n="feel.preserve">PRÉSERVER</span><strong id="feel-readout">TRANSFORMATION 25 · ÉNERGIE 50</strong><span data-i18n="feel.transform">TRANSFORMER</span></div>
+                                        <div class="feel-axis-y"><span data-i18n="feel.density">DENSITÉ</span><strong id="feel-density-axis-value">20</strong></div>
+                                        <div id="feel-xy" class="feel-xy" role="application" aria-label="Pad FEEL : transformation horizontale, densité verticale" data-i18n-aria="feel.xyAria" tabindex="0"><div class="feel-grid-lines" aria-hidden="true"></div><div id="feel-dot" class="feel-dot" aria-hidden="true"></div></div>
+                                        <div class="feel-axis-x"><span data-i18n="feel.preserve">PRÉSERVER</span><strong id="feel-readout">TRANSFORMATION 25</strong><span data-i18n="feel.transform">TRANSFORMER</span></div>
                                     </div>
                                     <div class="feel-xy-wrap feel-xy-wrap-secondary">
-                                        <div class="feel-axis-y"><span data-i18n="feel.density">DENSITÉ</span></div>
-                                        <div id="feel-groove-xy" class="feel-xy feel-groove-xy" role="application" aria-label="Pad FEEL : swing horizontal, densité verticale" data-i18n-aria="feel.grooveXyAria" tabindex="0"><div class="feel-grid-lines" aria-hidden="true"></div><div id="feel-groove-dot" class="feel-dot" aria-hidden="true"></div></div>
-                                        <div class="feel-axis-x"><span>0%</span><strong id="feel-groove-readout">SWING 0 · DENSITÉ 20</strong><span>100%</span></div>
+                                        <div class="feel-axis-y"><span data-i18n="feel.energy">ÉNERGIE</span><strong id="feel-energy-axis-value">50</strong></div>
+                                        <div id="feel-groove-xy" class="feel-xy feel-groove-xy" role="application" aria-label="Pad FEEL : swing horizontal, énergie verticale" data-i18n-aria="feel.grooveXyAria" tabindex="0"><div class="feel-grid-lines" aria-hidden="true"></div><div id="feel-groove-dot" class="feel-dot" aria-hidden="true"></div></div>
+                                        <div class="feel-axis-x"><span>0%</span><strong id="feel-groove-readout">SWING 0</strong><span>100%</span></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="feel-controls">
                                 <label class="feel-style"><span data-i18n="feel.orchestrationProfile">ORCHESTRATION</span><select id="feel-style" aria-label="Choisir l’orchestration" data-i18n-aria="feel.orchestrationProfileAria"><option value="minimal" data-i18n="feel.orchMinimal">Minimal</option><option value="pocket" data-i18n="feel.orchPocket">Pocket</option><option value="standard" data-i18n="feel.orchStandard">Standard</option><option value="busy" data-i18n="feel.orchBusy">Busy</option><option value="wild" data-i18n="feel.orchWild">Wild</option><option value="custom" data-i18n="feel.orchCustom">Personnalisé</option></select></label>
-                                <label class="feel-compact-control feel-right-hand-control"><span data-i18n="feel.rightHand">MAIN DROITE</span><select id="feel-right-hand"><option value="auto" data-i18n="feel.rhAuto">AUTO</option><option value="hihat" data-i18n="feel.rhHihat">CHARLEY</option><option value="ride" data-i18n="feel.rhRide">RIDE</option><option value="bell" data-i18n="feel.rhBell">CLOCHE RIDE</option><option value="perc" data-i18n="feel.rhPerc">TOMS</option></select></label>
+                                <label class="feel-compact-control feel-right-hand-control"><span data-i18n="feel.rightHand">MAIN DROITE</span><select id="feel-right-hand"><option value="hihat" data-i18n="feel.rhHihat">CHARLEY</option><option value="ride" data-i18n="feel.rhRide">RIDE</option></select></label>
                                 <div class="feel-influence-block" id="feel-advanced">
                                     <div class="feel-influence-title" data-i18n="feel.influence">INFLUENCE</div>
                                     <div class="feel-influence" role="group" aria-label="Influence FEEL par rôle">
                                         <button type="button" class="feel-influence-row" data-feel-influence="kick" data-label="Kick"><span>Kick</span><span class="influence-dots"><i class="influence-dot"></i><i class="influence-dot"></i><i class="influence-dot"></i></span></button>
                                         <button type="button" class="feel-influence-row" data-feel-influence="snare" data-label="Snare"><span>Snare</span><span class="influence-dots"><i class="influence-dot"></i><i class="influence-dot"></i><i class="influence-dot"></i></span></button>
-                                        <button type="button" class="feel-influence-row" data-feel-influence="ghosts" data-label="Ghosts"><span>Ghosts</span><span class="influence-dots"><i class="influence-dot"></i><i class="influence-dot"></i><i class="influence-dot"></i></span></button>
+                                        <button type="button" class="feel-influence-row" data-feel-influence="rightHand" data-label="Variante"><span id="feel-right-hand-influence-label">Open HH</span><span class="influence-dots"><i class="influence-dot"></i><i class="influence-dot"></i><i class="influence-dot"></i></span></button>
+                                        <button type="button" class="feel-influence-row" data-feel-influence="ghosts" data-label="Ghost Snare"><span data-i18n="feel.influenceGhosts">Ghost Snare</span><span class="influence-dots"><i class="influence-dot"></i><i class="influence-dot"></i><i class="influence-dot"></i></span></button>
                                         <button type="button" class="feel-influence-row" data-feel-influence="toms" data-label="Toms"><span>Toms</span><span class="influence-dots"><i class="influence-dot"></i><i class="influence-dot"></i><i class="influence-dot"></i></span></button>
+                                        <button type="button" class="feel-influence-row" data-feel-influence="crash" data-label="Crash"><span>Crash</span><span class="influence-dots"><i class="influence-dot"></i><i class="influence-dot"></i><i class="influence-dot"></i></span></button>
                                     </div>
-                                </div>
-                                <div class="feel-live-actions">
-                                    <button type="button" class="bt-button" id="live-break" data-bt-tooltip="Appui court : Fill · appui long : Break · relâchement : reprise (B)" data-i18n-tooltip="feel.liveBreak"><i class="fa-solid fa-pause" aria-hidden="true"></i> BREAK</button>
-                                    <button type="button" class="bt-button" id="live-variation" data-bt-tooltip="Nouvelle variation FEEL (V)" data-i18n-tooltip="feel.liveVariation"><i class="fa-solid fa-shuffle" aria-hidden="true"></i> VAR</button>
                                 </div>
                             </div>
                         </div>
+                        <details class="bt-accordion feel-help" id="feel-help">
+                            <summary class="bt-accordion-summary"><span class="bt-accordion-title"><i class="fa-regular fa-lightbulb" aria-hidden="true"></i><span data-i18n="feel.helpTitle">Aide</span></span><i class="fa-solid fa-chevron-right bt-accordion-chevron" aria-hidden="true"></i></summary>
+                            <div class="bt-accordion-body feel-help-body">
+                                <div class="feel-help-column feel-help-column-left">
+                                    <p class="feel-help-intro" data-i18n="feel.helpIntro">FEEL interprète votre groove sans remplacer l’original. Orchestration donne la direction, les pads règlent l’interprétation.</p>
+                                    <div><strong data-i18n="feel.helpPad1Title">PAD 1 · INTERPRÉTATION</strong><span data-i18n="feel.helpPad1">Transformation s’éloigne du groove original ; Densité ajoute ou retire des coups.</span></div>
+                                    <div><strong data-i18n="feel.helpPad2Title">PAD 2 · GROOVE</strong><span data-i18n="feel.helpPad2">Swing règle le balancement ; Énergie règle l’intensité du jeu.</span></div>
+                                </div>
+                                <div class="feel-help-column feel-help-column-right">
+                                    <div><strong data-i18n="feel.orchestrationProfile">ORCHESTRATION</strong><span data-i18n="feel.helpOrchestration">Choisit une manière de jouer, de Minimal à Wild. Commencez ici.</span></div>
+                                    <div><strong data-i18n="feel.rightHand">MAIN DROITE</strong><span data-i18n="feel.helpRightHand">Choisissez Charley ou Ride comme surface principale. Influence contrôle ensuite Open HH ou Bell, ainsi que Toms et Crash.</span></div>
+                                    <div><strong data-i18n="feel.influence">INFLUENCE</strong><span data-i18n="feel.helpInfluence">Kick/Snare règlent le CORE ; Open HH ou Bell enrichit la main droite ; Toms déplace une partie du motif sur les toms ; Crash ajoute des ponctuations.</span></div>
+                                    <div><strong>LIVE</strong><span data-i18n="feel.helpLive">Maintenez Break pour couper le groove ; relâchez pour un fill de reprise. Variation demande une nouvelle interprétation.</span></div>
+                                </div>
+                            </div>
+                        </details>
                     </div>
                 </details>
 
@@ -162,29 +188,6 @@
                     <div class="bt-right" id="sliders"></div>
                 </div>
 
-                <div class="transport-bar" aria-label="Transport">
-                    <button type="button" class="transport-button play-toggle" id="play-button" data-bt-tooltip="Lecture / arrêt (Espace)" data-i18n-tooltip="transport.playPause" aria-label="Lecture / arrêt" data-i18n-aria="transport.playPause" :aria-pressed="$store.ui.playing.toString()" :class="{ 'bt-buttondown': $store.ui.playing }">
-                        <i id="play-pause-icon" class="fa-solid" :class="$store.ui.playing ? 'fa-stop' : 'fa-play'" aria-hidden="true"></i>
-                    </button>
-                    <button type="button" class="transport-button tap-modern" id="tap-tempo" data-bt-tooltip="Tap tempo (T)" data-i18n-tooltip="transport.tap">TAP</button>
-                    <button type="button" class="transport-button tempo-nudge" id="minus-button" data-bt-tooltip="Diminuer le tempo" data-i18n-tooltip="transport.tempoDown" aria-label="Diminuer le tempo" data-i18n-aria="transport.tempoDown">−</button>
-                    <label class="tempo-edit" data-bt-tooltip="Tempo en BPM" data-i18n-tooltip="transport.tempo">
-                        <input id="metronome-tempo" type="number" min="40" max="240" step="1" value="120" inputmode="numeric" aria-label="Tempo en BPM" data-i18n-aria="transport.tempo">
-                        <span>BPM</span>
-                    </label>
-                    <button type="button" class="transport-button tempo-nudge" id="plus-button" data-bt-tooltip="Augmenter le tempo" data-i18n-tooltip="transport.tempoUp" aria-label="Augmenter le tempo" data-i18n-aria="transport.tempoUp">+</button>
-                    <button type="button" class="transport-button icon-only practice-button" id="practice-button" data-bt-tooltip="Entraînement" data-i18n-tooltip="transport.practice" aria-label="Afficher l’entraînement" data-i18n-aria="transport.practice" aria-expanded="false">
-                        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
-                    </button>
-                    <button type="button" class="transport-button icon-only" id="metronome-button" :aria-pressed="$store.ui.metronome.toString()" :class="{ 'bt-buttondown': $store.ui.metronome }" data-bt-tooltip="Métronome (M)" data-i18n-tooltip="transport.metronome" aria-label="Activer ou désactiver le métronome" data-i18n-aria="transport.metronome">
-                        <i class="fa-solid fa-stopwatch" aria-hidden="true"></i>
-                    </button>
-                    <div class="signature-control transport-signature" id="signature-button" data-bt-tooltip="Signature rythmique" data-i18n-tooltip="transport.signature">
-                        <div id="signature" class="signature-editor">
-                            <select id="signature-numerator" aria-label="Numérateur de signature"><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select><span>/</span><select id="signature-denominator" aria-label="Dénominateur de signature"><option value="4" selected>4</option><option value="8">8</option><option value="16">16</option></select>
-                        </div>
-                    </div>
-                </div>
                 <section id="practice-panel" class="practice-panel" hidden aria-labelledby="practice-title">
                     <div class="practice-panel-header">
                         <div>
@@ -217,9 +220,33 @@
                     <button type="button" class="bt-button memory-action icon-only danger-icon outline" data-variant="danger" id="cache-clear" data-bt-tooltip="Vider les mémoires" data-i18n-tooltip="memory.clear" aria-label="Vider les mémoires" data-i18n-aria="memory.clear"><i class="fa-solid fa-trash-can" aria-hidden="true"></i></button>
                 </div>
 
+                <div class="transport-bar" aria-label="Transport">
+                    <button type="button" class="transport-button play-toggle" id="play-button" data-bt-tooltip="Lecture / arrêt (Espace)" data-i18n-tooltip="transport.playPause" aria-label="Lecture / arrêt" data-i18n-aria="transport.playPause" :aria-pressed="$store.ui.playing.toString()" :class="{ 'bt-buttondown': $store.ui.playing }">
+                        <i id="play-pause-icon" class="fa-solid" :class="$store.ui.playing ? 'fa-stop' : 'fa-play'" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="transport-button tap-modern" id="tap-tempo" data-bt-tooltip="Tap tempo (T)" data-i18n-tooltip="transport.tap">TAP</button>
+                    <button type="button" class="transport-button tempo-nudge" id="minus-button" data-bt-tooltip="Diminuer le tempo" data-i18n-tooltip="transport.tempoDown" aria-label="Diminuer le tempo" data-i18n-aria="transport.tempoDown">−</button>
+                    <label class="tempo-edit" data-bt-tooltip="Tempo en BPM" data-i18n-tooltip="transport.tempo">
+                        <input id="metronome-tempo" type="number" min="40" max="240" step="1" value="120" inputmode="numeric" aria-label="Tempo en BPM" data-i18n-aria="transport.tempo">
+                        <span>BPM</span>
+                    </label>
+                    <button type="button" class="transport-button tempo-nudge" id="plus-button" data-bt-tooltip="Augmenter le tempo" data-i18n-tooltip="transport.tempoUp" aria-label="Augmenter le tempo" data-i18n-aria="transport.tempoUp">+</button>
+                    <button type="button" class="transport-button icon-only practice-button" id="practice-button" data-bt-tooltip="Entraînement" data-i18n-tooltip="transport.practice" aria-label="Afficher l’entraînement" data-i18n-aria="transport.practice" aria-expanded="false">
+                        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="transport-button icon-only" id="metronome-button" :aria-pressed="$store.ui.metronome.toString()" :class="{ 'bt-buttondown': $store.ui.metronome }" data-bt-tooltip="Métronome (M)" data-i18n-tooltip="transport.metronome" aria-label="Activer ou désactiver le métronome" data-i18n-aria="transport.metronome">
+                        <i class="fa-solid fa-stopwatch" aria-hidden="true"></i>
+                    </button>
+                    <div class="signature-control transport-signature" id="signature-button" data-bt-tooltip="Signature rythmique" data-i18n-tooltip="transport.signature">
+                        <div id="signature" class="signature-editor">
+                            <select id="signature-numerator" aria-label="Numérateur de signature"><option value="2">2</option><option value="3">3</option><option value="4" selected>4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select><span>/</span><select id="signature-denominator" aria-label="Dénominateur de signature"><option value="4" selected>4</option><option value="8">8</option><option value="16">16</option></select>
+                        </div>
+                    </div>
+                </div>
                 <div class="drum-machine-clear"></div>
                 <div class="drum-machine-clear"></div>
-
+            </div>
+            <div class="shortcut-help-outside">
                 <details class="shortcut-help" id="shortcut-help">
                     <summary><i class="fa-regular fa-keyboard" aria-hidden="true"></i><span data-i18n="shortcut.title">Raccourcis clavier</span></summary>
                     <div class="shortcut-help-body">
@@ -228,6 +255,7 @@
                             <div class="shortcut-item"><span data-i18n="shortcut.tap">Tap tempo</span><span class="shortcut-keys"><kbd>T</kbd></span></div>
                             <div class="shortcut-item"><span data-i18n="shortcut.metronome">Métronome</span><span class="shortcut-keys"><kbd>M</kbd></span></div>
                             <div class="shortcut-item"><span data-i18n="shortcut.practice">Panneau Entraînement</span><span class="shortcut-keys"><kbd>L</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.fullscreen">Plein écran</span><span class="shortcut-keys"><kbd>Shift</kbd><kbd>X</kbd></span></div>
                             <div class="shortcut-item"><span>Live Fill / Break maintenu</span><span class="shortcut-keys"><kbd>B</kbd></span></div>
                             <div class="shortcut-item"><span>Live Crash</span><span class="shortcut-keys"><kbd>C</kbd></span></div>
                             <div class="shortcut-item"><span>Variation FEEL</span><span class="shortcut-keys"><kbd>V</kbd></span></div>
@@ -253,7 +281,7 @@
                             <div class="shortcut-item"><span data-i18n="shortcut.velocityAdjust">Vélocité de la sélection</span><span class="shortcut-keys"><kbd>−</kbd><kbd>+</kbd></span></div>
                             <div class="shortcut-item"><span>Vélocité de la sélection</span><span class="shortcut-keys"><kbd>−</kbd><kbd>+</kbd></span></div>
                             <div class="shortcut-item"><span>Copier / coller / dupliquer la sélection</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>C</kbd><kbd>V</kbd><kbd>D</kbd></span></div>
-                            <div class="shortcut-item"><span>Pads batterie clavier · Record si armé + Play</span><span class="shortcut-keys"><kbd>A/Q</kbd><kbd>Z/W</kbd><kbd>E</kbd><kbd>R</kbd><kbd>U</kbd><kbd>I</kbd><kbd>O</kbd><kbd>P</kbd><kbd>^/[</kbd></span></div>
+                            <div class="shortcut-item"><span>Pads batterie clavier · Record si armé + Play</span><span class="shortcut-keys"><kbd>A/Q</kbd><kbd>Z/W</kbd><kbd>E</kbd><kbd>R</kbd><kbd>U</kbd><kbd>I</kbd><kbd>O</kbd><kbd>P</kbd><kbd>^/[</kbd><kbd>$/]</kbd></span></div>
                             <div class="shortcut-item velocity-legend"><span data-i18n="shortcut.velocity">Niveaux de vélocité</span><span class="velocity-cycle">1 Ghost → 2 Soft → 3 Normal → 4 Strong → 5 Accent</span></div>
                         </div>
                     </div>

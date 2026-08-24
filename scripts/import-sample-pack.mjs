@@ -1,4 +1,4 @@
-import { access, cp, mkdir, readFile, readdir, rename, writeFile } from "node:fs/promises";
+import { access, cp, mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { basename, extname, join, relative, resolve } from "node:path";
 import { spawn } from "node:child_process";
 import { createHash } from "node:crypto";
@@ -76,7 +76,6 @@ function worldClassifier(match,file){
   return {code:kind.replace(/\s+/g,"-"),instrument:"percussion",articulation,legacyType:"perc"};
 }
 async function walk(dir){ const out=[]; for(const ent of await readdir(dir,{withFileTypes:true})){ const p=join(dir,ent.name); if(ent.isDirectory()) out.push(...await walk(p)); else out.push(p); } return out; }
-function slug(s){ return s.toLowerCase().replace(/\.[^.]+$/," ").replace(/[^a-z0-9]+/g,"_").replace(/^_|_$/g,""); }
 function run(cmd,args){ return new Promise((res,rej)=>{ const p=spawn(cmd,args,{stdio:"inherit"}); p.on("exit",c=>c===0?res():rej(new Error(`${cmd} exited ${c}`))); }); }
 async function sha256(path){ const b=await readFile(path); return createHash("sha256").update(b).digest("hex"); }
 const files=await walk(sourceRoot); const selected=[];

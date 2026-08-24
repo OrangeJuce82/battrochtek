@@ -38,7 +38,7 @@ const checks = [
   [app.includes("isApplyingUrlState") && app.includes("BattrochtekUrlSync?.isApplying") && app.includes("urlApplyCount"), "garde anti-boucle URL params ↔ état app présent"],
   [app.includes("reloadFromUrl()") && app.includes("hashchange") && app.includes("popstate") && app.includes("applyUrlState") && app.includes("lastAppliedHash"), "navigation favoris/historique recharge le groove URL sans reload"],
   [sw.includes('"./vendor/oat/oat.min.css"') && sw.includes('"./vendor/oat/oat.min.js"'), "Oat inclus dans l’app shell PWA"],
-  [sw.includes('battrochtek-v90') && sw.includes('battrochtek-audio-v6'), "caches PWA/audio v90/v6"],
+  [sw.includes('battrochtek-v91') && sw.includes('battrochtek-audio-v6'), "caches PWA/audio v91/v6"],
   [css.includes('--bt-instrument-text:') && !app.includes('label.style.color'), "couleur des instruments pilotée par le thème"],
   [css.includes('.bt-tooltip') && html.includes('id="bt-tooltip"'), "tooltips adaptatifs présents"],
   [!html.includes('id="bt-help"'), "ancienne aide au survol retirée"],

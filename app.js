@@ -36,7 +36,6 @@
         return Object.freeze({ key:sample.key, file:sample.file, label:sample.label, legacyType:type, instrument, articulation, velocity:Object.freeze({min:1,max:127}), roundRobinGroup:null, roundRobinIndex:null, bank, sourceFile:sample.source||"", sourceCollection:"legacy-import", license:"unspecified" });
     };
     const externalSampleManifest = window.BATTROCHTEK_SAMPLE_MANIFEST?.schemaVersion===2 ? window.BATTROCHTEK_SAMPLE_MANIFEST.samples : [];
-    const externalSampleKits = window.BATTROCHTEK_SAMPLE_MANIFEST?.schemaVersion===2 && Array.isArray(window.BATTROCHTEK_SAMPLE_MANIFEST.kits) ? window.BATTROCHTEK_SAMPLE_MANIFEST.kits : [];
     const externalSampleIndex = new Map(externalSampleManifest.map(sample=>[sample.key,sample]));
     const SAMPLE_MANIFEST = Object.freeze([
         ...SAMPLE_LIBRARY.map(sample=>Object.freeze({ ...inferSampleMeta(sample), ...(externalSampleIndex.get(sample.key)||{}) })),
@@ -69,7 +68,6 @@
         return `${bank}|${sample.key}`;
     };
     const SAMPLE_CANDIDATES = Object.freeze(SAMPLE_MANIFEST.reduce((groups,sample)=>{ const key=sampleResolverGroup(sample); (groups[key]||(groups[key]=[])).push(sample); return groups; },{}));
-    const TRACK_SAMPLE_TYPES = Object.freeze([['cymbal','fx','perc'],['cymbal','perc','fx'],['hat','perc','fx'],['hat','perc'],['snare','perc'],['tom','perc'],['tom','perc'],['tom','perc'],['kick','perc','fx']]);
     const SAMPLE_TECHNICAL_BANKS = new Set(["jazz-club","vintage-rock","world-percussion","bt-world","bt-analog","bt-detroit","bt-digital80"]);
     const SAMPLE_PICKER_HIDDEN_KEYS = new Set([
         // Replaced by the cleaner VCSL world-vcsl choices. These legacy imports
@@ -100,7 +98,6 @@
         KeyQ:8, KeyW:4, KeyE:3, KeyR:2,
         KeyU:7, KeyI:6, KeyO:5, KeyP:1, BracketLeft:0
     });
-    const PAD_KEYBOARD_LABELS = Object.freeze({ KeyQ:"A/Q", KeyW:"Z/W", KeyE:"E", KeyR:"R", KeyU:"U", KeyI:"I", KeyO:"O", KeyP:"P", BracketLeft:"^/[" });
     const VELOCITY_LEVEL_ORDER = Object.freeze(["ghost", "soft", "normal", "strong", "accent"]);
     const VELOCITY_LEVEL_NUMBER = Object.freeze({ ghost:1, soft:2, normal:3, strong:4, accent:5 });
 
@@ -3864,7 +3861,7 @@
                 const observedHash = location.hash;
                 if (observedHash === lastAppliedHash) return;
                 urlSyncQueued = true;
-                queueMicrotask(() => {
+                Promise.resolve().then(() => {
                     urlSyncQueued = false;
                     if (isApplyingUrlState) return;
                     const hash = location.hash;

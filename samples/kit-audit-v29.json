@@ -1,0 +1,178 @@
+{
+  "sampleCount": 295,
+  "addedJazzMidTomSamples": 8,
+  "kitCount": 10,
+  "issues": [],
+  "kits": [
+    {
+      "name": "STUDIO PUNCH",
+      "category": "Acoustique",
+      "color": "#2d9cdb",
+      "tracks": [
+        "legacy_crash1",
+        "legacy_ride1",
+        "legacy_hat_open_1",
+        "legacy_hat_closed_1",
+        "studio_snare_a",
+        "studio_tom_a",
+        "studio_tom_b",
+        "deep_tom_b",
+        "studio_kick_a",
+        "metronome_tick"
+      ]
+    },
+    {
+      "name": "SOUL POCKET",
+      "category": "Acoustique",
+      "color": "#d4a72c",
+      "tracks": [
+        "legacy_crash1",
+        "legacy_ride1",
+        "legacy_hat_open_2",
+        "legacy_hat_closed_2",
+        "warm_snare_a",
+        "warm_tom_a",
+        "warm_tom_b",
+        "deep_tom_a",
+        "warm_kick_a",
+        "metronome_tick"
+      ]
+    },
+    {
+      "name": "JAZZ CLUB",
+      "color": "#c9a35c",
+      "tracks": [
+        "legacy_crash1",
+        "jazz_club_ride_vl1_rr1",
+        "jazz_club_hho_vl1_rr1",
+        "jazz_club_hhc_vl1_rr1",
+        "jazz_club_snare_vl1_rr1",
+        "jazz_club_tomhi_vl1_rr1",
+        "jazz_club_tommid_vl1_rr1",
+        "jazz_club_tomlo_vl1_rr1",
+        "jazz_club_kick_vl1_rr1",
+        "metronome_tick"
+      ],
+      "category": "Acoustique"
+    },
+    {
+      "name": "VINTAGE ROCK",
+      "color": "#a85f3d",
+      "tracks": [
+        "vintage_rock_crash_vl1_rr1",
+        "vintage_rock_ride_vl10_rr1",
+        "vintage_rock_hho_vl1_rr1",
+        "vintage_rock_hhc_vl1_rr1",
+        "vintage_rock_snare_vl10_rr1",
+        "vintage_rock_tomhi_vl1_rr1",
+        "vintage_rock_tommid_vl1_rr1",
+        "vintage_rock_tomlo_vl1_rr1",
+        "vintage_rock_kick_vl10_rr1",
+        "metronome_tick"
+      ],
+      "category": "Acoustique"
+    },
+    {
+      "name": "WORLD PERCUSSION",
+      "color": "#e48a1d",
+      "tracks": [
+        "bt_world_tambourine",
+        "bt_world_triangle_open",
+        "bt_world_shaker_rr1",
+        "bt_world_claves_rr1",
+        "bt_brush_hit_rr1",
+        "bt_world_bongo_vl2_rr1",
+        "bt_world_conga_vl2_rr1",
+        "bt_world_frame_drum_vl2_rr1",
+        "bt_world_frame_drum_vl3_rr1",
+        "metronome_tick"
+      ],
+      "category": "Acoustique"
+    },
+    {
+      "name": "ANALOG CLASSIC",
+      "color": "#ff2f7d",
+      "tracks": [
+        "bt_analog_crash",
+        "bt_analog_ride",
+        "bt_analog_hho_rr1",
+        "bt_analog_hhc_rr1",
+        "bt_analog_snare_rr1",
+        "bt_analog_tom_high",
+        "bt_analog_tom_mid",
+        "bt_analog_tom_low",
+        "bt_analog_kick_rr1",
+        "metronome_tick"
+      ],
+      "category": "Électro"
+    },
+    {
+      "name": "DETROIT HYBRID",
+      "color": "#ff5a36",
+      "tracks": [
+        "bt_detroit_crash",
+        "bt_detroit_ride",
+        "bt_detroit_hho_rr1",
+        "bt_detroit_hhc_rr1",
+        "bt_detroit_snare_rr1",
+        "bt_detroit_tom_high",
+        "bt_detroit_tom_mid",
+        "bt_detroit_tom_low",
+        "bt_detroit_kick_rr1",
+        "metronome_tick"
+      ],
+      "category": "Électro"
+    },
+    {
+      "name": "DIGITAL 80",
+      "color": "#00a7a7",
+      "tracks": [
+        "bt_digital80_crash",
+        "bt_digital80_ride",
+        "bt_digital80_hho",
+        "bt_digital80_hhc",
+        "bt_digital80_snare_rr1",
+        "bt_digital80_tom_high",
+        "bt_digital80_tom_mid",
+        "bt_digital80_tom_low",
+        "bt_digital80_kick_rr1",
+        "metronome_tick"
+      ],
+      "category": "Électro"
+    },
+    {
+      "name": "SP DUST",
+      "category": "Électro",
+      "color": "#9a6b3f",
+      "tracks": [
+        "bt_analog_crash",
+        "bt_analog_ride",
+        "bt_analog_hho_rr1",
+        "electro_hat_closed_metal_01",
+        "electro_snare_distorted_01",
+        "bt_analog_tom_high",
+        "bt_analog_tom_mid",
+        "bt_analog_tom_low",
+        "electro_kick_distorted_01",
+        "metronome_tick"
+      ]
+    },
+    {
+      "name": "GLITCH LAB",
+      "category": "Électro",
+      "color": "#e83e8c",
+      "tracks": [
+        "bt_digital80_crash",
+        "bt_digital80_ride",
+        "bt_digital80_hho",
+        "electro_hat_closed_distorted_01",
+        "electro_snare_distorted_02",
+        "bt_digital80_tom_high",
+        "bt_digital80_tom_mid",
+        "bt_digital80_tom_low",
+        "electro_kick_distorted_02",
+        "metronome_tick"
+      ]
+    }
+  ]
+}

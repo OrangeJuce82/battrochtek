@@ -1,0 +1,803 @@
+[
+  {
+    "key": "bt_analog_kick_rr1",
+    "file": "sounds/cc0-electronic/bt_analog_kick_rr1.wav",
+    "sha256": "ee7262efa6749c839fe5ac57604a0a19ca5a22f10d46b6cc7b57f62f0b3df3fa",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_analog_kick_rr2",
+    "file": "sounds/cc0-electronic/bt_analog_kick_rr2.wav",
+    "sha256": "49d83617953230cfe3f025122da811fd66263afb24ecbfc60d5c6e76c1eb1201",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_analog_snare_rr1",
+    "file": "sounds/cc0-electronic/bt_analog_snare_rr1.wav",
+    "sha256": "e1189f53d69e17efef25b1af2d2c7301427ecee132e9fe3e5944898c6fcc0f04",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_analog_snare_rr2",
+    "file": "sounds/cc0-electronic/bt_analog_snare_rr2.wav",
+    "sha256": "0bb4dda246a1fc964fb37ad5ad5821d18b6e6370316956d6f42e6bdf653c923c",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_analog_hhc_rr1",
+    "file": "sounds/cc0-electronic/bt_analog_hhc_rr1.wav",
+    "sha256": "648efd8398bad9d062e1486cbeb7f9665fe1d215911d52d24c9c4fdb7ade6425",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_analog_hhc_rr2",
+    "file": "sounds/cc0-electronic/bt_analog_hhc_rr2.wav",
+    "sha256": "c32f63d92f0a3222857fe6691b065a2a1a5d2d514460597218b1ec081e3af3e1",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_analog_hho_rr1",
+    "file": "sounds/cc0-electronic/bt_analog_hho_rr1.wav",
+    "sha256": "1db255a708a934bafaf74139a9e306b637677f6c58942bb7b4230f0583dd4668",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_analog_hho_rr2",
+    "file": "sounds/cc0-electronic/bt_analog_hho_rr2.wav",
+    "sha256": "e4a65ccae31c3c9a25437375e4c3236dac2681af9683559fca8f7404e792054e",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_analog_hhp",
+    "file": "sounds/cc0-electronic/bt_analog_hhp.wav",
+    "sha256": "ce6e95a6b3193386ef51e07a2fe57c2f901d74d18e44b498b7c0adc0b15d433e",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_analog_clap",
+    "file": "sounds/cc0-electronic/bt_analog_clap.wav",
+    "sha256": "959e910ad38cdb99579a02257d74d17b3ce74789de7b0718a98f70c722e36475",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_analog_cowbell",
+    "file": "sounds/cc0-electronic/bt_analog_cowbell.wav",
+    "sha256": "b1aceb7f2624e2c73c642f87007ac5865d9f7bacce5f5e3204db527a3cc8110a",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_analog_tom_high",
+    "file": "sounds/cc0-electronic/bt_analog_tom_high.wav",
+    "sha256": "ce80880a249046c5b4aba8d670d6f6a0f510b9c2b105f16f92db2c54d8de1b10",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_analog_tom_mid",
+    "file": "sounds/cc0-electronic/bt_analog_tom_mid.wav",
+    "sha256": "db7686bd74ef8f2d484611d1c18bcbd76f81218b90a22567478a8196755bd2fe",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_analog_tom_low",
+    "file": "sounds/cc0-electronic/bt_analog_tom_low.wav",
+    "sha256": "e2d438b79f7ec56f7ccc9a1eb8fdd4123a09bd29d12bc6d8c708f15bbf401e86",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_analog_crash",
+    "file": "sounds/cc0-electronic/bt_analog_crash.wav",
+    "sha256": "34d13a7eef15668445e21a8cd3f8f82ad464f3f3e5d1a79baa8436d68a91134f",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_analog_ride",
+    "file": "sounds/cc0-electronic/bt_analog_ride.wav",
+    "sha256": "e6546205f297ea42e55b249e10868c9783597a6ea31743749ac7e1349b8f7be7",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_detroit_kick_rr1",
+    "file": "sounds/cc0-electronic/bt_detroit_kick_rr1.wav",
+    "sha256": "c1e80f4360ab41937b4f2f2403f43fdf8bdb7ff3fe23d88fb88eeff6d6240ffb",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_detroit_kick_rr2",
+    "file": "sounds/cc0-electronic/bt_detroit_kick_rr2.wav",
+    "sha256": "8be44c5189ee77421e06ea10fb05c110b168816d742d3f206ad17b791989a407",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_detroit_snare_rr1",
+    "file": "sounds/cc0-electronic/bt_detroit_snare_rr1.wav",
+    "sha256": "8b6aa679fc22bc92dd9293a0ceb5add2b7333311756cf528e6ca031e8306dd3d",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_detroit_snare_rr2",
+    "file": "sounds/cc0-electronic/bt_detroit_snare_rr2.wav",
+    "sha256": "c0e72f9614fa09ec93243be39f4a15f88d6bf803fb741016f66f9067d626f30e",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_detroit_hhc_rr1",
+    "file": "sounds/cc0-electronic/bt_detroit_hhc_rr1.wav",
+    "sha256": "b531d30752a05209d8bc3a4df18386c8c53ef7eddfbd076dacc8e35683804527",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_detroit_hhc_rr2",
+    "file": "sounds/cc0-electronic/bt_detroit_hhc_rr2.wav",
+    "sha256": "958ab6e1b59b1a346405fc876bcc9a52236c91fba6452ab4b01e6d87b7c9a31a",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_detroit_hho_rr1",
+    "file": "sounds/cc0-electronic/bt_detroit_hho_rr1.wav",
+    "sha256": "3a2be27e200660fede75ce15531c3a3e1249632d6e65d83ff1574260ee832142",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_detroit_hho_rr2",
+    "file": "sounds/cc0-electronic/bt_detroit_hho_rr2.wav",
+    "sha256": "2ba3acba10afc9ad909054d4e9d1f384ebf4873929add441d6a39d654b353e0c",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_detroit_hhp",
+    "file": "sounds/cc0-electronic/bt_detroit_hhp.wav",
+    "sha256": "a282e6e89ea77f02e960eae966b5a1c3f76d6ff55501a88ce981fdfc03aadb2b",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_detroit_clap",
+    "file": "sounds/cc0-electronic/bt_detroit_clap.wav",
+    "sha256": "06571a0b721cef9eca53fb4d483f1e60e11e24e4437a3915d7b57c292a985144",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_detroit_rim",
+    "file": "sounds/cc0-electronic/bt_detroit_rim.wav",
+    "sha256": "2f213ba795ce974f902892f94194c010adfbd8a26b818b75a6f9513ff4882b88",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_detroit_tom_high",
+    "file": "sounds/cc0-electronic/bt_detroit_tom_high.wav",
+    "sha256": "1346c7734a3ef7ec991d44b08ee6676646c904cc64087b21c09d2f99bb4e1439",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_detroit_tom_mid",
+    "file": "sounds/cc0-electronic/bt_detroit_tom_mid.wav",
+    "sha256": "f08b5b9e711c53ae7e5110f694b33fc74b14e5d44b882c380b6ee2c9a26e54f8",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_detroit_tom_low",
+    "file": "sounds/cc0-electronic/bt_detroit_tom_low.wav",
+    "sha256": "c16919a2afae36e1349d761e8bdb12e69830453a772b827d87cca20d5a1d73a0",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_detroit_crash",
+    "file": "sounds/cc0-electronic/bt_detroit_crash.wav",
+    "sha256": "9edf3f6f3595b55d98fba81ff325b94bf8ceee66ba12c74ae62071cfa1f322a1",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_detroit_ride",
+    "file": "sounds/cc0-electronic/bt_detroit_ride.wav",
+    "sha256": "95bd38bfe64c06f822494b274c1bc7282969682d034975b46108a1c8d3cc667a",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_detroit_ride_bell",
+    "file": "sounds/cc0-electronic/bt_detroit_ride_bell.wav",
+    "sha256": "41b5f22f895b98e48b9792aa644b2d4d711171f7e28f00f9d2565a386026828c",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_digital80_kick_rr1",
+    "file": "sounds/cc0-electronic/bt_digital80_kick_rr1.wav",
+    "sha256": "7241fb4793fdf071b3e5a72af3f1d2523782a00b7f6fb45a5b14aa28b6e00d43",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_digital80_kick_rr2",
+    "file": "sounds/cc0-electronic/bt_digital80_kick_rr2.wav",
+    "sha256": "44790d5093b68edaf096ddcec3a85678239edbbce745254a78963b617de88b04",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_digital80_snare_rr1",
+    "file": "sounds/cc0-electronic/bt_digital80_snare_rr1.wav",
+    "sha256": "3b1b6d0c524426ccfdc5e3c191a8de71a49b49e0552a1f47007b568869d21c3e",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_digital80_snare_rr2",
+    "file": "sounds/cc0-electronic/bt_digital80_snare_rr2.wav",
+    "sha256": "fb6570d7b09e260730022b56872bbcc1cde3d1fac0319b5d36a36fc0320baa99",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_digital80_hhc",
+    "file": "sounds/cc0-electronic/bt_digital80_hhc.wav",
+    "sha256": "9e1e70b7455c5ea067d72d34dab3100976a9eee1a8de3d94be5dca93bd6ce30a",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_digital80_hho",
+    "file": "sounds/cc0-electronic/bt_digital80_hho.wav",
+    "sha256": "1cf82a2249a03a73dafd551bfdf9fdeb1e8d31b56971c566d6410fd247d9ac94",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_digital80_rim",
+    "file": "sounds/cc0-electronic/bt_digital80_rim.wav",
+    "sha256": "38ebe6c98848fe717ce1910d9d3bd6e0c5cc969a6a016bb019082fe650506baa",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_digital80_clap",
+    "file": "sounds/cc0-electronic/bt_digital80_clap.wav",
+    "sha256": "42be5a1c370909a4d0af72c2a03c8998027201645d354b9b47e36a2fe5524496",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_digital80_tom_high",
+    "file": "sounds/cc0-electronic/bt_digital80_tom_high.wav",
+    "sha256": "24990bf3206711b93a4438a453692efbb980144b6c33fafbf52747826b120d8a",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_digital80_tom_mid",
+    "file": "sounds/cc0-electronic/bt_digital80_tom_mid.wav",
+    "sha256": "4301267ae63b6b47ff6601fe726d13199f3b73f466804233fbe1c5b7417858f2",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_digital80_tom_low",
+    "file": "sounds/cc0-electronic/bt_digital80_tom_low.wav",
+    "sha256": "9a2324f273fd41232e6ecf4a71f3c10b85deba4070ac34fd5fa0e653257c849f",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_digital80_crash",
+    "file": "sounds/cc0-electronic/bt_digital80_crash.wav",
+    "sha256": "634a1ab009fc07991c9b73e9a4314f891ddfffe353f7057e2911583444a0b8be",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_digital80_ride",
+    "file": "sounds/cc0-electronic/bt_digital80_ride.wav",
+    "sha256": "1982965f7ad30bc55aaccb348d893abab0fc49534392817771b8d2c77843ef1e",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_digital80_cowbell",
+    "file": "sounds/cc0-electronic/bt_digital80_cowbell.wav",
+    "sha256": "9fd56cba306a12c4e4d147608ff5f64ed854966da3ae7c9a3b0fdba572e61122",
+    "sourceCollection": "Battrochtek CC0 Electronic Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-electronic-samples.py"
+  },
+  {
+    "key": "bt_world_conga_vl1_rr1",
+    "file": "sounds/cc0-world/bt_world_conga_vl1_rr1.wav",
+    "sha256": "5263f7e2b11ab00046b5f0bab5633e4884851e826dc97cc260821ec4575946d1",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_conga_vl1_rr2",
+    "file": "sounds/cc0-world/bt_world_conga_vl1_rr2.wav",
+    "sha256": "4c7432cb0ed04325fb902f8bce7fafce56e88549986ec3e5ea21c40967c9f692",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_conga_vl2_rr1",
+    "file": "sounds/cc0-world/bt_world_conga_vl2_rr1.wav",
+    "sha256": "2f69c8b47c100419e54fcad9f6dbb6daf01dedaf955ddf189e7f396fe4046bb8",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_conga_vl2_rr2",
+    "file": "sounds/cc0-world/bt_world_conga_vl2_rr2.wav",
+    "sha256": "25e54275865b15d54e88c495e03d8a80a60ad691e4c8a2bdd50ea4af082f3823",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_conga_vl3_rr1",
+    "file": "sounds/cc0-world/bt_world_conga_vl3_rr1.wav",
+    "sha256": "97d4727589ff09aa3e246bb9de1e7d5f52b8bddda08883636e4c6cfe5521ebd2",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_conga_vl3_rr2",
+    "file": "sounds/cc0-world/bt_world_conga_vl3_rr2.wav",
+    "sha256": "3688d132fcd19097b5073f5ccb8fff2ec3257254633c3ea499c2a2f440dd6068",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_bongo_vl1_rr1",
+    "file": "sounds/cc0-world/bt_world_bongo_vl1_rr1.wav",
+    "sha256": "9c74ab49b05789d54b589b694b2a8568f936a79582105c7afc87b9e6d441bd87",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_bongo_vl1_rr2",
+    "file": "sounds/cc0-world/bt_world_bongo_vl1_rr2.wav",
+    "sha256": "41104acd13690943b4d1879ec306b59c8bc346a58fb621fea28e3364ce686add",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_bongo_vl2_rr1",
+    "file": "sounds/cc0-world/bt_world_bongo_vl2_rr1.wav",
+    "sha256": "429f817deb6f50319b601bf637442db582eb52fc1f6dc91e519e766c99d19a52",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_bongo_vl2_rr2",
+    "file": "sounds/cc0-world/bt_world_bongo_vl2_rr2.wav",
+    "sha256": "0ccf0c6b909ee7ea2b9548e231fd2857ac930ff3680f662aa4086d7217efea17",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_bongo_vl3_rr1",
+    "file": "sounds/cc0-world/bt_world_bongo_vl3_rr1.wav",
+    "sha256": "5f8f02d453c4e92cbd96782777b1a516515eac9751a0c9c8a9bb878717ebb869",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_bongo_vl3_rr2",
+    "file": "sounds/cc0-world/bt_world_bongo_vl3_rr2.wav",
+    "sha256": "55cad60c9be2be672a08ae9a39fe9f752d57960442ba2153777fe6e37e955922",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_frame_drum_vl1_rr1",
+    "file": "sounds/cc0-world/bt_world_frame_drum_vl1_rr1.wav",
+    "sha256": "dbe57cc3251039c98415d5765a4fb31f22c537cdfa13ce4f353ae47765f7e5b7",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_frame_drum_vl1_rr2",
+    "file": "sounds/cc0-world/bt_world_frame_drum_vl1_rr2.wav",
+    "sha256": "df2207022719427c77a21974462a65dce25e4ef3830c79f0e89ff9e9010e7a48",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_frame_drum_vl2_rr1",
+    "file": "sounds/cc0-world/bt_world_frame_drum_vl2_rr1.wav",
+    "sha256": "385570c68b72c7ee0e983d6151be272e30cfd15fb27bebddddd0c09ed7d350f5",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_frame_drum_vl2_rr2",
+    "file": "sounds/cc0-world/bt_world_frame_drum_vl2_rr2.wav",
+    "sha256": "7900028fba91b9da6e5b78c8a9508f38160698b141739a574c28640c0cbfa11e",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_frame_drum_vl3_rr1",
+    "file": "sounds/cc0-world/bt_world_frame_drum_vl3_rr1.wav",
+    "sha256": "5b0d561be695fcb1c2fa1d2e4d1ee8db3fd7e0ad46aa2f3e1b4aee7f7df6b823",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_frame_drum_vl3_rr2",
+    "file": "sounds/cc0-world/bt_world_frame_drum_vl3_rr2.wav",
+    "sha256": "e5b54657a90c0df18cf2a8de4c7e6c3551a760299b0f90bc718af610a3ab1067",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_conga_muted",
+    "file": "sounds/cc0-world/bt_world_conga_muted.wav",
+    "sha256": "1ad0891d23e87b8955dd0868c152ba337e28a585d5d81a945a5b37b8e8baa80d",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_conga_slap",
+    "file": "sounds/cc0-world/bt_world_conga_slap.wav",
+    "sha256": "d0a59a5827f7a2ddbb39df38763b3d0791c1ebb27104484c14177ed9919aaf54",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_bongo_slap",
+    "file": "sounds/cc0-world/bt_world_bongo_slap.wav",
+    "sha256": "a13f577060c47f901fcd3184a094c43c0d8f8fcfe60344ed3f2d8ed9025a600a",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_claves_rr1",
+    "file": "sounds/cc0-world/bt_world_claves_rr1.wav",
+    "sha256": "e92f5536a0acc55dec4907ec737244da625c2bdc58c765e983f4083e0b88c73d",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_claves_rr2",
+    "file": "sounds/cc0-world/bt_world_claves_rr2.wav",
+    "sha256": "8db603ee5cefb676065f1bdd19be987cf200f4e7c08929e44601317004df3097",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_claves_rr3",
+    "file": "sounds/cc0-world/bt_world_claves_rr3.wav",
+    "sha256": "5e3f41b62af8c42d4fafeaad737f315a75d161bf1c73f3b3a3034fb266d09a14",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_woodblock_rr1",
+    "file": "sounds/cc0-world/bt_world_woodblock_rr1.wav",
+    "sha256": "596c325fd480fc574d259801a7f87f9ba93d6c755b57eeb96ad7a1abe968e5ec",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_woodblock_rr2",
+    "file": "sounds/cc0-world/bt_world_woodblock_rr2.wav",
+    "sha256": "ed412018117c475eb05e0f08fcf2e39565cfd360d79690351b4300430d58be30",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_agogo_high",
+    "file": "sounds/cc0-world/bt_world_agogo_high.wav",
+    "sha256": "c8bdabea191aceee01f8ab877d938075ff466c3c648c7270b869b9cd02f44202",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_agogo_low",
+    "file": "sounds/cc0-world/bt_world_agogo_low.wav",
+    "sha256": "37009615794c81ba3c58651f7f7301e8f2f80d750c82ec0284f9625ab7094233",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_cowbell",
+    "file": "sounds/cc0-world/bt_world_cowbell.wav",
+    "sha256": "d3665d4aa07ac9721e92bb48c89e8456bda133f2f5494b6ccbff9c69c8682a87",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_triangle_open",
+    "file": "sounds/cc0-world/bt_world_triangle_open.wav",
+    "sha256": "916608ef51986dd14c34865a4035b8e8d4e985d48504ab3d47db4f31e217c29e",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_triangle_muted",
+    "file": "sounds/cc0-world/bt_world_triangle_muted.wav",
+    "sha256": "5208cf3c0ce90b3d02aa9bde1c891dd6632f8200aa2e9bf8776048b5cedd8f17",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_shaker_rr1",
+    "file": "sounds/cc0-world/bt_world_shaker_rr1.wav",
+    "sha256": "32f12ffc95eeb32daa537055701336af4cfca3d76ca49e77e461f305040daac5",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_shaker_rr2",
+    "file": "sounds/cc0-world/bt_world_shaker_rr2.wav",
+    "sha256": "2847517c5a9e7b2f18cfb079f6f7e9598c1656a188552d30791f3b3099ad563a",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_maracas",
+    "file": "sounds/cc0-world/bt_world_maracas.wav",
+    "sha256": "5e474da54b2b905eb1569350855ae48752ae33501353f5cfc400d44669c787cf",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_guiro_fast",
+    "file": "sounds/cc0-world/bt_world_guiro_fast.wav",
+    "sha256": "f8818b71a964e9295e3cdfb2c0399f086ceef4d9260d1e66449a6a70ecb3e897",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_guiro_slow",
+    "file": "sounds/cc0-world/bt_world_guiro_slow.wav",
+    "sha256": "a7b4f6400234951d8bb9b93216e40f2b8644e6cf45dae69e5426d2d15d3e1f62",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_world_tambourine",
+    "file": "sounds/cc0-world/bt_world_tambourine.wav",
+    "sha256": "ea1c04aea6732ebe672d7e2c0d815e147910179501ad190680effa659a0288c8",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_brush_hit_rr1",
+    "file": "sounds/cc0-world/bt_brush_hit_rr1.wav",
+    "sha256": "5109a0d4862dbf3fc44bfcee5a3d3d49694e83a2a0df24c993db4dbb1c7cc905",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_brush_hit_rr2",
+    "file": "sounds/cc0-world/bt_brush_hit_rr2.wav",
+    "sha256": "4cbf6f5f71db957a60c4794675268946fe202c6904d88fd358cbb8d3a8b51d34",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_brush_hit_rr3",
+    "file": "sounds/cc0-world/bt_brush_hit_rr3.wav",
+    "sha256": "3604d5f91e12158290a445b6044d4aa5f347893eff966f6bfb90f63b922bd9ce",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_brush_sweep_rr1",
+    "file": "sounds/cc0-world/bt_brush_sweep_rr1.wav",
+    "sha256": "b74bf316e597518141f530cf16acdd7ac2d65f4897a9a155019a8b36d1d2861f",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  },
+  {
+    "key": "bt_brush_sweep_rr2",
+    "file": "sounds/cc0-world/bt_brush_sweep_rr2.wav",
+    "sha256": "56ec90a7e70da534d2b495cedaeac025a5d6cf26803d4bad2b1dccef86e39564",
+    "sourceCollection": "Battrochtek CC0 World/Brush Core",
+    "sourceFile": "generated",
+    "license": "CC0-1.0",
+    "generator": "scripts/generate-cc0-world-samples.py"
+  }
+]

@@ -1,0 +1,1113 @@
+{
+  "schemaVersion": 1,
+  "generatedCount": 42,
+  "sampleRate": 44100,
+  "format": "mono PCM16 WAV",
+  "license": "CC0-1.0",
+  "samples": [
+    {
+      "key": "bt_world_conga_vl1_rr1",
+      "file": "sounds/cc0-world/bt_world_conga_vl1_rr1.wav",
+      "label": "BT World Conga VL1 RR1",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "conga",
+      "velocity": {
+        "min": 1,
+        "max": 42
+      },
+      "roundRobinGroup": "bt_world_conga_vl1",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "conga",
+        "hand-drum"
+      ]
+    },
+    {
+      "key": "bt_world_conga_vl1_rr2",
+      "file": "sounds/cc0-world/bt_world_conga_vl1_rr2.wav",
+      "label": "BT World Conga VL1 RR2",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "conga",
+      "velocity": {
+        "min": 1,
+        "max": 42
+      },
+      "roundRobinGroup": "bt_world_conga_vl1",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "conga",
+        "hand-drum"
+      ]
+    },
+    {
+      "key": "bt_world_conga_vl2_rr1",
+      "file": "sounds/cc0-world/bt_world_conga_vl2_rr1.wav",
+      "label": "BT World Conga VL2 RR1",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "conga",
+      "velocity": {
+        "min": 43,
+        "max": 84
+      },
+      "roundRobinGroup": "bt_world_conga_vl2",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "conga",
+        "hand-drum"
+      ]
+    },
+    {
+      "key": "bt_world_conga_vl2_rr2",
+      "file": "sounds/cc0-world/bt_world_conga_vl2_rr2.wav",
+      "label": "BT World Conga VL2 RR2",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "conga",
+      "velocity": {
+        "min": 43,
+        "max": 84
+      },
+      "roundRobinGroup": "bt_world_conga_vl2",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "conga",
+        "hand-drum"
+      ]
+    },
+    {
+      "key": "bt_world_conga_vl3_rr1",
+      "file": "sounds/cc0-world/bt_world_conga_vl3_rr1.wav",
+      "label": "BT World Conga VL3 RR1",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "conga",
+      "velocity": {
+        "min": 85,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_world_conga_vl3",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "conga",
+        "hand-drum"
+      ]
+    },
+    {
+      "key": "bt_world_conga_vl3_rr2",
+      "file": "sounds/cc0-world/bt_world_conga_vl3_rr2.wav",
+      "label": "BT World Conga VL3 RR2",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "conga",
+      "velocity": {
+        "min": 85,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_world_conga_vl3",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "conga",
+        "hand-drum"
+      ]
+    },
+    {
+      "key": "bt_world_bongo_vl1_rr1",
+      "file": "sounds/cc0-world/bt_world_bongo_vl1_rr1.wav",
+      "label": "BT World Bongo VL1 RR1",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "bongo",
+      "velocity": {
+        "min": 1,
+        "max": 42
+      },
+      "roundRobinGroup": "bt_world_bongo_vl1",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "bongo",
+        "hand-drum"
+      ]
+    },
+    {
+      "key": "bt_world_bongo_vl1_rr2",
+      "file": "sounds/cc0-world/bt_world_bongo_vl1_rr2.wav",
+      "label": "BT World Bongo VL1 RR2",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "bongo",
+      "velocity": {
+        "min": 1,
+        "max": 42
+      },
+      "roundRobinGroup": "bt_world_bongo_vl1",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "bongo",
+        "hand-drum"
+      ]
+    },
+    {
+      "key": "bt_world_bongo_vl2_rr1",
+      "file": "sounds/cc0-world/bt_world_bongo_vl2_rr1.wav",
+      "label": "BT World Bongo VL2 RR1",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "bongo",
+      "velocity": {
+        "min": 43,
+        "max": 84
+      },
+      "roundRobinGroup": "bt_world_bongo_vl2",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "bongo",
+        "hand-drum"
+      ]
+    },
+    {
+      "key": "bt_world_bongo_vl2_rr2",
+      "file": "sounds/cc0-world/bt_world_bongo_vl2_rr2.wav",
+      "label": "BT World Bongo VL2 RR2",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "bongo",
+      "velocity": {
+        "min": 43,
+        "max": 84
+      },
+      "roundRobinGroup": "bt_world_bongo_vl2",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "bongo",
+        "hand-drum"
+      ]
+    },
+    {
+      "key": "bt_world_bongo_vl3_rr1",
+      "file": "sounds/cc0-world/bt_world_bongo_vl3_rr1.wav",
+      "label": "BT World Bongo VL3 RR1",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "bongo",
+      "velocity": {
+        "min": 85,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_world_bongo_vl3",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "bongo",
+        "hand-drum"
+      ]
+    },
+    {
+      "key": "bt_world_bongo_vl3_rr2",
+      "file": "sounds/cc0-world/bt_world_bongo_vl3_rr2.wav",
+      "label": "BT World Bongo VL3 RR2",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "bongo",
+      "velocity": {
+        "min": 85,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_world_bongo_vl3",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "bongo",
+        "hand-drum"
+      ]
+    },
+    {
+      "key": "bt_world_frame_drum_vl1_rr1",
+      "file": "sounds/cc0-world/bt_world_frame_drum_vl1_rr1.wav",
+      "label": "BT World Frame-Drum VL1 RR1",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "frame-drum",
+      "velocity": {
+        "min": 1,
+        "max": 42
+      },
+      "roundRobinGroup": "bt_world_frame-drum_vl1",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "frame-drum",
+        "hand-drum"
+      ]
+    },
+    {
+      "key": "bt_world_frame_drum_vl1_rr2",
+      "file": "sounds/cc0-world/bt_world_frame_drum_vl1_rr2.wav",
+      "label": "BT World Frame-Drum VL1 RR2",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "frame-drum",
+      "velocity": {
+        "min": 1,
+        "max": 42
+      },
+      "roundRobinGroup": "bt_world_frame-drum_vl1",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "frame-drum",
+        "hand-drum"
+      ]
+    },
+    {
+      "key": "bt_world_frame_drum_vl2_rr1",
+      "file": "sounds/cc0-world/bt_world_frame_drum_vl2_rr1.wav",
+      "label": "BT World Frame-Drum VL2 RR1",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "frame-drum",
+      "velocity": {
+        "min": 43,
+        "max": 84
+      },
+      "roundRobinGroup": "bt_world_frame-drum_vl2",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "frame-drum",
+        "hand-drum"
+      ]
+    },
+    {
+      "key": "bt_world_frame_drum_vl2_rr2",
+      "file": "sounds/cc0-world/bt_world_frame_drum_vl2_rr2.wav",
+      "label": "BT World Frame-Drum VL2 RR2",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "frame-drum",
+      "velocity": {
+        "min": 43,
+        "max": 84
+      },
+      "roundRobinGroup": "bt_world_frame-drum_vl2",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "frame-drum",
+        "hand-drum"
+      ]
+    },
+    {
+      "key": "bt_world_frame_drum_vl3_rr1",
+      "file": "sounds/cc0-world/bt_world_frame_drum_vl3_rr1.wav",
+      "label": "BT World Frame-Drum VL3 RR1",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "frame-drum",
+      "velocity": {
+        "min": 85,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_world_frame-drum_vl3",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "frame-drum",
+        "hand-drum"
+      ]
+    },
+    {
+      "key": "bt_world_frame_drum_vl3_rr2",
+      "file": "sounds/cc0-world/bt_world_frame_drum_vl3_rr2.wav",
+      "label": "BT World Frame-Drum VL3 RR2",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "frame-drum",
+      "velocity": {
+        "min": 85,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_world_frame-drum_vl3",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "frame-drum",
+        "hand-drum"
+      ]
+    },
+    {
+      "key": "bt_world_conga_muted",
+      "file": "sounds/cc0-world/bt_world_conga_muted.wav",
+      "label": "BT World Conga Muted",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "conga-muted",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "conga",
+        "muted"
+      ]
+    },
+    {
+      "key": "bt_world_conga_slap",
+      "file": "sounds/cc0-world/bt_world_conga_slap.wav",
+      "label": "BT World Conga Slap",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "conga-slap",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "conga",
+        "slap"
+      ]
+    },
+    {
+      "key": "bt_world_bongo_slap",
+      "file": "sounds/cc0-world/bt_world_bongo_slap.wav",
+      "label": "BT World Bongo Slap",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "bongo-slap",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "bongo",
+        "slap"
+      ]
+    },
+    {
+      "key": "bt_world_claves_rr1",
+      "file": "sounds/cc0-world/bt_world_claves_rr1.wav",
+      "label": "BT World Claves RR1",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "claves",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_world_claves",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "claves",
+        "wood"
+      ]
+    },
+    {
+      "key": "bt_world_claves_rr2",
+      "file": "sounds/cc0-world/bt_world_claves_rr2.wav",
+      "label": "BT World Claves RR2",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "claves",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_world_claves",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "claves",
+        "wood"
+      ]
+    },
+    {
+      "key": "bt_world_claves_rr3",
+      "file": "sounds/cc0-world/bt_world_claves_rr3.wav",
+      "label": "BT World Claves RR3",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "claves",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_world_claves",
+      "roundRobinIndex": 3,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "claves",
+        "wood"
+      ]
+    },
+    {
+      "key": "bt_world_woodblock_rr1",
+      "file": "sounds/cc0-world/bt_world_woodblock_rr1.wav",
+      "label": "BT World Woodblock RR1",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "woodblock",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_world_woodblock",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "woodblock",
+        "wood"
+      ]
+    },
+    {
+      "key": "bt_world_woodblock_rr2",
+      "file": "sounds/cc0-world/bt_world_woodblock_rr2.wav",
+      "label": "BT World Woodblock RR2",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "woodblock",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_world_woodblock",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "woodblock",
+        "wood"
+      ]
+    },
+    {
+      "key": "bt_world_agogo_high",
+      "file": "sounds/cc0-world/bt_world_agogo_high.wav",
+      "label": "BT World Agogo High",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "agogo-high",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "agogo",
+        "metal"
+      ]
+    },
+    {
+      "key": "bt_world_agogo_low",
+      "file": "sounds/cc0-world/bt_world_agogo_low.wav",
+      "label": "BT World Agogo Low",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "agogo-low",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "agogo",
+        "metal"
+      ]
+    },
+    {
+      "key": "bt_world_cowbell",
+      "file": "sounds/cc0-world/bt_world_cowbell.wav",
+      "label": "BT World Cowbell",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "cowbell",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "cowbell",
+        "metal"
+      ]
+    },
+    {
+      "key": "bt_world_triangle_open",
+      "file": "sounds/cc0-world/bt_world_triangle_open.wav",
+      "label": "BT World Triangle Open",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "triangle-open",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "triangle",
+        "metal"
+      ]
+    },
+    {
+      "key": "bt_world_triangle_muted",
+      "file": "sounds/cc0-world/bt_world_triangle_muted.wav",
+      "label": "BT World Triangle Muted",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "triangle-muted",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "triangle",
+        "muted"
+      ]
+    },
+    {
+      "key": "bt_world_shaker_rr1",
+      "file": "sounds/cc0-world/bt_world_shaker_rr1.wav",
+      "label": "BT World Shaker RR1",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "shaker",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_world_shaker",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "shaker"
+      ]
+    },
+    {
+      "key": "bt_world_shaker_rr2",
+      "file": "sounds/cc0-world/bt_world_shaker_rr2.wav",
+      "label": "BT World Shaker RR2",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "shaker",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_world_shaker",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "shaker"
+      ]
+    },
+    {
+      "key": "bt_world_maracas",
+      "file": "sounds/cc0-world/bt_world_maracas.wav",
+      "label": "BT World Maracas",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "maracas",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "maracas"
+      ]
+    },
+    {
+      "key": "bt_world_guiro_fast",
+      "file": "sounds/cc0-world/bt_world_guiro_fast.wav",
+      "label": "BT World Guiro Fast",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "guiro-fast",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "guiro"
+      ]
+    },
+    {
+      "key": "bt_world_guiro_slow",
+      "file": "sounds/cc0-world/bt_world_guiro_slow.wav",
+      "label": "BT World Guiro Slow",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "guiro-slow",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "guiro"
+      ]
+    },
+    {
+      "key": "bt_world_tambourine",
+      "file": "sounds/cc0-world/bt_world_tambourine.wav",
+      "label": "BT World Tambourine",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "tambourine",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "tambourine"
+      ]
+    },
+    {
+      "key": "bt_brush_hit_rr1",
+      "file": "sounds/cc0-world/bt_brush_hit_rr1.wav",
+      "label": "BT Brush Hit RR1",
+      "legacyType": "snare",
+      "instrument": "snare",
+      "articulation": "brush-hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_brush_hit",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "brushes",
+        "snare"
+      ]
+    },
+    {
+      "key": "bt_brush_hit_rr2",
+      "file": "sounds/cc0-world/bt_brush_hit_rr2.wav",
+      "label": "BT Brush Hit RR2",
+      "legacyType": "snare",
+      "instrument": "snare",
+      "articulation": "brush-hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_brush_hit",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "brushes",
+        "snare"
+      ]
+    },
+    {
+      "key": "bt_brush_hit_rr3",
+      "file": "sounds/cc0-world/bt_brush_hit_rr3.wav",
+      "label": "BT Brush Hit RR3",
+      "legacyType": "snare",
+      "instrument": "snare",
+      "articulation": "brush-hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_brush_hit",
+      "roundRobinIndex": 3,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "brushes",
+        "snare"
+      ]
+    },
+    {
+      "key": "bt_brush_sweep_rr1",
+      "file": "sounds/cc0-world/bt_brush_sweep_rr1.wav",
+      "label": "BT Brush Sweep RR1",
+      "legacyType": "snare",
+      "instrument": "snare",
+      "articulation": "brush-sweep",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_brush_sweep",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "brushes",
+        "snare",
+        "sweep"
+      ]
+    },
+    {
+      "key": "bt_brush_sweep_rr2",
+      "file": "sounds/cc0-world/bt_brush_sweep_rr2.wav",
+      "label": "BT Brush Sweep RR2",
+      "legacyType": "snare",
+      "instrument": "snare",
+      "articulation": "brush-sweep",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_brush_sweep",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-world",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 World/Brush Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-world-samples.py",
+      "tags": [
+        "brushes",
+        "snare",
+        "sweep"
+      ]
+    }
+  ],
+  "kit": {
+    "name": "BT WORLD PERCUSSION",
+    "color": "#e48a1d",
+    "tracks": [
+      "bt_world_tambourine",
+      "bt_world_triangle_open",
+      "bt_world_shaker_rr1",
+      "bt_world_claves_rr1",
+      "bt_brush_hit_rr1",
+      "bt_world_bongo_vl2_rr1",
+      "bt_world_conga_vl2_rr1",
+      "bt_world_frame_drum_vl2_rr1",
+      "bt_world_frame_drum_vl3_rr1",
+      "metronome_tick"
+    ]
+  }
+}

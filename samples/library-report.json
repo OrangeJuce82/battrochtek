@@ -1,0 +1,331 @@
+{
+  "generatedAt": "2026-08-23T18:34:22.373Z",
+  "totalSamples": 299,
+  "totalKits": 4,
+  "byInstrument": {
+    "fx": 61,
+    "percussion": 60,
+    "snare": 51,
+    "kick": 38,
+    "tom": 38,
+    "hihat": 29,
+    "ride": 9,
+    "cymbal": 6,
+    "crash": 6,
+    "metro": 1
+  },
+  "byLicense": {
+    "unspecified": 210,
+    "CC0-1.0": 89
+  },
+  "banks": {
+    "arena": {
+      "count": 6,
+      "instruments": [
+        "kick",
+        "snare",
+        "tom"
+      ],
+      "articulations": [
+        "kick:hit",
+        "snare:hit",
+        "tom:hit"
+      ],
+      "licenses": [
+        "unspecified"
+      ]
+    },
+    "bright": {
+      "count": 6,
+      "instruments": [
+        "kick",
+        "snare",
+        "tom"
+      ],
+      "articulations": [
+        "kick:hit",
+        "snare:hit",
+        "tom:hit"
+      ],
+      "licenses": [
+        "unspecified"
+      ]
+    },
+    "bt-analog": {
+      "count": 16,
+      "instruments": [
+        "crash",
+        "hihat",
+        "kick",
+        "percussion",
+        "ride",
+        "snare",
+        "tom"
+      ],
+      "articulations": [
+        "crash:crash",
+        "hihat:closed",
+        "hihat:open",
+        "hihat:pedal",
+        "kick:hit",
+        "percussion:cowbell",
+        "ride:bow",
+        "snare:clap",
+        "snare:hit",
+        "tom:hit"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ]
+    },
+    "bt-detroit": {
+      "count": 17,
+      "instruments": [
+        "crash",
+        "hihat",
+        "kick",
+        "ride",
+        "snare",
+        "tom"
+      ],
+      "articulations": [
+        "crash:crash",
+        "hihat:closed",
+        "hihat:open",
+        "hihat:pedal",
+        "kick:hit",
+        "ride:bell",
+        "ride:bow",
+        "snare:clap",
+        "snare:hit",
+        "snare:rimshot",
+        "tom:hit"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ]
+    },
+    "bt-digital80": {
+      "count": 14,
+      "instruments": [
+        "crash",
+        "hihat",
+        "kick",
+        "percussion",
+        "ride",
+        "snare",
+        "tom"
+      ],
+      "articulations": [
+        "crash:crash",
+        "hihat:closed",
+        "hihat:open",
+        "kick:hit",
+        "percussion:cowbell",
+        "ride:bow",
+        "snare:clap",
+        "snare:cross-stick",
+        "snare:hit",
+        "tom:hit"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ]
+    },
+    "bt-world": {
+      "count": 42,
+      "instruments": [
+        "percussion",
+        "snare"
+      ],
+      "articulations": [
+        "percussion:agogo-high",
+        "percussion:agogo-low",
+        "percussion:bongo",
+        "percussion:bongo-slap",
+        "percussion:claves",
+        "percussion:conga",
+        "percussion:conga-muted",
+        "percussion:conga-slap",
+        "percussion:cowbell",
+        "percussion:frame-drum",
+        "percussion:guiro-fast",
+        "percussion:guiro-slow",
+        "percussion:maracas",
+        "percussion:shaker",
+        "percussion:tambourine",
+        "percussion:triangle-muted",
+        "percussion:triangle-open",
+        "percussion:woodblock",
+        "snare:brush-hit",
+        "snare:brush-sweep"
+      ],
+      "licenses": [
+        "CC0-1.0"
+      ]
+    },
+    "deep": {
+      "count": 6,
+      "instruments": [
+        "kick",
+        "snare",
+        "tom"
+      ],
+      "articulations": [
+        "kick:hit",
+        "snare:hit",
+        "tom:hit"
+      ],
+      "licenses": [
+        "unspecified"
+      ]
+    },
+    "electro": {
+      "count": 60,
+      "instruments": [
+        "hihat",
+        "kick",
+        "snare",
+        "tom"
+      ],
+      "articulations": [
+        "hihat:closed",
+        "hihat:open",
+        "kick:hit",
+        "snare:hit",
+        "tom:hit"
+      ],
+      "licenses": [
+        "unspecified"
+      ]
+    },
+    "general": {
+      "count": 92,
+      "instruments": [
+        "crash",
+        "cymbal",
+        "fx",
+        "metro",
+        "percussion",
+        "ride",
+        "snare"
+      ],
+      "articulations": [
+        "crash:crash",
+        "cymbal:hit",
+        "fx:hit",
+        "metro:hit",
+        "percussion:hit",
+        "ride:bow",
+        "snare:rimshot"
+      ],
+      "licenses": [
+        "unspecified"
+      ]
+    },
+    "legacy": {
+      "count": 14,
+      "instruments": [
+        "crash",
+        "cymbal",
+        "fx",
+        "hihat",
+        "percussion",
+        "ride",
+        "snare"
+      ],
+      "articulations": [
+        "crash:crash",
+        "cymbal:hit",
+        "fx:hit",
+        "hihat:closed",
+        "hihat:open",
+        "percussion:hit",
+        "ride:bell",
+        "ride:bow",
+        "snare:cross-stick"
+      ],
+      "licenses": [
+        "unspecified"
+      ]
+    },
+    "raw": {
+      "count": 6,
+      "instruments": [
+        "kick",
+        "snare",
+        "tom"
+      ],
+      "articulations": [
+        "kick:hit",
+        "snare:hit",
+        "tom:hit"
+      ],
+      "licenses": [
+        "unspecified"
+      ]
+    },
+    "rock": {
+      "count": 5,
+      "instruments": [
+        "kick",
+        "snare",
+        "tom"
+      ],
+      "articulations": [
+        "kick:hit",
+        "snare:hit",
+        "tom:hit"
+      ],
+      "licenses": [
+        "unspecified"
+      ]
+    },
+    "studio": {
+      "count": 6,
+      "instruments": [
+        "kick",
+        "snare",
+        "tom"
+      ],
+      "articulations": [
+        "kick:hit",
+        "snare:hit",
+        "tom:hit"
+      ],
+      "licenses": [
+        "unspecified"
+      ]
+    },
+    "tight": {
+      "count": 3,
+      "instruments": [
+        "kick",
+        "snare"
+      ],
+      "articulations": [
+        "kick:hit",
+        "snare:hit"
+      ],
+      "licenses": [
+        "unspecified"
+      ]
+    },
+    "warm": {
+      "count": 6,
+      "instruments": [
+        "kick",
+        "snare",
+        "tom"
+      ],
+      "articulations": [
+        "kick:hit",
+        "snare:hit",
+        "tom:hit"
+      ],
+      "licenses": [
+        "unspecified"
+      ]
+    }
+  }
+}

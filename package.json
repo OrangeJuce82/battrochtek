@@ -1,6 +1,6 @@
 {
   "name": "battrochtek",
-  "version": "37.1.0",
+  "version": "37.11.0",
   "private": true,
   "description": "Drum machine et bibliothèque de grooves PWA basée sur la Web Audio API.",
   "scripts": {
@@ -10,8 +10,8 @@
     "lint": "eslint app.js service-worker.js scripts/*.mjs eslint.config.js",
     "format": "prettier --write \"*.{js,json,md,html,css}\" \"scripts/**/*.mjs\"",
     "format:check": "prettier --check \"*.{js,json,md,html,css}\" \"scripts/**/*.mjs\"",
-    "test": "node scripts/smoke.mjs",
-    "check": "node --check app.js && node --check service-worker.js && npm run lint && npm test",
+    "test": "node scripts/smoke.mjs && node scripts/audit-kits.mjs && node scripts/audit-sample-resolution.mjs",
+    "check": "node --check app.js && node --check service-worker.js && npm run samples:validate && npm run lint && npm test",
     "build": "node scripts/build-pages.mjs",
     "grooves:sync": "node scripts/sync-grooves.mjs \"grooves/Battrochtek Curated\"",
     "grooves:clean": "node scripts/clean-grooves.mjs",
@@ -23,7 +23,11 @@
     "grooves:evidence": "node scripts/apply-musicology-evidence.mjs",
     "grooves:diversity": "node scripts/analyze-canonical-diversity.mjs",
     "grooves:dashboard": "node scripts/build-validation-dashboard.mjs",
-    "grooves:completeness": "node scripts/validate-groove-completeness.mjs"
+    "grooves:completeness": "node scripts/validate-groove-completeness.mjs",
+    "samples:validate": "node scripts/validate-sample-manifest.mjs",
+    "samples:import": "node scripts/import-sample-pack.mjs",
+    "samples:generate": "python3 scripts/generate-cc0-electronic-samples.py",
+    "samples:report": "node scripts/report-sample-library.mjs"
   },
   "dependencies": {
     "@knadh/oat": "^0.4.1",
@@ -37,5 +41,6 @@
   "engines": {
     "node": ">=24"
   },
-  "type": "module"
+  "type": "module",
+  "license": "MIT"
 }

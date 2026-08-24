@@ -1854,3 +1854,40 @@ button i {
 /* v58 — FEEL Energy is a single bipolar axis label */
 .feel-axis-y { justify-content: center; }
 .feel-orchestration-info{margin:-5px 0 0;padding:6px 8px;border-left:2px solid color-mix(in srgb,var(--bt-active) 55%,var(--bt-border));border-radius:3px;background:color-mix(in srgb,var(--bt-control) 72%,transparent);color:var(--bt-muted);font-size:.61rem;line-height:1.35;min-height:2.7em}
+
+/* v29 — sample picker, monitoring and single-note drag */
+.sample-picker{position:relative;width:100%;min-width:0}
+.sample-search-input{box-sizing:border-box;width:100%;padding-right:20px}
+.sample-search-input::-webkit-search-cancel-button{opacity:.45}
+.sample-picker-menu{position:absolute;z-index:80;left:0;right:0;top:calc(100% + 3px);max-height:250px;overflow:auto;padding:4px;background:var(--bt-panel);border:1px solid var(--bt-border-strong);border-radius:7px;box-shadow:0 10px 28px color-mix(in srgb,var(--bt-text) 20%,transparent)}
+.sample-picker-menu[hidden]{display:none!important}
+.sample-picker-heading{position:sticky;top:-4px;z-index:1;padding:5px 7px 3px;background:var(--bt-panel);color:var(--bt-muted);font-size:.55rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.sample-picker-option{display:block;width:100%;border:0;border-radius:4px;background:transparent;color:var(--bt-text);padding:6px 7px;text-align:left;font:600 .66rem/1.2 inherit;cursor:pointer}
+.sample-picker-option:hover,.sample-picker-option.active{background:color-mix(in srgb,var(--bt-active) 18%,var(--bt-control));color:var(--bt-text)}
+.grid-monitor-separator{display:block;width:1px;height:14px;margin:0 5px;background:var(--bt-border-strong);opacity:.85}
+.grid-shift-under-grid .monitoring-toggle{width:20px;min-width:20px}
+.grid-shift-under-grid .monitoring-toggle.bt-buttondown,.grid-shift-under-grid .monitoring-toggle[aria-pressed="true"]{background:var(--bt-active);color:var(--bt-active-fg);border-color:var(--bt-active)}
+.grid.is-pattern-dragging .cell{cursor:grabbing}
+.grid .cell.on{cursor:grab}
+
+/* v30 — instrument browser dialog */
+.sample-picker-dialog-trigger{display:block}
+.sample-dialog-button{display:block;width:100%;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left;cursor:pointer;border:1px solid var(--bt-border);border-radius:5px;background:var(--bt-control);color:var(--bt-text);padding:4px 7px;font:600 .66rem/1.2 inherit}
+.sample-dialog-button:hover,.sample-dialog-button:focus-visible{background:color-mix(in srgb,var(--bt-active) 12%,var(--bt-control));border-color:var(--bt-border-strong);outline:none}
+.sample-browser-dialog{width:min(900px,calc(100vw - 28px));height:min(620px,calc(100vh - 32px));padding:0;border:1px solid var(--bt-border-strong);border-radius:12px;background:var(--bt-panel);color:var(--bt-text);box-shadow:0 24px 70px rgba(0,0,0,.38)}
+.sample-browser-dialog::backdrop{background:rgba(0,0,0,.48);backdrop-filter:blur(2px)}
+.sample-browser-shell{height:100%;display:grid;grid-template-rows:auto auto minmax(0,1fr) auto}
+.sample-browser-header{display:flex;align-items:center;justify-content:space-between;padding:16px 18px 10px;border-bottom:1px solid var(--bt-border)}
+.sample-browser-header h2{margin:1px 0 0;font-size:1rem;line-height:1.2}.sample-browser-eyebrow,.sample-browser-column-title{font-size:.58rem;font-weight:900;letter-spacing:.11em;text-transform:uppercase;color:var(--bt-muted)}
+.sample-browser-close{width:30px;height:30px;border:0;border-radius:6px;background:transparent;color:var(--bt-muted);font-size:1.35rem;cursor:pointer}.sample-browser-close:hover{background:var(--bt-control);color:var(--bt-text)}
+.sample-browser-search-wrap{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:8px;margin:12px 16px;padding:0 10px;border:1px solid var(--bt-border-strong);border-radius:7px;background:var(--bt-control)}
+.sample-browser-search-wrap i{font-size:.72rem;color:var(--bt-muted)}.sample-browser-search{width:100%;min-height:34px;border:0!important;outline:0;background:transparent!important;color:var(--bt-text);font:600 .72rem/1 inherit}
+.sample-browser-main{min-height:0;display:grid;grid-template-columns:165px minmax(260px,1fr) minmax(220px,.85fr);border-top:1px solid var(--bt-border);border-bottom:1px solid var(--bt-border)}
+.sample-browser-column,.sample-browser-meta{min-width:0;min-height:0;padding:10px}.sample-browser-families,.sample-browser-instruments{border-right:1px solid var(--bt-border)}
+.sample-browser-family-list,.sample-browser-instrument-list{margin-top:7px;max-height:100%;overflow:auto;outline:0}.sample-browser-instrument-list{height:calc(100% - 22px)}
+.sample-browser-family,.sample-browser-instrument{display:flex;width:100%;align-items:center;justify-content:space-between;gap:10px;border:0;border-radius:6px;background:transparent;color:var(--bt-text);padding:7px 8px;text-align:left;cursor:pointer;font:650 .69rem/1.15 inherit}
+.sample-browser-family:hover,.sample-browser-family[aria-selected="true"],.sample-browser-instrument:hover,.sample-browser-instrument.active{background:color-mix(in srgb,var(--bt-active) 18%,var(--bt-control))}
+.sample-browser-family[aria-selected="true"],.sample-browser-instrument.active{box-shadow:inset 2px 0 0 var(--bt-active)}
+.sample-browser-instrument small{flex:none;color:var(--bt-muted);font-size:.56rem;font-weight:700}.sample-browser-meta-body{margin-top:8px}.sample-browser-meta-row{display:grid;grid-template-columns:86px minmax(0,1fr);gap:9px;padding:7px 0;border-bottom:1px solid color-mix(in srgb,var(--bt-border) 75%,transparent);font-size:.64rem}.sample-browser-meta-row span{color:var(--bt-muted)}.sample-browser-meta-row strong{overflow-wrap:anywhere;font-weight:750}.sample-browser-empty{color:var(--bt-muted);font-size:.65rem}
+.sample-browser-footer{display:flex;align-items:center;justify-content:flex-end;gap:14px;padding:11px 16px}.sample-browser-hint{margin-right:auto;color:var(--bt-muted);font-size:.58rem}.sample-browser-select{min-width:105px}
+@media(max-width:700px){.sample-browser-dialog{width:calc(100vw - 12px);height:calc(100vh - 18px)}.sample-browser-main{grid-template-columns:110px minmax(170px,1fr)}.sample-browser-meta{display:none}.sample-browser-hint{display:none}}

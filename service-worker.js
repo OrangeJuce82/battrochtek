@@ -1,5 +1,5 @@
-const CACHE_NAME = "battrochtek-v72";
-const AUDIO_CACHE = "battrochtek-audio-v2";
+const CACHE_NAME = "battrochtek-v81";
+const AUDIO_CACHE = "battrochtek-audio-v4";
 
 // Alpine n'est volontairement pas pré-caché ici : il est généré localement par
 // npm install. Le mettre dans l'app shell risquait de figer le placeholder dans
@@ -10,6 +10,7 @@ const APP_SHELL = [
   "./index.html",
   "./styles.css",
   "./app.js",
+  "./samples/manifest-v2.js",
   "./manifest.webmanifest",
   "./vendor/oat/oat.min.css",
   "./vendor/oat/oat.min.js",

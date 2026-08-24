@@ -82,3 +82,14 @@ The groove catalog is now generated from a 960-PPQ canonical event corpus. `npm 
 
 ## v19 Musicology
 See `README-MUSICOLOGY-V19.md` for the completeness gate, Jazz/Funk rebuild and FEEL limb-role grammar.
+
+## Licence
+
+Le code de Battrochtek est distribué sous **MIT**. Les samples et bibliothèques
+tierces conservent leurs licences d’origine : notamment CC0 pour les imports
+Virtuosity/ferrosintesis, Big Rusty Drums et VCSL. Voir `LICENSE`,
+`THIRD_PARTY_NOTICES.md` et `samples/EXTERNAL-SOURCES.md`.
+
+> Les anciens samples marqués `license: "unspecified"` ne sont pas couverts par
+> la licence MIT du code et doivent être audités/remplacés avant une
+> redistribution publique qui exige une provenance entièrement vérifiée.

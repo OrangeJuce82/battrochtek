@@ -24,9 +24,76 @@
     });
     const TRACK_I18N_KEYS = Object.freeze(["track.crash", "track.ride", "track.openHat", "track.closedHat", "track.snare", "track.tomHigh", "track.tomMid", "track.tomFloor", "track.kick"]);
 
-    const SAMPLE_LIBRARY = Object.freeze([{"key":"studio_kick_a","file":"sounds/studio-kick-a.wav","label":"Studio Kick A","type":"kick","source":"01kick1.wav"},{"key":"studio_kick_b","file":"sounds/studio-kick-b.wav","label":"Studio Kick B","type":"kick","source":"01kick2.wav"},{"key":"studio_snare_a","file":"sounds/studio-snare-a.wav","label":"Studio Snare A","type":"snare","source":"01snare1.wav"},{"key":"studio_snare_b","file":"sounds/studio-snare-b.wav","label":"Studio Snare B","type":"snare","source":"01snare2.wav"},{"key":"studio_tom_a","file":"sounds/studio-tom-a.wav","label":"Studio Tom A","type":"tom","source":"01tom1.wav"},{"key":"studio_tom_b","file":"sounds/studio-tom-b.wav","label":"Studio Tom B","type":"tom","source":"01tom2.wav"},{"key":"bright_kick_a","file":"sounds/bright-kick-a.wav","label":"Bright Kick A","type":"kick","source":"02kick1.wav"},{"key":"bright_kick_b","file":"sounds/bright-kick-b.wav","label":"Bright Kick B","type":"kick","source":"02kick2.wav"},{"key":"bright_snare_a","file":"sounds/bright-snare-a.wav","label":"Bright Snare A","type":"snare","source":"02snare1.wav"},{"key":"bright_snare_b","file":"sounds/bright-snare-b.wav","label":"Bright Snare B","type":"snare","source":"02snare2.wav"},{"key":"bright_tom_a","file":"sounds/bright-tom-a.wav","label":"Bright Tom A","type":"tom","source":"02tom1.wav"},{"key":"bright_tom_b","file":"sounds/bright-tom-b.wav","label":"Bright Tom B","type":"tom","source":"02tom2.wav"},{"key":"rock_kick_a","file":"sounds/rock-kick-a.wav","label":"Rock Kick A","type":"kick","source":"03kick1.wav"},{"key":"rock_kick_b","file":"sounds/rock-kick-b.wav","label":"Rock Kick B","type":"kick","source":"03kick2.wav"},{"key":"rock_snare_a","file":"sounds/rock-snare-a.wav","label":"Rock Snare A","type":"snare","source":"03snare1.wav"},{"key":"rock_tom_a","file":"sounds/rock-tom-a.wav","label":"Rock Tom A","type":"tom","source":"03tom1.wav"},{"key":"rock_tom_b","file":"sounds/rock-tom-b.wav","label":"Rock Tom B","type":"tom","source":"03tom2.wav"},{"key":"tight_kick_a","file":"sounds/tight-kick-a.wav","label":"Tight Kick A","type":"kick","source":"04kick1.wav"},{"key":"tight_kick_b","file":"sounds/tight-kick-b.wav","label":"Tight Kick B","type":"kick","source":"04kick2.wav"},{"key":"tight_snare_a","file":"sounds/tight-snare-a.wav","label":"Tight Snare A","type":"snare","source":"04snare1.wav"},{"key":"warm_kick_a","file":"sounds/warm-kick-a.wav","label":"Warm Kick A","type":"kick","source":"05kick1.wav"},{"key":"warm_kick_b","file":"sounds/warm-kick-b.wav","label":"Warm Kick B","type":"kick","source":"05kick2.wav"},{"key":"warm_snare_a","file":"sounds/warm-snare-a.wav","label":"Warm Snare A","type":"snare","source":"05snare1.wav"},{"key":"warm_snare_b","file":"sounds/warm-snare-b.wav","label":"Warm Snare B","type":"snare","source":"05snare2.wav"},{"key":"warm_tom_a","file":"sounds/warm-tom-a.wav","label":"Warm Tom A","type":"tom","source":"05tom1.wav"},{"key":"warm_tom_b","file":"sounds/warm-tom-b.wav","label":"Warm Tom B","type":"tom","source":"05tom2.wav"},{"key":"raw_kick_a","file":"sounds/raw-kick-a.wav","label":"Raw Kick A","type":"kick","source":"06kick1.wav"},{"key":"raw_kick_b","file":"sounds/raw-kick-b.wav","label":"Raw Kick B","type":"kick","source":"06kick2.wav"},{"key":"raw_snare_a","file":"sounds/raw-snare-a.wav","label":"Raw Snare A","type":"snare","source":"06snare1.wav"},{"key":"raw_snare_b","file":"sounds/raw-snare-b.wav","label":"Raw Snare B","type":"snare","source":"06snare2.wav"},{"key":"raw_tom_a","file":"sounds/raw-tom-a.wav","label":"Raw Tom A","type":"tom","source":"06tom1.wav"},{"key":"raw_tom_b","file":"sounds/raw-tom-b.wav","label":"Raw Tom B","type":"tom","source":"06tom2.wav"},{"key":"arena_kick_a","file":"sounds/arena-kick-a.wav","label":"Arena Kick A","type":"kick","source":"07kick1.wav"},{"key":"arena_kick_b","file":"sounds/arena-kick-b.wav","label":"Arena Kick B","type":"kick","source":"07kick2.wav"},{"key":"arena_snare_a","file":"sounds/arena-snare-a.wav","label":"Arena Snare A","type":"snare","source":"07snare1.wav"},{"key":"arena_snare_b","file":"sounds/arena-snare-b.wav","label":"Arena Snare B","type":"snare","source":"07snare2.wav"},{"key":"arena_tom_a","file":"sounds/arena-tom-a.wav","label":"Arena Tom A","type":"tom","source":"07tom1.wav"},{"key":"arena_tom_b","file":"sounds/arena-tom-b.wav","label":"Arena Tom B","type":"tom","source":"07tom2.wav"},{"key":"deep_kick_a","file":"sounds/deep-kick-a.wav","label":"Deep Kick A","type":"kick","source":"08kick1.wav"},{"key":"deep_kick_b","file":"sounds/deep-kick-b.wav","label":"Deep Kick B","type":"kick","source":"08kick2.wav"},{"key":"deep_snare_a","file":"sounds/deep-snare-a.wav","label":"Deep Snare A","type":"snare","source":"08snare1.wav"},{"key":"deep_snare_b","file":"sounds/deep-snare-b.wav","label":"Deep Snare B","type":"snare","source":"08snare2.wav"},{"key":"deep_tom_a","file":"sounds/deep-tom-a.wav","label":"Deep Tom A","type":"tom","source":"08tom1.wav"},{"key":"deep_tom_b","file":"sounds/deep-tom-b.wav","label":"Deep Tom B","type":"tom","source":"08tom2.wav"},{"key":"alarm_01","file":"sounds/alarm-01.wav","label":"Alarm 01","type":"fx","source":"alarm_01.wav"},{"key":"anvil_01","file":"sounds/anvil-01.wav","label":"Anvil 01","type":"fx","source":"anvil_01.wav"},{"key":"beep_01","file":"sounds/beep-01.wav","label":"Beep 01","type":"fx","source":"beep_01.wav"},{"key":"beep_02","file":"sounds/beep-02.wav","label":"Beep 02","type":"fx","source":"beep_02.wav"},{"key":"legacy_bell1","file":"sounds/legacy-bell1.wav","label":"Legacy Bell1","type":"cymbal","source":"bell1.wav"},{"key":"bongo_01","file":"sounds/bongo-01.wav","label":"Bongo 01","type":"perc","source":"bongo_01.wav"},{"key":"bongo_02","file":"sounds/bongo-02.wav","label":"Bongo 02","type":"perc","source":"bongo_02.wav"},{"key":"bongo_03","file":"sounds/bongo-03.wav","label":"Bongo 03","type":"perc","source":"bongo_03.wav"},{"key":"bongo_04","file":"sounds/bongo-04.wav","label":"Bongo 04","type":"perc","source":"bongo_04.wav"},{"key":"legacy_china1","file":"sounds/legacy-china1.wav","label":"Legacy China1","type":"cymbal","source":"china1.wav"},{"key":"clap_01","file":"sounds/clap-01.wav","label":"Clap 01","type":"perc","source":"clap_01.wav"},{"key":"clap_02","file":"sounds/clap-02.wav","label":"Clap 02","type":"perc","source":"clap_02.wav"},{"key":"clap_03","file":"sounds/clap-03.wav","label":"Clap 03","type":"perc","source":"clap_03.wav"},{"key":"clap_04","file":"sounds/clap-04.wav","label":"Clap 04","type":"perc","source":"clap_04.wav"},{"key":"clap_long_01","file":"sounds/clap-long-01.wav","label":"Clap Long 01","type":"perc","source":"clap_long_01.wav"},{"key":"claves_01","file":"sounds/claves-01.wav","label":"Claves 01","type":"perc","source":"claves_01.wav"},{"key":"claves_02","file":"sounds/claves-02.wav","label":"Claves 02","type":"perc","source":"claves_02.wav"},{"key":"legacy_cowbell","file":"sounds/legacy-cowbell.wav","label":"Legacy Cowbell","type":"perc","source":"cowbell.wav"},{"key":"cowbell_01","file":"sounds/cowbell-01.wav","label":"Cowbell 01","type":"perc","source":"cowbell_01.wav"},{"key":"cowbell_02","file":"sounds/cowbell-02.wav","label":"Cowbell 02","type":"perc","source":"cowbell_02.wav"},{"key":"cowbell_03","file":"sounds/cowbell-03.wav","label":"Cowbell 03","type":"perc","source":"cowbell_03.wav"},{"key":"legacy_crash1","file":"sounds/legacy-crash1.wav","label":"Legacy Crash1","type":"cymbal","source":"crash1.wav"},{"key":"crash_electro_01","file":"sounds/crash-electro-01.wav","label":"Crash Electro 01","type":"cymbal","source":"crash_01.wav"},{"key":"crash_electro_02","file":"sounds/crash-electro-02.wav","label":"Crash Electro 02","type":"cymbal","source":"crash_02.wav"},{"key":"crow_01","file":"sounds/crow-01.wav","label":"Crow 01","type":"fx","source":"crow_01.wav"},{"key":"crow_02","file":"sounds/crow-02.wav","label":"Crow 02","type":"fx","source":"crow_02.wav"},{"key":"cymbal_electro_01","file":"sounds/cymbal-electro-01.wav","label":"Cymbal Electro 01","type":"cymbal","source":"cymbal_01.wav"},{"key":"cymbal_electro_02","file":"sounds/cymbal-electro-02.wav","label":"Cymbal Electro 02","type":"cymbal","source":"cymbal_02.wav"},{"key":"cymbal_electro_03","file":"sounds/cymbal-electro-03.wav","label":"Cymbal Electro 03","type":"cymbal","source":"cymbal_03.wav"},{"key":"cymbal_electro_04","file":"sounds/cymbal-electro-04.wav","label":"Cymbal Electro 04","type":"cymbal","source":"cymbal_04.wav"},{"key":"door_01","file":"sounds/door-01.wav","label":"Door 01","type":"fx","source":"door_01.wav"},{"key":"door_02","file":"sounds/door-02.wav","label":"Door 02","type":"fx","source":"door_02.wav"},{"key":"formant_01","file":"sounds/formant-01.wav","label":"Formant 01","type":"fx","source":"formant_01.wav"},{"key":"game_01","file":"sounds/game-01.wav","label":"Game 01","type":"fx","source":"game_01.wav"},{"key":"game_02","file":"sounds/game-02.wav","label":"Game 02","type":"fx","source":"game_02.wav"},{"key":"game_03","file":"sounds/game-03.wav","label":"Game 03","type":"fx","source":"game_03.wav"},{"key":"game_coin","file":"sounds/game-coin.wav","label":"Game Coin","type":"fx","source":"game_coin.wav"},{"key":"game_damaged","file":"sounds/game-damaged.wav","label":"Game Damaged","type":"fx","source":"game_damaged.wav"},{"key":"game_fail","file":"sounds/game-fail.wav","label":"Game Fail","type":"fx","source":"game_fail.wav"},{"key":"game_fail_02","file":"sounds/game-fail-02.wav","label":"Game Fail 02","type":"fx","source":"game_fail_02.wav"},{"key":"game_level_up","file":"sounds/game-level-up.wav","label":"Game Level Up","type":"fx","source":"game_level_up.wav"},{"key":"game_passed_01","file":"sounds/game-passed-01.wav","label":"Game Passed 01","type":"fx","source":"game_passed_01.wav"},{"key":"game_passed_02","file":"sounds/game-passed-02.wav","label":"Game Passed 02","type":"fx","source":"game_passed_02.wav"},{"key":"game_pick_up","file":"sounds/game-pick-up.wav","label":"Game Pick Up","type":"fx","source":"game_pick_up.wav"},{"key":"glass_01","file":"sounds/glass-01.wav","label":"Glass 01","type":"fx","source":"glass_01.wav"},{"key":"glass_02","file":"sounds/glass-02.wav","label":"Glass 02","type":"fx","source":"glass_02.wav"},{"key":"glitch_01","file":"sounds/glitch-01.wav","label":"Glitch 01","type":"fx","source":"glitch_01.wav"},{"key":"glitch_02","file":"sounds/glitch-02.wav","label":"Glitch 02","type":"fx","source":"glitch_02.wav"},{"key":"electro_hat_closed_bright_01","file":"sounds/electro-hat-closed-bright-01.wav","label":"Electro Hat Closed Bright 01","type":"hat","source":"hat_closed_01.wav"},{"key":"electro_hat_closed_bright_02","file":"sounds/electro-hat-closed-bright-02.wav","label":"Electro Hat Closed Bright 02","type":"hat","source":"hat_closed_02.wav"},{"key":"electro_hat_closed_bright_03","file":"sounds/electro-hat-closed-bright-03.wav","label":"Electro Hat Closed Bright 03","type":"hat","source":"hat_closed_03.wav"},{"key":"electro_hat_closed_bright_04","file":"sounds/electro-hat-closed-bright-04.wav","label":"Electro Hat Closed Bright 04","type":"hat","source":"hat_closed_04.wav"},{"key":"electro_hat_closed_bright_05","file":"sounds/electro-hat-closed-bright-05.wav","label":"Electro Hat Closed Bright 05","type":"hat","source":"hat_closed_05.wav"},{"key":"electro_hat_closed_bright_06","file":"sounds/electro-hat-closed-bright-06.wav","label":"Electro Hat Closed Bright 06","type":"hat","source":"hat_closed_06.wav"},{"key":"electro_hat_closed_distorted_01","file":"sounds/electro-hat-closed-distorted-01.wav","label":"Electro Hat Closed Distorted 01","type":"hat","source":"hat_distort_01.wav"},{"key":"electro_hat_closed_metal_01","file":"sounds/electro-hat-closed-metal-01.wav","label":"Electro Hat Closed Metal 01","type":"hat","source":"hat_metal_01.wav"},{"key":"electro_hat_open_bright_01","file":"sounds/electro-hat-open-bright-01.wav","label":"Electro Hat Open Bright 01","type":"hat","source":"hat_open_01.wav"},{"key":"electro_hat_open_bright_02","file":"sounds/electro-hat-open-bright-02.wav","label":"Electro Hat Open Bright 02","type":"hat","source":"hat_open_02.wav"},{"key":"electro_hat_open_bright_03","file":"sounds/electro-hat-open-bright-03.wav","label":"Electro Hat Open Bright 03","type":"hat","source":"hat_open_03.wav"},{"key":"electro_hat_open_bright_04","file":"sounds/electro-hat-open-bright-04.wav","label":"Electro Hat Open Bright 04","type":"hat","source":"hat_open_04.wav"},{"key":"electro_hat_open_bright_05","file":"sounds/electro-hat-open-bright-05.wav","label":"Electro Hat Open Bright 05","type":"hat","source":"hat_open_05.wav"},{"key":"heartbeat_01","file":"sounds/heartbeat-01.wav","label":"Heartbeat 01","type":"fx","source":"heartbeat_01.wav"},{"key":"legacy_hat_closed_1","file":"sounds/legacy-hat-closed-1.wav","label":"Legacy Hat Closed 1","type":"hat","source":"hihat1.wav"},{"key":"legacy_hat_closed_2","file":"sounds/legacy-hat-closed-2.wav","label":"Legacy Hat Closed 2","type":"hat","source":"hihat2.wav"},{"key":"electro_kick_deep_01","file":"sounds/electro-kick-deep-01.wav","label":"Electro Kick Deep 01","type":"kick","source":"kick_01.wav"},{"key":"electro_kick_sub_02","file":"sounds/electro-kick-sub-02.wav","label":"Electro Kick Sub 02","type":"kick","source":"kick_02.wav"},{"key":"electro_kick_sub_03","file":"sounds/electro-kick-sub-03.wav","label":"Electro Kick Sub 03","type":"kick","source":"kick_03.wav"},{"key":"electro_kick_punch_04","file":"sounds/electro-kick-punch-04.wav","label":"Electro Kick Punch 04","type":"kick","source":"kick_04.wav"},{"key":"electro_kick_deep_05","file":"sounds/electro-kick-deep-05.wav","label":"Electro Kick Deep 05","type":"kick","source":"kick_05.wav"},{"key":"electro_kick_deep_06","file":"sounds/electro-kick-deep-06.wav","label":"Electro Kick Deep 06","type":"kick","source":"kick_06.wav"},{"key":"electro_kick_sub_07","file":"sounds/electro-kick-sub-07.wav","label":"Electro Kick Sub 07","type":"kick","source":"kick_07.wav"},{"key":"electro_kick_bright_08","file":"sounds/electro-kick-bright-08.wav","label":"Electro Kick Bright 08","type":"kick","source":"kick_08.wav"},{"key":"electro_kick_punch_09","file":"sounds/electro-kick-punch-09.wav","label":"Electro Kick Punch 09","type":"kick","source":"kick_09.wav"},{"key":"electro_kick_deep_10","file":"sounds/electro-kick-deep-10.wav","label":"Electro Kick Deep 10","type":"kick","source":"kick_10.wav"},{"key":"electro_kick_sub_11","file":"sounds/electro-kick-sub-11.wav","label":"Electro Kick Sub 11","type":"kick","source":"kick_11.wav"},{"key":"electro_kick_sub_12","file":"sounds/electro-kick-sub-12.wav","label":"Electro Kick Sub 12","type":"kick","source":"kick_12.wav"},{"key":"electro_kick_deep_13","file":"sounds/electro-kick-deep-13.wav","label":"Electro Kick Deep 13","type":"kick","source":"kick_13.wav"},{"key":"electro_kick_deep_14","file":"sounds/electro-kick-deep-14.wav","label":"Electro Kick Deep 14","type":"kick","source":"kick_14.wav"},{"key":"electro_kick_distorted_01","file":"sounds/electro-kick-distorted-01.wav","label":"Electro Kick Distorted 01","type":"kick","source":"kick_distort_01.wav"},{"key":"electro_kick_distorted_02","file":"sounds/electro-kick-distorted-02.wav","label":"Electro Kick Distorted 02","type":"kick","source":"kick_distort_02.wav"},{"key":"lock_01","file":"sounds/lock-01.wav","label":"Lock 01","type":"fx","source":"lock_01.wav"},{"key":"maracas_01","file":"sounds/maracas-01.wav","label":"Maracas 01","type":"perc","source":"maracas_01.wav"},{"key":"maracas_02","file":"sounds/maracas-02.wav","label":"Maracas 02","type":"perc","source":"maracas_02.wav"},{"key":"melee_01","file":"sounds/melee-01.wav","label":"Melee 01","type":"fx","source":"melee_01.wav"},{"key":"melee_02","file":"sounds/melee-02.wav","label":"Melee 02","type":"fx","source":"melee_02.wav"},{"key":"melee_03","file":"sounds/melee-03.wav","label":"Melee 03","type":"fx","source":"melee_03.wav"},{"key":"metal_01","file":"sounds/metal-01.wav","label":"Metal 01","type":"fx","source":"metal_01.wav"},{"key":"metal_02","file":"sounds/metal-02.wav","label":"Metal 02","type":"fx","source":"metal_02.wav"},{"key":"notify_01","file":"sounds/notify-01.wav","label":"Notify 01","type":"fx","source":"notify_01.wav"},{"key":"legacy_hat_open_1","file":"sounds/legacy-hat-open-1.wav","label":"Legacy Hat Open 1","type":"hat","source":"open1.wav"},{"key":"legacy_hat_open_2","file":"sounds/legacy-hat-open-2.wav","label":"Legacy Hat Open 2","type":"hat","source":"open2.wav"},{"key":"legacy_pad_2","file":"sounds/legacy-pad-2.wav","label":"Legacy Pad 2","type":"fx","source":"pad2.wav"},{"key":"perc_01","file":"sounds/perc-01.wav","label":"Perc 01","type":"perc","source":"perc_01.wav"},{"key":"perc_02","file":"sounds/perc-02.wav","label":"Perc 02","type":"perc","source":"perc_02.wav"},{"key":"perc_03","file":"sounds/perc-03.wav","label":"Perc 03","type":"perc","source":"perc_03.wav"},{"key":"perc_04","file":"sounds/perc-04.wav","label":"Perc 04","type":"perc","source":"perc_04.wav"},{"key":"punch_01","file":"sounds/punch-01.wav","label":"Punch 01","type":"fx","source":"punch_01.wav"},{"key":"punch_02","file":"sounds/punch-02.wav","label":"Punch 02","type":"fx","source":"punch_02.wav"},{"key":"punch_03","file":"sounds/punch-03.wav","label":"Punch 03","type":"fx","source":"punch_03.wav"},{"key":"punch_04","file":"sounds/punch-04.wav","label":"Punch 04","type":"fx","source":"punch_04.wav"},{"key":"punch_05","file":"sounds/punch-05.wav","label":"Punch 05","type":"fx","source":"punch_05.wav"},{"key":"punch_06","file":"sounds/punch-06.wav","label":"Punch 06","type":"fx","source":"punch_06.wav"},{"key":"ratchet_01","file":"sounds/ratchet-01.wav","label":"Ratchet 01","type":"fx","source":"ratchet_01.wav"},{"key":"legacy_ride1","file":"sounds/legacy-ride1.wav","label":"Legacy Ride1","type":"cymbal","source":"ride1.wav"},{"key":"legacy_ride3","file":"sounds/legacy-ride3.wav","label":"Legacy Ride3","type":"cymbal","source":"ride3.wav"},{"key":"ride_electro_01","file":"sounds/ride-electro-01.wav","label":"Ride Electro 01","type":"cymbal","source":"ride_01.wav"},{"key":"ride_electro_02","file":"sounds/ride-electro-02.wav","label":"Ride Electro 02","type":"cymbal","source":"ride_02.wav"},{"key":"legacy_rim","file":"sounds/legacy-rim.wav","label":"Legacy Rim","type":"perc","source":"rim.wav"},{"key":"rimshot_01","file":"sounds/rimshot-01.wav","label":"Rimshot 01","type":"perc","source":"rimshot_01.wav"},{"key":"rimshot_02","file":"sounds/rimshot-02.wav","label":"Rimshot 02","type":"perc","source":"rimshot_02.wav"},{"key":"rimshot_03","file":"sounds/rimshot-03.wav","label":"Rimshot 03","type":"perc","source":"rimshot_03.wav"},{"key":"rimshot_04","file":"sounds/rimshot-04.wav","label":"Rimshot 04","type":"perc","source":"rimshot_04.wav"},{"key":"electro_snare_snap_01","file":"sounds/electro-snare-snap-01.wav","label":"Electro Snare Snap 01","type":"snare","source":"snare_01.wav"},{"key":"electro_snare_snap_02","file":"sounds/electro-snare-snap-02.wav","label":"Electro Snare Snap 02","type":"snare","source":"snare_02.wav"},{"key":"electro_snare_bright_03","file":"sounds/electro-snare-bright-03.wav","label":"Electro Snare Bright 03","type":"snare","source":"snare_03.wav"},{"key":"electro_snare_crack_04","file":"sounds/electro-snare-crack-04.wav","label":"Electro Snare Crack 04","type":"snare","source":"snare_04.wav"},{"key":"electro_snare_snap_05","file":"sounds/electro-snare-snap-05.wav","label":"Electro Snare Snap 05","type":"snare","source":"snare_05.wav"},{"key":"electro_snare_crack_06","file":"sounds/electro-snare-crack-06.wav","label":"Electro Snare Crack 06","type":"snare","source":"snare_06.wav"},{"key":"electro_snare_snap_07","file":"sounds/electro-snare-snap-07.wav","label":"Electro Snare Snap 07","type":"snare","source":"snare_07.wav"},{"key":"electro_snare_snap_08","file":"sounds/electro-snare-snap-08.wav","label":"Electro Snare Snap 08","type":"snare","source":"snare_08.wav"},{"key":"electro_snare_crack_09","file":"sounds/electro-snare-crack-09.wav","label":"Electro Snare Crack 09","type":"snare","source":"snare_09.wav"},{"key":"electro_snare_snap_10","file":"sounds/electro-snare-snap-10.wav","label":"Electro Snare Snap 10","type":"snare","source":"snare_10.wav"},{"key":"electro_snare_warm_11","file":"sounds/electro-snare-warm-11.wav","label":"Electro Snare Warm 11","type":"snare","source":"snare_11.wav"},{"key":"electro_snare_bright_12","file":"sounds/electro-snare-bright-12.wav","label":"Electro Snare Bright 12","type":"snare","source":"snare_12.wav"},{"key":"electro_snare_snap_13","file":"sounds/electro-snare-snap-13.wav","label":"Electro Snare Snap 13","type":"snare","source":"snare_13.wav"},{"key":"electro_snare_snap_14","file":"sounds/electro-snare-snap-14.wav","label":"Electro Snare Snap 14","type":"snare","source":"snare_14.wav"},{"key":"electro_snare_distorted_01","file":"sounds/electro-snare-distorted-01.wav","label":"Electro Snare Distorted 01","type":"snare","source":"snare_distort_01.wav"},{"key":"electro_snare_distorted_02","file":"sounds/electro-snare-distorted-02.wav","label":"Electro Snare Distorted 02","type":"snare","source":"snare_distort_02.wav"},{"key":"legacy_splash1","file":"sounds/legacy-splash1.wav","label":"Legacy Splash1","type":"cymbal","source":"splash1.wav"},{"key":"legacy_stax_1","file":"sounds/legacy-stax-1.wav","label":"Legacy Stax 1","type":"fx","source":"stax1.wav"},{"key":"metronome_tick","file":"sounds/metronome-tick.wav","label":"Metronome Tick","type":"metro","source":"tick.wav"},{"key":"electro_tom_high_01","file":"sounds/electro-tom-high-01.wav","label":"Electro Tom High 01","type":"tom","source":"tom_hi_01.wav"},{"key":"electro_tom_high_02","file":"sounds/electro-tom-high-02.wav","label":"Electro Tom High 02","type":"tom","source":"tom_hi_02.wav"},{"key":"electro_tom_high_03","file":"sounds/electro-tom-high-03.wav","label":"Electro Tom High 03","type":"tom","source":"tom_hi_03.wav"},{"key":"electro_tom_high_04","file":"sounds/electro-tom-high-04.wav","label":"Electro Tom High 04","type":"tom","source":"tom_hi_04.wav"},{"key":"electro_tom_high_05","file":"sounds/electro-tom-high-05.wav","label":"Electro Tom High 05","type":"tom","source":"tom_hi_05.wav"},{"key":"electro_tom_low_01","file":"sounds/electro-tom-low-01.wav","label":"Electro Tom Low 01","type":"tom","source":"tom_low_01.wav"},{"key":"electro_tom_low_02","file":"sounds/electro-tom-low-02.wav","label":"Electro Tom Low 02","type":"tom","source":"tom_low_02.wav"},{"key":"electro_tom_low_03","file":"sounds/electro-tom-low-03.wav","label":"Electro Tom Low 03","type":"tom","source":"tom_low_03.wav"},{"key":"electro_tom_low_04","file":"sounds/electro-tom-low-04.wav","label":"Electro Tom Low 04","type":"tom","source":"tom_low_04.wav"},{"key":"electro_tom_low_05","file":"sounds/electro-tom-low-05.wav","label":"Electro Tom Low 05","type":"tom","source":"tom_low_05.wav"},{"key":"electro_tom_mid_01","file":"sounds/electro-tom-mid-01.wav","label":"Electro Tom Mid 01","type":"tom","source":"tom_mid_01.wav"},{"key":"electro_tom_mid_02","file":"sounds/electro-tom-mid-02.wav","label":"Electro Tom Mid 02","type":"tom","source":"tom_mid_02.wav"},{"key":"electro_tom_mid_03","file":"sounds/electro-tom-mid-03.wav","label":"Electro Tom Mid 03","type":"tom","source":"tom_mid_03.wav"},{"key":"electro_tom_mid_04","file":"sounds/electro-tom-mid-04.wav","label":"Electro Tom Mid 04","type":"tom","source":"tom_mid_04.wav"},{"key":"electro_tom_mid_05","file":"sounds/electro-tom-mid-05.wav","label":"Electro Tom Mid 05","type":"tom","source":"tom_mid_05.wav"},{"key":"twang_01","file":"sounds/twang-01.wav","label":"Twang 01","type":"fx","source":"twang_01.wav"},{"key":"twang_02","file":"sounds/twang-02.wav","label":"Twang 02","type":"fx","source":"twang_02.wav"},{"key":"twang_03","file":"sounds/twang-03.wav","label":"Twang 03","type":"fx","source":"twang_03.wav"},{"key":"vocal_are_you_crazy","file":"sounds/vocal-are-you-crazy.wav","label":"Vocal Are You Crazy","type":"fx","source":"vocal_are_you_crazy.wav"},{"key":"vocal_come_on_01","file":"sounds/vocal-come-on-01.wav","label":"Vocal Come On 01","type":"fx","source":"vocal_come_on_01.wav"},{"key":"vocal_dont_judge","file":"sounds/vocal-dont-judge.wav","label":"Vocal Dont Judge","type":"fx","source":"vocal_dont_judge.wav"},{"key":"vocal_gasp","file":"sounds/vocal-gasp.wav","label":"Vocal Gasp","type":"fx","source":"vocal_gasp.wav"},{"key":"vocal_lets_run","file":"sounds/vocal-lets-run.wav","label":"Vocal Lets Run","type":"fx","source":"vocal_lets_run.wav"},{"key":"vocal_no_cant","file":"sounds/vocal-no-cant.wav","label":"Vocal No Cant","type":"fx","source":"vocal_no_cant.wav"},{"key":"vocal_order","file":"sounds/vocal-order.wav","label":"Vocal Order","type":"fx","source":"vocal_order.wav"},{"key":"vocal_scream_01","file":"sounds/vocal-scream-01.wav","label":"Vocal Scream 01","type":"fx","source":"vocal_scream_01.wav"},{"key":"vocal_the_line","file":"sounds/vocal-the-line.wav","label":"Vocal The Line","type":"fx","source":"vocal_the_line.wav"},{"key":"vocal_what_01","file":"sounds/vocal-what-01.wav","label":"Vocal What 01","type":"fx","source":"vocal_what_01.wav"},{"key":"vocal_what_02","file":"sounds/vocal-what-02.wav","label":"Vocal What 02","type":"fx","source":"vocal_what_02.wav"},{"key":"warb_01","file":"sounds/warb-01.wav","label":"Warb 01","type":"fx","source":"warb_01.wav"},{"key":"zap_01","file":"sounds/zap-01.wav","label":"Zap 01","type":"fx","source":"zap_01.wav"},{"key":"zap_02","file":"sounds/zap-02.wav","label":"Zap 02","type":"fx","source":"zap_02.wav"},{"key":"zap_03","file":"sounds/zap-03.wav","label":"Zap 03","type":"fx","source":"zap_03.wav"},{"key":"zap_04","file":"sounds/zap-04.wav","label":"Zap 04","type":"fx","source":"zap_04.wav"},{"key":"zap_05","file":"sounds/zap-05.wav","label":"Zap 05","type":"fx","source":"zap_05.wav"}]);
-    const SAMPLE_INDEX = Object.freeze(Object.fromEntries(SAMPLE_LIBRARY.map(sample => [sample.key, Object.freeze(sample)])));
+    const SAMPLE_LIBRARY = Object.freeze([{"key":"studio_kick_a","file":"sounds/studio-kick-a.wav","label":"Studio Kick A","type":"kick","source":"01kick1.wav"},{"key":"studio_kick_b","file":"sounds/studio-kick-b.wav","label":"Studio Kick B","type":"kick","source":"01kick2.wav"},{"key":"studio_snare_a","file":"sounds/studio-snare-a.wav","label":"Studio Snare A","type":"snare","source":"01snare1.wav"},{"key":"studio_snare_b","file":"sounds/studio-snare-b.wav","label":"Studio Snare B","type":"snare","source":"01snare2.wav"},{"key":"studio_tom_a","file":"sounds/studio-tom-a.wav","label":"Studio Tom High","type":"tom","source":"01tom1.wav"},{"key":"studio_tom_b","file":"sounds/studio-tom-b.wav","label":"Studio Tom Mid","type":"tom","source":"01tom2.wav"},{"key":"warm_kick_a","file":"sounds/warm-kick-a.wav","label":"Warm Kick","type":"kick","source":"05kick1.wav"},{"key":"warm_kick_b","file":"sounds/warm-kick-b.wav","label":"Kick","type":"kick","source":"05kick2.wav"},{"key":"warm_snare_a","file":"sounds/warm-snare-a.wav","label":"Warm Snare","type":"snare","source":"05snare1.wav"},{"key":"warm_snare_b","file":"sounds/warm-snare-b.wav","label":"Snare","type":"snare","source":"05snare2.wav"},{"key":"warm_tom_a","file":"sounds/warm-tom-a.wav","label":"Warm Tom High","type":"tom","source":"05tom1.wav"},{"key":"warm_tom_b","file":"sounds/warm-tom-b.wav","label":"Warm Tom Mid","type":"tom","source":"05tom2.wav"},{"key":"raw_kick_a","file":"sounds/raw-kick-a.wav","label":"Raw Kick","type":"kick","source":"06kick1.wav"},{"key":"raw_kick_b","file":"sounds/raw-kick-b.wav","label":"Kick","type":"kick","source":"06kick2.wav"},{"key":"raw_snare_a","file":"sounds/raw-snare-a.wav","label":"Raw Snare","type":"snare","source":"06snare1.wav"},{"key":"raw_snare_b","file":"sounds/raw-snare-b.wav","label":"Snare","type":"snare","source":"06snare2.wav"},{"key":"raw_tom_a","file":"sounds/raw-tom-a.wav","label":"Raw Tom High","type":"tom","source":"06tom1.wav"},{"key":"raw_tom_b","file":"sounds/raw-tom-b.wav","label":"Raw Tom Mid","type":"tom","source":"06tom2.wav"},{"key":"deep_tom_a","file":"sounds/deep-tom-a.wav","label":"Deep Tom Low","type":"tom","source":"08tom1.wav"},{"key":"deep_tom_b","file":"sounds/deep-tom-b.wav","label":"Deep Tom Low B","type":"tom","source":"08tom2.wav"},{"key":"legacy_china1","file":"sounds/legacy-china1.wav","label":"China","type":"cymbal","source":"china1.wav"},{"key":"clap_02","file":"sounds/clap-02.wav","label":"Clap","type":"perc","source":"clap_02.wav"},{"key":"claves_01","file":"sounds/claves-01.wav","label":"Claves","type":"perc","source":"claves_01.wav"},{"key":"legacy_cowbell","file":"sounds/legacy-cowbell.wav","label":"Cowbell","type":"perc","source":"cowbell.wav"},{"key":"cowbell_01","file":"sounds/cowbell-01.wav","label":"Cowbell Bright","type":"perc","source":"cowbell_01.wav"},{"key":"legacy_crash1","file":"sounds/legacy-crash1.wav","label":"Crash","type":"cymbal","source":"crash1.wav"},{"key":"game_level_up","file":"sounds/game-level-up.wav","label":"Level Up","type":"fx","source":"game_level_up.wav"},{"key":"glitch_01","file":"sounds/glitch-01.wav","label":"Glitch","type":"fx","source":"glitch_01.wav"},{"key":"electro_hat_closed_distorted_01","file":"sounds/electro-hat-closed-distorted-01.wav","label":"Distorted Hi-Hat Closed","type":"hat","source":"hat_distort_01.wav"},{"key":"electro_hat_closed_metal_01","file":"sounds/electro-hat-closed-metal-01.wav","label":"Metal Hi-Hat Closed","type":"hat","source":"hat_metal_01.wav"},{"key":"legacy_hat_closed_1","file":"sounds/legacy-hat-closed-1.wav","label":"Hi-Hat Closed","type":"hat","source":"hihat1.wav"},{"key":"legacy_hat_closed_2","file":"sounds/legacy-hat-closed-2.wav","label":"Hi-Hat Closed Warm","type":"hat","source":"hihat2.wav"},{"key":"electro_kick_distorted_01","file":"sounds/electro-kick-distorted-01.wav","label":"Distorted Kick","type":"kick","source":"kick_distort_01.wav"},{"key":"electro_kick_distorted_02","file":"sounds/electro-kick-distorted-02.wav","label":"Glitch Kick","type":"kick","source":"kick_distort_02.wav"},{"key":"maracas_01","file":"sounds/maracas-01.wav","label":"Maracas","type":"perc","source":"maracas_01.wav"},{"key":"metal_02","file":"sounds/metal-02.wav","label":"Metal Hit","type":"fx","source":"metal_02.wav"},{"key":"legacy_hat_open_1","file":"sounds/legacy-hat-open-1.wav","label":"Hi-Hat Open","type":"hat","source":"open1.wav"},{"key":"legacy_hat_open_2","file":"sounds/legacy-hat-open-2.wav","label":"Hi-Hat Open Warm","type":"hat","source":"open2.wav"},{"key":"punch_03","file":"sounds/punch-03.wav","label":"Punch","type":"fx","source":"punch_03.wav"},{"key":"legacy_ride1","file":"sounds/legacy-ride1.wav","label":"Ride","type":"cymbal","source":"ride1.wav"},{"key":"legacy_ride3","file":"sounds/legacy-ride3.wav","label":"Ride Dark","type":"cymbal","source":"ride3.wav"},{"key":"legacy_rim","file":"sounds/legacy-rim.wav","label":"Cross-Stick","type":"perc","source":"rim.wav"},{"key":"rimshot_02","file":"sounds/rimshot-02.wav","label":"Rimshot","type":"perc","source":"rimshot_02.wav"},{"key":"electro_snare_distorted_01","file":"sounds/electro-snare-distorted-01.wav","label":"Distorted Snare","type":"snare","source":"snare_distort_01.wav"},{"key":"electro_snare_distorted_02","file":"sounds/electro-snare-distorted-02.wav","label":"Glitch Snare","type":"snare","source":"snare_distort_02.wav"},{"key":"legacy_splash1","file":"sounds/legacy-splash1.wav","label":"Splash","type":"cymbal","source":"splash1.wav"},{"key":"metronome_tick","file":"sounds/metronome-tick.wav","label":"Metronome","type":"metro","source":"tick.wav"},{"key":"zap_05","file":"sounds/zap-05.wav","label":"Zap","type":"fx","source":"zap_05.wav"}]);
+    const LEGACY_SAMPLE_INDEX = Object.freeze(Object.fromEntries(SAMPLE_LIBRARY.map(sample => [sample.key, Object.freeze(sample)])));
+    const VELOCITY_MIDI = Object.freeze({ ghost:24, soft:46, normal:76, strong:102, accent:122 });
+    const inferSampleMeta = sample => {
+        const key=sample.key.toLowerCase(), type=sample.type;
+        const hatToken=/(^|_)hat(_|$)/u.test(key) || key.includes("hihat");
+        const instrument=type==="hat"||hatToken?"hihat":type==="snare"||key.includes("snare")||key.includes("rimshot")||key==="legacy_rim"?"snare":type==="kick"||key.includes("kick")?"kick":type==="tom"||key.includes("tom")?"tom":key.includes("ride")||key.includes("bell")&&type==="cymbal"?"ride":key.includes("crash")?"crash":type==="cymbal"?"cymbal":type==="perc"?"percussion":type==="fx"?"fx":type==="metronome"?"metronome":type;
+        const articulation=instrument==="hihat"?(key.includes("open")?"open":"closed"):instrument==="ride"?"bow":key.includes("bell")&&type==="cymbal"?"bell":key.includes("rimshot")?"rimshot":key==="legacy_rim"?"cross-stick":instrument==="crash"?"crash":"hit";
+        const bank=["studio","bright","rock","tight","warm","raw","arena","deep","electro","legacy"].find(prefix=>key.startsWith(`${prefix}_`))||"general";
+        return Object.freeze({ key:sample.key, file:sample.file, label:sample.label, legacyType:type, instrument, articulation, velocity:Object.freeze({min:1,max:127}), roundRobinGroup:null, roundRobinIndex:null, bank, sourceFile:sample.source||"", sourceCollection:"legacy-import", license:"unspecified" });
+    };
+    const externalSampleManifest = window.BATTROCHTEK_SAMPLE_MANIFEST?.schemaVersion===2 ? window.BATTROCHTEK_SAMPLE_MANIFEST.samples : [];
+    const externalSampleKits = window.BATTROCHTEK_SAMPLE_MANIFEST?.schemaVersion===2 && Array.isArray(window.BATTROCHTEK_SAMPLE_MANIFEST.kits) ? window.BATTROCHTEK_SAMPLE_MANIFEST.kits : [];
+    const externalSampleIndex = new Map(externalSampleManifest.map(sample=>[sample.key,sample]));
+    const SAMPLE_MANIFEST = Object.freeze([
+        ...SAMPLE_LIBRARY.map(sample=>Object.freeze({ ...inferSampleMeta(sample), ...(externalSampleIndex.get(sample.key)||{}) })),
+        ...externalSampleManifest.filter(sample=>!LEGACY_SAMPLE_INDEX[sample.key]).map(sample=>Object.freeze(sample))
+    ]);
+    const SAMPLE_INDEX = Object.freeze(Object.fromEntries(SAMPLE_MANIFEST.map(sample=>[sample.key,Object.freeze({ ...sample, type:sample.legacyType||sample.type||sample.instrument })])));
+    const SAMPLE_META_INDEX = Object.freeze(Object.fromEntries(SAMPLE_MANIFEST.map(sample=>[sample.key,sample])));
+    // Resolver identity is stricter than the broad instrument type. Velocity and
+    // round-robin may change the take/intensity, never the musical voice/pitch.
+    const sampleResolverStem = sample => sample.key
+        .replace(/_vl\d+_rr\d+$/u, "")
+        .replace(/_rr\d+$/u, "");
+    const sampleResolverGroup = sample => {
+        const bank=sample.bank || "general";
+        const stem=sampleResolverStem(sample);
+        // These acoustic multisample families intentionally share articulations.
+        // Toms are deliberately NOT merged: high/mid/low are distinct pitches.
+        if (bank === "jazz-club" || bank === "vintage-rock") {
+            if (sample.instrument === "hihat") return `${bank}|hihat`;
+            if (sample.instrument === "ride") return `${bank}|ride`;
+            if (sample.instrument === "snare") return `${bank}|snare`;
+            return `${bank}|${stem}`;
+        }
+        // Explicit technical RR/velocity families stay together by their musical
+        // stem. Legacy A/B choices have no explicit RR metadata and remain isolated.
+        if (sample.roundRobinGroup) {
+            const rrStem=String(sample.roundRobinGroup).replace(/_vl\d+$/u, "");
+            return `${bank}|${rrStem}`;
+        }
+        return `${bank}|${sample.key}`;
+    };
+    const SAMPLE_CANDIDATES = Object.freeze(SAMPLE_MANIFEST.reduce((groups,sample)=>{ const key=sampleResolverGroup(sample); (groups[key]||(groups[key]=[])).push(sample); return groups; },{}));
     const TRACK_SAMPLE_TYPES = Object.freeze([['cymbal','fx','perc'],['cymbal','perc','fx'],['hat','perc','fx'],['hat','perc'],['snare','perc'],['tom','perc'],['tom','perc'],['tom','perc'],['kick','perc','fx']]);
+    const SAMPLE_TECHNICAL_BANKS = new Set(["jazz-club","vintage-rock","world-percussion","bt-world","bt-analog","bt-detroit","bt-digital80"]);
+    const sampleChoiceFamily = sample => SAMPLE_TECHNICAL_BANKS.has(sample.bank)
+        ? `${sample.bank}|${sample.key.replace(/_vl\d+_rr\d+$/u, "").replace(/_rr\d+$/u, "")}`
+        : sample.roundRobinGroup ? `${sample.bank}|${sample.roundRobinGroup}` : sample.key;
+    const SAMPLE_VISIBLE_CHOICES = Object.freeze((() => {
+        const chosen = new Map();
+        for (const sample of SAMPLE_MANIFEST) {
+            if ((sample.instrument === "metro" || sample.instrument === "metronome") || (sample.roundRobinIndex && sample.roundRobinIndex > 1)) continue;
+            const family = sampleChoiceFamily(sample);
+            const current = chosen.get(family);
+            const distance = candidate => {
+                const min = candidate.velocity?.min ?? 1, max = candidate.velocity?.max ?? 127;
+                return min <= 76 && max >= 76 ? 0 : Math.min(Math.abs(76 - min), Math.abs(76 - max));
+            };
+            if (!current || distance(sample) < distance(current)) chosen.set(family, sample);
+        }
+        return [...chosen.values()].sort((a,b) => String(a.category||"").localeCompare(String(b.category||"")) || String(a.displayLabel||a.label).localeCompare(String(b.displayLabel||b.label)));
+    })());
+    const sampleUiLabel = sample => sample?.displayLabel || sample?.label || sample?.key || "";
+    const PAD_KEYBOARD_MAP = Object.freeze({
+        KeyQ:8, KeyW:4, KeyE:3, KeyR:2,
+        KeyU:7, KeyI:6, KeyO:5, KeyP:1, BracketLeft:0
+    });
+    const PAD_KEYBOARD_LABELS = Object.freeze({ KeyQ:"A/Q", KeyW:"Z/W", KeyE:"E", KeyR:"R", KeyU:"U", KeyI:"I", KeyO:"O", KeyP:"P", BracketLeft:"^/[" });
 
     const CONFIG = Object.freeze({
         SIGNATURES: Object.freeze(SIGNATURES),
@@ -39,8 +106,10 @@
         SWING: Object.freeze({ min: 0, max: 100, default: 0, maxDelayRatio: 0.28 }),
         VELOCITY_GAIN: Object.freeze({ ghost:0.30, soft:0.48, normal:0.72, strong:0.92, accent:1.15 }),
         SCHEDULER: Object.freeze({ lookAheadMs: 25, scheduleAheadSec: 0.1 }),
-        SAMPLE_MAP: Object.freeze(Object.fromEntries(SAMPLE_LIBRARY.map(sample => [sample.key, [sample.file, sample.label, sample.type]]))),
-        KITS: Object.freeze([{"name":"STUDIO PUNCH","color":"#2d9cdb","tracks":["legacy_crash1","legacy_ride1","legacy_hat_open_1","legacy_hat_closed_1","studio_snare_a","studio_tom_a","studio_tom_b","deep_tom_b","studio_kick_a","metronome_tick"]},{"name":"ARENA 909","color":"#ff5a36","tracks":["crash_electro_02","ride_electro_02","electro_hat_open_bright_03","electro_hat_closed_bright_06","electro_snare_snap_14","electro_tom_high_05","electro_tom_low_05","electro_tom_low_02","electro_kick_deep_14","metronome_tick"]},{"name":"NEON 808","color":"#ff2f7d","tracks":["cymbal_electro_01","cowbell_01","electro_hat_open_bright_01","electro_hat_closed_bright_01","electro_snare_warm_11","electro_tom_high_02","electro_tom_low_02","electro_tom_low_03","electro_kick_sub_12","metronome_tick"]},{"name":"SOUL POCKET","color":"#d4a72c","tracks":["legacy_crash1","legacy_ride1","legacy_hat_open_2","legacy_hat_closed_2","warm_snare_a","warm_tom_a","warm_tom_b","warm_tom_b","warm_kick_a","metronome_tick"]},{"name":"FUNK TIGHT","color":"#32a852","tracks":["legacy_splash1","legacy_cowbell","electro_hat_open_bright_04","electro_hat_closed_bright_04","tight_snare_a","electro_tom_high_03","electro_tom_low_03","electro_tom_low_05","tight_kick_a","metronome_tick"]},{"name":"DMX STREET","color":"#8b5cf6","tracks":["cymbal_electro_02","cowbell_03","electro_hat_open_bright_02","electro_hat_closed_bright_02","electro_snare_snap_10","electro_tom_mid_03","electro_tom_low_04","electro_tom_low_04","electro_kick_deep_10","metronome_tick"]},{"name":"LINN CHROME","color":"#00a7a7","tracks":["crash_electro_01","ride_electro_01","electro_hat_open_bright_05","electro_hat_closed_bright_05","clap_02","electro_tom_high_01","electro_tom_mid_01","electro_tom_low_01","electro_kick_deep_05","metronome_tick"]},{"name":"SP DUST","color":"#9a6b3f","tracks":["legacy_china1","legacy_ride3","electro_hat_closed_distorted_01","electro_hat_closed_metal_01","electro_snare_distorted_01","raw_tom_a","raw_tom_b","deep_tom_a","electro_kick_distorted_01","metronome_tick"]},{"name":"AFRO CIRCUIT","color":"#e48a1d","tracks":["cymbal_electro_03","cowbell_02","maracas_01","claves_01","rimshot_02","bongo_01","bongo_02","bongo_03","electro_kick_sub_07","metronome_tick"]},{"name":"GLITCH LAB","color":"#e83e8c","tracks":["zap_05","game_level_up","electro_hat_closed_distorted_01","glitch_01","electro_snare_distorted_02","punch_03","metal_02","metal_02","electro_kick_distorted_02","metronome_tick"]}].map(kit => Object.freeze({...kit, tracks:Object.freeze(kit.tracks)})))
+        SAMPLE_MANIFEST_VERSION: 2,
+        SAMPLE_MANIFEST,
+        SAMPLE_MAP: Object.freeze(Object.fromEntries(SAMPLE_MANIFEST.map(sample => [sample.key, [sample.file, sample.label, sample.legacyType||sample.type||sample.instrument]]))),
+        KITS: Object.freeze([{"name":"STUDIO PUNCH","category":"Acoustique","color":"#2d9cdb","tracks":["legacy_crash1","legacy_ride1","legacy_hat_open_1","legacy_hat_closed_1","studio_snare_a","studio_tom_a","studio_tom_b","deep_tom_b","studio_kick_a","metronome_tick"]},{"name":"SOUL POCKET","category":"Acoustique","color":"#d4a72c","tracks":["legacy_crash1","legacy_ride1","legacy_hat_open_2","legacy_hat_closed_2","warm_snare_a","warm_tom_a","warm_tom_b","deep_tom_a","warm_kick_a","metronome_tick"]},{"name":"JAZZ CLUB","color":"#c9a35c","tracks":["legacy_crash1","jazz_club_ride_vl1_rr1","jazz_club_hho_vl1_rr1","jazz_club_hhc_vl1_rr1","jazz_club_snare_vl1_rr1","jazz_club_tomhi_vl1_rr1","jazz_club_tommid_vl1_rr1","jazz_club_tomlo_vl1_rr1","jazz_club_kick_vl1_rr1","metronome_tick"],"category":"Acoustique"},{"name":"VINTAGE ROCK","color":"#a85f3d","tracks":["vintage_rock_crash_vl1_rr1","vintage_rock_ride_vl10_rr1","vintage_rock_hho_vl1_rr1","vintage_rock_hhc_vl1_rr1","vintage_rock_snare_vl10_rr1","vintage_rock_tomhi_vl1_rr1","vintage_rock_tommid_vl1_rr1","vintage_rock_tomlo_vl1_rr1","vintage_rock_kick_vl10_rr1","metronome_tick"],"category":"Acoustique"},{"name":"WORLD PERCUSSION","color":"#e48a1d","tracks":["world_tambourine","world_agogo","world_shaker","world_claves","world_cajon","world_cowbell","world_darbuka","world_frame_small","world_frame_large","metronome_tick"],"category":"Acoustique"},{"name":"ANALOG CLASSIC","color":"#ff2f7d","tracks":["bt_analog_crash","bt_analog_ride","bt_analog_hho_rr1","bt_analog_hhc_rr1","bt_analog_snare_rr1","bt_analog_tom_high","bt_analog_tom_mid","bt_analog_tom_low","bt_analog_kick_rr1","metronome_tick"],"category":"Électro"},{"name":"DETROIT HYBRID","color":"#ff5a36","tracks":["bt_detroit_crash","bt_detroit_ride","bt_detroit_hho_rr1","bt_detroit_hhc_rr1","bt_detroit_snare_rr1","bt_detroit_tom_high","bt_detroit_tom_mid","bt_detroit_tom_low","bt_detroit_kick_rr1","metronome_tick"],"category":"Électro"},{"name":"DIGITAL 80","color":"#00a7a7","tracks":["bt_digital80_crash","bt_digital80_ride","bt_digital80_hho","bt_digital80_hhc","bt_digital80_snare_rr1","bt_digital80_tom_high","bt_digital80_tom_mid","bt_digital80_tom_low","bt_digital80_kick_rr1","metronome_tick"],"category":"Électro"},{"name":"SP DUST","category":"Électro","color":"#9a6b3f","tracks":["bt_analog_crash","bt_analog_ride","bt_analog_hho_rr1","electro_hat_closed_metal_01","electro_snare_distorted_01","bt_analog_tom_high","bt_analog_tom_mid","bt_analog_tom_low","electro_kick_distorted_01","metronome_tick"]},{"name":"GLITCH LAB","category":"Électro","color":"#e83e8c","tracks":["bt_digital80_crash","bt_digital80_ride","bt_digital80_hho","electro_hat_closed_distorted_01","electro_snare_distorted_02","bt_digital80_tom_high","bt_digital80_tom_mid","bt_digital80_tom_low","electro_kick_distorted_02","metronome_tick"]}].map(kit => Object.freeze({...kit, tracks:Object.freeze(kit.tracks)})))
     });
 
     const Util = Object.freeze({
@@ -402,11 +471,59 @@
         }
     }
 
+    class SampleResolver {
+        constructor() { this.roundRobin = new Map(); }
+        midiVelocity(velocity) { return VELOCITY_MIDI[velocity] ?? VELOCITY_MIDI.normal; }
+        candidatesFor(base) { return SAMPLE_CANDIDATES[sampleResolverGroup(base)] || [base]; }
+        velocityDistance(candidate, midi) {
+            if (candidate.velocity.min <= midi && candidate.velocity.max >= midi) return 0;
+            return midi < candidate.velocity.min ? candidate.velocity.min - midi : midi - candidate.velocity.max;
+        }
+        resolve(sampleKey, { articulation=null, velocity="normal" } = {}) {
+            const base=SAMPLE_META_INDEX[sampleKey];
+            if(!base) return { key:sampleKey, meta:null };
+            const midi=this.midiVelocity(velocity);
+            const candidates=this.candidatesFor(base);
+            let articulationPool=candidates;
+            const requestedArticulation=articulation || base.articulation;
+            const exactArticulation=candidates.filter(candidate=>candidate.articulation===requestedArticulation);
+            if(exactArticulation.length) articulationPool=exactArticulation;
+            else {
+                const baseArticulation=candidates.filter(candidate=>candidate.articulation===base.articulation);
+                if(baseArticulation.length) articulationPool=baseArticulation;
+            }
+            let pool=articulationPool.filter(candidate=>candidate.velocity.min<=midi && candidate.velocity.max>=midi);
+            if(!pool.length && articulationPool.length){
+                const distance=Math.min(...articulationPool.map(candidate=>this.velocityDistance(candidate,midi)));
+                pool=articulationPool.filter(candidate=>this.velocityDistance(candidate,midi)===distance);
+            }
+            if(!pool.length) pool=[base];
+            // Round-robin follows the resolved articulation/layer, not the original base sample.
+            const rrGroups=[...new Set(pool.map(candidate=>candidate.roundRobinGroup).filter(Boolean))];
+            let rrPool=[];
+            let rrGroup=null;
+            if(rrGroups.length){
+                rrGroup=rrGroups.includes(base.roundRobinGroup) ? base.roundRobinGroup : rrGroups[0];
+                rrPool=pool.filter(candidate=>candidate.roundRobinGroup===rrGroup);
+            }
+            if(rrPool.length>1){
+                const ordered=rrPool.slice().sort((a,b)=>(a.roundRobinIndex||0)-(b.roundRobinIndex||0)||a.key.localeCompare(b.key));
+                const next=(this.roundRobin.get(rrGroup)||0)%ordered.length;
+                this.roundRobin.set(rrGroup,next+1);
+                return { key:ordered[next].key, meta:ordered[next] };
+            }
+            const chosen=rrPool[0] || pool.find(candidate=>candidate.key===sampleKey) || pool[0] || base;
+            return { key:chosen.key, meta:chosen };
+        }
+    }
+
     class AudioEngine {
         constructor() {
             this.context = null;
             this.buffers = new Map();
             this.loading = new Map();
+            this.sampleResolver = new SampleResolver();
+            this.activeChokes = new Map();
             this.analyser = null;
             this.meterData = null;
         }
@@ -463,17 +580,19 @@
             return { done, total: urls.length, failed };
         }
         async clearAudioCaches() {
-            this.buffers.clear(); this.loading.clear();
+            this.buffers.clear(); this.loading.clear(); this.activeChokes.clear();
             if ("caches" in window) {
                 const keys = await caches.keys();
                 await Promise.all(keys.filter(key => key.startsWith("battrochtek-audio-")).map(key => caches.delete(key)));
             }
         }
-        async play({ kitIndex, trackIndex, sampleKey = null, time, trackVolume = 1, masterVolume = 1, pan = 0, velocity = "normal", gainScale = 1 }) {
+        async play({ kitIndex, trackIndex, sampleKey = null, time, trackVolume = 1, masterVolume = 1, pan = 0, velocity = "normal", gainScale = 1, articulation = null }) {
             const ctx = this.ensureContext();
             const kit = CONFIG.KITS[Math.round(Util.clamp(kitIndex, 0, CONFIG.KITS.length - 1, 0))] || CONFIG.KITS[0];
             const safeTrack = Math.round(Util.clamp(trackIndex, 0, CONFIG.METRONOME_TRACK_INDEX, 0));
-            const resolvedSampleKey = sampleKey || kit.tracks[safeTrack];
+            const baseSampleKey = sampleKey || kit.tracks[safeTrack];
+            const resolved = this.sampleResolver.resolve(baseSampleKey, { articulation, velocity });
+            const resolvedSampleKey = resolved.key;
             const buffer = await this.loadSample(resolvedSampleKey);
             if (!buffer) return;
             const source = ctx.createBufferSource();
@@ -490,6 +609,23 @@
                 source.connect(gainNode).connect(panNode).connect(output);
             } else {
                 source.connect(gainNode).connect(output);
+            }
+            const chokeGroup = resolved.meta?.chokeGroup;
+            if (chokeGroup) {
+                const previous = this.activeChokes.get(chokeGroup);
+                if (previous && previous.source !== source) {
+                    try {
+                        const fadeStart = Math.max(ctx.currentTime, startTime);
+                        previous.gain.gain.cancelScheduledValues(fadeStart);
+                        previous.gain.gain.setValueAtTime(previous.gain.gain.value, fadeStart);
+                        previous.gain.gain.linearRampToValueAtTime(0, fadeStart + 0.012);
+                        previous.source.stop(fadeStart + 0.015);
+                    } catch {}
+                }
+                this.activeChokes.set(chokeGroup, { source, gain:gainNode });
+                source.onended = () => {
+                    if (this.activeChokes.get(chokeGroup)?.source === source) this.activeChokes.delete(chokeGroup);
+                };
             }
             source.start(startTime);
         }
@@ -1190,6 +1326,23 @@
             const jitter=(this.playerRandomFor(`timing:${limb}:${track}:${step}`)-.5)*5.5;
             return (mean+jitter)*tempoScale/1000;
         }
+        performanceArticulation(track, step, velocity) {
+            if (!this.enabled || !this.cores.has(this.seq.memorySlot)) return null;
+            const R=TRACK_ROLES;
+            if(track===R.openHat) return "open";
+            if(track===R.closedHat) return this.performanceLeftFootSteps.has(step) ? "pedal" : "closed";
+            if(track===R.ride) {
+                const energetic=this.energy>=72 && (velocity==="accent"||velocity==="strong");
+                return energetic && this.playerRandomFor(`articulation:ride:${step}`)>.55 ? "bell" : "bow";
+            }
+            if(track===R.snare) {
+                const style=this.style();
+                if((style==="jazz"||style==="soul") && this.energy<42 && (velocity==="ghost"||velocity==="soft")) return "cross-stick";
+                if(this.energy>78 && velocity==="accent") return "rimshot";
+                return "hit";
+            }
+            return "hit";
+        }
         performanceGainScale(track, step, velocity) {
             if (!this.enabled || !this.cores.has(this.seq.memorySlot)) return 1;
             const R=TRACK_ROLES;
@@ -1704,6 +1857,7 @@
                 const velocity = this.practice?.velocityForCell(cellIndex, baseVelocity) || baseVelocity;
                 const feelTiming = this.ui?.feel?.performanceTimingOffset?.(track, step) || 0;
                 const feelGain = this.ui?.feel?.performanceGainScale?.(track, step, velocity) || 1;
+                const articulation = this.ui?.feel?.performanceArticulation?.(track, step, velocity) || null;
                 this.audio.play({
                     kitIndex: this.seq.kitIndex,
                     trackIndex: track,
@@ -1713,7 +1867,8 @@
                     masterVolume: this.seq.masterVolume,
                     pan: this.seq.trackPans[track],
                     velocity,
-                    gainScale: feelGain
+                    gainScale: feelGain,
+                    articulation
                 });
             }
         }
@@ -1834,6 +1989,7 @@
             this.undoStack = []; this.redoStack = []; this.historyLimit = 30;
             this.previewTimer = null; this.previewEnabled = false; this.previewStep = 0; this.previewNextTime = 0; this.previewData = null;
             this.soundUrlTimer = null;
+            this.monitoringEnabled = localStorage.getItem("battrochtek.monitoring") !== "0";
             this.dom = this.cacheDom();
         }
         alpineUi() {
@@ -1855,7 +2011,7 @@
             const $ = id => document.getElementById(id);
             return {
                 sets: $("sets"), leds: $("leds"), tracks: $("tracks"), grid: document.querySelector(".grid"), sliders: $("sliders"),
-                masterButton: $("master-level"), masterIcon: $("master-level-icon"), swingInput: $("swing-input"), swingValue: $("swing-value"), vu: $("vu-meter"), presetSource: $("preset-source"), presetFamily: $("preset-family"), presetGroove: $("preset-groove"), groovePreview: $("groove-preview"), grooveAdd: $("groove-add"), gridShiftLeft: $("grid-shift-left"), gridShiftUp: $("grid-shift-up"), gridShiftDown: $("grid-shift-down"), gridShiftRight: $("grid-shift-right"), memory: $("memory"), clear: $("clear"), signatureButton: $("signature-button"),
+                masterButton: $("master-level"), masterIcon: $("master-level-icon"), swingInput: $("swing-input"), swingValue: $("swing-value"), vu: $("vu-meter"), presetSource: $("preset-source"), presetFamily: $("preset-family"), presetGroove: $("preset-groove"), groovePreview: $("groove-preview"), grooveAdd: $("groove-add"), gridShiftLeft: $("grid-shift-left"), gridShiftUp: $("grid-shift-up"), gridShiftDown: $("grid-shift-down"), gridShiftRight: $("grid-shift-right"), monitoring: $("monitoring-toggle"), memory: $("memory"), clear: $("clear"), signatureButton: $("signature-button"),
                 signature: $("signature"), signatureNumerator: $("signature-numerator"), signatureDenominator: $("signature-denominator"), metro: $("metronome-button"), chain: $("chain"), play: $("play-button"), icon: $("play-pause-icon"),
                 minus: $("minus-button"), plus: $("plus-button"), tap: $("tap-tempo"), tempo: $("metronome-tempo"), random: $("random"), feelPanel: $("feel-panel"), feelXy: $("feel-xy"), feelDot: $("feel-dot"), feelReadout: $("feel-readout"), feelDensity: $("feel-density"), feelDensityValue: $("feel-density-value"), feelAuto: $("feel-auto"), feelStyle: $("feel-style"), feelOrchAuto: $("feel-orchestration-auto"), feelOrchEvery: $("feel-orchestration-every"), feelOrchInfo: $("feel-orchestration-info"),
                 undo: $("undo"), redo: $("redo"), practiceButton: $("practice-button"), practicePanel: $("practice-panel"), practiceMode: $("practice-mode"), practiceStartTempo: $("practice-start-tempo"), practiceTargetTempo: $("practice-target-tempo"), practiceTempoStep: $("practice-tempo-step"), practiceLoops: $("practice-loops"), practiceCountIn: $("practice-count-in"), practiceStatus: $("practice-status"), kitSelect: $("kit-select"), cacheClear: $("cache-clear"), languageSelect: $("language-select"), themeToggle: $("theme-toggle"), themeIcon: $("theme-toggle-icon"), themeColorMeta: $("theme-color-meta"),
@@ -2367,64 +2523,199 @@
 
         buildKits() {
             if (!this.dom.kitSelect) return;
-            this.dom.kitSelect.innerHTML = CONFIG.KITS.map((kit,i)=>`<option value="${i}">${kit.name}</option>`).join("") + '<option value="custom" disabled>CUSTOM</option>';
+            this.dom.kitSelect.innerHTML = "";
+            const categories = ["Acoustique", "Électro"];
+            categories.forEach(category => {
+                const group = document.createElement("optgroup"); group.label = category.toUpperCase();
+                CONFIG.KITS.forEach((kit,i) => {
+                    if ((kit.category || "Acoustique") !== category) return;
+                    const option = document.createElement("option"); option.value = String(i); option.textContent = kit.name; group.appendChild(option);
+                });
+                this.dom.kitSelect.appendChild(group);
+            });
+            const custom = document.createElement("option"); custom.value = "custom"; custom.disabled = true; custom.textContent = "CUSTOM"; this.dom.kitSelect.appendChild(custom);
             this.dom.kitSelect.value = String(this.seq.kitIndex);
             this.dom.kitSelect.addEventListener("change", async () => {
                 if (this.dom.kitSelect.value === "custom") return;
                 this.seq.selectKit(Number(this.dom.kitSelect.value));
-                this.renderKit();
-                this.saveSoundStateToUrl();
+                this.renderKit(); this.saveSoundStateToUrl();
                 const kit = CONFIG.KITS[this.seq.kitIndex];
                 this.status(I18N.t("status.loadingKit", { kit:kit.name }));
                 const buffers = await this.audio.preloadTracks(this.seq.currentTrackSamples());
                 this.status(buffers.every(Boolean) ? I18N.t("status.kitReady", { kit:kit.name }) : I18N.t("status.kitPartial"));
             });
         }
+        articulationForTrack(track) {
+            return track===TRACK_ROLES.openHat ? "open" : track===TRACK_ROLES.closedHat ? "closed" : track===TRACK_ROLES.ride ? "bow" : null;
+        }
+        velocityForCell(index) {
+            if (this.seq.accentCells.has(index)) return "accent";
+            if (this.seq.strongCells.has(index)) return "strong";
+            if (this.seq.weakCells.has(index)) return "soft";
+            if (this.seq.ghostCells.has(index)) return "ghost";
+            return "normal";
+        }
+        async previewTrackSample(track, sampleKey, velocity = "normal", force = false) {
+            if (!force && !this.monitoringEnabled) return;
+            try {
+                const ctx = await this.audio.resume();
+                await this.audio.play({ kitIndex:this.seq.kitIndex, trackIndex:track, sampleKey, time:ctx.currentTime, trackVolume:this.seq.trackVolumes[track], masterVolume:this.seq.masterVolume, pan:this.seq.trackPans[track], velocity, articulation:this.articulationForTrack(track) });
+            } catch (error) { console.warn("Preview sample impossible", error); }
+        }
+        setSamplePickerValue(control, sampleKey) {
+            const sample = SAMPLE_INDEX[sampleKey];
+            const label = sampleUiLabel(sample) || sampleKey || "—";
+            control.dataset.sampleKey = sampleKey || "";
+            control.textContent = label;
+            control.title = label;
+        }
+        sampleDialogFamily(sample) {
+            const instrument = String(sample?.instrument || sample?.legacyType || sample?.type || "").toLowerCase();
+            if (instrument === "kick") return "Kicks";
+            if (instrument === "snare") return "Snares";
+            if (instrument === "hihat" || instrument === "hat") return "Hi-Hats";
+            if (instrument === "tom") return "Toms";
+            if (["ride","crash","cymbal"].includes(instrument)) return "Cymbales";
+            if (instrument === "fx") return "FX";
+            return "Percussions";
+        }
+        ensureSampleDialog() {
+            if (this.sampleDialog) return this.sampleDialog;
+            const dialog = document.createElement("dialog"); dialog.className = "sample-browser-dialog"; dialog.setAttribute("aria-labelledby","sample-browser-title");
+            dialog.innerHTML = `
+                <div class="sample-browser-shell">
+                    <header class="sample-browser-header">
+                        <div><div class="sample-browser-eyebrow">SON</div><h2 id="sample-browser-title">Choisir un instrument</h2></div>
+                        <button type="button" class="sample-browser-close" aria-label="Fermer">×</button>
+                    </header>
+                    <div class="sample-browser-search-wrap"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><input type="search" class="sample-browser-search" placeholder="Rechercher un instrument…" autocomplete="off" spellcheck="false" aria-label="Rechercher un instrument"></div>
+                    <div class="sample-browser-main">
+                        <section class="sample-browser-column sample-browser-families" aria-label="Familles"><div class="sample-browser-column-title">Famille</div><div class="sample-browser-family-list" role="listbox"></div></section>
+                        <section class="sample-browser-column sample-browser-instruments" aria-label="Instruments"><div class="sample-browser-column-title">Instrument</div><div class="sample-browser-instrument-list" role="listbox" tabindex="0"></div></section>
+                        <aside class="sample-browser-meta" aria-label="Métadonnées"><div class="sample-browser-column-title">Métadonnées</div><div class="sample-browser-meta-body"></div></aside>
+                    </div>
+                    <footer class="sample-browser-footer"><span class="sample-browser-hint">↑ ↓ écouter · Entrée sélectionner · Échap fermer</span><button type="button" class="bt-button sample-browser-select">Sélectionner</button></footer>
+                </div>`;
+            document.body.appendChild(dialog);
+            const state = this.sampleDialog = {
+                dialog,
+                search:dialog.querySelector('.sample-browser-search'),
+                families:dialog.querySelector('.sample-browser-family-list'),
+                instruments:dialog.querySelector('.sample-browser-instrument-list'),
+                meta:dialog.querySelector('.sample-browser-meta-body'),
+                select:dialog.querySelector('.sample-browser-select'),
+                close:dialog.querySelector('.sample-browser-close'),
+                track:0, family:"Tous", filtered:[], active:0
+            };
+            const familyOrder = ["Tous","Kicks","Snares","Hi-Hats","Toms","Cymbales","Percussions","FX"];
+            const renderMeta = sample => {
+                if (!sample) { state.meta.innerHTML = '<p class="sample-browser-empty">Aucun instrument.</p>'; return; }
+                const vel = sample.velocity ? `${sample.velocity.min ?? 1}–${sample.velocity.max ?? 127}` : "1–127";
+                const rows = [
+                    ["Nom", sampleUiLabel(sample)], ["Famille", this.sampleDialogFamily(sample)], ["Catégorie", sample.category || "—"],
+                    ["Instrument", sample.instrument || sample.legacyType || "—"], ["Articulation", sample.articulation || "hit"],
+                    ["Dynamique", vel], ["Banque", sample.bank || "—"], ["Licence", sample.license || "—"]
+                ];
+                state.meta.innerHTML = rows.map(([k,v])=>`<div class="sample-browser-meta-row"><span>${Util.escapeHtml(k)}</span><strong>${Util.escapeHtml(v)}</strong></div>`).join('');
+            };
+            const currentSample = () => state.filtered[state.active] || null;
+            const previewActive = () => { const sample=currentSample(); if (sample) this.previewTrackSample(state.track,sample.key,"normal"); };
+            const activate = (index,{preview=true}={}) => {
+                if (!state.filtered.length) { state.active=0; renderMeta(null); return; }
+                state.active=(index+state.filtered.length)%state.filtered.length;
+                [...state.instruments.querySelectorAll('.sample-browser-instrument')].forEach((node,i)=>{ const on=i===state.active; node.classList.toggle('active',on); node.setAttribute('aria-selected',String(on)); if(on) node.scrollIntoView({block:'nearest'}); });
+                renderMeta(currentSample()); if (preview) previewActive();
+            };
+            const renderInstruments = ({preview=false}={}) => {
+                const query=state.search.value.trim().toLowerCase();
+                state.filtered=SAMPLE_VISIBLE_CHOICES.filter(sample=>{
+                    const fam=this.sampleDialogFamily(sample);
+                    const familyOk=state.family==="Tous" || fam===state.family;
+                    const hay=`${sampleUiLabel(sample)} ${fam} ${sample.category||''} ${sample.instrument||''} ${sample.articulation||''} ${sample.bank||''}`.toLowerCase();
+                    return familyOk && (!query || hay.includes(query));
+                }).sort((a,b)=>sampleUiLabel(a).localeCompare(sampleUiLabel(b),'fr'));
+                state.instruments.innerHTML='';
+                state.filtered.forEach((sample,index)=>{
+                    const button=document.createElement('button'); button.type='button'; button.className='sample-browser-instrument'; button.setAttribute('role','option'); button.dataset.sampleKey=sample.key;
+                    button.innerHTML=`<span>${Util.escapeHtml(sampleUiLabel(sample))}</span><small>${Util.escapeHtml(sample.category||'')}</small>`;
+                    button.addEventListener('pointerenter',()=>{ state.active=index; activate(index); });
+                    button.addEventListener('focus',()=>{ state.active=index; activate(index); });
+                    button.addEventListener('click',()=>{ state.active=index; activate(index); });
+                    button.addEventListener('dblclick',()=>commit());
+                    state.instruments.appendChild(button);
+                });
+                const selectedKey=this.seq.sampleForTrack(state.track);
+                const selectedIndex=state.filtered.findIndex(s=>s.key===selectedKey);
+                activate(selectedIndex>=0?selectedIndex:0,{preview});
+            };
+            const renderFamilies = () => {
+                const present=new Set(SAMPLE_VISIBLE_CHOICES.map(sample=>this.sampleDialogFamily(sample)));
+                state.families.innerHTML='';
+                familyOrder.filter(f=>f==="Tous"||present.has(f)).forEach(family=>{
+                    const b=document.createElement('button'); b.type='button'; b.className='sample-browser-family'; b.textContent=family; b.setAttribute('role','option'); b.setAttribute('aria-selected',String(family===state.family));
+                    b.addEventListener('click',()=>{ state.family=family; [...state.families.children].forEach(n=>n.setAttribute('aria-selected',String(n===b))); renderInstruments(); state.instruments.focus(); });
+                    state.families.appendChild(b);
+                });
+            };
+            const commit = async () => {
+                const sample=currentSample(); if (!sample) return;
+                const track=state.track; this.pushHistory(); if (!this.seq.setTrackSample(track,sample.key)) return;
+                this.renderKit(); this.saveSoundStateToUrl(); await this.audio.loadSample(sample.key); await this.previewTrackSample(track,sample.key,"normal");
+                this.status(I18N.t("track.custom", { n:track+1, sample:sampleUiLabel(sample) })); dialog.close();
+            };
+            state.open = track => {
+                state.track=track; state.family="Tous"; state.search.value="";
+                const title=dialog.querySelector('#sample-browser-title'); if(title) title.textContent=`Choisir un instrument — ${I18N.t(TRACK_I18N_KEYS[track])}`;
+                dialog.showModal();
+                renderFamilies(); renderInstruments();
+                requestAnimationFrame(()=>{
+                    const selectedKey=this.seq.sampleForTrack(state.track);
+                    const selectedIndex=state.filtered.findIndex(s=>s.key===selectedKey);
+                    if(selectedIndex>=0) activate(selectedIndex,{preview:false});
+                    const activeNode=state.instruments.querySelector('.sample-browser-instrument.active');
+                    if(activeNode) activeNode.scrollIntoView({block:'center'});
+                    state.search.focus();
+                });
+            };
+            state.search.addEventListener('input',()=>{ state.family="Tous"; renderFamilies(); renderInstruments(); });
+            state.search.addEventListener('keydown',event=>{
+                if(event.key==='ArrowDown'){event.preventDefault(); state.instruments.focus(); activate(state.active+1);}
+                else if(event.key==='ArrowUp'){event.preventDefault(); state.instruments.focus(); activate(state.active-1);}
+                else if(event.key==='Enter'){event.preventDefault(); commit();}
+                else if(event.key==='Escape'){event.preventDefault(); dialog.close();}
+            });
+            state.instruments.addEventListener('keydown',event=>{
+                if(event.key==='ArrowDown'){event.preventDefault(); activate(state.active+1);}
+                else if(event.key==='ArrowUp'){event.preventDefault(); activate(state.active-1);}
+                else if(event.key==='Home'){event.preventDefault(); activate(0);}
+                else if(event.key==='End'){event.preventDefault(); activate(state.filtered.length-1);}
+                else if(event.key==='Enter'){event.preventDefault(); commit();}
+                else if(event.key==='/'){event.preventDefault(); state.search.focus();}
+                else if(event.key==='Escape'){event.preventDefault(); dialog.close();}
+            });
+            state.select.addEventListener('click',commit); state.close.addEventListener('click',()=>dialog.close());
+            dialog.addEventListener('click',event=>{ if(event.target===dialog) dialog.close(); });
+            return state;
+        }
         buildTrackLabels() {
             this.dom.tracks.innerHTML = "";
+            this.ensureSampleDialog();
             this.trackLabels = []; this.trackRows = []; this.trackSampleSelects = []; this.trackShiftLeftButtons = []; this.trackShiftRightButtons = [];
             for (let i = 0; i < CONFIG.TRACK_COUNT; i++) {
-                const row = document.createElement("div");
-                row.className = "track-row";
+                const row = document.createElement("div"); row.className = "track-row";
                 const label = document.createElement("div"); label.className = "bt-led track";
-                const select = document.createElement("select"); select.className = "track-sample-select"; const trackName = I18N.t(TRACK_I18N_KEYS[i]);
-                select.setAttribute("aria-label", `${trackName} — son`);
-                label.dataset.btTooltip = trackName;
-                const allowed = new Set(TRACK_SAMPLE_TYPES[i]);
-                const choices = SAMPLE_LIBRARY.filter(sample => allowed.has(sample.type));
-                const grouped = Object.groupBy ? Object.groupBy(choices, sample => sample.type) : choices.reduce((acc, sample) => ((acc[sample.type] ||= []).push(sample), acc), {});
-                Object.entries(grouped).forEach(([type, samples]) => {
-                    const group = document.createElement("optgroup"); group.label = type.toUpperCase();
-                    samples.forEach(sample => { const option = document.createElement("option"); option.value = sample.key; option.textContent = sample.label; group.appendChild(option); });
-                    select.appendChild(group);
-                });
-                select.addEventListener("change", async event => {
-                    this.pushHistory();
-                    if (!this.seq.setTrackSample(i, event.target.value)) return;
-                    this.renderKit();
-                    this.saveSoundStateToUrl();
-                    await this.audio.loadSample(event.target.value);
-                    this.status(I18N.t("track.custom", { n:i + 1, sample:SAMPLE_INDEX[event.target.value]?.label || event.target.value }));
-                });
-                label.appendChild(select);
+                const trackName = I18N.t(TRACK_I18N_KEYS[i]); label.dataset.btTooltip = trackName;
+                const picker = document.createElement("div"); picker.className = "sample-picker sample-picker-dialog-trigger";
+                const sampleButton = document.createElement("button"); sampleButton.type = "button"; sampleButton.className = "track-sample-select sample-dialog-button"; sampleButton.setAttribute("aria-label", `${trackName} — choisir un instrument`); sampleButton.setAttribute("aria-haspopup","dialog");
+                const open=()=>this.sampleDialog.open(i); sampleButton.addEventListener("click",open);
+                picker.appendChild(sampleButton); label.appendChild(picker);
                 const controls = document.createElement("div"); controls.className = "track-controls track-shift-controls";
                 const shiftLeft = document.createElement("button"); shiftLeft.type = "button"; shiftLeft.className = "track-toggle pattern-shift"; shiftLeft.textContent = "‹"; shiftLeft.dataset.btTooltip = I18N.t("track.shiftLeft");
                 const shiftRight = document.createElement("button"); shiftRight.type = "button"; shiftRight.className = "track-toggle pattern-shift"; shiftRight.textContent = "›"; shiftRight.dataset.btTooltip = I18N.t("track.shiftRight");
-                const shiftTrack = (direction, e) => {
-                    e.preventDefault(); e.stopPropagation();
-                    this.pushHistory();
-                    const amount = e.shiftKey ? this.seq.signature.group : 1;
-                    this.seq.shiftTrack(i, direction * amount);
-                    this.renderGrid();
-                    this.autoSaveMemory();
-                    this.status(I18N.t("track.shifted", { n:i + 1, amount:amount === 1 ? "1 step" : "1 beat" }));
-                };
-                shiftLeft.addEventListener("click", e => shiftTrack(-1, e));
-                shiftRight.addEventListener("click", e => shiftTrack(1, e));
-                controls.append(shiftLeft, shiftRight);
-                row.append(label, controls);
-                this.dom.tracks.appendChild(row);
-                this.trackLabels.push(label); this.trackRows.push(row); this.trackSampleSelects.push(select); this.trackShiftLeftButtons.push(shiftLeft); this.trackShiftRightButtons.push(shiftRight);
+                const shiftTrack = (direction, e) => { e.preventDefault(); e.stopPropagation(); this.pushHistory(); const amount=e.shiftKey?this.seq.signature.group:1; this.seq.shiftTrack(i,direction*amount); this.renderGrid(); this.autoSaveMemory(); this.status(I18N.t("track.shifted", { n:i+1, amount:amount===1?"1 step":"1 beat" })); };
+                shiftLeft.addEventListener("click", e => shiftTrack(-1,e)); shiftRight.addEventListener("click", e => shiftTrack(1,e)); controls.append(shiftLeft,shiftRight);
+                row.append(label,controls); this.dom.tracks.appendChild(row);
+                this.trackLabels.push(label); this.trackRows.push(row); this.trackSampleSelects.push(sampleButton); this.trackShiftLeftButtons.push(shiftLeft); this.trackShiftRightButtons.push(shiftRight);
             }
         }
         buildMemory() {
@@ -2777,7 +3068,8 @@
                     const velocity = accents.has(cellIndex) ? "accent" : strong.has(cellIndex) ? "strong" : soft.has(cellIndex) ? "soft" : ghost.has(cellIndex) ? "ghost" : "normal";
                     this.audio.play({
                         kitIndex:this.seq.kitIndex, trackIndex:track, sampleKey:this.seq.sampleForTrack(track), time,
-                        trackVolume:this.seq.trackVolumes[track], masterVolume:this.seq.masterVolume, pan:this.seq.trackPans[track], velocity
+                        trackVolume:this.seq.trackVolumes[track], masterVolume:this.seq.masterVolume, pan:this.seq.trackPans[track], velocity,
+                        articulation: track===TRACK_ROLES.openHat ? "open" : track===TRACK_ROLES.closedHat ? "closed" : track===TRACK_ROLES.ride ? "bow" : null
                     });
                 }
                 this.previewNextTime += duration;
@@ -2801,6 +3093,18 @@
             };
             draw();
         }
+        moveSingleNote(sourceIndex, targetIndex) {
+            if (sourceIndex === targetIndex || !this.seq.activeCells.has(sourceIndex)) return false;
+            const velocity = this.velocityForCell(sourceIndex);
+            const sets=[this.seq.activeCells,this.seq.accentCells,this.seq.weakCells,this.seq.strongCells,this.seq.ghostCells];
+            sets.forEach(set => { set.delete(sourceIndex); set.delete(targetIndex); });
+            this.seq.activeCells.add(targetIndex);
+            if (velocity === "accent") this.seq.accentCells.add(targetIndex);
+            else if (velocity === "strong") this.seq.strongCells.add(targetIndex);
+            else if (velocity === "soft") this.seq.weakCells.add(targetIndex);
+            else if (velocity === "ghost") this.seq.ghostCells.add(targetIndex);
+            return true;
+        }
         buildGrid() {
             this.dom.grid.innerHTML = ""; this.dom.leds.innerHTML = ""; this.cells = [];
             if (!this.dom.grid.dataset.ctrlContextBound) {
@@ -2823,11 +3127,13 @@
                     if (step === 0) cell.classList.add("first","capo"); else if (step === steps/2) cell.classList.add("capo"); else if (step % group === 0) cell.classList.add("quarto");
                     cell.tabIndex = 0; cell.setAttribute("role", "button");
                     cell.addEventListener("pointerdown", event => {
-                        if (!event.altKey || event.button !== 0) return;
+                        if (event.button !== 0) return;
+                        const singleNote = !event.altKey && this.seq.activeCells.has(index);
+                        if (!event.altKey && !singleNote) return;
                         event.preventDefault();
                         this.gridDrag = {
-                            pointerId:event.pointerId, sourceTrack:track, startX:event.clientX, startY:event.clientY,
-                            before:this.captureState(), deltaSteps:0, deltaTracks:0, moved:false, wholeGrid:event.shiftKey
+                            pointerId:event.pointerId, sourceTrack:track, sourceStep:step, sourceIndex:index, startX:event.clientX, startY:event.clientY,
+                            before:this.captureState(), deltaSteps:0, deltaTracks:0, moved:false, wholeGrid:event.altKey&&event.shiftKey, singleNote
                         };
                         cell.setPointerCapture?.(event.pointerId);
                         this.dom.grid.classList.add("is-pattern-dragging");
@@ -2845,7 +3151,11 @@
                         drag.deltaSteps = deltaSteps; drag.deltaTracks = deltaTracks; drag.moved = drag.moved || !!deltaSteps || !!deltaTracks;
                         this.seq.signatureIndex = drag.before.signatureIndex;
                         this.seq.apply(drag.before.pattern);
-                        if (drag.wholeGrid) {
+                        if (drag.singleNote) {
+                            const targetTrack = ((drag.sourceTrack + deltaTracks) % CONFIG.TRACK_COUNT + CONFIG.TRACK_COUNT) % CONFIG.TRACK_COUNT;
+                            const targetStep = ((drag.sourceStep + deltaSteps) % steps + steps) % steps;
+                            this.moveSingleNote(drag.sourceIndex, targetTrack * steps + targetStep);
+                        } else if (drag.wholeGrid) {
                             this.seq.translateGrid(deltaTracks, deltaSteps);
                         } else {
                             const targetTrack = ((drag.sourceTrack + deltaTracks) % CONFIG.TRACK_COUNT + CONFIG.TRACK_COUNT) % CONFIG.TRACK_COUNT;
@@ -2858,14 +3168,13 @@
                         if (!drag || drag.pointerId !== event.pointerId) return;
                         event.preventDefault();
                         this.gridDrag = null;
-                        this.suppressGridClick = true;
+                        this.suppressGridClick = drag.moved || !drag.singleNote;
                         this.dom.grid.classList.remove("is-pattern-dragging");
                         if (drag.moved) {
-                            this.pushHistory(drag.before);
-                            this.autoSaveMemory();
-                            if (drag.wholeGrid) {
-                                this.status(I18N.t("grid.moveAllStatus", { tracks:drag.deltaTracks, steps:drag.deltaSteps }));
-                            } else {
+                            this.pushHistory(drag.before); this.autoSaveMemory();
+                            if (drag.singleNote) this.status("Note déplacée.");
+                            else if (drag.wholeGrid) this.status(I18N.t("grid.moveAllStatus", { tracks:drag.deltaTracks, steps:drag.deltaSteps }));
+                            else {
                                 const targetTrack = ((drag.sourceTrack + drag.deltaTracks) % CONFIG.TRACK_COUNT + CONFIG.TRACK_COUNT) % CONFIG.TRACK_COUNT;
                                 this.status(I18N.t("grid.moveTrackStatus", { from:drag.sourceTrack + 1, to:targetTrack + 1, steps:drag.deltaSteps }));
                             }
@@ -2914,6 +3223,7 @@
                         this.seq.cycleCell(index);
                         this.renderCell(index);
                         this.autoSaveMemory();
+                        if (this.seq.activeCells.has(index)) this.previewTrackSample(track, this.seq.sampleForTrack(track), this.velocityForCell(index));
                     });
                     cell.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); cell.click(); } });
                     this.dom.grid.appendChild(cell); this.cells.push(cell);
@@ -3032,6 +3342,7 @@
             };
             this.dom.gridShiftUp?.addEventListener("click", event => { event.preventDefault(); shiftGridTracks(-1); });
             this.dom.gridShiftDown?.addEventListener("click", event => { event.preventDefault(); shiftGridTracks(1); });
+            if (this.dom.monitoring) this.press(this.dom.monitoring, () => { this.monitoringEnabled = !this.monitoringEnabled; localStorage.setItem("battrochtek.monitoring", this.monitoringEnabled ? "1" : "0"); this.renderButtons(); this.status(this.monitoringEnabled ? "Monitoring activé." : "Monitoring désactivé."); });
             this.press(this.dom.random, () => this.setFeelEnabled(!this.feel.enabled));
             if (this.dom.cacheClear) this.press(this.dom.cacheClear, () => {
                 this.seq.store.resetMemories();
@@ -3083,6 +3394,7 @@
                 if (mod && !editing && key === "d") { e.preventDefault(); this.duplicateToNextMemory(); return; }
                 if (e.target === this.dom.grooveSearch && e.code === "Space") return;
                 if (e.code === "Space" && !mod && !e.altKey) { e.preventDefault(); if (this.previewEnabled) this.stopGroovePreview({ silent:true }); this.scheduler.toggle(); return; }
+                if (!editing && !mod && !e.altKey && PAD_KEYBOARD_MAP[e.code] !== undefined) { e.preventDefault(); if (!e.repeat) this.previewTrackSample(PAD_KEYBOARD_MAP[e.code], this.seq.sampleForTrack(PAD_KEYBOARD_MAP[e.code]), "normal", true); return; }
                 if (editing || mod || e.altKey) return;
                 if (/^[1-8]$/.test(e.key)) { e.preventDefault(); this.selectMemorySlot(Number(e.key) - 1); return; }
                 if (key === "t") { e.preventDefault(); this.handleTapTempo(); return; }
@@ -3153,7 +3465,7 @@
                 this.dom.kitSelect.style.setProperty("--kit-color", kit.color);
                 this.dom.kitSelect.parentElement?.style.setProperty("--kit-color", kit.color);
             }
-            this.trackSampleSelects.forEach((select, i) => { select.value = this.seq.sampleForTrack(i); });
+            this.trackSampleSelects.forEach((input, i) => this.setSamplePickerValue(input, this.seq.sampleForTrack(i)));
         }
         renderCell(index) {
             const cell=this.cells[index]; if(!cell)return;
@@ -3208,6 +3520,7 @@
             this.dom.metro.classList.toggle("bt-buttondown", this.seq.metronomeEnabled);
             this.dom.chain.setAttribute("aria-pressed", String(this.seq.chainEnabled));
             this.dom.chain.classList.toggle("bt-buttondown", this.seq.chainEnabled);
+            if (this.dom.monitoring) { this.dom.monitoring.setAttribute("aria-pressed", String(this.monitoringEnabled)); this.dom.monitoring.classList.toggle("bt-buttondown", this.monitoringEnabled); }
             this.dom.undo?.setAttribute("aria-disabled", String(this.undoStack.length === 0));
             this.dom.redo?.setAttribute("aria-disabled", String(this.redoStack.length === 0));
             this.syncUiStore();

@@ -1,0 +1,1246 @@
+{
+  "schemaVersion": 1,
+  "generatedCount": 47,
+  "sampleRate": 44100,
+  "format": "mono PCM16 WAV",
+  "license": "CC0-1.0",
+  "samples": [
+    {
+      "key": "bt_analog_kick_rr1",
+      "file": "sounds/cc0-electronic/bt_analog_kick_rr1.wav",
+      "label": "BT Analog Kick RR1",
+      "legacyType": "kick",
+      "instrument": "kick",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_analog_kick",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-analog",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "analog",
+        "classic",
+        "sub"
+      ]
+    },
+    {
+      "key": "bt_analog_kick_rr2",
+      "file": "sounds/cc0-electronic/bt_analog_kick_rr2.wav",
+      "label": "BT Analog Kick RR2",
+      "legacyType": "kick",
+      "instrument": "kick",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_analog_kick",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-analog",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "analog",
+        "classic",
+        "sub"
+      ]
+    },
+    {
+      "key": "bt_analog_snare_rr1",
+      "file": "sounds/cc0-electronic/bt_analog_snare_rr1.wav",
+      "label": "BT Analog Snare RR1",
+      "legacyType": "snare",
+      "instrument": "snare",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_analog_snare",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-analog",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "analog",
+        "classic"
+      ]
+    },
+    {
+      "key": "bt_analog_snare_rr2",
+      "file": "sounds/cc0-electronic/bt_analog_snare_rr2.wav",
+      "label": "BT Analog Snare RR2",
+      "legacyType": "snare",
+      "instrument": "snare",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_analog_snare",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-analog",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "analog",
+        "classic"
+      ]
+    },
+    {
+      "key": "bt_analog_hhc_rr1",
+      "file": "sounds/cc0-electronic/bt_analog_hhc_rr1.wav",
+      "label": "BT Analog Hi-Hat Closed RR1",
+      "legacyType": "hat",
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_analog_hhc",
+      "roundRobinIndex": 1,
+      "chokeGroup": "bt-analog-hat",
+      "bank": "bt-analog",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "analog",
+        "hihat"
+      ]
+    },
+    {
+      "key": "bt_analog_hhc_rr2",
+      "file": "sounds/cc0-electronic/bt_analog_hhc_rr2.wav",
+      "label": "BT Analog Hi-Hat Closed RR2",
+      "legacyType": "hat",
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_analog_hhc",
+      "roundRobinIndex": 2,
+      "chokeGroup": "bt-analog-hat",
+      "bank": "bt-analog",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "analog",
+        "hihat"
+      ]
+    },
+    {
+      "key": "bt_analog_hho_rr1",
+      "file": "sounds/cc0-electronic/bt_analog_hho_rr1.wav",
+      "label": "BT Analog Hi-Hat Open RR1",
+      "legacyType": "hat",
+      "instrument": "hihat",
+      "articulation": "open",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_analog_hho",
+      "roundRobinIndex": 1,
+      "chokeGroup": "bt-analog-hat",
+      "bank": "bt-analog",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "analog",
+        "hihat"
+      ]
+    },
+    {
+      "key": "bt_analog_hho_rr2",
+      "file": "sounds/cc0-electronic/bt_analog_hho_rr2.wav",
+      "label": "BT Analog Hi-Hat Open RR2",
+      "legacyType": "hat",
+      "instrument": "hihat",
+      "articulation": "open",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_analog_hho",
+      "roundRobinIndex": 2,
+      "chokeGroup": "bt-analog-hat",
+      "bank": "bt-analog",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "analog",
+        "hihat"
+      ]
+    },
+    {
+      "key": "bt_analog_hhp",
+      "file": "sounds/cc0-electronic/bt_analog_hhp.wav",
+      "label": "BT Analog Hi-Hat Pedal",
+      "legacyType": "hat",
+      "instrument": "hihat",
+      "articulation": "pedal",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": "bt-analog-hat",
+      "bank": "bt-analog",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "analog",
+        "hihat"
+      ]
+    },
+    {
+      "key": "bt_analog_clap",
+      "file": "sounds/cc0-electronic/bt_analog_clap.wav",
+      "label": "BT Analog Clap",
+      "legacyType": "snare",
+      "instrument": "snare",
+      "articulation": "clap",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-analog",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "analog",
+        "clap"
+      ]
+    },
+    {
+      "key": "bt_analog_cowbell",
+      "file": "sounds/cc0-electronic/bt_analog_cowbell.wav",
+      "label": "BT Analog Cowbell",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "cowbell",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-analog",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "analog",
+        "cowbell"
+      ]
+    },
+    {
+      "key": "bt_analog_tom_high",
+      "file": "sounds/cc0-electronic/bt_analog_tom_high.wav",
+      "label": "BT Analog Tom High",
+      "legacyType": "tom",
+      "instrument": "tom",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-analog",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "analog",
+        "tom"
+      ]
+    },
+    {
+      "key": "bt_analog_tom_mid",
+      "file": "sounds/cc0-electronic/bt_analog_tom_mid.wav",
+      "label": "BT Analog Tom Mid",
+      "legacyType": "tom",
+      "instrument": "tom",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-analog",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "analog",
+        "tom"
+      ]
+    },
+    {
+      "key": "bt_analog_tom_low",
+      "file": "sounds/cc0-electronic/bt_analog_tom_low.wav",
+      "label": "BT Analog Tom Low",
+      "legacyType": "tom",
+      "instrument": "tom",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-analog",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "analog",
+        "tom"
+      ]
+    },
+    {
+      "key": "bt_analog_crash",
+      "file": "sounds/cc0-electronic/bt_analog_crash.wav",
+      "label": "BT Analog Crash",
+      "legacyType": "cymbal",
+      "instrument": "crash",
+      "articulation": "crash",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-analog",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "analog",
+        "cymbal"
+      ]
+    },
+    {
+      "key": "bt_analog_ride",
+      "file": "sounds/cc0-electronic/bt_analog_ride.wav",
+      "label": "BT Analog Ride",
+      "legacyType": "cymbal",
+      "instrument": "ride",
+      "articulation": "bow",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-analog",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "analog",
+        "ride"
+      ]
+    },
+    {
+      "key": "bt_detroit_kick_rr1",
+      "file": "sounds/cc0-electronic/bt_detroit_kick_rr1.wav",
+      "label": "BT Detroit Kick RR1",
+      "legacyType": "kick",
+      "instrument": "kick",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_detroit_kick",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-detroit",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "detroit",
+        "club",
+        "hybrid"
+      ]
+    },
+    {
+      "key": "bt_detroit_kick_rr2",
+      "file": "sounds/cc0-electronic/bt_detroit_kick_rr2.wav",
+      "label": "BT Detroit Kick RR2",
+      "legacyType": "kick",
+      "instrument": "kick",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_detroit_kick",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-detroit",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "detroit",
+        "club",
+        "hybrid"
+      ]
+    },
+    {
+      "key": "bt_detroit_snare_rr1",
+      "file": "sounds/cc0-electronic/bt_detroit_snare_rr1.wav",
+      "label": "BT Detroit Snare RR1",
+      "legacyType": "snare",
+      "instrument": "snare",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_detroit_snare",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-detroit",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "detroit",
+        "club"
+      ]
+    },
+    {
+      "key": "bt_detroit_snare_rr2",
+      "file": "sounds/cc0-electronic/bt_detroit_snare_rr2.wav",
+      "label": "BT Detroit Snare RR2",
+      "legacyType": "snare",
+      "instrument": "snare",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_detroit_snare",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-detroit",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "detroit",
+        "club"
+      ]
+    },
+    {
+      "key": "bt_detroit_hhc_rr1",
+      "file": "sounds/cc0-electronic/bt_detroit_hhc_rr1.wav",
+      "label": "BT Detroit Hi-Hat Closed RR1",
+      "legacyType": "hat",
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_detroit_hhc",
+      "roundRobinIndex": 1,
+      "chokeGroup": "bt-detroit-hat",
+      "bank": "bt-detroit",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "detroit",
+        "hihat"
+      ]
+    },
+    {
+      "key": "bt_detroit_hhc_rr2",
+      "file": "sounds/cc0-electronic/bt_detroit_hhc_rr2.wav",
+      "label": "BT Detroit Hi-Hat Closed RR2",
+      "legacyType": "hat",
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_detroit_hhc",
+      "roundRobinIndex": 2,
+      "chokeGroup": "bt-detroit-hat",
+      "bank": "bt-detroit",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "detroit",
+        "hihat"
+      ]
+    },
+    {
+      "key": "bt_detroit_hho_rr1",
+      "file": "sounds/cc0-electronic/bt_detroit_hho_rr1.wav",
+      "label": "BT Detroit Hi-Hat Open RR1",
+      "legacyType": "hat",
+      "instrument": "hihat",
+      "articulation": "open",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_detroit_hho",
+      "roundRobinIndex": 1,
+      "chokeGroup": "bt-detroit-hat",
+      "bank": "bt-detroit",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "detroit",
+        "hihat"
+      ]
+    },
+    {
+      "key": "bt_detroit_hho_rr2",
+      "file": "sounds/cc0-electronic/bt_detroit_hho_rr2.wav",
+      "label": "BT Detroit Hi-Hat Open RR2",
+      "legacyType": "hat",
+      "instrument": "hihat",
+      "articulation": "open",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_detroit_hho",
+      "roundRobinIndex": 2,
+      "chokeGroup": "bt-detroit-hat",
+      "bank": "bt-detroit",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "detroit",
+        "hihat"
+      ]
+    },
+    {
+      "key": "bt_detroit_hhp",
+      "file": "sounds/cc0-electronic/bt_detroit_hhp.wav",
+      "label": "BT Detroit Hi-Hat Pedal",
+      "legacyType": "hat",
+      "instrument": "hihat",
+      "articulation": "pedal",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": "bt-detroit-hat",
+      "bank": "bt-detroit",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "detroit",
+        "hihat"
+      ]
+    },
+    {
+      "key": "bt_detroit_clap",
+      "file": "sounds/cc0-electronic/bt_detroit_clap.wav",
+      "label": "BT Detroit Clap",
+      "legacyType": "snare",
+      "instrument": "snare",
+      "articulation": "clap",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-detroit",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "detroit",
+        "clap"
+      ]
+    },
+    {
+      "key": "bt_detroit_rim",
+      "file": "sounds/cc0-electronic/bt_detroit_rim.wav",
+      "label": "BT Detroit Rimshot",
+      "legacyType": "snare",
+      "instrument": "snare",
+      "articulation": "rimshot",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-detroit",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "detroit",
+        "rimshot"
+      ]
+    },
+    {
+      "key": "bt_detroit_tom_high",
+      "file": "sounds/cc0-electronic/bt_detroit_tom_high.wav",
+      "label": "BT Detroit Tom High",
+      "legacyType": "tom",
+      "instrument": "tom",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-detroit",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "detroit",
+        "tom"
+      ]
+    },
+    {
+      "key": "bt_detroit_tom_mid",
+      "file": "sounds/cc0-electronic/bt_detroit_tom_mid.wav",
+      "label": "BT Detroit Tom Mid",
+      "legacyType": "tom",
+      "instrument": "tom",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-detroit",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "detroit",
+        "tom"
+      ]
+    },
+    {
+      "key": "bt_detroit_tom_low",
+      "file": "sounds/cc0-electronic/bt_detroit_tom_low.wav",
+      "label": "BT Detroit Tom Low",
+      "legacyType": "tom",
+      "instrument": "tom",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-detroit",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "detroit",
+        "tom"
+      ]
+    },
+    {
+      "key": "bt_detroit_crash",
+      "file": "sounds/cc0-electronic/bt_detroit_crash.wav",
+      "label": "BT Detroit Crash",
+      "legacyType": "cymbal",
+      "instrument": "crash",
+      "articulation": "crash",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-detroit",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "detroit",
+        "cymbal"
+      ]
+    },
+    {
+      "key": "bt_detroit_ride",
+      "file": "sounds/cc0-electronic/bt_detroit_ride.wav",
+      "label": "BT Detroit Ride",
+      "legacyType": "cymbal",
+      "instrument": "ride",
+      "articulation": "bow",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-detroit",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "detroit",
+        "ride"
+      ]
+    },
+    {
+      "key": "bt_detroit_ride_bell",
+      "file": "sounds/cc0-electronic/bt_detroit_ride_bell.wav",
+      "label": "BT Detroit Ride Bell",
+      "legacyType": "cymbal",
+      "instrument": "ride",
+      "articulation": "bell",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-detroit",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "detroit",
+        "ride",
+        "bell"
+      ]
+    },
+    {
+      "key": "bt_digital80_kick_rr1",
+      "file": "sounds/cc0-electronic/bt_digital80_kick_rr1.wav",
+      "label": "BT Digital 80 Kick RR1",
+      "legacyType": "kick",
+      "instrument": "kick",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_digital80_kick",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-digital80",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "digital",
+        "80s"
+      ]
+    },
+    {
+      "key": "bt_digital80_kick_rr2",
+      "file": "sounds/cc0-electronic/bt_digital80_kick_rr2.wav",
+      "label": "BT Digital 80 Kick RR2",
+      "legacyType": "kick",
+      "instrument": "kick",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_digital80_kick",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-digital80",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "digital",
+        "80s"
+      ]
+    },
+    {
+      "key": "bt_digital80_snare_rr1",
+      "file": "sounds/cc0-electronic/bt_digital80_snare_rr1.wav",
+      "label": "BT Digital 80 Snare RR1",
+      "legacyType": "snare",
+      "instrument": "snare",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_digital80_snare",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "bt-digital80",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "digital",
+        "80s"
+      ]
+    },
+    {
+      "key": "bt_digital80_snare_rr2",
+      "file": "sounds/cc0-electronic/bt_digital80_snare_rr2.wav",
+      "label": "BT Digital 80 Snare RR2",
+      "legacyType": "snare",
+      "instrument": "snare",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": "bt_digital80_snare",
+      "roundRobinIndex": 2,
+      "chokeGroup": null,
+      "bank": "bt-digital80",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "digital",
+        "80s"
+      ]
+    },
+    {
+      "key": "bt_digital80_hhc",
+      "file": "sounds/cc0-electronic/bt_digital80_hhc.wav",
+      "label": "BT Digital 80 Hi-Hat Closed",
+      "legacyType": "hat",
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": "bt-digital80-hat",
+      "bank": "bt-digital80",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "digital",
+        "80s",
+        "hihat"
+      ]
+    },
+    {
+      "key": "bt_digital80_hho",
+      "file": "sounds/cc0-electronic/bt_digital80_hho.wav",
+      "label": "BT Digital 80 Hi-Hat Open",
+      "legacyType": "hat",
+      "instrument": "hihat",
+      "articulation": "open",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": "bt-digital80-hat",
+      "bank": "bt-digital80",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "digital",
+        "80s",
+        "hihat"
+      ]
+    },
+    {
+      "key": "bt_digital80_rim",
+      "file": "sounds/cc0-electronic/bt_digital80_rim.wav",
+      "label": "BT Digital 80 Cross Stick",
+      "legacyType": "snare",
+      "instrument": "snare",
+      "articulation": "cross-stick",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-digital80",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "digital",
+        "80s",
+        "rim"
+      ]
+    },
+    {
+      "key": "bt_digital80_clap",
+      "file": "sounds/cc0-electronic/bt_digital80_clap.wav",
+      "label": "BT Digital 80 Clap",
+      "legacyType": "snare",
+      "instrument": "snare",
+      "articulation": "clap",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-digital80",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "digital",
+        "80s",
+        "clap"
+      ]
+    },
+    {
+      "key": "bt_digital80_tom_high",
+      "file": "sounds/cc0-electronic/bt_digital80_tom_high.wav",
+      "label": "BT Digital 80 Tom High",
+      "legacyType": "tom",
+      "instrument": "tom",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-digital80",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "digital",
+        "80s",
+        "tom"
+      ]
+    },
+    {
+      "key": "bt_digital80_tom_mid",
+      "file": "sounds/cc0-electronic/bt_digital80_tom_mid.wav",
+      "label": "BT Digital 80 Tom Mid",
+      "legacyType": "tom",
+      "instrument": "tom",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-digital80",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "digital",
+        "80s",
+        "tom"
+      ]
+    },
+    {
+      "key": "bt_digital80_tom_low",
+      "file": "sounds/cc0-electronic/bt_digital80_tom_low.wav",
+      "label": "BT Digital 80 Tom Low",
+      "legacyType": "tom",
+      "instrument": "tom",
+      "articulation": "hit",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-digital80",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "digital",
+        "80s",
+        "tom"
+      ]
+    },
+    {
+      "key": "bt_digital80_crash",
+      "file": "sounds/cc0-electronic/bt_digital80_crash.wav",
+      "label": "BT Digital 80 Crash",
+      "legacyType": "cymbal",
+      "instrument": "crash",
+      "articulation": "crash",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-digital80",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "digital",
+        "80s",
+        "cymbal"
+      ]
+    },
+    {
+      "key": "bt_digital80_ride",
+      "file": "sounds/cc0-electronic/bt_digital80_ride.wav",
+      "label": "BT Digital 80 Ride",
+      "legacyType": "cymbal",
+      "instrument": "ride",
+      "articulation": "bow",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-digital80",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "digital",
+        "80s",
+        "ride"
+      ]
+    },
+    {
+      "key": "bt_digital80_cowbell",
+      "file": "sounds/cc0-electronic/bt_digital80_cowbell.wav",
+      "label": "BT Digital 80 Cowbell",
+      "legacyType": "perc",
+      "instrument": "percussion",
+      "articulation": "cowbell",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-digital80",
+      "sourceFile": "generated",
+      "sourceCollection": "Battrochtek CC0 Electronic Core",
+      "sourceUrl": "",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "generator": "scripts/generate-cc0-electronic-samples.py",
+      "tags": [
+        "digital",
+        "80s",
+        "cowbell"
+      ]
+    }
+  ]
+}

@@ -36,6 +36,7 @@
         <script defer src="grooves/external-grooves.js"></script>
         <script defer src="vendor/i18next/i18next.min.js"></script>
         <script defer src="grooves/human-feel-profiles.js"></script>
+        <script defer src="samples/manifest-v2.js"></script>
         <script defer src="app.js"></script>
 
         </head>
@@ -130,6 +131,8 @@
                         <button type="button" class="track-toggle pattern-shift pattern-shift-global" id="grid-shift-up" data-bt-tooltip="Décaler toute la grille d’une piste vers le haut" aria-label="Décaler toute la grille vers le haut"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
                         <button type="button" class="track-toggle pattern-shift pattern-shift-global" id="grid-shift-down" data-bt-tooltip="Décaler toute la grille d’une piste vers le bas" aria-label="Décaler toute la grille vers le bas"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></button>
                         <button type="button" class="track-toggle pattern-shift pattern-shift-global" id="grid-shift-right" data-bt-tooltip="Décaler toute la grille à droite — Shift : 1 temps" aria-label="Décaler toute la grille à droite"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                        <span class="grid-monitor-separator" aria-hidden="true"></span>
+                        <button type="button" class="track-toggle pattern-shift pattern-shift-global monitoring-toggle" id="monitoring-toggle" data-bt-tooltip="Monitoring : préécoute des cellules et des sons" aria-label="Activer ou désactiver le monitoring" aria-pressed="true"><i class="fa-solid fa-headphones" aria-hidden="true"></i></button>
                     </div>
                     <div class="bt-right" id="sliders"></div>
                 </div>
@@ -210,6 +213,8 @@
                             <div class="shortcut-item"><span data-i18n="shortcut.deleteBeat">Effacer cette position sur tous les temps</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘ ⇧" data-win="Ctrl Shift">Ctrl Shift</kbd><kbd data-i18n="shortcut.click">Clic</kbd></span></div>
                             <div class="shortcut-item"><span data-i18n="shortcut.moveTrack">Déplacer une piste sur les 2 axes</span><span class="shortcut-keys"><kbd>Alt</kbd><kbd data-i18n="shortcut.drag">Glisser</kbd></span></div>
                             <div class="shortcut-item"><span data-i18n="shortcut.moveGrid">Déplacer toute la grille sur les 2 axes</span><span class="shortcut-keys"><kbd>Alt</kbd><kbd>Shift</kbd><kbd data-i18n="shortcut.drag">Glisser</kbd></span></div>
+                            <div class="shortcut-item"><span>Déplacer une note</span><span class="shortcut-keys"><kbd>Clic</kbd><kbd>Glisser</kbd></span></div>
+                            <div class="shortcut-item"><span>Pads batterie clavier</span><span class="shortcut-keys"><kbd>A/Q</kbd><kbd>Z/W</kbd><kbd>E</kbd><kbd>R</kbd><kbd>U</kbd><kbd>I</kbd><kbd>O</kbd><kbd>P</kbd><kbd>^/[</kbd></span></div>
                             <div class="shortcut-item"><span data-i18n="shortcut.shiftBeat">Décaler avec ‹ › d’un temps</span><span class="shortcut-keys"><kbd>Shift</kbd><kbd data-i18n="shortcut.click">Clic</kbd></span></div>
                             <div class="shortcut-item velocity-legend"><span data-i18n="shortcut.velocity">Niveaux de vélocité</span><span class="velocity-cycle" data-i18n="shortcut.velocityCycle">Éteint → normal → fort → accent → doux → fantôme</span></div>
                         </div>

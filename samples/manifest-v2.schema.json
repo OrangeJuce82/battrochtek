@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "battrochtek-sample-manifest-v2.schema.json",
+  "title": "Battrochtek Sample Manifest v2",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "samples"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "samples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "key",
+          "file",
+          "instrument",
+          "articulation",
+          "velocity",
+          "bank"
+        ],
+        "properties": {
+          "key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "file": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string"
+          },
+          "legacyType": {
+            "type": "string"
+          },
+          "instrument": {
+            "type": "string",
+            "minLength": 1
+          },
+          "articulation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "velocity": {
+            "type": "object",
+            "required": [
+              "min",
+              "max"
+            ],
+            "properties": {
+              "min": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 127
+              },
+              "max": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 127
+              }
+            },
+            "additionalProperties": false
+          },
+          "roundRobinGroup": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "roundRobinIndex": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "bank": {
+            "type": "string"
+          },
+          "sourceFile": {
+            "type": "string"
+          },
+          "sourceCollection": {
+            "type": "string"
+          },
+          "license": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

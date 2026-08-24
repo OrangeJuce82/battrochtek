@@ -1,0 +1,11 @@
+Battrochtek CC0 Electronic Core
+
+To the extent possible under law, the generated audio files under
+sounds/cc0-electronic/ are dedicated to the public domain under the Creative
+Commons CC0 1.0 Universal dedication.
+
+They are synthesized from mathematical oscillators, envelopes and generated
+noise by scripts/generate-cc0-electronic-samples.py. No third-party audio
+recording is used to create these files.
+
+CC0 1.0: https://creativecommons.org/publicdomain/zero/1.0/

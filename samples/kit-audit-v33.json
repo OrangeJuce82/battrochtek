@@ -1,0 +1,909 @@
+{
+  "generatedAt": "2026-08-24T09:55:12.621Z",
+  "kitCount": 10,
+  "manifestSamples": 268,
+  "trackRefs": 100,
+  "errors": [],
+  "rows": [
+    {
+      "kit": "STUDIO PUNCH",
+      "category": "Acoustique",
+      "track": 0,
+      "key": "legacy_crash1",
+      "manifest": true,
+      "file": true,
+      "size": 132314
+    },
+    {
+      "kit": "STUDIO PUNCH",
+      "category": "Acoustique",
+      "track": 1,
+      "key": "legacy_ride1",
+      "manifest": true,
+      "file": true,
+      "size": 105968
+    },
+    {
+      "kit": "STUDIO PUNCH",
+      "category": "Acoustique",
+      "track": 2,
+      "key": "legacy_hat_open_1",
+      "manifest": true,
+      "file": true,
+      "size": 37718
+    },
+    {
+      "kit": "STUDIO PUNCH",
+      "category": "Acoustique",
+      "track": 3,
+      "key": "legacy_hat_closed_1",
+      "manifest": true,
+      "file": true,
+      "size": 5004
+    },
+    {
+      "kit": "STUDIO PUNCH",
+      "category": "Acoustique",
+      "track": 4,
+      "key": "studio_snare_a",
+      "manifest": true,
+      "file": true,
+      "size": 70764
+    },
+    {
+      "kit": "STUDIO PUNCH",
+      "category": "Acoustique",
+      "track": 5,
+      "key": "studio_tom_a",
+      "manifest": true,
+      "file": true,
+      "size": 46270
+    },
+    {
+      "kit": "STUDIO PUNCH",
+      "category": "Acoustique",
+      "track": 6,
+      "key": "studio_tom_b",
+      "manifest": true,
+      "file": true,
+      "size": 48864
+    },
+    {
+      "kit": "STUDIO PUNCH",
+      "category": "Acoustique",
+      "track": 7,
+      "key": "deep_tom_b",
+      "manifest": true,
+      "file": true,
+      "size": 49196
+    },
+    {
+      "kit": "STUDIO PUNCH",
+      "category": "Acoustique",
+      "track": 8,
+      "key": "studio_kick_a",
+      "manifest": true,
+      "file": true,
+      "size": 35356
+    },
+    {
+      "kit": "STUDIO PUNCH",
+      "category": "Acoustique",
+      "track": 9,
+      "key": "metronome_tick",
+      "manifest": true,
+      "file": true,
+      "size": 9534
+    },
+    {
+      "kit": "SOUL POCKET",
+      "category": "Acoustique",
+      "track": 0,
+      "key": "legacy_crash1",
+      "manifest": true,
+      "file": true,
+      "size": 132314
+    },
+    {
+      "kit": "SOUL POCKET",
+      "category": "Acoustique",
+      "track": 1,
+      "key": "legacy_ride1",
+      "manifest": true,
+      "file": true,
+      "size": 105968
+    },
+    {
+      "kit": "SOUL POCKET",
+      "category": "Acoustique",
+      "track": 2,
+      "key": "legacy_hat_open_2",
+      "manifest": true,
+      "file": true,
+      "size": 29142
+    },
+    {
+      "kit": "SOUL POCKET",
+      "category": "Acoustique",
+      "track": 3,
+      "key": "legacy_hat_closed_2",
+      "manifest": true,
+      "file": true,
+      "size": 6658
+    },
+    {
+      "kit": "SOUL POCKET",
+      "category": "Acoustique",
+      "track": 4,
+      "key": "warm_snare_a",
+      "manifest": true,
+      "file": true,
+      "size": 35360
+    },
+    {
+      "kit": "SOUL POCKET",
+      "category": "Acoustique",
+      "track": 5,
+      "key": "warm_tom_a",
+      "manifest": true,
+      "file": true,
+      "size": 42476
+    },
+    {
+      "kit": "SOUL POCKET",
+      "category": "Acoustique",
+      "track": 6,
+      "key": "warm_tom_b",
+      "manifest": true,
+      "file": true,
+      "size": 45000
+    },
+    {
+      "kit": "SOUL POCKET",
+      "category": "Acoustique",
+      "track": 7,
+      "key": "deep_tom_a",
+      "manifest": true,
+      "file": true,
+      "size": 46584
+    },
+    {
+      "kit": "SOUL POCKET",
+      "category": "Acoustique",
+      "track": 8,
+      "key": "warm_kick_a",
+      "manifest": true,
+      "file": true,
+      "size": 26528
+    },
+    {
+      "kit": "SOUL POCKET",
+      "category": "Acoustique",
+      "track": 9,
+      "key": "metronome_tick",
+      "manifest": true,
+      "file": true,
+      "size": 9534
+    },
+    {
+      "kit": "JAZZ CLUB",
+      "category": "Acoustique",
+      "track": 0,
+      "key": "legacy_crash1",
+      "manifest": true,
+      "file": true,
+      "size": 132314
+    },
+    {
+      "kit": "JAZZ CLUB",
+      "category": "Acoustique",
+      "track": 1,
+      "key": "jazz_club_ride_vl1_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 106588
+    },
+    {
+      "kit": "JAZZ CLUB",
+      "category": "Acoustique",
+      "track": 2,
+      "key": "jazz_club_hho_vl1_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 106588
+    },
+    {
+      "kit": "JAZZ CLUB",
+      "category": "Acoustique",
+      "track": 3,
+      "key": "jazz_club_hhc_vl1_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 66864
+    },
+    {
+      "kit": "JAZZ CLUB",
+      "category": "Acoustique",
+      "track": 4,
+      "key": "jazz_club_snare_vl1_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 53668
+    },
+    {
+      "kit": "JAZZ CLUB",
+      "category": "Acoustique",
+      "track": 5,
+      "key": "jazz_club_tomhi_vl1_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 71308
+    },
+    {
+      "kit": "JAZZ CLUB",
+      "category": "Acoustique",
+      "track": 6,
+      "key": "jazz_club_tommid_vl1_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 89798
+    },
+    {
+      "kit": "JAZZ CLUB",
+      "category": "Acoustique",
+      "track": 7,
+      "key": "jazz_club_tomlo_vl1_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 71308
+    },
+    {
+      "kit": "JAZZ CLUB",
+      "category": "Acoustique",
+      "track": 8,
+      "key": "jazz_club_kick_vl1_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 53668
+    },
+    {
+      "kit": "JAZZ CLUB",
+      "category": "Acoustique",
+      "track": 9,
+      "key": "metronome_tick",
+      "manifest": true,
+      "file": true,
+      "size": 9534
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "category": "Acoustique",
+      "track": 0,
+      "key": "vintage_rock_crash_vl1_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 1302912
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "category": "Acoustique",
+      "track": 1,
+      "key": "vintage_rock_ride_vl10_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 1623930
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "category": "Acoustique",
+      "track": 2,
+      "key": "vintage_rock_hho_vl1_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 334328
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "category": "Acoustique",
+      "track": 3,
+      "key": "vintage_rock_hhc_vl1_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 109620
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "category": "Acoustique",
+      "track": 4,
+      "key": "vintage_rock_snare_vl10_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 170084
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "category": "Acoustique",
+      "track": 5,
+      "key": "vintage_rock_tomhi_vl1_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 220254
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "category": "Acoustique",
+      "track": 6,
+      "key": "vintage_rock_tommid_vl1_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 200250
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "category": "Acoustique",
+      "track": 7,
+      "key": "vintage_rock_tomlo_vl1_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 262956
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "category": "Acoustique",
+      "track": 8,
+      "key": "vintage_rock_kick_vl10_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 149858
+    },
+    {
+      "kit": "VINTAGE ROCK",
+      "category": "Acoustique",
+      "track": 9,
+      "key": "metronome_tick",
+      "manifest": true,
+      "file": true,
+      "size": 9534
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "category": "Acoustique",
+      "track": 0,
+      "key": "world_tambourine",
+      "manifest": true,
+      "file": true,
+      "size": 146620
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "category": "Acoustique",
+      "track": 1,
+      "key": "world_agogo",
+      "manifest": true,
+      "file": true,
+      "size": 100460
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "category": "Acoustique",
+      "track": 2,
+      "key": "world_shaker",
+      "manifest": true,
+      "file": true,
+      "size": 60178
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "category": "Acoustique",
+      "track": 3,
+      "key": "world_claves",
+      "manifest": true,
+      "file": true,
+      "size": 95898
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "category": "Acoustique",
+      "track": 4,
+      "key": "world_cajon",
+      "manifest": true,
+      "file": true,
+      "size": 111294
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "category": "Acoustique",
+      "track": 5,
+      "key": "world_cowbell",
+      "manifest": true,
+      "file": true,
+      "size": 82942
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "category": "Acoustique",
+      "track": 6,
+      "key": "world_darbuka",
+      "manifest": true,
+      "file": true,
+      "size": 110616
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "category": "Acoustique",
+      "track": 7,
+      "key": "world_frame_small",
+      "manifest": true,
+      "file": true,
+      "size": 185488
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "category": "Acoustique",
+      "track": 8,
+      "key": "world_frame_large",
+      "manifest": true,
+      "file": true,
+      "size": 318848
+    },
+    {
+      "kit": "WORLD PERCUSSION",
+      "category": "Acoustique",
+      "track": 9,
+      "key": "metronome_tick",
+      "manifest": true,
+      "file": true,
+      "size": 9534
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "category": "Électro",
+      "track": 0,
+      "key": "bt_analog_crash",
+      "manifest": true,
+      "file": true,
+      "size": 110294
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "category": "Électro",
+      "track": 1,
+      "key": "bt_analog_ride",
+      "manifest": true,
+      "file": true,
+      "size": 114704
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "category": "Électro",
+      "track": 2,
+      "key": "bt_analog_hho_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 79424
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "category": "Électro",
+      "track": 3,
+      "key": "bt_analog_hhc_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 13274
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "category": "Électro",
+      "track": 4,
+      "key": "bt_analog_snare_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 39734
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "category": "Électro",
+      "track": 5,
+      "key": "bt_analog_tom_high",
+      "manifest": true,
+      "file": true,
+      "size": 48554
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "category": "Électro",
+      "track": 6,
+      "key": "bt_analog_tom_mid",
+      "manifest": true,
+      "file": true,
+      "size": 48554
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "category": "Électro",
+      "track": 7,
+      "key": "bt_analog_tom_low",
+      "manifest": true,
+      "file": true,
+      "size": 48554
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "category": "Électro",
+      "track": 8,
+      "key": "bt_analog_kick_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 66194
+    },
+    {
+      "kit": "ANALOG CLASSIC",
+      "category": "Électro",
+      "track": 9,
+      "key": "metronome_tick",
+      "manifest": true,
+      "file": true,
+      "size": 9534
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "category": "Électro",
+      "track": 0,
+      "key": "bt_detroit_crash",
+      "manifest": true,
+      "file": true,
+      "size": 92654
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "category": "Électro",
+      "track": 1,
+      "key": "bt_detroit_ride",
+      "manifest": true,
+      "file": true,
+      "size": 101472
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "category": "Électro",
+      "track": 2,
+      "key": "bt_detroit_hho_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 63548
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "category": "Électro",
+      "track": 3,
+      "key": "bt_detroit_hhc_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 11510
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "category": "Électro",
+      "track": 4,
+      "key": "bt_detroit_snare_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 33560
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "category": "Électro",
+      "track": 5,
+      "key": "bt_detroit_tom_high",
+      "manifest": true,
+      "file": true,
+      "size": 42380
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "category": "Électro",
+      "track": 6,
+      "key": "bt_detroit_tom_mid",
+      "manifest": true,
+      "file": true,
+      "size": 42380
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "category": "Électro",
+      "track": 7,
+      "key": "bt_detroit_tom_low",
+      "manifest": true,
+      "file": true,
+      "size": 42380
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "category": "Électro",
+      "track": 8,
+      "key": "bt_detroit_kick_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 51200
+    },
+    {
+      "kit": "DETROIT HYBRID",
+      "category": "Électro",
+      "track": 9,
+      "key": "metronome_tick",
+      "manifest": true,
+      "file": true,
+      "size": 9534
+    },
+    {
+      "kit": "DIGITAL 80",
+      "category": "Électro",
+      "track": 0,
+      "key": "bt_digital80_crash",
+      "manifest": true,
+      "file": true,
+      "size": 72368
+    },
+    {
+      "kit": "DIGITAL 80",
+      "category": "Électro",
+      "track": 1,
+      "key": "bt_digital80_ride",
+      "manifest": true,
+      "file": true,
+      "size": 81188
+    },
+    {
+      "kit": "DIGITAL 80",
+      "category": "Électro",
+      "track": 2,
+      "key": "bt_digital80_hho",
+      "manifest": true,
+      "file": true,
+      "size": 54728
+    },
+    {
+      "kit": "DIGITAL 80",
+      "category": "Électro",
+      "track": 3,
+      "key": "bt_digital80_hhc",
+      "manifest": true,
+      "file": true,
+      "size": 10628
+    },
+    {
+      "kit": "DIGITAL 80",
+      "category": "Électro",
+      "track": 4,
+      "key": "bt_digital80_snare_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 31796
+    },
+    {
+      "kit": "DIGITAL 80",
+      "category": "Électro",
+      "track": 5,
+      "key": "bt_digital80_tom_high",
+      "manifest": true,
+      "file": true,
+      "size": 37970
+    },
+    {
+      "kit": "DIGITAL 80",
+      "category": "Électro",
+      "track": 6,
+      "key": "bt_digital80_tom_mid",
+      "manifest": true,
+      "file": true,
+      "size": 37970
+    },
+    {
+      "kit": "DIGITAL 80",
+      "category": "Électro",
+      "track": 7,
+      "key": "bt_digital80_tom_low",
+      "manifest": true,
+      "file": true,
+      "size": 37970
+    },
+    {
+      "kit": "DIGITAL 80",
+      "category": "Électro",
+      "track": 8,
+      "key": "bt_digital80_kick_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 42380
+    },
+    {
+      "kit": "DIGITAL 80",
+      "category": "Électro",
+      "track": 9,
+      "key": "metronome_tick",
+      "manifest": true,
+      "file": true,
+      "size": 9534
+    },
+    {
+      "kit": "SP DUST",
+      "category": "Électro",
+      "track": 0,
+      "key": "bt_analog_crash",
+      "manifest": true,
+      "file": true,
+      "size": 110294
+    },
+    {
+      "kit": "SP DUST",
+      "category": "Électro",
+      "track": 1,
+      "key": "bt_analog_ride",
+      "manifest": true,
+      "file": true,
+      "size": 114704
+    },
+    {
+      "kit": "SP DUST",
+      "category": "Électro",
+      "track": 2,
+      "key": "bt_analog_hho_rr1",
+      "manifest": true,
+      "file": true,
+      "size": 79424
+    },
+    {
+      "kit": "SP DUST",
+      "category": "Électro",
+      "track": 3,
+      "key": "electro_hat_closed_metal_01",
+      "manifest": true,
+      "file": true,
+      "size": 9204
+    },
+    {
+      "kit": "SP DUST",
+      "category": "Électro",
+      "track": 4,
+      "key": "electro_snare_distorted_01",
+      "manifest": true,
+      "file": true,
+      "size": 46892
+    },
+    {
+      "kit": "SP DUST",
+      "category": "Électro",
+      "track": 5,
+      "key": "bt_analog_tom_high",
+      "manifest": true,
+      "file": true,
+      "size": 48554
+    },
+    {
+      "kit": "SP DUST",
+      "category": "Électro",
+      "track": 6,
+      "key": "bt_analog_tom_mid",
+      "manifest": true,
+      "file": true,
+      "size": 48554
+    },
+    {
+      "kit": "SP DUST",
+      "category": "Électro",
+      "track": 7,
+      "key": "bt_analog_tom_low",
+      "manifest": true,
+      "file": true,
+      "size": 48554
+    },
+    {
+      "kit": "SP DUST",
+      "category": "Électro",
+      "track": 8,
+      "key": "electro_kick_distorted_01",
+      "manifest": true,
+      "file": true,
+      "size": 136612
+    },
+    {
+      "kit": "SP DUST",
+      "category": "Électro",
+      "track": 9,
+      "key": "metronome_tick",
+      "manifest": true,
+      "file": true,
+      "size": 9534
+    },
+    {
+      "kit": "GLITCH LAB",
+      "category": "Électro",
+      "track": 0,
+      "key": "bt_digital80_crash",
+      "manifest": true,
+      "file": true,
+      "size": 72368
+    },
+    {
+      "kit": "GLITCH LAB",
+      "category": "Électro",
+      "track": 1,
+      "key": "bt_digital80_ride",
+      "manifest": true,
+      "file": true,
+      "size": 81188
+    },
+    {
+      "kit": "GLITCH LAB",
+      "category": "Électro",
+      "track": 2,
+      "key": "bt_digital80_hho",
+      "manifest": true,
+      "file": true,
+      "size": 54728
+    },
+    {
+      "kit": "GLITCH LAB",
+      "category": "Électro",
+      "track": 3,
+      "key": "electro_hat_closed_distorted_01",
+      "manifest": true,
+      "file": true,
+      "size": 42028
+    },
+    {
+      "kit": "GLITCH LAB",
+      "category": "Électro",
+      "track": 4,
+      "key": "electro_snare_distorted_02",
+      "manifest": true,
+      "file": true,
+      "size": 23110
+    },
+    {
+      "kit": "GLITCH LAB",
+      "category": "Électro",
+      "track": 5,
+      "key": "bt_digital80_tom_high",
+      "manifest": true,
+      "file": true,
+      "size": 37970
+    },
+    {
+      "kit": "GLITCH LAB",
+      "category": "Électro",
+      "track": 6,
+      "key": "bt_digital80_tom_mid",
+      "manifest": true,
+      "file": true,
+      "size": 37970
+    },
+    {
+      "kit": "GLITCH LAB",
+      "category": "Électro",
+      "track": 7,
+      "key": "bt_digital80_tom_low",
+      "manifest": true,
+      "file": true,
+      "size": 37970
+    },
+    {
+      "kit": "GLITCH LAB",
+      "category": "Électro",
+      "track": 8,
+      "key": "electro_kick_distorted_02",
+      "manifest": true,
+      "file": true,
+      "size": 62384
+    },
+    {
+      "kit": "GLITCH LAB",
+      "category": "Électro",
+      "track": 9,
+      "key": "metronome_tick",
+      "manifest": true,
+      "file": true,
+      "size": 9534
+    }
+  ]
+}

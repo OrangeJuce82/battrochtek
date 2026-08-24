@@ -66,3 +66,7 @@ Une première couverture cohérente pourrait être :
 - licence et provenance
 
 Cela permettra au moteur FEEL de choisir non seulement une note, mais une articulation réellement adaptée à Energy, Density et à la grammaire du groove.
+
+## Architecture — implémentée en v37.2
+
+Le Sample Manifest v2, le resolver articulation/dynamique/round-robin et le branchement FEEL sont maintenant en place. Les 210 samples historiques ont été migrés sans changer leurs clés publiques. Le prochain travail est donc l'import audio/licences des banques cibles, pas une nouvelle refonte du moteur.

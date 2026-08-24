@@ -1,4 +1,4 @@
-# FEEL v22 — Auto Orchestration explicite
+# Battrochtek — FEEL et Auto Orchestration
 
 - Auto Orchestration (`shuffle`) utilise désormais un intervalle explicite de 2, 4, 8 ou 16 boucles.
 - Valeur par défaut : 4 boucles.

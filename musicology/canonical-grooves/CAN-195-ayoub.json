@@ -4,190 +4,153 @@
   "family": "North Africa / Middle East",
   "tradition": "Arabic rhythmic cycles",
   "name": "Ayoub",
-  "bpm": 108,
+  "bpm": 112,
   "signature": "2/4",
   "ppq": 960,
   "phraseBars": 2,
-  "feel": "2/4",
+  "feel": "arabic-iqa-adaptation",
   "swing": 0,
   "events": [
     {
       "tick": 0,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "cycle-low",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 720,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "cross-stick",
       "velocity": 82,
       "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
+      "limb": "otherHand",
+      "role": "cycle-high",
       "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 1440,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 1920,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 2400,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 2880,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 3600,
-      "duration": 108,
-      "instrument": "cymbal",
-      "articulation": "ride-bow",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 2160,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 960,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "otherHand",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 2880,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "otherHand",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 0,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
       "velocityClass": "strong",
       "limb": "rightFoot",
-      "role": "core",
+      "role": "cycle-low",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1440,
-      "duration": 108,
-      "instrument": "kick",
-      "articulation": "normal",
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "cross-stick",
       "velocity": 82,
       "velocityClass": "normal",
-      "limb": "rightFoot",
-      "role": "core",
+      "limb": "otherHand",
+      "role": "cycle-high",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1920,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
       "velocityClass": "strong",
       "limb": "rightFoot",
-      "role": "core",
+      "role": "cycle-low",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 2640,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "cross-stick",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "otherHand",
+      "role": "cycle-high",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 2880,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "cycle-low",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 3360,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "cross-stick",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "otherHand",
+      "role": "cycle-high",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
     }
   ],
   "metadata": {
-    "validationState": "medium",
-    "confidence": 0.525,
-    "sourceType": "canonical-curated",
-    "provenance": {
-      "candidateSource": "Battrochtek Library v2",
-      "candidateName": "Ayoub Drum-Set",
-      "origin": "Middle East",
-      "attribution": "Battrochtek — adaptation pédagogique drum-set"
-    },
-    "feel": "2/4",
+    "validationState": "reviewed-pedagogical-adaptation",
+    "confidence": 0.82,
+    "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+    "createdBy": "Battrochtek musicology compiler",
+    "notes": "Reviewed pedagogical drum-set mapping of an Arabic iqa skeleton. Kick carries dum (low/resonant) function; cross-stick/snare carries tak (high/dry) function. Ornamentation is intentionally sparse and the canonical identity is the cycle, not a Western backbeat.",
+    "distinctiveFeatures": [
+      "dum/tak role mapping",
+      "cycle-first orchestration",
+      "2/4 Ayyub cycle",
+      "distinct low/high placement from Malfuf"
+    ],
+    "references": [
+      {
+        "title": "Arabic Rhythmic Cycles / Iqa‘at — MaqamWorld",
+        "url": "https://www.maqamworld.com/en/iqaa.php"
+      },
+      {
+        "title": "Iqa‘ Ayyub 2/4 — MaqamWorld",
+        "url": "https://www.maqamworld.com/en/iqaa/ayyub.php"
+      }
+    ],
     "tier": "B",
     "originalCoverage": "RELATED_CANDIDATE",
-    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-    "evidence": {
-      "taxonomyState": "needs-review",
-      "performanceEvidence": "not-mapped",
-      "references": []
+    "scoreState": "reviewed-adaptation",
+    "sourcePercussionRoles": {
+      "dum": "kick (low/resonant function)",
+      "tak": "cross-stick (high/dry function)",
+      "ornament": "snare soft when present"
     },
-    "scoreState": "candidate",
-    "references": []
+    "evidence": {
+      "taxonomyState": "literature-supported",
+      "performanceEvidence": "not-mapped",
+      "references": [
+        {
+          "title": "Arabic Rhythmic Cycles / Iqa‘at — MaqamWorld",
+          "url": "https://www.maqamworld.com/en/iqaa.php"
+        },
+        {
+          "title": "Iqa‘ Ayyub 2/4 — MaqamWorld",
+          "url": "https://www.maqamworld.com/en/iqaa/ayyub.php"
+        }
+      ]
+    }
   }
 }

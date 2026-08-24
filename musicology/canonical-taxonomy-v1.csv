@@ -81,10 +81,10 @@ CAN-079,Country / Americana,Country,Train Beat,A,NAMED_MATCH,1.020,Battrochtek L
 CAN-080,Country / Americana,Country,Country Two-Step,A,NAMED_MATCH,0.787,Battrochtek Library v2,Two-Step,REBUILD_DISTINCT_ARCHETYPE,NEEDS_MUSICOLOGICAL_VALIDATION
 CAN-081,Country / Americana,Country,Country Shuffle,A,NAMED_MATCH,1.020,Battrochtek Library v2,Country Shuffle,REBUILD_DISTINCT_ARCHETYPE,NEEDS_MUSICOLOGICAL_VALIDATION
 CAN-082,Country / Americana,Country,Country Waltz,A,NAMED_MATCH,1.020,Battrochtek Library v2,Country Waltz,REBUILD_VALIDATE,NEEDS_MUSICOLOGICAL_VALIDATION
-CAN-083,Country / Americana,Country,Honky-Tonk,A,NAMED_MATCH,1.020,Battrochtek Library v2,Honky Tonk,REBUILD_DISTINCT_ARCHETYPE,NEEDS_MUSICOLOGICAL_VALIDATION
-CAN-084,Country / Americana,Country,Nashville Straight 8ths,A,NAMED_MATCH,0.875,Battrochtek Library v2,Nashville Straight,REBUILD_DISTINCT_ARCHETYPE,NEEDS_MUSICOLOGICAL_VALIDATION
+CAN-083,Country / Americana,Country,Western Swing,A,NAMED_MATCH,1.020,Battrochtek Library v2,Honky Tonk,REBUILD_DISTINCT_ARCHETYPE,NEEDS_MUSICOLOGICAL_VALIDATION
+CAN-084,Country / Americana,Country,Country Pop / Nashville Straight 8ths,A,NAMED_MATCH,0.875,Battrochtek Library v2,Nashville Straight,REBUILD_DISTINCT_ARCHETYPE,NEEDS_MUSICOLOGICAL_VALIDATION
 CAN-085,Country / Americana,Country,Country Rock,A,NAMED_MATCH,1.020,Battrochtek Library v2,Country Rock,REBUILD_DISTINCT_ARCHETYPE,NEEDS_MUSICOLOGICAL_VALIDATION
-CAN-086,Country / Americana,Country,Brush Country,A,NAMED_MATCH,0.820,Battrochtek Library v2,Brushes Country,REBUILD_DISTINCT_ARCHETYPE,NEEDS_MUSICOLOGICAL_VALIDATION
+CAN-086,Country / Americana,Country,Country 6/8 Ballad,A,NAMED_MATCH,0.820,Battrochtek Library v2,Brushes Country,REBUILD_DISTINCT_ARCHETYPE,NEEDS_MUSICOLOGICAL_VALIDATION
 CAN-087,Country / Americana,Country,Modern Bluegrass Drum-Set,A,NAMED_MATCH,0.856,Battrochtek Library v2,Bluegrass Drum-Set,REBUILD_DISTINCT_ARCHETYPE,NEEDS_MUSICOLOGICAL_VALIDATION
 CAN-088,Country / Americana,Country,Rockabilly Shuffle,A,RELATED_CANDIDATE,0.669,Battrochtek Library v2,Country Shuffle,REBUILD_DISTINCT_ARCHETYPE,NEEDS_MUSICOLOGICAL_VALIDATION
 CAN-089,Hip-Hop,Hip-Hop,Old-School Breakbeat,A,NAMED_MATCH,1.020,Battrochtek Library v2,Old School Breakbeat,REBUILD_DISTINCT_ARCHETYPE,NEEDS_MUSICOLOGICAL_VALIDATION

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "ppq": 960,
   "count": 213,
-  "generatedAt": "2026-08-23T10:08:37.191Z",
+  "generatedAt": "2026-08-24T10:27:31.375Z",
   "entries": [
     {
       "id": "CAN-001",
@@ -852,13 +852,13 @@
       "tradition": "Blues",
       "file": "musicology/canonical-grooves/CAN-057-chicago-shuffle.json",
       "midi": "musicology/midi/CAN-057-chicago-shuffle.mid",
-      "validationState": "high",
-      "confidence": 1.02,
-      "sourceType": "canonical-curated",
-      "eventCount": 24,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 36,
       "signature": "4/4",
-      "bpm": 112,
-      "fingerprint": "e875d62a5a2d5ff1"
+      "bpm": 104,
+      "fingerprint": "c1ba28ea02ebcc41"
     },
     {
       "id": "CAN-058",
@@ -867,13 +867,13 @@
       "tradition": "Blues",
       "file": "musicology/canonical-grooves/CAN-058-texas-shuffle.json",
       "midi": "musicology/midi/CAN-058-texas-shuffle.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 28,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 36,
       "signature": "4/4",
-      "bpm": 102,
-      "fingerprint": "7c36308274726ac7"
+      "bpm": 112,
+      "fingerprint": "2bb16ebb165da76e"
     },
     {
       "id": "CAN-059",
@@ -882,13 +882,13 @@
       "tradition": "Blues",
       "file": "musicology/canonical-grooves/CAN-059-slow-12-8-blues.json",
       "midi": "musicology/midi/CAN-059-slow-12-8-blues.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 29,
-      "signature": "4/4",
-      "bpm": 66,
-      "fingerprint": "bb2685b96f8c9399"
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 26,
+      "signature": "12/8",
+      "bpm": 62,
+      "fingerprint": "7886191ac6793c72"
     },
     {
       "id": "CAN-060",
@@ -897,13 +897,13 @@
       "tradition": "Blues",
       "file": "musicology/canonical-grooves/CAN-060-straight-blues.json",
       "midi": "musicology/midi/CAN-060-straight-blues.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 29,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 28,
       "signature": "4/4",
-      "bpm": 88,
-      "fingerprint": "434c9c05e4dbdd79"
+      "bpm": 90,
+      "fingerprint": "9e0c883483dabd48"
     },
     {
       "id": "CAN-061",
@@ -912,13 +912,13 @@
       "tradition": "Blues",
       "file": "musicology/canonical-grooves/CAN-061-jump-blues.json",
       "midi": "musicology/midi/CAN-061-jump-blues.mid",
-      "validationState": "provisional",
-      "confidence": 0.512,
-      "sourceType": "canonical-curated",
-      "eventCount": 36,
-      "signature": "12/8",
-      "bpm": 120,
-      "fingerprint": "a9760ffa6aef945c"
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
+      "signature": "4/4",
+      "bpm": 158,
+      "fingerprint": "2c24e2cbee4457ee"
     },
     {
       "id": "CAN-062",
@@ -927,13 +927,13 @@
       "tradition": "Blues",
       "file": "musicology/canonical-grooves/CAN-062-train-shuffle.json",
       "midi": "musicology/midi/CAN-062-train-shuffle.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 29,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 30,
       "signature": "4/4",
-      "bpm": 102,
-      "fingerprint": "f5f7f74a51d8d592"
+      "bpm": 118,
+      "fingerprint": "e83b67281cd3ec90"
     },
     {
       "id": "CAN-063",
@@ -942,13 +942,13 @@
       "tradition": "Blues",
       "file": "musicology/canonical-grooves/CAN-063-half-time-shuffle.json",
       "midi": "musicology/midi/CAN-063-half-time-shuffle.mid",
-      "validationState": "high",
-      "confidence": 1.02,
-      "sourceType": "canonical-curated",
-      "eventCount": 22,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 34,
       "signature": "4/4",
       "bpm": 96,
-      "fingerprint": "c15921f6a285d8c9"
+      "fingerprint": "64fb1a662c878233"
     },
     {
       "id": "CAN-064",
@@ -957,13 +957,13 @@
       "tradition": "Blues",
       "file": "musicology/canonical-grooves/CAN-064-blues-rock-shuffle.json",
       "midi": "musicology/midi/CAN-064-blues-rock-shuffle.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 30,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 34,
       "signature": "4/4",
-      "bpm": 102,
-      "fingerprint": "1e3155950c5afcfd"
+      "bpm": 116,
+      "fingerprint": "6e3a9d804196936a"
     },
     {
       "id": "CAN-065",
@@ -1182,13 +1182,13 @@
       "tradition": "Country",
       "file": "musicology/canonical-grooves/CAN-079-train-beat.json",
       "midi": "musicology/midi/CAN-079-train-beat.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 24,
       "signature": "4/4",
-      "bpm": 120,
-      "fingerprint": "b491e375f60663ed"
+      "bpm": 118,
+      "fingerprint": "e146b8cb962574c5"
     },
     {
       "id": "CAN-080",
@@ -1197,13 +1197,13 @@
       "tradition": "Country",
       "file": "musicology/canonical-grooves/CAN-080-country-two-step.json",
       "midi": "musicology/midi/CAN-080-country-two-step.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 25,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 24,
       "signature": "4/4",
-      "bpm": 120,
-      "fingerprint": "5fcafa18897380ea"
+      "bpm": 132,
+      "fingerprint": "b2b2e3290d3e1df0"
     },
     {
       "id": "CAN-081",
@@ -1212,13 +1212,13 @@
       "tradition": "Country",
       "file": "musicology/canonical-grooves/CAN-081-country-shuffle.json",
       "midi": "musicology/midi/CAN-081-country-shuffle.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 29,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
       "signature": "4/4",
-      "bpm": 112,
-      "fingerprint": "dfcfd2d470fff136"
+      "bpm": 108,
+      "fingerprint": "aa53ce8adaf511c2"
     },
     {
       "id": "CAN-082",
@@ -1227,43 +1227,43 @@
       "tradition": "Country",
       "file": "musicology/canonical-grooves/CAN-082-country-waltz.json",
       "midi": "musicology/midi/CAN-082-country-waltz.mid",
-      "validationState": "high",
-      "confidence": 1.02,
-      "sourceType": "canonical-curated",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 12,
       "signature": "3/4",
-      "bpm": 92,
-      "fingerprint": "4956b157a528bfcf"
+      "bpm": 84,
+      "fingerprint": "2d58b77352451f70"
     },
     {
       "id": "CAN-083",
-      "name": "Honky-Tonk",
+      "name": "Western Swing",
       "family": "Country / Americana",
       "tradition": "Country",
-      "file": "musicology/canonical-grooves/CAN-083-honky-tonk.json",
-      "midi": "musicology/midi/CAN-083-honky-tonk.mid",
-      "validationState": "high",
-      "confidence": 1.02,
-      "sourceType": "canonical-curated",
+      "file": "musicology/canonical-grooves/CAN-083-western-swing.json",
+      "midi": "musicology/midi/CAN-083-western-swing.mid",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 28,
       "signature": "4/4",
-      "bpm": 124,
-      "fingerprint": "ec2e45fafce2cfc8"
+      "bpm": 148,
+      "fingerprint": "ea888cf631ec04f3"
     },
     {
       "id": "CAN-084",
-      "name": "Nashville Straight 8ths",
+      "name": "Country Pop / Nashville Straight 8ths",
       "family": "Country / Americana",
       "tradition": "Country",
-      "file": "musicology/canonical-grooves/CAN-084-nashville-straight-8ths.json",
-      "midi": "musicology/midi/CAN-084-nashville-straight-8ths.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 25,
+      "file": "musicology/canonical-grooves/CAN-084-country-pop-nashville-straight-8ths.json",
+      "midi": "musicology/midi/CAN-084-country-pop-nashville-straight-8ths.mid",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 30,
       "signature": "4/4",
-      "bpm": 120,
-      "fingerprint": "f45370a15196ee74"
+      "bpm": 112,
+      "fingerprint": "0595b7faa90e9148"
     },
     {
       "id": "CAN-085",
@@ -1272,28 +1272,28 @@
       "tradition": "Country",
       "file": "musicology/canonical-grooves/CAN-085-country-rock.json",
       "midi": "musicology/midi/CAN-085-country-rock.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 25,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 34,
       "signature": "4/4",
-      "bpm": 120,
-      "fingerprint": "3cc1d29a96efb305"
+      "bpm": 124,
+      "fingerprint": "860eb311cbfb9821"
     },
     {
       "id": "CAN-086",
-      "name": "Brush Country",
+      "name": "Country 6/8 Ballad",
       "family": "Country / Americana",
       "tradition": "Country",
-      "file": "musicology/canonical-grooves/CAN-086-brush-country.json",
-      "midi": "musicology/midi/CAN-086-brush-country.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 25,
-      "signature": "4/4",
-      "bpm": 120,
-      "fingerprint": "c32a8cbfa1a7213f"
+      "file": "musicology/canonical-grooves/CAN-086-country-6-8-ballad.json",
+      "midi": "musicology/midi/CAN-086-country-6-8-ballad.mid",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 18,
+      "signature": "6/8",
+      "bpm": 72,
+      "fingerprint": "31a7ec07fdc5f324"
     },
     {
       "id": "CAN-087",
@@ -1302,13 +1302,13 @@
       "tradition": "Country",
       "file": "musicology/canonical-grooves/CAN-087-modern-bluegrass-drum-set.json",
       "midi": "musicology/midi/CAN-087-modern-bluegrass-drum-set.mid",
-      "validationState": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "eventCount": 29,
+      "validationState": "reviewed-adaptation-tradition-caveat",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 36,
       "signature": "4/4",
-      "bpm": 148,
-      "fingerprint": "690d23f5f4215ab8"
+      "bpm": 152,
+      "fingerprint": "c1ba28ea02ebcc41"
     },
     {
       "id": "CAN-088",
@@ -1317,13 +1317,13 @@
       "tradition": "Country",
       "file": "musicology/canonical-grooves/CAN-088-rockabilly-shuffle.json",
       "midi": "musicology/midi/CAN-088-rockabilly-shuffle.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 29,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 34,
       "signature": "4/4",
-      "bpm": 170,
-      "fingerprint": "5fba17167babae13"
+      "bpm": 174,
+      "fingerprint": "031f895913a30449"
     },
     {
       "id": "CAN-089",
@@ -1647,13 +1647,13 @@
       "tradition": "Club music",
       "file": "musicology/canonical-grooves/CAN-110-disco.json",
       "midi": "musicology/midi/CAN-110-disco.mid",
-      "validationState": "medium",
-      "confidence": 0.686,
-      "sourceType": "canonical-curated",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 28,
       "signature": "4/4",
       "bpm": 120,
-      "fingerprint": "15b54eb66074c26d"
+      "fingerprint": "646c891b040122de"
     },
     {
       "id": "CAN-111",
@@ -1662,13 +1662,13 @@
       "tradition": "Club music",
       "file": "musicology/canonical-grooves/CAN-111-classic-house.json",
       "midi": "musicology/midi/CAN-111-classic-house.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 20,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 36,
       "signature": "4/4",
-      "bpm": 124,
-      "fingerprint": "c9b790a557f3e9e3"
+      "bpm": 122,
+      "fingerprint": "ef7bd31f7b5c9a9f"
     },
     {
       "id": "CAN-112",
@@ -1677,13 +1677,13 @@
       "tradition": "Club music",
       "file": "musicology/canonical-grooves/CAN-112-deep-house.json",
       "midi": "musicology/midi/CAN-112-deep-house.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 21,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
       "signature": "4/4",
-      "bpm": 124,
-      "fingerprint": "a1c15526fb1bcd46"
+      "bpm": 120,
+      "fingerprint": "7b1f392bebf356dd"
     },
     {
       "id": "CAN-113",
@@ -1692,13 +1692,13 @@
       "tradition": "Club music",
       "file": "musicology/canonical-grooves/CAN-113-funky-house.json",
       "midi": "musicology/midi/CAN-113-funky-house.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 21,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 36,
       "signature": "4/4",
       "bpm": 124,
-      "fingerprint": "0f1441f6277567a3"
+      "fingerprint": "cbb59db592916abe"
     },
     {
       "id": "CAN-114",
@@ -1707,13 +1707,13 @@
       "tradition": "Club music",
       "file": "musicology/canonical-grooves/CAN-114-techno.json",
       "midi": "musicology/midi/CAN-114-techno.mid",
-      "validationState": "high",
-      "confidence": 0.9,
-      "sourceType": "canonical-curated",
-      "eventCount": 28,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 24,
       "signature": "4/4",
-      "bpm": 132,
-      "fingerprint": "bd1570b83b57bbd4"
+      "bpm": 130,
+      "fingerprint": "3ad32f5222222de2"
     },
     {
       "id": "CAN-115",
@@ -1722,13 +1722,13 @@
       "tradition": "Club music",
       "file": "musicology/canonical-grooves/CAN-115-detroit-electro.json",
       "midi": "musicology/midi/CAN-115-detroit-electro.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 20,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 30,
       "signature": "4/4",
       "bpm": 126,
-      "fingerprint": "fe480b73e6f4f951"
+      "fingerprint": "f078e56ed9fff9c1"
     },
     {
       "id": "CAN-116",
@@ -1737,13 +1737,13 @@
       "tradition": "Club music",
       "file": "musicology/canonical-grooves/CAN-116-electro-funk.json",
       "midi": "musicology/midi/CAN-116-electro-funk.mid",
-      "validationState": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "eventCount": 25,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 38,
       "signature": "4/4",
-      "bpm": 112,
-      "fingerprint": "f8b92f2f98042f0c"
+      "bpm": 116,
+      "fingerprint": "dd278833dc0344a9"
     },
     {
       "id": "CAN-117",
@@ -1752,13 +1752,13 @@
       "tradition": "Club music",
       "file": "musicology/canonical-grooves/CAN-117-uk-garage-2-step.json",
       "midi": "musicology/midi/CAN-117-uk-garage-2-step.mid",
-      "validationState": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "eventCount": 25,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 34,
       "signature": "4/4",
       "bpm": 132,
-      "fingerprint": "8b13940ad33a9025"
+      "fingerprint": "ffa1734275902efa"
     },
     {
       "id": "CAN-118",
@@ -1767,13 +1767,13 @@
       "tradition": "Club music",
       "file": "musicology/canonical-grooves/CAN-118-breakbeat-big-beat.json",
       "midi": "musicology/midi/CAN-118-breakbeat-big-beat.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 60,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 52,
       "signature": "4/4",
       "bpm": 126,
-      "fingerprint": "3250278b83ba3da7"
+      "fingerprint": "c98a90320495805e"
     },
     {
       "id": "CAN-119",
@@ -1782,13 +1782,13 @@
       "tradition": "Club music",
       "file": "musicology/canonical-grooves/CAN-119-jungle.json",
       "midi": "musicology/midi/CAN-119-jungle.mid",
-      "validationState": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "eventCount": 32,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 50,
       "signature": "4/4",
       "bpm": 168,
-      "fingerprint": "2f0993173ae36aa0"
+      "fingerprint": "319944d5068ca21b"
     },
     {
       "id": "CAN-120",
@@ -1797,13 +1797,13 @@
       "tradition": "Club music",
       "file": "musicology/canonical-grooves/CAN-120-drum-bass.json",
       "midi": "musicology/midi/CAN-120-drum-bass.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 44,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 28,
       "signature": "4/4",
       "bpm": 174,
-      "fingerprint": "77abba216a30c7e1"
+      "fingerprint": "6c68b6578e8f49eb"
     },
     {
       "id": "CAN-121",
@@ -1812,13 +1812,13 @@
       "tradition": "Club music",
       "file": "musicology/canonical-grooves/CAN-121-trip-hop.json",
       "midi": "musicology/midi/CAN-121-trip-hop.mid",
-      "validationState": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "eventCount": 25,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
       "signature": "4/4",
-      "bpm": 84,
-      "fingerprint": "b993f43e28c71620"
+      "bpm": 82,
+      "fingerprint": "1b220b49b575148f"
     },
     {
       "id": "CAN-122",
@@ -1827,13 +1827,13 @@
       "tradition": "Club music",
       "file": "musicology/canonical-grooves/CAN-122-trance.json",
       "midi": "musicology/midi/CAN-122-trance.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 24,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 52,
       "signature": "4/4",
       "bpm": 138,
-      "fingerprint": "fe12684b00be481d"
+      "fingerprint": "7ae7230dce7158b0"
     },
     {
       "id": "CAN-123",
@@ -1842,13 +1842,13 @@
       "tradition": "Club music",
       "file": "musicology/canonical-grooves/CAN-123-dubstep-half-time.json",
       "midi": "musicology/midi/CAN-123-dubstep-half-time.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 14,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 26,
       "signature": "4/4",
       "bpm": 140,
-      "fingerprint": "2abb622d17f9fd42"
+      "fingerprint": "2e6f78f2322167a6"
     },
     {
       "id": "CAN-124",
@@ -1857,13 +1857,13 @@
       "tradition": "Club music",
       "file": "musicology/canonical-grooves/CAN-124-footwork-juke.json",
       "midi": "musicology/midi/CAN-124-footwork-juke.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 48,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 52,
       "signature": "4/4",
       "bpm": 160,
-      "fingerprint": "08e822a873aa6456"
+      "fingerprint": "88b1c398d131f555"
     },
     {
       "id": "CAN-125",
@@ -1872,13 +1872,13 @@
       "tradition": "Club music",
       "file": "musicology/canonical-grooves/CAN-125-synthwave.json",
       "midi": "musicology/midi/CAN-125-synthwave.mid",
-      "validationState": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "eventCount": 29,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 28,
       "signature": "4/4",
-      "bpm": 104,
-      "fingerprint": "59e6c3872b0b0753"
+      "bpm": 105,
+      "fingerprint": "babcca82c0898dde"
     },
     {
       "id": "CAN-126",
@@ -2592,13 +2592,13 @@
       "tradition": "West Africa",
       "file": "musicology/canonical-grooves/CAN-173-afrobeat.json",
       "midi": "musicology/midi/CAN-173-afrobeat.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 28,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 40,
       "signature": "4/4",
-      "bpm": 118,
-      "fingerprint": "14be49f3630a1857"
+      "bpm": 110,
+      "fingerprint": "de93f846711149c8"
     },
     {
       "id": "CAN-174",
@@ -2607,13 +2607,13 @@
       "tradition": "West Africa",
       "file": "musicology/canonical-grooves/CAN-174-highlife.json",
       "midi": "musicology/midi/CAN-174-highlife.mid",
-      "validationState": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "eventCount": 25,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 22,
       "signature": "4/4",
-      "bpm": 116,
-      "fingerprint": "6509084f95f6a18d"
+      "bpm": 118,
+      "fingerprint": "8c94b1537c049e7f"
     },
     {
       "id": "CAN-175",
@@ -2622,13 +2622,13 @@
       "tradition": "West Africa",
       "file": "musicology/canonical-grooves/CAN-175-kpanlogo-drum-set.json",
       "midi": "musicology/midi/CAN-175-kpanlogo-drum-set.mid",
-      "validationState": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "eventCount": 25,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 26,
       "signature": "4/4",
-      "bpm": 108,
-      "fingerprint": "28eba1ecfe1aa74d"
+      "bpm": 106,
+      "fingerprint": "34bd7e33b21f4b0c"
     },
     {
       "id": "CAN-176",
@@ -2637,13 +2637,13 @@
       "tradition": "West Africa",
       "file": "musicology/canonical-grooves/CAN-176-ewe-12-8-agbekor-adaptation.json",
       "midi": "musicology/midi/CAN-176-ewe-12-8-agbekor-adaptation.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 38,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
       "signature": "12/8",
-      "bpm": 108,
-      "fingerprint": "d783ba1d0e4e33db"
+      "bpm": 104,
+      "fingerprint": "1afd7130cab44ede"
     },
     {
       "id": "CAN-177",
@@ -2652,13 +2652,13 @@
       "tradition": "West Africa",
       "file": "musicology/canonical-grooves/CAN-177-fanga-drum-set-adaptation.json",
       "midi": "musicology/midi/CAN-177-fanga-drum-set-adaptation.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 27,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 26,
       "signature": "4/4",
-      "bpm": 118,
-      "fingerprint": "e9df7ef00d5a6e84"
+      "bpm": 108,
+      "fingerprint": "5cbb4aea48a6424a"
     },
     {
       "id": "CAN-178",
@@ -2667,13 +2667,13 @@
       "tradition": "West Africa",
       "file": "musicology/canonical-grooves/CAN-178-mbalax.json",
       "midi": "musicology/midi/CAN-178-mbalax.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 36,
       "signature": "4/4",
       "bpm": 126,
-      "fingerprint": "154b6ec0908b74b7"
+      "fingerprint": "e5a686a8c34dd0b9"
     },
     {
       "id": "CAN-179",
@@ -2682,13 +2682,13 @@
       "tradition": "West Africa",
       "file": "musicology/canonical-grooves/CAN-179-juju-yoruba-derived-drum-set.json",
       "midi": "musicology/midi/CAN-179-juju-yoruba-derived-drum-set.mid",
-      "validationState": "medium",
-      "confidence": 0.535,
-      "sourceType": "canonical-curated",
-      "eventCount": 28,
-      "signature": "12/8",
-      "bpm": 112,
-      "fingerprint": "b4fc8284c6b78b82"
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
+      "signature": "4/4",
+      "bpm": 116,
+      "fingerprint": "bb8ab2e49c6c4643"
     },
     {
       "id": "CAN-180",
@@ -2697,13 +2697,13 @@
       "tradition": "Central Africa",
       "file": "musicology/canonical-grooves/CAN-180-soukous.json",
       "midi": "musicology/midi/CAN-180-soukous.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 30,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 28,
       "signature": "4/4",
       "bpm": 124,
-      "fingerprint": "50eb31e7ebeb4795"
+      "fingerprint": "c0009e5455526199"
     },
     {
       "id": "CAN-181",
@@ -2712,13 +2712,13 @@
       "tradition": "Central Africa",
       "file": "musicology/canonical-grooves/CAN-181-makossa.json",
       "midi": "musicology/midi/CAN-181-makossa.mid",
-      "validationState": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "eventCount": 32,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 34,
       "signature": "4/4",
       "bpm": 118,
-      "fingerprint": "5a6a107a2f7200b8"
+      "fingerprint": "bc171b33c9838a8a"
     },
     {
       "id": "CAN-182",
@@ -2727,13 +2727,13 @@
       "tradition": "Central Africa",
       "file": "musicology/canonical-grooves/CAN-182-bikutsi.json",
       "midi": "musicology/midi/CAN-182-bikutsi.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 24,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 28,
       "signature": "6/8",
       "bpm": 132,
-      "fingerprint": "aac8862bd397bc19"
+      "fingerprint": "30c78bd808afe176"
     },
     {
       "id": "CAN-183",
@@ -2742,13 +2742,13 @@
       "tradition": "Central Africa",
       "file": "musicology/canonical-grooves/CAN-183-mangambe.json",
       "midi": "musicology/midi/CAN-183-mangambe.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 22,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 26,
       "signature": "6/8",
       "bpm": 118,
-      "fingerprint": "719d7560b8809663"
+      "fingerprint": "02f9d9b057de3f89"
     },
     {
       "id": "CAN-184",
@@ -2757,13 +2757,13 @@
       "tradition": "Southern Africa",
       "file": "musicology/canonical-grooves/CAN-184-mbaqanga.json",
       "midi": "musicology/midi/CAN-184-mbaqanga.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
       "eventCount": 28,
       "signature": "4/4",
-      "bpm": 118,
-      "fingerprint": "0b1b32e4f75853a6"
+      "bpm": 116,
+      "fingerprint": "7d6005281a015402"
     },
     {
       "id": "CAN-185",
@@ -2772,13 +2772,13 @@
       "tradition": "Southern Africa",
       "file": "musicology/canonical-grooves/CAN-185-south-african-house.json",
       "midi": "musicology/midi/CAN-185-south-african-house.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 21,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 24,
       "signature": "4/4",
       "bpm": 118,
-      "fingerprint": "15ecdbae277db1b8"
+      "fingerprint": "5208925ad5c19b2e"
     },
     {
       "id": "CAN-186",
@@ -2787,13 +2787,13 @@
       "tradition": "Southern Africa",
       "file": "musicology/canonical-grooves/CAN-186-amapiano.json",
       "midi": "musicology/midi/CAN-186-amapiano.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 27,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.72,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 26,
       "signature": "4/4",
-      "bpm": 118,
-      "fingerprint": "3c096b4a80f15145"
+      "bpm": 112,
+      "fingerprint": "69de1f56d9b7c723"
     },
     {
       "id": "CAN-187",
@@ -2802,13 +2802,13 @@
       "tradition": "Indian Ocean",
       "file": "musicology/canonical-grooves/CAN-187-sega.json",
       "midi": "musicology/midi/CAN-187-sega.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 20,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 24,
       "signature": "6/8",
       "bpm": 116,
-      "fingerprint": "d135a8c4676db6e9"
+      "fingerprint": "59cbc6b953b9b422"
     },
     {
       "id": "CAN-188",
@@ -2817,13 +2817,13 @@
       "tradition": "Indian Ocean",
       "file": "musicology/canonical-grooves/CAN-188-maloya.json",
       "midi": "musicology/midi/CAN-188-maloya.mid",
-      "validationState": "medium",
-      "confidence": 0.549,
-      "sourceType": "canonical-curated",
-      "eventCount": 16,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 24,
       "signature": "6/8",
-      "bpm": 104,
-      "fingerprint": "c1488b9821b45b4a"
+      "bpm": 100,
+      "fingerprint": "e6d5ee030cebba9d"
     },
     {
       "id": "CAN-189",
@@ -2832,13 +2832,13 @@
       "tradition": "North Africa",
       "file": "musicology/canonical-grooves/CAN-189-gnawa-drum-set.json",
       "midi": "musicology/midi/CAN-189-gnawa-drum-set.mid",
-      "validationState": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "eventCount": 17,
-      "signature": "6/8",
-      "bpm": 96,
-      "fingerprint": "9d4aea77a6ca567f"
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 26,
+      "signature": "4/4",
+      "bpm": 104,
+      "fingerprint": "41fbc535d308aa0c"
     },
     {
       "id": "CAN-190",
@@ -2847,13 +2847,13 @@
       "tradition": "North Africa",
       "file": "musicology/canonical-grooves/CAN-190-maghreb-chaabi.json",
       "midi": "musicology/midi/CAN-190-maghreb-chaabi.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
+      "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 24,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 26,
       "signature": "4/4",
-      "bpm": 96,
-      "fingerprint": "235cf886bc216a9d"
+      "bpm": 108,
+      "fingerprint": "04745303b2403fb9"
     },
     {
       "id": "CAN-191",
@@ -2862,13 +2862,13 @@
       "tradition": "North Africa",
       "file": "musicology/canonical-grooves/CAN-191-rai.json",
       "midi": "musicology/midi/CAN-191-rai.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 29,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.72,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 32,
       "signature": "4/4",
       "bpm": 112,
-      "fingerprint": "3a33c3c3b58da5fe"
+      "fingerprint": "f4d6374ffe4615e7"
     },
     {
       "id": "CAN-192",
@@ -2877,13 +2877,13 @@
       "tradition": "Arabic rhythmic cycles",
       "file": "musicology/canonical-grooves/CAN-192-maqsum.json",
       "midi": "musicology/midi/CAN-192-maqsum.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 28,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 10,
       "signature": "4/4",
-      "bpm": 96,
-      "fingerprint": "095ff6d041f55d23"
+      "bpm": 100,
+      "fingerprint": "63dff549d9674848"
     },
     {
       "id": "CAN-193",
@@ -2892,13 +2892,13 @@
       "tradition": "Arabic rhythmic cycles",
       "file": "musicology/canonical-grooves/CAN-193-saidi.json",
       "midi": "musicology/midi/CAN-193-saidi.mid",
-      "validationState": "medium",
-      "confidence": 0.525,
-      "sourceType": "canonical-curated",
-      "eventCount": 21,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 12,
       "signature": "4/4",
-      "bpm": 112,
-      "fingerprint": "cc3322a9a855dee9"
+      "bpm": 108,
+      "fingerprint": "1a46c6f4f3bf45f7"
     },
     {
       "id": "CAN-194",
@@ -2907,13 +2907,13 @@
       "tradition": "Arabic rhythmic cycles",
       "file": "musicology/canonical-grooves/CAN-194-malfuf.json",
       "midi": "musicology/midi/CAN-194-malfuf.mid",
-      "validationState": "medium",
-      "confidence": 0.556,
-      "sourceType": "canonical-curated",
-      "eventCount": 12,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 8,
       "signature": "2/4",
-      "bpm": 122,
-      "fingerprint": "1c4e3ddf1c5617ef"
+      "bpm": 126,
+      "fingerprint": "32f6ef11f48cddb0"
     },
     {
       "id": "CAN-195",
@@ -2922,13 +2922,13 @@
       "tradition": "Arabic rhythmic cycles",
       "file": "musicology/canonical-grooves/CAN-195-ayoub.json",
       "midi": "musicology/midi/CAN-195-ayoub.mid",
-      "validationState": "medium",
-      "confidence": 0.525,
-      "sourceType": "canonical-curated",
-      "eventCount": 13,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 8,
       "signature": "2/4",
-      "bpm": 108,
-      "fingerprint": "4efb974fb02ab762"
+      "bpm": 112,
+      "fingerprint": "63e9926fc531585a"
     },
     {
       "id": "CAN-196",
@@ -2937,13 +2937,13 @@
       "tradition": "Arabic rhythmic cycles",
       "file": "musicology/canonical-grooves/CAN-196-baladi-masmoudi-saghir.json",
       "midi": "musicology/midi/CAN-196-baladi-masmoudi-saghir.mid",
-      "validationState": "provisional",
-      "confidence": 0.378,
-      "sourceType": "canonical-curated",
-      "eventCount": 26,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 12,
       "signature": "4/4",
-      "bpm": 120,
-      "fingerprint": "2add7f91d97761a3"
+      "bpm": 96,
+      "fingerprint": "1db8e29680e71895"
     },
     {
       "id": "CAN-197",
@@ -2952,13 +2952,13 @@
       "tradition": "Arabic rhythmic cycles",
       "file": "musicology/canonical-grooves/CAN-197-masmoudi-kabir.json",
       "midi": "musicology/midi/CAN-197-masmoudi-kabir.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 28,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 14,
       "signature": "4/4",
-      "bpm": 96,
-      "fingerprint": "16df3f1bdaa1a2af"
+      "bpm": 72,
+      "fingerprint": "746ce03f1b7bed22"
     },
     {
       "id": "CAN-198",
@@ -2967,13 +2967,13 @@
       "tradition": "Arabic rhythmic cycles",
       "file": "musicology/canonical-grooves/CAN-198-chiftetelli.json",
       "midi": "musicology/midi/CAN-198-chiftetelli.mid",
-      "validationState": "provisional",
-      "confidence": 0.353,
-      "sourceType": "canonical-curated",
-      "eventCount": 33,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 12,
       "signature": "4/4",
-      "bpm": 86,
-      "fingerprint": "a6c672375eb2da1f"
+      "bpm": 76,
+      "fingerprint": "2daa06315243cf3f"
     },
     {
       "id": "CAN-199",
@@ -2982,13 +2982,13 @@
       "tradition": "Aksak & regional",
       "file": "musicology/canonical-grooves/CAN-199-balkan-7-8.json",
       "midi": "musicology/midi/CAN-199-balkan-7-8.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 32,
-      "signature": "9/8",
-      "bpm": 128,
-      "fingerprint": "dcf9612a7c4cb0f5"
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 12,
+      "signature": "7/8",
+      "bpm": 132,
+      "fingerprint": "0111801b33a7b1ac"
     },
     {
       "id": "CAN-200",
@@ -2997,13 +2997,13 @@
       "tradition": "Aksak & regional",
       "file": "musicology/canonical-grooves/CAN-200-balkan-9-8.json",
       "midi": "musicology/midi/CAN-200-balkan-9-8.mid",
-      "validationState": "high",
-      "confidence": 0.853,
-      "sourceType": "canonical-curated",
-      "eventCount": 30,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 16,
       "signature": "9/8",
-      "bpm": 122,
-      "fingerprint": "0bf4b9097c7c2963"
+      "bpm": 126,
+      "fingerprint": "9ce3d5ca9df890d8"
     },
     {
       "id": "CAN-201",
@@ -3012,13 +3012,13 @@
       "tradition": "Aksak & regional",
       "file": "musicology/canonical-grooves/CAN-201-balkan-11-8.json",
       "midi": "musicology/midi/CAN-201-balkan-11-8.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 38,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 20,
       "signature": "11/8",
-      "bpm": 128,
-      "fingerprint": "0fa8bb3f97f57710"
+      "bpm": 122,
+      "fingerprint": "4a831c9cca3afe3b"
     },
     {
       "id": "CAN-202",
@@ -3027,13 +3027,13 @@
       "tradition": "Aksak & regional",
       "file": "musicology/canonical-grooves/CAN-202-cocek-9-8-dance.json",
       "midi": "musicology/midi/CAN-202-cocek-9-8-dance.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 33,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 24,
       "signature": "9/8",
-      "bpm": 128,
-      "fingerprint": "d2355e6ad12e334c"
+      "bpm": 132,
+      "fingerprint": "444d10ba1b8a53dd"
     },
     {
       "id": "CAN-203",
@@ -3042,13 +3042,13 @@
       "tradition": "Indian & Punjabi adaptations",
       "file": "musicology/canonical-grooves/CAN-203-bhangra-dhol-drum-set.json",
       "midi": "musicology/midi/CAN-203-bhangra-dhol-drum-set.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 28,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.76,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 20,
       "signature": "4/4",
       "bpm": 104,
-      "fingerprint": "91f99054d93f479c"
+      "fingerprint": "68bd315c09d1043c"
     },
     {
       "id": "CAN-204",
@@ -3057,13 +3057,13 @@
       "tradition": "Indian & Punjabi adaptations",
       "file": "musicology/canonical-grooves/CAN-204-teentaal-16-beat-drum-set-adaptation.json",
       "midi": "musicology/midi/CAN-204-teentaal-16-beat-drum-set-adaptation.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 28,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 16,
       "signature": "4/4",
-      "bpm": 96,
-      "fingerprint": "35b4e36a5b28e7c3"
+      "bpm": 84,
+      "fingerprint": "f5ba31eed7159865"
     },
     {
       "id": "CAN-205",
@@ -3072,13 +3072,13 @@
       "tradition": "Indian & Punjabi adaptations",
       "file": "musicology/canonical-grooves/CAN-205-keherwa-8-beat-drum-set-adaptation.json",
       "midi": "musicology/midi/CAN-205-keherwa-8-beat-drum-set-adaptation.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 24,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 16,
       "signature": "4/4",
-      "bpm": 96,
-      "fingerprint": "9baaf730209ffaa8"
+      "bpm": 104,
+      "fingerprint": "01eec1189e34152f"
     },
     {
       "id": "CAN-206",
@@ -3087,13 +3087,13 @@
       "tradition": "Indian & Punjabi adaptations",
       "file": "musicology/canonical-grooves/CAN-206-dadra-6-beat-drum-set-adaptation.json",
       "midi": "musicology/midi/CAN-206-dadra-6-beat-drum-set-adaptation.mid",
-      "validationState": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 20,
+      "validationState": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "eventCount": 12,
       "signature": "6/8",
-      "bpm": 96,
-      "fingerprint": "8cc329b23da41ac7"
+      "bpm": 92,
+      "fingerprint": "4374fc3b93df861c"
     },
     {
       "id": "CAN-207",

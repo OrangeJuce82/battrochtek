@@ -411,6 +411,10 @@
       "https://www.moderndrummer.com/2011/06/uriel-jones-architect-of-the-motown-sound/",
       "https://www.moderndrummer.com/2016/08/video-lesson-groove-construction-part-6-w-jost-nickel/",
       {
+        "title": "Backbeats / four-on-the-floor — Ableton Learning Music",
+        "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
+      },
+      {
         "title": "Groove MIDI Dataset — Magenta",
         "url": "https://magenta.tensorflow.org/datasets/groove"
       }
@@ -419,9 +423,13 @@
     "originalCoverage": "MISSING_OR_WEAK",
     "scoreState": "reviewed-adaptation",
     "evidence": {
-      "taxonomyState": "needs-review",
+      "taxonomyState": "literature-supported",
       "performanceEvidence": "human-dataset-available",
       "references": [
+        {
+          "title": "Backbeats / four-on-the-floor — Ableton Learning Music",
+          "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
+        },
         {
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"

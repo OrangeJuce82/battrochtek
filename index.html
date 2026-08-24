@@ -126,13 +126,27 @@
                     <div class="bt-grid">
                         <div class="grid"></div>
                     </div>
-                    <div class="grid-shift-under-grid" aria-label="Décaler toute la grille">
-                        <button type="button" class="track-toggle pattern-shift pattern-shift-global" id="grid-shift-left" data-bt-tooltip="Décaler toute la grille à gauche — Shift : 1 temps" aria-label="Décaler toute la grille à gauche"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
-                        <button type="button" class="track-toggle pattern-shift pattern-shift-global" id="grid-shift-up" data-bt-tooltip="Décaler toute la grille d’une piste vers le haut" aria-label="Décaler toute la grille vers le haut"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
-                        <button type="button" class="track-toggle pattern-shift pattern-shift-global" id="grid-shift-down" data-bt-tooltip="Décaler toute la grille d’une piste vers le bas" aria-label="Décaler toute la grille vers le bas"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></button>
-                        <button type="button" class="track-toggle pattern-shift pattern-shift-global" id="grid-shift-right" data-bt-tooltip="Décaler toute la grille à droite — Shift : 1 temps" aria-label="Décaler toute la grille à droite"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                    <div class="grid-shift-under-grid" aria-label="Édition de la sélection">
+                        <button type="button" class="track-toggle pattern-shift pattern-shift-global" id="grid-shift-left" data-bt-tooltip="Décaler la sélection à gauche — Shift : 1 temps" data-i18n-tooltip="editor.shiftLeft" aria-label="Décaler la sélection à gauche" data-i18n-aria="editor.shiftLeft"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+                        <button type="button" class="track-toggle pattern-shift pattern-shift-global" id="grid-shift-up" data-bt-tooltip="Décaler la sélection d’une piste vers le haut" data-i18n-tooltip="editor.shiftUp" aria-label="Décaler la sélection vers le haut" data-i18n-aria="editor.shiftUp"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+                        <button type="button" class="track-toggle pattern-shift pattern-shift-global" id="grid-shift-down" data-bt-tooltip="Décaler la sélection d’une piste vers le bas" data-i18n-tooltip="editor.shiftDown" aria-label="Décaler la sélection vers le bas" data-i18n-aria="editor.shiftDown"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></button>
+                        <button type="button" class="track-toggle pattern-shift pattern-shift-global" id="grid-shift-right" data-bt-tooltip="Décaler la sélection à droite — Shift : 1 temps" data-i18n-tooltip="editor.shiftRight" aria-label="Décaler la sélection à droite" data-i18n-aria="editor.shiftRight"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
                         <span class="grid-monitor-separator" aria-hidden="true"></span>
-                        <button type="button" class="track-toggle pattern-shift pattern-shift-global monitoring-toggle" id="monitoring-toggle" data-bt-tooltip="Monitoring : préécoute des cellules et des sons" aria-label="Activer ou désactiver le monitoring" aria-pressed="true"><i class="fa-solid fa-headphones" aria-hidden="true"></i></button>
+                        <button type="button" class="track-toggle pattern-shift pattern-shift-global monitoring-toggle" id="monitoring-toggle" data-bt-tooltip="Monitoring : préécouter les cellules et les instruments" data-i18n-tooltip="editor.monitor" aria-label="Monitoring : préécouter les cellules et les instruments" data-i18n-aria="editor.monitor" aria-pressed="true"><i class="fa-solid fa-headphones" aria-hidden="true"></i></button>
+                        <span class="grid-monitor-separator" aria-hidden="true"></span>
+                        <button type="button" class="track-toggle pattern-shift pattern-shift-global record-toggle" id="record-toggle" data-bt-tooltip="Record : enregistrer les pads clavier quantifiés pendant la lecture" data-i18n-tooltip="editor.record" aria-label="Record : enregistrer les pads clavier quantifiés pendant la lecture" data-i18n-aria="editor.record" aria-pressed="false"><span class="record-dot" aria-hidden="true"></span><span class="record-label">REC</span></button>
+                        <span class="grid-monitor-separator" aria-hidden="true"></span>
+                        <div class="velocity-write-control" aria-label="Vélocité d’écriture">
+                            <button type="button" id="velocity-decrease" class="velocity-step-button" data-bt-tooltip="Diminuer la vélocité de la sélection" data-i18n-tooltip="editor.velocityMinus" aria-label="Diminuer la vélocité de la sélection" data-i18n-aria="editor.velocityMinus">−</button>
+                            <div class="velocity-levels" role="group" aria-label="Vélocité des nouvelles notes">
+                                <button type="button" class="velocity-level velocity-1" data-velocity-level="1" data-bt-tooltip="Vélocité 1 : Fantôme" aria-label="Vélocité 1 : Fantôme"></button>
+                                <button type="button" class="velocity-level velocity-2" data-velocity-level="2" data-bt-tooltip="Vélocité 2 : Douce" aria-label="Vélocité 2 : Douce"></button>
+                                <button type="button" class="velocity-level velocity-3" data-velocity-level="3" data-bt-tooltip="Vélocité 3 : Normale" aria-label="Vélocité 3 : Normale" aria-pressed="true"></button>
+                                <button type="button" class="velocity-level velocity-4" data-velocity-level="4" data-bt-tooltip="Vélocité 4 : Forte" aria-label="Vélocité 4 : Forte"></button>
+                                <button type="button" class="velocity-level velocity-5" data-velocity-level="5" data-bt-tooltip="Vélocité 5 : Accent" aria-label="Vélocité 5 : Accent"></button>
+                            </div>
+                            <button type="button" id="velocity-increase" class="velocity-step-button" data-bt-tooltip="Augmenter la vélocité de la sélection" data-i18n-tooltip="editor.velocityPlus" aria-label="Augmenter la vélocité de la sélection" data-i18n-aria="editor.velocityPlus">+</button>
+                        </div>
                     </div>
                     <div class="bt-right" id="sliders"></div>
                 </div>
@@ -185,6 +199,7 @@
                     <button type="button" class="bt-button memory-action icon-only history-button" id="undo" :class="{ 'is-disabled': !$store.ui.undoAvailable }" data-bt-tooltip="Annuler" data-i18n-tooltip="memory.undo" aria-label="Annuler" data-i18n-aria="memory.undo"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></button>
                     <button type="button" class="bt-button memory-action icon-only history-button" id="redo" :class="{ 'is-disabled': !$store.ui.redoAvailable }" data-bt-tooltip="Rétablir" data-i18n-tooltip="memory.redo" aria-label="Rétablir" data-i18n-aria="memory.redo"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i></button>
                     <button type="button" class="bt-button memory-action icon-only" id="clear" data-bt-tooltip="Nouveau motif vierge" data-i18n-tooltip="memory.new" aria-label="Nouveau motif vierge" data-i18n-aria="memory.new"><i class="fa-solid fa-file" aria-hidden="true"></i></button>
+                    <button type="button" class="bt-button memory-action icon-only" id="memory-duplicate" data-bt-tooltip="Dupliquer la mémoire courante" data-i18n-tooltip="memory.duplicate" aria-label="Dupliquer la mémoire courante" data-i18n-aria="memory.duplicate"><i class="fa-solid fa-clone" aria-hidden="true"></i></button>
                     <button type="button" class="bt-button memory-action icon-only danger-icon outline" data-variant="danger" id="cache-clear" data-bt-tooltip="Vider les mémoires" data-i18n-tooltip="memory.clear" aria-label="Vider les mémoires" data-i18n-aria="memory.clear"><i class="fa-solid fa-trash-can" aria-hidden="true"></i></button>
                 </div>
                 <div class="drum-machine-clear"></div>
@@ -197,26 +212,27 @@
                             <div class="shortcut-item"><span data-i18n="shortcut.playStop">Lecture / arrêt</span><span class="shortcut-keys"><kbd data-i18n="shortcut.space">Espace</kbd></span></div>
                             <div class="shortcut-item"><span data-i18n="shortcut.tap">Tap tempo</span><span class="shortcut-keys"><kbd>T</kbd></span></div>
                             <div class="shortcut-item"><span data-i18n="shortcut.metronome">Métronome</span><span class="shortcut-keys"><kbd>M</kbd></span></div>
-                            <div class="shortcut-item"><span data-i18n="shortcut.memories">Mémoire 1 à 8</span><span class="shortcut-keys"><kbd>1</kbd>…<kbd>8</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.practice">Panneau Entraînement</span><span class="shortcut-keys"><kbd>L</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.memories">Mémoires 1 à 8</span><span class="shortcut-keys"><kbd>Alt/Option</kbd><kbd>1…8</kbd><span class="shortcut-or">/</span><kbd>Pavé num. 1…8</kbd></span></div>
                         </div>
                         <div class="shortcut-group"><h3 data-i18n="shortcut.edit">Édition</h3>
                             <div class="shortcut-item"><span data-i18n="shortcut.undo">Annuler</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>Z</kbd></span></div>
                             <div class="shortcut-item"><span data-i18n="shortcut.redo">Rétablir</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘ ⇧" data-win="Ctrl Shift">Ctrl Shift</kbd><kbd>Z</kbd><span class="shortcut-or">/</span><kbd class="win-only">Ctrl</kbd><kbd class="win-only">Y</kbd></span></div>
-                            <div class="shortcut-item"><span data-i18n="shortcut.copy">Copier le motif</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>C</kbd></span></div>
-                            <div class="shortcut-item"><span data-i18n="shortcut.paste">Coller le motif</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>V</kbd></span></div>
-                            <div class="shortcut-item"><span data-i18n="shortcut.duplicate">Dupliquer vers mémoire suivante</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>D</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.selectAll">Sélectionner toutes les notes</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>A</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.invertSelection">Inverser la sélection</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>I</kbd></span></div>
                         </div>
                         <div class="shortcut-group"><h3 data-i18n="shortcut.grid">Grille</h3>
-                            <div class="shortcut-item"><span data-i18n="shortcut.cell">Changer une cellule</span><span class="shortcut-keys"><kbd data-i18n="shortcut.click">Clic</kbd></span></div>
-                            <div class="shortcut-item"><span data-i18n="shortcut.repeatBeat">Répéter la position à chaque temps</span><span class="shortcut-keys"><kbd>Shift</kbd><kbd data-i18n="shortcut.click">Clic</kbd></span></div>
-                            <div class="shortcut-item"><span data-i18n="shortcut.deleteCell">Effacer une cellule</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd data-i18n="shortcut.click">Clic</kbd></span></div>
-                            <div class="shortcut-item"><span data-i18n="shortcut.deleteBeat">Effacer cette position sur tous les temps</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘ ⇧" data-win="Ctrl Shift">Ctrl Shift</kbd><kbd data-i18n="shortcut.click">Clic</kbd></span></div>
-                            <div class="shortcut-item"><span data-i18n="shortcut.moveTrack">Déplacer une piste sur les 2 axes</span><span class="shortcut-keys"><kbd>Alt</kbd><kbd data-i18n="shortcut.drag">Glisser</kbd></span></div>
-                            <div class="shortcut-item"><span data-i18n="shortcut.moveGrid">Déplacer toute la grille sur les 2 axes</span><span class="shortcut-keys"><kbd>Alt</kbd><kbd>Shift</kbd><kbd data-i18n="shortcut.drag">Glisser</kbd></span></div>
-                            <div class="shortcut-item"><span>Déplacer une note</span><span class="shortcut-keys"><kbd>Clic</kbd><kbd>Glisser</kbd></span></div>
-                            <div class="shortcut-item"><span>Pads batterie clavier</span><span class="shortcut-keys"><kbd>A/Q</kbd><kbd>Z/W</kbd><kbd>E</kbd><kbd>R</kbd><kbd>U</kbd><kbd>I</kbd><kbd>O</kbd><kbd>P</kbd><kbd>^/[</kbd></span></div>
-                            <div class="shortcut-item"><span data-i18n="shortcut.shiftBeat">Décaler avec ‹ › d’un temps</span><span class="shortcut-keys"><kbd>Shift</kbd><kbd data-i18n="shortcut.click">Clic</kbd></span></div>
-                            <div class="shortcut-item velocity-legend"><span data-i18n="shortcut.velocity">Niveaux de vélocité</span><span class="velocity-cycle" data-i18n="shortcut.velocityCycle">Éteint → normal → fort → accent → doux → fantôme</span></div>
+                            <div class="shortcut-item"><span>Créer une note (vélocité choisie)</span><span class="shortcut-keys"><kbd>Clic</kbd></span></div>
+                            <div class="shortcut-item"><span>Sélection rectangulaire</span><span class="shortcut-keys"><kbd>Clic</kbd><kbd>Glisser vide</kbd></span></div>
+                            <div class="shortcut-item"><span>Ajouter / retirer à la sélection</span><span class="shortcut-keys"><kbd>Shift</kbd><span class="shortcut-or">/</span><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>Clic/Glisser</kbd></span></div>
+                            <div class="shortcut-item"><span>Déplacer la sélection</span><span class="shortcut-keys"><kbd>Glisser note</kbd><span class="shortcut-or">/</span><kbd>←↑↓→</kbd></span></div>
+                            <div class="shortcut-item"><span>Supprimer la sélection</span><span class="shortcut-keys"><kbd>Suppr</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.velocityKeys">Choisir la vélocité d’écriture</span><span class="shortcut-keys"><kbd>1</kbd>…<kbd>5</kbd></span></div>
+                            <div class="shortcut-item"><span data-i18n="shortcut.velocityAdjust">Vélocité de la sélection</span><span class="shortcut-keys"><kbd>−</kbd><kbd>+</kbd></span></div>
+                            <div class="shortcut-item"><span>Vélocité de la sélection</span><span class="shortcut-keys"><kbd>−</kbd><kbd>+</kbd></span></div>
+                            <div class="shortcut-item"><span>Copier / coller / dupliquer la sélection</span><span class="shortcut-keys"><kbd class="mod-key" data-mac="⌘" data-win="Ctrl">Ctrl</kbd><kbd>C</kbd><kbd>V</kbd><kbd>D</kbd></span></div>
+                            <div class="shortcut-item"><span>Pads batterie clavier · Record si armé + Play</span><span class="shortcut-keys"><kbd>A/Q</kbd><kbd>Z/W</kbd><kbd>E</kbd><kbd>R</kbd><kbd>U</kbd><kbd>I</kbd><kbd>O</kbd><kbd>P</kbd><kbd>^/[</kbd></span></div>
+                            <div class="shortcut-item velocity-legend"><span data-i18n="shortcut.velocity">Niveaux de vélocité</span><span class="velocity-cycle">1 Ghost → 2 Soft → 3 Normal → 4 Strong → 5 Accent</span></div>
                         </div>
                     </div>
                 </details>

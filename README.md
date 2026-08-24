@@ -50,14 +50,27 @@ npm run grooves:clean
 
 ## Raccourcis
 
+### Édition de la grille
+
 - `Espace` : lecture / stop
 - `T` : tap tempo
 - `M` : métronome
-- `1` à `8` : mémoires
-- `Ctrl/Cmd + C / V` : copier / coller
-- `Ctrl/Cmd + D` : dupliquer vers la mémoire suivante
+- `1` à `5` : choisir la vélocité d’écriture ; si des notes sont sélectionnées, appliquer immédiatement cette vélocité
+- `Ctrl/Cmd + A` : sélectionner toutes les notes actives
+- `Ctrl/Cmd + I` : inverser la sélection des notes actives
+- `Ctrl/Cmd + C / V / D` : copier / coller / dupliquer la sélection
 - `Ctrl/Cmd + Z / Y` : undo / redo
-- `Shift + clic` : applique l’édition à la même subdivision de chaque temps
+- `Suppr / Backspace` : supprimer la sélection
+- `Flèches` : déplacer la sélection
+- `Shift` : ajouter à la sélection
+- `Ctrl/Cmd + clic` : basculer une note dans la sélection
+
+### Mémoires
+
+- `Alt/Option + 1…8` : ouvrir une mémoire
+- `Pavé numérique 1…8` : ouvrir une mémoire
+- Les mémoires peuvent être réordonnées par glisser-déposer.
+- Le bouton **Dupliquer** copie explicitement la mémoire active.
 
 ## Grooves
 
@@ -69,19 +82,21 @@ Le workflow GitHub Actions construit et publie automatiquement la PWA sur GitHub
 
 ## Groove Library v2
 
-La v37 transforme la banque en bibliothèque éditoriale : **1239 grooves** au build actuel, dont **132 grooves Battrochtek Library v2** ciblés sur les zones sous-représentées (Cumbia/Latin, Afrique/World, Country, électronique, Hip-Hop, Jazz moderne, Concepts). Les grooves v2 disposent de 4 mémoires évolutives, et les Cumbia de 8 mémoires.
+La v38 conserve la banque validée et consolide l’éditeur de grille. La v37 transformait la banque en bibliothèque éditoriale : **1239 grooves** au build actuel, dont **132 grooves Battrochtek Library v2** ciblés sur les zones sous-représentées (Cumbia/Latin, Afrique/World, Country, électronique, Hip-Hop, Jazz moderne, Concepts). Les grooves v2 disposent de 4 mémoires évolutives, et les Cumbia de 8 mémoires.
 
 Les métadonnées internes comprennent désormais `family`, `style`, `substyle`, `origin`, `feel`, `signature`, `bpm`, `difficulty`, `sourceType`, `artist`, `song`, `drummer` et `tags`. La recherche globale indexe ces champs sans alourdir l'interface Style → Groove.
 
 Commandes : `npm run grooves:library` régénère la couche éditoriale ; `npm run grooves:build` la régénère puis reconstruit le bundle complet sans suppression automatique ; `npm run grooves:clean` reste disponible pour un audit/dédoublonnage volontaire.
 
-## Musicological build pipeline
+## Documentation technique
 
-The groove catalog is now generated from a 960-PPQ canonical event corpus. `npm run grooves:build` runs evidence mapping, human-feel analysis, structural diversity review, validation reporting, canonical-to-MIDI compilation, and single-library publication. See `musicology/MUSICOLOGY-PIPELINE.md`.
+- `docs/INTERACTION.md` : modèle d’interaction clavier/souris, sélection, vélocité et mémoires.
+- `docs/SAMPLES.md` : architecture audio, resolver, articulations et validation des samples.
+- `docs/FEEL.md` : orchestration et comportement FEEL.
+- `docs/MUSICOLOGY.md` : état courant de la validation musicologique.
+- `musicology/MUSICOLOGY-PIPELINE.md` et `musicology/CANONICAL-GROOVE-SPEC.md` : pipeline et format canonique détaillés.
 
-
-## v19 Musicology
-See `README-MUSICOLOGY-V19.md` for the completeness gate, Jazz/Funk rebuild and FEEL limb-role grammar.
+Le catalogue est généré depuis le corpus canonique 960 PPQ. `npm run grooves:build` exécute la chaîne de validation, analyse de diversité, génération MIDI et publication de la bibliothèque Curated.
 
 ## Licence
 
@@ -93,3 +108,13 @@ Virtuosity/ferrosintesis, Big Rusty Drums et VCSL. Voir `LICENSE`,
 > Les anciens samples marqués `license: "unspecified"` ne sont pas couverts par
 > la licence MIT du code et doivent être audités/remplacés avant une
 > redistribution publique qui exige une provenance entièrement vérifiée.
+
+
+### Raccourcis v39
+
+- `L` : ouvrir/fermer le panneau Entraînement.
+- `+` / `-` : augmenter/diminuer la vélocité de la sélection.
+
+## Navigation par favoris
+
+Les changements de lien Battrochtek dans le même onglet (favoris, historique, changement de hash) sont appliqués immédiatement : mémoires, groove et état audio sont relus sans rechargement complet de la page.

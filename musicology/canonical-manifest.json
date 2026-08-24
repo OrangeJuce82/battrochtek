@@ -2,7 +2,7 @@
   "version": "3.0.0",
   "taxonomyCount": 213,
   "playableCount": 213,
-  "needsRebuild": 76,
+  "needsRebuild": 33,
   "entries": [
     {
       "id": "CAN-182",
@@ -10,26 +10,40 @@
       "tradition": "Central Africa",
       "archetype": "Bikutsi",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "af76bad832069a09",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "e821e0b8874b93ef",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 24,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-182-bikutsi.json",
         "midi": "musicology/midi/CAN-182-bikutsi.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "fast 6/8 pulse",
+          "alternating low/high dance accents",
+          "continuous compound subdivision"
+        ],
+        "references": [
+          {
+            "title": "African Rhythms for Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-355"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "African Rhythms for Drum Set — Berklee",
+              "url": "https://college.berklee.edu/courses/ilpd-355"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -40,26 +54,48 @@
       "tradition": "Central Africa",
       "archetype": "Makossa",
       "playable": true,
-      "status": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "fingerprint": "a0c1987dd6d4c97b",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "a131d19d1f87cae4",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 32,
+        "eventCount": 34,
         "json": "musicology/canonical-grooves/CAN-181-makossa.json",
         "midi": "musicology/midi/CAN-181-makossa.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "Cameroonian syncopated 16th-note pocket",
+          "distinct bass-drum displacement from soukous",
+          "ghosted hand response"
+        ],
+        "references": [
+          {
+            "title": "African Rhythms for Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-355"
+          },
+          {
+            "title": "African Rhythms Applied to the Drumset — Tosin Aribisala / Drumeo",
+            "url": "https://www.drumeo.com/beat/african-rhythms-on-the-drums/"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "African Rhythms for Drum Set — Berklee",
+              "url": "https://college.berklee.edu/courses/ilpd-355"
+            },
+            {
+              "title": "African Rhythms Applied to the Drumset — Tosin Aribisala / Drumeo",
+              "url": "https://www.drumeo.com/beat/african-rhythms-on-the-drums/"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -70,26 +106,40 @@
       "tradition": "Central Africa",
       "archetype": "Mangambe",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "83b5f2b12fbdb1b5",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "34fb74678099cb18",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 22,
+        "eventCount": 26,
         "json": "musicology/canonical-grooves/CAN-183-mangambe.json",
         "midi": "musicology/midi/CAN-183-mangambe.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "compound Cameroonian cycle",
+          "asymmetric low/high responses",
+          "distinct phrase from Bikutsi"
+        ],
+        "references": [
+          {
+            "title": "African Rhythms for Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-355"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "African Rhythms for Drum Set — Berklee",
+              "url": "https://college.berklee.edu/courses/ilpd-355"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -100,26 +150,48 @@
       "tradition": "Central Africa",
       "archetype": "Soukous",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "0cc340fddc75ab47",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "d44c7a7cc7311a66",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 30,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-180-soukous.json",
         "midi": "musicology/midi/CAN-180-soukous.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "fast continuous time",
+          "syncopated bass-drum support",
+          "Central African dance-band drum-set adaptation"
+        ],
+        "references": [
+          {
+            "title": "African Rhythms for Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-355"
+          },
+          {
+            "title": "African Rhythms Applied to the Drumset — Tosin Aribisala / Drumeo",
+            "url": "https://www.drumeo.com/beat/african-rhythms-on-the-drums/"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "African Rhythms for Drum Set — Berklee",
+              "url": "https://college.berklee.edu/courses/ilpd-355"
+            },
+            {
+              "title": "African Rhythms Applied to the Drumset — Tosin Aribisala / Drumeo",
+              "url": "https://www.drumeo.com/beat/african-rhythms-on-the-drums/"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -130,26 +202,40 @@
       "tradition": "Indian Ocean",
       "archetype": "Maloya",
       "playable": true,
-      "status": "medium",
-      "confidence": 0.549,
-      "sourceType": "canonical-curated",
-      "fingerprint": "f795493bd29a2fad",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "7587ad4d3c00edd4",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 16,
+        "eventCount": 24,
         "json": "musicology/canonical-grooves/CAN-188-maloya.json",
         "midi": "musicology/midi/CAN-188-maloya.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "Réunion compound cycle",
+          "interlocking low/high roles",
+          "more grounded quarter/dotted-quarter weight than Sega"
+        ],
+        "references": [
+          {
+            "title": "African Rhythms for Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-355"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "African Rhythms for Drum Set — Berklee",
+              "url": "https://college.berklee.edu/courses/ilpd-355"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -160,26 +246,40 @@
       "tradition": "Indian Ocean",
       "archetype": "Sega",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "a46467ca5f0221e2",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "0196fb886594b08f",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 20,
+        "eventCount": 24,
         "json": "musicology/canonical-grooves/CAN-187-sega.json",
         "midi": "musicology/midi/CAN-187-sega.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "Indian Ocean compound pulse",
+          "low-drum drive",
+          "syncopated response"
+        ],
+        "references": [
+          {
+            "title": "African Rhythms for Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-355"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "African Rhythms for Drum Set — Berklee",
+              "url": "https://college.berklee.edu/courses/ilpd-355"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -190,22 +290,28 @@
       "tradition": "Southern Africa",
       "archetype": "Amapiano",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "c2d820e47be07617",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.72,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "066cd197232a6405",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 27,
+        "eventCount": 26,
         "json": "musicology/canonical-grooves/CAN-186-amapiano.json",
         "midi": "musicology/midi/CAN-186-amapiano.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "broken house kick rather than strict four-on-floor",
+          "low-tom layer represents log-drum rhythmic function",
+          "explicit adaptation; timbral/log-drum study remains separate"
+        ],
+        "references": [
+          "https://college.berklee.edu/courses/ilpd-355"
+        ],
         "evidence": {
           "taxonomyState": "needs-review",
           "performanceEvidence": "not-mapped",
@@ -220,10 +326,10 @@
       "tradition": "Southern Africa",
       "archetype": "Mbaqanga",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "ca90cae1ee83e4d7",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "e32703fbe12e6278",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -233,13 +339,27 @@
         "midi": "musicology/midi/CAN-184-mbaqanga.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "South African township-pop backbeat",
+          "syncopated bass support",
+          "steady eighth-note time"
+        ],
+        "references": [
+          {
+            "title": "African Rhythms for Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-355"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "African Rhythms for Drum Set — Berklee",
+              "url": "https://college.berklee.edu/courses/ilpd-355"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -250,22 +370,28 @@
       "tradition": "Southern Africa",
       "archetype": "South African House",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "aad4c51f11a2c8c1",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "c1a4ff675241a06e",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 21,
+        "eventCount": 24,
         "json": "musicology/canonical-grooves/CAN-185-south-african-house.json",
         "midi": "musicology/midi/CAN-185-south-african-house.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "four-on-floor dance pulse",
+          "offbeat/open-hat layer",
+          "South African house kept separate from Amapiano"
+        ],
+        "references": [
+          "https://college.berklee.edu/courses/ilpd-355"
+        ],
         "evidence": {
           "taxonomyState": "needs-review",
           "performanceEvidence": "not-mapped",
@@ -280,31 +406,51 @@
       "tradition": "West Africa",
       "archetype": "Afrobeat",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "e0982ab2a2374f59",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "92c4935fec372274",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 40,
         "json": "musicology/canonical-grooves/CAN-173-afrobeat.json",
         "midi": "musicology/midi/CAN-173-afrobeat.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "interlocking 16th-note drum-set pocket",
+          "syncopated bass-drum phrase",
+          "backbeat embedded in a layered Afrobeat texture"
+        ],
         "references": [
+          {
+            "title": "African Rhythms for Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-355"
+          },
+          {
+            "title": "African Rhythms Applied to the Drumset — Tosin Aribisala / Drumeo",
+            "url": "https://www.drumeo.com/beat/african-rhythms-on-the-drums/"
+          },
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
+            {
+              "title": "African Rhythms for Drum Set — Berklee",
+              "url": "https://college.berklee.edu/courses/ilpd-355"
+            },
+            {
+              "title": "African Rhythms Applied to the Drumset — Tosin Aribisala / Drumeo",
+              "url": "https://www.drumeo.com/beat/african-rhythms-on-the-drums/"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -320,26 +466,40 @@
       "tradition": "West Africa",
       "archetype": "Ewe 12/8 / Agbekor Adaptation",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "1132ea94cf18b296",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "5bd5e51dc9d920a3",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 38,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-176-ewe-12-8-agbekor-adaptation.json",
         "midi": "musicology/midi/CAN-176-ewe-12-8-agbekor-adaptation.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "12/8 bell-cycle orientation",
+          "interlocking low/high drum roles",
+          "explicit Agbekor-derived drum-set adaptation"
+        ],
+        "references": [
+          {
+            "title": "African Rhythms for Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-355"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "African Rhythms for Drum Set — Berklee",
+              "url": "https://college.berklee.edu/courses/ilpd-355"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -350,26 +510,40 @@
       "tradition": "West Africa",
       "archetype": "Fanga Drum-Set Adaptation",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "149ef6692ad842fe",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "432a27823d9c703d",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 27,
+        "eventCount": 26,
         "json": "musicology/canonical-grooves/CAN-177-fanga-drum-set-adaptation.json",
         "midi": "musicology/midi/CAN-177-fanga-drum-set-adaptation.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "West-African-derived cyclic phrase",
+          "call-and-response low/high orchestration",
+          "pedagogical drum-set adaptation rather than traditional ensemble transcription"
+        ],
+        "references": [
+          {
+            "title": "African Rhythms for Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-355"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "African Rhythms for Drum Set — Berklee",
+              "url": "https://college.berklee.edu/courses/ilpd-355"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -380,31 +554,43 @@
       "tradition": "West Africa",
       "archetype": "Highlife",
       "playable": true,
-      "status": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "fingerprint": "2b64633b5a9f6e84",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "e1c4df2a85fd456a",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 25,
+        "eventCount": 22,
         "json": "musicology/canonical-grooves/CAN-174-highlife.json",
         "midi": "musicology/midi/CAN-174-highlife.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "cross-rhythmic ride/bell-derived phrase",
+          "light syncopated bass support",
+          "spacious highlife drum-set adaptation"
+        ],
         "references": [
+          {
+            "title": "African Rhythms for Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-355"
+          },
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
+            {
+              "title": "African Rhythms for Drum Set — Berklee",
+              "url": "https://college.berklee.edu/courses/ilpd-355"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -420,26 +606,40 @@
       "tradition": "West Africa",
       "archetype": "Jùjú / Yoruba-derived Drum-Set",
       "playable": true,
-      "status": "medium",
-      "confidence": 0.535,
-      "sourceType": "canonical-curated",
-      "fingerprint": "e6e7bb6375406d36",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "22e6cea5beb4eedf",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-179-juju-yoruba-derived-drum-set.json",
         "midi": "musicology/midi/CAN-179-juju-yoruba-derived-drum-set.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "Yoruba-derived interlocking pulse",
+          "light backbeat adaptation",
+          "continuous cyclical time"
+        ],
+        "references": [
+          {
+            "title": "African Rhythms for Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-355"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "African Rhythms for Drum Set — Berklee",
+              "url": "https://college.berklee.edu/courses/ilpd-355"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -450,26 +650,40 @@
       "tradition": "West Africa",
       "archetype": "Kpanlogo Drum-Set",
       "playable": true,
-      "status": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "fingerprint": "278fade7469e7c0b",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "15a0a559a9d46c36",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 25,
+        "eventCount": 26,
         "json": "musicology/canonical-grooves/CAN-175-kpanlogo-drum-set.json",
         "midi": "musicology/midi/CAN-175-kpanlogo-drum-set.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "bell-line-led adaptation",
+          "low/high hand-drum dialogue",
+          "Kpanlogo identified explicitly as drum-set adaptation"
+        ],
+        "references": [
+          {
+            "title": "African Rhythms for Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-355"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "African Rhythms for Drum Set — Berklee",
+              "url": "https://college.berklee.edu/courses/ilpd-355"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -480,10 +694,10 @@
       "tradition": "West Africa",
       "archetype": "Mbalax",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "b45e74733edfe5de",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "5cbd4a7a0e1896bb",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -493,13 +707,27 @@
         "midi": "musicology/midi/CAN-178-mbalax.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "dense sabar-derived syncopation",
+          "active tom responses",
+          "fast cyclic Senegalese pop adaptation"
+        ],
+        "references": [
+          {
+            "title": "African Rhythms for Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-355"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "African Rhythms for Drum Set — Berklee",
+              "url": "https://college.berklee.edu/courses/ilpd-355"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -510,26 +738,48 @@
       "tradition": "Aksak & regional",
       "archetype": "Balkan 11/8",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "b0b71399e744976e",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "16c398e436560fa9",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 38,
+        "eventCount": 20,
         "json": "musicology/canonical-grooves/CAN-201-balkan-11-8.json",
         "midi": "musicology/midi/CAN-201-balkan-11-8.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set mapping of an aksak cycle. The defining information is the ordered grouping of short (2) and long (3) eighth-note units, not a generic odd-meter backbeat.",
+        "distinctiveFeatures": [
+          "grouping 2+2+3+2+2",
+          "11/8 asymmetric cycle",
+          "aksak drum-set adaptation"
+        ],
+        "references": [
+          {
+            "title": "Aksak / asymmetric Balkan rhythmic units — Cambridge Core",
+            "url": "https://www.cambridge.org/core/journals/yearbook-of-the-international-folk-music-council/article/abs/on-rhythm-in-rumanian-folk-dance/303B8DC39543C9789026B7186337972D"
+          },
+          {
+            "title": "Balkan rhythmic grouping / takt — The Balkan Languages (Cambridge)",
+            "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/DF1897CA3A024BFF3AB73392CD28822E/9780521553490AR.pdf/The_Balkan_Languages.pdf?event-type=FTLA"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Aksak / asymmetric Balkan rhythmic units — Cambridge Core",
+              "url": "https://www.cambridge.org/core/journals/yearbook-of-the-international-folk-music-council/article/abs/on-rhythm-in-rumanian-folk-dance/303B8DC39543C9789026B7186337972D"
+            },
+            {
+              "title": "Balkan rhythmic grouping / takt — The Balkan Languages (Cambridge)",
+              "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/DF1897CA3A024BFF3AB73392CD28822E/9780521553490AR.pdf/The_Balkan_Languages.pdf?event-type=FTLA"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -540,26 +790,48 @@
       "tradition": "Aksak & regional",
       "archetype": "Balkan 7/8",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "55a108149182a1f9",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "090f296ac25e1fd6",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 32,
+        "eventCount": 12,
         "json": "musicology/canonical-grooves/CAN-199-balkan-7-8.json",
         "midi": "musicology/midi/CAN-199-balkan-7-8.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set mapping of an aksak cycle. The defining information is the ordered grouping of short (2) and long (3) eighth-note units, not a generic odd-meter backbeat.",
+        "distinctiveFeatures": [
+          "grouping 2+2+3",
+          "7/8 asymmetric cycle",
+          "aksak drum-set adaptation"
+        ],
+        "references": [
+          {
+            "title": "Aksak / asymmetric Balkan rhythmic units — Cambridge Core",
+            "url": "https://www.cambridge.org/core/journals/yearbook-of-the-international-folk-music-council/article/abs/on-rhythm-in-rumanian-folk-dance/303B8DC39543C9789026B7186337972D"
+          },
+          {
+            "title": "Balkan rhythmic grouping / takt — The Balkan Languages (Cambridge)",
+            "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/DF1897CA3A024BFF3AB73392CD28822E/9780521553490AR.pdf/The_Balkan_Languages.pdf?event-type=FTLA"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Aksak / asymmetric Balkan rhythmic units — Cambridge Core",
+              "url": "https://www.cambridge.org/core/journals/yearbook-of-the-international-folk-music-council/article/abs/on-rhythm-in-rumanian-folk-dance/303B8DC39543C9789026B7186337972D"
+            },
+            {
+              "title": "Balkan rhythmic grouping / takt — The Balkan Languages (Cambridge)",
+              "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/DF1897CA3A024BFF3AB73392CD28822E/9780521553490AR.pdf/The_Balkan_Languages.pdf?event-type=FTLA"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -570,26 +842,48 @@
       "tradition": "Aksak & regional",
       "archetype": "Balkan 9/8",
       "playable": true,
-      "status": "high",
-      "confidence": 0.853,
-      "sourceType": "canonical-curated",
-      "fingerprint": "5de2f39615e060ac",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "c6a800a30e730c83",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 30,
+        "eventCount": 16,
         "json": "musicology/canonical-grooves/CAN-200-balkan-9-8.json",
         "midi": "musicology/midi/CAN-200-balkan-9-8.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set mapping of an aksak cycle. The defining information is the ordered grouping of short (2) and long (3) eighth-note units, not a generic odd-meter backbeat.",
+        "distinctiveFeatures": [
+          "grouping 2+2+3+2",
+          "9/8 asymmetric cycle",
+          "aksak drum-set adaptation"
+        ],
+        "references": [
+          {
+            "title": "Aksak / asymmetric Balkan rhythmic units — Cambridge Core",
+            "url": "https://www.cambridge.org/core/journals/yearbook-of-the-international-folk-music-council/article/abs/on-rhythm-in-rumanian-folk-dance/303B8DC39543C9789026B7186337972D"
+          },
+          {
+            "title": "Balkan rhythmic grouping / takt — The Balkan Languages (Cambridge)",
+            "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/DF1897CA3A024BFF3AB73392CD28822E/9780521553490AR.pdf/The_Balkan_Languages.pdf?event-type=FTLA"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Aksak / asymmetric Balkan rhythmic units — Cambridge Core",
+              "url": "https://www.cambridge.org/core/journals/yearbook-of-the-international-folk-music-council/article/abs/on-rhythm-in-rumanian-folk-dance/303B8DC39543C9789026B7186337972D"
+            },
+            {
+              "title": "Balkan rhythmic grouping / takt — The Balkan Languages (Cambridge)",
+              "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/DF1897CA3A024BFF3AB73392CD28822E/9780521553490AR.pdf/The_Balkan_Languages.pdf?event-type=FTLA"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -600,26 +894,48 @@
       "tradition": "Aksak & regional",
       "archetype": "Čoček / 9/8 Dance",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "a4f4b68587e57cfa",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.8,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "43fc14f14a86c5d2",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 33,
+        "eventCount": 24,
         "json": "musicology/canonical-grooves/CAN-202-cocek-9-8-dance.json",
         "midi": "musicology/midi/CAN-202-cocek-9-8-dance.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set mapping of an aksak cycle. The defining information is the ordered grouping of short (2) and long (3) eighth-note units, not a generic odd-meter backbeat.",
+        "distinctiveFeatures": [
+          "grouping 2+2+2+3",
+          "9/8 asymmetric cycle",
+          "Čoček-oriented dance adaptation"
+        ],
+        "references": [
+          {
+            "title": "Aksak / asymmetric Balkan rhythmic units — Cambridge Core",
+            "url": "https://www.cambridge.org/core/journals/yearbook-of-the-international-folk-music-council/article/abs/on-rhythm-in-rumanian-folk-dance/303B8DC39543C9789026B7186337972D"
+          },
+          {
+            "title": "Balkan rhythmic grouping / takt — The Balkan Languages (Cambridge)",
+            "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/DF1897CA3A024BFF3AB73392CD28822E/9780521553490AR.pdf/The_Balkan_Languages.pdf?event-type=FTLA"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Aksak / asymmetric Balkan rhythmic units — Cambridge Core",
+              "url": "https://www.cambridge.org/core/journals/yearbook-of-the-international-folk-music-council/article/abs/on-rhythm-in-rumanian-folk-dance/303B8DC39543C9789026B7186337972D"
+            },
+            {
+              "title": "Balkan rhythmic grouping / takt — The Balkan Languages (Cambridge)",
+              "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/DF1897CA3A024BFF3AB73392CD28822E/9780521553490AR.pdf/The_Balkan_Languages.pdf?event-type=FTLA"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -630,31 +946,52 @@
       "tradition": "Blues",
       "archetype": "Blues Rock Shuffle",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "092e29e6b1ac8892",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "33127ef9fbc7fd37",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 30,
+        "eventCount": 34,
         "json": "musicology/canonical-grooves/CAN-064-blues-rock-shuffle.json",
         "midi": "musicology/midi/CAN-064-blues-rock-shuffle.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed Blues/Shuffle drum-set archetype. The canonical grid encodes the distinct limb/orchestration role; FEEL carries microtiming and regional looseness.",
+        "distinctiveFeatures": [
+          "heavier rock-oriented shuffle",
+          "kick and snare actively reinforce the shuffle drive",
+          "open-hat lift separates it from traditional blues shuffles"
+        ],
         "references": [
+          {
+            "title": "Authentic Blues Drumming — Tony Coleman / Drumeo",
+            "url": "https://www.drumeo.com/beat/?p=15759"
+          },
+          {
+            "title": "How to Play Shuffles and Shuffle Variations — DRUM! Magazine",
+            "url": "https://drummagazine.com/how-to-play-shuffles-and-shuffle-variations/"
+          },
+          "https://online.berklee.edu/courses/blues-and-rock-keyboard-techniques",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
+            {
+              "title": "Authentic Blues Drumming — Tony Coleman / Drumeo",
+              "url": "https://www.drumeo.com/beat/?p=15759"
+            },
+            {
+              "title": "How to Play Shuffles and Shuffle Variations — DRUM! Magazine",
+              "url": "https://drummagazine.com/how-to-play-shuffles-and-shuffle-variations/"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -670,31 +1007,59 @@
       "tradition": "Blues",
       "archetype": "Chicago Shuffle",
       "playable": true,
-      "status": "high",
-      "confidence": 1.02,
-      "sourceType": "canonical-curated",
-      "fingerprint": "6a72c012e78cfd73",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "befb65d49b019ea4",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 24,
+        "eventCount": 36,
         "json": "musicology/canonical-grooves/CAN-057-chicago-shuffle.json",
         "midi": "musicology/midi/CAN-057-chicago-shuffle.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed Blues/Shuffle drum-set archetype. The canonical grid encodes the distinct limb/orchestration role; FEEL carries microtiming and regional looseness.",
+        "distinctiveFeatures": [
+          "double/full shuffle orchestration",
+          "snare carries shuffled inner notes with strong 2 and 4",
+          "four-quarter bass-drum support distinguishes it from half-time shuffle"
+        ],
         "references": [
+          {
+            "title": "Authentic Blues Drumming — Tony Coleman / Drumeo",
+            "url": "https://www.drumeo.com/beat/?p=15759"
+          },
+          {
+            "title": "How to Play Shuffles and Shuffle Variations — DRUM! Magazine",
+            "url": "https://drummagazine.com/how-to-play-shuffles-and-shuffle-variations/"
+          },
+          {
+            "title": "Blues and Rock Keyboard Techniques — Berklee Online",
+            "url": "https://online.berklee.edu/courses/blues-and-rock-keyboard-techniques"
+          },
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
+            {
+              "title": "Authentic Blues Drumming — Tony Coleman / Drumeo",
+              "url": "https://www.drumeo.com/beat/?p=15759"
+            },
+            {
+              "title": "How to Play Shuffles and Shuffle Variations — DRUM! Magazine",
+              "url": "https://drummagazine.com/how-to-play-shuffles-and-shuffle-variations/"
+            },
+            {
+              "title": "Blues and Rock Keyboard Techniques — Berklee Online",
+              "url": "https://online.berklee.edu/courses/blues-and-rock-keyboard-techniques"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -710,22 +1075,36 @@
       "tradition": "Blues",
       "archetype": "Half-Time Shuffle",
       "playable": true,
-      "status": "high",
-      "confidence": 1.02,
-      "sourceType": "canonical-curated",
-      "fingerprint": "277f34f12de91964",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "bdfc0df953dcf583",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 22,
+        "eventCount": 34,
         "json": "musicology/canonical-grooves/CAN-063-half-time-shuffle.json",
         "midi": "musicology/midi/CAN-063-half-time-shuffle.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed Blues/Shuffle drum-set archetype. The canonical grid encodes the distinct limb/orchestration role; FEEL carries microtiming and regional looseness.",
+        "distinctiveFeatures": [
+          "single half-time backbeat on beat 3",
+          "ghosted shuffle lattice",
+          "syncopated bass-drum support"
+        ],
         "references": [
+          {
+            "title": "Authentic Blues Drumming — Tony Coleman / Drumeo",
+            "url": "https://www.drumeo.com/beat/?p=15759"
+          },
+          {
+            "title": "How to Play Shuffles and Shuffle Variations — DRUM! Magazine",
+            "url": "https://drummagazine.com/how-to-play-shuffles-and-shuffle-variations/"
+          },
+          "https://online.berklee.edu/courses/blues-and-rock-keyboard-techniques",
+          "https://arxiv.org/abs/2411.06892",
           {
             "title": "Drum Set Performance 101 — Berklee Online",
             "url": "https://online.berklee.edu/courses/drum-set-performance-101"
@@ -744,6 +1123,14 @@
               "url": "https://online.berklee.edu/courses/drum-set-performance-101"
             },
             {
+              "title": "Authentic Blues Drumming — Tony Coleman / Drumeo",
+              "url": "https://www.drumeo.com/beat/?p=15759"
+            },
+            {
+              "title": "How to Play Shuffles and Shuffle Variations — DRUM! Magazine",
+              "url": "https://drummagazine.com/how-to-play-shuffles-and-shuffle-variations/"
+            },
+            {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
             }
@@ -758,31 +1145,45 @@
       "tradition": "Blues",
       "archetype": "Jump Blues",
       "playable": true,
-      "status": "provisional",
-      "confidence": 0.512,
-      "sourceType": "canonical-curated",
-      "fingerprint": "1c02fbc1786b0d9a",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "de9e9e838989d558",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 36,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-061-jump-blues.json",
         "midi": "musicology/midi/CAN-061-jump-blues.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed Blues/Shuffle drum-set archetype. The canonical grid encodes the distinct limb/orchestration role; FEEL carries microtiming and regional looseness.",
+        "distinctiveFeatures": [
+          "fast swing/shuffle dance pulse",
+          "four-to-the-bar bass drum",
+          "ride-led time with compact snare shuffle support"
+        ],
         "references": [
+          {
+            "title": "Authentic Blues Drumming — Tony Coleman / Drumeo",
+            "url": "https://www.drumeo.com/beat/?p=15759"
+          },
+          "https://drummagazine.com/how-to-play-shuffles-and-shuffle-variations/",
+          "https://online.berklee.edu/courses/blues-and-rock-keyboard-techniques",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
+            {
+              "title": "Authentic Blues Drumming — Tony Coleman / Drumeo",
+              "url": "https://www.drumeo.com/beat/?p=15759"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -798,31 +1199,52 @@
       "tradition": "Blues",
       "archetype": "Slow 12/8 Blues",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "4fbfd33309146ce7",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "9e3d63de699f9529",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 29,
+        "eventCount": 26,
         "json": "musicology/canonical-grooves/CAN-059-slow-12-8-blues.json",
         "midi": "musicology/midi/CAN-059-slow-12-8-blues.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed Blues/Shuffle drum-set archetype. The canonical grid encodes the distinct limb/orchestration role; FEEL carries microtiming and regional looseness.",
+        "distinctiveFeatures": [
+          "explicit 12/8 compound grid",
+          "snare anchors second and fourth dotted-quarter beats",
+          "slow spacious bass-drum support"
+        ],
         "references": [
+          {
+            "title": "Authentic Blues Drumming — Tony Coleman / Drumeo",
+            "url": "https://www.drumeo.com/beat/?p=15759"
+          },
+          "https://drummagazine.com/how-to-play-shuffles-and-shuffle-variations/",
+          {
+            "title": "Blues and Rock Keyboard Techniques — Berklee Online",
+            "url": "https://online.berklee.edu/courses/blues-and-rock-keyboard-techniques"
+          },
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
+            {
+              "title": "Authentic Blues Drumming — Tony Coleman / Drumeo",
+              "url": "https://www.drumeo.com/beat/?p=15759"
+            },
+            {
+              "title": "Blues and Rock Keyboard Techniques — Berklee Online",
+              "url": "https://online.berklee.edu/courses/blues-and-rock-keyboard-techniques"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -838,31 +1260,52 @@
       "tradition": "Blues",
       "archetype": "Straight Blues",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "7e2d13d7d09434a9",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "b05791c5e3bb0739",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 29,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-060-straight-blues.json",
         "midi": "musicology/midi/CAN-060-straight-blues.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed Blues/Shuffle drum-set archetype. The canonical grid encodes the distinct limb/orchestration role; FEEL carries microtiming and regional looseness.",
+        "distinctiveFeatures": [
+          "straight eighth-note blues surface",
+          "syncopated bass-drum support",
+          "no shuffle subdivision"
+        ],
         "references": [
+          {
+            "title": "Authentic Blues Drumming — Tony Coleman / Drumeo",
+            "url": "https://www.drumeo.com/beat/?p=15759"
+          },
+          "https://drummagazine.com/how-to-play-shuffles-and-shuffle-variations/",
+          {
+            "title": "Blues and Rock Keyboard Techniques — Berklee Online",
+            "url": "https://online.berklee.edu/courses/blues-and-rock-keyboard-techniques"
+          },
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
+            {
+              "title": "Authentic Blues Drumming — Tony Coleman / Drumeo",
+              "url": "https://www.drumeo.com/beat/?p=15759"
+            },
+            {
+              "title": "Blues and Rock Keyboard Techniques — Berklee Online",
+              "url": "https://online.berklee.edu/courses/blues-and-rock-keyboard-techniques"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -878,31 +1321,59 @@
       "tradition": "Blues",
       "archetype": "Texas Shuffle",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "6e91915cf3fdb854",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "1718a4433386230d",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 36,
         "json": "musicology/canonical-grooves/CAN-058-texas-shuffle.json",
         "midi": "musicology/midi/CAN-058-texas-shuffle.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed Blues/Shuffle drum-set archetype. The canonical grid encodes the distinct limb/orchestration role; FEEL carries microtiming and regional looseness.",
+        "distinctiveFeatures": [
+          "Texas/flat-tire-oriented shuffle",
+          "offbeat snare shuffle notes create inside/backward tire motion",
+          "four-on-the-floor bass support"
+        ],
         "references": [
+          {
+            "title": "Authentic Blues Drumming — Tony Coleman / Drumeo",
+            "url": "https://www.drumeo.com/beat/?p=15759"
+          },
+          {
+            "title": "How to Play Shuffles and Shuffle Variations — DRUM! Magazine",
+            "url": "https://drummagazine.com/how-to-play-shuffles-and-shuffle-variations/"
+          },
+          {
+            "title": "Blues and Rock Keyboard Techniques — Berklee Online",
+            "url": "https://online.berklee.edu/courses/blues-and-rock-keyboard-techniques"
+          },
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
+            {
+              "title": "Authentic Blues Drumming — Tony Coleman / Drumeo",
+              "url": "https://www.drumeo.com/beat/?p=15759"
+            },
+            {
+              "title": "How to Play Shuffles and Shuffle Variations — DRUM! Magazine",
+              "url": "https://drummagazine.com/how-to-play-shuffles-and-shuffle-variations/"
+            },
+            {
+              "title": "Blues and Rock Keyboard Techniques — Berklee Online",
+              "url": "https://online.berklee.edu/courses/blues-and-rock-keyboard-techniques"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -918,31 +1389,52 @@
       "tradition": "Blues",
       "archetype": "Train Shuffle",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "db0a3c675e7ac7ab",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "df0fbc720dbfb2c1",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 29,
+        "eventCount": 30,
         "json": "musicology/canonical-grooves/CAN-062-train-shuffle.json",
         "midi": "musicology/midi/CAN-062-train-shuffle.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed Blues/Shuffle drum-set archetype. The canonical grid encodes the distinct limb/orchestration role; FEEL carries microtiming and regional looseness.",
+        "distinctiveFeatures": [
+          "train-beat concept expressed on shuffled snare flow",
+          "continuous accented/unaccented snare motion",
+          "sparser bass drum than double shuffle"
+        ],
         "references": [
+          {
+            "title": "Authentic Blues Drumming — Tony Coleman / Drumeo",
+            "url": "https://www.drumeo.com/beat/?p=15759"
+          },
+          {
+            "title": "How to Play Shuffles and Shuffle Variations — DRUM! Magazine",
+            "url": "https://drummagazine.com/how-to-play-shuffles-and-shuffle-variations/"
+          },
+          "https://online.berklee.edu/courses/blues-and-rock-keyboard-techniques",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
+            {
+              "title": "Authentic Blues Drumming — Tony Coleman / Drumeo",
+              "url": "https://www.drumeo.com/beat/?p=15759"
+            },
+            {
+              "title": "How to Play Shuffles and Shuffle Variations — DRUM! Magazine",
+              "url": "https://drummagazine.com/how-to-play-shuffles-and-shuffle-variations/"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -1246,33 +1738,102 @@
       "id": "CAN-086",
       "family": "Country / Americana",
       "tradition": "Country",
-      "archetype": "Brush Country",
+      "archetype": "Country 6/8 Ballad",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "592fa6f6bf9996db",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "56bb798619e69d7a",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 25,
-        "json": "musicology/canonical-grooves/CAN-086-brush-country.json",
-        "midi": "musicology/midi/CAN-086-brush-country.mid"
+        "eventCount": 18,
+        "json": "musicology/canonical-grooves/CAN-086-country-6-8-ballad.json",
+        "midi": "musicology/midi/CAN-086-country-6-8-ballad.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed Country/Americana drum-set archetype. Score preserves the core groove function; brushes, dynamics and recording-era nuances remain performance/orchestration choices.",
+        "distinctiveFeatures": [
+          "compound 6/8 country ballad pulse",
+          "cross-stick/soft snare anchor on second dotted-quarter",
+          "restrained bass drum"
+        ],
         "references": [
+          "https://pas.org/pas-blog/country-music-grooves-variations-on-the-classics/",
+          {
+            "title": "A Drummer’s Guide To Country — Drumeo",
+            "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+          },
+          "https://pas.org/pas-blog/pas-playlist-train-beat/",
+          "https://www.drumeo.com/beat/101-drumming-styles-in-10-minutes/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
+            {
+              "title": "A Drummer’s Guide To Country — Drumeo",
+              "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+            },
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-084",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Country Pop / Nashville Straight 8ths",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "5cab07be114455e4",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 30,
+        "json": "musicology/canonical-grooves/CAN-084-country-pop-nashville-straight-8ths.json",
+        "midi": "musicology/midi/CAN-084-country-pop-nashville-straight-8ths.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed Country/Americana drum-set archetype. Score preserves the core groove function; brushes, dynamics and recording-era nuances remain performance/orchestration choices.",
+        "distinctiveFeatures": [
+          "modern straight-eighth Nashville time",
+          "pop-style 2 and 4 backbeat",
+          "light syncopated bass-drum lift"
+        ],
+        "references": [
+          "https://pas.org/pas-blog/country-music-grooves-variations-on-the-classics/",
+          {
+            "title": "A Drummer’s Guide To Country — Drumeo",
+            "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+          },
+          "https://pas.org/pas-blog/pas-playlist-train-beat/",
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "literature-supported",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "A Drummer’s Guide To Country — Drumeo",
+              "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -1288,31 +1849,45 @@
       "tradition": "Country",
       "archetype": "Country Rock",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "9c07c7c5dbf826e6",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "f674f3fd8841267a",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 25,
+        "eventCount": 34,
         "json": "musicology/canonical-grooves/CAN-085-country-rock.json",
         "midi": "musicology/midi/CAN-085-country-rock.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed Country/Americana drum-set archetype. Score preserves the core groove function; brushes, dynamics and recording-era nuances remain performance/orchestration choices.",
+        "distinctiveFeatures": [
+          "rock-weight backbeat",
+          "country-compatible straight eighths",
+          "more active kick and open-hat punctuation than country pop"
+        ],
         "references": [
+          "https://pas.org/pas-blog/country-music-grooves-variations-on-the-classics/",
+          {
+            "title": "A Drummer’s Guide To Country — Drumeo",
+            "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+          },
+          "https://pas.org/pas-blog/pas-playlist-train-beat/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
+            {
+              "title": "A Drummer’s Guide To Country — Drumeo",
+              "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -1328,31 +1903,52 @@
       "tradition": "Country",
       "archetype": "Country Shuffle",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "b30dd8d0b887f13e",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "32d85455bff15c96",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 29,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-081-country-shuffle.json",
         "midi": "musicology/midi/CAN-081-country-shuffle.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed Country/Americana drum-set archetype. Score preserves the core groove function; brushes, dynamics and recording-era nuances remain performance/orchestration choices.",
+        "distinctiveFeatures": [
+          "classic country shuffle surface",
+          "backbeat retained",
+          "lighter snare embellishment than blues double shuffle"
+        ],
         "references": [
+          {
+            "title": "Country Music Grooves: Variations on the Classics — Percussive Arts Society",
+            "url": "https://pas.org/pas-blog/country-music-grooves-variations-on-the-classics/"
+          },
+          {
+            "title": "A Drummer’s Guide To Country — Drumeo",
+            "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+          },
+          "https://pas.org/pas-blog/pas-playlist-train-beat/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
+            {
+              "title": "Country Music Grooves: Variations on the Classics — Percussive Arts Society",
+              "url": "https://pas.org/pas-blog/country-music-grooves-variations-on-the-classics/"
+            },
+            {
+              "title": "A Drummer’s Guide To Country — Drumeo",
+              "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -1368,31 +1964,45 @@
       "tradition": "Country",
       "archetype": "Country Two-Step",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "4509890bedc8a3fa",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "a8fc71fa9453946a",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 25,
+        "eventCount": 24,
         "json": "musicology/canonical-grooves/CAN-080-country-two-step.json",
         "midi": "musicology/midi/CAN-080-country-two-step.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed Country/Americana drum-set archetype. Score preserves the core groove function; brushes, dynamics and recording-era nuances remain performance/orchestration choices.",
+        "distinctiveFeatures": [
+          "two-beat bass-drum foundation on 1 and 3",
+          "crisp backbeat on 2 and 4",
+          "straight eighth-note time hand"
+        ],
         "references": [
+          "https://pas.org/pas-blog/country-music-grooves-variations-on-the-classics/",
+          {
+            "title": "A Drummer’s Guide To Country — Drumeo",
+            "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+          },
+          "https://pas.org/pas-blog/pas-playlist-train-beat/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
+            {
+              "title": "A Drummer’s Guide To Country — Drumeo",
+              "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -1408,10 +2018,10 @@
       "tradition": "Country",
       "archetype": "Country Waltz",
       "playable": true,
-      "status": "high",
-      "confidence": 1.02,
-      "sourceType": "canonical-curated",
-      "fingerprint": "07c56adca9c7c599",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "05aef8660bbe8cd0",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -1421,58 +2031,39 @@
         "midi": "musicology/midi/CAN-082-country-waltz.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed Country/Americana drum-set archetype. Score preserves the core groove function; brushes, dynamics and recording-era nuances remain performance/orchestration choices.",
+        "distinctiveFeatures": [
+          "slow 3/4 country pulse",
+          "bass drum anchors beat 1",
+          "soft hand punctuation on beats 2 and 3"
+        ],
         "references": [
+          {
+            "title": "Country Music Grooves: Variations on the Classics — Percussive Arts Society",
+            "url": "https://pas.org/pas-blog/country-music-grooves-variations-on-the-classics/"
+          },
+          {
+            "title": "A Drummer’s Guide To Country — Drumeo",
+            "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+          },
+          "https://pas.org/pas-blog/pas-playlist-train-beat/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
             {
-              "title": "Groove MIDI Dataset — Magenta",
-              "url": "https://magenta.tensorflow.org/datasets/groove"
-            }
-          ]
-        },
-        "catalogDisambiguation": false
-      }
-    },
-    {
-      "id": "CAN-083",
-      "family": "Country / Americana",
-      "tradition": "Country",
-      "archetype": "Honky-Tonk",
-      "playable": true,
-      "status": "high",
-      "confidence": 1.02,
-      "sourceType": "canonical-curated",
-      "fingerprint": "9825e346ced67f21",
-      "canonical": {
-        "schema": "battrochtek.canonical-groove/v1",
-        "ppq": 960,
-        "phraseBars": 2,
-        "eventCount": 28,
-        "json": "musicology/canonical-grooves/CAN-083-honky-tonk.json",
-        "midi": "musicology/midi/CAN-083-honky-tonk.mid"
-      },
-      "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [
-          {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          }
-        ],
-        "evidence": {
-          "taxonomyState": "needs-review",
-          "performanceEvidence": "human-dataset-available",
-          "references": [
+              "title": "Country Music Grooves: Variations on the Classics — Percussive Arts Society",
+              "url": "https://pas.org/pas-blog/country-music-grooves-variations-on-the-classics/"
+            },
+            {
+              "title": "A Drummer’s Guide To Country — Drumeo",
+              "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -1488,71 +2079,53 @@
       "tradition": "Country",
       "archetype": "Modern Bluegrass Drum-Set",
       "playable": true,
-      "status": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "fingerprint": "e24a8c5351689b4e",
+      "status": "reviewed-adaptation-tradition-caveat",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "74f517a3ca9abb09",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 29,
+        "eventCount": 36,
         "json": "musicology/canonical-grooves/CAN-087-modern-bluegrass-drum-set.json",
         "midi": "musicology/midi/CAN-087-modern-bluegrass-drum-set.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed Country/Americana drum-set archetype. Score preserves the core groove function; brushes, dynamics and recording-era nuances remain performance/orchestration choices.",
+        "distinctiveFeatures": [
+          "explicit modern drum-set adaptation, not a claim about traditional bluegrass instrumentation",
+          "train-beat-derived snare flow",
+          "very light bass-drum support"
+        ],
         "references": [
+          "https://pas.org/pas-blog/country-music-grooves-variations-on-the-classics/",
+          {
+            "title": "A Drummer’s Guide To Country — Drumeo",
+            "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+          },
+          {
+            "title": "PAS Playlist: Train Beat — Percussive Arts Society",
+            "url": "https://pas.org/pas-blog/pas-playlist-train-beat/"
+          },
+          "https://www.moderndrummer.com/2014/05/video-drum-country-train-beat-variations-may-2014-issue/",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
             {
-              "title": "Groove MIDI Dataset — Magenta",
-              "url": "https://magenta.tensorflow.org/datasets/groove"
-            }
-          ]
-        },
-        "catalogDisambiguation": false
-      }
-    },
-    {
-      "id": "CAN-084",
-      "family": "Country / Americana",
-      "tradition": "Country",
-      "archetype": "Nashville Straight 8ths",
-      "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "adbaf74725d879f3",
-      "canonical": {
-        "schema": "battrochtek.canonical-groove/v1",
-        "ppq": 960,
-        "phraseBars": 2,
-        "eventCount": 25,
-        "json": "musicology/canonical-grooves/CAN-084-nashville-straight-8ths.json",
-        "midi": "musicology/midi/CAN-084-nashville-straight-8ths.mid"
-      },
-      "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [
-          {
-            "title": "Groove MIDI Dataset — Magenta",
-            "url": "https://magenta.tensorflow.org/datasets/groove"
-          }
-        ],
-        "evidence": {
-          "taxonomyState": "needs-review",
-          "performanceEvidence": "human-dataset-available",
-          "references": [
+              "title": "PAS Playlist: Train Beat — Percussive Arts Society",
+              "url": "https://pas.org/pas-blog/pas-playlist-train-beat/"
+            },
+            {
+              "title": "A Drummer’s Guide To Country — Drumeo",
+              "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -1568,31 +2141,61 @@
       "tradition": "Country",
       "archetype": "Rockabilly Shuffle",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "53c56754c3eae9fd",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "8556026b51838a78",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 29,
+        "eventCount": 34,
         "json": "musicology/canonical-grooves/CAN-088-rockabilly-shuffle.json",
         "midi": "musicology/midi/CAN-088-rockabilly-shuffle.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed Country/Americana drum-set archetype. Score preserves the core groove function; brushes, dynamics and recording-era nuances remain performance/orchestration choices.",
+        "distinctiveFeatures": [
+          "fast early-rock/country hybrid",
+          "shuffle partially straightened at high tempo",
+          "four-quarter drive with prominent backbeat"
+        ],
         "references": [
+          "https://pas.org/pas-blog/country-music-grooves-variations-on-the-classics/",
+          {
+            "title": "A Drummer’s Guide To Country — Drumeo",
+            "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+          },
+          "https://pas.org/pas-blog/pas-playlist-train-beat/",
+          {
+            "title": "Rockabilly — Modern Drummer archival feature",
+            "url": "https://www.moderndrummer.com/wp-content/uploads/2017/06/md361cs.pdf"
+          },
+          {
+            "title": "How to Play Shuffles and Shuffle Variations — DRUM! Magazine",
+            "url": "https://drummagazine.com/how-to-play-shuffles-and-shuffle-variations/"
+          },
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
+            {
+              "title": "How to Play Shuffles and Shuffle Variations — DRUM! Magazine",
+              "url": "https://drummagazine.com/how-to-play-shuffles-and-shuffle-variations/"
+            },
+            {
+              "title": "A Drummer’s Guide To Country — Drumeo",
+              "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+            },
+            {
+              "title": "Rockabilly — Modern Drummer archival feature",
+              "url": "https://www.moderndrummer.com/wp-content/uploads/2017/06/md361cs.pdf"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -1608,10 +2211,10 @@
       "tradition": "Country",
       "archetype": "Train Beat",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "ab0a925217d8f953",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "0eb4ec36bd6474bd",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -1621,18 +2224,117 @@
         "midi": "musicology/midi/CAN-079-train-beat.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed Country/Americana drum-set archetype. Score preserves the core groove function; brushes, dynamics and recording-era nuances remain performance/orchestration choices.",
+        "distinctiveFeatures": [
+          "steady eighth-note snare flow with accent hierarchy",
+          "train-motion imitation",
+          "bass drum may follow bass-guitar movement"
+        ],
         "references": [
+          {
+            "title": "Country Music Grooves: Variations on the Classics — Percussive Arts Society",
+            "url": "https://pas.org/pas-blog/country-music-grooves-variations-on-the-classics/"
+          },
+          {
+            "title": "A Drummer’s Guide To Country — Drumeo",
+            "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+          },
+          {
+            "title": "PAS Playlist: Train Beat — Percussive Arts Society",
+            "url": "https://pas.org/pas-blog/pas-playlist-train-beat/"
+          },
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
+            {
+              "title": "Country Music Grooves: Variations on the Classics — Percussive Arts Society",
+              "url": "https://pas.org/pas-blog/country-music-grooves-variations-on-the-classics/"
+            },
+            {
+              "title": "PAS Playlist: Train Beat — Percussive Arts Society",
+              "url": "https://pas.org/pas-blog/pas-playlist-train-beat/"
+            },
+            {
+              "title": "A Drummer’s Guide To Country — Drumeo",
+              "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+            },
+            {
+              "title": "Groove MIDI Dataset — Magenta",
+              "url": "https://magenta.tensorflow.org/datasets/groove"
+            }
+          ]
+        },
+        "catalogDisambiguation": false
+      }
+    },
+    {
+      "id": "CAN-083",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Western Swing",
+      "playable": true,
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "5c02b906152d731b",
+      "canonical": {
+        "schema": "battrochtek.canonical-groove/v1",
+        "ppq": 960,
+        "phraseBars": 2,
+        "eventCount": 28,
+        "json": "musicology/canonical-grooves/CAN-083-western-swing.json",
+        "midi": "musicology/midi/CAN-083-western-swing.mid"
+      },
+      "musicology": {
+        "notes": "Reviewed Country/Americana drum-set archetype. Score preserves the core groove function; brushes, dynamics and recording-era nuances remain performance/orchestration choices.",
+        "distinctiveFeatures": [
+          "ride-led swing time",
+          "four-to-the-bar bass drum supports dancers",
+          "relaxed backbeat/hi-hat relationship"
+        ],
+        "references": [
+          "https://pas.org/pas-blog/country-music-grooves-variations-on-the-classics/",
+          {
+            "title": "A Drummer’s Guide To Country — Drumeo",
+            "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+          },
+          "https://pas.org/pas-blog/pas-playlist-train-beat/",
+          {
+            "title": "Putting More Feel in Your Country Swing Groove — Percussive Arts Society",
+            "url": "https://pas.org/pas-blog/groove-of-the-month-putting-more-feel-in-your-country-swing-groove/"
+          },
+          "https://www.moderndrummer.com/2004/05/tommy-perkins/",
+          {
+            "title": "Drum Set Performance 101 — Berklee Online",
+            "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+          },
+          {
+            "title": "Groove MIDI Dataset — Magenta",
+            "url": "https://magenta.tensorflow.org/datasets/groove"
+          }
+        ],
+        "evidence": {
+          "taxonomyState": "literature-supported",
+          "performanceEvidence": "human-dataset-available",
+          "references": [
+            {
+              "title": "Drum Set Performance 101 — Berklee Online",
+              "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+            },
+            {
+              "title": "Putting More Feel in Your Country Swing Groove — Percussive Arts Society",
+              "url": "https://pas.org/pas-blog/groove-of-the-month-putting-more-feel-in-your-country-swing-groove/"
+            },
+            {
+              "title": "A Drummer’s Guide To Country — Drumeo",
+              "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -1708,27 +2410,28 @@
       "tradition": "Club music",
       "archetype": "Breakbeat / Big Beat",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "c09021f617c91a56",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "ccebd55478eb2e0c",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 60,
+        "eventCount": 52,
         "json": "musicology/canonical-grooves/CAN-118-breakbeat-big-beat.json",
         "midi": "musicology/midi/CAN-118-breakbeat-big-beat.mid"
       },
       "musicology": {
-        "notes": "Complete breakbeat/Big Beat drum-set archetype with a stable subdivision layer and broken kick/snare phrase.",
+        "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
         "distinctiveFeatures": [
-          "complete sixteenth subdivision layer",
+          "continuous subdivision layer",
           "broken syncopated bass-drum phrase",
-          "strong sampled-break backbeats",
-          "ghost pickup vocabulary"
+          "sampled-break-style backbeat and ghost pickups"
         ],
-        "references": [],
+        "references": [
+          "https://www.musicradar.com/how-to/program-6-different-jungle-6-dnb-grooves"
+        ],
         "evidence": {
           "taxonomyState": "needs-review",
           "performanceEvidence": "not-mapped",
@@ -1743,26 +2446,56 @@
       "tradition": "Club music",
       "archetype": "Classic House",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "f43acbb737597bf5",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "ebeff506d3b12067",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 20,
+        "eventCount": 36,
         "json": "musicology/canonical-grooves/CAN-111-classic-house.json",
         "midi": "musicology/midi/CAN-111-classic-house.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
+        "distinctiveFeatures": [
+          "four-on-the-floor kick",
+          "2-and-4 clap/snare",
+          "offbeat open hi-hat"
+        ],
+        "references": [
+          {
+            "title": "Classic House — Ableton Learning Music",
+            "url": "https://learningmusic.ableton.com/make-beats/rock-and-house.html"
+          },
+          {
+            "title": "Backbeats / four-on-the-floor — Ableton Learning Music",
+            "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
+          },
+          {
+            "title": "Tempo and genre — Ableton Learning Music",
+            "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Backbeats / four-on-the-floor — Ableton Learning Music",
+              "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
+            },
+            {
+              "title": "Tempo and genre — Ableton Learning Music",
+              "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+            },
+            {
+              "title": "Classic House — Ableton Learning Music",
+              "url": "https://learningmusic.ableton.com/make-beats/rock-and-house.html"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -1773,26 +2506,48 @@
       "tradition": "Club music",
       "archetype": "Deep House",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "a76997be6afae055",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "1db886b33fefaba7",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 21,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-112-deep-house.json",
         "midi": "musicology/midi/CAN-112-deep-house.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
+        "distinctiveFeatures": [
+          "steady four-on-floor foundation",
+          "restrained backbeat",
+          "sparser open-hat color than classic house"
+        ],
+        "references": [
+          {
+            "title": "Backbeats / four-on-the-floor — Ableton Learning Music",
+            "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
+          },
+          {
+            "title": "Tempo and genre — Ableton Learning Music",
+            "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Backbeats / four-on-the-floor — Ableton Learning Music",
+              "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
+            },
+            {
+              "title": "Tempo and genre — Ableton Learning Music",
+              "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -1803,22 +2558,28 @@
       "tradition": "Club music",
       "archetype": "Detroit Electro",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "bcbecff0494dde3b",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "916491d7a905243a",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 20,
+        "eventCount": 30,
         "json": "musicology/canonical-grooves/CAN-115-detroit-electro.json",
         "midi": "musicology/midi/CAN-115-detroit-electro.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
+        "distinctiveFeatures": [
+          "broken electro bass-drum phrase rather than four-on-floor",
+          "2-and-4 snare anchor",
+          "sixteenth-derived machine pulse"
+        ],
+        "references": [
+          "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+        ],
         "evidence": {
           "taxonomyState": "needs-review",
           "performanceEvidence": "not-mapped",
@@ -1833,10 +2594,10 @@
       "tradition": "Club music",
       "archetype": "Disco",
       "playable": true,
-      "status": "medium",
-      "confidence": 0.686,
-      "sourceType": "canonical-curated",
-      "fingerprint": "90eadcdc48422083",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "f0e2f20f2cb57ed3",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -1846,13 +2607,27 @@
         "midi": "musicology/midi/CAN-110-disco.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
+        "distinctiveFeatures": [
+          "four-on-the-floor bass drum",
+          "backbeat on 2 and 4",
+          "offbeat open hi-hat disco lift"
+        ],
+        "references": [
+          {
+            "title": "Backbeats / four-on-the-floor — Ableton Learning Music",
+            "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Backbeats / four-on-the-floor — Ableton Learning Music",
+              "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -1863,26 +2638,48 @@
       "tradition": "Club music",
       "archetype": "Drum & Bass",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "1ce79d1623e75e8f",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "7b06e38f097dd0b7",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 44,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-120-drum-bass.json",
         "midi": "musicology/midi/CAN-120-drum-bass.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
+        "distinctiveFeatures": [
+          "DnB two-step core",
+          "snare anchors on 2 and 4",
+          "second kick displaced before second snare"
+        ],
+        "references": [
+          {
+            "title": "Programming jungle and drum & bass grooves — MusicRadar",
+            "url": "https://www.musicradar.com/how-to/program-6-different-jungle-6-dnb-grooves"
+          },
+          {
+            "title": "Tempo and genre — Ableton Learning Music",
+            "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Tempo and genre — Ableton Learning Music",
+              "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+            },
+            {
+              "title": "Programming jungle and drum & bass grooves — MusicRadar",
+              "url": "https://www.musicradar.com/how-to/program-6-different-jungle-6-dnb-grooves"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -1893,26 +2690,40 @@
       "tradition": "Club music",
       "archetype": "Dubstep Half-Time",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "9e41625250020af1",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "c1d0fd5c5b93d371",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 14,
+        "eventCount": 26,
         "json": "musicology/canonical-grooves/CAN-123-dubstep-half-time.json",
         "midi": "musicology/midi/CAN-123-dubstep-half-time.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
+        "distinctiveFeatures": [
+          "half-time snare on beat 3",
+          "syncopated bass-drum phrase",
+          "140 BPM double-time subdivision context"
+        ],
+        "references": [
+          {
+            "title": "Tempo and genre — Ableton Learning Music",
+            "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Tempo and genre — Ableton Learning Music",
+              "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -1923,22 +2734,27 @@
       "tradition": "Club music",
       "archetype": "Electro-Funk",
       "playable": true,
-      "status": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "fingerprint": "f4ab255676dfc4bf",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "cdd1683b05249841",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 25,
+        "eventCount": 38,
         "json": "musicology/canonical-grooves/CAN-116-electro-funk.json",
         "midi": "musicology/midi/CAN-116-electro-funk.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
+        "distinctiveFeatures": [
+          "syncopated electro bass-drum line",
+          "funk backbeat",
+          "machine-precise eighth/sixteenth embellishment"
+        ],
         "references": [
+          "https://learningmusic.ableton.com/make-beats/backbeats.html",
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -1963,22 +2779,28 @@
       "tradition": "Club music",
       "archetype": "Footwork / Juke",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "f2a5832c1b6e9205",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "45615fa28ac5c385",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 48,
+        "eventCount": 52,
         "json": "musicology/canonical-grooves/CAN-124-footwork-juke.json",
         "midi": "musicology/midi/CAN-124-footwork-juke.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
+        "distinctiveFeatures": [
+          "very fast syncopated kick network",
+          "multiple snare/clap anchors",
+          "dense sixteenth subdivision"
+        ],
+        "references": [
+          "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+        ],
         "evidence": {
           "taxonomyState": "needs-review",
           "performanceEvidence": "not-mapped",
@@ -1993,31 +2815,51 @@
       "tradition": "Club music",
       "archetype": "Funky House",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "823f55138fca3f24",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "83d970434b5f9918",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 21,
+        "eventCount": 36,
         "json": "musicology/canonical-grooves/CAN-113-funky-house.json",
         "midi": "musicology/midi/CAN-113-funky-house.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
+        "distinctiveFeatures": [
+          "house four-on-floor with syncopated pickup",
+          "backbeat clap/snare",
+          "additional syncopated hat/percussion role"
+        ],
         "references": [
+          {
+            "title": "Backbeats / four-on-the-floor — Ableton Learning Music",
+            "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
+          },
+          {
+            "title": "Tempo and genre — Ableton Learning Music",
+            "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+          },
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
+            {
+              "title": "Backbeats / four-on-the-floor — Ableton Learning Music",
+              "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
+            },
+            {
+              "title": "Tempo and genre — Ableton Learning Music",
+              "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -2033,26 +2875,48 @@
       "tradition": "Club music",
       "archetype": "Jungle",
       "playable": true,
-      "status": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "fingerprint": "4ee5c03f9631d00f",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "1715024bf67c482c",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 32,
+        "eventCount": 50,
         "json": "musicology/canonical-grooves/CAN-119-jungle.json",
         "midi": "musicology/midi/CAN-119-jungle.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
+        "distinctiveFeatures": [
+          "chopped-break orientation",
+          "fast syncopated kick/snare phrase",
+          "dense subdivision/ghost vocabulary"
+        ],
+        "references": [
+          {
+            "title": "Programming jungle and drum & bass grooves — MusicRadar",
+            "url": "https://www.musicradar.com/how-to/program-6-different-jungle-6-dnb-grooves"
+          },
+          {
+            "title": "Tempo and genre — Ableton Learning Music",
+            "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Tempo and genre — Ableton Learning Music",
+              "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+            },
+            {
+              "title": "Programming jungle and drum & bass grooves — MusicRadar",
+              "url": "https://www.musicradar.com/how-to/program-6-different-jungle-6-dnb-grooves"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -2063,22 +2927,28 @@
       "tradition": "Club music",
       "archetype": "Synthwave",
       "playable": true,
-      "status": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "fingerprint": "baa90d929dda61c5",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "d026cdaba2bb32d1",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 29,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-125-synthwave.json",
         "midi": "musicology/midi/CAN-125-synthwave.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
+        "distinctiveFeatures": [
+          "straight drum-machine backbeat",
+          "eighth-note hi-hat pulse",
+          "1980s-inspired restrained syncopation"
+        ],
+        "references": [
+          "https://learningmusic.ableton.com/make-beats/backbeats.html"
+        ],
         "evidence": {
           "taxonomyState": "needs-review",
           "performanceEvidence": "not-mapped",
@@ -2093,26 +2963,49 @@
       "tradition": "Club music",
       "archetype": "Techno",
       "playable": true,
-      "status": "high",
-      "confidence": 0.9,
-      "sourceType": "canonical-curated",
-      "fingerprint": "29f2f75341321217",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "537f909ac3768197",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 24,
         "json": "musicology/canonical-grooves/CAN-114-techno.json",
         "midi": "musicology/midi/CAN-114-techno.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
+        "distinctiveFeatures": [
+          "machine-stable four-on-floor kick",
+          "minimal backbeat punctuation",
+          "offbeat high-frequency pulse"
+        ],
+        "references": [
+          {
+            "title": "Backbeats / four-on-the-floor — Ableton Learning Music",
+            "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
+          },
+          "https://learningmusic.ableton.com/make-melodies/ride.html",
+          {
+            "title": "Tempo and genre — Ableton Learning Music",
+            "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Backbeats / four-on-the-floor — Ableton Learning Music",
+              "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
+            },
+            {
+              "title": "Tempo and genre — Ableton Learning Music",
+              "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -2123,26 +3016,48 @@
       "tradition": "Club music",
       "archetype": "Trance",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "83d57a36c80e4b4a",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "f4e110d6eb973d55",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 24,
+        "eventCount": 52,
         "json": "musicology/canonical-grooves/CAN-122-trance.json",
         "midi": "musicology/midi/CAN-122-trance.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
+        "distinctiveFeatures": [
+          "driving four-on-floor foundation",
+          "backbeat support",
+          "continuous sixteenth-note high-frequency propulsion with offbeat open hats"
+        ],
+        "references": [
+          {
+            "title": "Backbeats / four-on-the-floor — Ableton Learning Music",
+            "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
+          },
+          {
+            "title": "Tempo and genre — Ableton Learning Music",
+            "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Backbeats / four-on-the-floor — Ableton Learning Music",
+              "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
+            },
+            {
+              "title": "Tempo and genre — Ableton Learning Music",
+              "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -2153,22 +3068,28 @@
       "tradition": "Club music",
       "archetype": "Trip-Hop",
       "playable": true,
-      "status": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "fingerprint": "5c635f89c5a25eca",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "e671e5adace04f51",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 25,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-121-trip-hop.json",
         "midi": "musicology/midi/CAN-121-trip-hop.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
+        "distinctiveFeatures": [
+          "slow broken-beat pocket",
+          "hip-hop-derived backbeat",
+          "deliberately laid-back subdivision"
+        ],
+        "references": [
+          "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+        ],
         "evidence": {
           "taxonomyState": "needs-review",
           "performanceEvidence": "not-mapped",
@@ -2183,26 +3104,40 @@
       "tradition": "Club music",
       "archetype": "UK Garage / 2-Step",
       "playable": true,
-      "status": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "fingerprint": "86a893e5bc150599",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "c6bd987c3565d255",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 25,
+        "eventCount": 34,
         "json": "musicology/canonical-grooves/CAN-117-uk-garage-2-step.json",
         "midi": "musicology/midi/CAN-117-uk-garage-2-step.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
+        "distinctiveFeatures": [
+          "broken kick pattern avoiding continuous four-on-floor",
+          "2-and-4 clap/snare anchor",
+          "pronounced shuffled sixteenth feel"
+        ],
+        "references": [
+          {
+            "title": "Rolling 2-Step Garage — Attack Magazine",
+            "url": "https://www.attackmagazine.com/technique/beat-dissected/rolling-2-step-garage/"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Rolling 2-Step Garage — Attack Magazine",
+              "url": "https://www.attackmagazine.com/technique/beat-dissected/rolling-2-step-garage/"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -2762,14 +3697,22 @@
           "https://www.moderndrummer.com/2011/06/uriel-jones-architect-of-the-motown-sound/",
           "https://www.moderndrummer.com/2016/08/video-lesson-groove-construction-part-6-w-jost-nickel/",
           {
+            "title": "Backbeats / four-on-the-floor — Ableton Learning Music",
+            "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
+          },
+          {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
+            {
+              "title": "Backbeats / four-on-the-floor — Ableton Learning Music",
+              "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -3504,12 +4447,28 @@
           {
             "title": "Groove MIDI Dataset — Magenta",
             "url": "https://magenta.tensorflow.org/datasets/groove"
+          },
+          {
+            "title": "African Rhythms for Drum Set — Berklee",
+            "url": "https://college.berklee.edu/courses/ilpd-355"
+          },
+          {
+            "title": "African Rhythms Applied to the Drumset — Tosin Aribisala / Drumeo",
+            "url": "https://www.drumeo.com/beat/african-rhythms-on-the-drums/"
           }
         ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "human-dataset-available",
           "references": [
+            {
+              "title": "African Rhythms for Drum Set — Berklee",
+              "url": "https://college.berklee.edu/courses/ilpd-355"
+            },
+            {
+              "title": "African Rhythms Applied to the Drumset — Tosin Aribisala / Drumeo",
+              "url": "https://www.drumeo.com/beat/african-rhythms-on-the-drums/"
+            },
             {
               "title": "Groove MIDI Dataset — Magenta",
               "url": "https://magenta.tensorflow.org/datasets/groove"
@@ -8058,26 +9017,49 @@
       "tradition": "Arabic rhythmic cycles",
       "archetype": "Ayoub",
       "playable": true,
-      "status": "medium",
-      "confidence": 0.525,
-      "sourceType": "canonical-curated",
-      "fingerprint": "b904e4e9e455dc6a",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "a19ddb81ad0babca",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 13,
+        "eventCount": 8,
         "json": "musicology/canonical-grooves/CAN-195-ayoub.json",
         "midi": "musicology/midi/CAN-195-ayoub.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set mapping of an Arabic iqa skeleton. Kick carries dum (low/resonant) function; cross-stick/snare carries tak (high/dry) function. Ornamentation is intentionally sparse and the canonical identity is the cycle, not a Western backbeat.",
+        "distinctiveFeatures": [
+          "dum/tak role mapping",
+          "cycle-first orchestration",
+          "2/4 Ayyub cycle",
+          "distinct low/high placement from Malfuf"
+        ],
+        "references": [
+          {
+            "title": "Arabic Rhythmic Cycles / Iqa‘at — MaqamWorld",
+            "url": "https://www.maqamworld.com/en/iqaa.php"
+          },
+          {
+            "title": "Iqa‘ Ayyub 2/4 — MaqamWorld",
+            "url": "https://www.maqamworld.com/en/iqaa/ayyub.php"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Arabic Rhythmic Cycles / Iqa‘at — MaqamWorld",
+              "url": "https://www.maqamworld.com/en/iqaa.php"
+            },
+            {
+              "title": "Iqa‘ Ayyub 2/4 — MaqamWorld",
+              "url": "https://www.maqamworld.com/en/iqaa/ayyub.php"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -8088,26 +9070,49 @@
       "tradition": "Arabic rhythmic cycles",
       "archetype": "Baladi / Masmoudi Saghir",
       "playable": true,
-      "status": "provisional",
-      "confidence": 0.378,
-      "sourceType": "canonical-curated",
-      "fingerprint": "9be2404bfe5e8889",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "0dafb3f70dff4646",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 26,
+        "eventCount": 12,
         "json": "musicology/canonical-grooves/CAN-196-baladi-masmoudi-saghir.json",
         "midi": "musicology/midi/CAN-196-baladi-masmoudi-saghir.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set mapping of an Arabic iqa skeleton. Kick carries dum (low/resonant) function; cross-stick/snare carries tak (high/dry) function. Ornamentation is intentionally sparse and the canonical identity is the cycle, not a Western backbeat.",
+        "distinctiveFeatures": [
+          "dum/tak role mapping",
+          "cycle-first orchestration",
+          "Baladi / Masmudi Saghir 4/4",
+          "double-dum opening identity"
+        ],
+        "references": [
+          {
+            "title": "Arabic Rhythmic Cycles / Iqa‘at — MaqamWorld",
+            "url": "https://www.maqamworld.com/en/iqaa.php"
+          },
+          {
+            "title": "Iqa‘ Baladi / Masmudi Saghir 4/4 — MaqamWorld",
+            "url": "https://www.maqamworld.com/en/iqaa/baladi.php"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Arabic Rhythmic Cycles / Iqa‘at — MaqamWorld",
+              "url": "https://www.maqamworld.com/en/iqaa.php"
+            },
+            {
+              "title": "Iqa‘ Baladi / Masmudi Saghir 4/4 — MaqamWorld",
+              "url": "https://www.maqamworld.com/en/iqaa/baladi.php"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -8118,26 +9123,49 @@
       "tradition": "Arabic rhythmic cycles",
       "archetype": "Chiftetelli",
       "playable": true,
-      "status": "provisional",
-      "confidence": 0.353,
-      "sourceType": "canonical-curated",
-      "fingerprint": "996221a8a481d46f",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "724e79bf27127eef",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 33,
+        "eventCount": 12,
         "json": "musicology/canonical-grooves/CAN-198-chiftetelli.json",
         "midi": "musicology/midi/CAN-198-chiftetelli.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set mapping of an Arabic iqa skeleton. Kick carries dum (low/resonant) function; cross-stick/snare carries tak (high/dry) function. Ornamentation is intentionally sparse and the canonical identity is the cycle, not a Western backbeat.",
+        "distinctiveFeatures": [
+          "dum/tak role mapping",
+          "cycle-first orchestration",
+          "8/4 Ciftetelli",
+          "slow improvisation-oriented long cycle"
+        ],
+        "references": [
+          {
+            "title": "Arabic Rhythmic Cycles / Iqa‘at — MaqamWorld",
+            "url": "https://www.maqamworld.com/en/iqaa.php"
+          },
+          {
+            "title": "Iqa‘ Ciftetelli 8/4 — MaqamWorld",
+            "url": "https://www.maqamworld.com/en/iqaa/ciftetelli.php"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Arabic Rhythmic Cycles / Iqa‘at — MaqamWorld",
+              "url": "https://www.maqamworld.com/en/iqaa.php"
+            },
+            {
+              "title": "Iqa‘ Ciftetelli 8/4 — MaqamWorld",
+              "url": "https://www.maqamworld.com/en/iqaa/ciftetelli.php"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -8148,26 +9176,49 @@
       "tradition": "Arabic rhythmic cycles",
       "archetype": "Malfuf",
       "playable": true,
-      "status": "medium",
-      "confidence": 0.556,
-      "sourceType": "canonical-curated",
-      "fingerprint": "fc2bdf3f19ffddb0",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "d2804d14653c3040",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 12,
+        "eventCount": 8,
         "json": "musicology/canonical-grooves/CAN-194-malfuf.json",
         "midi": "musicology/midi/CAN-194-malfuf.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set mapping of an Arabic iqa skeleton. Kick carries dum (low/resonant) function; cross-stick/snare carries tak (high/dry) function. Ornamentation is intentionally sparse and the canonical identity is the cycle, not a Western backbeat.",
+        "distinctiveFeatures": [
+          "dum/tak role mapping",
+          "cycle-first orchestration",
+          "short 2/4 cycle",
+          "compact folkloric/popular-music orientation"
+        ],
+        "references": [
+          {
+            "title": "Arabic Rhythmic Cycles / Iqa‘at — MaqamWorld",
+            "url": "https://www.maqamworld.com/en/iqaa.php"
+          },
+          {
+            "title": "Iqa‘ Malfuf 2/4 — MaqamWorld",
+            "url": "https://www.maqamworld.com/en/iqaa/malfuf.php"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Arabic Rhythmic Cycles / Iqa‘at — MaqamWorld",
+              "url": "https://www.maqamworld.com/en/iqaa.php"
+            },
+            {
+              "title": "Iqa‘ Malfuf 2/4 — MaqamWorld",
+              "url": "https://www.maqamworld.com/en/iqaa/malfuf.php"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -8178,26 +9229,48 @@
       "tradition": "Arabic rhythmic cycles",
       "archetype": "Maqsum",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "d8c67da8d48802b0",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "b519472a997e7b4e",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 10,
         "json": "musicology/canonical-grooves/CAN-192-maqsum.json",
         "midi": "musicology/midi/CAN-192-maqsum.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set mapping of an Arabic iqa skeleton. Kick carries dum (low/resonant) function; cross-stick/snare carries tak (high/dry) function. Ornamentation is intentionally sparse and the canonical identity is the cycle, not a Western backbeat.",
+        "distinctiveFeatures": [
+          "dum/tak role mapping",
+          "cycle-first orchestration",
+          "4/4 Maqsum cycle"
+        ],
+        "references": [
+          {
+            "title": "Arabic Rhythmic Cycles / Iqa‘at — MaqamWorld",
+            "url": "https://www.maqamworld.com/en/iqaa.php"
+          },
+          {
+            "title": "Iqa‘ Maqsum 4/4 — MaqamWorld",
+            "url": "https://www.maqamworld.com/en/iqaa/maqsum.php"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Arabic Rhythmic Cycles / Iqa‘at — MaqamWorld",
+              "url": "https://www.maqamworld.com/en/iqaa.php"
+            },
+            {
+              "title": "Iqa‘ Maqsum 4/4 — MaqamWorld",
+              "url": "https://www.maqamworld.com/en/iqaa/maqsum.php"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -8208,26 +9281,49 @@
       "tradition": "Arabic rhythmic cycles",
       "archetype": "Masmoudi Kabir",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "ea74feb266691770",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "a9b88859dc6fec25",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 14,
         "json": "musicology/canonical-grooves/CAN-197-masmoudi-kabir.json",
         "midi": "musicology/midi/CAN-197-masmoudi-kabir.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set mapping of an Arabic iqa skeleton. Kick carries dum (low/resonant) function; cross-stick/snare carries tak (high/dry) function. Ornamentation is intentionally sparse and the canonical identity is the cycle, not a Western backbeat.",
+        "distinctiveFeatures": [
+          "dum/tak role mapping",
+          "cycle-first orchestration",
+          "8/4 Masmudi Kabir long cycle",
+          "two-measure-scale phrase identity"
+        ],
+        "references": [
+          {
+            "title": "Arabic Rhythmic Cycles / Iqa‘at — MaqamWorld",
+            "url": "https://www.maqamworld.com/en/iqaa.php"
+          },
+          {
+            "title": "Iqa‘ Masmudi Kabir 8/4 — MaqamWorld",
+            "url": "https://www.maqamworld.com/en/iqaa/masmudi_kabir.php"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Arabic Rhythmic Cycles / Iqa‘at — MaqamWorld",
+              "url": "https://www.maqamworld.com/en/iqaa.php"
+            },
+            {
+              "title": "Iqa‘ Masmudi Kabir 8/4 — MaqamWorld",
+              "url": "https://www.maqamworld.com/en/iqaa/masmudi_kabir.php"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -8238,26 +9334,49 @@
       "tradition": "Arabic rhythmic cycles",
       "archetype": "Saidi",
       "playable": true,
-      "status": "medium",
-      "confidence": 0.525,
-      "sourceType": "canonical-curated",
-      "fingerprint": "bf25067fda8d46d3",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "0d60ae0fc6472077",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 21,
+        "eventCount": 12,
         "json": "musicology/canonical-grooves/CAN-193-saidi.json",
         "midi": "musicology/midi/CAN-193-saidi.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set mapping of an Arabic iqa skeleton. Kick carries dum (low/resonant) function; cross-stick/snare carries tak (high/dry) function. Ornamentation is intentionally sparse and the canonical identity is the cycle, not a Western backbeat.",
+        "distinctiveFeatures": [
+          "dum/tak role mapping",
+          "cycle-first orchestration",
+          "4/4 Sa‘idi cycle",
+          "heavier low-stroke profile than Maqsum"
+        ],
+        "references": [
+          {
+            "title": "Arabic Rhythmic Cycles / Iqa‘at — MaqamWorld",
+            "url": "https://www.maqamworld.com/en/iqaa.php"
+          },
+          {
+            "title": "Iqa‘ Sa‘idi 4/4 — MaqamWorld",
+            "url": "https://www.maqamworld.com/en/iqaa/saidi.php"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Arabic Rhythmic Cycles / Iqa‘at — MaqamWorld",
+              "url": "https://www.maqamworld.com/en/iqaa.php"
+            },
+            {
+              "title": "Iqa‘ Sa‘idi 4/4 — MaqamWorld",
+              "url": "https://www.maqamworld.com/en/iqaa/saidi.php"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -8268,21 +9387,25 @@
       "tradition": "North Africa",
       "archetype": "Gnawa Drum-Set",
       "playable": true,
-      "status": "high",
-      "confidence": 0.62,
-      "sourceType": "canonical-curated",
-      "fingerprint": "9bb8e91805884c21",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.68,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "ddee52e9cc528af3",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 17,
+        "eventCount": 26,
         "json": "musicology/canonical-grooves/CAN-189-gnawa-drum-set.json",
         "midi": "musicology/midi/CAN-189-gnawa-drum-set.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "North-African cyclic adaptation",
+          "low pulse and hand-percussion response",
+          "not presented as a literal qraqeb/guembri transcription"
+        ],
         "references": [],
         "evidence": {
           "taxonomyState": "needs-review",
@@ -8298,21 +9421,25 @@
       "tradition": "North Africa",
       "archetype": "Maghreb Chaabi",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
+      "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "f38c75b88ad516d8",
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "458efdff017e7002",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 24,
+        "eventCount": 26,
         "json": "musicology/canonical-grooves/CAN-190-maghreb-chaabi.json",
         "midi": "musicology/midi/CAN-190-maghreb-chaabi.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "Maghreb popular-music adaptation",
+          "syncopated low percussion support",
+          "steady hand-time layer"
+        ],
         "references": [],
         "evidence": {
           "taxonomyState": "needs-review",
@@ -8328,21 +9455,24 @@
       "tradition": "North Africa",
       "archetype": "Raï",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.62,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "6a9d56b536a18a95",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.72,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "5d3a68ffa32fdeaf",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 29,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-191-rai.json",
         "midi": "musicology/midi/CAN-191-rai.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
+        "distinctiveFeatures": [
+          "Algerian raï drum-set/pop adaptation",
+          "steady subdivision with syncopated kick support"
+        ],
         "references": [],
         "evidence": {
           "taxonomyState": "needs-review",
@@ -9462,21 +10592,25 @@
       "tradition": "Indian & Punjabi adaptations",
       "archetype": "Bhangra / Dhol Drum-Set",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "2b0e227a887573cb",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.76,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "4c9a09ac580c8c94",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 20,
         "json": "musicology/canonical-grooves/CAN-203-bhangra-dhol-drum-set.json",
         "midi": "musicology/midi/CAN-203-bhangra-dhol-drum-set.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
+        "notes": "Reviewed drum-set adaptation centered on a two-sided dhol-style low/high dialogue. It is not a literal dhol transcription.",
+        "distinctiveFeatures": [
+          "Punjabi dhol-derived low/high dialogue",
+          "strong dance accents",
+          "drum-set adaptation"
+        ],
         "references": [],
         "evidence": {
           "taxonomyState": "needs-review",
@@ -9492,26 +10626,49 @@
       "tradition": "Indian & Punjabi adaptations",
       "archetype": "Dadra / 6-beat Drum-Set Adaptation",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "9a1e2cf7262524c7",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "94146ad16898b174",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 20,
+        "eventCount": 12,
         "json": "musicology/canonical-grooves/CAN-206-dadra-6-beat-drum-set-adaptation.json",
         "midi": "musicology/midi/CAN-206-dadra-6-beat-drum-set-adaptation.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set mapping of a South Asian taal/theka. Low drum approximates bayan/low composite function and cross-stick/snare approximates high tabla strokes; this is not a substitute for tabla or dhol technique.",
+        "distinctiveFeatures": [
+          "cycle grouping 3+3",
+          "6-beat Dadra",
+          "3+3 vibhag structure",
+          "sam/khali contrast"
+        ],
+        "references": [
+          {
+            "title": "Popular Tabla Thekas — RagaNet",
+            "url": "https://www.raganet.com/Issues/8/tabla8.html"
+          },
+          {
+            "title": "Dadra Tal — DigiTabla",
+            "url": "https://digitabla.com/reference/tals-and-thekas/dadra-tal/"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Popular Tabla Thekas — RagaNet",
+              "url": "https://www.raganet.com/Issues/8/tabla8.html"
+            },
+            {
+              "title": "Dadra Tal — DigiTabla",
+              "url": "https://digitabla.com/reference/tals-and-thekas/dadra-tal/"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -9522,26 +10679,49 @@
       "tradition": "Indian & Punjabi adaptations",
       "archetype": "Keherwa / 8-beat Drum-Set Adaptation",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "67dba730336162c2",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "a42a2581ac7cc1cc",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 24,
+        "eventCount": 16,
         "json": "musicology/canonical-grooves/CAN-205-keherwa-8-beat-drum-set-adaptation.json",
         "midi": "musicology/midi/CAN-205-keherwa-8-beat-drum-set-adaptation.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set mapping of a South Asian taal/theka. Low drum approximates bayan/low composite function and cross-stick/snare approximates high tabla strokes; this is not a substitute for tabla or dhol technique.",
+        "distinctiveFeatures": [
+          "cycle grouping 4+4",
+          "8-beat Kaharwa/Keherwa",
+          "4+4 vibhag structure",
+          "sam at 1 and khali at 5"
+        ],
+        "references": [
+          {
+            "title": "Popular Tabla Thekas — RagaNet",
+            "url": "https://www.raganet.com/Issues/8/tabla8.html"
+          },
+          {
+            "title": "Kaharawa Tal — DigiTabla",
+            "url": "https://digitabla.com/reference/tals-and-thekas/kaharawa-tal/"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Popular Tabla Thekas — RagaNet",
+              "url": "https://www.raganet.com/Issues/8/tabla8.html"
+            },
+            {
+              "title": "Kaharawa Tal — DigiTabla",
+              "url": "https://digitabla.com/reference/tals-and-thekas/kaharawa-tal/"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }
@@ -9552,26 +10732,40 @@
       "tradition": "Indian & Punjabi adaptations",
       "archetype": "Teentaal 16-beat Drum-Set Adaptation",
       "playable": true,
-      "status": "pedagogical-adaptation-needs-review",
-      "confidence": 0.68,
-      "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "75791126f8d88e9a",
+      "status": "reviewed-pedagogical-adaptation",
+      "confidence": 0.82,
+      "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+      "fingerprint": "3b2095d02befabc6",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 16,
         "json": "musicology/canonical-grooves/CAN-204-teentaal-16-beat-drum-set-adaptation.json",
         "midi": "musicology/midi/CAN-204-teentaal-16-beat-drum-set-adaptation.mid"
       },
       "musicology": {
-        "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-        "distinctiveFeatures": [],
-        "references": [],
+        "notes": "Reviewed pedagogical drum-set mapping of a South Asian taal/theka. Low drum approximates bayan/low composite function and cross-stick/snare approximates high tabla strokes; this is not a substitute for tabla or dhol technique.",
+        "distinctiveFeatures": [
+          "cycle grouping 4+4+4+4",
+          "16-beat Teentaal cycle",
+          "sam/khali-aware four-vibhag form"
+        ],
+        "references": [
+          {
+            "title": "Popular Tabla Thekas — RagaNet",
+            "url": "https://www.raganet.com/Issues/8/tabla8.html"
+          }
+        ],
         "evidence": {
-          "taxonomyState": "needs-review",
+          "taxonomyState": "literature-supported",
           "performanceEvidence": "not-mapped",
-          "references": []
+          "references": [
+            {
+              "title": "Popular Tabla Thekas — RagaNet",
+              "url": "https://www.raganet.com/Issues/8/tabla8.html"
+            }
+          ]
         },
         "catalogDisambiguation": false
       }

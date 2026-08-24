@@ -10,7 +10,7 @@ const countRole=(g,role)=>g.events.filter(e=>e.role===role).length;
 for(const file of files){
   const g=JSON.parse(await readFile(new URL(file,dir),'utf8'));
   const family=g.family||'', name=g.name||'';
-  const time=has(g,'hihat')||has(g,'cymbal',['ride-bow','ride-bell']);
+  const time=has(g,'hihat')||has(g,'cymbal',['ride-bow','ride-bell'])||countRole(g,'time')>0;
   const kick=has(g,'kick'); const snare=has(g,'snare');
   const issues=[];
   const grooveFamily=/Rock|Pop|Funk|Soul|R&B|Hip-Hop|Electronic|Country|Blues/i.test(family);

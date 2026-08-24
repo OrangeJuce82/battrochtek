@@ -71,13 +71,20 @@
     const SAMPLE_CANDIDATES = Object.freeze(SAMPLE_MANIFEST.reduce((groups,sample)=>{ const key=sampleResolverGroup(sample); (groups[key]||(groups[key]=[])).push(sample); return groups; },{}));
     const TRACK_SAMPLE_TYPES = Object.freeze([['cymbal','fx','perc'],['cymbal','perc','fx'],['hat','perc','fx'],['hat','perc'],['snare','perc'],['tom','perc'],['tom','perc'],['tom','perc'],['kick','perc','fx']]);
     const SAMPLE_TECHNICAL_BANKS = new Set(["jazz-club","vintage-rock","world-percussion","bt-world","bt-analog","bt-detroit","bt-digital80"]);
+    const SAMPLE_PICKER_HIDDEN_KEYS = new Set([
+        // Replaced by the cleaner VCSL world-vcsl choices. These legacy imports
+        // are kept internally for backward compatibility but are too weak/noisy
+        // to expose as primary user choices.
+        "world_percussion_agogo_vl1_rr1", "world_percussion_agogo_vl1_rr2",
+        "world_percussion_frame_drum_vl1_rr1", "world_percussion_frame_drum_vl1_rr2"
+    ]);
     const sampleChoiceFamily = sample => SAMPLE_TECHNICAL_BANKS.has(sample.bank)
         ? `${sample.bank}|${sample.key.replace(/_vl\d+_rr\d+$/u, "").replace(/_rr\d+$/u, "")}`
         : sample.roundRobinGroup ? `${sample.bank}|${sample.roundRobinGroup}` : sample.key;
     const SAMPLE_VISIBLE_CHOICES = Object.freeze((() => {
         const chosen = new Map();
         for (const sample of SAMPLE_MANIFEST) {
-            if ((sample.instrument === "metro" || sample.instrument === "metronome") || (sample.roundRobinIndex && sample.roundRobinIndex > 1)) continue;
+            if (SAMPLE_PICKER_HIDDEN_KEYS.has(sample.key) || (sample.instrument === "metro" || sample.instrument === "metronome") || (sample.roundRobinIndex && sample.roundRobinIndex > 1)) continue;
             const family = sampleChoiceFamily(sample);
             const current = chosen.get(family);
             const distance = candidate => {
@@ -94,6 +101,8 @@
         KeyU:7, KeyI:6, KeyO:5, KeyP:1, BracketLeft:0
     });
     const PAD_KEYBOARD_LABELS = Object.freeze({ KeyQ:"A/Q", KeyW:"Z/W", KeyE:"E", KeyR:"R", KeyU:"U", KeyI:"I", KeyO:"O", KeyP:"P", BracketLeft:"^/[" });
+    const VELOCITY_LEVEL_ORDER = Object.freeze(["ghost", "soft", "normal", "strong", "accent"]);
+    const VELOCITY_LEVEL_NUMBER = Object.freeze({ ghost:1, soft:2, normal:3, strong:4, accent:5 });
 
     const CONFIG = Object.freeze({
         SIGNATURES: Object.freeze(SIGNATURES),
@@ -195,14 +204,14 @@
         fr: { translation: {
             "toolbar.source":"SOURCE", "toolbar.style":"STYLE", "toolbar.groove":"GROOVE", "toolbar.variant":"VARIANTE", "toolbar.swing":"SWING",
             "feel.title":"FEEL", "feel.subtitle":"FEEL actif : le batteur interprète le groove. AUTO fait évoluer la performance à chaque tour.", "feel.auto":"AUTO", "feel.autoTooltip":"Nouvelle interprétation à chaque tour", "feel.energy":"ÉNERGIE", "feel.stable":"STABLE", "feel.fills":"FILLS", "feel.density":"DENSITÉ", "feel.orchestrationProfile":"ORCHESTRATION", "feel.orchestration":"INSTRUMENTS", "feel.xyAria":"Pad Feel : horizontal fills, vertical énergie", "feel.layersAria":"Couches que FEEL peut agrémenter", "feel.orchAuto":"AUTO · selon le groove", "feel.orchestrationProfileAria":"Choisir l’orchestration", "feel.orchPocket":"Compact", "feel.orchHihat":"Charley", "feel.orchRide":"Ride", "feel.orchOpenKit":"Kit ouvert", "feel.orchPercussive":"Percussif", "feel.orchFullKit":"Kit complet", "feel.hhTooltip":"Agrémenter le charley · OFF = conserver exactement le charley source", "feel.rideTooltip":"Autoriser FEEL à agrémenter le ride · les notes source restent conservées", "feel.crashTooltip":"Autoriser FEEL à agrémenter les crashs · les notes source restent conservées", "feel.tomsTooltip":"Autoriser FEEL à agrémenter les toms · les notes source restent conservées", "feel.orchInfoAuto":"Adapte automatiquement l’orchestration au groove sans modifier son rythme de base.", "feel.orchInfoPocket":"Jeu compact centré sur le charley, avec peu de cymbales et de toms.", "feel.orchInfoHihat":"Le charley porte le groove ; FEEL travaille surtout ses ouvertures, accents et nuances.", "feel.orchInfoRide":"Le motif joué au charley est déplacé sur le ride ; le charley au pied peut rester présent si le style le demande.", "feel.orchInfoOpenKit":"Le jeu peut s’ouvrir du charley vers le ride et les crashs ; les toms servent surtout aux transitions.", "feel.orchInfoPercussive":"Le groove reste stable tandis que les toms et les déplacements autour du kit deviennent plus présents.", "feel.orchInfoFullKit":"Tout le kit peut être utilisé, dans les limites réalistes des deux mains et des deux pieds.", "feel.autoOrchestrationAria":"Orchestration automatique", "feel.autoOrchestrationTooltip":"Changer automatiquement l’orchestration selon l’intervalle choisi", "feel.autoOrchestrationOn":"Orchestration automatique activée · changement tous les {{loops}} tours.", "feel.autoOrchestrationOff":"Orchestration automatique désactivée.", "feel.autoOrchestrationEveryAria":"Intervalle de changement d’orchestration", "feel.autoOrchestrationEveryTooltip":"Changer l’orchestration tous les {{loops}} tours", "feel.autoOrchestrationEveryStatus":"Orchestration automatique : changement tous les {{loops}} tours.", "feel.autoOrchestrationAuto":"-", "feel.autoOrchestrationAutoTooltip":"AUTO : choisit musicalement quand changer et peut utiliser une courte transition avant de revenir au charley ou au ride.", "feel.autoOrchestrationAutoStatus":"Orchestration automatique : durée et transitions choisies musicalement.",
-            "search.placeholder":"Rechercher un groove…", "search.aria":"Rechercher dans tous les grooves", "search.results":"Résultats de recherche", "common.off":"Désactivé", "language.tooltip":"Langue", "theme.toggle":"Basculer le thème clair / sombre", "share.tooltip":"Partager ou sauvegarder ce groove", "audio.output":"Niveau de sortie audio", "audio.outputAria":"VU-mètre de sortie", "toolbar.sourceTooltip":"Source des grooves", "toolbar.styleTooltip":"Style musical", "toolbar.grooveTooltip":"Groove", "toolbar.preview":"Préécouter le groove sélectionné", "toolbar.addPatch":"Ajouter le patch à partir de la mémoire sélectionnée", "toolbar.variantTooltip":"Créer une variante musicale du groove courant", "kit.tooltip":"Kit de batterie", "swing.tooltip":"Swing en pourcentage", "transport.playPause":"Lecture / arrêt (Espace)","transport.stop":"Arrêt", "transport.tap":"Tap tempo (T)", "transport.tempoDown":"Diminuer le tempo", "transport.tempoUp":"Augmenter le tempo", "transport.tempo":"Tempo en BPM", "transport.signature":"Signature rythmique", "practice.countIn":"DÉCOMPTE", "memory.chain":"Chaîner les mémoires", "memory.undo":"Annuler", "memory.redo":"Rétablir", "memory.save":"Sauvegarder dans la mémoire sélectionnée (Ctrl+S)", "memory.new":"Nouveau motif vierge", "memory.clear":"Vider les mémoires",
+            "search.placeholder":"Rechercher un groove…", "search.aria":"Rechercher dans tous les grooves", "search.results":"Résultats de recherche", "common.off":"Désactivé", "language.tooltip":"Langue", "theme.toggle":"Basculer le thème clair / sombre", "share.tooltip":"Partager ou sauvegarder ce groove", "audio.output":"Niveau de sortie audio", "audio.outputAria":"VU-mètre de sortie", "toolbar.sourceTooltip":"Source des grooves", "toolbar.styleTooltip":"Style musical", "toolbar.grooveTooltip":"Groove", "toolbar.preview":"Préécouter le groove sélectionné", "toolbar.addPatch":"Ajouter le patch à partir de la mémoire sélectionnée", "toolbar.variantTooltip":"Créer une variante musicale du groove courant", "kit.tooltip":"Kit de batterie", "swing.tooltip":"Swing en pourcentage", "transport.playPause":"Lecture / arrêt (Espace)","transport.stop":"Arrêt", "transport.tap":"Tap tempo (T)", "transport.tempoDown":"Diminuer le tempo", "transport.tempoUp":"Augmenter le tempo", "transport.tempo":"Tempo en BPM", "transport.signature":"Signature rythmique", "practice.countIn":"DÉCOMPTE", "memory.chain":"Chaîner les mémoires", "memory.undo":"Annuler", "memory.redo":"Rétablir", "memory.save":"Sauvegarder dans la mémoire sélectionnée (Ctrl+S)", "memory.new":"Nouveau motif vierge", "memory.duplicate":"Dupliquer la mémoire courante", "memory.clear":"Vider les mémoires", "editor.monitor":"Monitoring : préécouter les cellules et les instruments", "editor.record":"Record : enregistrer les pads clavier quantifiés pendant la lecture", "editor.shiftLeft":"Décaler la sélection à gauche — Shift : 1 temps", "editor.shiftRight":"Décaler la sélection à droite — Shift : 1 temps", "editor.shiftUp":"Décaler la sélection d’une piste vers le haut", "editor.shiftDown":"Décaler la sélection d’une piste vers le bas", "editor.noSelection":"Sélectionne d’abord une ou plusieurs notes.", "editor.selectTrack":"Sélectionner les notes de {{track}}", "editor.velocity":"Vélocité {{level}} : {{name}}", "editor.velocityMinus":"Diminuer la vélocité de la sélection", "editor.velocityPlus":"Augmenter la vélocité de la sélection",
             "practice.title":"Entraînement", "practice.subtitle":"Configure l’entraînement, puis appuie sur Lecture pour démarrer.", "practice.progression":"PROGRESSION", "practice.modeTempo":"Tempo", "practice.modeLayers":"Couches", "practice.modeCombined":"Couches + tempo", "practice.start":"DÉPART", "practice.target":"OBJECTIF", "practice.step":"PALIER", "practice.loops":"TOURS / NIVEAU", "practice.oneBar":"1 mesure", "practice.twoBars":"2 mesures", "practice.startButton":"Démarrer", "practice.stopButton":"Arrêter", "practice.ready":"Prêt à démarrer", "practice.explainer":"Couches : charley → caisse claire → grosse caisse → autres éléments du groove → accents → notes fantômes.",
             "practice.hihat":"Charley", "practice.snare":"Charley + caisse claire", "practice.kick":"Charley + caisse claire + grosse caisse", "practice.accents":"+ accents", "practice.ghosts":"+ notes fantômes", "practice.tempoStatus":"{{tempo}} → {{target}} BPM", "practice.loop":"tour {{current}}/{{total}}", "practice.started":"Entraînement démarré à {{tempo}} BPM.", "practice.stopped":"Entraînement arrêté.", "practice.targetReached":"Objectif atteint : {{tempo}} BPM. On continue.", "practice.layersDone":"Toutes les couches sont en place.", "practice.layersToTempo":"Couches acquises. Progression tempo vers {{target}} BPM.", "practice.level":"Entraînement : {{label}}.", "practice.tempo":"Entraînement : {{tempo}} BPM.", "practice.changedStopped":"Entraînement arrêté : les réglages ont été modifiés.",
             "track.crash":"Crash", "track.ride":"Ride", "track.openHat":"HH ouvert", "track.closedHat":"HH fermé", "track.snare":"Caisse claire", "track.tomHigh":"Tom aigu", "track.tomMid":"Tom médium", "track.tomFloor":"Tom basse", "track.kick":"Grosse caisse",
             "language.label":"Langue", "audio.outputLabel":"SORTIE", "common.close":"Fermer", "share.title":"Partager ce groove", "share.subtitle":"Le QR code ouvre l’application. Le bouton Copier crée un lien contenant toutes les mémoires.", "share.link":"LIEN", "share.copy":"Copier le lien", "share.share":"Partager", "transport.metronome":"Métronome (M)", "transport.practice":"Entraînement", "transport.play":"Lecture", "transport.pause":"Pause", "transport.practice":"Entraînement", "memory.slot":"Mémoire {{n}}", "memory.saved":"sauvegardée", "memory.empty":"vide", "memory.selected":"sélectionnée",
-            "shortcut.title":"Raccourcis clavier", "shortcut.transport":"Transport", "shortcut.edit":"Édition", "shortcut.grid":"Grille", "shortcut.playStop":"Lecture / arrêt", "shortcut.space":"Espace", "shortcut.tap":"Tap tempo", "shortcut.metronome":"Métronome", "shortcut.memories":"Mémoire 1 à 8", "shortcut.undo":"Annuler", "shortcut.redo":"Rétablir", "shortcut.copy":"Copier le motif", "shortcut.paste":"Coller le motif", "shortcut.duplicate":"Dupliquer vers mémoire suivante", "shortcut.save":"Sauvegarder la mémoire", "shortcut.cell":"Changer une cellule", "shortcut.repeatBeat":"Répéter la position à chaque temps", "shortcut.deleteCell":"Effacer une cellule", "shortcut.deleteBeat":"Effacer cette position sur tous les temps", "shortcut.moveTrack":"Déplacer une piste sur les 2 axes", "shortcut.moveGrid":"Déplacer toute la grille sur les 2 axes", "shortcut.shiftBeat":"Décaler avec ‹ › d’un temps", "shortcut.click":"Clic", "shortcut.drag":"Glisser", "shortcut.velocity":"Niveaux de vélocité", "shortcut.velocityCycle":"Éteint → normal → fort → accent → doux → fantôme",
+            "shortcut.title":"Raccourcis clavier", "shortcut.transport":"Transport", "shortcut.edit":"Édition", "shortcut.grid":"Grille", "shortcut.playStop":"Lecture / arrêt", "shortcut.space":"Espace", "shortcut.tap":"Tap tempo", "shortcut.metronome":"Métronome", "shortcut.practice":"Panneau Entraînement", "shortcut.velocityAdjust":"Vélocité de la sélection", "shortcut.memories":"Mémoires 1 à 8", "shortcut.velocityKeys":"Choisir la vélocité d’écriture", "shortcut.selectAll":"Sélectionner toutes les notes", "shortcut.invertSelection":"Inverser la sélection", "shortcut.undo":"Annuler", "shortcut.redo":"Rétablir", "shortcut.copy":"Copier la sélection", "shortcut.paste":"Coller la sélection", "shortcut.duplicate":"Dupliquer la sélection", "shortcut.save":"Sauvegarder la mémoire", "shortcut.cell":"Créer / sélectionner une note", "shortcut.repeatBeat":"Ajouter à la sélection", "shortcut.deleteCell":"Supprimer la sélection", "shortcut.deleteBeat":"Inverser la sélection", "shortcut.moveTrack":"Déplacer la sélection", "shortcut.moveGrid":"Sélection rectangulaire", "shortcut.shiftBeat":"Décaler la sélection", "shortcut.click":"Clic", "shortcut.drag":"Glisser", "shortcut.altDrag":"Dupliquer + déplacer la sélection", "shortcut.velocity":"Niveaux de vélocité", "shortcut.velocityCycle":"Fantôme → douce → normale → forte → accent",
             "track.shiftLeft":"Décaler la piste à gauche — Shift : 1 temps", "track.shiftRight":"Décaler la piste à droite — Shift : 1 temps", "track.mute":"Couper la piste {{n}}", "track.solo":"Solo piste {{n}}", "track.pan":"Panoramique piste {{n}}", "track.volume":"Volume piste {{n}}", "track.shifted":"Piste {{n}} décalée de {{amount}}.", "track.custom":"Kit personnalisé : piste {{n}} → {{sample}}.", "rotary.reset":"Double-clic : valeur par défaut",
-            "memory.tooltip":"Mémoire {{n}} — {{state}} — raccourci {{n}}", "memory.restored":"Mémoire {{n}} restaurée depuis le groove source.", "memory.selectedStatus":"Mémoire {{n}}.", "memory.savedStatus":"Mémoire {{n}} sauvegardée.",
+            "memory.tooltip":"Mémoire {{n}} — {{state}} — Alt/Option+{{n}}", "memory.restored":"Mémoire {{n}} restaurée depuis le groove source.", "memory.selectedStatus":"Mémoire {{n}}.", "memory.savedStatus":"Mémoire {{n}} sauvegardée.",
             "status.loadingKit":"Chargement {{kit}}…", "status.kitReady":"{{kit}} prêt.", "status.kitPartial":"Kit chargé partiellement : certains samples sont indisponibles.", "status.noGroove":"Aucun groove trouvé", "status.patternCopied":"Motif copié — Ctrl+V pour le coller dans une mémoire.", "status.nothingToPaste":"Rien à coller : utilise d’abord Ctrl+C.", "status.patternPasted":"Motif collé en mémoire {{n}}.", "status.patternDuplicated":"Motif dupliqué vers la mémoire {{n}}.", "status.gridShifted":"Grille décalée {{direction}} de {{amount}}.", "status.left":"à gauche", "status.right":"à droite", "status.memoriesReset":"Mémoires réinitialisées. Le cache audio n’a pas été modifié.", "status.patchAdded":"{{count}} motif(s) ajouté(s) à partir de M{{memory}}.", "status.previewing":"Préécoute : {{groove}}", "status.previewStopped":"Préécoute arrêtée.", "status.loadingAudio":"Chargement du kit audio…", "status.undo":"Modification annulée.", "status.redo":"Modification rétablie.", "status.linkCopied":"Lien du groove copié.", "status.copyFailed":"Impossible de copier le lien automatiquement. Sélectionne-le manuellement.", "share.copied":"Lien copié", "share.qrTooLong":"Le lien est trop long pour être affiché en QR code. Le bouton Copier reste disponible.",
             "grid.moveAllStatus":"Alt+Shift+glisser : grille déplacée de {{tracks}} piste(s) et {{steps}} pas (bouclage modulo).", "grid.moveTrackStatus":"Alt+glisser : piste {{from}} → {{to}}, décalage {{steps}} pas (bouclage modulo).", "grid.deleteBeatStatus":"Ctrl/Cmd+Shift+clic : position {{position}}/{{beatSize}} supprimée sur tous les temps de la piste.", "grid.deleteCellStatus":"Ctrl/Cmd+clic : cellule supprimée.", "grid.repeatBeatStatus":"Shift+clic : position {{position}}/{{beatSize}} répétée sur tous les temps de la piste.",
             "theme.toLight":"Passer au thème clair", "theme.toDark":"Passer au thème sombre", "theme.light":"Thème clair", "theme.dark":"Thème sombre", "master.off":"coupé", "master.low":"faible", "master.high":"fort", "master.tooltip":"Volume master : {{level}}", "note.off":"Désactivée", "note.normal":"Normale", "note.soft":"Douce", "note.strong":"Forte", "note.accent":"Accent", "note.ghost":"Fantôme", "note.aria":"Note {{level}}"
@@ -210,14 +219,14 @@
         en: { translation: {
             "toolbar.source":"SOURCE", "toolbar.style":"STYLE", "toolbar.groove":"GROOVE", "toolbar.variant":"VARIATION", "toolbar.swing":"SWING",
             "feel.title":"FEEL", "feel.subtitle":"FEEL active: the drummer interprets the groove. AUTO evolves the performance each loop.", "feel.auto":"AUTO", "feel.autoTooltip":"New interpretation each loop", "feel.energy":"ENERGY", "feel.stable":"STABLE", "feel.fills":"FILLS", "feel.density":"DENSITY", "feel.orchestrationProfile":"ORCHESTRATION", "feel.orchestration":"INSTRUMENTS", "feel.xyAria":"Feel pad: fills horizontally, energy vertically", "feel.layersAria":"Layers FEEL may embellish", "feel.orchAuto":"AUTO · from groove", "feel.orchestrationProfileAria":"Choose orchestration", "feel.orchPocket":"Pocket", "feel.orchHihat":"Hi-Hat", "feel.orchRide":"Ride", "feel.orchOpenKit":"Open Kit", "feel.orchPercussive":"Percussive", "feel.orchFullKit":"Full Kit", "feel.hhTooltip":"Embellish hi-hat · OFF = preserve the source hi-hat exactly", "feel.rideTooltip":"Allow FEEL to embellish ride · source notes stay preserved", "feel.crashTooltip":"Allow FEEL to embellish crashes · source notes stay preserved", "feel.tomsTooltip":"Allow FEEL to embellish toms · source notes stay preserved", "feel.orchInfoAuto":"Adapts the orchestration to the groove without changing its rhythmic identity.", "feel.orchInfoPocket":"Compact hi-hat-led playing with restrained cymbals and toms.", "feel.orchInfoHihat":"The hi-hat carries the groove; FEEL mainly shapes openings, accents and dynamics.", "feel.orchInfoRide":"The hi-hat time pattern moves to the ride; left-foot hi-hat may remain when the style calls for it.", "feel.orchInfoOpenKit":"The groove can open from hi-hat to ride and crashes; toms are used mainly for transitions.", "feel.orchInfoPercussive":"The groove stays stable while toms and movement around the kit become more prominent.", "feel.orchInfoFullKit":"The whole kit may be used within realistic two-hand/two-foot constraints.", "feel.autoOrchestrationAria":"Automatic orchestration", "feel.autoOrchestrationTooltip":"Automatically change orchestration at the selected interval", "feel.autoOrchestrationOn":"Automatic orchestration on · change every {{loops}} loops.", "feel.autoOrchestrationOff":"Automatic orchestration off.", "feel.autoOrchestrationEveryAria":"Orchestration change interval", "feel.autoOrchestrationEveryTooltip":"Change orchestration every {{loops}} loops", "feel.autoOrchestrationEveryStatus":"Automatic orchestration: change every {{loops}} loops.", "feel.autoOrchestrationAuto":"-", "feel.autoOrchestrationAutoTooltip":"AUTO: musically chooses when to change and may use a short transition before returning to hi-hat or ride.", "feel.autoOrchestrationAutoStatus":"Automatic orchestration: musical timing and transitions.",
-            "search.placeholder":"Search grooves…", "search.aria":"Search all grooves", "search.results":"Search results", "common.off":"Off", "language.tooltip":"Language", "theme.toggle":"Toggle light / dark theme", "share.tooltip":"Share or save this groove", "audio.output":"Audio output level", "audio.outputAria":"Output VU meter", "toolbar.sourceTooltip":"Groove source", "toolbar.styleTooltip":"Music style", "toolbar.grooveTooltip":"Groove", "toolbar.preview":"Preview selected groove", "toolbar.addPatch":"Add the patch from the selected memory onward", "toolbar.variantTooltip":"Create a musical variation of the current groove", "kit.tooltip":"Drum kit", "swing.tooltip":"Swing percentage", "transport.playPause":"Play / stop (Space)","transport.stop":"Stop", "transport.tap":"Tap tempo (T)", "transport.tempoDown":"Decrease tempo", "transport.tempoUp":"Increase tempo", "transport.tempo":"Tempo in BPM", "transport.signature":"Time signature", "practice.countIn":"COUNT-IN", "memory.chain":"Chain memories", "memory.undo":"Undo", "memory.redo":"Redo", "memory.save":"Save to selected memory (Ctrl+S)", "memory.new":"New empty pattern", "memory.clear":"Clear memories",
+            "search.placeholder":"Search grooves…", "search.aria":"Search all grooves", "search.results":"Search results", "common.off":"Off", "language.tooltip":"Language", "theme.toggle":"Toggle light / dark theme", "share.tooltip":"Share or save this groove", "audio.output":"Audio output level", "audio.outputAria":"Output VU meter", "toolbar.sourceTooltip":"Groove source", "toolbar.styleTooltip":"Music style", "toolbar.grooveTooltip":"Groove", "toolbar.preview":"Preview selected groove", "toolbar.addPatch":"Add the patch from the selected memory onward", "toolbar.variantTooltip":"Create a musical variation of the current groove", "kit.tooltip":"Drum kit", "swing.tooltip":"Swing percentage", "transport.playPause":"Play / stop (Space)","transport.stop":"Stop", "transport.tap":"Tap tempo (T)", "transport.tempoDown":"Decrease tempo", "transport.tempoUp":"Increase tempo", "transport.tempo":"Tempo in BPM", "transport.signature":"Time signature", "practice.countIn":"COUNT-IN", "memory.chain":"Chain memories", "memory.undo":"Undo", "memory.redo":"Redo", "memory.save":"Save to selected memory (Ctrl+S)", "memory.new":"New empty pattern", "memory.duplicate":"Duplicate current memory", "memory.clear":"Clear memories", "editor.monitor":"Monitoring: preview cells and instruments", "editor.record":"Record: quantize keyboard pads into the grid while playing", "editor.shiftLeft":"Move selection left — Shift: 1 beat", "editor.shiftRight":"Move selection right — Shift: 1 beat", "editor.shiftUp":"Move selection up one track", "editor.shiftDown":"Move selection down one track", "editor.noSelection":"Select one or more notes first.", "editor.selectTrack":"Select notes on {{track}}", "editor.velocity":"Velocity {{level}}: {{name}}", "editor.velocityMinus":"Decrease selection velocity", "editor.velocityPlus":"Increase selection velocity",
             "practice.title":"Practice", "practice.subtitle":"Practice the groove by tempo or by layers.", "practice.progression":"PROGRESSION", "practice.modeTempo":"Tempo", "practice.modeLayers":"Layers", "practice.modeCombined":"Layers + tempo", "practice.start":"START", "practice.target":"TARGET", "practice.step":"STEP", "practice.loops":"LOOPS / LEVEL", "practice.oneBar":"1 bar", "practice.twoBars":"2 bars", "practice.startButton":"Start", "practice.stopButton":"Stop", "practice.ready":"Ready to start", "practice.explainer":"Layers: hi-hat → snare → kick → other groove parts → accents → ghost notes.",
             "practice.hihat":"Hi-hat", "practice.snare":"Hi-hat + snare", "practice.kick":"Hi-hat + snare + kick", "practice.accents":"+ accents", "practice.ghosts":"+ ghost notes", "practice.tempoStatus":"{{tempo}} → {{target}} BPM", "practice.loop":"loop {{current}}/{{total}}", "practice.started":"Practice started at {{tempo}} BPM.", "practice.stopped":"Practice stopped.", "practice.targetReached":"Target reached: {{tempo}} BPM. Keep going.", "practice.layersDone":"All layers are active.", "practice.layersToTempo":"Layers complete. Tempo progression to {{target}} BPM.", "practice.level":"Practice: {{label}}.", "practice.tempo":"Practice: {{tempo}} BPM.", "practice.changedStopped":"Practice stopped because its settings changed.",
             "track.crash":"Crash", "track.ride":"Ride", "track.openHat":"Open HH", "track.closedHat":"Closed HH", "track.snare":"Snare", "track.tomHigh":"High Tom", "track.tomMid":"Mid Tom", "track.tomFloor":"Floor Tom", "track.kick":"Kick",
             "language.label":"Language", "audio.outputLabel":"OUTPUT", "common.close":"Close", "share.title":"Share this groove", "share.subtitle":"The QR code opens the app. Copy Link creates a link containing all memories.", "share.link":"LINK", "share.copy":"Copy link", "share.share":"Share", "transport.metronome":"Metronome (M)", "transport.practice":"Practice", "transport.play":"Play", "transport.pause":"Pause", "transport.practice":"Practice", "memory.slot":"Memory {{n}}", "memory.saved":"saved", "memory.empty":"empty", "memory.selected":"selected",
-            "shortcut.title":"Keyboard shortcuts", "shortcut.transport":"Transport", "shortcut.edit":"Editing", "shortcut.grid":"Grid", "shortcut.playStop":"Play / Stop", "shortcut.space":"Space", "shortcut.tap":"Tap tempo", "shortcut.metronome":"Metronome", "shortcut.memories":"Memory 1 to 8", "shortcut.undo":"Undo", "shortcut.redo":"Redo", "shortcut.copy":"Copy pattern", "shortcut.paste":"Paste pattern", "shortcut.duplicate":"Duplicate to next memory", "shortcut.save":"Save memory", "shortcut.cell":"Toggle a cell", "shortcut.repeatBeat":"Repeat this position on every beat", "shortcut.deleteCell":"Delete a cell", "shortcut.deleteBeat":"Delete this position on every beat", "shortcut.moveTrack":"Move one track on both axes", "shortcut.moveGrid":"Move the whole grid on both axes", "shortcut.shiftBeat":"Shift with ‹ › by one beat", "shortcut.click":"Click", "shortcut.drag":"Drag", "shortcut.velocity":"Velocity levels", "shortcut.velocityCycle":"Off → normal → strong → accent → soft → ghost",
+            "shortcut.title":"Keyboard shortcuts", "shortcut.transport":"Transport", "shortcut.edit":"Editing", "shortcut.grid":"Grid", "shortcut.playStop":"Play / Stop", "shortcut.space":"Space", "shortcut.tap":"Tap tempo", "shortcut.metronome":"Metronome", "shortcut.practice":"Practice panel", "shortcut.velocityAdjust":"Selection velocity", "shortcut.memories":"Memories 1 to 8", "shortcut.velocityKeys":"Choose write velocity", "shortcut.selectAll":"Select all notes", "shortcut.invertSelection":"Invert selection", "shortcut.undo":"Undo", "shortcut.redo":"Redo", "shortcut.copy":"Copy selection", "shortcut.paste":"Paste selection", "shortcut.duplicate":"Duplicate selection", "shortcut.save":"Save memory", "shortcut.cell":"Create / select a note", "shortcut.repeatBeat":"Add to selection", "shortcut.deleteCell":"Delete selection", "shortcut.deleteBeat":"Invert selection", "shortcut.moveTrack":"Move selection", "shortcut.moveGrid":"Box selection", "shortcut.shiftBeat":"Shift selection", "shortcut.click":"Click", "shortcut.drag":"Drag", "shortcut.altDrag":"Duplicate + move selection", "shortcut.velocity":"Velocity levels", "shortcut.velocityCycle":"Ghost → soft → normal → strong → accent",
             "track.shiftLeft":"Shift track left — Shift: 1 beat", "track.shiftRight":"Shift track right — Shift: 1 beat", "track.mute":"Mute track {{n}}", "track.solo":"Solo track {{n}}", "track.pan":"Pan track {{n}}", "track.volume":"Track {{n}} volume", "track.shifted":"Track {{n}} shifted by {{amount}}.", "track.custom":"Custom kit: track {{n}} → {{sample}}.", "rotary.reset":"Double-click: reset to default",
-            "memory.tooltip":"Memory {{n}} — {{state}} — shortcut {{n}}", "memory.restored":"Memory {{n}} restored from source groove.", "memory.selectedStatus":"Memory {{n}}.", "memory.savedStatus":"Memory {{n}} saved.",
+            "memory.tooltip":"Memory {{n}} — {{state}} — Alt/Option+{{n}}", "memory.restored":"Memory {{n}} restored from source groove.", "memory.selectedStatus":"Memory {{n}}.", "memory.savedStatus":"Memory {{n}} saved.",
             "status.loadingKit":"Loading {{kit}}…", "status.kitReady":"{{kit}} ready.", "status.kitPartial":"Kit partially loaded: missing samples.", "status.noGroove":"No grooves found", "status.patternCopied":"Pattern copied — Ctrl+V to paste into a memory.", "status.nothingToPaste":"Nothing to paste: use Ctrl+C first.", "status.patternPasted":"Pattern pasted into memory {{n}}.", "status.patternDuplicated":"Pattern duplicated to memory {{n}}.", "status.gridShifted":"Grid shifted {{direction}} by {{amount}}.", "status.left":"left", "status.right":"right", "status.memoriesReset":"Memories reset. Audio cache was not changed.", "status.patchAdded":"{{count}} pattern(s) added from M{{memory}} onward.", "status.previewing":"Preview: {{groove}}", "status.previewStopped":"Preview stopped.", "status.loadingAudio":"Loading audio kit…", "status.undo":"Change undone.", "status.redo":"Change redone.", "status.linkCopied":"Groove link copied.", "status.copyFailed":"Could not copy the link automatically. Select it manually.", "share.copied":"Link copied", "share.qrTooLong":"The link is too long to display as a QR code. The Copy button is still available.",
             "grid.moveAllStatus":"Alt+Shift+drag: grid moved by {{tracks}} track(s) and {{steps}} step(s) (modulo wrap).", "grid.moveTrackStatus":"Alt+drag: track {{from}} → {{to}}, shifted by {{steps}} step(s) (modulo wrap).", "grid.deleteBeatStatus":"Ctrl/Cmd+Shift+click: position {{position}}/{{beatSize}} deleted on every beat of the track.", "grid.deleteCellStatus":"Ctrl/Cmd+click: cell deleted.", "grid.repeatBeatStatus":"Shift+click: position {{position}}/{{beatSize}} repeated on every beat of the track.",
             "theme.toLight":"Switch to light theme", "theme.toDark":"Switch to dark theme", "theme.light":"Light theme", "theme.dark":"Dark theme", "master.off":"off", "master.low":"low", "master.high":"high", "master.tooltip":"Master volume: {{level}}", "note.off":"Off", "note.normal":"Normal", "note.soft":"Soft", "note.strong":"Strong", "note.accent":"Accent", "note.ghost":"Ghost", "note.aria":"Note {{level}}"
@@ -225,14 +234,14 @@
         es: { translation: {
             "toolbar.source":"FUENTE", "toolbar.style":"ESTILO", "toolbar.groove":"GROOVE", "toolbar.variant":"VARIACIÓN", "toolbar.swing":"SWING",
             "feel.title":"FEEL", "feel.subtitle":"FEEL activo: el baterista interpreta el groove. AUTO hace evolucionar la interpretación en cada vuelta.", "feel.auto":"AUTO", "feel.autoTooltip":"Nueva interpretación en cada vuelta", "feel.energy":"ENERGÍA", "feel.stable":"ESTABLE", "feel.fills":"FILLS", "feel.density":"DENSIDAD", "feel.orchestrationProfile":"ORQUESTACIÓN", "feel.orchestration":"INSTRUMENTOS", "feel.xyAria":"Pad Feel: fills en horizontal, energía en vertical", "feel.layersAria":"Capas que FEEL puede ornamentar", "feel.orchAuto":"AUTO · según el groove", "feel.orchestrationProfileAria":"Elegir orquestación", "feel.orchPocket":"Compacto", "feel.orchHihat":"Charles", "feel.orchRide":"Ride", "feel.orchOpenKit":"Kit abierto", "feel.orchPercussive":"Percusivo", "feel.orchFullKit":"Kit completo", "feel.hhTooltip":"Ornamentar el charles · OFF = conservar exactamente el charles fuente", "feel.rideTooltip":"Permitir que FEEL ornamente el ride · las notas fuente se conservan", "feel.crashTooltip":"Permitir que FEEL ornamente los crashes · las notas fuente se conservan", "feel.tomsTooltip":"Permitir que FEEL ornamente los toms · las notas fuente se conservan", "feel.orchInfoAuto":"Adapta automáticamente la orquestación al groove sin cambiar su identidad rítmica.", "feel.orchInfoPocket":"Interpretación compacta centrada en el charles, con pocos platos y toms.", "feel.orchInfoHihat":"El charles lleva el groove; FEEL trabaja sobre todo aperturas, acentos y matices.", "feel.orchInfoRide":"El patrón del charles se traslada al ride; el charles con el pie puede mantenerse cuando el estilo lo pide.", "feel.orchInfoOpenKit":"El juego puede abrirse del charles al ride y los crashes; los toms se usan sobre todo en transiciones.", "feel.orchInfoPercussive":"El groove se mantiene estable mientras los toms y los desplazamientos por el kit ganan presencia.", "feel.orchInfoFullKit":"Puede utilizarse todo el kit respetando los límites reales de dos manos y dos pies.", "feel.autoOrchestrationAria":"Orquestación automática", "feel.autoOrchestrationTooltip":"Cambiar automáticamente la orquestación según el intervalo elegido", "feel.autoOrchestrationOn":"Orquestación automática activada · cambio cada {{loops}} vueltas.", "feel.autoOrchestrationOff":"Orquestación automática desactivada.", "feel.autoOrchestrationEveryAria":"Intervalo de cambio de orquestación", "feel.autoOrchestrationEveryTooltip":"Cambiar la orquestación cada {{loops}} vueltas", "feel.autoOrchestrationEveryStatus":"Orquestación automática: cambio cada {{loops}} vueltas.", "feel.autoOrchestrationAuto":"-", "feel.autoOrchestrationAutoTooltip":"AUTO: elige musicalmente cuándo cambiar y puede usar una transición corta antes de volver al charles o al ride.", "feel.autoOrchestrationAutoStatus":"Orquestación automática: duración y transiciones elegidas musicalmente.",
-            "search.placeholder":"Buscar grooves…", "search.aria":"Buscar en todos los grooves", "search.results":"Resultados de búsqueda", "common.off":"Off", "language.tooltip":"Idioma", "theme.toggle":"Cambiar tema claro / oscuro", "share.tooltip":"Compartir o guardar este groove", "audio.output":"Nivel de salida de audio", "audio.outputAria":"VU-metro de salida", "toolbar.sourceTooltip":"Fuente de grooves", "toolbar.styleTooltip":"Estilo musical", "toolbar.grooveTooltip":"Groove", "toolbar.preview":"Preescuchar el groove seleccionado", "toolbar.addPatch":"Añadir el patch desde la memoria seleccionada", "toolbar.variantTooltip":"Crear una variación musical del groove actual", "kit.tooltip":"Kit de batería", "swing.tooltip":"Swing en porcentaje", "transport.playPause":"Reproducir / stop (Espacio)","transport.stop":"Stop", "transport.tap":"Tap tempo (T)", "transport.tempoDown":"Disminuir tempo", "transport.tempoUp":"Aumentar tempo", "transport.tempo":"Tempo en BPM", "transport.signature":"Compás", "practice.countIn":"COUNT-IN", "memory.chain":"Encadenar memorias", "memory.undo":"Deshacer", "memory.redo":"Rehacer", "memory.save":"Guardar en la memoria seleccionada (Ctrl+S)", "memory.new":"Nuevo patrón vacío", "memory.clear":"Vaciar memorias",
+            "search.placeholder":"Buscar grooves…", "search.aria":"Buscar en todos los grooves", "search.results":"Resultados de búsqueda", "common.off":"Off", "language.tooltip":"Idioma", "theme.toggle":"Cambiar tema claro / oscuro", "share.tooltip":"Compartir o guardar este groove", "audio.output":"Nivel de salida de audio", "audio.outputAria":"VU-metro de salida", "toolbar.sourceTooltip":"Fuente de grooves", "toolbar.styleTooltip":"Estilo musical", "toolbar.grooveTooltip":"Groove", "toolbar.preview":"Preescuchar el groove seleccionado", "toolbar.addPatch":"Añadir el patch desde la memoria seleccionada", "toolbar.variantTooltip":"Crear una variación musical del groove actual", "kit.tooltip":"Kit de batería", "swing.tooltip":"Swing en porcentaje", "transport.playPause":"Reproducir / stop (Espacio)","transport.stop":"Stop", "transport.tap":"Tap tempo (T)", "transport.tempoDown":"Disminuir tempo", "transport.tempoUp":"Aumentar tempo", "transport.tempo":"Tempo en BPM", "transport.signature":"Compás", "practice.countIn":"COUNT-IN", "memory.chain":"Encadenar memorias", "memory.undo":"Deshacer", "memory.redo":"Rehacer", "memory.save":"Guardar en la memoria seleccionada (Ctrl+S)", "memory.new":"Nuevo patrón vacío", "memory.duplicate":"Duplicar la memoria actual", "memory.clear":"Vaciar memorias", "editor.monitor":"Monitoring: preescuchar celdas e instrumentos", "editor.record":"Record: grabar pads del teclado cuantizados durante la reproducción", "editor.shiftLeft":"Mover la selección a la izquierda — Shift: 1 pulso", "editor.shiftRight":"Mover la selección a la derecha — Shift: 1 pulso", "editor.shiftUp":"Mover la selección una pista hacia arriba", "editor.shiftDown":"Mover la selección una pista hacia abajo", "editor.noSelection":"Selecciona primero una o varias notas.", "editor.selectTrack":"Seleccionar las notas de {{track}}", "editor.velocity":"Velocidad {{level}}: {{name}}", "editor.velocityMinus":"Disminuir la velocidad de la selección", "editor.velocityPlus":"Aumentar la velocidad de la selección",
             "practice.title":"Práctica", "practice.subtitle":"Practica el groove por tempo o por capas.", "practice.progression":"PROGRESIÓN", "practice.modeTempo":"Tempo", "practice.modeLayers":"Capas", "practice.modeCombined":"Capas + tempo", "practice.start":"INICIO", "practice.target":"OBJETIVO", "practice.step":"PASO", "practice.loops":"VUELTAS / NIVEL", "practice.oneBar":"1 compás", "practice.twoBars":"2 compases", "practice.startButton":"Empezar", "practice.stopButton":"Parar", "practice.ready":"Listo para empezar", "practice.explainer":"Capas: charles → caja → bombo → otras partes del groove → acentos → ghost notes.",
             "practice.hihat":"Charles", "practice.snare":"Charles + caja", "practice.kick":"Charles + caja + bombo", "practice.accents":"+ acentos", "practice.ghosts":"+ ghost notes", "practice.tempoStatus":"{{tempo}} → {{target}} BPM", "practice.loop":"vuelta {{current}}/{{total}}", "practice.started":"Práctica iniciada a {{tempo}} BPM.", "practice.stopped":"Práctica detenida.", "practice.targetReached":"Objetivo alcanzado: {{tempo}} BPM. Continúa.", "practice.layersDone":"Todas las capas están activas.", "practice.layersToTempo":"Capas completadas. Progresión de tempo hasta {{target}} BPM.", "practice.level":"Práctica: {{label}}.", "practice.tempo":"Práctica: {{tempo}} BPM.", "practice.changedStopped":"Práctica detenida porque cambiaron sus ajustes.",
             "track.crash":"Crash", "track.ride":"Ride", "track.openHat":"Charles abierto", "track.closedHat":"Charles cerrado", "track.snare":"Caja", "track.tomHigh":"Tom agudo", "track.tomMid":"Tom medio", "track.tomFloor":"Tom base", "track.kick":"Bombo",
             "language.label":"Idioma", "audio.outputLabel":"SALIDA", "common.close":"Cerrar", "share.title":"Compartir este groove", "share.subtitle":"El código QR abre la aplicación. Copiar enlace crea un enlace con todas las memorias.", "share.link":"ENLACE", "share.copy":"Copiar enlace", "share.share":"Compartir", "transport.metronome":"Metrónomo (M)", "transport.practice":"Práctica", "transport.play":"Reproducir", "transport.pause":"Pausa", "transport.practice":"Práctica", "memory.slot":"Memoria {{n}}", "memory.saved":"guardada", "memory.empty":"vacía", "memory.selected":"seleccionada",
-            "shortcut.title":"Atajos de teclado", "shortcut.transport":"Transporte", "shortcut.edit":"Edición", "shortcut.grid":"Cuadrícula", "shortcut.playStop":"Reproducir / Stop", "shortcut.space":"Espacio", "shortcut.tap":"Tap tempo", "shortcut.metronome":"Metrónomo", "shortcut.memories":"Memoria 1 a 8", "shortcut.undo":"Deshacer", "shortcut.redo":"Rehacer", "shortcut.copy":"Copiar patrón", "shortcut.paste":"Pegar patrón", "shortcut.duplicate":"Duplicar a la memoria siguiente", "shortcut.save":"Guardar memoria", "shortcut.cell":"Cambiar una celda", "shortcut.repeatBeat":"Repetir la posición en cada pulso", "shortcut.deleteCell":"Borrar una celda", "shortcut.deleteBeat":"Borrar esta posición en todos los pulsos", "shortcut.moveTrack":"Mover una pista en los 2 ejes", "shortcut.moveGrid":"Mover toda la cuadrícula en los 2 ejes", "shortcut.shiftBeat":"Desplazar con ‹ › un pulso", "shortcut.click":"Clic", "shortcut.drag":"Arrastrar", "shortcut.velocity":"Niveles de velocidad", "shortcut.velocityCycle":"Apagado → normal → fuerte → acento → suave → fantasma",
+            "shortcut.title":"Atajos de teclado", "shortcut.transport":"Transporte", "shortcut.edit":"Edición", "shortcut.grid":"Cuadrícula", "shortcut.playStop":"Reproducir / Stop", "shortcut.space":"Espacio", "shortcut.tap":"Tap tempo", "shortcut.metronome":"Metrónomo", "shortcut.practice":"Panel de práctica", "shortcut.velocityAdjust":"Velocidad de la selección", "shortcut.memories":"Memorias 1 a 8", "shortcut.velocityKeys":"Elegir velocidad de escritura", "shortcut.selectAll":"Seleccionar todas las notas", "shortcut.invertSelection":"Invertir selección", "shortcut.undo":"Deshacer", "shortcut.redo":"Rehacer", "shortcut.copy":"Copiar selección", "shortcut.paste":"Pegar selección", "shortcut.duplicate":"Duplicar selección", "shortcut.save":"Guardar memoria", "shortcut.cell":"Crear / seleccionar una nota", "shortcut.repeatBeat":"Añadir a la selección", "shortcut.deleteCell":"Borrar la selección", "shortcut.deleteBeat":"Invertir la selección", "shortcut.moveTrack":"Mover la selección", "shortcut.moveGrid":"Selección rectangular", "shortcut.shiftBeat":"Mover la selección", "shortcut.click":"Clic", "shortcut.drag":"Arrastrar", "shortcut.altDrag":"Duplicar + mover selección", "shortcut.velocity":"Niveles de velocidad", "shortcut.velocityCycle":"Fantasma → suave → normal → fuerte → acento",
             "track.shiftLeft":"Desplazar la pista a la izquierda — Shift: 1 pulso", "track.shiftRight":"Desplazar la pista a la derecha — Shift: 1 pulso", "track.mute":"Silenciar pista {{n}}", "track.solo":"Solo pista {{n}}", "track.pan":"Pan pista {{n}}", "track.volume":"Volumen pista {{n}}", "track.shifted":"Pista {{n}} desplazada {{amount}}.", "track.custom":"Kit Custom: pista {{n}} → {{sample}}.", "rotary.reset":"Doble clic: valor predeterminado",
-            "memory.tooltip":"Memoria {{n}} — {{state}} — atajo {{n}}", "memory.restored":"Memoria {{n}} restaurada desde el groove fuente.", "memory.selectedStatus":"Memoria {{n}}.", "memory.savedStatus":"Memoria {{n}} guardada.",
+            "memory.tooltip":"Memoria {{n}} — {{state}} — Alt/Option+{{n}}", "memory.restored":"Memoria {{n}} restaurada desde el groove fuente.", "memory.selectedStatus":"Memoria {{n}}.", "memory.savedStatus":"Memoria {{n}} guardada.",
             "status.loadingKit":"Cargando {{kit}}…", "status.kitReady":"{{kit}} listo.", "status.kitPartial":"Kit cargado parcialmente: faltan samples.", "status.noGroove":"No se encontraron grooves", "status.patternCopied":"Patrón copiado — Ctrl+V para pegarlo en una memoria.", "status.nothingToPaste":"Nada que pegar: usa primero Ctrl+C.", "status.patternPasted":"Patrón pegado en la memoria {{n}}.", "status.patternDuplicated":"Patrón duplicado en la memoria {{n}}.", "status.gridShifted":"Cuadrícula desplazada {{direction}} {{amount}}.", "status.left":"a la izquierda", "status.right":"a la derecha", "status.memoriesReset":"Memorias reiniciadas. La caché de audio no se ha modificado.", "status.patchAdded":"{{count}} patrón(es) añadido(s) desde M{{memory}}.", "status.previewing":"Preescucha: {{groove}}", "status.previewStopped":"Preescucha detenida.", "status.loadingAudio":"Cargando kit de audio…", "status.undo":"Modificación deshecha.", "status.redo":"Modificación rehecha.", "status.linkCopied":"Enlace del groove copiado.", "status.copyFailed":"No se pudo copiar el enlace automáticamente. Selecciónalo manualmente.", "share.copied":"Enlace copiado", "share.qrTooLong":"El enlace es demasiado largo para mostrarse como código QR. El botón Copiar sigue disponible.",
             "grid.moveAllStatus":"Alt+Shift+arrastrar: cuadrícula movida {{tracks}} pista(s) y {{steps}} paso(s) (bucle módulo).", "grid.moveTrackStatus":"Alt+arrastrar: pista {{from}} → {{to}}, desplazamiento {{steps}} paso(s) (bucle módulo).", "grid.deleteBeatStatus":"Ctrl/Cmd+Shift+clic: posición {{position}}/{{beatSize}} borrada en todos los pulsos de la pista.", "grid.deleteCellStatus":"Ctrl/Cmd+clic: celda borrada.", "grid.repeatBeatStatus":"Shift+clic: posición {{position}}/{{beatSize}} repetida en todos los pulsos de la pista.",
             "theme.toLight":"Cambiar al tema claro", "theme.toDark":"Cambiar al tema oscuro", "theme.light":"Tema claro", "theme.dark":"Tema oscuro", "master.off":"apagado", "master.low":"bajo", "master.high":"alto", "master.tooltip":"Volumen master: {{level}}", "note.off":"Desactivada", "note.normal":"Normal", "note.soft":"Suave", "note.strong":"Fuerte", "note.accent":"Acento", "note.ghost":"Ghost", "note.aria":"Nota {{level}}"
@@ -332,6 +341,12 @@
             this.storage = storageManager;
             this.presets = presets;
             this.slots = this.normalizeSlots(this.storage.load(this.createDefaults(presets)));
+        }
+        reloadFromUrl() {
+            // A same-document bookmark navigation only changes the hash. Re-read the
+            // complete memory bank instead of keeping the PatternStore created at boot.
+            this.slots = this.normalizeSlots(this.storage.load(this.createDefaults(this.presets)));
+            return this.slots;
         }
         createDefaults(presets) {
             const slots=Array(CONFIG.MEMORY_SLOTS);
@@ -1965,12 +1980,19 @@
         }
         flush() {
             if (!this.pendingSlots) return;
+            if (window.BattrochtekUrlSync?.isApplying?.()) {
+                this.pendingSlots = null;
+                clearTimeout(this.saveTimer);
+                this.saveTimer = null;
+                return;
+            }
             try {
                 const params = new URLSearchParams(location.hash.slice(1));
                 params.delete("state");
                 params.set(this.key, StorageManager.encode(this.compact(this.pendingSlots)));
                 const hash = params.toString();
                 history.replaceState(null, "", `${location.pathname}${location.search}#${hash}`);
+                window.BattrochtekMarkUrlWritten?.();
             } catch (error) {
                 console.warn("Impossible d’écrire les mémoires dans l’URL.", error);
             } finally {
@@ -1984,8 +2006,9 @@
     class UIController {
         constructor(seq, audio, practice = null, preferences = null) {
             this.seq = seq; this.audio = audio; this.practice = practice; this.preferences = preferences; this.scheduler = null; this.feel = new FeelController(seq);
-            this.cells = []; this.memoryButtons = []; this.trackLabels = []; this.trackRows = []; this.trackSampleSelects = []; this.trackMuteButtons = []; this.trackSoloButtons = []; this.trackShiftLeftButtons = []; this.trackShiftRightButtons = []; this.trackPanKnobs = []; this.trackVolumeKnobs = []; this.kitButtons = [];
-            this.copySnapshot = null; this.playheadTimeouts = []; this.tapTimes = []; this.meterFrame = null; this.gridDrag = null; this.suppressGridClick = false;
+            this.cells = []; this.memoryButtons = []; this.trackLabels = []; this.trackRows = []; this.trackSampleSelects = []; this.trackMuteButtons = []; this.trackSoloButtons = []; this.trackRowSelectButtons = []; this.trackPanKnobs = []; this.trackVolumeKnobs = []; this.kitButtons = [];
+            this.copySnapshot = null; this.selectionClipboard = null; this.playheadTimeouts = []; this.tapTimes = []; this.meterFrame = null; this.gridDrag = null; this.suppressGridClick = false;
+            this.selectedCells = new Set(); this.selectionBox = null; this.currentVelocityLevel = 3; this.recordEnabled = false; this.recordUndoState = null; this.recordSaveTimer = null;
             this.undoStack = []; this.redoStack = []; this.historyLimit = 30;
             this.previewTimer = null; this.previewEnabled = false; this.previewStep = 0; this.previewNextTime = 0; this.previewData = null;
             this.soundUrlTimer = null;
@@ -2011,7 +2034,7 @@
             const $ = id => document.getElementById(id);
             return {
                 sets: $("sets"), leds: $("leds"), tracks: $("tracks"), grid: document.querySelector(".grid"), sliders: $("sliders"),
-                masterButton: $("master-level"), masterIcon: $("master-level-icon"), swingInput: $("swing-input"), swingValue: $("swing-value"), vu: $("vu-meter"), presetSource: $("preset-source"), presetFamily: $("preset-family"), presetGroove: $("preset-groove"), groovePreview: $("groove-preview"), grooveAdd: $("groove-add"), gridShiftLeft: $("grid-shift-left"), gridShiftUp: $("grid-shift-up"), gridShiftDown: $("grid-shift-down"), gridShiftRight: $("grid-shift-right"), monitoring: $("monitoring-toggle"), memory: $("memory"), clear: $("clear"), signatureButton: $("signature-button"),
+                masterButton: $("master-level"), masterIcon: $("master-level-icon"), swingInput: $("swing-input"), swingValue: $("swing-value"), vu: $("vu-meter"), presetSource: $("preset-source"), presetFamily: $("preset-family"), presetGroove: $("preset-groove"), groovePreview: $("groove-preview"), grooveAdd: $("groove-add"), gridShiftLeft: $("grid-shift-left"), gridShiftUp: $("grid-shift-up"), gridShiftDown: $("grid-shift-down"), gridShiftRight: $("grid-shift-right"), monitoring: $("monitoring-toggle"), record: $("record-toggle"), velocityDecrease: $("velocity-decrease"), velocityIncrease: $("velocity-increase"), velocityButtons: Array.from(document.querySelectorAll("[data-velocity-level]")), memory: $("memory"), clear: $("clear"), memoryDuplicate: $("memory-duplicate"), signatureButton: $("signature-button"),
                 signature: $("signature"), signatureNumerator: $("signature-numerator"), signatureDenominator: $("signature-denominator"), metro: $("metronome-button"), chain: $("chain"), play: $("play-button"), icon: $("play-pause-icon"),
                 minus: $("minus-button"), plus: $("plus-button"), tap: $("tap-tempo"), tempo: $("metronome-tempo"), random: $("random"), feelPanel: $("feel-panel"), feelXy: $("feel-xy"), feelDot: $("feel-dot"), feelReadout: $("feel-readout"), feelDensity: $("feel-density"), feelDensityValue: $("feel-density-value"), feelAuto: $("feel-auto"), feelStyle: $("feel-style"), feelOrchAuto: $("feel-orchestration-auto"), feelOrchEvery: $("feel-orchestration-every"), feelOrchInfo: $("feel-orchestration-info"),
                 undo: $("undo"), redo: $("redo"), practiceButton: $("practice-button"), practicePanel: $("practice-panel"), practiceMode: $("practice-mode"), practiceStartTempo: $("practice-start-tempo"), practiceTargetTempo: $("practice-target-tempo"), practiceTempoStep: $("practice-tempo-step"), practiceLoops: $("practice-loops"), practiceCountIn: $("practice-count-in"), practiceStatus: $("practice-status"), kitSelect: $("kit-select"), cacheClear: $("cache-clear"), languageSelect: $("language-select"), themeToggle: $("theme-toggle"), themeIcon: $("theme-toggle-icon"), themeColorMeta: $("theme-color-meta"),
@@ -2240,10 +2263,15 @@
         }
         saveSoundStateToUrl({ immediate = false } = {}) {
             const write = () => {
+                if (window.BattrochtekUrlSync?.isApplying?.()) {
+                    this.soundUrlTimer = null;
+                    return;
+                }
                 try {
                     const params = new URLSearchParams(location.hash.slice(1));
                     params.set("snd", StorageManager.encode(this.compactSoundState()));
                     history.replaceState(null, "", `${location.pathname}${location.search}#${params.toString()}`);
+                    window.BattrochtekMarkUrlWritten?.();
                 } catch (error) {
                     console.warn("Impossible d’écrire l’état audio dans l’URL.", error);
                 } finally {
@@ -2372,6 +2400,61 @@
             this.syncSchedulerStructure();
             this.renderState();
         }
+        applyUrlState({ initial = false } = {}) {
+            // Cancel delayed writes from the previous groove before reading a bookmark.
+            // Otherwise an old auto-save could overwrite the hash that the browser just loaded.
+            clearTimeout(this.seq.store.storage.saveTimer);
+            this.seq.store.storage.saveTimer = null;
+            this.seq.store.storage.pendingSlots = null;
+            clearTimeout(this.soundUrlTimer);
+            this.soundUrlTimer = null;
+
+            try {
+                const params = new URLSearchParams(location.hash.slice(1));
+                const hasMem = params.has("mem");
+                const encodedState = params.get("state");
+                const encodedSound = params.get("snd");
+
+                if (hasMem) {
+                    this.commitRecordHistory();
+                    this.selectedCells.clear();
+                    this.closeFeelForMemoryChange();
+                    this.feel.cores.clear();
+                    this.feel.invalidate();
+                    this.seq.store.reloadFromUrl();
+
+                    if (encodedState) {
+                        this.restorePageState(this.expandPageState(StorageManager.decode(encodedState)));
+                    } else {
+                        // Share/favourite URLs normally contain mem + snd only. Match boot
+                        // behaviour and open the first populated memory from the new URL.
+                        const first = this.seq.store.populated()[0] ?? 0;
+                        this.seq.loadSlot(first);
+                        this.syncSchedulerStructure();
+                        this.buildGrid();
+                        this.renderState();
+                        this.makeKeyboardAccessible();
+                    }
+                } else if (encodedState) {
+                    this.restorePageState(this.expandPageState(StorageManager.decode(encodedState)));
+                }
+
+                if (encodedSound) this.restoreSoundState(StorageManager.decode(encodedSound));
+
+                if (!initial) {
+                    this.syncSchedulerStructure();
+                    this.renderState();
+                    this.makeKeyboardAccessible();
+                    this.status("Groove chargé depuis le lien.");
+                }
+                return true;
+            } catch (error) {
+                console.warn("État URL Battrochtek invalide, état courant conservé.", error);
+                if (!initial) this.status("Impossible de charger ce lien Battrochtek.");
+                return false;
+            }
+        }
+
         setupShare() {
             if (!this.dom.shareButton || !this.dom.shareDialog) return;
             const close = () => { if (this.dom.shareDialog.open) this.dom.shareDialog.close(); };
@@ -2555,11 +2638,14 @@
             if (this.seq.ghostCells.has(index)) return "ghost";
             return "normal";
         }
-        async previewTrackSample(track, sampleKey, velocity = "normal", force = false) {
+        async previewTrackSample(track, sampleKey, velocity = "normal", force = false, audition = false) {
             if (!force && !this.monitoringEnabled) return;
             try {
                 const ctx = await this.audio.resume();
-                await this.audio.play({ kitIndex:this.seq.kitIndex, trackIndex:track, sampleKey, time:ctx.currentTime, trackVolume:this.seq.trackVolumes[track], masterVolume:this.seq.masterVolume, pan:this.seq.trackPans[track], velocity, articulation:this.articulationForTrack(track) });
+                const trackVolume=audition ? 1 : this.seq.trackVolumes[track];
+                const masterVolume=audition ? Math.max(0.85,this.seq.masterVolume) : this.seq.masterVolume;
+                const pan=audition ? 0 : this.seq.trackPans[track];
+                await this.audio.play({ kitIndex:this.seq.kitIndex, trackIndex:track, sampleKey, time:ctx.currentTime, trackVolume, masterVolume, pan, velocity, articulation:this.articulationForTrack(track) });
             } catch (error) { console.warn("Preview sample impossible", error); }
         }
         setSamplePickerValue(control, sampleKey) {
@@ -2619,7 +2705,7 @@
                 state.meta.innerHTML = rows.map(([k,v])=>`<div class="sample-browser-meta-row"><span>${Util.escapeHtml(k)}</span><strong>${Util.escapeHtml(v)}</strong></div>`).join('');
             };
             const currentSample = () => state.filtered[state.active] || null;
-            const previewActive = () => { const sample=currentSample(); if (sample) this.previewTrackSample(state.track,sample.key,"normal"); };
+            const previewActive = () => { const sample=currentSample(); if (sample) this.previewTrackSample(state.track,sample.key,"normal",false,true); };
             const activate = (index,{preview=true}={}) => {
                 if (!state.filtered.length) { state.active=0; renderMeta(null); return; }
                 state.active=(index+state.filtered.length)%state.filtered.length;
@@ -2660,7 +2746,7 @@
             const commit = async () => {
                 const sample=currentSample(); if (!sample) return;
                 const track=state.track; this.pushHistory(); if (!this.seq.setTrackSample(track,sample.key)) return;
-                this.renderKit(); this.saveSoundStateToUrl(); await this.audio.loadSample(sample.key); await this.previewTrackSample(track,sample.key,"normal");
+                this.renderKit(); this.saveSoundStateToUrl(); await this.audio.loadSample(sample.key); await this.previewTrackSample(track,sample.key,"normal",false,true);
                 this.status(I18N.t("track.custom", { n:track+1, sample:sampleUiLabel(sample) })); dialog.close();
             };
             state.open = track => {
@@ -2700,7 +2786,7 @@
         buildTrackLabels() {
             this.dom.tracks.innerHTML = "";
             this.ensureSampleDialog();
-            this.trackLabels = []; this.trackRows = []; this.trackSampleSelects = []; this.trackShiftLeftButtons = []; this.trackShiftRightButtons = [];
+            this.trackLabels = []; this.trackRows = []; this.trackSampleSelects = []; this.trackRowSelectButtons = [];
             for (let i = 0; i < CONFIG.TRACK_COUNT; i++) {
                 const row = document.createElement("div"); row.className = "track-row";
                 const label = document.createElement("div"); label.className = "bt-led track";
@@ -2709,13 +2795,12 @@
                 const sampleButton = document.createElement("button"); sampleButton.type = "button"; sampleButton.className = "track-sample-select sample-dialog-button"; sampleButton.setAttribute("aria-label", `${trackName} — choisir un instrument`); sampleButton.setAttribute("aria-haspopup","dialog");
                 const open=()=>this.sampleDialog.open(i); sampleButton.addEventListener("click",open);
                 picker.appendChild(sampleButton); label.appendChild(picker);
-                const controls = document.createElement("div"); controls.className = "track-controls track-shift-controls";
-                const shiftLeft = document.createElement("button"); shiftLeft.type = "button"; shiftLeft.className = "track-toggle pattern-shift"; shiftLeft.textContent = "‹"; shiftLeft.dataset.btTooltip = I18N.t("track.shiftLeft");
-                const shiftRight = document.createElement("button"); shiftRight.type = "button"; shiftRight.className = "track-toggle pattern-shift"; shiftRight.textContent = "›"; shiftRight.dataset.btTooltip = I18N.t("track.shiftRight");
-                const shiftTrack = (direction, e) => { e.preventDefault(); e.stopPropagation(); this.pushHistory(); const amount=e.shiftKey?this.seq.signature.group:1; this.seq.shiftTrack(i,direction*amount); this.renderGrid(); this.autoSaveMemory(); this.status(I18N.t("track.shifted", { n:i+1, amount:amount===1?"1 step":"1 beat" })); };
-                shiftLeft.addEventListener("click", e => shiftTrack(-1,e)); shiftRight.addEventListener("click", e => shiftTrack(1,e)); controls.append(shiftLeft,shiftRight);
+                const controls = document.createElement("div"); controls.className = "track-controls track-row-select-controls";
+                const selectRow = document.createElement("button"); selectRow.type = "button"; selectRow.className = "track-toggle track-row-select"; selectRow.innerHTML = '<i class="fa-solid fa-square-check" aria-hidden="true"></i>'; selectRow.dataset.btTooltip = I18N.t("editor.selectTrack", { track:trackName }); selectRow.setAttribute("aria-label", selectRow.dataset.btTooltip);
+                selectRow.addEventListener("click", e => { e.preventDefault(); e.stopPropagation(); this.selectTrackNotes(i,{additive:e.shiftKey,toggle:e.ctrlKey||e.metaKey}); });
+                controls.append(selectRow);
                 row.append(label,controls); this.dom.tracks.appendChild(row);
-                this.trackLabels.push(label); this.trackRows.push(row); this.trackSampleSelects.push(sampleButton); this.trackShiftLeftButtons.push(shiftLeft); this.trackShiftRightButtons.push(shiftRight);
+                this.trackLabels.push(label); this.trackRows.push(row); this.trackSampleSelects.push(sampleButton); this.trackRowSelectButtons.push(selectRow);
             }
         }
         buildMemory() {
@@ -2725,7 +2810,12 @@
             for (let i = 0; i < CONFIG.MEMORY_SLOTS; i++) {
                 const button = document.createElement("button"); button.type = "button"; button.className = "bt-button pattern"; button.innerHTML = `<span>${i + 1}</span>`;
                 button.dataset.btTooltip = I18N.t("memory.tooltip", { n:i + 1, state:I18N.t("memory.empty") }); button.setAttribute("aria-label", button.dataset.btTooltip); button.setAttribute("aria-pressed", "false");
-                button.addEventListener("pointerdown", e => { e.preventDefault(); this.selectMemorySlot(i); });
+                button.addEventListener("pointerdown", e => { if(e.button!==0)return; this.selectMemorySlot(i); });
+                button.draggable = true;
+                button.addEventListener("dragstart", e => { this.memoryDragFrom=i; button.classList.add("memory-dragging"); e.dataTransfer.effectAllowed="move"; e.dataTransfer.setData("text/plain",String(i)); });
+                button.addEventListener("dragend", () => { this.memoryDragFrom=null; this.memoryButtons.forEach(b=>b.classList.remove("memory-dragging","memory-drop-before","memory-drop-after")); });
+                button.addEventListener("dragover", e => { if(this.memoryDragFrom==null)return; e.preventDefault(); const r=button.getBoundingClientRect(); const after=e.clientX>r.left+r.width/2; this.memoryButtons.forEach(b=>b.classList.remove("memory-drop-before","memory-drop-after")); button.classList.add(after?"memory-drop-after":"memory-drop-before"); e.dataTransfer.dropEffect="move"; });
+                button.addEventListener("drop", e => { if(this.memoryDragFrom==null)return; e.preventDefault(); const r=button.getBoundingClientRect(); const after=e.clientX>r.left+r.width/2; this.reorderMemorySlots(this.memoryDragFrom,i+(after?1:0)); });
                 this.dom.memory.insertBefore(button, separator); this.memoryButtons.push(button);
             }
         }
@@ -3093,24 +3183,157 @@
             };
             draw();
         }
+        velocityNameForLevel(level = this.currentVelocityLevel) {
+            return VELOCITY_LEVEL_ORDER[Math.max(0, Math.min(4, Number(level) - 1))] || "normal";
+        }
+        setCellVelocity(index, velocity, ensureActive = true) {
+            if (ensureActive) this.seq.activeCells.add(index);
+            this.seq.accentCells.delete(index); this.seq.strongCells.delete(index); this.seq.weakCells.delete(index); this.seq.ghostCells.delete(index);
+            if (velocity === "accent") this.seq.accentCells.add(index);
+            else if (velocity === "strong") this.seq.strongCells.add(index);
+            else if (velocity === "soft") this.seq.weakCells.add(index);
+            else if (velocity === "ghost") this.seq.ghostCells.add(index);
+        }
+        selectOnly(index) { this.selectedCells = new Set(index == null ? [] : [index]); this.renderSelection(); }
+        renderSelection() { this.cells.forEach((cell,index)=>cell.classList.toggle("selected",this.selectedCells.has(index))); }
+        clearSelection() { if (!this.selectedCells.size) return; this.selectedCells.clear(); this.renderSelection(); }
+        selectedNotes() {
+            return [...this.selectedCells].filter(index=>this.seq.activeCells.has(index)).map(index=>({ index, velocity:this.velocityForCell(index) }));
+        }
+        selectAllNotes() {
+            this.selectedCells = new Set(this.seq.activeCells);
+            this.renderSelection();
+            this.status(`${this.selectedCells.size} note(s) sélectionnée(s).`);
+        }
+        invertSelection() {
+            const next = new Set();
+            this.seq.activeCells.forEach(index => { if (!this.selectedCells.has(index)) next.add(index); });
+            this.selectedCells = next;
+            this.renderSelection();
+            this.status(`${this.selectedCells.size} note(s) sélectionnée(s) après inversion.`);
+        }
+        selectTrackNotes(track,{additive=false,toggle=false}={}) {
+            const steps=this.seq.signature.steps;
+            const rowNotes=[];
+            for(let step=0;step<steps;step++){const index=track*steps+step;if(this.seq.activeCells.has(index))rowNotes.push(index);}
+            if(toggle){rowNotes.forEach(index=>this.selectedCells.has(index)?this.selectedCells.delete(index):this.selectedCells.add(index));}
+            else if(additive){rowNotes.forEach(index=>this.selectedCells.add(index));}
+            else this.selectedCells=new Set(rowNotes);
+            this.renderSelection();
+            this.status(`${rowNotes.length} note(s) de la ligne sélectionnée(s).`);
+        }
+        applyVelocityToSelection(level=this.currentVelocityLevel) {
+            const notes=this.selectedNotes();
+            if(!notes.length)return false;
+            this.pushHistory();
+            const velocity=this.velocityNameForLevel(level);
+            notes.forEach(note=>this.setCellVelocity(note.index,velocity,true));
+            this.renderGrid(); this.autoSaveMemory();
+            this.status(`Vélocité ${level} appliquée à ${notes.length} note(s).`);
+            return true;
+        }
+        moveSelection(deltaTracks, deltaSteps, notes = null) {
+            const steps=this.seq.signature.steps;
+            const source=notes || this.selectedNotes();
+            if (!source.length || (!deltaTracks && !deltaSteps)) return false;
+            source.forEach(note=>this.seq.clearCell(note.index));
+            const next=new Set();
+            source.forEach(note=>{
+                const track=Math.floor(note.index/steps), step=note.index%steps;
+                const targetTrack=((track+deltaTracks)%CONFIG.TRACK_COUNT+CONFIG.TRACK_COUNT)%CONFIG.TRACK_COUNT;
+                const targetStep=((step+deltaSteps)%steps+steps)%steps;
+                const target=targetTrack*steps+targetStep;
+                this.seq.clearCell(target); this.setCellVelocity(target,note.velocity,true); next.add(target);
+            });
+            this.selectedCells=next;
+            return true;
+        }
+        duplicateSelectionToOffset(deltaTracks, deltaSteps, notes = this.selectedNotes()) {
+            if (!notes.length || (!deltaTracks && !deltaSteps)) return false;
+            const steps=this.seq.signature.steps; const next=new Set();
+            notes.forEach(note=>{
+                const track=Math.floor(note.index/steps), step=note.index%steps;
+                const targetTrack=((track+deltaTracks)%CONFIG.TRACK_COUNT+CONFIG.TRACK_COUNT)%CONFIG.TRACK_COUNT;
+                const targetStep=((step+deltaSteps)%steps+steps)%steps;
+                const target=targetTrack*steps+targetStep;
+                this.seq.clearCell(target); this.setCellVelocity(target,note.velocity,true); next.add(target);
+            });
+            this.selectedCells=next;
+            return true;
+        }
+        adjustSelectionVelocity(delta) {
+            const notes=this.selectedNotes(); if(!notes.length){ this.status("Sélectionne une ou plusieurs notes pour modifier leur vélocité."); return; }
+            this.pushHistory();
+            notes.forEach(note=>{
+                const current=VELOCITY_LEVEL_NUMBER[note.velocity] || 3;
+                const next=Math.max(1,Math.min(5,current+delta));
+                this.setCellVelocity(note.index,this.velocityNameForLevel(next),true);
+            });
+            this.renderGrid(); this.autoSaveMemory(); this.status(`Vélocité ${delta>0?"augmentée":"diminuée"} sur ${notes.length} note(s).`);
+        }
+        duplicateSelection(deltaSteps = this.seq.signature.group) {
+            const notes=this.selectedNotes(); if(!notes.length) return false;
+            this.pushHistory(); const steps=this.seq.signature.steps; const next=new Set();
+            notes.forEach(note=>{ const track=Math.floor(note.index/steps), step=note.index%steps; const target=track*steps+((step+deltaSteps)%steps+steps)%steps; this.seq.clearCell(target); this.setCellVelocity(target,note.velocity,true); next.add(target); });
+            this.selectedCells=next; this.renderGrid(); this.autoSaveMemory(); this.status(`Sélection dupliquée de ${deltaSteps} pas.`); return true;
+        }
+        copySelection() {
+            const notes=this.selectedNotes(); if(!notes.length) return false;
+            const steps=this.seq.signature.steps; const positions=notes.map(n=>({track:Math.floor(n.index/steps),step:n.index%steps,velocity:n.velocity}));
+            const minTrack=Math.min(...positions.map(n=>n.track)), minStep=Math.min(...positions.map(n=>n.step));
+            this.selectionClipboard=positions.map(n=>({track:n.track-minTrack,step:n.step-minStep,velocity:n.velocity}));
+            this.status(`${notes.length} note(s) copiée(s).`); return true;
+        }
+        pasteSelection() {
+            if(!this.selectionClipboard?.length) return false;
+            const steps=this.seq.signature.steps; const anchor=[...this.selectedCells][0];
+            const baseTrack=anchor==null?0:Math.floor(anchor/steps), baseStep=anchor==null?0:(anchor%steps)+1;
+            this.pushHistory(); const next=new Set();
+            this.selectionClipboard.forEach(note=>{ const track=Math.min(CONFIG.TRACK_COUNT-1,baseTrack+note.track); const step=(baseStep+note.step)%steps; const index=track*steps+step; this.seq.clearCell(index); this.setCellVelocity(index,note.velocity,true); next.add(index); });
+            this.selectedCells=next; this.renderGrid(); this.autoSaveMemory(); this.status(`${next.size} note(s) collée(s).`); return true;
+        }
+        deleteSelection() {
+            const notes=this.selectedNotes(); if(!notes.length) return false; this.pushHistory(); notes.forEach(note=>this.seq.clearCell(note.index)); this.selectedCells.clear(); this.renderGrid(); this.autoSaveMemory(); this.status(`${notes.length} note(s) supprimée(s).`); return true;
+        }
+        quantizedRecordStep() {
+            if(!this.scheduler?.playing) return null;
+            const ctx=this.audio.ensureContext(); const duration=60/Util.clamp(this.seq.tempo,CONFIG.TEMPO.min,CONFIG.TEMPO.max,CONFIG.TEMPO.default)/4;
+            const offset=Math.round((ctx.currentTime-this.scheduler.nextTime)/duration);
+            const steps=this.seq.signature.steps;
+            return ((this.scheduler.step+offset)%steps+steps)%steps;
+        }
+        scheduleRecordSave() {
+            clearTimeout(this.recordSaveTimer); this.recordSaveTimer=setTimeout(()=>{ this.autoSaveMemory(); this.recordSaveTimer=null; },100);
+        }
+        commitRecordHistory() {
+            if(!this.recordUndoState) return; this.pushHistory(this.recordUndoState); this.recordUndoState=null; clearTimeout(this.recordSaveTimer); this.recordSaveTimer=null; this.autoSaveMemory();
+        }
+        recordPadHit(track) {
+            if(!this.recordEnabled || !this.scheduler?.playing) return;
+            const step=this.quantizedRecordStep(); if(step==null)return;
+            if(!this.recordUndoState) this.recordUndoState=this.captureState();
+            const index=track*this.seq.signature.steps+step;
+            this.setCellVelocity(index,this.velocityNameForLevel(),true); this.selectedCells=new Set([index]); this.renderCell(index); this.renderSelection(); this.scheduleRecordSave();
+        }
+        triggerKeyboardPad(track) {
+            const velocity=this.velocityNameForLevel();
+            // Audio first: recording never delays the live hit.
+            void this.previewTrackSample(track,this.seq.sampleForTrack(track),velocity,true);
+            this.recordPadHit(track);
+        }
         moveSingleNote(sourceIndex, targetIndex) {
             if (sourceIndex === targetIndex || !this.seq.activeCells.has(sourceIndex)) return false;
             const velocity = this.velocityForCell(sourceIndex);
-            const sets=[this.seq.activeCells,this.seq.accentCells,this.seq.weakCells,this.seq.strongCells,this.seq.ghostCells];
-            sets.forEach(set => { set.delete(sourceIndex); set.delete(targetIndex); });
-            this.seq.activeCells.add(targetIndex);
-            if (velocity === "accent") this.seq.accentCells.add(targetIndex);
-            else if (velocity === "strong") this.seq.strongCells.add(targetIndex);
-            else if (velocity === "soft") this.seq.weakCells.add(targetIndex);
-            else if (velocity === "ghost") this.seq.ghostCells.add(targetIndex);
-            return true;
+            this.seq.clearCell(sourceIndex); this.seq.clearCell(targetIndex); this.setCellVelocity(targetIndex,velocity,true); return true;
         }
         buildGrid() {
-            this.dom.grid.innerHTML = ""; this.dom.leds.innerHTML = ""; this.cells = [];
+            this.dom.grid.innerHTML = ""; this.dom.leds.innerHTML = ""; this.cells = []; this.selectedCells.clear();
+            this.dom.grid.style.position="relative";
             if (!this.dom.grid.dataset.ctrlContextBound) {
                 this.dom.grid.dataset.ctrlContextBound = "1";
                 this.dom.grid.addEventListener("contextmenu", event => { if (event.ctrlKey || event.metaKey) event.preventDefault(); });
             }
+            const selectionBox=document.createElement("div"); selectionBox.className="grid-selection-box"; selectionBox.hidden=true; this.dom.grid.appendChild(selectionBox); this.selectionBox=selectionBox;
             const { steps, group } = this.seq.signature;
             this.dom.leds.style.setProperty("--step-count", String(steps));
             for (let i = 0; i < steps; i++) {
@@ -3120,6 +3343,23 @@
                 this.dom.leds.appendChild(led);
             }
             const width = (100 - 0.2 * steps) / steps;
+            const cellAtPoint=(x,y)=>{
+                const r=this.dom.grid.getBoundingClientRect();
+                const step=Math.max(0,Math.min(steps-1,Math.floor((x-r.left)/r.width*steps)));
+                const track=Math.max(0,Math.min(CONFIG.TRACK_COUNT-1,Math.floor((y-r.top)/r.height*CONFIG.TRACK_COUNT)));
+                return track*steps+step;
+            };
+            const updateMarquee=drag=>{
+                const r=this.dom.grid.getBoundingClientRect();
+                const x1=Math.max(r.left,Math.min(drag.startX,drag.currentX)), x2=Math.min(r.right,Math.max(drag.startX,drag.currentX));
+                const y1=Math.max(r.top,Math.min(drag.startY,drag.currentY)), y2=Math.min(r.bottom,Math.max(drag.startY,drag.currentY));
+                Object.assign(selectionBox.style,{left:`${x1-r.left}px`,top:`${y1-r.top}px`,width:`${Math.max(1,x2-x1)}px`,height:`${Math.max(1,y2-y1)}px`}); selectionBox.hidden=false;
+                const hit=new Set();
+                this.cells.forEach((cell,index)=>{ if(!this.seq.activeCells.has(index))return; const cr=cell.getBoundingClientRect(); if(cr.right>=x1&&cr.left<=x2&&cr.bottom>=y1&&cr.top<=y2)hit.add(index); });
+                if(drag.toggle) this.selectedCells=new Set([...drag.base].filter(i=>!hit.has(i)).concat([...hit].filter(i=>!drag.base.has(i))));
+                else if(drag.additive) this.selectedCells=new Set([...drag.base,...hit]); else this.selectedCells=hit;
+                this.renderSelection();
+            };
             for (let track = 0; track < CONFIG.TRACK_COUNT; track++) {
                 for (let step = 0; step < steps; step++) {
                     const index = track * steps + step;
@@ -3127,105 +3367,44 @@
                     if (step === 0) cell.classList.add("first","capo"); else if (step === steps/2) cell.classList.add("capo"); else if (step % group === 0) cell.classList.add("quarto");
                     cell.tabIndex = 0; cell.setAttribute("role", "button");
                     cell.addEventListener("pointerdown", event => {
-                        if (event.button !== 0) return;
-                        const singleNote = !event.altKey && this.seq.activeCells.has(index);
-                        if (!event.altKey && !singleNote) return;
-                        event.preventDefault();
-                        this.gridDrag = {
-                            pointerId:event.pointerId, sourceTrack:track, sourceStep:step, sourceIndex:index, startX:event.clientX, startY:event.clientY,
-                            before:this.captureState(), deltaSteps:0, deltaTracks:0, moved:false, wholeGrid:event.altKey&&event.shiftKey, singleNote
-                        };
-                        cell.setPointerCapture?.(event.pointerId);
-                        this.dom.grid.classList.add("is-pattern-dragging");
-                    });
-                    cell.addEventListener("pointermove", event => {
-                        const drag = this.gridDrag;
-                        if (!drag || drag.pointerId !== event.pointerId) return;
-                        event.preventDefault();
-                        const rect = this.dom.grid.getBoundingClientRect();
-                        const stepWidth = rect.width / steps;
-                        const rowHeight = rect.height / CONFIG.TRACK_COUNT;
-                        const deltaSteps = Math.round((event.clientX - drag.startX) / stepWidth);
-                        const deltaTracks = Math.round((event.clientY - drag.startY) / rowHeight);
-                        if (deltaSteps === drag.deltaSteps && deltaTracks === drag.deltaTracks) return;
-                        drag.deltaSteps = deltaSteps; drag.deltaTracks = deltaTracks; drag.moved = drag.moved || !!deltaSteps || !!deltaTracks;
-                        this.seq.signatureIndex = drag.before.signatureIndex;
-                        this.seq.apply(drag.before.pattern);
-                        if (drag.singleNote) {
-                            const targetTrack = ((drag.sourceTrack + deltaTracks) % CONFIG.TRACK_COUNT + CONFIG.TRACK_COUNT) % CONFIG.TRACK_COUNT;
-                            const targetStep = ((drag.sourceStep + deltaSteps) % steps + steps) % steps;
-                            this.moveSingleNote(drag.sourceIndex, targetTrack * steps + targetStep);
-                        } else if (drag.wholeGrid) {
-                            this.seq.translateGrid(deltaTracks, deltaSteps);
-                        } else {
-                            const targetTrack = ((drag.sourceTrack + deltaTracks) % CONFIG.TRACK_COUNT + CONFIG.TRACK_COUNT) % CONFIG.TRACK_COUNT;
-                            this.seq.translateTrack(drag.sourceTrack, targetTrack, deltaSteps);
+                        if(event.button!==0)return; event.preventDefault();
+                        const active=this.seq.activeCells.has(index), add=event.shiftKey, toggle=event.ctrlKey||event.metaKey;
+                        if(active){
+                            if(toggle){ this.selectedCells.has(index)?this.selectedCells.delete(index):this.selectedCells.add(index); this.renderSelection(); this.gridDrag={pointerId:event.pointerId,kind:"click",index}; return; }
+                            if(add && !this.selectedCells.has(index)){ this.selectedCells.add(index); this.renderSelection(); this.gridDrag={pointerId:event.pointerId,kind:"click",index}; return; }
+                            if(!this.selectedCells.has(index)) this.selectOnly(index);
+                            const notes=this.selectedNotes(); this.gridDrag={pointerId:event.pointerId,kind:"move",startX:event.clientX,startY:event.clientY,before:this.captureState(),notes,deltaSteps:0,deltaTracks:0,moved:false,duplicate:event.altKey};
+                            cell.setPointerCapture?.(event.pointerId); this.dom.grid.classList.add("is-pattern-dragging"); return;
                         }
-                        this.renderGrid();
+                        this.gridDrag={pointerId:event.pointerId,kind:"marquee",startX:event.clientX,startY:event.clientY,currentX:event.clientX,currentY:event.clientY,base:new Set(this.selectedCells),additive:add,toggle,moved:false,index};
+                        cell.setPointerCapture?.(event.pointerId);
                     });
-                    const finishDrag = event => {
-                        const drag = this.gridDrag;
-                        if (!drag || drag.pointerId !== event.pointerId) return;
-                        event.preventDefault();
-                        this.gridDrag = null;
-                        this.suppressGridClick = drag.moved || !drag.singleNote;
-                        this.dom.grid.classList.remove("is-pattern-dragging");
-                        if (drag.moved) {
-                            this.pushHistory(drag.before); this.autoSaveMemory();
-                            if (drag.singleNote) this.status("Note déplacée.");
-                            else if (drag.wholeGrid) this.status(I18N.t("grid.moveAllStatus", { tracks:drag.deltaTracks, steps:drag.deltaSteps }));
-                            else {
-                                const targetTrack = ((drag.sourceTrack + drag.deltaTracks) % CONFIG.TRACK_COUNT + CONFIG.TRACK_COUNT) % CONFIG.TRACK_COUNT;
-                                this.status(I18N.t("grid.moveTrackStatus", { from:drag.sourceTrack + 1, to:targetTrack + 1, steps:drag.deltaSteps }));
-                            }
-                        } else {
-                            this.seq.signatureIndex = drag.before.signatureIndex;
-                            this.seq.apply(drag.before.pattern);
+                    cell.addEventListener("pointermove", event=>{
+                        const drag=this.gridDrag; if(!drag||drag.pointerId!==event.pointerId)return;
+                        if(drag.kind==="move"){
+                            const r=this.dom.grid.getBoundingClientRect(), ds=Math.round((event.clientX-drag.startX)/(r.width/steps)), dt=Math.round((event.clientY-drag.startY)/(r.height/CONFIG.TRACK_COUNT));
+                            if(ds===drag.deltaSteps&&dt===drag.deltaTracks)return; drag.deltaSteps=ds; drag.deltaTracks=dt; drag.moved=drag.moved||!!ds||!!dt;
+                            this.seq.signatureIndex=drag.before.signatureIndex; this.seq.apply(drag.before.pattern); this.selectedCells=new Set(drag.notes.map(n=>n.index));
+                            if(drag.duplicate) this.duplicateSelectionToOffset(dt,ds,drag.notes); else this.moveSelection(dt,ds,drag.notes);
                             this.renderGrid();
+                        } else if(drag.kind==="marquee"){
+                            drag.currentX=event.clientX; drag.currentY=event.clientY; drag.moved=drag.moved||Math.hypot(event.clientX-drag.startX,event.clientY-drag.startY)>4; if(drag.moved)updateMarquee(drag);
+                        }
+                    });
+                    const finish=event=>{
+                        const drag=this.gridDrag; if(!drag||drag.pointerId!==event.pointerId)return; event.preventDefault(); this.gridDrag=null; this.dom.grid.classList.remove("is-pattern-dragging"); selectionBox.hidden=true;
+                        if(drag.kind==="move"){
+                            if(drag.moved){this.pushHistory(drag.before);this.autoSaveMemory();this.status(`${drag.notes.length} note(s) ${drag.duplicate?"dupliquée(s) et déplacée(s)":"déplacée(s)"}.`);} else this.renderSelection(); return;
+                        }
+                        if(drag.kind==="marquee"){
+                            if(drag.moved){this.renderSelection();return;}
+                            const target=cellAtPoint(event.clientX,event.clientY); const was=this.seq.activeCells.has(target);
+                            if(!was){ this.pushHistory(); this.setCellVelocity(target,this.velocityNameForLevel(),true); this.selectedCells=new Set([target]); this.renderCell(target); this.renderSelection(); this.autoSaveMemory(); const t=Math.floor(target/steps); if(this.monitoringEnabled)this.previewTrackSample(t,this.seq.sampleForTrack(t),this.velocityForCell(target)); }
+                            else if(!drag.additive&&!drag.toggle)this.selectOnly(target);
                         }
                     };
-                    cell.addEventListener("pointerup", finishDrag);
-                    cell.addEventListener("pointercancel", finishDrag);
-                    cell.addEventListener("click", event => {
-                        if (this.suppressGridClick || event.altKey) { this.suppressGridClick = false; return; }
-                        this.pushHistory();
-                        if ((event.ctrlKey || event.metaKey) && event.shiftKey) {
-                            const beatSize = this.seq.signature.group;
-                            const offsetInBeat = step % beatSize;
-                            for (let targetStep = offsetInBeat; targetStep < steps; targetStep += beatSize) {
-                                const targetIndex = track * steps + targetStep;
-                                this.seq.clearCell(targetIndex);
-                                this.renderCell(targetIndex);
-                            }
-                            this.autoSaveMemory();
-                            this.status(I18N.t("grid.deleteBeatStatus", { position:offsetInBeat + 1, beatSize }));
-                            return;
-                        }
-                        if (event.ctrlKey || event.metaKey) {
-                            this.seq.clearCell(index);
-                            this.renderCell(index);
-                            this.autoSaveMemory();
-                            this.status(I18N.t("grid.deleteCellStatus"));
-                            return;
-                        }
-                        if (event.shiftKey) {
-                            const beatSize = this.seq.signature.group;
-                            const offsetInBeat = step % beatSize;
-                            for (let targetStep = offsetInBeat; targetStep < steps; targetStep += beatSize) {
-                                const targetIndex = track * steps + targetStep;
-                                this.seq.cycleCell(targetIndex);
-                                this.renderCell(targetIndex);
-                            }
-                            this.autoSaveMemory();
-                            this.status(I18N.t("grid.repeatBeatStatus", { position:offsetInBeat + 1, beatSize }));
-                            return;
-                        }
-                        this.seq.cycleCell(index);
-                        this.renderCell(index);
-                        this.autoSaveMemory();
-                        if (this.seq.activeCells.has(index)) this.previewTrackSample(track, this.seq.sampleForTrack(track), this.velocityForCell(index));
-                    });
-                    cell.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); cell.click(); } });
+                    cell.addEventListener("pointerup",finish); cell.addEventListener("pointercancel",finish);
+                    cell.addEventListener("keydown",e=>{ if(e.key==="Enter"||e.key===" "){e.preventDefault(); if(this.seq.activeCells.has(index))this.selectOnly(index);else{this.pushHistory();this.setCellVelocity(index,this.velocityNameForLevel(),true);this.selectOnly(index);this.renderCell(index);this.autoSaveMemory();}} });
                     this.dom.grid.appendChild(cell); this.cells.push(cell);
                 }
             }
@@ -3281,7 +3460,21 @@
             this.makeKeyboardAccessible();
             this.status(I18N.t("status.patternDuplicated", { n:next + 1 }));
         }
+        reorderMemorySlots(from,toBefore) {
+            from=Math.max(0,Math.min(CONFIG.MEMORY_SLOTS-1,Number(from)));
+            toBefore=Math.max(0,Math.min(CONFIG.MEMORY_SLOTS,Number(toBefore)));
+            let dest=toBefore; if(from<dest)dest--; if(dest===from)return;
+            const slots=this.seq.store.slots.slice(); const [moved]=slots.splice(from,1); slots.splice(dest,0,moved); this.seq.store.slots=slots.slice(0,CONFIG.MEMORY_SLOTS); this.seq.store.storage.save(this.seq.store.slots);
+            const selected=this.seq.memorySlot;
+            let nextSelected=selected;
+            if(selected===from)nextSelected=dest;
+            else if(from<dest && selected>from && selected<=dest)nextSelected=selected-1;
+            else if(from>dest && selected>=dest && selected<from)nextSelected=selected+1;
+            this.closeFeelForMemoryChange(); this.feel.cores.clear(); this.feel.invalidate(); this.seq.memorySlot=nextSelected; this.seq.loadSlot(nextSelected); this.syncSchedulerStructure(); this.buildGrid(); this.renderState(); this.makeKeyboardAccessible();
+            this.memoryDragFrom=null; this.status(`Mémoire déplacée en position ${dest+1}.`);
+        }
         bindControls() {
+            if(this.dom.memoryDuplicate)this.press(this.dom.memoryDuplicate,()=>this.duplicateToNextMemory());
             this.press(this.dom.clear, () => { this.pushHistory(); this.feel.invalidate(); this.seq.clear(); this.resetPresetSelectors(); this.renderGrid(); this.autoSaveMemory(); });
             const applySignature = () => { const n=Number(this.dom.signatureNumerator?.value), d=Number(this.dom.signatureDenominator?.value); const before=this.captureState(); if(this.seq.setSignature(n,d,true)){ this.pushHistory(before); this.syncSchedulerStructure(); this.buildGrid(); this.renderState(); this.makeKeyboardAccessible(); this.autoSaveMemory(); } };
             this.dom.signatureNumerator?.addEventListener("change", applySignature);
@@ -3324,25 +3517,25 @@
             if (this.dom.groovePreview) this.press(this.dom.groovePreview, () => this.toggleGroovePreview());
             if (this.dom.grooveAdd) this.press(this.dom.grooveAdd, () => this.addSelectedPatch());
             const shiftGrid = (direction, event) => {
-                this.pushHistory();
                 const amount = event?.shiftKey ? this.seq.signature.group : 1;
-                this.seq.shiftAllTracks(direction * amount);
-                this.renderGrid();
-                this.autoSaveMemory();
-                this.status(I18N.t("status.gridShifted", { direction:I18N.t(direction < 0 ? "status.left" : "status.right"), amount:amount === 1 ? "1 step" : "1 beat" }));
+                if(!this.selectedNotes().length){this.status(I18N.t("editor.noSelection"));return;}
+                this.pushHistory(); this.moveSelection(0,direction*amount); this.renderGrid(); this.autoSaveMemory();
+                this.status(`Sélection déplacée de ${Math.abs(direction*amount)} pas ${direction < 0 ? "à gauche" : "à droite"}.`);
             };
             this.dom.gridShiftLeft?.addEventListener("click", event => { event.preventDefault(); shiftGrid(-1, event); });
             this.dom.gridShiftRight?.addEventListener("click", event => { event.preventDefault(); shiftGrid(1, event); });
             const shiftGridTracks = direction => {
-                this.pushHistory();
-                this.seq.translateGrid(direction, 0);
-                this.renderGrid();
-                this.autoSaveMemory();
-                this.status(direction < 0 ? "Grille décalée d’une piste vers le haut." : "Grille décalée d’une piste vers le bas.");
+                if(!this.selectedNotes().length){this.status(I18N.t("editor.noSelection"));return;}
+                this.pushHistory(); this.moveSelection(direction,0); this.renderGrid(); this.autoSaveMemory();
+                this.status(direction<0?"Sélection déplacée vers le haut.":"Sélection déplacée vers le bas.");
             };
             this.dom.gridShiftUp?.addEventListener("click", event => { event.preventDefault(); shiftGridTracks(-1); });
             this.dom.gridShiftDown?.addEventListener("click", event => { event.preventDefault(); shiftGridTracks(1); });
             if (this.dom.monitoring) this.press(this.dom.monitoring, () => { this.monitoringEnabled = !this.monitoringEnabled; localStorage.setItem("battrochtek.monitoring", this.monitoringEnabled ? "1" : "0"); this.renderButtons(); this.status(this.monitoringEnabled ? "Monitoring activé." : "Monitoring désactivé."); });
+            if(this.dom.record) this.press(this.dom.record,()=>{ if(this.recordEnabled)this.commitRecordHistory(); this.recordEnabled=!this.recordEnabled; this.renderButtons(); this.status(this.recordEnabled?"Record armé · les pads clavier seront quantifiés pendant la lecture.":"Record désactivé."); });
+            this.dom.velocityButtons?.forEach(button=>this.press(button,()=>{this.currentVelocityLevel=Number(button.dataset.velocityLevel)||3;const applied=this.applyVelocityToSelection(this.currentVelocityLevel);this.renderButtons();if(!applied)this.status(`Vélocité d’écriture : ${this.currentVelocityLevel}.`);}));
+            if(this.dom.velocityDecrease)this.press(this.dom.velocityDecrease,()=>this.adjustSelectionVelocity(-1));
+            if(this.dom.velocityIncrease)this.press(this.dom.velocityIncrease,()=>this.adjustSelectionVelocity(1));
             this.press(this.dom.random, () => this.setFeelEnabled(!this.feel.enabled));
             if (this.dom.cacheClear) this.press(this.dom.cacheClear, () => {
                 this.seq.store.resetMemories();
@@ -3389,14 +3582,33 @@
                 const mod = e.ctrlKey || e.metaKey;
                 if (mod && !editing && key === "z") { e.preventDefault(); e.shiftKey ? this.redo() : this.undo(); return; }
                 if (mod && !editing && key === "y") { e.preventDefault(); this.redo(); return; }
-                if (mod && !editing && key === "c") { e.preventDefault(); this.copyCurrentPattern(); return; }
-                if (mod && !editing && key === "v") { e.preventDefault(); this.pastePatternToCurrentMemory(); return; }
-                if (mod && !editing && key === "d") { e.preventDefault(); this.duplicateToNextMemory(); return; }
+                if (mod && !editing && key === "a") { e.preventDefault(); this.selectAllNotes(); return; }
+                if (mod && !editing && key === "i") { e.preventDefault(); this.invertSelection(); return; }
+                if (mod && !editing && key === "c") { if(this.selectedNotes().length){e.preventDefault();this.copySelection();} return; }
+                if (mod && !editing && key === "v") { if(this.selectionClipboard){e.preventDefault();this.pasteSelection();} return; }
+                if (mod && !editing && key === "d") { if(this.selectedNotes().length){e.preventDefault();this.duplicateSelection();} return; }
                 if (e.target === this.dom.grooveSearch && e.code === "Space") return;
                 if (e.code === "Space" && !mod && !e.altKey) { e.preventDefault(); if (this.previewEnabled) this.stopGroovePreview({ silent:true }); this.scheduler.toggle(); return; }
-                if (!editing && !mod && !e.altKey && PAD_KEYBOARD_MAP[e.code] !== undefined) { e.preventDefault(); if (!e.repeat) this.previewTrackSample(PAD_KEYBOARD_MAP[e.code], this.seq.sampleForTrack(PAD_KEYBOARD_MAP[e.code]), "normal", true); return; }
+                if (!editing && !mod && !e.altKey && PAD_KEYBOARD_MAP[e.code] !== undefined) { e.preventDefault(); if (!e.repeat) this.triggerKeyboardPad(PAD_KEYBOARD_MAP[e.code]); return; }
+                if (!editing && !mod && !e.altKey && (e.key==="Delete"||e.key==="Backspace")) { if(this.deleteSelection())e.preventDefault(); return; }
+                if (!editing && !mod && !e.altKey && ["ArrowLeft","ArrowRight","ArrowUp","ArrowDown"].includes(e.key) && this.selectedNotes().length) { e.preventDefault(); const dt=e.key==="ArrowUp"?-1:e.key==="ArrowDown"?1:0, ds=e.key==="ArrowLeft"?-1:e.key==="ArrowRight"?1:0; this.pushHistory();this.moveSelection(dt,ds);this.renderGrid();this.autoSaveMemory();return; }
+                const velocityDelta = !editing && !mod && !e.altKey
+                    ? ((e.key === "-" || e.code === "Minus" || e.code === "NumpadSubtract") ? -1
+                        : ((e.key === "+" || e.code === "NumpadAdd" || (e.code === "Equal" && (e.shiftKey || e.key === "+"))) ? 1 : 0))
+                    : 0;
+                if (velocityDelta && this.selectedNotes().length) { e.preventDefault(); this.adjustSelectionVelocity(velocityDelta); return; }
+                if (!editing && !mod && !e.altKey && /^Digit[1-5]$/.test(e.code)) {
+                    e.preventDefault();
+                    this.currentVelocityLevel = Number(e.code.slice(-1));
+                    const applied = this.applyVelocityToSelection(this.currentVelocityLevel);
+                    this.renderButtons();
+                    if (!applied) this.status(`Vélocité d’écriture : ${this.currentVelocityLevel}.`);
+                    return;
+                }
+                if (!editing && e.altKey && !mod && /^Digit[1-8]$/.test(e.code)) { e.preventDefault(); this.selectMemorySlot(Number(e.code.slice(-1)) - 1); return; }
+                if (!editing && !mod && !e.altKey && /^Numpad[1-8]$/.test(e.code)) { e.preventDefault(); this.selectMemorySlot(Number(e.code.slice(-1)) - 1); return; }
                 if (editing || mod || e.altKey) return;
-                if (/^[1-8]$/.test(e.key)) { e.preventDefault(); this.selectMemorySlot(Number(e.key) - 1); return; }
+                if (key === "l") { e.preventDefault(); this.dom.practiceButton?.click(); return; }
                 if (key === "t") { e.preventDefault(); this.handleTapTempo(); return; }
                 if (key === "m") { e.preventDefault(); this.seq.metronomeEnabled = !this.seq.metronomeEnabled; this.preferences?.setAudio({ metronomeEnabled:this.seq.metronomeEnabled }); this.renderButtons(); return; }
             });
@@ -3470,7 +3682,7 @@
         renderCell(index) {
             const cell=this.cells[index]; if(!cell)return;
             const on=this.seq.activeCells.has(index), accent=this.seq.accentCells.has(index), strong=this.seq.strongCells.has(index), soft=this.seq.weakCells.has(index), ghost=this.seq.ghostCells.has(index);
-            cell.classList.toggle("on",on); cell.classList.toggle("accent",on&&accent); cell.classList.toggle("strong",on&&strong); cell.classList.toggle("soft",on&&soft); cell.classList.toggle("ghost",on&&ghost);
+            cell.classList.toggle("on",on); cell.classList.toggle("accent",on&&accent); cell.classList.toggle("strong",on&&strong); cell.classList.toggle("soft",on&&soft); cell.classList.toggle("ghost",on&&ghost); cell.classList.toggle("selected",this.selectedCells.has(index));
             const label=I18N.t(accent?"note.accent":strong?"note.strong":soft?"note.soft":ghost?"note.ghost":on?"note.normal":"note.off"); cell.setAttribute("aria-label", I18N.t("note.aria", { level:label }));
         }
         renderGrid() { this.cells.forEach((cell,i)=>this.renderCell(i)); }
@@ -3508,7 +3720,7 @@
                 b.classList.toggle("memory-selected", selected);
                 b.classList.toggle("memory-saved", saved);
                 b.classList.toggle("memory-empty", !saved);
-                b.dataset.btTooltip = `${I18N.t("memory.slot", { n:i + 1 })} — ${saved ? I18N.t("memory.saved") : I18N.t("memory.empty")}${selected ? ` — ${I18N.t("memory.selected")}` : ""} — ${i + 1}`;
+                b.dataset.btTooltip = I18N.t("memory.tooltip", { n:i + 1, state:`${saved ? I18N.t("memory.saved") : I18N.t("memory.empty")}${selected ? ` — ${I18N.t("memory.selected")}` : ""}` });
                 b.setAttribute("aria-label", b.dataset.btTooltip);
                 b.setAttribute("aria-pressed", String(selected));
             });
@@ -3521,6 +3733,18 @@
             this.dom.chain.setAttribute("aria-pressed", String(this.seq.chainEnabled));
             this.dom.chain.classList.toggle("bt-buttondown", this.seq.chainEnabled);
             if (this.dom.monitoring) { this.dom.monitoring.setAttribute("aria-pressed", String(this.monitoringEnabled)); this.dom.monitoring.classList.toggle("bt-buttondown", this.monitoringEnabled); }
+            if(this.dom.record){this.dom.record.setAttribute("aria-pressed",String(this.recordEnabled));this.dom.record.classList.toggle("bt-buttondown",this.recordEnabled);}
+            this.dom.velocityButtons?.forEach(button=>{
+                const level=Number(button.dataset.velocityLevel)||3;
+                const active=level===this.currentVelocityLevel;
+                const velocityName=this.velocityNameForLevel(level);
+                const translatedName=I18N.t(`note.${velocityName}`);
+                const label=I18N.t("editor.velocity",{level,name:translatedName});
+                button.classList.toggle("active",active);
+                button.setAttribute("aria-pressed",String(active));
+                button.setAttribute("aria-label",label);
+                button.dataset.btTooltip=label;
+            });
             this.dom.undo?.setAttribute("aria-disabled", String(this.undoStack.length === 0));
             this.dom.redo?.setAttribute("aria-disabled", String(this.redoStack.length === 0));
             this.syncUiStore();
@@ -3574,6 +3798,7 @@
         }
         resetPresetSelectors() { /* Le motif courant peut être libre sans modifier la sélection affichée. */ }
         setPlaying(value) {
+            if (!value) this.commitRecordHistory();
             this.dom.play.setAttribute("aria-label", value ? I18N.t("transport.stop") : I18N.t("transport.play"));
             this.dom.play.setAttribute("aria-pressed", String(value));
             this.dom.play.classList.toggle("bt-buttondown", value);
@@ -3612,16 +3837,60 @@
             const scheduler = new Scheduler(audio, sequencer, ui, practice);
             practice.attach(ui, scheduler);
             ui.init(scheduler);
-            try {
-                const params = new URLSearchParams(location.hash.slice(1));
-                const encodedState = params.get("state");
-                if (encodedState) ui.restorePageState(ui.expandPageState(StorageManager.decode(encodedState)));
-                const encodedSound = params.get("snd");
-                if (encodedSound) ui.restoreSoundState(StorageManager.decode(encodedSound));
-            } catch (error) {
-                console.warn("État de page ou audio invalide, réglages sûrs conservés.", error);
-            }
+            ui.applyUrlState({ initial:true });
             window.Battrochtek = { CONFIG, TRACK_ROLES, store, sequencer, audio, scheduler, practice, ui, preferences };
+
+            // Navigating to another Battrochtek bookmark can stay in the same document
+            // (same path, different #mem/#snd). React to it exactly like a fresh load.
+            let lastAppliedHash = location.hash;
+            let urlSyncQueued = false;
+            let isApplyingUrlState = false;
+            let urlApplyCount = 0;
+
+            // Internal auto-saves use history.replaceState(), which intentionally emits no
+            // hashchange event. Mark them immediately so the fallback watcher never treats
+            // an app-authored URL as an external bookmark navigation.
+            window.BattrochtekMarkUrlWritten = () => {
+                lastAppliedHash = location.hash;
+            };
+            window.BattrochtekUrlSync = {
+                isApplying: () => isApplyingUrlState,
+                markWritten: window.BattrochtekMarkUrlWritten,
+                debug: () => ({ lastAppliedHash, currentHash:location.hash, isApplyingUrlState, urlApplyCount })
+            };
+
+            const syncFromBrowserUrl = () => {
+                if (urlSyncQueued || isApplyingUrlState) return;
+                const observedHash = location.hash;
+                if (observedHash === lastAppliedHash) return;
+                urlSyncQueued = true;
+                queueMicrotask(() => {
+                    urlSyncQueued = false;
+                    if (isApplyingUrlState) return;
+                    const hash = location.hash;
+                    if (hash === lastAppliedHash) return;
+
+                    isApplyingUrlState = true;
+                    urlApplyCount += 1;
+                    try {
+                        // applyUrlState() cancels stale delayed writes before reading the new URL.
+                        // While this flag is true, StorageManager/SoundState writes are ignored.
+                        ui.applyUrlState();
+                    } finally {
+                        // Whether valid or not, consume this exact browser URL once. Invalid links
+                        // must not be retried every 180 ms forever. If applyUrlState indirectly
+                        // changed the hash, remember the final visible value instead.
+                        lastAppliedHash = location.hash;
+                        isApplyingUrlState = false;
+                    }
+                });
+            };
+            window.addEventListener("hashchange", syncFromBrowserUrl);
+            window.addEventListener("popstate", syncFromBrowserUrl);
+            // Chrome/PWA can occasionally keep same-document bookmark navigation without an
+            // event that reaches app code. This compares one short string every 180 ms only;
+            // it does not decode state or touch audio unless the hash actually changed.
+            window.setInterval(syncFromBrowserUrl, 180);
         }
     };
 

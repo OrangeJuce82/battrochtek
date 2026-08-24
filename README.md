@@ -1,3 +1,11 @@
+
+### v52 — FEEL UI & layout
+
+- FEEL et Aide deviennent des accordéons pleine largeur.
+- FEEL expose Orchestration, Main droite, Energy/Transformation/Density/Swing et une Influence avancée repliée.
+- Orchestration devient un macro-preset : Minimal, Pocket, Standard, Busy, Wild.
+- Le switch FEEL contrôle uniquement la génération : les réglages restent éditables FEEL OFF.
+- La détection des membres reste interne ; le mode Main droite TOMS réorchestre le rythme source sur les toms.
 # 🥁 Battrochtek
 
 Battrochtek est un séquenceur de batterie PWA pensé pour explorer des grooves et travailler la batterie.
@@ -16,7 +24,7 @@ Puis ouvre `http://localhost:8000`.
 ## Fonctions principales
 
 - Séquenceur 9 pistes avec plusieurs niveaux de vélocité.
-- Bibliothèque de grooves et import MIDI.
+- Bibliothèque canonique unique de grooves maintenue dans le projet.
 - 8 mémoires **autosauvegardées** dans l’URL : chaque mémoire contient uniquement sa grille et sa signature.
 - Le kit, le mix, le tempo, le volume master et le swing restent globaux quand on change de mémoire.
 - Kits de batterie, volumes et panoramiques par piste, swing et métronome.
@@ -65,6 +73,17 @@ npm run grooves:clean
 - `Shift` : ajouter à la sélection
 - `Ctrl/Cmd + clic` : basculer une note dans la sélection
 
+### Performance FEEL
+
+- `B` : appui court = fill ; appui long = break ; relâchement = fill de reprise
+- `V` : nouvelle variation FEEL
+- `H` : changer la destination de la main droite
+- `G` : orchestration suivante
+- `J / K` : énergie − / +
+- `Shift + J / K` : transformation − / +
+
+Le raccourci `F` dédié au Fill a été supprimé ; le Fill reste intégré au geste Break.
+
 ### Mémoires
 
 - `Alt/Option + 1…8` : ouvrir une mémoire
@@ -74,7 +93,7 @@ npm run grooves:clean
 
 ## Grooves
 
-Les sources sont placées dans `grooves/`. Les scripts `grooves:sync` et `grooves:clean` assurent leur import et leur normalisation.
+La bibliothèque canonique visible est maintenue dans `grooves/`. Les scripts de synchronisation et de normalisation sont des outils de maintenance du projet et ne font pas partie du workflow utilisateur.
 
 ## Déploiement
 
@@ -118,3 +137,16 @@ Virtuosity/ferrosintesis, Big Rusty Drums et VCSL. Voir `LICENSE`,
 ## Navigation par favoris
 
 Les changements de lien Battrochtek dans le même onglet (favoris, historique, changement de hash) sont appliqués immédiatement : mémoires, groove et état audio sont relus sans rechargement complet de la page.
+
+
+## FEEL / Live Performance v44
+
+FEEL sépare maintenant le CORE (Kick/Snare), la main droite et les enrichissements. Le CORE peut être LOCKED, SOFT ou FREE. L'influence visible Kick/Snare/Right Hand/Ghosts/Toms est réglable sur 0–3. ENERGY contrôle l'intensité; DEVIATION contrôle la liberté de transformation. RIGHT HAND peut forcer Auto, Hi-Hat, Ride, Ride Bell ou Perc.
+
+Live: F = Fill, B court = Fill, B maintenu = Break puis reprise/fill au relâchement, C = Crash, V = variation FEEL, N = mémoire suivante au prochain tour, H = main droite suivante. Les actions sont exposées dans `window.Battrochtek.actions` pour préparer le futur MIDI Learn.
+
+Raccourcis FEEL: G = CORE suivant; H = Right Hand suivant; J/K = Energy -/+; Shift+J/K = Deviation -/+.
+
+### v49 — FEEL mémorisé + ergonomie live
+
+FEEL détecte maintenant les rôles de membres à partir du groove source (main droite, main gauche, pied droit, pied gauche). Un groove piloté au ride conserve donc cette main droite en AUTO et peut être migré vers hi-hat/ride/percussion sans réécrire son rythme. Le panneau FEEL propose une vue compacte Sliders ou Pad, les anciens boutons instrument redondants ont été retirés, et les actions Live visibles sont regroupées autour de Fill, Break, Variation et Next (Crash reste disponible au clavier).

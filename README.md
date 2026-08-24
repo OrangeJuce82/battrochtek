@@ -12,7 +12,7 @@ Battrochtek is a browser-based drum workstation for musicians who want the speed
 
 </div>
 
-![Battrochtek interface](docs/images/battrochtek-ui.png)
+![Battrochtek interface](docs/images/battrochtek-app.png)
 
 ## Make a beat. Then make it breathe.
 

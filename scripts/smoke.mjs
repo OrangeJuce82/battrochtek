@@ -38,7 +38,7 @@ const checks = [
   [app.includes("isApplyingUrlState") && app.includes("BattrochtekUrlSync?.isApplying") && app.includes("urlApplyCount"), "garde anti-boucle URL params ↔ état app présent"],
   [app.includes("reloadFromUrl()") && app.includes("hashchange") && app.includes("popstate") && app.includes("applyUrlState") && app.includes("lastAppliedHash"), "navigation favoris/historique recharge le groove URL sans reload"],
   [sw.includes('"./vendor/oat/oat.min.css"') && sw.includes('"./vendor/oat/oat.min.js"'), "Oat inclus dans l’app shell PWA"],
-  [sw.includes('battrochtek-v117') && sw.includes('battrochtek-audio-v7'), "caches PWA/audio v117/v7"],
+  [sw.includes('battrochtek-v118') && sw.includes('battrochtek-audio-v7'), "caches PWA/audio v118/v7"],
   [html.includes('id="fullscreen-toggle"') && app.includes('setupFullscreen()') && app.includes('key==="x"'), 'plein écran bouton + raccourci Shift+X présent'],
   [app.includes('bell:1') && app.includes('ride:2') && !html.includes('value="bell"') && !html.includes('value="crash"') && html.includes('value="hihat"') && html.includes('value="ride"') && app.includes('bt_detroit_ride_bell'), 'piste Bell présente + Main droite simplifiée Charley/Ride'],
   [!css.slice(css.indexOf('.feel-influence-block{'), css.indexOf('}',css.indexOf('.feel-influence-block{'))).includes('border-top'), 'Influence FEEL sans border-top'],

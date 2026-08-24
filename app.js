@@ -1459,7 +1459,6 @@
             return { active, accent, soft, strong, ghost };
         }
         performanceSampleKey(track, currentSampleKey) {
-            const R=TRACK_ROLES;
             return currentSampleKey;
         }
         performanceTimingOffset(track, step) {
@@ -1853,11 +1852,6 @@
                             }
                         }
                     }
-                }
-                if(false && p.ride>0){
-                    const rideStride=style==="jazz"?Math.max(1,subdivision):(style==="afrobeat"||style==="latin"?subdivision:group);
-                    const rideChance=(.10+d*.42+Math.max(0,e-.5)*.18)*p.ride*variant*(.25+.75*f);
-                    for(let st=0;st<barSteps&&baseStep+st<steps;st+=rideStride)addProb(R.ride,baseStep+st,Math.min(.92,rideChance),st%group===0?"strong":"soft",`ride-${cycle}-${bar}`);
                 }
                 if(this.influenceLevel("crash")>0&&e>.54&&this.randomFor(`crash:${cycle}:${bar}`)<Math.min(.9,(e-.48)*p.crash*(.35+.65*f)*this.influenceScale("crash")))add(R.crash,baseStep,e>.78?"accent":"strong");
                 this.addGhostPhrases({ add, active, baseActive, baseStep, barSteps, steps, subdivision, style, d });
@@ -2525,7 +2519,6 @@
             if(this.dom.feelRightHand)this.dom.feelRightHand.value=this.feel.rightHandMode;
             if(this.dom.feelDeviation){this.dom.feelDeviation.value=String(this.feel.deviation); if(this.dom.feelDeviationValue)this.dom.feelDeviationValue.textContent=`${this.feel.deviation}%`;}
             if(this.dom.feelEnergySlider){this.dom.feelEnergySlider.value=String(this.feel.energy); if(this.dom.feelEnergyValue)this.dom.feelEnergyValue.textContent=`${this.feel.energy}%`;} if(this.dom.feelSwing){this.dom.feelSwing.value=String(this.seq.swing);if(this.dom.feelSwingValue)this.dom.feelSwingValue.textContent=`${Math.round(this.seq.swing)}%`;} if(this.dom.feelToggle)this.dom.feelToggle.checked=!!this.feel.enabled;
-            const rightHandLabel=this.feel.rightHandMode==="ride"?I18N.t("feel.rhRide"):I18N.t("feel.rhHihat");
             const variantLabel=this.feel.rightHandMode==="ride"?I18N.t("feel.influenceBell"):I18N.t("feel.influenceOpenHat");
             if(this.dom.feelRightHandInfluenceLabel)this.dom.feelRightHandInfluenceLabel.textContent=variantLabel;
             this.dom.feelInfluence?.forEach(button=>{ const name=button.dataset.feelInfluence, level=this.feel.influenceLevel(name); button.dataset.level=String(level); button.querySelectorAll(".influence-dot").forEach((dot,i)=>dot.classList.toggle("active",i<level)); const label=name==="rightHand"?variantLabel:name==="ghosts"?I18N.t("feel.influenceGhosts"):(button.dataset.label||name); button.setAttribute("aria-label",`${label} : ${level}/3`); if(name==="rightHand")button.dataset.btTooltip=I18N.t(this.feel.rightHandMode==="ride"?"feel.influenceBellHelp":"feel.influenceOpenHatHelp"); else if(name==="ghosts")button.dataset.btTooltip=I18N.t("feel.influenceGhostsHelp"); else if(name==="toms")button.dataset.btTooltip=I18N.t("feel.influenceTomsHelp"); else if(name==="crash")button.dataset.btTooltip=I18N.t("feel.influenceCrashHelp"); });

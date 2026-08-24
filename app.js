@@ -1719,9 +1719,11 @@
                     const sourceTimeIdx=(timeVoice==="ride"?R.ride:R.closedHat)*steps+st;
                     const sourceAccent=accent.has(sourceTimeIdx)||strong.has(sourceTimeIdx);
                     if(!barOne&&!beatAccent&&!sourceAccent)continue;
-                    // Level 2/3 must sound like a real orchestration choice, not a rare lottery.
-                    const base=[0,.10,.26,.46][crashLevel] || 0;
-                    const chance=Math.min(.96,base + e*.18 + f*.16 + d*.08 + (barOne?.24:0) + (sourceAccent?.14:0));
+                    // Crash is punctuation, not a second timekeeping layer.
+                    // Level 1 stays rare, level 2 is occasional, level 3 is clearly audible
+                    // but remains concentrated on phrase starts and strong accents.
+                    const base=[0,.025,.075,.16][crashLevel] || 0;
+                    const chance=Math.min(.62,base + e*.07 + f*.06 + d*.025 + (barOne?.13:0) + (sourceAccent?.08:0));
                     if(this.randomFor(`crash-accent:${this.performanceCycles.get(this.seq.memorySlot)||0}:${st}`)>=chance)continue;
                     add(R.crash,st,(barOne||sourceAccent||e>.68)?"accent":"strong");
                 }
@@ -1781,7 +1783,6 @@
                     if(pv.accent.has(i))accent.add(i); else if(pv.strong.has(i))strong.add(i); else if(pv.soft.has(i))soft.add(i); else if(pv.ghost.has(i))ghost.add(i);
                 }
             }
-            const addProb=(track,step,prob,vel,key)=>{ if(isLayerAllowed(track)&&this.randomFor(`${key}:${track}:${step}`)<prob)add(track,step,vel); };
             if(evolve && this.pendingResolutions.get(this.seq.memorySlot)){
                 const destination=this.timeVoice();
                 const returnProfile=this.returnFillProfile(style);
@@ -1853,7 +1854,7 @@
                         }
                     }
                 }
-                if(this.influenceLevel("crash")>0&&e>.54&&this.randomFor(`crash:${cycle}:${bar}`)<Math.min(.9,(e-.48)*p.crash*(.35+.65*f)*this.influenceScale("crash")))add(R.crash,baseStep,e>.78?"accent":"strong");
+                if(this.influenceLevel("crash")>0&&e>.62&&this.randomFor(`crash:${cycle}:${bar}`)<Math.min(.34,(e-.58)*p.crash*(.18+.32*f)*this.influenceScale("crash")))add(R.crash,baseStep,e>.82?"accent":"strong");
                 this.addGhostPhrases({ add, active, baseActive, baseStep, barSteps, steps, subdivision, style, d });
                 endsWithFill = this.addFillPhrase({ add, remove, baseActive, fillSteps, baseStep, bar, bars, barSteps, steps, subdivision, style, f, e, cycle, force:forceFill && bar===bars-1 }) || endsWithFill;
             }

@@ -21,6 +21,14 @@ Each event contains:
 - `role`: `core`, `time`, `comping`, `left-foot`, `ghost`, `ornament`, `fill`, `setup`, or `resolution`.
 - `source`: provenance of the individual event when needed.
 
+## Playability grammar
+
+The score compiler treats open/closed hi-hat, ride bow/bell, and snare center/cross-stick as alternative articulations of one physical instrument, not independent layers. Only one articulation in each group may start at a given tick. The explicitly orchestrated color (open hi-hat or ride bell) replaces the default closed-hat or ride-bow stroke.
+
+The declared `limb` is also monophonic at a given tick. Simultaneous kick plus one or two hand voices remains valid, but two events assigned to the same hand are rejected. Left-foot hi-hat events remain independently playable when explicitly modeled with `role: left-foot`; ordinary closed-hi-hat notes are never silently reinterpreted as foot strokes.
+
+These are score-level rules. Audio playback should additionally use an exclusive hi-hat choke group so a later closed/pedal articulation stops the decay of an earlier open hi-hat.
+
 ## MIDI export
 
 Every canonical groove is exported as a Standard MIDI File, format 0, General MIDI percussion channel 10. The current mapping is:
@@ -34,6 +42,7 @@ Every canonical groove is exported as a Standard MIDI File, format 0, General MI
 - Floor Tom: 43
 - Crash: 49
 - Ride: 51
+- Ride Bell: 53
 
 The MIDI file is an exchange format. Canonical JSON remains the source of truth because MIDI cannot carry all Battrochtek semantics (limbs, roles, validation state, provenance, canonical taxonomy).
 

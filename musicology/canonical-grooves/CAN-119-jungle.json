@@ -14,24 +14,24 @@
     {
       "tick": 0,
       "duration": 120,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "rightFoot",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 0,
-      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
       "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 0,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -74,6 +74,18 @@
     {
       "tick": 960,
       "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 960,
+      "duration": 120,
       "instrument": "snare",
       "articulation": "center",
       "velocity": 104,
@@ -84,7 +96,7 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 960,
+      "tick": 1200,
       "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
@@ -96,7 +108,7 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 1200,
+      "tick": 1440,
       "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
@@ -120,7 +132,7 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 1440,
+      "tick": 1680,
       "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
@@ -140,18 +152,6 @@
       "velocityClass": "ghost",
       "limb": "otherHand",
       "role": "ghost",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 1680,
-      "duration": 120,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -182,6 +182,18 @@
     {
       "tick": 2400,
       "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 2400,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -192,7 +204,7 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 2400,
+      "tick": 2640,
       "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
@@ -216,7 +228,7 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 2640,
+      "tick": 2880,
       "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
@@ -236,18 +248,6 @@
       "velocityClass": "strong",
       "limb": "otherHand",
       "role": "core",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 2880,
-      "duration": 120,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -266,6 +266,18 @@
     {
       "tick": 3360,
       "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 3360,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -276,7 +288,7 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 3360,
+      "tick": 3600,
       "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
@@ -300,7 +312,7 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 3600,
+      "tick": 3840,
       "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
@@ -320,18 +332,6 @@
       "velocityClass": "strong",
       "limb": "rightFoot",
       "role": "core",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 3840,
-      "duration": 120,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -374,6 +374,18 @@
     {
       "tick": 4800,
       "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 4800,
+      "duration": 120,
       "instrument": "snare",
       "articulation": "center",
       "velocity": 104,
@@ -384,7 +396,7 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 4800,
+      "tick": 5040,
       "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
@@ -396,7 +408,7 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 5040,
+      "tick": 5280,
       "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
@@ -420,7 +432,7 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 5280,
+      "tick": 5520,
       "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
@@ -440,18 +452,6 @@
       "velocityClass": "ghost",
       "limb": "otherHand",
       "role": "ghost",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 5520,
-      "duration": 120,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -482,6 +482,18 @@
     {
       "tick": 6240,
       "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 6240,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -492,7 +504,7 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 6240,
+      "tick": 6480,
       "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
@@ -516,7 +528,7 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 6480,
+      "tick": 6720,
       "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
@@ -540,7 +552,7 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 6720,
+      "tick": 6960,
       "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
@@ -552,7 +564,7 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 6960,
+      "tick": 7200,
       "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
@@ -576,7 +588,7 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 7200,
+      "tick": 7440,
       "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
@@ -596,18 +608,6 @@
       "velocityClass": "strong",
       "limb": "otherHand",
       "role": "core",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 7440,
-      "duration": 120,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     }

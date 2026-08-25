@@ -168,18 +168,6 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 2400,
-      "duration": 120,
-      "instrument": "tom",
-      "articulation": "floor",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "otherHand",
-      "role": "ornament",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
       "tick": 2880,
       "duration": 120,
       "instrument": "cymbal",
@@ -332,18 +320,6 @@
       "velocityClass": "normal",
       "limb": "otherHand",
       "role": "core",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 5280,
-      "duration": 120,
-      "instrument": "tom",
-      "articulation": "floor",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "otherHand",
-      "role": "ornament",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     }
@@ -368,6 +344,7 @@
     "tier": "B",
     "originalCoverage": "MISSING_OR_WEAK",
     "scoreState": "reviewed-adaptation",
+    "playabilityCorrections": 2,
     "evidence": {
       "taxonomyState": "literature-supported",
       "performanceEvidence": "not-mapped",

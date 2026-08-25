@@ -378,7 +378,15 @@
                     return Number.isInteger(newTrack) ? newTrack * steps + step : null;
                 }).filter(Number.isInteger))).sort((a,b)=>a-b);
             };
-            const cells = remapCells(pattern[0]);
+            let cells = remapCells(pattern[0]);
+            // Open/closed hi-hat and ride bow/bell are alternative articulations,
+            // never independent layers. Preserve the explicitly colored articulation.
+            const playableCells=new Set(cells);
+            for(let step=0;step<steps;step++){
+                if(playableCells.has(TRACK_ROLES.openHat*steps+step))playableCells.delete(TRACK_ROLES.closedHat*steps+step);
+                if(playableCells.has(TRACK_ROLES.bell*steps+step))playableCells.delete(TRACK_ROLES.ride*steps+step);
+            }
+            cells=Array.from(playableCells).sort((a,b)=>a-b);
             const kit = Math.round(Util.clamp(pattern[1], 0, CONFIG.KITS.length - 1, 0));
             const migratedVolumes = sourceTrackCount === 9 ? [
                 rawVolumes[0], 1, rawVolumes[1], rawVolumes[2], rawVolumes[3], rawVolumes[4], rawVolumes[5], rawVolumes[6], rawVolumes[7], rawVolumes[8]
@@ -3642,7 +3650,12 @@
             return VELOCITY_LEVEL_ORDER[Math.max(0, Math.min(4, Number(level) - 1))] || "normal";
         }
         setCellVelocity(index, velocity, ensureActive = true) {
-            if (ensureActive) this.seq.activeCells.add(index);
+            if (ensureActive) {
+                const steps=this.seq.signature.steps, track=Math.floor(index/steps), step=index%steps;
+                const counterpart=track===TRACK_ROLES.openHat?TRACK_ROLES.closedHat:track===TRACK_ROLES.closedHat?TRACK_ROLES.openHat:track===TRACK_ROLES.bell?TRACK_ROLES.ride:track===TRACK_ROLES.ride?TRACK_ROLES.bell:null;
+                if(counterpart!==null){const other=counterpart*steps+step;this.seq.clearCell(other);this.selectedCells?.delete(other);this.renderCell(other);}
+                this.seq.activeCells.add(index);
+            }
             this.seq.accentCells.delete(index); this.seq.strongCells.delete(index); this.seq.weakCells.delete(index); this.seq.ghostCells.delete(index);
             if (velocity === "accent") this.seq.accentCells.add(index);
             else if (velocity === "strong") this.seq.strongCells.add(index);

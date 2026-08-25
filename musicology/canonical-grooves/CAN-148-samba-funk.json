@@ -290,24 +290,24 @@
     {
       "tick": 3360,
       "duration": 120,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "rightFoot",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 3360,
-      "duration": 120,
       "instrument": "hihat",
       "articulation": "open",
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "timeHand",
       "role": "ornament",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 3360,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -614,24 +614,24 @@
     {
       "tick": 7200,
       "duration": 120,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "rightFoot",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 7200,
-      "duration": 120,
       "instrument": "hihat",
       "articulation": "open",
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "timeHand",
       "role": "ornament",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 7200,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },

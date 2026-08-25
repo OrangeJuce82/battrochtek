@@ -1,5 +1,6 @@
 import { readFile, readdir } from 'node:fs/promises';
 import { parseMidi } from './groove-import-lib.mjs';
+import { normalizePlayableEvents } from './canonical-groove-lib.mjs';
 const jsonDir=new URL('../musicology/canonical-grooves/',import.meta.url), midiDir=new URL('../musicology/midi/',import.meta.url);
 const files=(await readdir(jsonDir)).filter(x=>x.endsWith('.json')).sort();
 const ids=new Set(), midiFiles=new Set(await readdir(midiDir)); let errors=[];
@@ -11,6 +12,8 @@ for(const file of files){
   if(!Number.isFinite(g.ppq)||g.ppq<96) errors.push(`${g.id}: invalid PPQ`);
   const midi=file.replace(/\.json$/,'.mid'); if(!midiFiles.has(midi)) errors.push(`${g.id}: MIDI missing`); else { const parsed=parseMidi(await readFile(new URL(`../musicology/midi/${midi}`,import.meta.url))); if(!parsed.notes.length) errors.push(`${g.id}: MIDI has no drum notes`); }
   for(const e of g.events){ if(!Number.isFinite(e.tick)||e.tick<0||!e.instrument||!e.articulation||!e.role||!e.limb) errors.push(`${g.id}: malformed event`); }
+  const playability=normalizePlayableEvents(g.events);
+  if(playability.removed.length) errors.push(`${g.id}: ${playability.removed.length} unplayable collision(s): ${playability.removed.map(x=>`${x.tick}/${x.reason}/${x.event.instrument}:${x.event.articulation}`).join(', ')}`);
   if(!g.metadata?.scoreState) errors.push(`${g.id}: missing scoreState`);
   if(!g.metadata?.evidence?.taxonomyState) errors.push(`${g.id}: missing taxonomy evidence state`);
 }

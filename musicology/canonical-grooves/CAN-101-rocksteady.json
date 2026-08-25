@@ -24,14 +24,14 @@
       "source": "canonical-source"
     },
     {
-      "tick": 3840,
+      "tick": 0,
       "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
+      "instrument": "kick",
+      "articulation": "normal",
       "velocity": 120,
       "velocityClass": "accent",
-      "limb": "timeHand",
-      "role": "time",
+      "limb": "rightFoot",
+      "role": "core",
       "microTimingMs": 0,
       "source": "canonical-source"
     },
@@ -48,6 +48,30 @@
       "source": "canonical-source"
     },
     {
+      "tick": 720,
+      "duration": 108,
+      "instrument": "tom",
+      "articulation": "high",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "otherHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
+      "tick": 960,
+      "duration": 108,
+      "instrument": "tom",
+      "articulation": "high",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "otherHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
       "tick": 1440,
       "duration": 108,
       "instrument": "snare",
@@ -60,6 +84,30 @@
       "source": "canonical-source"
     },
     {
+      "tick": 1680,
+      "duration": 108,
+      "instrument": "tom",
+      "articulation": "high",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "otherHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
+      "tick": 1920,
+      "duration": 108,
+      "instrument": "tom",
+      "articulation": "high",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "otherHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
       "tick": 2400,
       "duration": 108,
       "instrument": "snare",
@@ -68,6 +116,18 @@
       "velocityClass": "soft",
       "limb": "otherHand",
       "role": "core",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
+      "tick": 2640,
+      "duration": 108,
+      "instrument": "tom",
+      "articulation": "high",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "otherHand",
+      "role": "ornament",
       "microTimingMs": 0,
       "source": "canonical-source"
     },
@@ -120,6 +180,30 @@
       "source": "canonical-source"
     },
     {
+      "tick": 3840,
+      "duration": 108,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 120,
+      "velocityClass": "accent",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
+      "tick": 3840,
+      "duration": 108,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 120,
+      "velocityClass": "accent",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
       "tick": 4320,
       "duration": 108,
       "instrument": "snare",
@@ -128,6 +212,30 @@
       "velocityClass": "soft",
       "limb": "otherHand",
       "role": "core",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
+      "tick": 4560,
+      "duration": 108,
+      "instrument": "tom",
+      "articulation": "high",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "otherHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
+      "tick": 4800,
+      "duration": 108,
+      "instrument": "tom",
+      "articulation": "high",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "otherHand",
+      "role": "ornament",
       "microTimingMs": 0,
       "source": "canonical-source"
     },
@@ -144,6 +252,30 @@
       "source": "canonical-source"
     },
     {
+      "tick": 5520,
+      "duration": 108,
+      "instrument": "tom",
+      "articulation": "high",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "otherHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
+      "tick": 5760,
+      "duration": 108,
+      "instrument": "tom",
+      "articulation": "high",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "otherHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
       "tick": 6240,
       "duration": 108,
       "instrument": "snare",
@@ -152,6 +284,18 @@
       "velocityClass": "soft",
       "limb": "otherHand",
       "role": "core",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
+      "tick": 6480,
+      "duration": 108,
+      "instrument": "tom",
+      "articulation": "high",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "otherHand",
+      "role": "ornament",
       "microTimingMs": 0,
       "source": "canonical-source"
     },
@@ -199,150 +343,6 @@
       "velocity": 120,
       "velocityClass": "accent",
       "limb": "otherHand",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 720,
-      "duration": 108,
-      "instrument": "tom",
-      "articulation": "high",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "otherHand",
-      "role": "ornament",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 960,
-      "duration": 108,
-      "instrument": "tom",
-      "articulation": "high",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "otherHand",
-      "role": "ornament",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 1680,
-      "duration": 108,
-      "instrument": "tom",
-      "articulation": "high",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "otherHand",
-      "role": "ornament",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 1920,
-      "duration": 108,
-      "instrument": "tom",
-      "articulation": "high",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "otherHand",
-      "role": "ornament",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 2640,
-      "duration": 108,
-      "instrument": "tom",
-      "articulation": "high",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "otherHand",
-      "role": "ornament",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 4560,
-      "duration": 108,
-      "instrument": "tom",
-      "articulation": "high",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "otherHand",
-      "role": "ornament",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 4800,
-      "duration": 108,
-      "instrument": "tom",
-      "articulation": "high",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "otherHand",
-      "role": "ornament",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 5520,
-      "duration": 108,
-      "instrument": "tom",
-      "articulation": "high",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "otherHand",
-      "role": "ornament",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 5760,
-      "duration": 108,
-      "instrument": "tom",
-      "articulation": "high",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "otherHand",
-      "role": "ornament",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 6480,
-      "duration": 108,
-      "instrument": "tom",
-      "articulation": "high",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "otherHand",
-      "role": "ornament",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 0,
-      "duration": 108,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 120,
-      "velocityClass": "accent",
-      "limb": "rightFoot",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 3840,
-      "duration": 108,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 120,
-      "velocityClass": "accent",
-      "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
       "source": "canonical-source"

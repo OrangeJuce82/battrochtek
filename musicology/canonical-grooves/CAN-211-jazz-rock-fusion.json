@@ -24,6 +24,18 @@
       "source": "canonical-source"
     },
     {
+      "tick": 0,
+      "duration": 108,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
       "tick": 240,
       "duration": 108,
       "instrument": "hihat",
@@ -204,6 +216,18 @@
       "source": "canonical-source"
     },
     {
+      "tick": 3840,
+      "duration": 108,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "canonical-source"
+    },
+    {
       "tick": 4080,
       "duration": 108,
       "instrument": "hihat",
@@ -368,30 +392,6 @@
       "velocityClass": "ghost",
       "limb": "timeHand",
       "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 0,
-      "duration": 108,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "rightFoot",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 3840,
-      "duration": 108,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "rightFoot",
-      "role": "core",
       "microTimingMs": 0,
       "source": "canonical-source"
     },

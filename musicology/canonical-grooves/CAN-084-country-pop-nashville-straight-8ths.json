@@ -159,11 +159,11 @@
       "tick": 3360,
       "duration": 120,
       "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
+      "articulation": "open",
+      "velocity": 82,
+      "velocityClass": "normal",
       "limb": "timeHand",
-      "role": "time",
+      "role": "ornament",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -176,18 +176,6 @@
       "velocityClass": "strong",
       "limb": "rightFoot",
       "role": "core",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 3360,
-      "duration": 120,
-      "instrument": "hihat",
-      "articulation": "open",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "ornament",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -339,11 +327,11 @@
       "tick": 7200,
       "duration": 120,
       "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
+      "articulation": "open",
+      "velocity": 82,
+      "velocityClass": "normal",
       "limb": "timeHand",
-      "role": "time",
+      "role": "ornament",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -356,18 +344,6 @@
       "velocityClass": "strong",
       "limb": "rightFoot",
       "role": "core",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 7200,
-      "duration": 120,
-      "instrument": "hihat",
-      "articulation": "open",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "ornament",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     }
@@ -398,6 +374,7 @@
     "tier": "A",
     "originalCoverage": "NAMED_MATCH",
     "scoreState": "reviewed-adaptation",
+    "playabilityCorrections": 2,
     "evidence": {
       "taxonomyState": "literature-supported",
       "performanceEvidence": "human-dataset-available",

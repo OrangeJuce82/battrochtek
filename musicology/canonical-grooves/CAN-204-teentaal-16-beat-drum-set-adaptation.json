@@ -96,18 +96,6 @@
       "source": "pedagogical-adaptation"
     },
     {
-      "tick": 4800,
-      "duration": 120,
-      "instrument": "snare",
-      "articulation": "cross-stick",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "otherHand",
-      "role": "cycle-high",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
       "tick": 5760,
       "duration": 120,
       "instrument": "kick",
@@ -116,30 +104,6 @@
       "velocityClass": "strong",
       "limb": "rightFoot",
       "role": "cycle-low",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 5760,
-      "duration": 120,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "rightFoot",
-      "role": "cycle-low",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 6720,
-      "duration": 120,
-      "instrument": "snare",
-      "articulation": "cross-stick",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "otherHand",
-      "role": "cycle-high",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -234,6 +198,7 @@
       "low": "kick (bayan/low composite function)",
       "high": "cross-stick (dayan/high composite function)"
     },
+    "playabilityCorrections": 3,
     "evidence": {
       "taxonomyState": "literature-supported",
       "performanceEvidence": "not-mapped",

@@ -171,11 +171,11 @@
       "tick": 3360,
       "duration": 120,
       "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "articulation": "open",
+      "velocity": 104,
+      "velocityClass": "strong",
       "limb": "timeHand",
-      "role": "time",
+      "role": "ornament",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -188,18 +188,6 @@
       "velocityClass": "strong",
       "limb": "rightFoot",
       "role": "core",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 3360,
-      "duration": 120,
-      "instrument": "hihat",
-      "articulation": "open",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "timeHand",
-      "role": "ornament",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -363,11 +351,11 @@
       "tick": 7200,
       "duration": 120,
       "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "articulation": "open",
+      "velocity": 104,
+      "velocityClass": "strong",
       "limb": "timeHand",
-      "role": "time",
+      "role": "ornament",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -380,18 +368,6 @@
       "velocityClass": "strong",
       "limb": "rightFoot",
       "role": "core",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 7200,
-      "duration": 120,
-      "instrument": "hihat",
-      "articulation": "open",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "timeHand",
-      "role": "ornament",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     }
@@ -424,6 +400,7 @@
       "rightFoot": "foundation",
       "leftFoot": "minimal"
     },
+    "playabilityCorrections": 2,
     "evidence": {
       "taxonomyState": "needs-review",
       "performanceEvidence": "human-dataset-available",

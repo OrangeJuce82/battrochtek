@@ -13,12 +13,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "e821e0b8874b93ef",
+      "fingerprint": "50da1c6b9a6ea543",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 26,
         "json": "musicology/canonical-grooves/CAN-182-bikutsi.json",
         "midi": "musicology/midi/CAN-182-bikutsi.mid"
       },
@@ -57,7 +57,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "a131d19d1f87cae4",
+      "fingerprint": "e2b2d6c26c1915e3",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -109,7 +109,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "34fb74678099cb18",
+      "fingerprint": "1f5e40e3af3fa755",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -153,12 +153,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "d44c7a7cc7311a66",
+      "fingerprint": "b599ec037265935a",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 26,
         "json": "musicology/canonical-grooves/CAN-180-soukous.json",
         "midi": "musicology/midi/CAN-180-soukous.mid"
       },
@@ -205,7 +205,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "7587ad4d3c00edd4",
+      "fingerprint": "b5d2f51a5b8d3db8",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -249,7 +249,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "0196fb886594b08f",
+      "fingerprint": "c2a48d4bef8c95cb",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -293,7 +293,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.72,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "066cd197232a6405",
+      "fingerprint": "b6bfacc9b74d0d63",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -329,12 +329,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "e32703fbe12e6278",
+      "fingerprint": "5e7e552909df9abe",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 26,
         "json": "musicology/canonical-grooves/CAN-184-mbaqanga.json",
         "midi": "musicology/midi/CAN-184-mbaqanga.mid"
       },
@@ -373,12 +373,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "c1a4ff675241a06e",
+      "fingerprint": "ae67b4531f2574ba",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 24,
+        "eventCount": 20,
         "json": "musicology/canonical-grooves/CAN-185-south-african-house.json",
         "midi": "musicology/midi/CAN-185-south-african-house.mid"
       },
@@ -409,12 +409,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "92c4935fec372274",
+      "fingerprint": "007d67c6e55fa445",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 40,
+        "eventCount": 38,
         "json": "musicology/canonical-grooves/CAN-173-afrobeat.json",
         "midi": "musicology/midi/CAN-173-afrobeat.mid"
       },
@@ -469,7 +469,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "5bd5e51dc9d920a3",
+      "fingerprint": "732040ca8094a293",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -513,7 +513,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "432a27823d9c703d",
+      "fingerprint": "40fddb6f886f157c",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -557,7 +557,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "e1c4df2a85fd456a",
+      "fingerprint": "0e3d94ddd0cc1147",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -609,7 +609,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "22e6cea5beb4eedf",
+      "fingerprint": "ba39e6d25f33f1ad",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -653,7 +653,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "15a0a559a9d46c36",
+      "fingerprint": "f99b85d028530604",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -697,7 +697,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "5cbd4a7a0e1896bb",
+      "fingerprint": "074d6e40e23ec7fe",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -741,7 +741,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "16c398e436560fa9",
+      "fingerprint": "59e24ac15befed62",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -793,7 +793,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "090f296ac25e1fd6",
+      "fingerprint": "c0815e3d5670b33f",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -845,7 +845,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "c6a800a30e730c83",
+      "fingerprint": "59733f6c55cd6812",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -897,7 +897,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "43fc14f14a86c5d2",
+      "fingerprint": "9668d47650fcf147",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -949,12 +949,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "33127ef9fbc7fd37",
+      "fingerprint": "d1097861b0eb1cc6",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 34,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-064-blues-rock-shuffle.json",
         "midi": "musicology/midi/CAN-064-blues-rock-shuffle.mid"
       },
@@ -1010,7 +1010,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "befb65d49b019ea4",
+      "fingerprint": "6d569c26ccb657f7",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -1078,7 +1078,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "bdfc0df953dcf583",
+      "fingerprint": "3c82e9547553bc8c",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -1148,7 +1148,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "de9e9e838989d558",
+      "fingerprint": "c7ee8f549160608c",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -1202,7 +1202,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "9e3d63de699f9529",
+      "fingerprint": "ab53b8c6326cfcc1",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -1263,7 +1263,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "b05791c5e3bb0739",
+      "fingerprint": "71ff07f89b5ddfbc",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -1324,7 +1324,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "1718a4433386230d",
+      "fingerprint": "eedb4d3bdc0231f0",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -1392,7 +1392,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "df0fbc720dbfb2c1",
+      "fingerprint": "236ae9c1540622ae",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -1453,7 +1453,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.62,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "7324bc59a3a3e8a9",
+      "fingerprint": "d20416ff593cea42",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -1483,7 +1483,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.62,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "5f323c2d40b95a50",
+      "fingerprint": "c1923f77e79b9ac9",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -1523,12 +1523,12 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "8ed23635272249b5",
+      "fingerprint": "397f4cee6f5ce6fb",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 32,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-164-merengue.json",
         "midi": "musicology/midi/CAN-164-merengue.mid"
       },
@@ -1553,7 +1553,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.62,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "dbf58c45783b7889",
+      "fingerprint": "ad6003224867b9de",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -1583,7 +1583,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "bcf9b5cc86e72c60",
+      "fingerprint": "ae96f03292ca7272",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -1613,7 +1613,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "830dedda0d020b65",
+      "fingerprint": "33bafa0c076cc081",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -1643,12 +1643,12 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "1ffff3b0d22dcc2b",
+      "fingerprint": "5f7c6067d97361a9",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 30,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-170-kompa.json",
         "midi": "musicology/midi/CAN-170-kompa.mid"
       },
@@ -1673,7 +1673,7 @@
       "status": "high",
       "confidence": 0.62,
       "sourceType": "canonical-curated",
-      "fingerprint": "26f34e367ec98252",
+      "fingerprint": "4394c4ef72ca2923",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -1713,12 +1713,12 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "7a8212ae9c2588ed",
+      "fingerprint": "c2b8236f05af9919",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 32,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-171-zouk.json",
         "midi": "musicology/midi/CAN-171-zouk.mid"
       },
@@ -1743,7 +1743,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "56bb798619e69d7a",
+      "fingerprint": "0069d145968281e9",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -1798,12 +1798,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "5cab07be114455e4",
+      "fingerprint": "4a21d32f45d12cb2",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 30,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-084-country-pop-nashville-straight-8ths.json",
         "midi": "musicology/midi/CAN-084-country-pop-nashville-straight-8ths.mid"
       },
@@ -1852,12 +1852,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "f674f3fd8841267a",
+      "fingerprint": "fc0ad6e40f837413",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 34,
+        "eventCount": 30,
         "json": "musicology/canonical-grooves/CAN-085-country-rock.json",
         "midi": "musicology/midi/CAN-085-country-rock.mid"
       },
@@ -1906,7 +1906,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "32d85455bff15c96",
+      "fingerprint": "881c9c299e5f4787",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -1967,7 +1967,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "a8fc71fa9453946a",
+      "fingerprint": "0c5192cc9b613fba",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -2021,7 +2021,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "05aef8660bbe8cd0",
+      "fingerprint": "f99599b8e90bff20",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -2082,7 +2082,7 @@
       "status": "reviewed-adaptation-tradition-caveat",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "74f517a3ca9abb09",
+      "fingerprint": "0eeae516532c7f82",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -2144,12 +2144,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "8556026b51838a78",
+      "fingerprint": "88b6a3e855b64f81",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 34,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-088-rockabilly-shuffle.json",
         "midi": "musicology/midi/CAN-088-rockabilly-shuffle.mid"
       },
@@ -2214,7 +2214,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "0eb4ec36bd6474bd",
+      "fingerprint": "fb7ba968b62b17b1",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -2282,7 +2282,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "5c02b906152d731b",
+      "fingerprint": "759f5b021538104d",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -2353,7 +2353,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "fe611e27b0432ec7",
+      "fingerprint": "9e640de7850c5f37",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -2383,7 +2383,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "9268ebe346585df9",
+      "fingerprint": "917d771910a20df6",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -2413,12 +2413,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "ccebd55478eb2e0c",
+      "fingerprint": "ee099f7c8c9ea98a",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 52,
+        "eventCount": 50,
         "json": "musicology/canonical-grooves/CAN-118-breakbeat-big-beat.json",
         "midi": "musicology/midi/CAN-118-breakbeat-big-beat.mid"
       },
@@ -2449,12 +2449,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "ebeff506d3b12067",
+      "fingerprint": "4ecf8214d8fd80db",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 36,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-111-classic-house.json",
         "midi": "musicology/midi/CAN-111-classic-house.mid"
       },
@@ -2509,12 +2509,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "1db886b33fefaba7",
+      "fingerprint": "9ea90e606c503eab",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 32,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-112-deep-house.json",
         "midi": "musicology/midi/CAN-112-deep-house.mid"
       },
@@ -2561,12 +2561,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "916491d7a905243a",
+      "fingerprint": "c407e78db8d9b9c1",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 30,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-115-detroit-electro.json",
         "midi": "musicology/midi/CAN-115-detroit-electro.mid"
       },
@@ -2597,21 +2597,21 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "f0e2f20f2cb57ed3",
+      "fingerprint": "9ec3c673006b958c",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 46,
         "json": "musicology/canonical-grooves/CAN-110-disco.json",
         "midi": "musicology/midi/CAN-110-disco.mid"
       },
       "musicology": {
         "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
         "distinctiveFeatures": [
-          "four-on-the-floor bass drum",
+          "four-on-the-floor bass drum with a phrase-end pickup",
           "backbeat on 2 and 4",
-          "offbeat open hi-hat disco lift"
+          "sixteenth-note hi-hat motion with offbeat open hi-hat disco lift"
         ],
         "references": [
           {
@@ -2641,7 +2641,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "7b06e38f097dd0b7",
+      "fingerprint": "fecef1313a34ce28",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -2693,7 +2693,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "c1d0fd5c5b93d371",
+      "fingerprint": "20b888a6a57e0e83",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -2737,7 +2737,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "cdd1683b05249841",
+      "fingerprint": "ddcde5d5ea30ae13",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -2782,7 +2782,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "45615fa28ac5c385",
+      "fingerprint": "894c7e6b2022f79e",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -2818,7 +2818,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "83d970434b5f9918",
+      "fingerprint": "b7d927184f5f2e15",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -2878,7 +2878,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "1715024bf67c482c",
+      "fingerprint": "60b8cd10a314f0e9",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -2930,12 +2930,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "d026cdaba2bb32d1",
+      "fingerprint": "3f2eea492d525ef2",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 26,
         "json": "musicology/canonical-grooves/CAN-125-synthwave.json",
         "midi": "musicology/midi/CAN-125-synthwave.mid"
       },
@@ -2966,12 +2966,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "537f909ac3768197",
+      "fingerprint": "29a2b7d47581d8f1",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 24,
+        "eventCount": 20,
         "json": "musicology/canonical-grooves/CAN-114-techno.json",
         "midi": "musicology/midi/CAN-114-techno.mid"
       },
@@ -3019,12 +3019,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "f4e110d6eb973d55",
+      "fingerprint": "58d46e9c7ef96e14",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 52,
+        "eventCount": 44,
         "json": "musicology/canonical-grooves/CAN-122-trance.json",
         "midi": "musicology/midi/CAN-122-trance.mid"
       },
@@ -3071,12 +3071,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "e671e5adace04f51",
+      "fingerprint": "61ed5f8ffc4d565c",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 32,
+        "eventCount": 30,
         "json": "musicology/canonical-grooves/CAN-121-trip-hop.json",
         "midi": "musicology/midi/CAN-121-trip-hop.mid"
       },
@@ -3107,7 +3107,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "c6bd987c3565d255",
+      "fingerprint": "6241aed6c4ab716d",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3151,7 +3151,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "d85592ceed6fb84d",
+      "fingerprint": "987aa480cb8dc8f4",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3181,7 +3181,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "f30f58ed4bce1fc6",
+      "fingerprint": "6dedeba13d661724",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3211,7 +3211,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "0e66e415aa3ff333",
+      "fingerprint": "521bef298883bc2c",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3241,7 +3241,7 @@
       "status": "high",
       "confidence": 0.87,
       "sourceType": "canonical-curated",
-      "fingerprint": "75b47536162a2b8f",
+      "fingerprint": "d07dbeccb95ccf2c",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3271,7 +3271,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "4b1dd60cf6ae2f06",
+      "fingerprint": "a1ba7300902b5e3a",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3301,7 +3301,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.45,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "457bcd55292d8d67",
+      "fingerprint": "0d8e176bb694cc07",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3331,7 +3331,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "7ce045cf5d6cd0d5",
+      "fingerprint": "ab096baf048437fd",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3361,7 +3361,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.45,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "3842c5469beda5e0",
+      "fingerprint": "562aef42e663c330",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3391,7 +3391,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.45,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "123d45af5ab7044a",
+      "fingerprint": "d817832e574cc07d",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3421,7 +3421,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.45,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "b7d253618df246a1",
+      "fingerprint": "09ff41799424ad17",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3451,7 +3451,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.45,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "2bb834c14707d711",
+      "fingerprint": "a431f55c7e796670",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3481,7 +3481,7 @@
       "status": "high",
       "confidence": 0.87,
       "sourceType": "canonical-curated",
-      "fingerprint": "7705bfd4fd97ac97",
+      "fingerprint": "26e519fb56a5dde9",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3511,7 +3511,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.45,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "b9863f45bbb59bbe",
+      "fingerprint": "0e703b6fe66e9cf0",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3541,7 +3541,7 @@
       "status": "medium",
       "confidence": 0.548,
       "sourceType": "canonical-curated",
-      "fingerprint": "4b50507845ee6c5a",
+      "fingerprint": "18d5ddc60f7ce4fe",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3571,7 +3571,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "96efff7b33c1231e",
+      "fingerprint": "ca091ea73b8f540d",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3601,7 +3601,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.45,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "89e650d6227ad6b6",
+      "fingerprint": "0483fe6899cdd25f",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3631,7 +3631,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "05e4ee1036b64405",
+      "fingerprint": "96f0dcd280fe5707",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3677,12 +3677,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "b27a9822f559d850",
+      "fingerprint": "4b924157812cad0f",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 32,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-056-disco-funk-chic.json",
         "midi": "musicology/midi/CAN-056-disco-funk-chic.mid"
       },
@@ -3731,7 +3731,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "d147ca2b44dfb910",
+      "fingerprint": "22d7df8f4fb0ddba",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3776,7 +3776,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "c57b4166aba200ca",
+      "fingerprint": "b9a1c85a2dd43529",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3822,12 +3822,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "99260b0572a5b0d0",
+      "fingerprint": "a5e79dc432fc698b",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 42,
+        "eventCount": 40,
         "json": "musicology/canonical-grooves/CAN-050-gospel-pocket.json",
         "midi": "musicology/midi/CAN-050-gospel-pocket.mid"
       },
@@ -3868,12 +3868,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "208a5fbfe68c59ef",
+      "fingerprint": "4cb8fc0811f8a461",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 40,
+        "eventCount": 38,
         "json": "musicology/canonical-grooves/CAN-051-gospel-shout.json",
         "midi": "musicology/midi/CAN-051-gospel-shout.mid"
       },
@@ -3914,7 +3914,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "8476f0195fcbf413",
+      "fingerprint": "a875606b8d94c80b",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -3960,7 +3960,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "d6e96cf9f3c7d242",
+      "fingerprint": "b51c1fc9d787d3dc",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -4006,7 +4006,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "4a1669f546a3d5b5",
+      "fingerprint": "7562ad17ee0226fe",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -4052,7 +4052,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "9805b98f489ef66a",
+      "fingerprint": "610c6c476f3a926e",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -4098,7 +4098,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "4437da5ad16c2d27",
+      "fingerprint": "bfabde40e175bd49",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -4145,7 +4145,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "1442fb1970d64b3c",
+      "fingerprint": "9ebf198345379e00",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -4191,7 +4191,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "cc7433ee8d1e2cc0",
+      "fingerprint": "bd7c68b137c60bc8",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -4237,7 +4237,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "56f87e6306573d69",
+      "fingerprint": "50a19b17c766a7b2",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -4283,12 +4283,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "90eb49578222166b",
+      "fingerprint": "83e6adfe4dbd5c97",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 32,
+        "eventCount": 30,
         "json": "musicology/canonical-grooves/CAN-047-philly-soul.json",
         "midi": "musicology/midi/CAN-047-philly-soul.mid"
       },
@@ -4329,7 +4329,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "78ed57364771e43a",
+      "fingerprint": "839e7d7ff40d8857",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -4375,7 +4375,7 @@
       "status": "medium",
       "confidence": 0.572,
       "sourceType": "canonical-curated",
-      "fingerprint": "b9487e9f0d3ed941",
+      "fingerprint": "6141d892977bbea5",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -4431,12 +4431,12 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "8219d31ee89f2f6b",
+      "fingerprint": "1825b1efce3a8aaf",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 54,
+        "eventCount": 52,
         "json": "musicology/canonical-grooves/CAN-212-afrobeat-funk.json",
         "midi": "musicology/midi/CAN-212-afrobeat-funk.mid"
       },
@@ -4487,12 +4487,12 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "3823036f1b94fa24",
+      "fingerprint": "57be988692cbf48b",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 54,
+        "eventCount": 52,
         "json": "musicology/canonical-grooves/CAN-208-brazilian-funk.json",
         "midi": "musicology/midi/CAN-208-brazilian-funk.mid"
       },
@@ -4543,7 +4543,7 @@
       "status": "provisional",
       "confidence": 0.473,
       "sourceType": "canonical-curated",
-      "fingerprint": "5dbce4f5ea0d6592",
+      "fingerprint": "ec610c7b7f5e9244",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -4583,12 +4583,12 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.62,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "7335f8d61052888b",
+      "fingerprint": "aece30e9129ecc31",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 30,
+        "eventCount": 29,
         "json": "musicology/canonical-grooves/CAN-209-latin-rock.json",
         "midi": "musicology/midi/CAN-209-latin-rock.mid"
       },
@@ -4623,12 +4623,12 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "a1c0525a247df836",
+      "fingerprint": "45e2bb8ee8f17e09",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 26,
         "json": "musicology/canonical-grooves/CAN-210-reggae-rock.json",
         "midi": "musicology/midi/CAN-210-reggae-rock.mid"
       },
@@ -4687,7 +4687,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.62,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "accea6f3483bdfd3",
+      "fingerprint": "7486525c6861d68e",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -4717,7 +4717,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.79,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "3f2548c844279d8f",
+      "fingerprint": "ded77a45a920e9ad",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -4763,7 +4763,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.79,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "47bf1bb80a82637d",
+      "fingerprint": "6388d64db0826051",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -4808,7 +4808,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.79,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "5fedda51a0cea3fb",
+      "fingerprint": "d2c486170a38327e",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -4853,7 +4853,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.79,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "d9fc95ac8af04b21",
+      "fingerprint": "99898658154c06bf",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -4898,7 +4898,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.79,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "9f0f5ead6c4c8f55",
+      "fingerprint": "62fa32f923b797c2",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -4943,7 +4943,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.79,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "2fcc6328742dbfd1",
+      "fingerprint": "4230e1282ce8b66c",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -4988,12 +4988,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.79,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "c9d4cec760625350",
+      "fingerprint": "53861f33f43ebbad",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 96,
+        "eventCount": 74,
         "json": "musicology/canonical-grooves/CAN-098-sample-break-pocket.json",
         "midi": "musicology/midi/CAN-098-sample-break-pocket.mid"
       },
@@ -5033,7 +5033,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.79,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "9be791dce6fa9409",
+      "fingerprint": "497f6683bce46327",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5078,7 +5078,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.79,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "45143710136c0bf3",
+      "fingerprint": "6047b6d6c5f7a5f9",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5123,12 +5123,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.79,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "ca927b6913d5fecf",
+      "fingerprint": "44e72702a208e18b",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 32,
+        "eventCount": 30,
         "json": "musicology/canonical-grooves/CAN-091-west-coast-g-funk.json",
         "midi": "musicology/midi/CAN-091-west-coast-g-funk.mid"
       },
@@ -5168,12 +5168,12 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.62,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "01f1911bb88c2a6d",
+      "fingerprint": "f1f8ac41cd78fb4f",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 29,
+        "eventCount": 27,
         "json": "musicology/canonical-grooves/CAN-108-digital-dancehall-ragga.json",
         "midi": "musicology/midi/CAN-108-digital-dancehall-ragga.mid"
       },
@@ -5208,7 +5208,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.62,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "a0fc0ea9c2252e5b",
+      "fingerprint": "82303361213e9daf",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5238,12 +5238,12 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "850781b2ad3b378a",
+      "fingerprint": "fdc020a7a9375983",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 28,
+        "eventCount": 26,
         "json": "musicology/canonical-grooves/CAN-107-early-dancehall.json",
         "midi": "musicology/midi/CAN-107-early-dancehall.mid"
       },
@@ -5278,7 +5278,7 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "88fc416d47c0b5b5",
+      "fingerprint": "5b259dde7c500ccc",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5308,12 +5308,12 @@
       "status": "pedagogical-adaptation-needs-review",
       "confidence": 0.62,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "fingerprint": "62a605acd7d996bd",
+      "fingerprint": "6b4aaa291c574d27",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 29,
+        "eventCount": 27,
         "json": "musicology/canonical-grooves/CAN-109-modern-dancehall.json",
         "midi": "musicology/midi/CAN-109-modern-dancehall.mid"
       },
@@ -5348,7 +5348,7 @@
       "status": "high",
       "confidence": 0.62,
       "sourceType": "canonical-curated",
-      "fingerprint": "e1ad2073720a790a",
+      "fingerprint": "5d6b3dccd39f6e9f",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5388,7 +5388,7 @@
       "status": "literature-guided-score-v1",
       "confidence": 0.93,
       "sourceType": "literature-guided-drumset-archetype",
-      "fingerprint": "2080a9c9dd3c4f35",
+      "fingerprint": "97263e7d2a8fd2b2",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5468,7 +5468,7 @@
       "status": "literature-guided-score-v1",
       "confidence": 0.82,
       "sourceType": "literature-guided-drumset-archetype",
-      "fingerprint": "8123697933816ea9",
+      "fingerprint": "f928263ebe867e5e",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5548,7 +5548,7 @@
       "status": "literature-guided-score-v1",
       "confidence": 0.95,
       "sourceType": "literature-guided-drumset-archetype",
-      "fingerprint": "c617e0ac045532d5",
+      "fingerprint": "52cba225ea3ccde0",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5624,7 +5624,7 @@
       "status": "provisional",
       "confidence": 0.42,
       "sourceType": "canonical-curated",
-      "fingerprint": "bcc89b31b654c850",
+      "fingerprint": "b304dc6e6c991146",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5672,7 +5672,7 @@
       "status": "medium",
       "confidence": 0.66,
       "sourceType": "canonical-curated",
-      "fingerprint": "a635493cf68172cd",
+      "fingerprint": "6966dbf0555d084f",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5712,7 +5712,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "6b32ce5532b3760f",
+      "fingerprint": "433998d79b6639d1",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5782,7 +5782,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "9c5d1b2739e08196",
+      "fingerprint": "da38b27295aa77f7",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5836,7 +5836,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "7367735893895aeb",
+      "fingerprint": "a3d8351253400989",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5889,7 +5889,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "03e8266c313beda0",
+      "fingerprint": "264b0e2026019687",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5943,7 +5943,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "257d5d185c3cdf99",
+      "fingerprint": "8a33b25a6b353204",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -5997,7 +5997,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "8ee2f5add967534c",
+      "fingerprint": "57e5f689f0133c7e",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -6051,7 +6051,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "2b5f7c5337eb2b9a",
+      "fingerprint": "bb192cf182065422",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -6105,7 +6105,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "c1e8fdf1d6340162",
+      "fingerprint": "59c75fdc8d803fd9",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -6159,7 +6159,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "39a473cc051e91c1",
+      "fingerprint": "f46f9945cbb516e7",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -6213,7 +6213,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "3fd8d93bddd83687",
+      "fingerprint": "27b6ac997141a24a",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -6267,7 +6267,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "cf57d19ff3bb654c",
+      "fingerprint": "2f718142b4d65817",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -6322,7 +6322,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "dd2b5530765ce9a7",
+      "fingerprint": "67384c2ad84c5fcc",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -6376,7 +6376,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "1fbfc76947d640ef",
+      "fingerprint": "1b59d5ae7f999d81",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -6430,7 +6430,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "65abacd1a1c53ce5",
+      "fingerprint": "692c4a133271d1f8",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -6484,7 +6484,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "38a32a25ec4f2bfa",
+      "fingerprint": "3c32d050e056bb6c",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -6554,7 +6554,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "0aec15ecad58215d",
+      "fingerprint": "aa7dbd2f203fdcd0",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -6648,7 +6648,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "814c0d0a3d721dc1",
+      "fingerprint": "73418d70a62371b6",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -6725,7 +6725,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "91be03da84332234",
+      "fingerprint": "730e200e381c3ffa",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -6794,7 +6794,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "54c1fcdae5e11214",
+      "fingerprint": "4ece47734d0b7cf0",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -6872,7 +6872,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "feb6e55963b392c9",
+      "fingerprint": "e7b8d8acdbbab627",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -6941,7 +6941,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "6aad9cd12505b5ab",
+      "fingerprint": "8d008b703e5c137f",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -7035,7 +7035,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "6634963e95370c3e",
+      "fingerprint": "ab7de53b43a1a567",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -7129,7 +7129,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "907eda0ca73dedc3",
+      "fingerprint": "07f41a0b725f20ad",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -7222,7 +7222,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "2ea30015b5ceab0d",
+      "fingerprint": "4a4f728982fbcaf0",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -7315,7 +7315,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "9fbbfc9342688fc6",
+      "fingerprint": "2052cf0539a19ef2",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -7424,7 +7424,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "015ded40bb63729f",
+      "fingerprint": "5583f5738e4376b2",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -7484,7 +7484,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "c19d5221f506bac6",
+      "fingerprint": "0798fabee113eef8",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -7537,7 +7537,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "262444192d045c20",
+      "fingerprint": "4ee66b9575ee2e5a",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -7606,7 +7606,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "27a42e028431dd61",
+      "fingerprint": "97e79db6b9e4785d",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -7658,7 +7658,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "c3de095ccc7863d0",
+      "fingerprint": "1878f3ec6087249b",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -7711,7 +7711,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "f9d356c44f509b2a",
+      "fingerprint": "5a157d4787416d5b",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -7772,7 +7772,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "b76a8ec01da7d8cd",
+      "fingerprint": "1d3594e6a194d82a",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -7857,7 +7857,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "fcbe190958d5628e",
+      "fingerprint": "af7e9373680d3013",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -7911,7 +7911,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "11208e0b70ed9ece",
+      "fingerprint": "63e348729fe63133",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -7989,7 +7989,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "e494d421a57f5e65",
+      "fingerprint": "1e79c1fa3c43cd2f",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -8043,7 +8043,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "cf233ac560e8aa37",
+      "fingerprint": "ad216a7478840911",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -8113,7 +8113,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "f6eb67449f8594c7",
+      "fingerprint": "eecfc3ab05ae53d1",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -8167,7 +8167,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "4fb7b9231b8f7814",
+      "fingerprint": "f9eaf60c9a0dc453",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -8221,7 +8221,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "e13f70e9d167b1a0",
+      "fingerprint": "29969ddaaee9ca97",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -8275,7 +8275,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "e91cc8a1b95560aa",
+      "fingerprint": "ab04eb43f9e36817",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -8352,7 +8352,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "c8e3ce1ea86d40df",
+      "fingerprint": "3e4438be58ee733b",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -8429,7 +8429,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "790c8dd52570dc7b",
+      "fingerprint": "57e9fe9824555ddf",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -8506,7 +8506,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "323adf085431418b",
+      "fingerprint": "b15c0f22a5333c10",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -8575,7 +8575,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "5ffca65a581ef88c",
+      "fingerprint": "973594328963d036",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -8636,7 +8636,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "c96712549133ea37",
+      "fingerprint": "efb7f69b12cd9865",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -8703,7 +8703,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "813dffbaff049f3e",
+      "fingerprint": "611cf85154ef3a53",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -8772,7 +8772,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "cfac54f178ef83cc",
+      "fingerprint": "799f5b03e86cf14f",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -8833,7 +8833,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "f9c50bb1915bf6e9",
+      "fingerprint": "e6980e488d655b00",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -8901,7 +8901,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "6a0cd6017e6c0dd3",
+      "fingerprint": "6d3e922afd29882e",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -8961,7 +8961,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "d90a886d78e1a97b",
+      "fingerprint": "9b3c503a1c90d468",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -9020,7 +9020,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "a19ddb81ad0babca",
+      "fingerprint": "ff5843c1073424b7",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -9073,7 +9073,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "0dafb3f70dff4646",
+      "fingerprint": "9210374217eadcf6",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -9126,12 +9126,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "724e79bf27127eef",
+      "fingerprint": "a5aeac11fa8b7f3d",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 12,
+        "eventCount": 10,
         "json": "musicology/canonical-grooves/CAN-198-chiftetelli.json",
         "midi": "musicology/midi/CAN-198-chiftetelli.mid"
       },
@@ -9179,7 +9179,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "d2804d14653c3040",
+      "fingerprint": "5ec9235c535d9479",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -9232,7 +9232,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "b519472a997e7b4e",
+      "fingerprint": "3bcb73a1a928a01f",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -9284,12 +9284,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "a9b88859dc6fec25",
+      "fingerprint": "2b265d917ef496fd",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 14,
+        "eventCount": 11,
         "json": "musicology/canonical-grooves/CAN-197-masmoudi-kabir.json",
         "midi": "musicology/midi/CAN-197-masmoudi-kabir.mid"
       },
@@ -9337,7 +9337,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "0d60ae0fc6472077",
+      "fingerprint": "2c94dd1389f4dac8",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -9390,7 +9390,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.68,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "ddee52e9cc528af3",
+      "fingerprint": "f56a4149c4b4ec1e",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -9424,7 +9424,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.68,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "458efdff017e7002",
+      "fingerprint": "20d6a78f73ca81eb",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -9458,12 +9458,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.72,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "5d3a68ffa32fdeaf",
+      "fingerprint": "77a8585c391a45f7",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 32,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-191-rai.json",
         "midi": "musicology/midi/CAN-191-rai.mid"
       },
@@ -9491,12 +9491,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "56b8119a435820ca",
+      "fingerprint": "f83cf8a541b84578",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 32,
+        "eventCount": 30,
         "json": "musicology/canonical-grooves/CAN-027-alternative-grunge.json",
         "midi": "musicology/midi/CAN-027-alternative-grunge.mid"
       },
@@ -9537,12 +9537,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "d48b63c8c2dac230",
+      "fingerprint": "972a6b88d74eb708",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 32,
+        "eventCount": 30,
         "json": "musicology/canonical-grooves/CAN-023-arena-rock.json",
         "midi": "musicology/midi/CAN-023-arena-rock.mid"
       },
@@ -9583,7 +9583,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "b935bbf2999a7c14",
+      "fingerprint": "0b3d431dd063192d",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -9629,7 +9629,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "5b3c4ea46646bb2c",
+      "fingerprint": "1b6f7ddee27958f2",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -9675,7 +9675,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "d8b54a5a04ad079f",
+      "fingerprint": "6feabc2c6c614252",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -9721,7 +9721,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "8d7056148cdf7f42",
+      "fingerprint": "2b6ef0be43fa2afd",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -9767,7 +9767,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "7e63d90bef13f384",
+      "fingerprint": "1bc8736156d010e4",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -9813,7 +9813,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "cc91d5b06dfaa2e9",
+      "fingerprint": "288c320f6d9ba2f4",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -9859,12 +9859,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "d082b0600994c4a4",
+      "fingerprint": "42578207d06ca93c",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 36,
+        "eventCount": 32,
         "json": "musicology/canonical-grooves/CAN-022-hard-rock.json",
         "midi": "musicology/midi/CAN-022-hard-rock.mid"
       },
@@ -9905,7 +9905,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "0fe7126a7bfec123",
+      "fingerprint": "9050c17701820d1d",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -9951,7 +9951,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "05159d8013fcb3f9",
+      "fingerprint": "e193570cfdf1b202",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -9997,7 +9997,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "e46df728bd9567a8",
+      "fingerprint": "762d6d599f05ae26",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -10043,12 +10043,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "3642f89d6b2afdb7",
+      "fingerprint": "f3fa2795c23b4784",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 36,
+        "eventCount": 34,
         "json": "musicology/canonical-grooves/CAN-039-metalcore-half-time.json",
         "midi": "musicology/midi/CAN-039-metalcore-half-time.mid"
       },
@@ -10089,7 +10089,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "d373a64fe592eb70",
+      "fingerprint": "aba6d53cc15c33f1",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -10135,7 +10135,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "e0d1a0bd4a022341",
+      "fingerprint": "045629d0eb4b368c",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -10181,7 +10181,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "3e2f401c44f95626",
+      "fingerprint": "5a0c701efe10c08e",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -10227,12 +10227,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "e6f3f2f036e9bf5d",
+      "fingerprint": "e584bb1dbf6abdc8",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 48,
+        "eventCount": 44,
         "json": "musicology/canonical-grooves/CAN-030-post-punk-new-wave.json",
         "midi": "musicology/midi/CAN-030-post-punk-new-wave.mid"
       },
@@ -10273,12 +10273,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "dbb7ef7cc4473137",
+      "fingerprint": "b947b516aa6ac458",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 36,
+        "eventCount": 34,
         "json": "musicology/canonical-grooves/CAN-024-power-ballad.json",
         "midi": "musicology/midi/CAN-024-power-ballad.mid"
       },
@@ -10319,7 +10319,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "d329d64d54c96d63",
+      "fingerprint": "a13c0af8d507d77d",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -10365,7 +10365,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "07869635428590aa",
+      "fingerprint": "49145a6865e019fa",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -10411,12 +10411,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "8029197c82d958fc",
+      "fingerprint": "8a23e93b4556511e",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 30,
+        "eventCount": 28,
         "json": "musicology/canonical-grooves/CAN-020-rock-shuffle.json",
         "midi": "musicology/midi/CAN-020-rock-shuffle.mid"
       },
@@ -10457,12 +10457,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "ee34c806a2d8a5c3",
+      "fingerprint": "e83e1e172324f4ba",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 32,
+        "eventCount": 30,
         "json": "musicology/canonical-grooves/CAN-040-stoner-heavy-shuffle.json",
         "midi": "musicology/midi/CAN-040-stoner-heavy-shuffle.mid"
       },
@@ -10503,7 +10503,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "f203f92ed538eebd",
+      "fingerprint": "9697a3ab38317592",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -10549,7 +10549,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "aa62295e2f20fdcc",
+      "fingerprint": "388ee92f9a2a4687",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -10595,7 +10595,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.76,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "4c9a09ac580c8c94",
+      "fingerprint": "17c6e5f3368e6d4c",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -10629,7 +10629,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "94146ad16898b174",
+      "fingerprint": "e5f0528d06d35a9f",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -10682,7 +10682,7 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "a42a2581ac7cc1cc",
+      "fingerprint": "d8cd3b3f3a468cf3",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
@@ -10735,12 +10735,12 @@
       "status": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "fingerprint": "3b2095d02befabc6",
+      "fingerprint": "548d538a87d54c94",
       "canonical": {
         "schema": "battrochtek.canonical-groove/v1",
         "ppq": 960,
         "phraseBars": 2,
-        "eventCount": 16,
+        "eventCount": 13,
         "json": "musicology/canonical-grooves/CAN-204-teentaal-16-beat-drum-set-adaptation.json",
         "midi": "musicology/midi/CAN-204-teentaal-16-beat-drum-set-adaptation.mid"
       },

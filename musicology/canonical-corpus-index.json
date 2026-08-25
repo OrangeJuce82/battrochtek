@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "ppq": 960,
   "count": 213,
-  "generatedAt": "2026-08-24T10:27:31.375Z",
+  "generatedAt": "2026-08-25T19:40:13.156Z",
   "entries": [
     {
       "id": "CAN-001",
@@ -18,7 +18,7 @@
       "eventCount": 30,
       "signature": "4/4",
       "bpm": 107,
-      "fingerprint": "73402b0c82cdc4c4"
+      "fingerprint": "a8bb54d53da918f8"
     },
     {
       "id": "CAN-002",
@@ -33,7 +33,7 @@
       "eventCount": 42,
       "signature": "4/4",
       "bpm": 100,
-      "fingerprint": "a9733f7c2f12551a"
+      "fingerprint": "a3e4ae88e24a04e3"
     },
     {
       "id": "CAN-003",
@@ -48,7 +48,7 @@
       "eventCount": 26,
       "signature": "4/4",
       "bpm": 92,
-      "fingerprint": "d9c4ba8332384596"
+      "fingerprint": "eac4e6843201f542"
     },
     {
       "id": "CAN-004",
@@ -63,7 +63,7 @@
       "eventCount": 50,
       "signature": "4/4",
       "bpm": 92,
-      "fingerprint": "cd263fc26cb85bc5"
+      "fingerprint": "47b0492c1e758f52"
     },
     {
       "id": "CAN-005",
@@ -78,7 +78,7 @@
       "eventCount": 30,
       "signature": "4/4",
       "bpm": 93,
-      "fingerprint": "78d52c042d328399"
+      "fingerprint": "0ebd67aa5391c1aa"
     },
     {
       "id": "CAN-006",
@@ -93,7 +93,7 @@
       "eventCount": 26,
       "signature": "4/4",
       "bpm": 98,
-      "fingerprint": "9f00b52ef0168166"
+      "fingerprint": "c82cef95ba69a701"
     },
     {
       "id": "CAN-007",
@@ -108,7 +108,7 @@
       "eventCount": 26,
       "signature": "4/4",
       "bpm": 96,
-      "fingerprint": "13ac56ee642562bf"
+      "fingerprint": "a252e2a819ae5452"
     },
     {
       "id": "CAN-008",
@@ -123,7 +123,7 @@
       "eventCount": 32,
       "signature": "4/4",
       "bpm": 100,
-      "fingerprint": "a8b5b4813f094cdd"
+      "fingerprint": "01411be933d8e7fe"
     },
     {
       "id": "CAN-009",
@@ -138,7 +138,7 @@
       "eventCount": 30,
       "signature": "4/4",
       "bpm": 96,
-      "fingerprint": "e6e8dc489761368c"
+      "fingerprint": "06530b426a086ba0"
     },
     {
       "id": "CAN-010",
@@ -153,7 +153,7 @@
       "eventCount": 27,
       "signature": "4/4",
       "bpm": 100,
-      "fingerprint": "130d1649ba11575d"
+      "fingerprint": "ebbeb1f5cbe45ae7"
     },
     {
       "id": "CAN-011",
@@ -168,7 +168,7 @@
       "eventCount": 32,
       "signature": "12/8",
       "bpm": 68,
-      "fingerprint": "967b569495322069"
+      "fingerprint": "b3a84ce3ccf2c734"
     },
     {
       "id": "CAN-012",
@@ -183,7 +183,7 @@
       "eventCount": 18,
       "signature": "6/8",
       "bpm": 96,
-      "fingerprint": "8d9b8e4116f60cab"
+      "fingerprint": "0af3b5ec84eadcfb"
     },
     {
       "id": "CAN-013",
@@ -198,7 +198,7 @@
       "eventCount": 18,
       "signature": "3/4",
       "bpm": 110,
-      "fingerprint": "69ff65b07457a781"
+      "fingerprint": "33bd6b38b8b07956"
     },
     {
       "id": "CAN-014",
@@ -213,7 +213,7 @@
       "eventCount": 28,
       "signature": "5/4",
       "bpm": 108,
-      "fingerprint": "fb54b4edaae037f2"
+      "fingerprint": "758825ed76eb4556"
     },
     {
       "id": "CAN-015",
@@ -228,7 +228,7 @@
       "eventCount": 31,
       "signature": "4/4",
       "bpm": 93,
-      "fingerprint": "39b691bde9613e1a"
+      "fingerprint": "d8525efa7ac056bd"
     },
     {
       "id": "CAN-016",
@@ -243,7 +243,7 @@
       "eventCount": 30,
       "signature": "4/4",
       "bpm": 122,
-      "fingerprint": "f5b6a87d04941b75"
+      "fingerprint": "dd04e3879391af61"
     },
     {
       "id": "CAN-017",
@@ -300,7 +300,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 30,
+      "eventCount": 28,
       "signature": "4/4",
       "bpm": 104,
       "fingerprint": "b8c18ff2cb0c7644"
@@ -330,7 +330,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 36,
+      "eventCount": 32,
       "signature": "4/4",
       "bpm": 126,
       "fingerprint": "a105bae5f1545395"
@@ -345,7 +345,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 32,
+      "eventCount": 30,
       "signature": "4/4",
       "bpm": 116,
       "fingerprint": "b8ca0d0c4f7f7578"
@@ -360,7 +360,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 36,
+      "eventCount": 34,
       "signature": "12/8",
       "bpm": 68,
       "fingerprint": "216b9d69e876cc9f"
@@ -405,7 +405,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 32,
+      "eventCount": 30,
       "signature": "4/4",
       "bpm": 116,
       "fingerprint": "dfbd03f68bc8e23b"
@@ -450,7 +450,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 48,
+      "eventCount": 44,
       "signature": "4/4",
       "bpm": 138,
       "fingerprint": "7242cb13027e5094"
@@ -585,7 +585,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 36,
+      "eventCount": 34,
       "signature": "4/4",
       "bpm": 150,
       "fingerprint": "69a9689e381833d9"
@@ -600,7 +600,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 32,
+      "eventCount": 30,
       "signature": "4/4",
       "bpm": 82,
       "fingerprint": "6071f7cd3c0f1915"
@@ -705,7 +705,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 32,
+      "eventCount": 30,
       "signature": "4/4",
       "bpm": 108,
       "fingerprint": "ef5f55ca1e5149b8"
@@ -750,7 +750,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 42,
+      "eventCount": 40,
       "signature": "4/4",
       "bpm": 92,
       "fingerprint": "73deb93f3fc1ab78"
@@ -765,7 +765,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 40,
+      "eventCount": 38,
       "signature": "4/4",
       "bpm": 150,
       "fingerprint": "20f273901dba5987"
@@ -840,7 +840,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.8,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 32,
+      "eventCount": 28,
       "signature": "4/4",
       "bpm": 118,
       "fingerprint": "a83e5f4e57c252ca"
@@ -960,7 +960,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 34,
+      "eventCount": 32,
       "signature": "4/4",
       "bpm": 116,
       "fingerprint": "6e3a9d804196936a"
@@ -1260,7 +1260,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 30,
+      "eventCount": 28,
       "signature": "4/4",
       "bpm": 112,
       "fingerprint": "0595b7faa90e9148"
@@ -1275,7 +1275,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 34,
+      "eventCount": 30,
       "signature": "4/4",
       "bpm": 124,
       "fingerprint": "860eb311cbfb9821"
@@ -1320,7 +1320,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 34,
+      "eventCount": 32,
       "signature": "4/4",
       "bpm": 174,
       "fingerprint": "031f895913a30449"
@@ -1365,7 +1365,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.79,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 32,
+      "eventCount": 30,
       "signature": "4/4",
       "bpm": 94,
       "fingerprint": "905d11787c3aace7"
@@ -1470,7 +1470,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.79,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 96,
+      "eventCount": 74,
       "signature": "4/4",
       "bpm": 98,
       "fingerprint": "23c7cd51e44b4063"
@@ -1488,7 +1488,7 @@
       "eventCount": 24,
       "signature": "4/4",
       "bpm": 104,
-      "fingerprint": "80c3cd5daf6d48e0"
+      "fingerprint": "af27e4fd96759768"
     },
     {
       "id": "CAN-100",
@@ -1503,7 +1503,7 @@
       "eventCount": 16,
       "signature": "4/4",
       "bpm": 120,
-      "fingerprint": "d6cc440492d6b4b3"
+      "fingerprint": "2ec9152e393a499e"
     },
     {
       "id": "CAN-101",
@@ -1518,7 +1518,7 @@
       "eventCount": 28,
       "signature": "4/4",
       "bpm": 120,
-      "fingerprint": "596843ef93fc7f57"
+      "fingerprint": "84631e1bbc158f50"
     },
     {
       "id": "CAN-102",
@@ -1578,7 +1578,7 @@
       "eventCount": 21,
       "signature": "4/4",
       "bpm": 78,
-      "fingerprint": "c350b429a2495629"
+      "fingerprint": "15540a280d520495"
     },
     {
       "id": "CAN-106",
@@ -1593,7 +1593,7 @@
       "eventCount": 25,
       "signature": "4/4",
       "bpm": 84,
-      "fingerprint": "de14aed9b60c9c48"
+      "fingerprint": "c8db920a5c3a0ccb"
     },
     {
       "id": "CAN-107",
@@ -1605,10 +1605,10 @@
       "validationState": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 28,
+      "eventCount": 26,
       "signature": "4/4",
       "bpm": 92,
-      "fingerprint": "835e43a12ea8f77f"
+      "fingerprint": "f10c616223ef5687"
     },
     {
       "id": "CAN-108",
@@ -1620,10 +1620,10 @@
       "validationState": "pedagogical-adaptation-needs-review",
       "confidence": 0.62,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 29,
+      "eventCount": 27,
       "signature": "4/4",
       "bpm": 92,
-      "fingerprint": "a97071c1aa62283a"
+      "fingerprint": "9a27ab85dfa4ca0d"
     },
     {
       "id": "CAN-109",
@@ -1635,10 +1635,10 @@
       "validationState": "pedagogical-adaptation-needs-review",
       "confidence": 0.62,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 29,
+      "eventCount": 27,
       "signature": "4/4",
       "bpm": 100,
-      "fingerprint": "1a318eef31b01f42"
+      "fingerprint": "5d68b7cdf78e3b6f"
     },
     {
       "id": "CAN-110",
@@ -1650,10 +1650,10 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 28,
+      "eventCount": 46,
       "signature": "4/4",
       "bpm": 120,
-      "fingerprint": "646c891b040122de"
+      "fingerprint": "10f9f2fabba811ba"
     },
     {
       "id": "CAN-111",
@@ -1665,7 +1665,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 36,
+      "eventCount": 28,
       "signature": "4/4",
       "bpm": 122,
       "fingerprint": "ef7bd31f7b5c9a9f"
@@ -1680,7 +1680,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 32,
+      "eventCount": 28,
       "signature": "4/4",
       "bpm": 120,
       "fingerprint": "7b1f392bebf356dd"
@@ -1710,7 +1710,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 24,
+      "eventCount": 20,
       "signature": "4/4",
       "bpm": 130,
       "fingerprint": "3ad32f5222222de2"
@@ -1725,7 +1725,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 30,
+      "eventCount": 28,
       "signature": "4/4",
       "bpm": 126,
       "fingerprint": "f078e56ed9fff9c1"
@@ -1770,7 +1770,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 52,
+      "eventCount": 50,
       "signature": "4/4",
       "bpm": 126,
       "fingerprint": "c98a90320495805e"
@@ -1815,7 +1815,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 32,
+      "eventCount": 30,
       "signature": "4/4",
       "bpm": 82,
       "fingerprint": "1b220b49b575148f"
@@ -1830,7 +1830,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 52,
+      "eventCount": 44,
       "signature": "4/4",
       "bpm": 138,
       "fingerprint": "7ae7230dce7158b0"
@@ -1875,7 +1875,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 28,
+      "eventCount": 26,
       "signature": "4/4",
       "bpm": 105,
       "fingerprint": "babcca82c0898dde"
@@ -1893,7 +1893,7 @@
       "eventCount": 20,
       "signature": "4/4",
       "bpm": 112,
-      "fingerprint": "3ae478d2a090514b"
+      "fingerprint": "181a90f14e01ac03"
     },
     {
       "id": "CAN-127",
@@ -1908,7 +1908,7 @@
       "eventCount": 24,
       "signature": "4/4",
       "bpm": 122,
-      "fingerprint": "2bb2e628c529561f"
+      "fingerprint": "507df11f4cfe7943"
     },
     {
       "id": "CAN-128",
@@ -2460,10 +2460,10 @@
       "validationState": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 32,
+      "eventCount": 28,
       "signature": "4/4",
       "bpm": 132,
-      "fingerprint": "97e7744d076b7adc"
+      "fingerprint": "ca21d334ba524f92"
     },
     {
       "id": "CAN-165",
@@ -2478,7 +2478,7 @@
       "eventCount": 27,
       "signature": "4/4",
       "bpm": 104,
-      "fingerprint": "29f41bd65017014c"
+      "fingerprint": "57249d8b8f58f94e"
     },
     {
       "id": "CAN-166",
@@ -2493,7 +2493,7 @@
       "eventCount": 29,
       "signature": "4/4",
       "bpm": 104,
-      "fingerprint": "261603870727c042"
+      "fingerprint": "a344b11cb14ed933"
     },
     {
       "id": "CAN-167",
@@ -2508,7 +2508,7 @@
       "eventCount": 25,
       "signature": "4/4",
       "bpm": 108,
-      "fingerprint": "91c088b3870c2b37"
+      "fingerprint": "57162f9d82f02b50"
     },
     {
       "id": "CAN-168",
@@ -2523,7 +2523,7 @@
       "eventCount": 28,
       "signature": "4/4",
       "bpm": 116,
-      "fingerprint": "177de0b8ac91bdb3"
+      "fingerprint": "5574744ee243c711"
     },
     {
       "id": "CAN-169",
@@ -2538,7 +2538,7 @@
       "eventCount": 26,
       "signature": "4/4",
       "bpm": 128,
-      "fingerprint": "722768fe9c8a6a26"
+      "fingerprint": "abcf6055e2b70f89"
     },
     {
       "id": "CAN-170",
@@ -2550,10 +2550,10 @@
       "validationState": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 30,
+      "eventCount": 28,
       "signature": "4/4",
       "bpm": 96,
-      "fingerprint": "76e78be980bf6d59"
+      "fingerprint": "5af0d595d022749a"
     },
     {
       "id": "CAN-171",
@@ -2565,10 +2565,10 @@
       "validationState": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 32,
+      "eventCount": 28,
       "signature": "4/4",
       "bpm": 104,
-      "fingerprint": "b78d52313974c22d"
+      "fingerprint": "167b69e1be356d99"
     },
     {
       "id": "CAN-172",
@@ -2583,7 +2583,7 @@
       "eventCount": 24,
       "signature": "4/4",
       "bpm": 124,
-      "fingerprint": "3096e0bd13882627"
+      "fingerprint": "22e8075d59508c9f"
     },
     {
       "id": "CAN-173",
@@ -2595,7 +2595,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 40,
+      "eventCount": 38,
       "signature": "4/4",
       "bpm": 110,
       "fingerprint": "de93f846711149c8"
@@ -2700,7 +2700,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 28,
+      "eventCount": 26,
       "signature": "4/4",
       "bpm": 124,
       "fingerprint": "c0009e5455526199"
@@ -2730,7 +2730,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 28,
+      "eventCount": 26,
       "signature": "6/8",
       "bpm": 132,
       "fingerprint": "30c78bd808afe176"
@@ -2760,7 +2760,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 28,
+      "eventCount": 26,
       "signature": "4/4",
       "bpm": 116,
       "fingerprint": "7d6005281a015402"
@@ -2775,7 +2775,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.78,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 24,
+      "eventCount": 20,
       "signature": "4/4",
       "bpm": 118,
       "fingerprint": "5208925ad5c19b2e"
@@ -2865,7 +2865,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.72,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 32,
+      "eventCount": 28,
       "signature": "4/4",
       "bpm": 112,
       "fingerprint": "f4d6374ffe4615e7"
@@ -2955,7 +2955,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 14,
+      "eventCount": 11,
       "signature": "4/4",
       "bpm": 72,
       "fingerprint": "746ce03f1b7bed22"
@@ -2970,7 +2970,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 12,
+      "eventCount": 10,
       "signature": "4/4",
       "bpm": 76,
       "fingerprint": "2daa06315243cf3f"
@@ -3060,7 +3060,7 @@
       "validationState": "reviewed-pedagogical-adaptation",
       "confidence": 0.82,
       "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
-      "eventCount": 16,
+      "eventCount": 13,
       "signature": "4/4",
       "bpm": 84,
       "fingerprint": "f5ba31eed7159865"
@@ -3108,7 +3108,7 @@
       "eventCount": 30,
       "signature": "4/4",
       "bpm": 120,
-      "fingerprint": "fe4f801f73b044ff"
+      "fingerprint": "d93d94ec544d5d28"
     },
     {
       "id": "CAN-208",
@@ -3120,10 +3120,10 @@
       "validationState": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 54,
+      "eventCount": 52,
       "signature": "4/4",
       "bpm": 108,
-      "fingerprint": "8410809fadef3b53"
+      "fingerprint": "1d1af0fa3989716f"
     },
     {
       "id": "CAN-209",
@@ -3135,10 +3135,10 @@
       "validationState": "pedagogical-adaptation-needs-review",
       "confidence": 0.62,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 30,
+      "eventCount": 29,
       "signature": "4/4",
       "bpm": 118,
-      "fingerprint": "4fa6952b3c8caee8"
+      "fingerprint": "762eb80b238e5d19"
     },
     {
       "id": "CAN-210",
@@ -3150,10 +3150,10 @@
       "validationState": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 28,
+      "eventCount": 26,
       "signature": "4/4",
       "bpm": 92,
-      "fingerprint": "61af56afff511fea"
+      "fingerprint": "a23dc03aa66a9756"
     },
     {
       "id": "CAN-211",
@@ -3168,7 +3168,7 @@
       "eventCount": 33,
       "signature": "4/4",
       "bpm": 96,
-      "fingerprint": "a713f737100d3377"
+      "fingerprint": "0b92194eb0a03614"
     },
     {
       "id": "CAN-212",
@@ -3180,10 +3180,10 @@
       "validationState": "pedagogical-adaptation-needs-review",
       "confidence": 0.68,
       "sourceType": "battrochtek-pedagogical-adaptation",
-      "eventCount": 54,
+      "eventCount": 52,
       "signature": "4/4",
       "bpm": 110,
-      "fingerprint": "027c781171d121b4"
+      "fingerprint": "285394185a7bed40"
     },
     {
       "id": "CAN-213",
@@ -3198,7 +3198,7 @@
       "eventCount": 21,
       "signature": "6/8",
       "bpm": 112,
-      "fingerprint": "f2b52e2b5e82ce48"
+      "fingerprint": "8f7bef3be744c888"
     }
   ]
 }

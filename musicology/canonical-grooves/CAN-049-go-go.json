@@ -134,24 +134,24 @@
     {
       "tick": 1680,
       "duration": 120,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "otherHand",
-      "role": "ghost",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 1680,
-      "duration": 120,
       "instrument": "hihat",
       "articulation": "open",
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "timeHand",
       "role": "ornament",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 1680,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "ghost",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -278,24 +278,24 @@
     {
       "tick": 3600,
       "duration": 120,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "otherHand",
-      "role": "ghost",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 3600,
-      "duration": 120,
       "instrument": "hihat",
       "articulation": "open",
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "timeHand",
       "role": "ornament",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 3600,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "ghost",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -422,24 +422,24 @@
     {
       "tick": 5520,
       "duration": 120,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "otherHand",
-      "role": "ghost",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 5520,
-      "duration": 120,
       "instrument": "hihat",
       "articulation": "open",
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "timeHand",
       "role": "ornament",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 5520,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "ghost",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     },
@@ -566,24 +566,24 @@
     {
       "tick": 7440,
       "duration": 120,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "otherHand",
-      "role": "ghost",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 7440,
-      "duration": 120,
       "instrument": "hihat",
       "articulation": "open",
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "timeHand",
       "role": "ornament",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 7440,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 32,
+      "velocityClass": "ghost",
+      "limb": "otherHand",
+      "role": "ghost",
       "microTimingMs": 0,
       "source": "pedagogical-adaptation"
     }

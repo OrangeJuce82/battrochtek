@@ -123,18 +123,6 @@
       "tick": 1440,
       "duration": 120,
       "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 1440,
-      "duration": 120,
-      "instrument": "hihat",
       "articulation": "open",
       "velocity": 104,
       "velocityClass": "strong",
@@ -253,18 +241,6 @@
     },
     {
       "tick": 3120,
-      "duration": 120,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 3360,
       "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
@@ -411,18 +387,6 @@
       "tick": 5280,
       "duration": 120,
       "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 5280,
-      "duration": 120,
-      "instrument": "hihat",
       "articulation": "open",
       "velocity": 104,
       "velocityClass": "strong",
@@ -555,18 +519,6 @@
       "tick": 7200,
       "duration": 120,
       "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 7200,
-      "duration": 120,
-      "instrument": "hihat",
       "articulation": "open",
       "velocity": 104,
       "velocityClass": "strong",
@@ -616,6 +568,7 @@
       "rightFoot": "foundation",
       "leftFoot": "minimal"
     },
+    "playabilityCorrections": 4,
     "evidence": {
       "taxonomyState": "needs-review",
       "performanceEvidence": "human-dataset-available",

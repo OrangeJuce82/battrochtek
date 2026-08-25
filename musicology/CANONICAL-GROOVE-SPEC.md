@@ -83,6 +83,8 @@ npm run grooves:build
 
 ## Musicological source policy
 
+Canonical catalog names use English descriptors (`Straight 8ths`, `Drum-Set Adaptation`, `Odd-Meter Rock`, etc.) regardless of the interface language. Established names of genres, dances and rhythmic systems remain in their conventional form and are not Anglicized (`Raï`, `Baião`, `Bembé`, `Čoček`, `Maqsum`, etc.). UI translation must never rewrite the canonical groove name.
+
 The Groove MIDI Dataset is used as evidence for human timing, dynamics, fills, and broad style performances, not as a complete world taxonomy. It contains 1,150 MIDI performances and genre labels including afrobeat, afrocuban, blues, country, dance, funk, gospel, highlife, hiphop, jazz, latin, middleeastern, neworleans, pop, punk, reggae, rock, and soul.
 
 For traditions whose identity comes from ensemble/percussion vocabulary (especially Cuban, Brazilian, Afro-diasporic, Middle Eastern, African, and South Asian material), the canonical drum-set version is treated as an adaptation and should be reviewed against specialist literature and recordings. The build deliberately retains confidence/provenance metadata instead of pretending every generated adaptation has equal scholarly authority.

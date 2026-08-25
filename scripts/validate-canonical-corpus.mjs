@@ -4,9 +4,13 @@ import { normalizePlayableEvents } from './canonical-groove-lib.mjs';
 const jsonDir=new URL('../musicology/canonical-grooves/',import.meta.url), midiDir=new URL('../musicology/midi/',import.meta.url);
 const files=(await readdir(jsonDir)).filter(x=>x.endsWith('.json')).sort();
 const ids=new Set(), midiFiles=new Set(await readdir(midiDir)); let errors=[];
+// Catalog descriptors are English. Established proper genre/rhythm names (Raï,
+// Baião, Čoček, Bembé, etc.) remain in their conventional source-language form.
+const frenchCatalogDescriptor=/\b(?:rythme|batterie|balais?|croches?|double-croches?|mesure|fondation|décalé|composé|demi-temps|adaptation de)\b/i;
 for(const file of files){
   const g=JSON.parse(await readFile(new URL(`../musicology/canonical-grooves/${file}`,import.meta.url),'utf8'));
   if(g.schema!=='battrochtek.canonical-groove/v1') errors.push(`${g.id}: schema`);
+  if(!g.name||frenchCatalogDescriptor.test(g.name)) errors.push(`${g.id}: catalog name must use English descriptors (${g.name||'missing'})`);
   if(ids.has(g.id)) errors.push(`${g.id}: duplicate id`); ids.add(g.id);
   if(!Array.isArray(g.events)||!g.events.length) errors.push(`${g.id}: empty events`);
   if(!Number.isFinite(g.ppq)||g.ppq<96) errors.push(`${g.id}: invalid PPQ`);

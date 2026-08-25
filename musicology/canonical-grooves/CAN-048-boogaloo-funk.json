@@ -397,9 +397,9 @@
     }
   ],
   "metadata": {
-    "validationState": "reviewed-pedagogical-adaptation",
+    "validationState": "documentary-reviewed-adaptation",
     "confidence": 0.8,
-    "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
     "createdBy": "Battrochtek musicology compiler",
     "notes": "Reviewed role-based Funk/Soul/R&B drum-set adaptation.",
     "distinctiveFeatures": [
@@ -411,22 +411,49 @@
       "https://www.moderndrummer.com/2011/06/uriel-jones-architect-of-the-motown-sound/",
       "https://www.moderndrummer.com/2016/08/video-lesson-groove-construction-part-6-w-jost-nickel/",
       {
+        "title": "Ray Barretto and the emergence of boogaloo — Smithsonian NMAAHC",
+        "url": "https://nmaahc.si.edu/latinx/ray-barretto"
+      },
+      {
         "title": "Groove MIDI Dataset — Magenta",
         "url": "https://magenta.tensorflow.org/datasets/groove"
       }
     ],
     "tier": "A",
     "originalCoverage": "NAMED_MATCH",
-    "scoreState": "reviewed-adaptation",
+    "scoreState": "documentary-validated",
+    "reviewHistory": {
+      "preDocumentaryAudit": {
+        "validationState": "reviewed-pedagogical-adaptation",
+        "scoreState": "reviewed-adaptation",
+        "sourceType": "battrochtek-reviewed-pedagogical-adaptation"
+      }
+    },
+    "deskReview": {
+      "state": "complete",
+      "method": "corpus-wide source, taxonomy, playability and structural-distinctness audit",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
+    },
     "evidence": {
-      "taxonomyState": "needs-review",
+      "taxonomyState": "literature-supported",
       "performanceEvidence": "human-dataset-available",
       "references": [
+        {
+          "title": "Ray Barretto and the emergence of boogaloo — Smithsonian NMAAHC",
+          "url": "https://nmaahc.si.edu/latinx/ray-barretto"
+        },
         {
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
       ]
+    },
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
     }
   }
 }

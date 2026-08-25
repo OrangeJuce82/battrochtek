@@ -4,16 +4,16 @@
   "family": "Foundations / Concepts",
   "tradition": "Core time feels",
   "name": "Four-on-the-Floor",
-  "bpm": 96,
+  "bpm": 120,
   "signature": "4/4",
   "ppq": 960,
   "phraseBars": 2,
-  "feel": "straight",
+  "feel": "four-on-the-floor",
   "swing": 0,
   "events": [
     {
       "tick": 0,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -21,11 +21,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 0,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -33,11 +33,11 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 480,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -45,11 +45,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 960,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -57,23 +57,35 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 960,
-      "duration": 108,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 960,
+      "duration": 120,
       "instrument": "snare",
       "articulation": "center",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
       "limb": "otherHand",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1440,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -81,11 +93,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1920,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -93,11 +105,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1920,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -105,11 +117,11 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 2400,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -117,11 +129,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 2880,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -129,23 +141,35 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 2880,
-      "duration": 108,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 2880,
+      "duration": 120,
       "instrument": "snare",
       "articulation": "center",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
       "limb": "otherHand",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 3360,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -153,23 +177,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 3360,
-      "duration": 108,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "rightFoot",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 3840,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -177,11 +189,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 3840,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -189,11 +201,11 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 4320,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -201,11 +213,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 4800,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -213,23 +225,35 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 4800,
-      "duration": 108,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 4800,
+      "duration": 120,
       "instrument": "snare",
       "articulation": "center",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
       "limb": "otherHand",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 5280,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -237,11 +261,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 5760,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -249,11 +273,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 5760,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -261,11 +285,11 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 6240,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -273,11 +297,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 6720,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -285,35 +309,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 6720,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "otherHand",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 7200,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 7200,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -321,24 +321,77 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 6720,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "otherHand",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 7200,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
     }
   ],
   "metadata": {
-    "validationState": "pedagogical-adaptation-needs-review",
-    "confidence": 0.45,
-    "sourceType": "battrochtek-pedagogical-adaptation",
-    "provenance": {},
-    "feel": "straight",
+    "validationState": "documentary-reviewed-adaptation",
+    "confidence": 0.78,
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
+    "createdBy": "Battrochtek musicology compiler",
+    "notes": "Four-on-the-floor foundation with bass drum on all four quarter-note beats.",
+    "distinctiveFeatures": [
+      "bass drum on beats 1, 2, 3 and 4",
+      "snare backbeat on 2 and 4",
+      "steady eighth-note time surface"
+    ],
+    "references": [
+      "https://online.berklee.edu/courses/drum-set-performance-101",
+      "https://www.yamaha.com/en/musical_instrument_guide/drums/play/play003.html",
+      "https://online.berklee.edu/courses/music-demo-production-for-songwriters",
+      {
+        "title": "Backbeats and four-on-the-floor — Ableton Learning Music",
+        "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
+      }
+    ],
     "tier": "A",
     "originalCoverage": "NAMED_MATCH",
-    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-    "evidence": {
-      "taxonomyState": "needs-review",
-      "performanceEvidence": "not-mapped",
-      "references": []
+    "scoreState": "documentary-validated",
+    "deskReview": {
+      "state": "complete",
+      "method": "source-guided pedagogical drum-set reconstruction",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
     },
-    "scoreState": "provisional",
-    "references": []
+    "evidence": {
+      "taxonomyState": "literature-supported",
+      "performanceEvidence": "not-mapped",
+      "references": [
+        {
+          "title": "Backbeats and four-on-the-floor — Ableton Learning Music",
+          "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
+        }
+      ]
+    },
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
+    }
   }
 }

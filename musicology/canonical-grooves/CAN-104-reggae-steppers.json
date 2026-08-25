@@ -325,9 +325,9 @@
     }
   ],
   "metadata": {
-    "validationState": "literature-guided-score-v1",
+    "validationState": "documentary-reviewed-adaptation",
     "confidence": 0.95,
-    "sourceType": "literature-guided-drumset-archetype",
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
     "provenance": {
       "candidateSource": "Drum Machine Patterns",
       "candidateName": "Reggae1",
@@ -364,7 +364,7 @@
         }
       ]
     },
-    "scoreState": "reference-supported",
+    "scoreState": "documentary-validated",
     "references": [
       {
         "title": "Reggae 101: The Steppers Beat — Modern Drummer",
@@ -392,6 +392,25 @@
       "straight eighth-note time-hand reference pattern",
       "rim/snare vocabulary around the roots-reggae anchor"
     ],
-    "revisionBatch": "jamaica-v17"
+    "revisionBatch": "jamaica-v17",
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
+    },
+    "reviewHistory": {
+      "preDocumentaryAudit": {
+        "validationState": "literature-guided-score-v1",
+        "scoreState": "reference-supported",
+        "sourceType": "literature-guided-drumset-archetype"
+      }
+    },
+    "deskReview": {
+      "state": "complete",
+      "method": "corpus-wide source, taxonomy, playability and structural-distinctness audit",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
+    }
   }
 }

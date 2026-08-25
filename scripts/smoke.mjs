@@ -161,6 +161,7 @@ const checks = [
   [app.includes('leftFootHatPattern') && app.includes('performanceLeftFootSteps') && app.includes('!isLeftFootHat(track)'), "pied gauche HH séparé du budget des deux mains"],
   [app.includes('sourceTimeVoice()') && app.includes('return this.rightHandMode==="ride" ? "ride" : "hihat"'), "Main droite explicite Charley/Ride sans AUTO"],
   [Array.isArray(diversity.exactStructuralClusters) && diversity.exactStructuralClusters.length===0, "aucune collision structurelle exacte dans les 213 archétypes"],
+  [diversity.nearDuplicateSummary?.unresolved===0, "paires proches musicologiquement arbitrées"],
   [app.includes('this.coreMode = "locked"') && app.includes('this.influence = { kick:1, snare:1, rightHand:2, ghosts:2, toms:1, crash:1 }'), 'FEEL core protection + influences v59'],
   [!html.includes('id="live-fill"') && html.includes('data-feel-influence="kick"') && html.includes('class="feel-influence-block"'), 'FEEL sans bouton Fill + influence visible UI'],
   [!app.includes('key==="f"') && app.includes('key==="x"') && app.includes('beginLiveBreakGesture') && app.includes('triggerLiveAction("live.fill")'), 'Fill clavier F supprimé, Break conserve son fill interne'],
@@ -189,4 +190,3 @@ if (failed.length) {
   for (const [, label] of failed) console.error(`  - ${label}`);
   process.exit(1);
 }
-

@@ -13,7 +13,7 @@
   "events": [
     {
       "tick": 0,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -21,11 +21,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 0,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -33,11 +33,11 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 480,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -45,35 +45,35 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
-      "tick": 960,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 960,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
+      "tick": 720,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
       "velocity": 104,
       "velocityClass": "strong",
-      "limb": "otherHand",
+      "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 960,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1440,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -81,23 +81,23 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
-      "tick": 1680,
-      "duration": 108,
-      "instrument": "kick",
-      "articulation": "normal",
+      "tick": 1440,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
       "velocity": 104,
       "velocityClass": "strong",
-      "limb": "rightFoot",
+      "limb": "otherHand",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1920,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -105,11 +105,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 2400,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -117,11 +117,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 2400,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -129,11 +129,23 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 2640,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "open",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "timeHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 2880,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -141,35 +153,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 2880,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "otherHand",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 3360,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "open",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 3840,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -177,11 +165,35 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 3360,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "otherHand",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 3840,
-      "duration": 108,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 3840,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -189,11 +201,11 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 4320,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -201,47 +213,35 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
-      "tick": 4800,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 4800,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
+      "tick": 4560,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
       "velocity": 104,
       "velocityClass": "strong",
-      "limb": "otherHand",
+      "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
-      "tick": 5040,
-      "duration": 108,
+      "tick": 4800,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 32,
-      "velocityClass": "ghost",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 5280,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -249,71 +249,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
-      "tick": 5520,
-      "duration": 108,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "rightFoot",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 5760,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 6240,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 6240,
-      "duration": 108,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "rightFoot",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 6720,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 6720,
-      "duration": 108,
+      "tick": 5280,
+      "duration": 120,
       "instrument": "snare",
       "articulation": "center",
       "velocity": 104,
@@ -321,30 +261,121 @@
       "limb": "otherHand",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
-      "tick": 7200,
-      "duration": 108,
+      "tick": 5760,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 6240,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 6240,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 6480,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "open",
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "timeHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 6720,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 7200,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 7200,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "otherHand",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
     }
   ],
   "metadata": {
-    "validationState": "pedagogical-adaptation-needs-review",
-    "confidence": 0.62,
-    "sourceType": "battrochtek-pedagogical-adaptation",
-    "provenance": {},
-    "feel": "reggae",
+    "validationState": "documentary-reviewed-adaptation",
+    "confidence": 0.76,
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
+    "createdBy": "Battrochtek musicology compiler",
+    "notes": "Jamaican drum-set archetype preserving space as a structural part of the groove.",
+    "distinctiveFeatures": [
+      "modern sparse syncopated kick network",
+      "dembow-lineage displaced high strokes",
+      "open-hat color avoids copying the digital-ragga score"
+    ],
+    "references": [
+      {
+        "title": "Wicked Beats / Jamaican ska, rocksteady and reggae — Modern Drummer",
+        "url": "https://www.moderndrummer.com/2011/10/wicked-beatsfeaturing-gil-sharone/"
+      },
+      "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/93/41/2020719341/2020719341.pdf",
+      "https://www.berklee.edu/berklee-now/news/what-is-dembow-tracing-the-roots-of-a-global-phenomenon"
+    ],
     "tier": "A",
     "originalCoverage": "NAMED_MATCH",
-    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+    "scoreState": "documentary-validated",
+    "deskReview": {
+      "state": "complete",
+      "method": "source-guided culturally scoped drum-set adaptation",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
+    },
     "evidence": {
       "taxonomyState": "literature-supported",
       "performanceEvidence": "not-mapped",
@@ -355,13 +386,11 @@
         }
       ]
     },
-    "scoreState": "provisional",
-    "references": [
-      {
-        "title": "Wicked Beats / Jamaican ska, rocksteady and reggae — Modern Drummer",
-        "url": "https://www.moderndrummer.com/2011/10/wicked-beatsfeaturing-gil-sharone/"
-      }
-    ],
-    "playabilityCorrections": 2
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
+    }
   }
 }

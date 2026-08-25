@@ -48,10 +48,21 @@ The MIDI file is an exchange format. Canonical JSON remains the source of truth 
 
 ## Validation states
 
+Score review uses two independent axes:
+
+- `deskReview.state`: source-based documentary review performed within the project. `complete` requires an explicit rhythmic rationale, traceable references and a reproducible score reconstruction.
+- `expertReview.state`: review by an identified external human specialist. It remains `not-performed` unless a reviewer, date and review notes are recorded; documentary work must never promote this field.
+
+`scoreState: documentary-validated` therefore means that the source-guided desk review is complete. It does not mean that a tradition specialist has endorsed the score.
+
 - `high`, `medium`, `provisional`: transcoded from the best existing selected source in the previous Curated audit.
 - `pedagogical-adaptation-needs-review`: a Battrochtek-created drum-set archetype based on family/style grammar. It is usable and exported, but must not be presented as a scholarly transcription until reviewed against primary/authoritative musical sources.
 
-Exact duplicate canonical scores are forbidden by the compiler. A low-level catalog disambiguation ornament can be inserted only on pedagogical/adaptation entries to prevent two taxonomic entries compiling to an identical score; those entries are explicitly flagged `catalogDisambiguation: true` and remain review candidates.
+Exact duplicate canonical scores are forbidden by the compiler. They must be resolved through a documented musical distinction or a taxonomic merge; adding a cosmetic note solely to evade the comparison is forbidden.
+
+Taxonomy review is separate from score review. `literature-supported` means that the named taxonomy has a direct cited source. `family-supported-pedagogical-label` identifies a useful teaching label whose exact wording is project-level but whose musical family is documented. `project-defined-adaptation` and `project-defined-exercise` explicitly identify Battrochtek constructions and must not be presented as historical genres. A completed desk corpus has no `needs-review` taxonomy state.
+
+Near-duplicate pairs are not treated automatically as duplicates. The diversity report records an adjudication: shared drum-set vocabulary across different families, a distinct feel/subdivision inside one family, or a retained named style variant. Only exact structural identity blocks publication; every reported near pair must nevertheless have `reviewState: adjudicated` and a rationale.
 
 ## Build pipeline
 

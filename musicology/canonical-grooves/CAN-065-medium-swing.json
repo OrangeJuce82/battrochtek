@@ -301,9 +301,9 @@
     }
   ],
   "metadata": {
-    "validationState": "reviewed-pedagogical-adaptation",
+    "validationState": "documentary-reviewed-adaptation",
     "confidence": 0.82,
-    "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
     "createdBy": "Battrochtek musicology compiler",
     "notes": "Reviewed jazz drum-set adaptation: time voice, comping and bass-drum roles are separated.",
     "distinctiveFeatures": [
@@ -326,8 +326,21 @@
     ],
     "tier": "A",
     "originalCoverage": "NAMED_MATCH",
-    "scoreState": "reviewed-adaptation",
+    "scoreState": "documentary-validated",
     "leftFootRole": "hi-hat 2 and 4 (semantic; dedicated pedal lane pending)",
+    "reviewHistory": {
+      "preDocumentaryAudit": {
+        "validationState": "reviewed-pedagogical-adaptation",
+        "scoreState": "reviewed-adaptation",
+        "sourceType": "battrochtek-reviewed-pedagogical-adaptation"
+      }
+    },
+    "deskReview": {
+      "state": "complete",
+      "method": "corpus-wide source, taxonomy, playability and structural-distinctness audit",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
+    },
     "evidence": {
       "taxonomyState": "literature-supported",
       "performanceEvidence": "human-dataset-available",
@@ -341,6 +354,12 @@
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
       ]
+    },
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
     }
   }
 }

@@ -421,9 +421,9 @@
     }
   ],
   "metadata": {
-    "validationState": "reviewed-pedagogical-adaptation",
+    "validationState": "documentary-reviewed-adaptation",
     "confidence": 0.82,
-    "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
     "createdBy": "Battrochtek musicology compiler",
     "notes": "Reviewed Blues/Shuffle drum-set archetype. The canonical grid encodes the distinct limb/orchestration role; FEEL carries microtiming and regional looseness.",
     "distinctiveFeatures": [
@@ -443,8 +443,16 @@
       "https://online.berklee.edu/courses/blues-and-rock-keyboard-techniques",
       "https://arxiv.org/abs/2411.06892",
       {
+        "title": "Drum Score / Instruction: triplet-derived shuffle — Yamaha",
+        "url": "https://data.yamaha.com/download/files/2108295"
+      },
+      {
         "title": "Drum Set Performance 101 — Berklee Online",
         "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+      },
+      {
+        "title": "Tempo perception in half-time and double-time — Roland",
+        "url": "https://articles.roland.com/mix-it-up-dj-808-serato-dj/"
       },
       {
         "title": "Groove MIDI Dataset — Magenta",
@@ -453,11 +461,36 @@
     ],
     "tier": "A",
     "originalCoverage": "NAMED_MATCH",
-    "scoreState": "reviewed-adaptation",
+    "scoreState": "documentary-validated",
+    "reviewHistory": {
+      "preDocumentaryAudit": {
+        "validationState": "reviewed-pedagogical-adaptation",
+        "scoreState": "reviewed-adaptation",
+        "sourceType": "battrochtek-reviewed-pedagogical-adaptation"
+      }
+    },
+    "deskReview": {
+      "state": "complete",
+      "method": "corpus-wide source, taxonomy, playability and structural-distinctness audit",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
+    },
     "evidence": {
       "taxonomyState": "literature-supported",
       "performanceEvidence": "human-dataset-available",
       "references": [
+        {
+          "title": "Drum Score / Instruction: triplet-derived shuffle — Yamaha",
+          "url": "https://data.yamaha.com/download/files/2108295"
+        },
+        {
+          "title": "Drum Set Performance 101: meter, coordination and compound grooves — Berklee Online",
+          "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+        },
+        {
+          "title": "Tempo perception in half-time and double-time — Roland",
+          "url": "https://articles.roland.com/mix-it-up-dj-808-serato-dj/"
+        },
         {
           "title": "Drum Set Performance 101 — Berklee Online",
           "url": "https://online.berklee.edu/courses/drum-set-performance-101"
@@ -475,6 +508,12 @@
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
       ]
+    },
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
     }
   }
 }

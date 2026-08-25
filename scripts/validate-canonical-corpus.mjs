@@ -16,10 +16,17 @@ for(const file of files){
   if(playability.removed.length) errors.push(`${g.id}: ${playability.removed.length} unplayable collision(s): ${playability.removed.map(x=>`${x.tick}/${x.reason}/${x.event.instrument}:${x.event.articulation}`).join(', ')}`);
   if(!g.metadata?.scoreState) errors.push(`${g.id}: missing scoreState`);
   if(!g.metadata?.evidence?.taxonomyState) errors.push(`${g.id}: missing taxonomy evidence state`);
+  if(g.metadata?.evidence?.taxonomyState==='needs-review') errors.push(`${g.id}: unresolved taxonomy`);
+  if(!g.metadata?.references?.length) errors.push(`${g.id}: missing documentary references`);
+  if(!g.metadata?.distinctiveFeatures?.length) errors.push(`${g.id}: missing distinctive-feature rationale`);
+  if(!g.metadata?.expertReview?.state) errors.push(`${g.id}: missing external human expert-review state`);
+  if(g.metadata?.scoreState==='documentary-validated'&&g.metadata?.deskReview?.state!=='complete') errors.push(`${g.id}: documentary-validated without complete desk review`);
 }
 if(files.length!==213) errors.push(`expected 213 canonical archetypes, found ${files.length}`);
 const feel=JSON.parse(await readFile(new URL('../musicology/human-feel-profiles.json',import.meta.url),'utf8'));
 if(!feel.fileCount||feel.fileCount<100) errors.push('human feel dataset analysis missing/too small');
 const dashboard=JSON.parse(await readFile(new URL('../musicology/validation-dashboard.json',import.meta.url),'utf8'));
 if(dashboard.summary?.count!==213) errors.push('validation dashboard out of sync');
+if(dashboard.summary?.scoreDocumentaryValidated!==213||dashboard.summary?.deskReviewComplete!==213) errors.push('desk review is not complete for all 213 scores');
+if(dashboard.summary?.taxonomyResolved!==213||dashboard.summary?.taxonomyNeedsReview!==0) errors.push('taxonomy adjudication is incomplete');
 if(errors.length){console.error(errors.join('\n'));process.exit(1);} console.log(`✓ Canonical validation: ${files.length} archetypes, MIDI/event schemas OK, evidence states present, human-feel analysis present.`);

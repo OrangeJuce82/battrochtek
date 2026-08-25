@@ -4,7 +4,7 @@
   "family": "Jamaica",
   "tradition": "Jamaican lineage",
   "name": "Dub",
-  "bpm": 78,
+  "bpm": 76,
   "signature": "4/4",
   "ppq": 960,
   "phraseBars": 2,
@@ -13,7 +13,7 @@
   "events": [
     {
       "tick": 0,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -21,11 +21,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 480,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -33,11 +33,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 960,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -45,11 +45,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1440,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -57,11 +57,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1920,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -69,11 +69,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1920,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -81,11 +81,11 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1920,
-      "duration": 108,
+      "duration": 120,
       "instrument": "snare",
       "articulation": "center",
       "velocity": 104,
@@ -93,23 +93,11 @@
       "limb": "otherHand",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 2160,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 2400,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -117,11 +105,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 2880,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -129,23 +117,23 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 3360,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
+      "articulation": "open",
+      "velocity": 82,
+      "velocityClass": "normal",
       "limb": "timeHand",
-      "role": "time",
+      "role": "ornament",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 3840,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -153,11 +141,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 4320,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -165,11 +153,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 4800,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -177,11 +165,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 5280,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -189,11 +177,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 5760,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -201,11 +189,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 5760,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -213,11 +201,11 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 5760,
-      "duration": 108,
+      "duration": 120,
       "instrument": "snare",
       "articulation": "center",
       "velocity": 104,
@@ -225,11 +213,11 @@
       "limb": "otherHand",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 6240,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -237,11 +225,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 6720,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -249,36 +237,66 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 7200,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
+      "articulation": "open",
+      "velocity": 82,
+      "velocityClass": "normal",
       "limb": "timeHand",
-      "role": "time",
+      "role": "ornament",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     }
   ],
   "metadata": {
-    "validationState": "pedagogical-adaptation-needs-review",
-    "confidence": 0.62,
-    "sourceType": "battrochtek-pedagogical-adaptation",
-    "provenance": {},
-    "feel": "reggae",
+    "validationState": "documentary-reviewed-adaptation",
+    "confidence": 0.76,
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
+    "createdBy": "Battrochtek musicology compiler",
+    "notes": "Jamaican drum-set archetype preserving space as a structural part of the groove.",
+    "distinctiveFeatures": [
+      "one-drop-derived sparse drum skeleton",
+      "large spaces support delay and reverb",
+      "dub identity primarily resides in production rather than a unique beat"
+    ],
+    "references": [
+      "https://www.moderndrummer.com/2011/10/wicked-beatsfeaturing-gil-sharone/",
+      "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/93/41/2020719341/2020719341.pdf",
+      {
+        "title": "Jamaican dub and the origins of remix practice — Berklee Online",
+        "url": "https://online.berklee.edu/takenote/remix-music/"
+      }
+    ],
     "tier": "A",
     "originalCoverage": "MISSING_OR_WEAK",
-    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-    "evidence": {
-      "taxonomyState": "needs-review",
-      "performanceEvidence": "not-mapped",
-      "references": []
+    "taxonomyCaveat": "Dub is a production practice with multiple possible source rhythms; this score is explicitly a sparse one-drop-derived carrier.",
+    "scoreState": "documentary-validated",
+    "deskReview": {
+      "state": "complete",
+      "method": "source-guided culturally scoped drum-set adaptation",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
     },
-    "scoreState": "provisional",
-    "references": []
+    "playabilityCorrections": 2,
+    "evidence": {
+      "taxonomyState": "literature-supported",
+      "performanceEvidence": "not-mapped",
+      "references": [
+        {
+          "title": "Jamaican dub and the origins of remix practice — Berklee Online",
+          "url": "https://online.berklee.edu/takenote/remix-music/"
+        }
+      ]
+    },
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
+    }
   }
 }

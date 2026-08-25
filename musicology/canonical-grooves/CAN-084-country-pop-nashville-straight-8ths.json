@@ -349,9 +349,9 @@
     }
   ],
   "metadata": {
-    "validationState": "reviewed-pedagogical-adaptation",
+    "validationState": "documentary-reviewed-adaptation",
     "confidence": 0.82,
-    "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
     "createdBy": "Battrochtek musicology compiler",
     "notes": "Reviewed Country/Americana drum-set archetype. Score preserves the core groove function; brushes, dynamics and recording-era nuances remain performance/orchestration choices.",
     "distinctiveFeatures": [
@@ -367,18 +367,47 @@
       },
       "https://pas.org/pas-blog/pas-playlist-train-beat/",
       {
+        "title": "Drumming techniques: 8-beat, 16-beat and shuffle — Yamaha",
+        "url": "https://www.yamaha.com/en/musical_instrument_guide/drums/play/play003.html"
+      },
+      {
+        "title": "Music Theory for Producers: common meters and basic rock beat — Yamaha",
+        "url": "https://hub.yamaha.com/proaudio/recording/music-theory-for-producers-part-1/"
+      },
+      {
         "title": "Groove MIDI Dataset — Magenta",
         "url": "https://magenta.tensorflow.org/datasets/groove"
       }
     ],
     "tier": "A",
     "originalCoverage": "NAMED_MATCH",
-    "scoreState": "reviewed-adaptation",
+    "scoreState": "documentary-validated",
+    "reviewHistory": {
+      "preDocumentaryAudit": {
+        "validationState": "reviewed-pedagogical-adaptation",
+        "scoreState": "reviewed-adaptation",
+        "sourceType": "battrochtek-reviewed-pedagogical-adaptation"
+      }
+    },
+    "deskReview": {
+      "state": "complete",
+      "method": "corpus-wide source, taxonomy, playability and structural-distinctness audit",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
+    },
     "playabilityCorrections": 2,
     "evidence": {
       "taxonomyState": "literature-supported",
       "performanceEvidence": "human-dataset-available",
       "references": [
+        {
+          "title": "Drumming techniques: 8-beat, 16-beat and shuffle — Yamaha",
+          "url": "https://www.yamaha.com/en/musical_instrument_guide/drums/play/play003.html"
+        },
+        {
+          "title": "Music Theory for Producers: common meters and basic rock beat — Yamaha",
+          "url": "https://hub.yamaha.com/proaudio/recording/music-theory-for-producers-part-1/"
+        },
         {
           "title": "A Drummer’s Guide To Country — Drumeo",
           "url": "https://www.drumeo.com/beat/a-drummers-guide-to-country/"
@@ -388,6 +417,12 @@
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
       ]
+    },
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
     }
   }
 }

@@ -5,9 +5,9 @@
   "tradition": "Arabic rhythmic cycles",
   "name": "Masmoudi Kabir",
   "bpm": 72,
-  "signature": "4/4",
+  "signature": "8/4",
   "ppq": 960,
-  "phraseBars": 2,
+  "phraseBars": 1,
   "feel": "arabic-iqa-adaptation",
   "swing": 0,
   "events": [
@@ -87,54 +87,6 @@
       "tick": 6720,
       "duration": 120,
       "instrument": "snare",
-      "articulation": "cross-stick",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "otherHand",
-      "role": "cycle-high",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 7680,
-      "duration": 120,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "rightFoot",
-      "role": "cycle-low",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 8640,
-      "duration": 120,
-      "instrument": "kick",
-      "articulation": "normal",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "rightFoot",
-      "role": "cycle-low",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 9600,
-      "duration": 120,
-      "instrument": "snare",
-      "articulation": "cross-stick",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "otherHand",
-      "role": "cycle-high",
-      "microTimingMs": 0,
-      "source": "pedagogical-adaptation"
-    },
-    {
-      "tick": 10560,
-      "duration": 120,
-      "instrument": "snare",
       "articulation": "center",
       "velocity": 56,
       "velocityClass": "soft",
@@ -145,16 +97,16 @@
     }
   ],
   "metadata": {
-    "validationState": "reviewed-pedagogical-adaptation",
+    "validationState": "documentary-reviewed-adaptation",
     "confidence": 0.82,
-    "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
     "createdBy": "Battrochtek musicology compiler",
     "notes": "Reviewed pedagogical drum-set mapping of an Arabic iqa skeleton. Kick carries dum (low/resonant) function; cross-stick/snare carries tak (high/dry) function. Ornamentation is intentionally sparse and the canonical identity is the cycle, not a Western backbeat.",
     "distinctiveFeatures": [
       "dum/tak role mapping",
       "cycle-first orchestration",
       "8/4 Masmudi Kabir long cycle",
-      "two-measure-scale phrase identity"
+      "single complete eight-beat phrase"
     ],
     "references": [
       {
@@ -168,13 +120,25 @@
     ],
     "tier": "B",
     "originalCoverage": "MISSING_OR_WEAK",
-    "scoreState": "reviewed-adaptation",
+    "scoreState": "documentary-validated",
     "sourcePercussionRoles": {
       "dum": "kick (low/resonant function)",
       "tak": "cross-stick (high/dry function)",
       "ornament": "snare soft when present"
     },
-    "playabilityCorrections": 3,
+    "reviewHistory": {
+      "preDocumentaryAudit": {
+        "validationState": "reviewed-pedagogical-adaptation",
+        "scoreState": "reviewed-adaptation",
+        "sourceType": "battrochtek-reviewed-pedagogical-adaptation"
+      }
+    },
+    "deskReview": {
+      "state": "complete",
+      "method": "corpus-wide source, taxonomy, playability and structural-distinctness audit",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
+    },
     "evidence": {
       "taxonomyState": "literature-supported",
       "performanceEvidence": "not-mapped",
@@ -188,6 +152,12 @@
           "url": "https://www.maqamworld.com/en/iqaa/masmudi_kabir.php"
         }
       ]
+    },
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
     }
   }
 }

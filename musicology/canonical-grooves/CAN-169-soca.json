@@ -4,28 +4,28 @@
   "family": "Caribbean",
   "tradition": "Trinidad & Lesser Antilles",
   "name": "Soca",
-  "bpm": 128,
+  "bpm": 132,
   "signature": "4/4",
   "ppq": 960,
   "phraseBars": 2,
-  "feel": "straight-16",
+  "feel": "latin",
   "swing": 0,
   "events": [
     {
       "tick": 0,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 0,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -33,143 +33,167 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 480,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
-      "articulation": "closed",
+      "articulation": "open",
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "timeHand",
-      "role": "time",
+      "role": "ornament",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 960,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 960,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
       "velocity": 104,
       "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 960,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 82,
+      "velocityClass": "normal",
       "limb": "otherHand",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1440,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
-      "articulation": "closed",
+      "articulation": "open",
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "timeHand",
-      "role": "time",
+      "role": "ornament",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1920,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1920,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 2400,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
-      "articulation": "closed",
+      "articulation": "open",
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "timeHand",
-      "role": "time",
+      "role": "ornament",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 2880,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 2880,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
       "velocity": 104,
       "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 2880,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 82,
+      "velocityClass": "normal",
       "limb": "otherHand",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 3360,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
-      "articulation": "closed",
+      "articulation": "open",
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "timeHand",
-      "role": "time",
+      "role": "ornament",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 3840,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 3840,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -177,167 +201,182 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 4320,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
-      "articulation": "closed",
+      "articulation": "open",
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "timeHand",
-      "role": "time",
+      "role": "ornament",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 4800,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 56,
+      "velocityClass": "soft",
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 4800,
-      "duration": 108,
-      "instrument": "snare",
-      "articulation": "center",
-      "velocity": 104,
-      "velocityClass": "strong",
-      "limb": "otherHand",
-      "role": "core",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 5280,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 5760,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 5760,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
-      "velocity": 82,
-      "velocityClass": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
-      "tick": 6000,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 6240,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 6480,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 6720,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 82,
-      "velocityClass": "normal",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 6720,
-      "duration": 108,
+      "tick": 4800,
+      "duration": 120,
       "instrument": "snare",
       "articulation": "center",
-      "velocity": 104,
-      "velocityClass": "strong",
+      "velocity": 82,
+      "velocityClass": "normal",
       "limb": "otherHand",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
-      "tick": 7200,
-      "duration": 108,
+      "tick": 5280,
+      "duration": 120,
       "instrument": "hihat",
-      "articulation": "closed",
+      "articulation": "open",
       "velocity": 82,
       "velocityClass": "normal",
       "limb": "timeHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 5760,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 5760,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 6240,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "open",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "timeHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 6720,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 6720,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 6720,
+      "duration": 120,
+      "instrument": "snare",
+      "articulation": "center",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "otherHand",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 7200,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "open",
+      "velocity": 82,
+      "velocityClass": "normal",
+      "limb": "timeHand",
+      "role": "ornament",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
     }
   ],
   "metadata": {
-    "validationState": "high",
-    "confidence": 0.62,
-    "sourceType": "canonical-curated",
-    "provenance": {
-      "candidateSource": "Battrochtek Library v2",
-      "candidateName": "Soca",
-      "origin": "Trinidad & Tobago",
-      "attribution": "Battrochtek — adaptation pédagogique drum-set"
-    },
-    "feel": "straight-16",
+    "validationState": "documentary-reviewed-adaptation",
+    "confidence": 0.76,
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
+    "createdBy": "Battrochtek musicology compiler",
+    "notes": "Pedagogical drum-set adaptation preserving a characteristic ostinato rather than imitating a generic pop beat.",
+    "distinctiveFeatures": [
+      "fast Trinidadian four-on-floor dance drive",
+      "backbeat on 2 and 4",
+      "offbeat open-hat propulsion distinguishes the adaptation from calypso"
+    ],
+    "references": [
+      "https://hudsonmusic.com/wp-content/uploads/Afro-Caribbean-Grooves-SAMPLE.pdf",
+      "https://folkways.si.edu/catch-calypso-beat-put-on-your-feet/music/tools-for-teaching/smithsonian",
+      {
+        "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
+        "url": "https://college.berklee.edu/courses/ilpd-211"
+      }
+    ],
     "tier": "A",
     "originalCoverage": "NAMED_MATCH",
-    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
+    "scoreState": "documentary-validated",
+    "deskReview": {
+      "state": "complete",
+      "method": "source-guided reconstruction of previously weak or generic archetype",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
+    },
+    "playabilityCorrections": 8,
     "evidence": {
       "taxonomyState": "literature-supported",
       "performanceEvidence": "not-mapped",
@@ -348,12 +387,11 @@
         }
       ]
     },
-    "scoreState": "candidate",
-    "references": [
-      {
-        "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
-        "url": "https://college.berklee.edu/courses/ilpd-211"
-      }
-    ]
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
+    }
   }
 }

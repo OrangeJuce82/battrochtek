@@ -253,9 +253,9 @@
     }
   ],
   "metadata": {
-    "validationState": "reviewed-pedagogical-adaptation",
+    "validationState": "documentary-reviewed-adaptation",
     "confidence": 0.78,
-    "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
     "createdBy": "Battrochtek musicology compiler",
     "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
     "distinctiveFeatures": [
@@ -269,17 +269,46 @@
       },
       "https://www.moderndrummer.com/wp-content/uploads/2018/10/MD-469-1218c.pdf",
       {
+        "title": "Quisqueya en el Hudson: Dominican merengue and bachata — Smithsonian Folkways",
+        "url": "https://folkways.si.edu/quisqueya-en-el-hudson-dominican-music-in-new-york/caribbean-latin-world/album/smithsonian"
+      },
+      {
+        "title": "Dominican merengue típico: instrumentation and rapid 4/4 — Smithsonian Folkways",
+        "url": "https://folkways-media.si.edu/docs/folkways/artwork/SFW40493.pdf"
+      },
+      {
         "title": "Groove MIDI Dataset — Magenta",
         "url": "https://magenta.tensorflow.org/datasets/groove"
       }
     ],
     "tier": "A",
     "originalCoverage": "RELATED_CANDIDATE",
-    "scoreState": "reviewed-adaptation",
+    "scoreState": "documentary-validated",
+    "reviewHistory": {
+      "preDocumentaryAudit": {
+        "validationState": "reviewed-pedagogical-adaptation",
+        "scoreState": "reviewed-adaptation",
+        "sourceType": "battrochtek-reviewed-pedagogical-adaptation"
+      }
+    },
+    "deskReview": {
+      "state": "complete",
+      "method": "corpus-wide source, taxonomy, playability and structural-distinctness audit",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
+    },
     "evidence": {
       "taxonomyState": "literature-supported",
       "performanceEvidence": "human-dataset-available",
       "references": [
+        {
+          "title": "Quisqueya en el Hudson: Dominican merengue and bachata — Smithsonian Folkways",
+          "url": "https://folkways.si.edu/quisqueya-en-el-hudson-dominican-music-in-new-york/caribbean-latin-world/album/smithsonian"
+        },
+        {
+          "title": "Dominican merengue típico: instrumentation and rapid 4/4 — Smithsonian Folkways",
+          "url": "https://folkways-media.si.edu/docs/folkways/artwork/SFW40493.pdf"
+        },
         {
           "title": "South American Rhythms for the Drum Set — Berklee",
           "url": "https://college.berklee.edu/courses/ilpd-357"
@@ -289,6 +318,12 @@
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
       ]
+    },
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
     }
   }
 }

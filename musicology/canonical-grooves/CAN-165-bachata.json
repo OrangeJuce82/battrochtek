@@ -4,7 +4,7 @@
   "family": "Caribbean",
   "tradition": "Dominican Republic / Puerto Rico",
   "name": "Bachata",
-  "bpm": 104,
+  "bpm": 126,
   "signature": "4/4",
   "ppq": 960,
   "phraseBars": 2,
@@ -13,7 +13,7 @@
   "events": [
     {
       "tick": 0,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -21,11 +21,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 0,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -33,11 +33,11 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 480,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -45,11 +45,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 960,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -57,11 +57,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 960,
-      "duration": 108,
+      "duration": 120,
       "instrument": "snare",
       "articulation": "center",
       "velocity": 82,
@@ -69,11 +69,11 @@
       "limb": "otherHand",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1440,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -81,11 +81,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1440,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -93,11 +93,11 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 1920,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -105,23 +105,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
-      "tick": 2400,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 2400,
-      "duration": 108,
+      "tick": 1920,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -129,11 +117,11 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
-      "tick": 2880,
-      "duration": 108,
+      "tick": 2400,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -141,11 +129,23 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 2880,
-      "duration": 108,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 2880,
+      "duration": 120,
       "instrument": "snare",
       "articulation": "center",
       "velocity": 82,
@@ -153,35 +153,23 @@
       "limb": "otherHand",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 3360,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
+      "articulation": "open",
+      "velocity": 82,
+      "velocityClass": "normal",
       "limb": "timeHand",
-      "role": "time",
+      "role": "ornament",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
-      "tick": 3840,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 3840,
-      "duration": 108,
+      "tick": 3360,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -189,11 +177,35 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 3840,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 3840,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 4320,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -201,11 +213,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 4800,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -213,11 +225,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 4800,
-      "duration": 108,
+      "duration": 120,
       "instrument": "snare",
       "articulation": "center",
       "velocity": 82,
@@ -225,11 +237,11 @@
       "limb": "otherHand",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 5280,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -237,11 +249,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 5280,
-      "duration": 108,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -249,23 +261,11 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 5520,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 32,
-      "velocityClass": "ghost",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 5760,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -273,23 +273,11 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
-      "tick": 6240,
-      "duration": 108,
-      "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
-      "limb": "timeHand",
-      "role": "time",
-      "microTimingMs": 0,
-      "source": "canonical-source"
-    },
-    {
-      "tick": 6240,
-      "duration": 108,
+      "tick": 5760,
+      "duration": 120,
       "instrument": "kick",
       "articulation": "normal",
       "velocity": 104,
@@ -297,11 +285,11 @@
       "limb": "rightFoot",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
-      "tick": 6720,
-      "duration": 108,
+      "tick": 6240,
+      "duration": 120,
       "instrument": "hihat",
       "articulation": "closed",
       "velocity": 56,
@@ -309,11 +297,23 @@
       "limb": "timeHand",
       "role": "time",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 6720,
-      "duration": 108,
+      "duration": 120,
+      "instrument": "hihat",
+      "articulation": "closed",
+      "velocity": 56,
+      "velocityClass": "soft",
+      "limb": "timeHand",
+      "role": "time",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 6720,
+      "duration": 120,
       "instrument": "snare",
       "articulation": "center",
       "velocity": 82,
@@ -321,36 +321,76 @@
       "limb": "otherHand",
       "role": "core",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
     },
     {
       "tick": 7200,
-      "duration": 108,
+      "duration": 120,
       "instrument": "hihat",
-      "articulation": "closed",
-      "velocity": 56,
-      "velocityClass": "soft",
+      "articulation": "open",
+      "velocity": 82,
+      "velocityClass": "normal",
       "limb": "timeHand",
-      "role": "time",
+      "role": "ornament",
       "microTimingMs": 0,
-      "source": "canonical-source"
+      "source": "pedagogical-adaptation"
+    },
+    {
+      "tick": 7200,
+      "duration": 120,
+      "instrument": "kick",
+      "articulation": "normal",
+      "velocity": 104,
+      "velocityClass": "strong",
+      "limb": "rightFoot",
+      "role": "core",
+      "microTimingMs": 0,
+      "source": "pedagogical-adaptation"
     }
   ],
   "metadata": {
-    "validationState": "pedagogical-adaptation-needs-review",
-    "confidence": 0.62,
-    "sourceType": "battrochtek-pedagogical-adaptation",
-    "provenance": {},
-    "feel": "latin",
+    "validationState": "documentary-reviewed-adaptation",
+    "confidence": 0.76,
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
+    "createdBy": "Battrochtek musicology compiler",
+    "notes": "Pedagogical drum-set adaptation preserving a characteristic ostinato rather than imitating a generic pop beat.",
+    "distinctiveFeatures": [
+      "Dominican 4/4 dance foundation",
+      "bongo/güira-derived continuous time adaptation",
+      "anticipatory bass-drum motion"
+    ],
+    "references": [
+      "https://hudsonmusic.com/wp-content/uploads/Afro-Caribbean-Grooves-SAMPLE.pdf",
+      {
+        "title": "Quisqueya en el Hudson: Dominican merengue and bachata — Smithsonian Folkways",
+        "url": "https://folkways.si.edu/quisqueya-en-el-hudson-dominican-music-in-new-york/caribbean-latin-world/album/smithsonian"
+      }
+    ],
     "tier": "A",
     "originalCoverage": "NAMED_MATCH",
-    "notes": "Transcoded from the best currently selected source pattern; retained for review in canonical event form.",
-    "evidence": {
-      "taxonomyState": "needs-review",
-      "performanceEvidence": "not-mapped",
-      "references": []
+    "scoreState": "documentary-validated",
+    "deskReview": {
+      "state": "complete",
+      "method": "source-guided culturally scoped drum-set adaptation",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
     },
-    "scoreState": "provisional",
-    "references": []
+    "playabilityCorrections": 2,
+    "evidence": {
+      "taxonomyState": "literature-supported",
+      "performanceEvidence": "not-mapped",
+      "references": [
+        {
+          "title": "Quisqueya en el Hudson: Dominican merengue and bachata — Smithsonian Folkways",
+          "url": "https://folkways.si.edu/quisqueya-en-el-hudson-dominican-music-in-new-york/caribbean-latin-world/album/smithsonian"
+        }
+      ]
+    },
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
+    }
   }
 }

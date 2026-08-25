@@ -613,9 +613,9 @@
     }
   ],
   "metadata": {
-    "validationState": "reviewed-pedagogical-adaptation",
+    "validationState": "documentary-reviewed-adaptation",
     "confidence": 0.78,
-    "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
     "createdBy": "Battrochtek musicology compiler",
     "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
     "distinctiveFeatures": [
@@ -624,16 +624,44 @@
       "sampled-break-style backbeat and ghost pickups"
     ],
     "references": [
-      "https://www.musicradar.com/how-to/program-6-different-jungle-6-dnb-grooves"
+      "https://www.musicradar.com/how-to/program-6-different-jungle-6-dnb-grooves",
+      {
+        "title": "Breakbeats and big beat in EDM — Cambridge Twentieth-Century Music",
+        "url": "https://www.cambridge.org/core/journals/twentieth-century-music/article/breakdowns-and-the-aesthetic-of-disorientation-in-festivalhouse-music/A0748DBC5425594BE0F95D9AE0676DDC"
+      }
     ],
     "tier": "B",
     "originalCoverage": "RELATED_CANDIDATE",
-    "scoreState": "reviewed-adaptation",
+    "scoreState": "documentary-validated",
+    "reviewHistory": {
+      "preDocumentaryAudit": {
+        "validationState": "reviewed-pedagogical-adaptation",
+        "scoreState": "reviewed-adaptation",
+        "sourceType": "battrochtek-reviewed-pedagogical-adaptation"
+      }
+    },
+    "deskReview": {
+      "state": "complete",
+      "method": "corpus-wide source, taxonomy, playability and structural-distinctness audit",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
+    },
     "playabilityCorrections": 2,
     "evidence": {
-      "taxonomyState": "needs-review",
+      "taxonomyState": "literature-supported",
       "performanceEvidence": "not-mapped",
-      "references": []
+      "references": [
+        {
+          "title": "Breakbeats and big beat in EDM — Cambridge Twentieth-Century Music",
+          "url": "https://www.cambridge.org/core/journals/twentieth-century-music/article/breakdowns-and-the-aesthetic-of-disorientation-in-festivalhouse-music/A0748DBC5425594BE0F95D9AE0676DDC"
+        }
+      ]
+    },
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
     }
   }
 }

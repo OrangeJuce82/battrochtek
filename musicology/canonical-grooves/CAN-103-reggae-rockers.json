@@ -613,9 +613,9 @@
     }
   ],
   "metadata": {
-    "validationState": "literature-guided-score-v1",
+    "validationState": "documentary-reviewed-adaptation",
     "confidence": 0.82,
-    "sourceType": "literature-guided-drumset-archetype",
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
     "provenance": {},
     "feel": "reggae",
     "tier": "A",
@@ -647,7 +647,7 @@
         }
       ]
     },
-    "scoreState": "reference-supported",
+    "scoreState": "documentary-validated",
     "references": [
       {
         "title": "Sly Dunbar on Revolutionizing Reggae Drums — Berklee Online",
@@ -679,6 +679,25 @@
       "faster time-hand subdivision",
       "roots-reggae beat-3 anchor"
     ],
-    "revisionBatch": "jamaica-v17"
+    "revisionBatch": "jamaica-v17",
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
+    },
+    "reviewHistory": {
+      "preDocumentaryAudit": {
+        "validationState": "literature-guided-score-v1",
+        "scoreState": "reference-supported",
+        "sourceType": "literature-guided-drumset-archetype"
+      }
+    },
+    "deskReview": {
+      "state": "complete",
+      "method": "corpus-wide source, taxonomy, playability and structural-distinctness audit",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
+    }
   }
 }

@@ -205,9 +205,9 @@
     }
   ],
   "metadata": {
-    "validationState": "reviewed-pedagogical-adaptation",
+    "validationState": "documentary-reviewed-adaptation",
     "confidence": 0.82,
-    "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
     "createdBy": "Battrochtek musicology compiler",
     "notes": "Reviewed pedagogical drum-set mapping of a South Asian taal/theka. Low drum approximates bayan/low composite function and cross-stick/snare approximates high tabla strokes; this is not a substitute for tabla or dhol technique.",
     "distinctiveFeatures": [
@@ -228,7 +228,7 @@
     ],
     "tier": "B",
     "originalCoverage": "MISSING_OR_WEAK",
-    "scoreState": "reviewed-adaptation",
+    "scoreState": "documentary-validated",
     "metricGrouping": [
       4,
       4
@@ -236,6 +236,19 @@
     "sourcePercussionRoles": {
       "low": "kick (bayan/low composite function)",
       "high": "cross-stick (dayan/high composite function)"
+    },
+    "reviewHistory": {
+      "preDocumentaryAudit": {
+        "validationState": "reviewed-pedagogical-adaptation",
+        "scoreState": "reviewed-adaptation",
+        "sourceType": "battrochtek-reviewed-pedagogical-adaptation"
+      }
+    },
+    "deskReview": {
+      "state": "complete",
+      "method": "corpus-wide source, taxonomy, playability and structural-distinctness audit",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
     },
     "evidence": {
       "taxonomyState": "literature-supported",
@@ -250,6 +263,12 @@
           "url": "https://digitabla.com/reference/tals-and-thekas/kaharawa-tal/"
         }
       ]
+    },
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
     }
   }
 }

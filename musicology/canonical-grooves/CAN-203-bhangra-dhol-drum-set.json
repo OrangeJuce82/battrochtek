@@ -253,9 +253,9 @@
     }
   ],
   "metadata": {
-    "validationState": "reviewed-pedagogical-adaptation",
+    "validationState": "documentary-reviewed-adaptation",
     "confidence": 0.76,
-    "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
     "createdBy": "Battrochtek musicology compiler",
     "notes": "Reviewed drum-set adaptation centered on a two-sided dhol-style low/high dialogue. It is not a literal dhol transcription.",
     "distinctiveFeatures": [
@@ -263,14 +263,43 @@
       "strong dance accents",
       "drum-set adaptation"
     ],
-    "references": [],
+    "references": [
+      {
+        "title": "The Tradition of Now: dhol and Bhangra — Smithsonian Folklife",
+        "url": "https://folklife.si.edu/magazine/tradition-of-now-sunny-jain"
+      }
+    ],
     "tier": "B",
     "originalCoverage": "RELATED_CANDIDATE",
-    "scoreState": "reviewed-adaptation",
+    "scoreState": "documentary-validated",
+    "reviewHistory": {
+      "preDocumentaryAudit": {
+        "validationState": "reviewed-pedagogical-adaptation",
+        "scoreState": "reviewed-adaptation",
+        "sourceType": "battrochtek-reviewed-pedagogical-adaptation"
+      }
+    },
+    "deskReview": {
+      "state": "complete",
+      "method": "corpus-wide source, taxonomy, playability and structural-distinctness audit",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
+    },
     "evidence": {
-      "taxonomyState": "needs-review",
+      "taxonomyState": "literature-supported",
       "performanceEvidence": "not-mapped",
-      "references": []
+      "references": [
+        {
+          "title": "The Tradition of Now: dhol and Bhangra — Smithsonian Folklife",
+          "url": "https://folklife.si.edu/magazine/tradition-of-now-sunny-jain"
+        }
+      ]
+    },
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
     }
   }
 }

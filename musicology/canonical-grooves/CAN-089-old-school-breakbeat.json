@@ -613,9 +613,9 @@
     }
   ],
   "metadata": {
-    "validationState": "reviewed-pedagogical-adaptation",
+    "validationState": "documentary-reviewed-adaptation",
     "confidence": 0.79,
-    "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
     "createdBy": "Battrochtek musicology compiler",
     "notes": "Reviewed complete Hip-Hop/Breakbeat drum-set archetype. Canonical score carries the skeleton; FEEL supplies style-specific pocket and microtiming.",
     "distinctiveFeatures": [
@@ -628,26 +628,53 @@
         "title": "Groove MIDI Dataset — Magenta",
         "url": "https://magenta.tensorflow.org/datasets/groove"
       },
-      "https://www.moderndrummer.com/"
+      "https://www.moderndrummer.com/",
+      {
+        "title": "Breakbeats and big beat in EDM — Cambridge Twentieth-Century Music",
+        "url": "https://www.cambridge.org/core/journals/twentieth-century-music/article/breakdowns-and-the-aesthetic-of-disorientation-in-festivalhouse-music/A0748DBC5425594BE0F95D9AE0676DDC"
+      }
     ],
     "tier": "A",
     "originalCoverage": "NAMED_MATCH",
-    "scoreState": "reviewed-adaptation",
+    "scoreState": "documentary-validated",
     "roleModel": {
       "timeHand": "hihat",
       "otherHand": "backbeat/ghosts",
       "rightFoot": "broken-pocket",
       "leftFoot": "minimal"
     },
+    "reviewHistory": {
+      "preDocumentaryAudit": {
+        "validationState": "reviewed-pedagogical-adaptation",
+        "scoreState": "reviewed-adaptation",
+        "sourceType": "battrochtek-reviewed-pedagogical-adaptation"
+      }
+    },
+    "deskReview": {
+      "state": "complete",
+      "method": "corpus-wide source, taxonomy, playability and structural-distinctness audit",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
+    },
     "evidence": {
-      "taxonomyState": "needs-review",
+      "taxonomyState": "literature-supported",
       "performanceEvidence": "human-dataset-available",
       "references": [
+        {
+          "title": "Breakbeats and big beat in EDM — Cambridge Twentieth-Century Music",
+          "url": "https://www.cambridge.org/core/journals/twentieth-century-music/article/breakdowns-and-the-aesthetic-of-disorientation-in-festivalhouse-music/A0748DBC5425594BE0F95D9AE0676DDC"
+        },
         {
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
       ]
+    },
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
     }
   }
 }

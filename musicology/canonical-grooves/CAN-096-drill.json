@@ -565,9 +565,9 @@
     }
   ],
   "metadata": {
-    "validationState": "reviewed-pedagogical-adaptation",
+    "validationState": "documentary-reviewed-adaptation",
     "confidence": 0.79,
-    "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
     "createdBy": "Battrochtek musicology compiler",
     "notes": "Reviewed complete Hip-Hop/Breakbeat drum-set archetype. Canonical score carries the skeleton; FEEL supplies style-specific pocket and microtiming.",
     "distinctiveFeatures": [
@@ -580,26 +580,53 @@
         "title": "Groove MIDI Dataset — Magenta",
         "url": "https://magenta.tensorflow.org/datasets/groove"
       },
-      "https://www.moderndrummer.com/"
+      "https://www.moderndrummer.com/",
+      {
+        "title": "Live coding drum production: drill and Jersey Club patterns — Cambridge Organised Sound",
+        "url": "https://www.cambridge.org/core/journals/organised-sound/article/live-coding-and-music-production-as-hybrid-practice/F382AF19E7FBE8783279EA504EE2EA6F"
+      }
     ],
     "tier": "A",
     "originalCoverage": "NAMED_MATCH",
-    "scoreState": "reviewed-adaptation",
+    "scoreState": "documentary-validated",
     "roleModel": {
       "timeHand": "hihat",
       "otherHand": "backbeat/ghosts",
       "rightFoot": "broken-pocket",
       "leftFoot": "minimal"
     },
+    "reviewHistory": {
+      "preDocumentaryAudit": {
+        "validationState": "reviewed-pedagogical-adaptation",
+        "scoreState": "reviewed-adaptation",
+        "sourceType": "battrochtek-reviewed-pedagogical-adaptation"
+      }
+    },
+    "deskReview": {
+      "state": "complete",
+      "method": "corpus-wide source, taxonomy, playability and structural-distinctness audit",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
+    },
     "evidence": {
-      "taxonomyState": "needs-review",
+      "taxonomyState": "literature-supported",
       "performanceEvidence": "human-dataset-available",
       "references": [
+        {
+          "title": "Live coding drum production: drill and Jersey Club patterns — Cambridge Organised Sound",
+          "url": "https://www.cambridge.org/core/journals/organised-sound/article/live-coding-and-music-production-as-hybrid-practice/F382AF19E7FBE8783279EA504EE2EA6F"
+        },
         {
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
       ]
+    },
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
     }
   }
 }

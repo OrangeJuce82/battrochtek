@@ -325,9 +325,9 @@
     }
   ],
   "metadata": {
-    "validationState": "reviewed-pedagogical-adaptation",
+    "validationState": "documentary-reviewed-adaptation",
     "confidence": 0.78,
-    "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
     "createdBy": "Battrochtek musicology compiler",
     "notes": "Reviewed electronic-dance drum archetype. The grid encodes the canonical pulse and drum-machine role; production/sound-design variation is deliberately left outside taxonomy.",
     "distinctiveFeatures": [
@@ -339,20 +339,55 @@
       {
         "title": "Tempo and genre — Ableton Learning Music",
         "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
+      },
+      {
+        "title": "Drum Set Performance 101: meter, coordination and compound grooves — Berklee Online",
+        "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+      },
+      {
+        "title": "Tempo perception in half-time and double-time — Roland",
+        "url": "https://articles.roland.com/mix-it-up-dj-808-serato-dj/"
       }
     ],
     "tier": "B",
     "originalCoverage": "RELATED_CANDIDATE",
-    "scoreState": "reviewed-adaptation",
+    "scoreState": "documentary-validated",
+    "reviewHistory": {
+      "preDocumentaryAudit": {
+        "validationState": "reviewed-pedagogical-adaptation",
+        "scoreState": "reviewed-adaptation",
+        "sourceType": "battrochtek-reviewed-pedagogical-adaptation"
+      }
+    },
+    "deskReview": {
+      "state": "complete",
+      "method": "corpus-wide source, taxonomy, playability and structural-distinctness audit",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
+    },
     "evidence": {
       "taxonomyState": "literature-supported",
       "performanceEvidence": "not-mapped",
       "references": [
         {
+          "title": "Drum Set Performance 101: meter, coordination and compound grooves — Berklee Online",
+          "url": "https://online.berklee.edu/courses/drum-set-performance-101"
+        },
+        {
+          "title": "Tempo perception in half-time and double-time — Roland",
+          "url": "https://articles.roland.com/mix-it-up-dj-808-serato-dj/"
+        },
+        {
           "title": "Tempo and genre — Ableton Learning Music",
           "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
         }
       ]
+    },
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
     }
   }
 }

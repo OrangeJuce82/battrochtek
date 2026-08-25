@@ -325,9 +325,9 @@
     }
   ],
   "metadata": {
-    "validationState": "reviewed-pedagogical-adaptation",
+    "validationState": "documentary-reviewed-adaptation",
     "confidence": 0.72,
-    "sourceType": "battrochtek-reviewed-pedagogical-adaptation",
+    "sourceType": "battrochtek-documentary-reviewed-adaptation",
     "createdBy": "Battrochtek musicology compiler",
     "notes": "Reviewed pedagogical drum-set orchestration built from documented percussion functions; score remains an adaptation rather than a literal traditional-percussion transcription.",
     "distinctiveFeatures": [
@@ -336,15 +336,43 @@
       "explicit adaptation; timbral/log-drum study remains separate"
     ],
     "references": [
-      "https://college.berklee.edu/courses/ilpd-355"
+      "https://college.berklee.edu/courses/ilpd-355",
+      {
+        "title": "Mapping Amapiano and Black Aesthetics in Post-Apartheid South Africa",
+        "url": "https://www.tandfonline.com/doi/abs/10.1080/13696815.2026.2634896"
+      }
     ],
     "tier": "B",
     "originalCoverage": "NAMED_MATCH",
-    "scoreState": "reviewed-adaptation",
+    "scoreState": "documentary-validated",
+    "reviewHistory": {
+      "preDocumentaryAudit": {
+        "validationState": "reviewed-pedagogical-adaptation",
+        "scoreState": "reviewed-adaptation",
+        "sourceType": "battrochtek-reviewed-pedagogical-adaptation"
+      }
+    },
+    "deskReview": {
+      "state": "complete",
+      "method": "corpus-wide source, taxonomy, playability and structural-distinctness audit",
+      "reviewedAt": "2026-08-25",
+      "humanExpertReview": "not-performed"
+    },
     "evidence": {
-      "taxonomyState": "needs-review",
+      "taxonomyState": "literature-supported",
       "performanceEvidence": "not-mapped",
-      "references": []
+      "references": [
+        {
+          "title": "Mapping Amapiano and Black Aesthetics in Post-Apartheid South Africa",
+          "url": "https://www.tandfonline.com/doi/abs/10.1080/13696815.2026.2634896"
+        }
+      ]
+    },
+    "expertReview": {
+      "state": "not-performed",
+      "reviewer": null,
+      "date": null,
+      "notes": "Reserved for an external human specialist; documentary review is tracked separately."
     }
   }
 }

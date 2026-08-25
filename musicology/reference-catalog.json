@@ -1,7 +1,133 @@
 {
   "schema": "battrochtek.musicology-references/v1",
-  "generatedAt": "2026-08-25T19:40:13.273Z",
+  "generatedAt": "2026-08-25T20:02:35.136Z",
   "references": {
+    "yamahaDrumFoundations": {
+      "title": "Drumming techniques: 8-beat, 16-beat and shuffle — Yamaha",
+      "url": "https://www.yamaha.com/en/musical_instrument_guide/drums/play/play003.html",
+      "scope": [
+        "straight 8ths",
+        "straight 16ths",
+        "8th-note shuffle",
+        "16th-note shuffle"
+      ]
+    },
+    "yamahaShuffleNotation": {
+      "title": "Drum Score / Instruction: triplet-derived shuffle — Yamaha",
+      "url": "https://data.yamaha.com/download/files/2108295",
+      "scope": [
+        "8th-note shuffle",
+        "16th-note shuffle",
+        "half-time shuffle"
+      ]
+    },
+    "berkleeDrumMeters": {
+      "title": "Drum Set Performance 101: meter, coordination and compound grooves — Berklee Online",
+      "url": "https://online.berklee.edu/courses/drum-set-performance-101",
+      "scope": [
+        "12/8 ballad",
+        "6/8 compound groove",
+        "3/4 groove",
+        "5/4 foundation",
+        "7/8 foundation",
+        "9/8 foundation",
+        "half-time"
+      ]
+    },
+    "yamahaPopularMeter": {
+      "title": "Music Theory for Producers: common meters and basic rock beat — Yamaha",
+      "url": "https://hub.yamaha.com/proaudio/recording/music-theory-for-producers-part-1/",
+      "scope": [
+        "straight 8ths",
+        "3/4 groove",
+        "12/8 ballad",
+        "6/8 compound groove"
+      ]
+    },
+    "rolandHalfDoubleTime": {
+      "title": "Tempo perception in half-time and double-time — Roland",
+      "url": "https://articles.roland.com/mix-it-up-dj-808-serato-dj/",
+      "scope": [
+        "half-time",
+        "double-time"
+      ]
+    },
+    "abletonFourFloorFoundation": {
+      "title": "Backbeats and four-on-the-floor — Ableton Learning Music",
+      "url": "https://learningmusic.ableton.com/make-beats/backbeats.html",
+      "scope": [
+        "four-on-the-floor"
+      ]
+    },
+    "berkleeDisplacedBackbeat": {
+      "title": "Finding Your Groove: displacing the backbeat — Berklee Online",
+      "url": "https://online.berklee.edu/courses/music-demo-production-for-songwriters",
+      "scope": [
+        "displaced backbeat"
+      ]
+    },
+    "smithsonianMento": {
+      "title": "Wheel and Turn: Jamaican mento field recording — Smithsonian Folkways",
+      "url": "https://folkways.si.edu/wheel-and-turn/african-american-music-islamica/music/track/smithsonian",
+      "scope": [
+        "mento"
+      ]
+    },
+    "berkleeDubHistory": {
+      "title": "Jamaican dub and the origins of remix practice — Berklee Online",
+      "url": "https://online.berklee.edu/takenote/remix-music/",
+      "scope": [
+        "dub"
+      ]
+    },
+    "smithsonianDominican": {
+      "title": "Quisqueya en el Hudson: Dominican merengue and bachata — Smithsonian Folkways",
+      "url": "https://folkways.si.edu/quisqueya-en-el-hudson-dominican-music-in-new-york/caribbean-latin-world/album/smithsonian",
+      "scope": [
+        "merengue",
+        "bachata"
+      ]
+    },
+    "smithsonianMerengueMeter": {
+      "title": "Dominican merengue típico: instrumentation and rapid 4/4 — Smithsonian Folkways",
+      "url": "https://folkways-media.si.edu/docs/folkways/artwork/SFW40493.pdf",
+      "scope": [
+        "merengue"
+      ]
+    },
+    "smithsonianBombaPlena": {
+      "title": "Puerto Rican Bomba and Plena: Shared Traditions—Distinct Rhythms — Smithsonian Folkways",
+      "url": "https://folkways.si.edu/puerto-rican-bomba-plena-shared-traditions-distinct-rhythms/latin-world/music/article/smithsonian",
+      "scope": [
+        "bomba",
+        "plena"
+      ]
+    },
+    "smithsonianCalypso": {
+      "title": "Catch the Calypso Beat — Smithsonian Folkways",
+      "url": "https://folkways.si.edu/catch-calypso-beat-put-on-your-feet/music/tools-for-teaching/smithsonian",
+      "scope": [
+        "calypso"
+      ]
+    },
+    "chicagoZoukFamily": {
+      "title": "Zouk: World Music in the West Indies — University of Chicago Press",
+      "url": "https://press.uchicago.edu/ucp/books/book/chicago/Z/bo3619607.html",
+      "scope": [
+        "zouk",
+        "kompa",
+        "biguine",
+        "beguine"
+      ]
+    },
+    "toursBiguine": {
+      "title": "Le rythme de Biguine en classe — Université de Tours",
+      "url": "https://edmus.univ-tours.fr/index.php?Itemid=164&catid=55&id=105&option=com_content&view=article",
+      "scope": [
+        "biguine",
+        "beguine"
+      ]
+    },
     "berkleeCuba": {
       "title": "Advanced Afro-Cuban Rhythms for Drum Set — Berklee",
       "url": "https://college.berklee.edu/courses/ilpd-373",
@@ -233,6 +359,7 @@
         "mbalax",
         "juju",
         "soukou",
+        "soukous",
         "makossa",
         "bikutsi",
         "mangambe",
@@ -419,6 +546,162 @@
         "bomba"
       ]
     },
+    "amapianoScholarship": {
+      "title": "Mapping Amapiano and Black Aesthetics in Post-Apartheid South Africa",
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/13696815.2026.2634896",
+      "scope": [
+        "amapiano"
+      ]
+    },
+    "cambridgeBrazilDrumKit": {
+      "title": "The Drum Kit beyond the Anglosphere: The Case of Brazil — Cambridge",
+      "url": "https://www.cambridge.org/core/books/abs/cambridge-companion-to-the-drum-kit/drum-kit-beyond-the-anglosphere/3B20EF178AD943A17CBF8CA0E6F45F53",
+      "scope": [
+        "brazilian funk"
+      ]
+    },
+    "berkleeContemporaryStyles": {
+      "title": "Arranging and Producing Contemporary Music Styles — Berklee Online",
+      "url": "https://online.berklee.edu/courses/arranging-and-producing-contemporary-music-styles",
+      "scope": [
+        "james brown funk",
+        "motown",
+        "stax",
+        "philly soul",
+        "new orleans funk",
+        "meters-style new orleans funk",
+        "hard rock",
+        "pop rock"
+      ]
+    },
+    "cambridgePopularGenres": {
+      "title": "Popular Music Genres — Cambridge Core / Edinburgh University Press",
+      "url": "https://www.cambridge.org/core/books/popular-music-genres/progressive-rock-breaking-the-blues-lineage/6E29C265D9A8BBE5F722A6B0AA9326C9",
+      "scope": [
+        "progressive rock",
+        "punk rock",
+        "indie rock",
+        "heavy metal",
+        "post-punk",
+        "new wave"
+      ]
+    },
+    "smithsonianRnbLabels": {
+      "title": "A Wider World: Rhythm and Blues Record Labels — Smithsonian",
+      "url": "https://festival.si.edu/2011/rhythm-and-blues/a-wider-world-rhythm-and-blues-record-labels/smithsonian",
+      "scope": [
+        "motown",
+        "stax",
+        "philly soul"
+      ]
+    },
+    "cambridgeHipHopCulture": {
+      "title": "Hip-Hop and American Culture — Cambridge University Press",
+      "url": "https://assets.cambridge.org/97810097/14761/index/9781009714761_index.pdf",
+      "scope": [
+        "g-funk",
+        "footwork",
+        "boom bap"
+      ]
+    },
+    "cambridgeTripHop": {
+      "title": "The Bristol sound and the trip-hop genre — Cambridge Organised Sound",
+      "url": "https://www.cambridge.org/core/journals/organised-sound/article/abs/just-dont-call-it-trip-hop-reconciling-the-bristol-sound-style-with-the-trip-hop-genre/B4944FEFB7C30977DA7CF0CB3AC07465",
+      "scope": [
+        "trip-hop"
+      ]
+    },
+    "cambridgeBreakbeatBigBeat": {
+      "title": "Breakbeats and big beat in EDM — Cambridge Twentieth-Century Music",
+      "url": "https://www.cambridge.org/core/journals/twentieth-century-music/article/breakdowns-and-the-aesthetic-of-disorientation-in-festivalhouse-music/A0748DBC5425594BE0F95D9AE0676DDC",
+      "scope": [
+        "breakbeat",
+        "big beat"
+      ]
+    },
+    "smithsonianBhangra": {
+      "title": "The Tradition of Now: dhol and Bhangra — Smithsonian Folklife",
+      "url": "https://folklife.si.edu/magazine/tradition-of-now-sunny-jain",
+      "scope": [
+        "bhangra",
+        "dhol"
+      ]
+    },
+    "cambridgeGnawa": {
+      "title": "Gnawa as North African musical practice — Cambridge African Studies Review",
+      "url": "https://www.cambridge.org/core/journals/african-studies-review/article/sara-nacer-dir-la-rockeuse-du-desert-the-desert-rocker-2022-75-minutes-arabic-and-french-with-english-subtitles-canada-lequipage-no-price-reported-available-to-stream-on-eventive/E034D2505D01ABA9F991819E6D829E37",
+      "scope": [
+        "gnawa"
+      ]
+    },
+    "berkleeJazzRockFusion": {
+      "title": "Improvisation in the Jazz-Rock/Fusion Idioms — Berklee",
+      "url": "https://college.berklee.edu/courses/psim-335",
+      "scope": [
+        "jazz-rock fusion"
+      ]
+    },
+    "cambridgeRockReference": {
+      "title": "Cambridge reference entries for grunge, glam and thrash metal",
+      "url": "https://dictionary.cambridge.org/us/topics/music/pop-rock-and-soul/",
+      "scope": [
+        "grunge",
+        "glam rock",
+        "thrash metal"
+      ]
+    },
+    "cambridgeSurfRock": {
+      "title": "Genre mediation and surf-rock conventions — Cambridge Twentieth-Century Music",
+      "url": "https://www.cambridge.org/core/journals/twentieth-century-music/article/mediation-of-genre-identity-and-difference-in-contemporary-popular-music-streaming/F99D21C8B1E3B170ADC79D652259DF09",
+      "scope": [
+        "surf rock"
+      ]
+    },
+    "smithsonianGoGo": {
+      "title": "Go-go, the funky percussive music invented in Washington, D.C. — Smithsonian",
+      "url": "https://americanhistory.si.edu/explore/stories/go-go-funky-percussive-music-invented-washington-dc",
+      "scope": [
+        "go-go"
+      ]
+    },
+    "smithsonianBoogaloo": {
+      "title": "Ray Barretto and the emergence of boogaloo — Smithsonian NMAAHC",
+      "url": "https://nmaahc.si.edu/latinx/ray-barretto",
+      "scope": [
+        "boogaloo"
+      ]
+    },
+    "berkleeFunkNeoSoul": {
+      "title": "Funk and R&B repertoire, P-Funk and neo-soul — Berklee",
+      "url": "https://www.berklee.edu/berklee-now/news/guitar-styles-to-explore-and-master",
+      "scope": [
+        "p-funk",
+        "neo-soul"
+      ]
+    },
+    "cambridgeDrillJersey": {
+      "title": "Live coding drum production: drill and Jersey Club patterns — Cambridge Organised Sound",
+      "url": "https://www.cambridge.org/core/journals/organised-sound/article/live-coding-and-music-production-as-hybrid-practice/F382AF19E7FBE8783279EA504EE2EA6F",
+      "scope": [
+        "drill",
+        "jersey club"
+      ]
+    },
+    "ucpressSynthwave": {
+      "title": "Reconstructed Nostalgia: Synthwave as a popular-music genre — University of California Press",
+      "url": "https://online.ucpress.edu/jpms/article/33/1/70/116330/Reconstructed-NostalgiaAesthetic-Commonalities-and",
+      "scope": [
+        "synthwave"
+      ]
+    },
+    "cambridgeAlgerianMusic": {
+      "title": "Seeing Music in Early Twentieth-Century Colonial Algeria — Cambridge",
+      "url": "https://www.cambridge.org/core/journals/twentieth-century-music/article/seeing-music-in-early-twentieth-century-colonial-algeria/70682F4BC3DF1BFB5B6438BFDFABD591",
+      "scope": [
+        "rai",
+        "maghreb chaabi"
+      ]
+    },
     "gmd": {
       "title": "Groove MIDI Dataset — Magenta",
       "url": "https://magenta.tensorflow.org/datasets/groove",
@@ -445,7 +728,7 @@
   },
   "summary": {
     "canonicalGrooves": 213,
-    "taxonomyLiteratureSupported": 122,
-    "humanDatasetSupported": 132
+    "taxonomyLiteratureSupported": 187,
+    "humanDatasetSupported": 130
   }
 }

@@ -1,9 +1,79 @@
 {
   "schema": "battrochtek.diversity-report/v1",
-  "generatedAt": "2026-08-25T19:40:13.710Z",
+  "generatedAt": "2026-08-25T20:02:35.562Z",
   "grooveCount": 213,
   "exactStructuralClusters": [],
+  "nearDuplicateSummary": {
+    "count": 124,
+    "adjudicated": 124,
+    "unresolved": 0
+  },
   "nearDuplicatePairs": [
+    {
+      "a": "CAN-001",
+      "aName": "Straight 8ths",
+      "b": "CAN-020",
+      "bName": "Rock Shuffle",
+      "structural": 0.929,
+      "all": 0.867,
+      "feelMatch": false,
+      "sameFamily": false,
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
+    },
+    {
+      "a": "CAN-001",
+      "aName": "Straight 8ths",
+      "b": "CAN-025",
+      "bName": "Pop Rock",
+      "structural": 1,
+      "all": 1,
+      "feelMatch": false,
+      "sameFamily": false,
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
+    },
+    {
+      "a": "CAN-001",
+      "aName": "Straight 8ths",
+      "b": "CAN-060",
+      "bName": "Straight Blues",
+      "structural": 1,
+      "all": 1,
+      "feelMatch": false,
+      "sameFamily": false,
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
+    },
+    {
+      "a": "CAN-001",
+      "aName": "Straight 8ths",
+      "b": "CAN-081",
+      "bName": "Country Shuffle",
+      "structural": 1,
+      "all": 0.875,
+      "feelMatch": false,
+      "sameFamily": false,
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
+    },
+    {
+      "a": "CAN-001",
+      "aName": "Straight 8ths",
+      "b": "CAN-165",
+      "bName": "Bachata",
+      "structural": 0.929,
+      "all": 0.867,
+      "feelMatch": false,
+      "sameFamily": false,
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
+    },
     {
       "a": "CAN-002",
       "aName": "Straight 16ths",
@@ -13,7 +83,22 @@
       "all": 0.84,
       "feelMatch": false,
       "sameFamily": true,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_FEEL_OR_SUBDIVISION",
+      "rationale": "Same family, but feel/swing or subdivision identity differs; retain both pedagogical targets."
+    },
+    {
+      "a": "CAN-002",
+      "aName": "Straight 16ths",
+      "b": "CAN-009",
+      "bName": "Ghost-Note Pocket",
+      "structural": 0.955,
+      "all": 0.808,
+      "feelMatch": false,
+      "sameFamily": true,
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_FEEL_OR_SUBDIVISION",
+      "rationale": "Same family, but feel/swing or subdivision identity differs; retain both pedagogical targets."
     },
     {
       "a": "CAN-002",
@@ -24,7 +109,9 @@
       "all": 0.875,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-002",
@@ -35,7 +122,22 @@
       "all": 0.84,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
+    },
+    {
+      "a": "CAN-003",
+      "aName": "8th-note Shuffle",
+      "b": "CAN-010",
+      "bName": "Displaced Backbeat",
+      "structural": 0.926,
+      "all": 0.926,
+      "feelMatch": false,
+      "sameFamily": true,
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_FEEL_OR_SUBDIVISION",
+      "rationale": "Same family, but feel/swing or subdivision identity differs; retain both pedagogical targets."
     },
     {
       "a": "CAN-003",
@@ -46,7 +148,9 @@
       "all": 0.929,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-003",
@@ -57,29 +161,9 @@
       "all": 0.929,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-003",
-      "aName": "8th-note Shuffle",
-      "b": "CAN-165",
-      "bName": "Bachata",
-      "structural": 0.963,
-      "all": 0.963,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-003",
-      "aName": "8th-note Shuffle",
-      "b": "CAN-166",
-      "bName": "Bomba Drum-Set",
-      "structural": 0.897,
-      "all": 0.897,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-003",
@@ -90,7 +174,22 @@
       "all": 0.857,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
+    },
+    {
+      "a": "CAN-004",
+      "aName": "16th-note Shuffle",
+      "b": "CAN-009",
+      "bName": "Ghost-Note Pocket",
+      "structural": 0.957,
+      "all": 0.889,
+      "feelMatch": false,
+      "sameFamily": true,
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_FEEL_OR_SUBDIVISION",
+      "rationale": "Same family, but feel/swing or subdivision identity differs; retain both pedagogical targets."
     },
     {
       "a": "CAN-004",
@@ -101,7 +200,9 @@
       "all": 0.96,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-004",
@@ -112,7 +213,9 @@
       "all": 0.815,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-004",
@@ -123,7 +226,9 @@
       "all": 0.852,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-004",
@@ -134,7 +239,9 @@
       "all": 0.759,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-004",
@@ -145,436 +252,126 @@
       "all": 0.759,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-004",
       "aName": "16th-note Shuffle",
       "b": "CAN-212",
       "bName": "Afrobeat-Funk",
-      "structural": 0.917,
+      "structural": 0.957,
       "all": 0.889,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-005",
       "aName": "Half-Time",
-      "b": "CAN-015",
-      "bName": "7/8 Foundation",
-      "structural": 0.968,
-      "all": 0.968,
-      "feelMatch": true,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-006",
-      "aName": "Double-Time",
-      "b": "CAN-009",
-      "bName": "Ghost-Note Pocket",
-      "structural": 0.923,
-      "all": 0.75,
+      "b": "CAN-021",
+      "bName": "Half-Time Rock",
+      "structural": 1,
+      "all": 1,
       "feelMatch": false,
-      "sameFamily": true,
-      "action": "REVIEW"
+      "sameFamily": false,
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
-      "a": "CAN-006",
-      "aName": "Double-Time",
+      "a": "CAN-007",
+      "aName": "Four-on-the-Floor",
       "b": "CAN-028",
       "bName": "Punk Rock",
-      "structural": 0.929,
-      "all": 0.929,
+      "structural": 1,
+      "all": 1,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
-      "a": "CAN-006",
-      "aName": "Double-Time",
-      "b": "CAN-057",
-      "bName": "Chicago Shuffle",
-      "structural": 0.923,
-      "all": 0.632,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-006",
-      "aName": "Double-Time",
+      "a": "CAN-007",
+      "aName": "Four-on-the-Floor",
       "b": "CAN-058",
       "bName": "Texas Shuffle",
+      "structural": 1,
+      "all": 0.778,
+      "feelMatch": false,
+      "sameFamily": false,
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
+    },
+    {
+      "a": "CAN-007",
+      "aName": "Four-on-the-Floor",
+      "b": "CAN-088",
+      "bName": "Rockabilly Shuffle",
       "structural": 0.929,
-      "all": 0.722,
+      "all": 0.765,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
-      "a": "CAN-006",
-      "aName": "Double-Time",
-      "b": "CAN-069",
-      "bName": "Brush Ballad",
-      "structural": 0.923,
-      "all": 0.923,
+      "a": "CAN-009",
+      "aName": "Ghost-Note Pocket",
+      "b": "CAN-019",
+      "bName": "Classic Rock 16ths",
+      "structural": 0.957,
+      "all": 0.852,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
-      "a": "CAN-006",
-      "aName": "Double-Time",
-      "b": "CAN-080",
-      "bName": "Country Two-Step",
-      "structural": 0.923,
-      "all": 0.923,
+      "a": "CAN-009",
+      "aName": "Ghost-Note Pocket",
+      "b": "CAN-089",
+      "bName": "Old-School Breakbeat",
+      "structural": 0.957,
+      "all": 0.821,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
-      "a": "CAN-006",
-      "aName": "Double-Time",
-      "b": "CAN-087",
-      "bName": "Modern Bluegrass Drum-Set",
-      "structural": 0.923,
-      "all": 0.632,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-006",
-      "aName": "Double-Time",
-      "b": "CAN-099",
-      "bName": "Mento Drum-Set Adaptation",
-      "structural": 0.923,
-      "all": 0.923,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-006",
-      "aName": "Double-Time",
-      "b": "CAN-106",
-      "bName": "Nyabinghi Drum-Set",
-      "structural": 0.889,
-      "all": 0.889,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-007",
-      "aName": "Four-on-the-Floor",
-      "b": "CAN-009",
-      "bName": "Ghost-Note Pocket",
-      "structural": 0.923,
-      "all": 0.75,
-      "feelMatch": false,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-007",
-      "aName": "Four-on-the-Floor",
-      "b": "CAN-010",
-      "bName": "Displaced Backbeat",
-      "structural": 0.963,
-      "all": 0.963,
-      "feelMatch": true,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-007",
-      "aName": "Four-on-the-Floor",
-      "b": "CAN-025",
-      "bName": "Pop Rock",
-      "structural": 0.929,
-      "all": 0.929,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-007",
-      "aName": "Four-on-the-Floor",
-      "b": "CAN-057",
-      "bName": "Chicago Shuffle",
-      "structural": 0.923,
-      "all": 0.632,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-007",
-      "aName": "Four-on-the-Floor",
-      "b": "CAN-060",
-      "bName": "Straight Blues",
-      "structural": 0.929,
-      "all": 0.929,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-007",
-      "aName": "Four-on-the-Floor",
-      "b": "CAN-069",
-      "bName": "Brush Ballad",
-      "structural": 0.923,
-      "all": 0.923,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-007",
-      "aName": "Four-on-the-Floor",
-      "b": "CAN-080",
-      "bName": "Country Two-Step",
-      "structural": 0.923,
-      "all": 0.923,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-007",
-      "aName": "Four-on-the-Floor",
-      "b": "CAN-081",
-      "bName": "Country Shuffle",
-      "structural": 0.929,
-      "all": 0.813,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-007",
-      "aName": "Four-on-the-Floor",
-      "b": "CAN-087",
-      "bName": "Modern Bluegrass Drum-Set",
-      "structural": 0.923,
-      "all": 0.632,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-007",
-      "aName": "Four-on-the-Floor",
-      "b": "CAN-099",
-      "bName": "Mento Drum-Set Adaptation",
-      "structural": 0.923,
-      "all": 0.923,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-007",
-      "aName": "Four-on-the-Floor",
-      "b": "CAN-106",
-      "bName": "Nyabinghi Drum-Set",
-      "structural": 0.889,
-      "all": 0.889,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-007",
-      "aName": "Four-on-the-Floor",
-      "b": "CAN-209",
-      "bName": "Latin Rock",
-      "structural": 0.897,
-      "all": 0.897,
+      "a": "CAN-009",
+      "aName": "Ghost-Note Pocket",
+      "b": "CAN-212",
+      "bName": "Afrobeat-Funk",
+      "structural": 0.913,
+      "all": 0.857,
       "feelMatch": true,
       "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-009",
-      "aName": "Ghost-Note Pocket",
-      "b": "CAN-010",
-      "bName": "Displaced Backbeat",
-      "structural": 0.889,
-      "all": 0.727,
-      "feelMatch": false,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-009",
-      "aName": "Ghost-Note Pocket",
-      "b": "CAN-057",
-      "bName": "Chicago Shuffle",
-      "structural": 1,
-      "all": 0.833,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-009",
-      "aName": "Ghost-Note Pocket",
-      "b": "CAN-069",
-      "bName": "Brush Ballad",
-      "structural": 1,
-      "all": 0.8,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-009",
-      "aName": "Ghost-Note Pocket",
-      "b": "CAN-080",
-      "bName": "Country Two-Step",
-      "structural": 1,
-      "all": 0.8,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-009",
-      "aName": "Ghost-Note Pocket",
-      "b": "CAN-087",
-      "bName": "Modern Bluegrass Drum-Set",
-      "structural": 1,
-      "all": 0.833,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-009",
-      "aName": "Ghost-Note Pocket",
-      "b": "CAN-099",
-      "bName": "Mento Drum-Set Adaptation",
-      "structural": 1,
-      "all": 0.8,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-009",
-      "aName": "Ghost-Note Pocket",
-      "b": "CAN-106",
-      "bName": "Nyabinghi Drum-Set",
-      "structural": 0.96,
-      "all": 0.774,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-009",
-      "aName": "Ghost-Note Pocket",
-      "b": "CAN-169",
-      "bName": "Soca",
-      "structural": 0.923,
-      "all": 0.75,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-010",
       "aName": "Displaced Backbeat",
-      "b": "CAN-025",
-      "bName": "Pop Rock",
-      "structural": 0.897,
-      "all": 0.897,
+      "b": "CAN-120",
+      "bName": "Drum & Bass",
+      "structural": 0.926,
+      "all": 0.862,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-010",
-      "aName": "Displaced Backbeat",
-      "b": "CAN-057",
-      "bName": "Chicago Shuffle",
-      "structural": 0.889,
-      "all": 0.615,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-010",
-      "aName": "Displaced Backbeat",
-      "b": "CAN-060",
-      "bName": "Straight Blues",
-      "structural": 0.897,
-      "all": 0.897,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-010",
-      "aName": "Displaced Backbeat",
-      "b": "CAN-069",
-      "bName": "Brush Ballad",
-      "structural": 0.889,
-      "all": 0.889,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-010",
-      "aName": "Displaced Backbeat",
-      "b": "CAN-080",
-      "bName": "Country Two-Step",
-      "structural": 0.889,
-      "all": 0.889,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-010",
-      "aName": "Displaced Backbeat",
-      "b": "CAN-081",
-      "bName": "Country Shuffle",
-      "structural": 0.897,
-      "all": 0.788,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-010",
-      "aName": "Displaced Backbeat",
-      "b": "CAN-087",
-      "bName": "Modern Bluegrass Drum-Set",
-      "structural": 0.889,
-      "all": 0.615,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-010",
-      "aName": "Displaced Backbeat",
-      "b": "CAN-099",
-      "bName": "Mento Drum-Set Adaptation",
-      "structural": 0.889,
-      "all": 0.889,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-012",
@@ -585,7 +382,9 @@
       "all": 0.9,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-018",
@@ -596,18 +395,9 @@
       "all": 0.867,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-018",
-      "aName": "Classic Rock 8ths",
-      "b": "CAN-165",
-      "bName": "Bachata",
-      "structural": 0.897,
-      "all": 0.897,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-019",
@@ -618,7 +408,9 @@
       "all": 0.846,
       "feelMatch": true,
       "sameFamily": true,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_STYLE_VARIANT",
+      "rationale": "Same family and broad feel, but the event-set difference exceeds exact identity and represents a named arrangement/style variant."
     },
     {
       "a": "CAN-019",
@@ -629,7 +421,9 @@
       "all": 0.885,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-019",
@@ -640,7 +434,9 @@
       "all": 0.786,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-019",
@@ -651,18 +447,22 @@
       "all": 0.786,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-019",
       "aName": "Classic Rock 16ths",
       "b": "CAN-212",
       "bName": "Afrobeat-Funk",
-      "structural": 0.917,
+      "structural": 0.957,
       "all": 0.852,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-020",
@@ -673,7 +473,9 @@
       "all": 0.867,
       "feelMatch": false,
       "sameFamily": true,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_FEEL_OR_SUBDIVISION",
+      "rationale": "Same family, but feel/swing or subdivision identity differs; retain both pedagogical targets."
     },
     {
       "a": "CAN-020",
@@ -684,7 +486,9 @@
       "all": 0.933,
       "feelMatch": false,
       "sameFamily": true,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_FEEL_OR_SUBDIVISION",
+      "rationale": "Same family, but feel/swing or subdivision identity differs; retain both pedagogical targets."
     },
     {
       "a": "CAN-020",
@@ -695,7 +499,9 @@
       "all": 0.933,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-020",
@@ -706,7 +512,9 @@
       "all": 0.867,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-020",
@@ -717,29 +525,22 @@
       "all": 0.765,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-020",
       "aName": "Rock Shuffle",
-      "b": "CAN-170",
-      "bName": "Kompa",
-      "structural": 0.929,
+      "b": "CAN-165",
+      "bName": "Bachata",
+      "structural": 1,
       "all": 1,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-020",
-      "aName": "Rock Shuffle",
-      "b": "CAN-209",
-      "bName": "Latin Rock",
-      "structural": 0.897,
-      "all": 0.839,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-022",
@@ -750,7 +551,9 @@
       "all": 0.882,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-022",
@@ -761,7 +564,9 @@
       "all": 0.938,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-023",
@@ -772,7 +577,9 @@
       "all": 0.824,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-025",
@@ -783,7 +590,9 @@
       "all": 1,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-025",
@@ -794,18 +603,22 @@
       "all": 0.875,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-025",
       "aName": "Pop Rock",
-      "b": "CAN-209",
-      "bName": "Latin Rock",
-      "structural": 0.966,
-      "all": 0.966,
+      "b": "CAN-165",
+      "bName": "Bachata",
+      "structural": 0.929,
+      "all": 0.867,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-026",
@@ -816,7 +629,9 @@
       "all": 0.833,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-026",
@@ -827,7 +642,9 @@
       "all": 0.938,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-026",
@@ -838,7 +655,9 @@
       "all": 0.875,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-026",
@@ -849,7 +668,9 @@
       "all": 0.882,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-027",
@@ -860,18 +681,22 @@
       "all": 0.938,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-027",
       "aName": "Alternative / Grunge",
-      "b": "CAN-170",
-      "bName": "Kompa",
-      "structural": 0.867,
+      "b": "CAN-165",
+      "bName": "Bachata",
+      "structural": 0.929,
       "all": 0.933,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-028",
@@ -882,7 +707,9 @@
       "all": 0.778,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-028",
@@ -893,7 +720,9 @@
       "all": 0.765,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-029",
@@ -904,7 +733,9 @@
       "all": 0.815,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-029",
@@ -915,7 +746,9 @@
       "all": 0.852,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-029",
@@ -926,7 +759,9 @@
       "all": 0.815,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-029",
@@ -937,7 +772,22 @@
       "all": 0.815,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
+    },
+    {
+      "a": "CAN-032",
+      "aName": "Glam Rock",
+      "b": "CAN-169",
+      "bName": "Soca",
+      "structural": 1,
+      "all": 0.857,
+      "feelMatch": false,
+      "sameFamily": false,
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-044",
@@ -948,7 +798,9 @@
       "all": 0.905,
       "feelMatch": false,
       "sameFamily": true,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_FEEL_OR_SUBDIVISION",
+      "rationale": "Same family, but feel/swing or subdivision identity differs; retain both pedagogical targets."
     },
     {
       "a": "CAN-044",
@@ -959,7 +811,9 @@
       "all": 0.762,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-044",
@@ -970,7 +824,9 @@
       "all": 0.773,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-044",
@@ -981,7 +837,9 @@
       "all": 0.905,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-045",
@@ -992,7 +850,9 @@
       "all": 0.68,
       "feelMatch": true,
       "sameFamily": true,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_STYLE_VARIANT",
+      "rationale": "Same family and broad feel, but the event-set difference exceeds exact identity and represents a named arrangement/style variant."
     },
     {
       "a": "CAN-045",
@@ -1003,7 +863,9 @@
       "all": 0.889,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-045",
@@ -1014,7 +876,9 @@
       "all": 0.842,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-046",
@@ -1025,7 +889,9 @@
       "all": 0.867,
       "feelMatch": true,
       "sameFamily": true,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_STYLE_VARIANT",
+      "rationale": "Same family and broad feel, but the event-set difference exceeds exact identity and represents a named arrangement/style variant."
     },
     {
       "a": "CAN-046",
@@ -1036,18 +902,35 @@
       "all": 0.867,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
+    },
+    {
+      "a": "CAN-046",
+      "aName": "Stax / Southern Soul",
+      "b": "CAN-107",
+      "bName": "Early Dancehall",
+      "structural": 0.923,
+      "all": 0.857,
+      "feelMatch": false,
+      "sameFamily": false,
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-047",
       "aName": "Philly Soul",
-      "b": "CAN-170",
-      "bName": "Kompa",
-      "structural": 0.867,
+      "b": "CAN-165",
+      "bName": "Bachata",
+      "structural": 0.929,
       "all": 0.933,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-050",
@@ -1058,7 +941,9 @@
       "all": 0.714,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-052",
@@ -1069,7 +954,9 @@
       "all": 0.842,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-052",
@@ -1080,7 +967,9 @@
       "all": 0.85,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-052",
@@ -1091,7 +980,9 @@
       "all": 0.81,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-053",
@@ -1102,7 +993,9 @@
       "all": 0.875,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-056",
@@ -1113,7 +1006,9 @@
       "all": 0.765,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-056",
@@ -1124,18 +1019,9 @@
       "all": 1,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-056",
-      "aName": "Disco-Funk / Chic",
-      "b": "CAN-164",
-      "bName": "Merengue",
-      "structural": 0.857,
-      "all": 1,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-057",
@@ -1146,7 +1032,9 @@
       "all": 0.667,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-057",
@@ -1157,7 +1045,9 @@
       "all": 0.667,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-057",
@@ -1168,7 +1058,9 @@
       "all": 1,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-057",
@@ -1179,29 +1071,9 @@
       "all": 0.667,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-057",
-      "aName": "Chicago Shuffle",
-      "b": "CAN-106",
-      "bName": "Nyabinghi Drum-Set",
-      "structural": 0.96,
-      "all": 0.649,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-057",
-      "aName": "Chicago Shuffle",
-      "b": "CAN-169",
-      "bName": "Soca",
-      "structural": 0.923,
-      "all": 0.632,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-058",
@@ -1212,7 +1084,9 @@
       "all": 0.789,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-059",
@@ -1223,7 +1097,9 @@
       "all": 0.813,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-060",
@@ -1234,18 +1110,22 @@
       "all": 0.875,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-060",
       "aName": "Straight Blues",
-      "b": "CAN-209",
-      "bName": "Latin Rock",
-      "structural": 0.966,
-      "all": 0.966,
+      "b": "CAN-165",
+      "bName": "Bachata",
+      "structural": 0.929,
+      "all": 0.867,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-062",
@@ -1256,7 +1136,9 @@
       "all": 0.563,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-063",
@@ -1267,7 +1149,9 @@
       "all": 0.722,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-069",
@@ -1278,7 +1162,9 @@
       "all": 1,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-069",
@@ -1289,7 +1175,9 @@
       "all": 0.667,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-069",
@@ -1300,29 +1188,9 @@
       "all": 1,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-069",
-      "aName": "Brush Ballad",
-      "b": "CAN-106",
-      "bName": "Nyabinghi Drum-Set",
-      "structural": 0.96,
-      "all": 0.96,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-069",
-      "aName": "Brush Ballad",
-      "b": "CAN-169",
-      "bName": "Soca",
-      "structural": 0.923,
-      "all": 0.923,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-076",
@@ -1333,7 +1201,9 @@
       "all": 0.789,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-077",
@@ -1344,7 +1214,22 @@
       "all": 0.8,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
+    },
+    {
+      "a": "CAN-077",
+      "aName": "Fusion",
+      "b": "CAN-211",
+      "bName": "Jazz-Rock Fusion",
+      "structural": 0.882,
+      "all": 0.842,
+      "feelMatch": false,
+      "sameFamily": false,
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-078",
@@ -1355,7 +1240,9 @@
       "all": 0.857,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-080",
@@ -1366,7 +1253,9 @@
       "all": 0.667,
       "feelMatch": false,
       "sameFamily": true,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_FEEL_OR_SUBDIVISION",
+      "rationale": "Same family, but feel/swing or subdivision identity differs; retain both pedagogical targets."
     },
     {
       "a": "CAN-080",
@@ -1377,40 +1266,22 @@
       "all": 1,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-080",
-      "aName": "Country Two-Step",
-      "b": "CAN-106",
-      "bName": "Nyabinghi Drum-Set",
-      "structural": 0.96,
-      "all": 0.96,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-080",
-      "aName": "Country Two-Step",
-      "b": "CAN-169",
-      "bName": "Soca",
-      "structural": 0.923,
-      "all": 0.923,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-081",
       "aName": "Country Shuffle",
-      "b": "CAN-209",
-      "bName": "Latin Rock",
-      "structural": 0.966,
-      "all": 0.848,
+      "b": "CAN-165",
+      "bName": "Bachata",
+      "structural": 0.929,
+      "all": 0.765,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-087",
@@ -1421,29 +1292,22 @@
       "all": 0.667,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
-      "a": "CAN-087",
-      "aName": "Modern Bluegrass Drum-Set",
-      "b": "CAN-106",
-      "bName": "Nyabinghi Drum-Set",
-      "structural": 0.96,
-      "all": 0.649,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-087",
-      "aName": "Modern Bluegrass Drum-Set",
-      "b": "CAN-169",
-      "bName": "Soca",
+      "a": "CAN-088",
+      "aName": "Rockabilly Shuffle",
+      "b": "CAN-210",
+      "bName": "Reggae Rock",
       "structural": 0.923,
-      "all": 0.632,
+      "all": 0.813,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-089",
@@ -1454,7 +1318,9 @@
       "all": 0.889,
       "feelMatch": true,
       "sameFamily": true,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_STYLE_VARIANT",
+      "rationale": "Same family and broad feel, but the event-set difference exceeds exact identity and represents a named arrangement/style variant."
     },
     {
       "a": "CAN-089",
@@ -1465,18 +1331,22 @@
       "all": 0.821,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-089",
       "aName": "Old-School Breakbeat",
       "b": "CAN-212",
       "bName": "Afrobeat-Funk",
-      "structural": 0.917,
+      "structural": 0.957,
       "all": 0.759,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-090",
@@ -1487,7 +1357,9 @@
       "all": 0.824,
       "feelMatch": false,
       "sameFamily": true,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_FEEL_OR_SUBDIVISION",
+      "rationale": "Same family, but feel/swing or subdivision identity differs; retain both pedagogical targets."
     },
     {
       "a": "CAN-090",
@@ -1498,7 +1370,9 @@
       "all": 0.941,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-091",
@@ -1509,7 +1383,9 @@
       "all": 0.778,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-092",
@@ -1520,7 +1396,22 @@
       "all": 0.762,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
+    },
+    {
+      "a": "CAN-093",
+      "aName": "Lo-Fi Hip-Hop",
+      "b": "CAN-107",
+      "bName": "Early Dancehall",
+      "structural": 0.923,
+      "all": 0.75,
+      "feelMatch": false,
+      "sameFamily": false,
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-098",
@@ -1531,7 +1422,9 @@
       "all": 0.889,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-098",
@@ -1542,117 +1435,48 @@
       "all": 0.889,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
-      "a": "CAN-099",
-      "aName": "Mento Drum-Set Adaptation",
-      "b": "CAN-106",
-      "bName": "Nyabinghi Drum-Set",
-      "structural": 0.96,
-      "all": 0.96,
-      "feelMatch": false,
+      "a": "CAN-101",
+      "aName": "Rocksteady",
+      "b": "CAN-105",
+      "bName": "Dub",
+      "structural": 0.9,
+      "all": 0.909,
+      "feelMatch": true,
       "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-099",
-      "aName": "Mento Drum-Set Adaptation",
-      "b": "CAN-169",
-      "bName": "Soca",
-      "structural": 0.923,
-      "all": 0.923,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_STYLE_VARIANT",
+      "rationale": "Same family and broad feel, but the event-set difference exceeds exact identity and represents a named arrangement/style variant."
     },
     {
       "a": "CAN-102",
       "aName": "Reggae One Drop",
       "b": "CAN-105",
       "bName": "Dub",
-      "structural": 0.952,
-      "all": 0.952,
+      "structural": 0.9,
+      "all": 0.818,
       "feelMatch": true,
       "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-106",
-      "aName": "Nyabinghi Drum-Set",
-      "b": "CAN-169",
-      "bName": "Soca",
-      "structural": 0.889,
-      "all": 0.889,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-107",
-      "aName": "Early Dancehall",
-      "b": "CAN-108",
-      "bName": "Digital Dancehall / Ragga",
-      "structural": 0.963,
-      "all": 0.963,
-      "feelMatch": true,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-107",
-      "aName": "Early Dancehall",
-      "b": "CAN-109",
-      "bName": "Modern Dancehall",
-      "structural": 0.963,
-      "all": 0.963,
-      "feelMatch": true,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
-    },
-    {
-      "a": "CAN-107",
-      "aName": "Early Dancehall",
-      "b": "CAN-121",
-      "bName": "Trip-Hop",
-      "structural": 0.929,
-      "all": 0.867,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_STYLE_VARIANT",
+      "rationale": "Same family and broad feel, but the event-set difference exceeds exact identity and represents a named arrangement/style variant."
     },
     {
       "a": "CAN-108",
       "aName": "Digital Dancehall / Ragga",
-      "b": "CAN-109",
-      "bName": "Modern Dancehall",
-      "structural": 0.929,
-      "all": 0.929,
-      "feelMatch": true,
-      "sameFamily": true,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-108",
-      "aName": "Digital Dancehall / Ragga",
-      "b": "CAN-121",
-      "bName": "Trip-Hop",
-      "structural": 0.897,
-      "all": 0.839,
+      "b": "CAN-132",
+      "bName": "Bolero Cubano",
+      "structural": 0.917,
+      "all": 0.846,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-109",
-      "aName": "Modern Dancehall",
-      "b": "CAN-121",
-      "bName": "Trip-Hop",
-      "structural": 0.897,
-      "all": 0.839,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-110",
@@ -1663,18 +1487,22 @@
       "all": 0.957,
       "feelMatch": true,
       "sameFamily": true,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_STYLE_VARIANT",
+      "rationale": "Same family and broad feel, but the event-set difference exceeds exact identity and represents a named arrangement/style variant."
     },
     {
-      "a": "CAN-112",
-      "aName": "Deep House",
-      "b": "CAN-164",
-      "bName": "Merengue",
-      "structural": 1,
+      "a": "CAN-111",
+      "aName": "Classic House",
+      "b": "CAN-169",
+      "bName": "Soca",
+      "structural": 0.714,
       "all": 1,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-114",
@@ -1685,29 +1513,9 @@
       "all": 1,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-120",
-      "aName": "Drum & Bass",
-      "b": "CAN-165",
-      "bName": "Bachata",
-      "structural": 0.963,
-      "all": 0.897,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-120",
-      "aName": "Drum & Bass",
-      "b": "CAN-166",
-      "bName": "Bomba Drum-Set",
-      "structural": 0.897,
-      "all": 0.839,
-      "feelMatch": false,
-      "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-120",
@@ -1718,18 +1526,22 @@
       "all": 0.8,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-148",
       "aName": "Samba-Funk",
       "b": "CAN-208",
       "bName": "Brazilian Funk",
-      "structural": 0.957,
+      "structural": 1,
       "all": 0.893,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-154",
@@ -1740,7 +1552,9 @@
       "all": 0.923,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-155",
@@ -1751,7 +1565,9 @@
       "all": 0.923,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-156",
@@ -1762,29 +1578,22 @@
       "all": 0.833,
       "feelMatch": false,
       "sameFamily": true,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_FEEL_OR_SUBDIVISION",
+      "rationale": "Same family, but feel/swing or subdivision identity differs; retain both pedagogical targets."
     },
     {
-      "a": "CAN-165",
-      "aName": "Bachata",
-      "b": "CAN-184",
-      "bName": "Mbaqanga",
-      "structural": 0.889,
-      "all": 0.828,
-      "feelMatch": true,
+      "a": "CAN-173",
+      "aName": "Afrobeat",
+      "b": "CAN-211",
+      "bName": "Jazz-Rock Fusion",
+      "structural": 1,
+      "all": 0.947,
+      "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-171",
-      "aName": "Zouk",
-      "b": "CAN-191",
-      "bName": "Raï",
-      "structural": 0.857,
-      "all": 1,
-      "feelMatch": true,
-      "sameFamily": false,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-174",
@@ -1795,29 +1604,22 @@
       "all": 0.688,
       "feelMatch": true,
       "sameFamily": true,
-      "action": "REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_STYLE_VARIANT",
+      "rationale": "Same family and broad feel, but the event-set difference exceeds exact identity and represents a named arrangement/style variant."
     },
     {
       "a": "CAN-187",
       "aName": "Sega",
       "b": "CAN-213",
       "bName": "World 6/8 Fusion",
-      "structural": 0.952,
-      "all": 0.8,
+      "structural": 1,
+      "all": 0.714,
       "feelMatch": false,
       "sameFamily": false,
-      "action": "REVIEW"
-    },
-    {
-      "a": "CAN-197",
-      "aName": "Masmoudi Kabir",
-      "b": "CAN-198",
-      "bName": "Chiftetelli",
-      "structural": 1,
-      "all": 1,
-      "feelMatch": true,
-      "sameFamily": true,
-      "action": "MERGE/REVIEW"
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     }
   ]
 }

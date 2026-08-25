@@ -1933,7 +1933,7 @@ button i {
 
 /* v45 — project header, sequencer card header, sample filters */
 .bt-version{align-self:flex-start;margin-top:2px;padding:2px 5px;border:1px solid var(--bt-border);border-radius:999px;background:var(--bt-control);color:var(--bt-muted);font-size:.50rem;font-weight:850;letter-spacing:.04em}
-.github-button{text-decoration:none;margin-left:2px}
+.github-button,.coffee-button{text-decoration:none;margin-left:2px}
 .sequencer-card-header{display:flex;align-items:center;justify-content:space-between;min-height:34px;padding:4px 9px;margin-top:1px;border-top:1px solid var(--bt-border);border-bottom:1px solid var(--bt-border);background:color-mix(in srgb,var(--bt-control) 82%,var(--bt-panel));}
 .sequencer-card-title{color:var(--bt-muted);font-size:.56rem;font-weight:900;letter-spacing:.11em}
 .sequencer-output-tools{display:flex;align-items:center;gap:8px}
@@ -2242,3 +2242,9 @@ button i {
     background:var(--bt-border);
     flex:0 0 auto;
 }
+
+/* v74 · keep marquee selection styling; suppress browser focus ring on grid cells */
+.grid .cell:focus:not(.selected),.grid .cell:focus-visible:not(.selected){outline:none!important;}
+.grid .cell.selected:focus,.grid .cell.selected:focus-visible{outline:2px solid #ffd400!important;outline-offset:-1px;}
+
+.shortcut-pad-map .shortcut-keys{flex-wrap:wrap;justify-content:flex-end;row-gap:4px}.shortcut-pad-map .shortcut-keys>span{display:inline-flex;align-items:center;gap:3px;white-space:nowrap}

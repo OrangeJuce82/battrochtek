@@ -34,6 +34,7 @@
         <script defer src="vendor/alpine/alpine.min.js"></script>
         <script defer src="vendor/qrcode/qrcode.js"></script>
         <script defer src="grooves/external-grooves.js"></script>
+        <script defer src="grooves/learning-path.js"></script>
         <script defer src="vendor/i18next/i18next.min.js"></script>
         <script defer src="grooves/human-feel-profiles.js"></script>
         <script defer src="samples/manifest-v2.js"></script>
@@ -246,6 +247,43 @@
                 </div>
                 <div class="drum-machine-clear"></div>
                 <div class="drum-machine-clear"></div>
+            </div>
+            <div class="learning-panel-outside">
+                <details id="learning-panel" class="learning-panel">
+                    <summary class="learning-summary">
+                        <span class="learning-summary-title"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><strong>LEARNING</strong><small id="learning-summary-status">48 lessons · 8 levels</small></span>
+                        <span class="learning-progress-compact" aria-hidden="true"><span id="learning-progress-compact-fill"></span></span>
+                    </summary>
+                    <div class="learning-layout">
+                        <nav class="learning-navigation" aria-label="Learning curriculum">
+                            <label><span>LEVEL</span><select id="learning-level" aria-label="Learning level"></select></label>
+                            <p id="learning-level-description" class="learning-level-description"></p>
+                            <div id="learning-lessons" class="learning-lessons" role="listbox" aria-label="Lessons"></div>
+                        </nav>
+                        <article class="learning-lesson" aria-live="polite">
+                            <div class="learning-lesson-heading">
+                                <div><span id="learning-number" class="learning-number">1.1</span><h2 id="learning-title">Quarter-Note Pulse</h2></div>
+                                <label class="learning-complete"><input id="learning-complete" type="checkbox"><span>MASTERED</span></label>
+                            </div>
+                            <p id="learning-context" class="learning-context"></p>
+                            <div id="learning-focus" class="learning-focus"></div>
+                            <div class="learning-tempo">
+                                <span><small>START</small><strong id="learning-start-tempo">60 BPM</strong></span>
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                                <span><small>TARGET</small><strong id="learning-target-tempo">90 BPM</strong></span>
+                                <span><small>FORMAT</small><strong id="learning-signature">4/4</strong></span>
+                            </div>
+                            <div><h3>MASTERY CHECK</h3><ul id="learning-mastery" class="learning-mastery"></ul></div>
+                            <div class="learning-actions">
+                                <button type="button" class="bt-button outline" id="learning-prev"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i> PREVIOUS</button>
+                                <button type="button" class="bt-button" id="learning-load"><i class="fa-solid fa-drum" aria-hidden="true"></i> LOAD LESSON</button>
+                                <button type="button" class="bt-button" id="learning-practice"><i class="fa-solid fa-play" aria-hidden="true"></i> LOAD + PRACTICE</button>
+                                <button type="button" class="bt-button outline" id="learning-next">NEXT <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+                            </div>
+                            <div class="learning-progress"><span id="learning-progress-label">0 / 48 mastered</span><div><span id="learning-progress-fill"></span></div></div>
+                        </article>
+                    </div>
+                </details>
             </div>
             <div class="shortcut-help-outside">
                 <details class="shortcut-help" id="shortcut-help">

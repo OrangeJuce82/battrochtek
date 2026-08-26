@@ -128,7 +128,7 @@
       "tags": [],
       "category": "Acoustique",
       "displayLabel": "Studio Tom High",
-      "normalizationGainDb": -2.0,
+      "normalizationGainDb": -2,
       "sha256": "5aae146595266fa4d3fef58acb20814f8a14e9c145883c2497d1888e219df3bc"
     },
     {
@@ -154,7 +154,7 @@
       "tags": [],
       "category": "Acoustique",
       "displayLabel": "Studio Tom Mid",
-      "normalizationGainDb": -2.0,
+      "normalizationGainDb": -2,
       "sha256": "bc70999c9fd0e3b455286d4f5bb68051666499a26646bf4b7419484fa7032b85"
     },
     {
@@ -388,7 +388,7 @@
       "tags": [],
       "category": "Acoustique",
       "displayLabel": "Raw Snare",
-      "normalizationGainDb": -2.0,
+      "normalizationGainDb": -2,
       "sha256": "680ce4e9659253807247649a6bd3fb8109d3e4aa06b222c3715c484b250ecaf4"
     },
     {
@@ -414,7 +414,7 @@
       "tags": [],
       "category": "Acoustique",
       "displayLabel": "Snare",
-      "normalizationGainDb": -2.0,
+      "normalizationGainDb": -2,
       "sha256": "c0f7f72cd3ae16daa8bc1a458246bc6d6d9d831f3fb12bad9c8db71e6d40782b"
     },
     {
@@ -570,7 +570,7 @@
       "tags": [],
       "category": "Acoustique",
       "displayLabel": "Clap",
-      "normalizationGainDb": -3.0,
+      "normalizationGainDb": -3,
       "sha256": "90bed008035a99c511c7e1c4bb8d39e9d25c67616c0faa1c0cb56d151d572e7b"
     },
     {
@@ -596,7 +596,7 @@
       "tags": [],
       "category": "Acoustique",
       "displayLabel": "Claves",
-      "normalizationGainDb": -3.0,
+      "normalizationGainDb": -3,
       "sha256": "3878cdf73bbe3c3dfc65fef8ff34cdcff714ed4c455fadb06313b374f3bfc09d"
     },
     {
@@ -648,7 +648,7 @@
       "tags": [],
       "category": "Acoustique",
       "displayLabel": "Cowbell Bright",
-      "normalizationGainDb": -3.0,
+      "normalizationGainDb": -3,
       "sha256": "487fabbb720e2f3bc0d136cc840dc46eb5e3417fd30d340557e9254b214ae364"
     },
     {
@@ -700,7 +700,7 @@
       "tags": [],
       "category": "Électro",
       "displayLabel": "Level Up",
-      "normalizationGainDb": -3.0,
+      "normalizationGainDb": -3,
       "sha256": "96f358f32137053d98b48db4942490b6c6fb9e1fdd38321ed295431fe7ddabe8"
     },
     {
@@ -726,7 +726,7 @@
       "tags": [],
       "category": "Électro",
       "displayLabel": "Glitch",
-      "normalizationGainDb": -3.0,
+      "normalizationGainDb": -3,
       "sha256": "fd2af00c83896ce622f5e7ea473b704f86e18d41e8716b53b03232245ac30670"
     },
     {
@@ -752,7 +752,7 @@
       "tags": [],
       "category": "Électro",
       "displayLabel": "Distorted Hi-Hat Closed",
-      "normalizationGainDb": -4.0,
+      "normalizationGainDb": -4,
       "sha256": "fb9163a6f40b9d7215994dfef6c97702d196b25f86f1f5ae9f680f87566b7e6c"
     },
     {
@@ -778,7 +778,7 @@
       "tags": [],
       "category": "Électro",
       "displayLabel": "Metal Hi-Hat Closed",
-      "normalizationGainDb": -4.0,
+      "normalizationGainDb": -4,
       "sha256": "bbbcff002141a6f069d88544160eaf6ee0c5764329a9310bc4e2b803984d6285"
     },
     {
@@ -908,7 +908,7 @@
       "tags": [],
       "category": "Acoustique",
       "displayLabel": "Maracas",
-      "normalizationGainDb": -3.0,
+      "normalizationGainDb": -3,
       "sha256": "73643627071b5eff13a233a7153ccc1eb129ad4a9d1410c5bc969f4adca1a6d1"
     },
     {
@@ -934,7 +934,7 @@
       "tags": [],
       "category": "Électro",
       "displayLabel": "Metal Hit",
-      "normalizationGainDb": -3.0,
+      "normalizationGainDb": -3,
       "sha256": "1d02d4969ed30ccd9bb86d0a86bbb950d049a5d2db18544fa36a315f30cc791f"
     },
     {
@@ -1012,7 +1012,7 @@
       "tags": [],
       "category": "Électro",
       "displayLabel": "Punch",
-      "normalizationGainDb": -3.0,
+      "normalizationGainDb": -3,
       "sha256": "84b770e9c16ce657d3d0f50d49cf3e2d45b82ec17a965db71af42bf345ff40c4"
     },
     {
@@ -1038,7 +1038,7 @@
       "tags": [],
       "category": "Acoustique",
       "displayLabel": "Ride",
-      "normalizationGainDb": -4.0,
+      "normalizationGainDb": -4,
       "sha256": "0f10a09389680b79bccc9f8a413920e9d969074838c95c5e06382871b363f4f7"
     },
     {
@@ -1064,7 +1064,7 @@
       "tags": [],
       "category": "Acoustique",
       "displayLabel": "Ride Dark",
-      "normalizationGainDb": -4.0,
+      "normalizationGainDb": -4,
       "sha256": "bea5abe3e6d12d6351fa4817bc8b5183b260c9a2ef937b4d8fffe870a3016f6d"
     },
     {
@@ -1116,7 +1116,7 @@
       "tags": [],
       "category": "Acoustique",
       "displayLabel": "Rimshot",
-      "normalizationGainDb": -2.0,
+      "normalizationGainDb": -2,
       "sha256": "8375cee896ea5c31c7f27efdb16045f391665c8e4ba444e657c7ba22f4d8ef9c"
     },
     {
@@ -1142,7 +1142,7 @@
       "tags": [],
       "category": "Électro",
       "displayLabel": "Distorted Snare",
-      "normalizationGainDb": -2.0,
+      "normalizationGainDb": -2,
       "sha256": "423b69d9cac690951bef3fafc43b5d9227c8f3aa626414b8b2af27c672a5bc5d"
     },
     {
@@ -1168,7 +1168,7 @@
       "tags": [],
       "category": "Électro",
       "displayLabel": "Glitch Snare",
-      "normalizationGainDb": -2.0,
+      "normalizationGainDb": -2,
       "sha256": "6f2ad96a4687d50da3e4308dd42bf24f69089584facc37fc71ed2e20c473316b"
     },
     {
@@ -1246,7 +1246,7 @@
       "tags": [],
       "category": "Électro",
       "displayLabel": "Zap",
-      "normalizationGainDb": -3.0,
+      "normalizationGainDb": -3,
       "sha256": "da6e9149741cf61c7e0c49d54dd46e2d03fc959bdb0cbd7ecd200f34fe9e7521"
     },
     {
@@ -5203,7 +5203,7 @@
       "sha256": "6f63a9b4965059762617eabf85077d8ca3c954555457f6923c7cc54fef534f13",
       "category": "Acoustique",
       "displayLabel": "Vintage Rock Kick",
-      "normalizationGainDb": 0.0
+      "normalizationGainDb": 0
     },
     {
       "key": "vintage_rock_kick_vl10_rr2",
@@ -5234,7 +5234,7 @@
       "sha256": "e5c325f9df461dca472a420544fa85a1c8cbd750586ca0237bac110110df6230",
       "category": "Acoustique",
       "displayLabel": "Vintage Rock Kick",
-      "normalizationGainDb": 0.0
+      "normalizationGainDb": 0
     },
     {
       "key": "vintage_rock_kick_vl14_rr1",
@@ -5265,7 +5265,7 @@
       "sha256": "f459841107c8375759f48b0bf0eeeb4e57a3449453ebb4e463affca9ebcbd09e",
       "category": "Acoustique",
       "displayLabel": "Vintage Rock Kick",
-      "normalizationGainDb": 0.0
+      "normalizationGainDb": 0
     },
     {
       "key": "vintage_rock_kick_vl14_rr2",
@@ -5296,7 +5296,7 @@
       "sha256": "d139bcc7df8da9e6b0bcbd5fbffa44404e4daa67c5b5a4329e4c19a3c69b7022",
       "category": "Acoustique",
       "displayLabel": "Vintage Rock Kick",
-      "normalizationGainDb": 0.0
+      "normalizationGainDb": 0
     },
     {
       "key": "vintage_rock_kick_vl1_rr1",
@@ -5327,7 +5327,7 @@
       "sha256": "0ec3792df2ee033571ac1588c90250179a047e8c421d2d98d3f047169a80a091",
       "category": "Acoustique",
       "displayLabel": "Vintage Rock Kick",
-      "normalizationGainDb": 0.0
+      "normalizationGainDb": 0
     },
     {
       "key": "vintage_rock_kick_vl1_rr2",
@@ -5358,7 +5358,7 @@
       "sha256": "6caca757f0963efc2de890da436f5ffad0175d1520157900796d7163f5b19daa",
       "category": "Acoustique",
       "displayLabel": "Vintage Rock Kick",
-      "normalizationGainDb": 0.0
+      "normalizationGainDb": 0
     },
     {
       "key": "vintage_rock_sidestick_vl1_rr1",
@@ -7729,8 +7729,8 @@
       ],
       "category": "Acoustique",
       "displayLabel": "Vintage Rock Snare",
-      "normalizationGainDb": 3.0,
-      "importGainDb": 18.0,
+      "normalizationGainDb": 3,
+      "importGainDb": 18,
       "sha256": "86de7fdc7e7b2f1a3953365ec3be99c34ac3ee64869980ba8d1b81676bccb3a7"
     },
     {
@@ -7761,8 +7761,8 @@
       ],
       "category": "Acoustique",
       "displayLabel": "Vintage Rock Snare",
-      "normalizationGainDb": 3.0,
-      "importGainDb": 18.0,
+      "normalizationGainDb": 3,
+      "importGainDb": 18,
       "sha256": "15a47a3273490c2f6f05873094294b32b566b40d7fa389aeecc254450a7582d7"
     },
     {
@@ -7793,8 +7793,8 @@
       ],
       "category": "Acoustique",
       "displayLabel": "Vintage Rock Snare",
-      "normalizationGainDb": 3.0,
-      "importGainDb": 9.0,
+      "normalizationGainDb": 3,
+      "importGainDb": 9,
       "sha256": "8848a4b3dd559534d7ecb474ba3a6dbaade73f792c01199e1f590d130ef32bff"
     },
     {
@@ -7825,7 +7825,7 @@
       ],
       "category": "Acoustique",
       "displayLabel": "Vintage Rock Snare",
-      "normalizationGainDb": 3.0,
+      "normalizationGainDb": 3,
       "importGainDb": 9.4,
       "sha256": "985c24c01d98edb4adcedf91c0278580707534f017b5ed602fc7d629591beb0a"
     },
@@ -7857,7 +7857,7 @@
       ],
       "category": "Acoustique",
       "displayLabel": "Vintage Rock Snare",
-      "normalizationGainDb": 3.0,
+      "normalizationGainDb": 3,
       "importGainDb": 4.2,
       "sha256": "0cc1d90c861d931d5b019cdefe5132a441a088aed325eb4b78840237210f027c"
     },
@@ -7889,9 +7889,301 @@
       ],
       "category": "Acoustique",
       "displayLabel": "Vintage Rock Snare",
-      "normalizationGainDb": 3.0,
+      "normalizationGainDb": 3,
       "importGainDb": 2.2,
       "sha256": "f975624e21f087b4c0e68a37bc0fbefe2b1b47f3322e905520e8ec1002ede7da"
+    },
+    {
+      "key": "henkonen_ridebell_vl1",
+      "file": "sounds/imported/henkonen-bells/henkonen_ridebell_vl1.wav",
+      "label": "HenKonen Ride Bell Piano",
+      "legacyType": "cymbal",
+      "instrument": "ride",
+      "articulation": "bell",
+      "velocity": {
+        "min": 1,
+        "max": 42
+      },
+      "roundRobinGroup": "henkonen_ridebell_vl1",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "henkonen-bells",
+      "sourceFile": "700811__henkonen__ride-bell-p.wav",
+      "sourceCollection": "Sounds and Scapes 4 — Drumkit Oneshots",
+      "sourceUrl": "https://freesound.org/people/HenKonen/sounds/700811/",
+      "collectionUrl": "https://freesound.org/people/HenKonen/packs/39146/",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "importProfile": "henkonen-kit-bells",
+      "tags": [
+        "ride",
+        "bell",
+        "cc0",
+        "studio-clean"
+      ],
+      "category": "Acoustique",
+      "displayLabel": "HenKonen Ride Bell Piano",
+      "sha256": "1fb5266ff1f05f8c76c2f692aeff5e1f3856d5380f758023b4bbd57475ae64a1"
+    },
+    {
+      "key": "henkonen_ridebell_vl2",
+      "file": "sounds/imported/henkonen-bells/henkonen_ridebell_vl2.wav",
+      "label": "HenKonen Ride Bell Mezzo Piano",
+      "legacyType": "cymbal",
+      "instrument": "ride",
+      "articulation": "bell",
+      "velocity": {
+        "min": 43,
+        "max": 84
+      },
+      "roundRobinGroup": "henkonen_ridebell_vl2",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "henkonen-bells",
+      "sourceFile": "700810__henkonen__ride-bell-mp.wav",
+      "sourceCollection": "Sounds and Scapes 4 — Drumkit Oneshots",
+      "sourceUrl": "https://freesound.org/people/HenKonen/sounds/700810/",
+      "collectionUrl": "https://freesound.org/people/HenKonen/packs/39146/",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "importProfile": "henkonen-kit-bells",
+      "tags": [
+        "ride",
+        "bell",
+        "cc0",
+        "studio-clean"
+      ],
+      "category": "Acoustique",
+      "displayLabel": "HenKonen Ride Bell Mezzo Piano",
+      "sha256": "905e9f5b7563dd356d4e94d50eecadf13d1e92f010d07cd413281a223a4eb0ef"
+    },
+    {
+      "key": "henkonen_ridebell_vl3",
+      "file": "sounds/imported/henkonen-bells/henkonen_ridebell_vl3.wav",
+      "label": "HenKonen Ride Bell Forte",
+      "legacyType": "cymbal",
+      "instrument": "ride",
+      "articulation": "bell",
+      "velocity": {
+        "min": 85,
+        "max": 127
+      },
+      "roundRobinGroup": "henkonen_ridebell_vl3",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "henkonen-bells",
+      "sourceFile": "700809__henkonen__ride-bell-f.wav",
+      "sourceCollection": "Sounds and Scapes 4 — Drumkit Oneshots",
+      "sourceUrl": "https://freesound.org/people/HenKonen/sounds/700809/",
+      "collectionUrl": "https://freesound.org/people/HenKonen/packs/39146/",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "importProfile": "henkonen-kit-bells",
+      "tags": [
+        "ride",
+        "bell",
+        "cc0",
+        "studio-clean"
+      ],
+      "category": "Acoustique",
+      "displayLabel": "HenKonen Ride Bell Forte",
+      "sha256": "1241c99cdcbcb4710ff5eef7a9c887319c452a35b1ab8e0727748041060ce27e"
+    },
+    {
+      "key": "henkonen_ride2bell_vl1",
+      "file": "sounds/imported/henkonen-bells/henkonen_ride2bell_vl1.wav",
+      "label": "HenKonen Ride 2 Bell Mezzo Forte",
+      "legacyType": "cymbal",
+      "instrument": "ride",
+      "articulation": "bell",
+      "velocity": {
+        "min": 1,
+        "max": 84
+      },
+      "roundRobinGroup": "henkonen_ride2bell_vl1",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "henkonen-bells",
+      "sourceFile": "700805__henkonen__ride-2-alt-bell-mf.wav",
+      "sourceCollection": "Sounds and Scapes 4 — Drumkit Oneshots",
+      "sourceUrl": "https://freesound.org/people/HenKonen/sounds/700805/",
+      "collectionUrl": "https://freesound.org/people/HenKonen/packs/39146/",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "importProfile": "henkonen-kit-bells",
+      "tags": [
+        "ride",
+        "bell",
+        "cc0",
+        "soul-warm"
+      ],
+      "category": "Acoustique",
+      "displayLabel": "HenKonen Ride 2 Bell Mezzo Forte",
+      "sha256": "e2f57f4e49ecb1d93c5f51913cd40c24430b92e14e356a18897c809025dc46aa"
+    },
+    {
+      "key": "henkonen_ride2bell_vl2",
+      "file": "sounds/imported/henkonen-bells/henkonen_ride2bell_vl2.wav",
+      "label": "HenKonen Ride 2 Bell Forte",
+      "legacyType": "cymbal",
+      "instrument": "ride",
+      "articulation": "bell",
+      "velocity": {
+        "min": 85,
+        "max": 127
+      },
+      "roundRobinGroup": "henkonen_ride2bell_vl2",
+      "roundRobinIndex": 1,
+      "chokeGroup": null,
+      "bank": "henkonen-bells",
+      "sourceFile": "700806__henkonen__ride-2-bell-f-long.wav",
+      "sourceCollection": "Sounds and Scapes 4 — Drumkit Oneshots",
+      "sourceUrl": "https://freesound.org/people/HenKonen/sounds/700806/",
+      "collectionUrl": "https://freesound.org/people/HenKonen/packs/39146/",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "importProfile": "henkonen-kit-bells",
+      "tags": [
+        "ride",
+        "bell",
+        "cc0",
+        "soul-warm"
+      ],
+      "category": "Acoustique",
+      "displayLabel": "HenKonen Ride 2 Bell Forte",
+      "sha256": "b91f8b02519199f7f655fe0f280abff23b24b37cbab25f4e5574b1a807931d07"
+    },
+    {
+      "key": "bt_analog_short_bell",
+      "file": "sounds/derived/kit-bells/bt_analog_short_bell.wav",
+      "label": "Analog Classic Short Bell",
+      "legacyType": "cymbal",
+      "instrument": "ride",
+      "articulation": "bell",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-analog-short",
+      "sourceFile": "700811__henkonen__ride-bell-p.wav",
+      "sourceCollection": "Sounds and Scapes 4 — Drumkit Oneshots",
+      "sourceUrl": "https://freesound.org/people/HenKonen/sounds/700811/",
+      "collectionUrl": "https://freesound.org/people/HenKonen/packs/39146/",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "importProfile": "henkonen-kit-bells",
+      "tags": [
+        "ride",
+        "bell",
+        "cc0",
+        "analog-short"
+      ],
+      "category": "Électro",
+      "displayLabel": "Analog Classic Short Bell",
+      "sha256": "33d944e222980882729f0e20e21a75d99982bf986f106f79d9cbc95e0889e72c",
+      "processing": "mono/resample, low-pass, compression, 1.15 s envelope"
+    },
+    {
+      "key": "bt_digital80_bell",
+      "file": "sounds/derived/kit-bells/bt_digital80_bell.wav",
+      "label": "Digital 80 Ride Bell",
+      "legacyType": "cymbal",
+      "instrument": "ride",
+      "articulation": "bell",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-digital-80",
+      "sourceFile": "700809__henkonen__ride-bell-f.wav",
+      "sourceCollection": "Sounds and Scapes 4 — Drumkit Oneshots",
+      "sourceUrl": "https://freesound.org/people/HenKonen/sounds/700809/",
+      "collectionUrl": "https://freesound.org/people/HenKonen/packs/39146/",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "importProfile": "henkonen-kit-bells",
+      "tags": [
+        "ride",
+        "bell",
+        "cc0",
+        "digital-80"
+      ],
+      "category": "Électro",
+      "displayLabel": "Digital 80 Ride Bell",
+      "sha256": "dc2dec7d729d9e803356529b25324e3612162bff58c6a0675bb9a143a3515817",
+      "processing": "mono/resample, 12-bit reduction, band-pass shaping, 1.8 s envelope"
+    },
+    {
+      "key": "bt_spdust_bell",
+      "file": "sounds/derived/kit-bells/bt_spdust_bell.wav",
+      "label": "SP Dust Ride Bell",
+      "legacyType": "cymbal",
+      "instrument": "ride",
+      "articulation": "bell",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-lo-fi-dark",
+      "sourceFile": "700805__henkonen__ride-2-alt-bell-mf.wav",
+      "sourceCollection": "Sounds and Scapes 4 — Drumkit Oneshots",
+      "sourceUrl": "https://freesound.org/people/HenKonen/sounds/700805/",
+      "collectionUrl": "https://freesound.org/people/HenKonen/packs/39146/",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "importProfile": "henkonen-kit-bells",
+      "tags": [
+        "ride",
+        "bell",
+        "cc0",
+        "lo-fi-dark"
+      ],
+      "category": "Électro",
+      "displayLabel": "SP Dust Ride Bell",
+      "sha256": "d9cf65bf655be28c255bcf10ce2ef2bc3615513f8175902cc5f830a37f5c2b73",
+      "processing": "mono/resample, dark low-pass, 11-bit reduction, compression, 2.3 s envelope"
+    },
+    {
+      "key": "bt_glitch_metal_bell",
+      "file": "sounds/derived/kit-bells/bt_glitch_metal_bell.wav",
+      "label": "Glitch Lab Metal Bell",
+      "legacyType": "cymbal",
+      "instrument": "ride",
+      "articulation": "bell",
+      "velocity": {
+        "min": 1,
+        "max": 127
+      },
+      "roundRobinGroup": null,
+      "roundRobinIndex": null,
+      "chokeGroup": null,
+      "bank": "bt-glitch-metal",
+      "sourceFile": "700806__henkonen__ride-2-bell-f-long.wav",
+      "sourceCollection": "Sounds and Scapes 4 — Drumkit Oneshots",
+      "sourceUrl": "https://freesound.org/people/HenKonen/sounds/700806/",
+      "collectionUrl": "https://freesound.org/people/HenKonen/packs/39146/",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "importProfile": "henkonen-kit-bells",
+      "tags": [
+        "ride",
+        "bell",
+        "cc0",
+        "glitch-metal"
+      ],
+      "category": "Électro",
+      "displayLabel": "Glitch Lab Metal Bell",
+      "sha256": "8cf43a78a7d18f404478a98099384373bdb666081e0c7260a16848ef2d263f6c",
+      "processing": "mono/resample, 7-bit reduction, metallic multiband EQ, 1.25 s envelope"
     }
   ],
   "kits": [

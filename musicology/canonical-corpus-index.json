@@ -2,8 +2,8 @@
   "schema": "battrochtek.canonical-corpus-index/v1",
   "version": "1.0.0",
   "ppq": 960,
-  "count": 213,
-  "generatedAt": "2026-08-25T22:26:11.029Z",
+  "count": 217,
+  "generatedAt": "2026-08-26T06:56:09.504Z",
   "entries": [
     {
       "id": "CAN-001",
@@ -3199,6 +3199,66 @@
       "signature": "6/8",
       "bpm": 112,
       "fingerprint": "c891ea6658021040"
+    },
+    {
+      "id": "CAN-214",
+      "name": "Guajira Drum-Set Adaptation",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "file": "musicology/canonical-grooves/CAN-214-guajira-drum-set-adaptation.json",
+      "midi": "musicology/midi/CAN-214-guajira-drum-set-adaptation.mid",
+      "validationState": "documentary-reviewed-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-documentary-reviewed-adaptation",
+      "eventCount": 22,
+      "signature": "4/4",
+      "bpm": 92,
+      "fingerprint": "028a5b321ea4a230"
+    },
+    {
+      "id": "CAN-215",
+      "name": "Pilón Drum-Set Adaptation",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "file": "musicology/canonical-grooves/CAN-215-pilon-drum-set-adaptation.json",
+      "midi": "musicology/midi/CAN-215-pilon-drum-set-adaptation.mid",
+      "validationState": "documentary-reviewed-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-documentary-reviewed-adaptation",
+      "eventCount": 38,
+      "signature": "4/4",
+      "bpm": 108,
+      "fingerprint": "67d7ca9b45cb3928"
+    },
+    {
+      "id": "CAN-216",
+      "name": "Cáscara Coordination Exercise",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "file": "musicology/canonical-grooves/CAN-216-cascara-coordination-exercise.json",
+      "midi": "musicology/midi/CAN-216-cascara-coordination-exercise.mid",
+      "validationState": "documentary-reviewed-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-documentary-reviewed-adaptation",
+      "eventCount": 20,
+      "signature": "4/4",
+      "bpm": 104,
+      "fingerprint": "90dc473ecca68f70"
+    },
+    {
+      "id": "CAN-217",
+      "name": "Mambo Bell Coordination Exercise",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "file": "musicology/canonical-grooves/CAN-217-mambo-bell-coordination-exercise.json",
+      "midi": "musicology/midi/CAN-217-mambo-bell-coordination-exercise.mid",
+      "validationState": "documentary-reviewed-adaptation",
+      "confidence": 0.78,
+      "sourceType": "battrochtek-documentary-reviewed-adaptation",
+      "eventCount": 22,
+      "signature": "4/4",
+      "bpm": 118,
+      "fingerprint": "8dd37c592e8a06db"
     }
   ]
 }

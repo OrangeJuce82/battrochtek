@@ -1,4 +1,4 @@
-const CACHE_NAME = "battrochtek-v120";
+const CACHE_NAME = "battrochtek-v122";
 const AUDIO_CACHE = "battrochtek-audio-v7";
 
 // Alpine n'est volontairement pas pré-caché ici : il est généré localement par
@@ -16,6 +16,7 @@ const APP_SHELL = [
   "./vendor/oat/oat.min.js",
   "./vendor/qrcode/qrcode.js",
   "./grooves/external-grooves.js",
+  "./grooves/learning-path.js",
   "./grooves/human-feel-profiles.js",
   "./vendor/fontawesome/css/all.min.css",
   "./vendor/fontawesome/webfonts/fa-solid-900.woff2",

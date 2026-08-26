@@ -1,6 +1,6 @@
 {
   "schema": "battrochtek.musicology-references/v1",
-  "generatedAt": "2026-08-25T22:26:11.149Z",
+  "generatedAt": "2026-08-26T06:56:09.637Z",
   "references": {
     "yamahaDrumFoundations": {
       "title": "Drumming techniques: 8-beat, 16-beat and shuffle — Yamaha",
@@ -727,8 +727,8 @@
     }
   },
   "summary": {
-    "canonicalGrooves": 213,
-    "taxonomyLiteratureSupported": 187,
-    "humanDatasetSupported": 130
+    "canonicalGrooves": 217,
+    "taxonomyLiteratureSupported": 191,
+    "humanDatasetSupported": 134
   }
 }

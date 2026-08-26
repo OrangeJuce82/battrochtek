@@ -1,79 +1,150 @@
 {
-  "schema": "battrochtek.learning-path/v1",
+  "schema": "battrochtek.learning-path/v2",
   "name": "Learning",
   "language": "en",
-  "status": "curriculum-ready",
-  "designRule": "A pedagogical view over canonical grooves, not a competing genre taxonomy and not duplicated scores.",
-  "progressionBasis": [
-    "PDF-f40b6fc1f4f1",
-    "PDF-30b03bbca266",
-    "PDF-474a33d9bfb9",
-    "PDF-4f2f3846064c",
-    "PDF-39ddc4b77dca",
-    "PDF-585c2cd39514",
-    "PDF-6b84daa9ee9c",
-    "PDF-9e761b1fd58e",
-    "PDF-46c92cd8a043"
+  "status": "implemented",
+  "designRule": "Technique, reading, coordination, sound, time, vocabulary and musicianship are taught through canonical groove applications; styles are repertoire, not the curriculum spine.",
+  "frameworkSources": [
+    { "id": "PAS-RUDIMENTS", "label": "Percussive Arts Society International Drum Rudiments", "url": "https://pas.org/rudiments/" },
+    { "id": "RSL-DRUMS", "label": "Rockschool Drums Debut–Grade 8", "url": "https://www.rslawards.com/learn-drums/" },
+    { "id": "TRINITY-PERCUSSION", "label": "Trinity College London Drum Kit and Percussion", "url": "https://www.trinitycollege.com/qualifications/music/grade-exams/percussion" },
+    { "id": "VIC-FIRTH-RUDIMENTS", "label": "Vic Firth 40 Essential Rudiments", "url": "https://ae.vicfirth.com/education/40-essential-rudiments/" },
+    { "id": "FRESH-APPROACH", "label": "A Fresh Approach to the Drum Set", "url": "https://ae.vicfirth.com/education/beginner-drumset-lessons/" }
   ],
+  "dimensions": ["pulse", "technique", "coordination", "reading", "sound", "dynamics", "vocabulary", "phrasing", "listening", "style", "creativity", "performance"],
+  "focusTranslations": {
+    "pulse": {"en":"steady pulse","fr":"pulsation stable","es":"pulso estable"},
+    "quarters": {"en":"quarter-note control","fr":"maîtrise des noires","es":"control de negras"},
+    "eighths": {"en":"even eighth notes","fr":"croches régulières","es":"corcheas regulares"},
+    "sixteenths": {"en":"sixteenth-note subdivision","fr":"subdivision en doubles croches","es":"subdivisión en semicorcheas"},
+    "triplets": {"en":"triplet subdivision","fr":"subdivision ternaire","es":"subdivisión ternaria"},
+    "backbeat": {"en":"backbeat placement","fr":"placement du backbeat","es":"colocación del backbeat"},
+    "reading": {"en":"rhythmic reading","fr":"lecture rythmique","es":"lectura rítmica"},
+    "counting": {"en":"counting aloud","fr":"comptage à voix haute","es":"conteo en voz alta"},
+    "singles": {"en":"single strokes","fr":"frisés","es":"golpes simples"},
+    "doubles": {"en":"double strokes","fr":"roulés en coups doubles","es":"golpes dobles"},
+    "paradiddle": {"en":"paradiddle control","fr":"maîtrise du paradiddle","es":"control del paradiddle"},
+    "flams": {"en":"flam timing","fr":"placement des flas","es":"colocación de flams"},
+    "accents": {"en":"accent control","fr":"contrôle des accents","es":"control de acentos"},
+    "dynamics": {"en":"dynamic contrast","fr":"contraste dynamique","es":"contraste dinámico"},
+    "articulation": {"en":"sound and articulation","fr":"son et articulation","es":"sonido y articulación"},
+    "fills": {"en":"time-preserving fills","fr":"fills sans perdre le tempo","es":"fills sin perder el tempo"},
+    "orchestration": {"en":"kit orchestration","fr":"orchestration sur le kit","es":"orquestación en el kit"},
+    "coordination": {"en":"hand-foot coordination","fr":"coordination mains-pieds","es":"coordinación manos-pies"},
+    "independence": {"en":"four-limb independence","fr":"indépendance des quatre membres","es":"independencia de cuatro miembros"},
+    "ghosts": {"en":"ghost-note control","fr":"contrôle des ghost notes","es":"control de ghost notes"},
+    "linear": {"en":"linear flow","fr":"enchaînement linéaire","es":"flujo lineal"},
+    "shuffle": {"en":"shuffle consistency","fr":"régularité du shuffle","es":"regularidad del shuffle"},
+    "compound": {"en":"compound-meter pulse","fr":"pulsation en mesure composée","es":"pulso en compás compuesto"},
+    "pocket": {"en":"pocket and consistency","fr":"pocket et régularité","es":"pocket y regularidad"},
+    "microtime": {"en":"intentional microtiming","fr":"microtiming intentionnel","es":"microtiming intencional"},
+    "phrasing": {"en":"four- and eight-bar phrasing","fr":"phrasé sur quatre et huit mesures","es":"fraseo de cuatro y ocho compases"},
+    "listening": {"en":"form and active listening","fr":"forme et écoute active","es":"forma y escucha activa"},
+    "style": {"en":"stylistic authenticity","fr":"authenticité stylistique","es":"autenticidad estilística"},
+    "oddMeter": {"en":"odd-meter grouping","fr":"groupement des mesures impaires","es":"agrupación de compases irregulares"},
+    "displacement": {"en":"rhythmic displacement","fr":"déplacement rythmique","es":"desplazamiento rítmico"},
+    "polyrhythm": {"en":"layered pulse perception","fr":"perception de pulsations superposées","es":"percepción de pulsos superpuestos"},
+    "improvisation": {"en":"controlled improvisation","fr":"improvisation contrôlée","es":"improvisación controlada"},
+    "chart": {"en":"chart interpretation","fr":"interprétation d’une grille","es":"interpretación de una partitura"},
+    "endurance": {"en":"relaxed endurance","fr":"endurance sans tension","es":"resistencia sin tensión"},
+    "performance": {"en":"complete performance","fr":"interprétation complète","es":"interpretación completa"},
+    "selfAssessment": {"en":"recording and self-assessment","fr":"enregistrement et auto-évaluation","es":"grabación y autoevaluación"}
+  },
   "levels": [
     {
-      "level": 1,
-      "title": "Timekeeping Foundations",
+      "level": 1, "title": "Starter · Pulse and Setup",
+      "description": {"en":"Build a safe, relaxed setup and keep a dependable pulse before adding complexity.","fr":"Installer une posture détendue et construire une pulsation fiable avant d’ajouter de la complexité.","es":"Construir una postura relajada y un pulso fiable antes de añadir complejidad."},
       "lessons": [
-        { "number": "1.1", "title": "Quarter-Note Pulse", "canonicalId": "CAN-007", "focus": ["steady pulse", "kick consistency"] },
-        { "number": "1.2", "title": "Straight 8th-Note Backbeat", "canonicalId": "CAN-001", "focus": ["hi-hat eighths", "snare on 2 and 4"] },
-        { "number": "1.3", "title": "Classic Rock 8ths", "canonicalId": "CAN-018", "focus": ["backbeat", "basic kick variation"] },
-        { "number": "1.4", "title": "Four-on-the-Floor", "canonicalId": "CAN-007", "focus": ["four quarter-note kicks", "even dynamics"] },
-        { "number": "1.5", "title": "Half-Time", "canonicalId": "CAN-005", "focus": ["snare on beat 3", "tempo perception"] },
-        { "number": "1.6", "title": "3/4 Foundation", "canonicalId": "CAN-013", "focus": ["triple meter", "bar awareness"] }
+        {"number":"1.1","title":"Seat, Grip and Rebound","canonicalId":"CAN-007","focus":["pulse","singles"]},
+        {"number":"1.2","title":"Quarter-Note Pulse","canonicalId":"CAN-007","focus":["quarters","counting"]},
+        {"number":"1.3","title":"Straight 8th-Note Time","canonicalId":"CAN-001","focus":["eighths","pulse"]},
+        {"number":"1.4","title":"Backbeat on 2 and 4","canonicalId":"CAN-018","focus":["backbeat","coordination"]},
+        {"number":"1.5","title":"Bass-Drum Consistency","canonicalId":"CAN-007","focus":["quarters","dynamics"]},
+        {"number":"1.6","title":"First Four-Bar Performance","canonicalId":"CAN-018","focus":["phrasing","performance"]}
       ]
     },
     {
-      "level": 2,
-      "title": "Subdivision and Coordination",
+      "level": 2, "title": "Foundation · Reading and Subdivision",
+      "description": {"en":"Connect notation, counting and movement across binary, ternary and compound subdivisions.","fr":"Relier notation, comptage et mouvement dans les subdivisions binaires, ternaires et composées.","es":"Relacionar notación, conteo y movimiento en subdivisiones binarias, ternarias y compuestas."},
       "lessons": [
-        { "number": "2.1", "title": "Straight 16th-Note Time", "canonicalId": "CAN-002", "focus": ["sixteenth-note subdivision", "relaxed hands"] },
-        { "number": "2.2", "title": "8th-Note Shuffle", "canonicalId": "CAN-003", "focus": ["triplet-derived spacing", "shuffle consistency"] },
-        { "number": "2.3", "title": "16th-Note Shuffle", "canonicalId": "CAN-004", "focus": ["compound sixteenth feel", "subdivision control"] },
-        { "number": "2.4", "title": "6/8 Compound Groove", "canonicalId": "CAN-012", "focus": ["compound meter", "two dotted-quarter pulses"] },
-        { "number": "2.5", "title": "Rock Shuffle", "canonicalId": "CAN-020", "focus": ["shuffle backbeat", "kick coordination"] },
-        { "number": "2.6", "title": "Country Two-Step", "canonicalId": "CAN-080", "focus": ["two-beat bass foundation", "clean backbeat"] }
+        {"number":"2.1","title":"Quarter and 8th-Note Reading","canonicalId":"CAN-001","focus":["reading","counting"]},
+        {"number":"2.2","title":"16th-Note Grid","canonicalId":"CAN-002","focus":["sixteenths","reading"]},
+        {"number":"2.3","title":"8th-Note Shuffle","canonicalId":"CAN-003","focus":["triplets","shuffle"]},
+        {"number":"2.4","title":"6/8 Compound Pulse","canonicalId":"CAN-012","focus":["compound","counting"]},
+        {"number":"2.5","title":"3/4 Bar Awareness","canonicalId":"CAN-013","focus":["reading","phrasing"]},
+        {"number":"2.6","title":"One-Bar Fill and Return","canonicalId":"CAN-020","focus":["fills","pulse"]}
       ]
     },
     {
-      "level": 3,
-      "title": "Pocket and Independence",
+      "level": 3, "title": "Elementary · Technique and Sound",
+      "description": {"en":"Develop core sticking vocabulary, dynamic levels and deliberate drum and cymbal sounds.","fr":"Développer le vocabulaire de doigtés fondamental, les nuances et un son volontaire sur fûts et cymbales.","es":"Desarrollar el vocabulario técnico básico, las dinámicas y un sonido deliberado en tambores y platos."},
       "lessons": [
-        { "number": "3.1", "title": "Ghost-Note Pocket", "canonicalId": "CAN-009", "focus": ["dynamic separation", "protected backbeat"] },
-        { "number": "3.2", "title": "Linear Groove", "canonicalId": "CAN-008", "focus": ["single-surface attacks", "hand-foot flow"] },
-        { "number": "3.3", "title": "Displaced Backbeat", "canonicalId": "CAN-010", "focus": ["syncopated snare", "internal pulse"] },
-        { "number": "3.4", "title": "Half-Time Shuffle", "canonicalId": "CAN-063", "focus": ["ghost-note shuffle lattice", "half-time anchor"] },
-        { "number": "3.5", "title": "Medium Swing", "canonicalId": "CAN-065", "focus": ["ride pattern", "light comping"] },
-        { "number": "3.6", "title": "Jazz Waltz", "canonicalId": "CAN-071", "focus": ["3/4 ride time", "independent comping"] }
+        {"number":"3.1","title":"Single-Stroke Motion","canonicalId":"CAN-002","focus":["singles","endurance"]},
+        {"number":"3.2","title":"Double-Stroke Control","canonicalId":"CAN-004","focus":["doubles","dynamics"]},
+        {"number":"3.3","title":"Paradiddle Accents","canonicalId":"CAN-008","focus":["paradiddle","accents"]},
+        {"number":"3.4","title":"Flams and Unisons","canonicalId":"CAN-021","focus":["flams","articulation"]},
+        {"number":"3.5","title":"Ghost Note versus Backbeat","canonicalId":"CAN-009","focus":["ghosts","dynamics"]},
+        {"number":"3.6","title":"Hi-Hat, Ride and Bell Articulation","canonicalId":"CAN-217","focus":["articulation","orchestration"]}
       ]
     },
     {
-      "level": 4,
-      "title": "Essential Styles",
+      "level": 4, "title": "Intermediate · Coordination and Independence",
+      "description": {"en":"Coordinate the limbs without sacrificing pulse, sound quality or physical economy.","fr":"Coordonner les membres sans sacrifier la pulsation, la qualité du son ni l’économie du geste.","es":"Coordinar los miembros sin sacrificar el pulso, la calidad del sonido ni la economía del movimiento."},
       "lessons": [
-        { "number": "4.1", "title": "Bossa Nova", "canonicalId": "CAN-140", "focus": ["cross-stick role", "bass-drum ostinato"] },
-        { "number": "4.2", "title": "Samba", "canonicalId": "CAN-141", "focus": ["Brazilian subdivision", "surdo-derived bass role"] },
-        { "number": "4.3", "title": "Mambo", "canonicalId": "CAN-130", "focus": ["bell timeline", "clave awareness"] },
-        { "number": "4.4", "title": "Songo", "canonicalId": "CAN-133", "focus": ["Afro-Cuban coordination", "syncopated bass drum"] },
-        { "number": "4.5", "title": "New Orleans Second Line", "canonicalId": "CAN-042", "focus": ["triplet-informed syncopation", "bass-snare conversation"] },
-        { "number": "4.6", "title": "Train Beat", "canonicalId": "CAN-079", "focus": ["accent hierarchy", "continuous snare motion"] }
+        {"number":"4.1","title":"Kick Variations under 8ths","canonicalId":"CAN-018","focus":["coordination","eighths"]},
+        {"number":"4.2","title":"Linear Hand-Foot Flow","canonicalId":"CAN-008","focus":["linear","coordination"]},
+        {"number":"4.3","title":"Open Hi-Hat Control","canonicalId":"CAN-030","focus":["articulation","coordination"]},
+        {"number":"4.4","title":"Ride Time with Left-Foot Hi-Hat","canonicalId":"CAN-065","focus":["independence","pulse"]},
+        {"number":"4.5","title":"Cáscara Coordination","canonicalId":"CAN-216","focus":["independence","coordination"]},
+        {"number":"4.6","title":"Four-Limb Jazz Comping","canonicalId":"CAN-074","focus":["independence","reading"]}
       ]
     },
     {
-      "level": 5,
-      "title": "Advanced Language",
+      "level": 5, "title": "Upper Intermediate · Pocket and Phrasing",
+      "description": {"en":"Shape time across phrases: dynamics, ghost notes, fills, form, consistency and intentional placement.","fr":"Façonner le temps dans la phrase : nuances, ghost notes, fills, forme, régularité et placement intentionnel.","es":"Moldear el tiempo en la frase: dinámicas, ghost notes, fills, forma, regularidad y colocación intencional."},
       "lessons": [
-        { "number": "5.1", "title": "Bebop Comping", "canonicalId": "CAN-074", "focus": ["four-limb independence", "ride continuity"] },
-        { "number": "5.2", "title": "Fusion", "canonicalId": "CAN-077", "focus": ["ride-led straight time", "funk-derived syncopation"] },
-        { "number": "5.3", "title": "5/4 Foundation", "canonicalId": "CAN-014", "focus": ["asymmetric phrase", "stable subdivision"] },
-        { "number": "5.4", "title": "7/8 Foundation", "canonicalId": "CAN-015", "focus": ["short-long grouping", "bar-line control"] },
-        { "number": "5.5", "title": "Afro-Cuban 6/8", "canonicalId": "CAN-137", "focus": ["compound bell cycle", "limb layering"] },
-        { "number": "5.6", "title": "Timba", "canonicalId": "CAN-134", "focus": ["modern Cuban orchestration", "dynamic transitions"] }
+        {"number":"5.1","title":"Ghost-Note Pocket","canonicalId":"CAN-055","focus":["ghosts","pocket"]},
+        {"number":"5.2","title":"Half-Time Shuffle","canonicalId":"CAN-063","focus":["shuffle","dynamics"]},
+        {"number":"5.3","title":"Displaced Backbeat","canonicalId":"CAN-010","focus":["displacement","pulse"]},
+        {"number":"5.4","title":"Two-Bar Fill Vocabulary","canonicalId":"CAN-118","focus":["fills","orchestration"]},
+        {"number":"5.5","title":"Eight-Bar Dynamic Arc","canonicalId":"CAN-045","focus":["phrasing","dynamics"]},
+        {"number":"5.6","title":"Behind, On and Ahead of the Beat","canonicalId":"CAN-092","focus":["microtime","listening"]}
+      ]
+    },
+    {
+      "level": 6, "title": "Advanced · Stylistic Fluency",
+      "description": {"en":"Transfer the same technical control into contrasting traditions without flattening their identity.","fr":"Transférer la même maîtrise technique dans des traditions contrastées sans effacer leur identité.","es":"Transferir el mismo control técnico a tradiciones contrastantes sin borrar su identidad."},
+      "lessons": [
+        {"number":"6.1","title":"Rock and Pop Session Time","canonicalId":"CAN-025","focus":["style","performance"]},
+        {"number":"6.2","title":"Funk and R&B Pocket","canonicalId":"CAN-041","focus":["style","pocket"]},
+        {"number":"6.3","title":"Jazz Ride and Comping","canonicalId":"CAN-065","focus":["style","independence"]},
+        {"number":"6.4","title":"Brazilian Coordination","canonicalId":"CAN-140","focus":["style","coordination"]},
+        {"number":"6.5","title":"Afro-Cuban Bell and Clave","canonicalId":"CAN-130","focus":["style","independence"]},
+        {"number":"6.6","title":"Reggae Space and Placement","canonicalId":"CAN-102","focus":["style","microtime"]}
+      ]
+    },
+    {
+      "level": 7, "title": "Proficient · Meter and Advanced Vocabulary",
+      "description": {"en":"Maintain musical flow through odd meters, layered pulses, displacement and advanced orchestration.","fr":"Conserver un flux musical dans les mesures impaires, pulsations superposées, déplacements et orchestrations avancées.","es":"Mantener el flujo musical en compases irregulares, pulsos superpuestos, desplazamientos y orquestaciones avanzadas."},
+      "lessons": [
+        {"number":"7.1","title":"5/4 Grouping","canonicalId":"CAN-014","focus":["oddMeter","counting"]},
+        {"number":"7.2","title":"7/8 Grouping","canonicalId":"CAN-015","focus":["oddMeter","phrasing"]},
+        {"number":"7.3","title":"9/8 Grouping","canonicalId":"CAN-016","focus":["oddMeter","compound"]},
+        {"number":"7.4","title":"Afro-Cuban 6/8 Layers","canonicalId":"CAN-137","focus":["polyrhythm","independence"]},
+        {"number":"7.5","title":"32nd-Note Linear Language","canonicalId":"CAN-054","focus":["linear","endurance"]},
+        {"number":"7.6","title":"Metric Displacement","canonicalId":"CAN-034","focus":["displacement","oddMeter"]}
+      ]
+    },
+    {
+      "level": 8, "title": "Expert · Interpretation and Performance",
+      "description": {"en":"Integrate technique, reading, listening and creative decisions into convincing complete performances.","fr":"Intégrer technique, lecture, écoute et décisions créatives dans des interprétations complètes et convaincantes.","es":"Integrar técnica, lectura, escucha y decisiones creativas en interpretaciones completas y convincentes."},
+      "lessons": [
+        {"number":"8.1","title":"Chart Interpretation","canonicalId":"CAN-073","focus":["chart","listening"]},
+        {"number":"8.2","title":"Fast Swing Endurance","canonicalId":"CAN-066","focus":["endurance","style"]},
+        {"number":"8.3","title":"Fusion Orchestration","canonicalId":"CAN-077","focus":["orchestration","independence"]},
+        {"number":"8.4","title":"Modern Cuban Interpretation","canonicalId":"CAN-134","focus":["style","improvisation"]},
+        {"number":"8.5","title":"Controlled Improvisation","canonicalId":"CAN-211","focus":["improvisation","phrasing"]},
+        {"number":"8.6","title":"Recorded Final Performance","canonicalId":"CAN-213","focus":["performance","selfAssessment"]}
       ]
     }
   ]

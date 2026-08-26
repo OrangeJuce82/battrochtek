@@ -74,8 +74,8 @@ npm run grooves:build
 
 `grooves:build` performs the complete pipeline:
 
-1. Build 213 canonical JSON grooves.
-2. Export 213 Standard MIDI Files.
+1. Build 217 canonical JSON grooves.
+2. Export 217 Standard MIDI Files.
 3. Compile canonical events to Battrochtek's current 9-track grid.
 4. Reject exact grid collisions.
 5. Validate MIDI readability and canonical event schemas.

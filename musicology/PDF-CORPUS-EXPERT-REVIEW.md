@@ -17,34 +17,37 @@ The strongest core includes Frank Malabe and Bob Weiner, Lincoln Goines and Robb
 
 ## Effect on the canonical corpus
 
-- 70 of 213 canonical names occur explicitly in the supplied PDFs; 59 have at least one grade A/A- match.
+- 74 of 217 canonical names occur explicitly in the supplied PDFs; the original corpus had 59 grade A/A- matches before the four pedagogical additions.
 - The pack is especially strong for Afro-Cuban, Brazilian, funk/linear, jazz, reading, coordination, and general timekeeping material.
-- The existing broader literature map still carries styles outside those domains. After rebuilding, 183 taxonomies are directly literature-supported and all 213 have an adjudicated taxonomy state.
-- All 213 scores retain complete desk review. The playability validator reports no same-limb hi-hat open/closed conflict, ride/bell conflict, or other rejected physical collision.
+- The existing broader literature map still carries styles outside those domains. After rebuilding, 183 taxonomies are directly literature-supported and all 217 have an adjudicated taxonomy state.
+- All 217 scores retain complete desk review. The playability validator reports no same-limb hi-hat open/closed conflict, ride/bell conflict, or other rejected physical collision.
 - Every canonical groove now stores its local-PDF-pack state and, when present, source ID, title, authors, grade, SHA-256, relative pack path, and matching pages.
 
-## Missing-style decision
+## Pedagogical additions
 
-The pack identifies plausible additions, especially **Guajira** and **Pilón**, plus the technical vocabulary **Cáscara** and **Mambo Bell**. They are not added to the canonical runtime library in this pass:
+Four explicitly labelled teaching scores were added after accepting pedagogical adaptation as the publication threshold:
 
-- Guajira is well named in strong publications, but the supplied pages located in the most authoritative drumset method are glossary/discography material rather than a complete canonical drumset orchestration.
-- Pilón has an actual transcription in the DrumGenius companion, but that source explicitly describes itself as an informal transcription set and is not sufficient alone for a canonical reference score.
-- Cáscara and Mambo Bell are orchestration/timeline concepts used across styles, not independent genres. They belong in the learning path.
-- Mardi Gras Indian, Street Beat, and Funeral March appear as useful New Orleans vocabulary, but the supplied excerpt is too short to justify three new universal archetypes without stronger score-level triangulation.
+- **Guajira Drum-Set Adaptation** (`CAN-214`)
+- **Pilón Drum-Set Adaptation** (`CAN-215`)
+- **Cáscara Coordination Exercise** (`CAN-216`)
+- **Mambo Bell Coordination Exercise** (`CAN-217`)
 
-This conservative decision avoids manufacturing stylistic certainty from titles or glossaries. These candidates remain documented for a later source-complete supplement.
+Each carries a taxonomy caveat stating that it is a practical reduction or coordination study rather than a definitive traditional transcription. Mardi Gras Indian, Street Beat, and Funeral March remain deferred because the supplied excerpt is too short for score-level triangulation.
 
 ## Learning proposal
 
-`Learning` is appropriate as a pedagogical view, not as a musical genre. The implemented curriculum contains 30 English-titled lessons in five numbered levels:
+`Learning` is a pedagogical curriculum, not a musical genre. Its second version contains 48 English-titled lessons in eight numbered levels, informed by the PAS rudimental framework, Rockschool Debut–Grade 8, Trinity percussion requirements, Vic Firth's tiered rudiment applications, and *A Fresh Approach to the Drum Set*:
 
-1. Timekeeping Foundations
-2. Subdivision and Coordination
-3. Pocket and Independence
-4. Essential Styles
-5. Advanced Language
+1. Starter · Pulse and Setup
+2. Foundation · Reading and Subdivision
+3. Elementary · Technique and Sound
+4. Intermediate · Coordination and Independence
+5. Upper Intermediate · Pocket and Phrasing
+6. Advanced · Stylistic Fluency
+7. Proficient · Meter and Advanced Vocabulary
+8. Expert · Interpretation and Performance
 
-Each lesson (for example `1.1 Quarter-Note Pulse`) points to an existing canonical groove. This preserves the single-score rule, avoids exact duplicates, and lets difficulty/order evolve independently of musicological taxonomy. The curriculum is ready as data; UI exposure should be a virtual Learning filter rather than a second groove library.
+Each lesson (for example `1.1 Seat, Grip and Rebound`) points to an existing canonical groove as its musical application. This preserves the single-score rule, avoids exact duplicates, and lets difficulty/order evolve independently of musicological taxonomy. Canonical groove and lesson titles stay in English; level descriptions, skill tags, progress text, and mastery criteria are localized in French, English, and Spanish. The application exposes level navigation, start/target tempos, persistent progress, and direct Practice-mode configuration.
 
 ## Reproducibility
 

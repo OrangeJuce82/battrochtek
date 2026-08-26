@@ -116,7 +116,7 @@
         SAMPLE_MANIFEST_VERSION: 2,
         SAMPLE_MANIFEST,
         SAMPLE_MAP: Object.freeze(Object.fromEntries(SAMPLE_MANIFEST.map(sample => [sample.key, [sample.file, sample.label, sample.legacyType||sample.type||sample.instrument]]))),
-        KITS: Object.freeze([{"name":"STUDIO PUNCH","category":"Acoustique","color":"#2d9cdb","tracks":["legacy_crash1","vintage_rock_ridebell_vl3_rr1","legacy_ride1","legacy_hat_open_1","legacy_hat_closed_1","studio_snare_a","studio_tom_a","studio_tom_b","deep_tom_b","studio_kick_a","metronome_tick"]},{"name":"SOUL POCKET","category":"Acoustique","color":"#d4a72c","tracks":["legacy_crash1","vintage_rock_ridebell_vl3_rr1","legacy_ride1","legacy_hat_open_2","legacy_hat_closed_2","warm_snare_a","warm_tom_a","warm_tom_b","deep_tom_a","warm_kick_a","metronome_tick"]},{"name":"JAZZ CLUB","color":"#c9a35c","tracks":["legacy_crash1","jazz_club_ridebell_vl1_rr1","jazz_club_ride_vl1_rr1","jazz_club_hho_vl1_rr1","jazz_club_hhc_vl1_rr1","jazz_club_snare_vl1_rr1","jazz_club_tomhi_vl1_rr1","jazz_club_tommid_vl1_rr1","jazz_club_tomlo_vl1_rr1","jazz_club_kick_vl1_rr1","metronome_tick"],"category":"Acoustique"},{"name":"VINTAGE ROCK","color":"#a85f3d","tracks":["vintage_rock_crash_vl1_rr1","vintage_rock_ridebell_vl3_rr1","vintage_rock_ride_vl10_rr1","vintage_rock_hho_vl1_rr1","vintage_rock_hhc_vl1_rr1","vintage_rock_snare_vl10_rr1","vintage_rock_tomhi_vl1_rr1","vintage_rock_tommid_vl1_rr1","vintage_rock_tomlo_vl1_rr1","vintage_rock_kick_vl10_rr1","metronome_tick"],"category":"Acoustique"},{"name":"WORLD PERCUSSION","color":"#e48a1d","tracks":["world_tambourine","world_cowbell","world_agogo","world_shaker","world_claves","world_cajon","world_cowbell","world_darbuka","world_frame_small","world_frame_large","metronome_tick"],"category":"Acoustique"},{"name":"ANALOG CLASSIC","color":"#ff2f7d","tracks":["bt_analog_crash","bt_detroit_ride_bell","bt_analog_ride","bt_analog_hho_rr1","bt_analog_hhc_rr1","bt_analog_snare_rr1","bt_analog_tom_high","bt_analog_tom_mid","bt_analog_tom_low","bt_analog_kick_rr1","metronome_tick"],"category":"Électro"},{"name":"DETROIT HYBRID","color":"#ff5a36","tracks":["bt_detroit_crash","bt_detroit_ride_bell","bt_detroit_ride","bt_detroit_hho_rr1","bt_detroit_hhc_rr1","bt_detroit_snare_rr1","bt_detroit_tom_high","bt_detroit_tom_mid","bt_detroit_tom_low","bt_detroit_kick_rr1","metronome_tick"],"category":"Électro"},{"name":"DIGITAL 80","color":"#00a7a7","tracks":["bt_digital80_crash","bt_detroit_ride_bell","bt_digital80_ride","bt_digital80_hho","bt_digital80_hhc","bt_digital80_snare_rr1","bt_digital80_tom_high","bt_digital80_tom_mid","bt_digital80_tom_low","bt_digital80_kick_rr1","metronome_tick"],"category":"Électro"},{"name":"SP DUST","category":"Électro","color":"#9a6b3f","tracks":["bt_analog_crash","bt_detroit_ride_bell","bt_analog_ride","bt_analog_hho_rr1","electro_hat_closed_metal_01","electro_snare_distorted_01","bt_analog_tom_high","bt_analog_tom_mid","bt_analog_tom_low","electro_kick_distorted_01","metronome_tick"]},{"name":"GLITCH LAB","category":"Électro","color":"#e83e8c","tracks":["bt_digital80_crash","bt_detroit_ride_bell","bt_digital80_ride","bt_digital80_hho","electro_hat_closed_distorted_01","electro_snare_distorted_02","bt_digital80_tom_high","bt_digital80_tom_mid","bt_digital80_tom_low","electro_kick_distorted_02","metronome_tick"]}].map(kit => Object.freeze({...kit, tracks:Object.freeze(kit.tracks)})))
+        KITS: Object.freeze([{"name":"STUDIO PUNCH","category":"Acoustique","color":"#2d9cdb","tracks":["legacy_crash1","henkonen_ridebell_vl2","legacy_ride1","legacy_hat_open_1","legacy_hat_closed_1","studio_snare_a","studio_tom_a","studio_tom_b","deep_tom_b","studio_kick_a","metronome_tick"]},{"name":"SOUL POCKET","category":"Acoustique","color":"#d4a72c","tracks":["legacy_crash1","henkonen_ride2bell_vl1","legacy_ride1","legacy_hat_open_2","legacy_hat_closed_2","warm_snare_a","warm_tom_a","warm_tom_b","deep_tom_a","warm_kick_a","metronome_tick"]},{"name":"JAZZ CLUB","color":"#c9a35c","tracks":["legacy_crash1","jazz_club_ridebell_vl1_rr1","jazz_club_ride_vl1_rr1","jazz_club_hho_vl1_rr1","jazz_club_hhc_vl1_rr1","jazz_club_snare_vl1_rr1","jazz_club_tomhi_vl1_rr1","jazz_club_tommid_vl1_rr1","jazz_club_tomlo_vl1_rr1","jazz_club_kick_vl1_rr1","metronome_tick"],"category":"Acoustique"},{"name":"VINTAGE ROCK","color":"#a85f3d","tracks":["vintage_rock_crash_vl1_rr1","vintage_rock_ridebell_vl3_rr1","vintage_rock_ride_vl10_rr1","vintage_rock_hho_vl1_rr1","vintage_rock_hhc_vl1_rr1","vintage_rock_snare_vl10_rr1","vintage_rock_tomhi_vl1_rr1","vintage_rock_tommid_vl1_rr1","vintage_rock_tomlo_vl1_rr1","vintage_rock_kick_vl10_rr1","metronome_tick"],"category":"Acoustique"},{"name":"WORLD PERCUSSION","color":"#e48a1d","tracks":["world_tambourine","world_cowbell","world_agogo","world_shaker","world_claves","world_cajon","world_cowbell","world_darbuka","world_frame_small","world_frame_large","metronome_tick"],"category":"Acoustique"},{"name":"ANALOG CLASSIC","color":"#ff2f7d","tracks":["bt_analog_crash","bt_analog_short_bell","bt_analog_ride","bt_analog_hho_rr1","bt_analog_hhc_rr1","bt_analog_snare_rr1","bt_analog_tom_high","bt_analog_tom_mid","bt_analog_tom_low","bt_analog_kick_rr1","metronome_tick"],"category":"Électro"},{"name":"DETROIT HYBRID","color":"#ff5a36","tracks":["bt_detroit_crash","bt_detroit_ride_bell","bt_detroit_ride","bt_detroit_hho_rr1","bt_detroit_hhc_rr1","bt_detroit_snare_rr1","bt_detroit_tom_high","bt_detroit_tom_mid","bt_detroit_tom_low","bt_detroit_kick_rr1","metronome_tick"],"category":"Électro"},{"name":"DIGITAL 80","color":"#00a7a7","tracks":["bt_digital80_crash","bt_digital80_bell","bt_digital80_ride","bt_digital80_hho","bt_digital80_hhc","bt_digital80_snare_rr1","bt_digital80_tom_high","bt_digital80_tom_mid","bt_digital80_tom_low","bt_digital80_kick_rr1","metronome_tick"],"category":"Électro"},{"name":"SP DUST","category":"Électro","color":"#9a6b3f","tracks":["bt_analog_crash","bt_spdust_bell","bt_analog_ride","bt_analog_hho_rr1","electro_hat_closed_metal_01","electro_snare_distorted_01","bt_analog_tom_high","bt_analog_tom_mid","bt_analog_tom_low","electro_kick_distorted_01","metronome_tick"]},{"name":"GLITCH LAB","category":"Électro","color":"#e83e8c","tracks":["bt_digital80_crash","bt_glitch_metal_bell","bt_digital80_ride","bt_digital80_hho","electro_hat_closed_distorted_01","electro_snare_distorted_02","bt_digital80_tom_high","bt_digital80_tom_mid","bt_digital80_tom_low","electro_kick_distorted_02","metronome_tick"]}].map(kit => Object.freeze({...kit, tracks:Object.freeze(kit.tracks)})))
     });
 
     const Util = Object.freeze({
@@ -1272,7 +1272,10 @@
         }
         detectPrimaryRightHand() {
             this.ensureCore();
-            const steps=this.seq.signature.steps, R=TRACK_ROLES, active=new Set(this.coreGrid?.[0]||[]);
+            return this.detectPrimaryRightHandFromGrid(this.coreGrid);
+        }
+        detectPrimaryRightHandFromGrid(grid) {
+            const steps=this.seq.signature.steps, R=TRACK_ROLES, active=new Set(grid?.[0]||[]);
             const count=track=>{let n=0;for(const i of active)if(Math.floor(i/steps)===track)n++;return n;};
             // Bell is an articulation of Ride, Open an articulation of Hi-Hat.
             // Crash is punctuation and must never decide the primary timekeeping surface.
@@ -2344,12 +2347,13 @@
                 signature: $("signature"), signatureNumerator: $("signature-numerator"), signatureDenominator: $("signature-denominator"), metro: $("metronome-button"), chain: $("chain"), play: $("play-button"), icon: $("play-pause-icon"),
                 minus: $("minus-button"), plus: $("plus-button"), tap: $("tap-tempo"), tempo: $("metronome-tempo"), random: null, feelPanel: $("feel-panel"), feelXy: $("feel-xy"), feelDot: $("feel-dot"), feelReadout: $("feel-readout"), feelDensityAxisValue: $("feel-density-axis-value"), feelGrooveXy: $("feel-groove-xy"), feelGrooveDot: $("feel-groove-dot"), feelGrooveReadout: $("feel-groove-readout"), feelEnergyAxisValue: $("feel-energy-axis-value"), feelViewToggle: $("feel-view-toggle"), feelPadView: $("feel-pad-view"), feelSliderView: $("feel-slider-view"), feelReset: $("feel-reset"), feelSetCore: $("feel-set-core"), feelRandomize: $("feel-randomize"), feelToggle: $("feel-enabled"), feelLimbSummary: null, feelDensity: $("feel-density"), feelDensityValue: $("feel-density-value"), feelSwing: $("feel-swing"), feelSwingValue: $("feel-swing-value"), feelAuto: null, feelStyle: $("feel-style"), feelOrchAuto: null, feelOrchEvery: null, feelOrchInfo: null, feelCoreMode: null, feelRightHand: $("feel-right-hand"), feelDeviation: $("feel-deviation"), feelDeviationValue: $("feel-deviation-value"), feelEnergySlider: $("feel-energy-slider"), feelEnergyValue: $("feel-energy-value"), feelInfluence: Array.from(document.querySelectorAll("[data-feel-influence]")), feelRightHandInfluenceLabel: $("feel-right-hand-influence-label"), liveFill: $("live-fill"), liveBreak: $("live-break"), liveVariation: $("live-variation"), liveNext: null,
                 undo: $("undo"), redo: $("redo"), practiceButton: $("practice-button"), practicePanel: $("practice-panel"), practiceMode: $("practice-mode"), practiceStartTempo: $("practice-start-tempo"), practiceTargetTempo: $("practice-target-tempo"), practiceTempoStep: $("practice-tempo-step"), practiceLoops: $("practice-loops"), practiceCountIn: $("practice-count-in"), practiceStatus: $("practice-status"), kitSelect: $("kit-select"), cacheClear: $("cache-clear"), languageSelect: $("language-select"), themeToggle: $("theme-toggle"), themeIcon: $("theme-toggle-icon"), themeColorMeta: $("theme-color-meta"),
-                grooveSearch: $("groove-search"), grooveSearchList: $("groove-search-list"), shareButton: $("share-button"), shareDialog: $("share-dialog"), shareClose: $("share-close"), shareQr: $("share-qr"), shareQrError: $("share-qr-error"), shareUrl: $("share-url"), shareCopy: $("share-copy"), shareNative: $("share-native")
+                grooveSearch: $("groove-search"), grooveSearchList: $("groove-search-list"), shareButton: $("share-button"), shareDialog: $("share-dialog"), shareClose: $("share-close"), shareQr: $("share-qr"), shareQrError: $("share-qr-error"), shareUrl: $("share-url"), shareCopy: $("share-copy"), shareNative: $("share-native"),
+                learningPanel: $("learning-panel"), learningLevel: $("learning-level"), learningLevelDescription: $("learning-level-description"), learningLessons: $("learning-lessons"), learningNumber: $("learning-number"), learningTitle: $("learning-title"), learningContext: $("learning-context"), learningFocus: $("learning-focus"), learningStartTempo: $("learning-start-tempo"), learningTargetTempo: $("learning-target-tempo"), learningSignature: $("learning-signature"), learningMastery: $("learning-mastery"), learningComplete: $("learning-complete"), learningPrev: $("learning-prev"), learningNext: $("learning-next"), learningLoad: $("learning-load"), learningPractice: $("learning-practice"), learningProgressLabel: $("learning-progress-label"), learningProgressFill: $("learning-progress-fill"), learningProgressCompactFill: $("learning-progress-compact-fill"), learningSummaryStatus: $("learning-summary-status")
             };
         }
         init(scheduler) {
             this.scheduler = scheduler;
-            this.setupLanguage(); this.setupTheme(); this.setupFullscreen(); this.setupShare(); this.setupPractice(); this.setupFeel(); this.buildKits(); this.buildTrackLabels(); this.buildMemory(); this.buildSliders(); this.buildGrid(); this.buildPresetSelector(); this.restoreFeelStateFromMemory({apply:true}); this.buildGlobalSearch(); this.bindControls(); this.bindUnlock(); this.startVuMeter(); this.renderState(); this.makeKeyboardAccessible();
+            this.setupLanguage(); this.setupTheme(); this.setupFullscreen(); this.setupShare(); this.setupPractice(); this.setupFeel(); this.buildKits(); this.buildTrackLabels(); this.buildMemory(); this.buildSliders(); this.buildGrid(); this.buildPresetSelector(); this.restoreFeelStateFromMemory({apply:true}); this.buildGlobalSearch(); this.setupLearning(); this.bindControls(); this.bindUnlock(); this.startVuMeter(); this.renderState(); this.makeKeyboardAccessible();
         }
         setupFeel() {
             if (!this.dom.feelPanel || !this.dom.feelXy) return;
@@ -3508,6 +3512,83 @@
             document.addEventListener("pointerdown",event=>{
                 if (!event.target.closest(".groove-search-wrap")) close();
             });
+        }
+        setupLearning() {
+            const curriculum=window.BATTROCHTEK_LEARNING_PATH;
+            if(!curriculum?.levels?.length||!this.dom.learningPanel)return;
+            const copy={
+                en:{level:"Level",mastered:"mastered",levels:"levels",play:"Play",cleanly:"cleanly for",loops:"loops",reach:"Reach",withoutPulse:"BPM without losing the pulse",dynamic:"Keep accents, ghost notes and main strokes clearly separated",foundation:"Keep the main backbeat and bass-drum attacks even"},
+                fr:{level:"Niveau",mastered:"maîtrisées",levels:"niveaux",play:"Jouer",cleanly:"proprement pendant",loops:"boucles",reach:"Atteindre",withoutPulse:"BPM sans perdre la pulsation",dynamic:"Distinguer clairement accents, ghost notes et frappes principales",foundation:"Garder réguliers le backbeat principal et les coups de grosse caisse"},
+                es:{level:"Nivel",mastered:"dominadas",levels:"niveles",play:"Tocar",cleanly:"con limpieza durante",loops:"vueltas",reach:"Alcanzar",withoutPulse:"BPM sin perder el pulso",dynamic:"Separar claramente acentos, ghost notes y golpes principales",foundation:"Mantener regulares el backbeat principal y los golpes de bombo"}
+            };
+            const language=()=>["fr","en","es"].includes(I18N.language)?I18N.language:"en";
+            const words=()=>copy[language()];
+            const focusText=key=>curriculum.focusTranslations?.[key]?.[language()]||curriculum.focusTranslations?.[key]?.en||key;
+            const storageKey="battrochtek.learning.v1";
+            let saved={};
+            try{saved=JSON.parse(localStorage.getItem(storageKey)||"{}");}catch{saved={};}
+            this.learning={curriculum,completed:new Set(Array.isArray(saved.completed)?saved.completed:[]),selected:String(saved.selected||curriculum.levels[0].lessons[0].number)};
+            const flat=()=>curriculum.levels.flatMap(level=>level.lessons);
+            const current=()=>flat().find(lesson=>lesson.number===this.learning.selected)||flat()[0];
+            const save=()=>localStorage.setItem(storageKey,JSON.stringify({selected:this.learning.selected,completed:[...this.learning.completed]}));
+            const select=number=>{this.learning.selected=String(number);save();render();};
+            const renderProgress=()=>{
+                const count=this.learning.completed.size,total=curriculum.lessonCount,ratio=total?count/total*100:0;
+                this.dom.learningProgressLabel.textContent=`${count} / ${total} ${words().mastered}`;
+                this.dom.learningProgressFill.style.width=`${ratio}%`;
+                this.dom.learningProgressCompactFill.style.width=`${ratio}%`;
+                this.dom.learningSummaryStatus.textContent=`${count}/${total} ${words().mastered} · ${curriculum.levels.length} ${words().levels}`;
+            };
+            const render=()=>{
+                const lesson=current();
+                const level=curriculum.levels.find(item=>item.level===lesson.level)||curriculum.levels[0];
+                this.dom.learningLevel.replaceChildren(...curriculum.levels.map(item=>{const option=document.createElement("option");option.value=String(item.level);option.textContent=`${words().level} ${item.level} · ${item.title}`;return option;}));
+                this.dom.learningLevel.value=String(level.level);
+                if(this.dom.learningLevelDescription)this.dom.learningLevelDescription.textContent=level.description?.[language()]||level.description?.en||"";
+                this.dom.learningLessons.replaceChildren(...level.lessons.map(item=>{
+                    const button=document.createElement("button");button.type="button";button.className="learning-lesson-button";button.dataset.number=item.number;button.setAttribute("role","option");button.setAttribute("aria-selected",String(item.number===lesson.number));
+                    button.classList.toggle("is-active",item.number===lesson.number);button.classList.toggle("is-complete",this.learning.completed.has(item.number));
+                    const number=document.createElement("strong");number.textContent=item.number;
+                    const title=document.createElement("span");title.textContent=item.title;
+                    const check=document.createElement("i");check.className=`learning-check fa-solid ${this.learning.completed.has(item.number)?"fa-circle-check":"fa-circle"}`;check.setAttribute("aria-hidden","true");
+                    button.append(number,title,check);return button;
+                }));
+                this.dom.learningNumber.textContent=lesson.number;this.dom.learningTitle.textContent=lesson.title;
+                this.dom.learningContext.textContent=`${lesson.family} · ${lesson.tradition} · ${lesson.canonicalId}`;
+                const focusKeys=lesson.focusKeys||lesson.focus||[];
+                this.dom.learningFocus.replaceChildren(...focusKeys.map(focus=>{const tag=document.createElement("span");tag.textContent=focusText(focus);return tag;}));
+                this.dom.learningStartTempo.textContent=`${lesson.startTempo} BPM`;this.dom.learningTargetTempo.textContent=`${lesson.targetTempo} BPM`;this.dom.learningSignature.textContent=lesson.signature;
+                const mastery=[`${words().play} ${focusText(focusKeys[0])} ${words().cleanly} ${lesson.loopsPerLevel} ${words().loops}`,`${words().reach} ${lesson.targetTempo} ${words().withoutPulse}`,lesson.masteryProfile==="dynamic"?words().dynamic:words().foundation];
+                this.dom.learningMastery.replaceChildren(...mastery.map(text=>{const li=document.createElement("li");li.textContent=text;return li;}));
+                this.dom.learningComplete.checked=this.learning.completed.has(lesson.number);
+                const index=flat().findIndex(item=>item.number===lesson.number);this.dom.learningPrev.disabled=index<=0;this.dom.learningNext.disabled=index>=flat().length-1;
+                renderProgress();
+            };
+            const loadLesson=({practice=false}={})=>{
+                const lesson=current();
+                const entry=this.grooveSearchEntries.find(item=>item.canonicalId===lesson.canonicalId);
+                if(!entry){this.status(`Learning ${lesson.number}: groove unavailable.`);return;}
+                this.selectGlobalGroove(entry);this.addSelectedPatch();
+                this.seq.tempo=lesson.startTempo;this.renderTempo();this.autoSaveMemory();
+                if(this.dom.practiceMode)this.dom.practiceMode.value=lesson.practiceMode;
+                if(this.dom.practiceStartTempo)this.dom.practiceStartTempo.value=String(lesson.startTempo);
+                if(this.dom.practiceTargetTempo)this.dom.practiceTargetTempo.value=String(lesson.targetTempo);
+                if(this.dom.practiceTempoStep)this.dom.practiceTempoStep.value=String(lesson.tempoStep);
+                if(this.dom.practiceLoops)this.dom.practiceLoops.value=String(lesson.loopsPerLevel);
+                this.practice?.configure({mode:lesson.practiceMode,startTempo:lesson.startTempo,targetTempo:lesson.targetTempo,tempoStep:lesson.tempoStep,loopsPerLevel:lesson.loopsPerLevel,countInBars:1});
+                if(practice&&this.dom.practicePanel?.hidden)this.dom.practiceButton?.click();
+                this.renderPractice();
+                this.status(`${lesson.number} · ${lesson.title} loaded at ${lesson.startTempo} BPM${practice?" · Practice armed":""}.`);
+            };
+            this.dom.learningLevel.addEventListener("change",()=>{const level=curriculum.levels.find(item=>item.level===Number(this.dom.learningLevel.value));if(level?.lessons[0])select(level.lessons[0].number);});
+            this.dom.learningLessons.addEventListener("click",event=>{const button=event.target.closest("[data-number]");if(button)select(button.dataset.number);});
+            this.dom.learningComplete.addEventListener("change",()=>{const number=current().number;if(this.dom.learningComplete.checked)this.learning.completed.add(number);else this.learning.completed.delete(number);save();render();});
+            this.dom.learningPrev.addEventListener("click",()=>{const list=flat(),index=list.findIndex(item=>item.number===current().number);if(index>0)select(list[index-1].number);});
+            this.dom.learningNext.addEventListener("click",()=>{const list=flat(),index=list.findIndex(item=>item.number===current().number);if(index<list.length-1)select(list[index+1].number);});
+            this.dom.learningLoad.addEventListener("click",()=>loadLesson());
+            this.dom.learningPractice.addEventListener("click",()=>loadLesson({practice:true}));
+            window.addEventListener("battrochtek-language",render);
+            render();
         }
         selectGlobalGroove(result) {
             if (!result) return;

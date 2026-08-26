@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 
-const [app, html, sw, css, manifest, sampleManifest, externalGrooves, syncGrooves, grooveImport, cleanGrooves, grooveConfig] = await Promise.all([
+const [app, html, sw, css, manifest, sampleManifest, externalGrooves, learningPath, syncGrooves, grooveImport, cleanGrooves, grooveConfig] = await Promise.all([
   readFile("app.js", "utf8"),
   readFile("index.html", "utf8"),
   readFile("service-worker.js", "utf8"),
@@ -8,6 +8,7 @@ const [app, html, sw, css, manifest, sampleManifest, externalGrooves, syncGroove
   readFile("manifest.webmanifest", "utf8"),
   readFile("samples/manifest-v2.js", "utf8"),
   readFile("grooves/external-grooves.js", "utf8"),
+  readFile("grooves/learning-path.js", "utf8"),
   readFile("scripts/sync-grooves.mjs", "utf8"),
   readFile("scripts/groove-import-lib.mjs", "utf8"),
   readFile("scripts/clean-grooves.mjs", "utf8"),
@@ -23,6 +24,11 @@ const checks = [
   [css.includes("--bt-bg:") && css.includes("--bt-grid-width:"), "variables CSS centralisées"],
   [css.includes('#play-pause-icon:not(.fa-play):not(.fa-pause)::before'), "icône Play initiale présente"],
   [html.includes('id="practice-panel"') && html.includes('id="practice-button"'), "interface Practice présente"],
+  [html.includes('id="learning-panel"') && html.includes('id="learning-practice"') && learningPath.includes('"lessonCount":48'), "parcours Learning débutant→expert de 48 leçons présent"],
+  [learningPath.includes('"focusTranslations"') && learningPath.includes('"frameworkSources"') && app.includes('battrochtek-language'), "Learning traduit FR/EN/ES et fondé sur des référentiels pédagogiques"],
+  [html.includes('class="learning-panel-outside"') && html.indexOf('class="learning-panel-outside"') > html.indexOf('class="transport-bar"') && html.indexOf('class="learning-panel-outside"') < html.indexOf('class="shortcut-help-outside"'), "Learning est un bloc autonome entre le séquenceur et les raccourcis"],
+  [app.includes('setupLearning()') && app.includes('battrochtek.learning.v1') && app.includes('Practice armed'), "Learning charge les grooves, configure Practice et mémorise la progression"],
+  [sw.includes('./grooves/learning-path.js'), "parcours Learning disponible hors ligne"],
   [app.includes('class PracticeController') && app.includes('scheduleCountIn'), "Practice V1 tempo et count-in présent"],
   [app.includes('layerPlan') && app.includes('practice.snare') && app.includes('practice.kick'), "Practice V2 couches présent"],
   [app.includes('notes fantômes') && app.includes('velocityForCell'), "Practice V3 accents et notes fantômes présent"],
@@ -38,7 +44,7 @@ const checks = [
   [app.includes("isApplyingUrlState") && app.includes("BattrochtekUrlSync?.isApplying") && app.includes("urlApplyCount"), "garde anti-boucle URL params ↔ état app présent"],
   [app.includes("reloadFromUrl()") && app.includes("hashchange") && app.includes("popstate") && app.includes("applyUrlState") && app.includes("lastAppliedHash"), "navigation favoris/historique recharge le groove URL sans reload"],
   [sw.includes('"./vendor/oat/oat.min.css"') && sw.includes('"./vendor/oat/oat.min.js"'), "Oat inclus dans l’app shell PWA"],
-  [sw.includes('battrochtek-v120') && sw.includes('battrochtek-audio-v7'), "caches PWA/audio v120/v7"],
+  [sw.includes('battrochtek-v122') && sw.includes('battrochtek-audio-v7'), "caches PWA/audio v122/v7"],
   [html.includes('id="fullscreen-toggle"') && app.includes('setupFullscreen()') && app.includes('key==="x"'), 'plein écran bouton + raccourci Shift+X présent'],
   [app.includes('bell:1') && app.includes('ride:2') && !html.includes('value="bell"') && !html.includes('value="crash"') && html.includes('value="hihat"') && html.includes('value="ride"') && app.includes('bt_detroit_ride_bell'), 'piste Bell présente + Main droite simplifiée Charley/Ride'],
   [!css.slice(css.indexOf('.feel-influence-block{'), css.indexOf('}',css.indexOf('.feel-influence-block{'))).includes('border-top'), 'Influence FEEL sans border-top'],
@@ -160,7 +166,7 @@ const checks = [
   [html.includes('data-i18n="feel.energy"') && !html.includes('<span>INTIME</span>'), "axe Energy simplifié et traduit"],
   [app.includes('leftFootHatPattern') && app.includes('performanceLeftFootSteps') && app.includes('!isLeftFootHat(track)'), "pied gauche HH séparé du budget des deux mains"],
   [app.includes('sourceTimeVoice()') && app.includes('return this.rightHandMode==="ride" ? "ride" : "hihat"'), "Main droite explicite Charley/Ride sans AUTO"],
-  [Array.isArray(diversity.exactStructuralClusters) && diversity.exactStructuralClusters.length===0, "aucune collision structurelle exacte dans les 213 archétypes"],
+  [Array.isArray(diversity.exactStructuralClusters) && diversity.exactStructuralClusters.length===0, "aucune collision structurelle exacte dans les 217 archétypes"],
   [diversity.nearDuplicateSummary?.unresolved===0, "paires proches musicologiquement arbitrées"],
   [app.includes('this.coreMode = "locked"') && app.includes('this.influence = { kick:1, snare:1, rightHand:2, ghosts:2, toms:1, crash:1 }'), 'FEEL core protection + influences v59'],
   [!html.includes('id="live-fill"') && html.includes('data-feel-influence="kick"') && html.includes('class="feel-influence-block"'), 'FEEL sans bouton Fill + influence visible UI'],

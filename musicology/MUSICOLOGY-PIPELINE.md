@@ -11,7 +11,7 @@ The canonical corpus is deliberately split into four validation layers. A style 
 
 `npm run grooves:build` now executes the full chain:
 
-- build 213 canonical archetypes without fake “catalog disambiguation” notes;
+- build 217 canonical archetypes without fake “catalog disambiguation” notes;
 - attach literature/taxonomy evidence;
 - measure human timing and velocity from the local GMD MIDI corpus;
 - calculate structural fingerprints and near-duplicate candidates;

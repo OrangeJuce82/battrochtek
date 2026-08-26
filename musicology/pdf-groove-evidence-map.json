@@ -1,6 +1,6 @@
 {
   "schema": "battrochtek.pdf-groove-evidence/v1",
-  "generatedAt": "2026-08-25T22:26:10.691Z",
+  "generatedAt": "2026-08-26T05:31:10.819Z",
   "grooves": [
     {
       "id": "CAN-001",
@@ -5828,6 +5828,299 @@
       "sourceHits": [],
       "strongSourceCount": 0,
       "anySourceCount": 0
+    },
+    {
+      "id": "CAN-214",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Guajira Drum-Set Adaptation",
+      "terms": [
+        "guajira drum set adaptation",
+        "guajira"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            8,
+            9,
+            36
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-6e48001c173e",
+          "pages": [
+            14,
+            15
+          ],
+          "evidenceGrade": "D"
+        },
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            61
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            60
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-13c8925b6731",
+          "pages": [
+            10
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            7,
+            8,
+            33
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 4,
+      "anySourceCount": 6
+    },
+    {
+      "id": "CAN-215",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Pilón Drum-Set Adaptation",
+      "terms": [
+        "pilon drum set adaptation",
+        "pilon"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-13c8925b6731",
+          "pages": [
+            15
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            29
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 2
+    },
+    {
+      "id": "CAN-216",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Cáscara Coordination Exercise",
+      "terms": [
+        "cascara coordination exercise",
+        "cascara"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-5d0aaaee12c0",
+          "pages": [
+            6,
+            10,
+            34
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            10,
+            14,
+            41
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            4,
+            5,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            34,
+            35,
+            52,
+            58,
+            60
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            3,
+            4,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            33,
+            34,
+            51,
+            57,
+            59
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-13c8925b6731",
+          "pages": [
+            7
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            9,
+            13,
+            38
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            6,
+            25
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            82
+          ],
+          "evidenceGrade": "B+"
+        },
+        {
+          "sourceId": "PDF-2bb56376b3d0",
+          "pages": [
+            1
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-e9fb2404ba25",
+          "pages": [
+            198
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3eb3fd314955",
+          "pages": [
+            2,
+            9
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 8,
+      "anySourceCount": 11
+    },
+    {
+      "id": "CAN-217",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Mambo Bell Coordination Exercise",
+      "terms": [
+        "mambo bell coordination exercise",
+        "mambo bell"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            7,
+            10
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            4,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            52,
+            58
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            3,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            51,
+            57
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            6,
+            9
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2bb56376b3d0",
+          "pages": [
+            1
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-3eb3fd314955",
+          "pages": [
+            9
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 5,
+      "anySourceCount": 6
     }
   ]
 }

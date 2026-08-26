@@ -36,8 +36,13 @@ const checks=[
   [10,s=>s.legacyType==='metro'||s.instrument==='metronome','Metronome']
 ];
 const bellFallbackExpectations=new Map([
-  ["STUDIO PUNCH","vintage_rock_ridebell_vl3_rr1"],
-  ["SOUL POCKET","vintage_rock_ridebell_vl3_rr1"]
+  ["STUDIO PUNCH","henkonen_ridebell_vl2"],
+  ["SOUL POCKET","henkonen_ride2bell_vl1"],
+  ["ANALOG CLASSIC","bt_analog_short_bell"],
+  ["DETROIT HYBRID","bt_detroit_ride_bell"],
+  ["DIGITAL 80","bt_digital80_bell"],
+  ["SP DUST","bt_spdust_bell"],
+  ["GLITCH LAB","bt_glitch_metal_bell"]
 ]);
 for(const [kitName,key] of bellFallbackExpectations){
   const kit=kits.find(k=>k.name===kitName);

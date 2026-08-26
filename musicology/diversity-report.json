@@ -1,11 +1,11 @@
 {
   "schema": "battrochtek.diversity-report/v1",
-  "generatedAt": "2026-08-25T22:26:11.615Z",
-  "grooveCount": 213,
+  "generatedAt": "2026-08-26T06:56:10.113Z",
+  "grooveCount": 217,
   "exactStructuralClusters": [],
   "nearDuplicateSummary": {
-    "count": 124,
-    "adjudicated": 124,
+    "count": 125,
+    "adjudicated": 125,
     "unresolved": 0
   },
   "nearDuplicatePairs": [
@@ -1607,6 +1607,19 @@
       "reviewState": "adjudicated",
       "action": "DISTINCT_STYLE_VARIANT",
       "rationale": "Same family and broad feel, but the event-set difference exceeds exact identity and represents a named arrangement/style variant."
+    },
+    {
+      "a": "CAN-174",
+      "aName": "Highlife",
+      "b": "CAN-216",
+      "bName": "Cáscara Coordination Exercise",
+      "structural": 0.909,
+      "all": 0.909,
+      "feelMatch": true,
+      "sameFamily": false,
+      "reviewState": "adjudicated",
+      "action": "DISTINCT_CROSS_FAMILY_SHARED_VOCABULARY",
+      "rationale": "Different documented families; similarity comes from shared drum-set foundation vocabulary and is not evidence of taxonomic identity."
     },
     {
       "a": "CAN-187",

@@ -12,7 +12,7 @@ La matière première est abondante, mais la bibliothèque **Battrochtek Library
 - Curated v2 : **132 entrées**, mais seulement **20 fingerprints de pattern de départ**.
 - Mémoires Curated v2 : **560**, mais seulement **86 fingerprints distincts** au total.
 - Plus gros cluster de doublons exacts : **59 styles/noms sur le même pattern**.
-- Taxonomie canonique proposée : **213 archétypes** (A = noyau professionnel, B = extension régionale, C = hybrides).
+- Taxonomie canonique : **217 archétypes** (A = noyau professionnel, B = extension régionale/pédagogique, C = hybrides).
 
 ## Décision de méthode
 
@@ -44,7 +44,7 @@ Elle est précieuse pour Disco, House/Electronic, Ska/Reggae et patterns histori
 
 ## Taxonomie cible
 
-Répartition des 213 archétypes :
+Répartition des 217 archétypes :
 
 - Latin America: 36
 - Rock / Pop: 24
@@ -102,7 +102,7 @@ Couverture automatique indicative des noms actuels : {'NAMED_MATCH': 89, 'RELATE
 
 - `groove-audit-1239.csv` : audit calculé de **chaque entrée actuelle**, doublons, mémoires et action recommandée par source.
 - `curated-v2-duplicate-clusters.csv` : tous les clusters exacts de la v2.
-- `canonical-taxonomy-v1.csv` : taxonomie cible de 213 archétypes avec candidat actuel éventuel.
+- `canonical-taxonomy-v1.csv` : taxonomie cible de 217 archétypes avec candidat actuel éventuel.
 - `unified-curated-scaffold.json` : squelette de la future bibliothèque unique. Les patterns sont volontairement `null` tant qu'ils ne sont pas validés ; je refuse de recréer une nouvelle couche de faux grooves génériques.
 
 ## Étape suivante recommandée

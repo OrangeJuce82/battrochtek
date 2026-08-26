@@ -212,3 +212,7 @@ id,name,family,events,time,kick,snare,status,issues
 "CAN-211","Jazz-Rock Fusion","Global / Hybrid","36","true","true","true","PASS",""
 "CAN-212","Afrobeat-Funk","Global / Hybrid","52","true","true","true","PASS",""
 "CAN-213","World 6/8 Fusion","Global / Hybrid","24","true","true","true","PASS",""
+"CAN-214","Guajira Drum-Set Adaptation","Latin America","22","true","true","true","PASS",""
+"CAN-215","Pilón Drum-Set Adaptation","Latin America","38","true","true","true","PASS",""
+"CAN-216","Cáscara Coordination Exercise","Latin America","20","true","true","true","PASS",""
+"CAN-217","Mambo Bell Coordination Exercise","Latin America","22","true","true","true","PASS",""

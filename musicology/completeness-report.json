@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-25T22:26:11.690Z",
-  "total": 213,
-  "pass": 213,
+  "generatedAt": "2026-08-26T06:56:10.189Z",
+  "total": 217,
+  "pass": 217,
   "review": 0,
   "rows": [
     {
@@ -2341,6 +2341,50 @@
       "name": "World 6/8 Fusion",
       "family": "Global / Hybrid",
       "events": 24,
+      "time": true,
+      "kick": true,
+      "snare": true,
+      "status": "PASS",
+      "issues": ""
+    },
+    {
+      "id": "CAN-214",
+      "name": "Guajira Drum-Set Adaptation",
+      "family": "Latin America",
+      "events": 22,
+      "time": true,
+      "kick": true,
+      "snare": true,
+      "status": "PASS",
+      "issues": ""
+    },
+    {
+      "id": "CAN-215",
+      "name": "Pilón Drum-Set Adaptation",
+      "family": "Latin America",
+      "events": 38,
+      "time": true,
+      "kick": true,
+      "snare": true,
+      "status": "PASS",
+      "issues": ""
+    },
+    {
+      "id": "CAN-216",
+      "name": "Cáscara Coordination Exercise",
+      "family": "Latin America",
+      "events": 20,
+      "time": true,
+      "kick": true,
+      "snare": true,
+      "status": "PASS",
+      "issues": ""
+    },
+    {
+      "id": "CAN-217",
+      "name": "Mambo Bell Coordination Exercise",
+      "family": "Latin America",
+      "events": 22,
       "time": true,
       "kick": true,
       "snare": true,

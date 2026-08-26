@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-25T22:26:57.205Z",
+  "generatedAt": "2026-08-26T06:56:47.704Z",
   "kitCount": 10,
-  "manifestSamples": 268,
+  "manifestSamples": 277,
   "trackRefs": 110,
   "errors": [],
   "rows": [
@@ -18,10 +18,10 @@
       "kit": "STUDIO PUNCH",
       "category": "Acoustique",
       "track": 1,
-      "key": "vintage_rock_ridebell_vl3_rr1",
+      "key": "henkonen_ridebell_vl2",
       "manifest": true,
       "file": true,
-      "size": 1021680
+      "size": 423602
     },
     {
       "kit": "STUDIO PUNCH",
@@ -117,10 +117,10 @@
       "kit": "SOUL POCKET",
       "category": "Acoustique",
       "track": 1,
-      "key": "vintage_rock_ridebell_vl3_rr1",
+      "key": "henkonen_ride2bell_vl1",
       "manifest": true,
       "file": true,
-      "size": 1021680
+      "size": 423608
     },
     {
       "kit": "SOUL POCKET",
@@ -513,10 +513,10 @@
       "kit": "ANALOG CLASSIC",
       "category": "Électro",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_analog_short_bell",
       "manifest": true,
       "file": true,
-      "size": 66194
+      "size": 101670
     },
     {
       "kit": "ANALOG CLASSIC",
@@ -711,10 +711,10 @@
       "kit": "DIGITAL 80",
       "category": "Électro",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_digital80_bell",
       "manifest": true,
       "file": true,
-      "size": 66194
+      "size": 159000
     },
     {
       "kit": "DIGITAL 80",
@@ -810,10 +810,10 @@
       "kit": "SP DUST",
       "category": "Électro",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_spdust_bell",
       "manifest": true,
       "file": true,
-      "size": 66194
+      "size": 203108
     },
     {
       "kit": "SP DUST",
@@ -909,10 +909,10 @@
       "kit": "GLITCH LAB",
       "category": "Électro",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_glitch_metal_bell",
       "manifest": true,
       "file": true,
-      "size": 66194
+      "size": 110498
     },
     {
       "kit": "GLITCH LAB",

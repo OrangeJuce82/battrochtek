@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-25T22:26:57.269Z",
+  "generatedAt": "2026-08-26T06:56:47.769Z",
   "kits": 10,
-  "samples": 268,
+  "samples": 277,
   "checks": 550,
   "errors": [],
   "rows": [
@@ -58,56 +58,51 @@
     {
       "kit": "STUDIO PUNCH",
       "track": 1,
-      "key": "vintage_rock_ridebell_vl3_rr1",
+      "key": "henkonen_ridebell_vl2",
       "velocity": "ghost",
-      "group": "vintage-rock|ride",
+      "group": "henkonen-bells|henkonen_ridebell",
       "candidates": [
-        "vintage_rock_ridebell_vl1_rr1",
-        "vintage_rock_ridebell_vl1_rr2"
+        "henkonen_ridebell_vl1"
       ]
     },
     {
       "kit": "STUDIO PUNCH",
       "track": 1,
-      "key": "vintage_rock_ridebell_vl3_rr1",
+      "key": "henkonen_ridebell_vl2",
       "velocity": "soft",
-      "group": "vintage-rock|ride",
+      "group": "henkonen-bells|henkonen_ridebell",
       "candidates": [
-        "vintage_rock_ridebell_vl1_rr1",
-        "vintage_rock_ridebell_vl1_rr2"
+        "henkonen_ridebell_vl2"
       ]
     },
     {
       "kit": "STUDIO PUNCH",
       "track": 1,
-      "key": "vintage_rock_ridebell_vl3_rr1",
+      "key": "henkonen_ridebell_vl2",
       "velocity": "normal",
-      "group": "vintage-rock|ride",
+      "group": "henkonen-bells|henkonen_ridebell",
       "candidates": [
-        "vintage_rock_ridebell_vl3_rr1",
-        "vintage_rock_ridebell_vl3_rr2"
+        "henkonen_ridebell_vl2"
       ]
     },
     {
       "kit": "STUDIO PUNCH",
       "track": 1,
-      "key": "vintage_rock_ridebell_vl3_rr1",
+      "key": "henkonen_ridebell_vl2",
       "velocity": "strong",
-      "group": "vintage-rock|ride",
+      "group": "henkonen-bells|henkonen_ridebell",
       "candidates": [
-        "vintage_rock_ridebell_vl4_rr1",
-        "vintage_rock_ridebell_vl4_rr2"
+        "henkonen_ridebell_vl3"
       ]
     },
     {
       "kit": "STUDIO PUNCH",
       "track": 1,
-      "key": "vintage_rock_ridebell_vl3_rr1",
+      "key": "henkonen_ridebell_vl2",
       "velocity": "accent",
-      "group": "vintage-rock|ride",
+      "group": "henkonen-bells|henkonen_ridebell",
       "candidates": [
-        "vintage_rock_ridebell_vl4_rr1",
-        "vintage_rock_ridebell_vl4_rr2"
+        "henkonen_ridebell_vl3"
       ]
     },
     {
@@ -613,56 +608,51 @@
     {
       "kit": "SOUL POCKET",
       "track": 1,
-      "key": "vintage_rock_ridebell_vl3_rr1",
+      "key": "henkonen_ride2bell_vl1",
       "velocity": "ghost",
-      "group": "vintage-rock|ride",
+      "group": "henkonen-bells|henkonen_ride2bell",
       "candidates": [
-        "vintage_rock_ridebell_vl1_rr1",
-        "vintage_rock_ridebell_vl1_rr2"
+        "henkonen_ride2bell_vl1"
       ]
     },
     {
       "kit": "SOUL POCKET",
       "track": 1,
-      "key": "vintage_rock_ridebell_vl3_rr1",
+      "key": "henkonen_ride2bell_vl1",
       "velocity": "soft",
-      "group": "vintage-rock|ride",
+      "group": "henkonen-bells|henkonen_ride2bell",
       "candidates": [
-        "vintage_rock_ridebell_vl1_rr1",
-        "vintage_rock_ridebell_vl1_rr2"
+        "henkonen_ride2bell_vl1"
       ]
     },
     {
       "kit": "SOUL POCKET",
       "track": 1,
-      "key": "vintage_rock_ridebell_vl3_rr1",
+      "key": "henkonen_ride2bell_vl1",
       "velocity": "normal",
-      "group": "vintage-rock|ride",
+      "group": "henkonen-bells|henkonen_ride2bell",
       "candidates": [
-        "vintage_rock_ridebell_vl3_rr1",
-        "vintage_rock_ridebell_vl3_rr2"
+        "henkonen_ride2bell_vl1"
       ]
     },
     {
       "kit": "SOUL POCKET",
       "track": 1,
-      "key": "vintage_rock_ridebell_vl3_rr1",
+      "key": "henkonen_ride2bell_vl1",
       "velocity": "strong",
-      "group": "vintage-rock|ride",
+      "group": "henkonen-bells|henkonen_ride2bell",
       "candidates": [
-        "vintage_rock_ridebell_vl4_rr1",
-        "vintage_rock_ridebell_vl4_rr2"
+        "henkonen_ride2bell_vl2"
       ]
     },
     {
       "kit": "SOUL POCKET",
       "track": 1,
-      "key": "vintage_rock_ridebell_vl3_rr1",
+      "key": "henkonen_ride2bell_vl1",
       "velocity": "accent",
-      "group": "vintage-rock|ride",
+      "group": "henkonen-bells|henkonen_ride2bell",
       "candidates": [
-        "vintage_rock_ridebell_vl4_rr1",
-        "vintage_rock_ridebell_vl4_rr2"
+        "henkonen_ride2bell_vl2"
       ]
     },
     {
@@ -2913,51 +2903,51 @@
     {
       "kit": "ANALOG CLASSIC",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_analog_short_bell",
       "velocity": "ghost",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-analog-short|bt_analog_short_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_analog_short_bell"
       ]
     },
     {
       "kit": "ANALOG CLASSIC",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_analog_short_bell",
       "velocity": "soft",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-analog-short|bt_analog_short_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_analog_short_bell"
       ]
     },
     {
       "kit": "ANALOG CLASSIC",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_analog_short_bell",
       "velocity": "normal",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-analog-short|bt_analog_short_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_analog_short_bell"
       ]
     },
     {
       "kit": "ANALOG CLASSIC",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_analog_short_bell",
       "velocity": "strong",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-analog-short|bt_analog_short_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_analog_short_bell"
       ]
     },
     {
       "kit": "ANALOG CLASSIC",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_analog_short_bell",
       "velocity": "accent",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-analog-short|bt_analog_short_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_analog_short_bell"
       ]
     },
     {
@@ -4053,51 +4043,51 @@
     {
       "kit": "DIGITAL 80",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_digital80_bell",
       "velocity": "ghost",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-digital-80|bt_digital80_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_digital80_bell"
       ]
     },
     {
       "kit": "DIGITAL 80",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_digital80_bell",
       "velocity": "soft",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-digital-80|bt_digital80_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_digital80_bell"
       ]
     },
     {
       "kit": "DIGITAL 80",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_digital80_bell",
       "velocity": "normal",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-digital-80|bt_digital80_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_digital80_bell"
       ]
     },
     {
       "kit": "DIGITAL 80",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_digital80_bell",
       "velocity": "strong",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-digital-80|bt_digital80_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_digital80_bell"
       ]
     },
     {
       "kit": "DIGITAL 80",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_digital80_bell",
       "velocity": "accent",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-digital-80|bt_digital80_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_digital80_bell"
       ]
     },
     {
@@ -4613,51 +4603,51 @@
     {
       "kit": "SP DUST",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_spdust_bell",
       "velocity": "ghost",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-lo-fi-dark|bt_spdust_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_spdust_bell"
       ]
     },
     {
       "kit": "SP DUST",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_spdust_bell",
       "velocity": "soft",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-lo-fi-dark|bt_spdust_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_spdust_bell"
       ]
     },
     {
       "kit": "SP DUST",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_spdust_bell",
       "velocity": "normal",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-lo-fi-dark|bt_spdust_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_spdust_bell"
       ]
     },
     {
       "kit": "SP DUST",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_spdust_bell",
       "velocity": "strong",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-lo-fi-dark|bt_spdust_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_spdust_bell"
       ]
     },
     {
       "kit": "SP DUST",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_spdust_bell",
       "velocity": "accent",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-lo-fi-dark|bt_spdust_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_spdust_bell"
       ]
     },
     {
@@ -5168,51 +5158,51 @@
     {
       "kit": "GLITCH LAB",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_glitch_metal_bell",
       "velocity": "ghost",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-glitch-metal|bt_glitch_metal_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_glitch_metal_bell"
       ]
     },
     {
       "kit": "GLITCH LAB",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_glitch_metal_bell",
       "velocity": "soft",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-glitch-metal|bt_glitch_metal_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_glitch_metal_bell"
       ]
     },
     {
       "kit": "GLITCH LAB",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_glitch_metal_bell",
       "velocity": "normal",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-glitch-metal|bt_glitch_metal_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_glitch_metal_bell"
       ]
     },
     {
       "kit": "GLITCH LAB",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_glitch_metal_bell",
       "velocity": "strong",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-glitch-metal|bt_glitch_metal_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_glitch_metal_bell"
       ]
     },
     {
       "kit": "GLITCH LAB",
       "track": 1,
-      "key": "bt_detroit_ride_bell",
+      "key": "bt_glitch_metal_bell",
       "velocity": "accent",
-      "group": "bt-detroit|bt_detroit_ride_bell",
+      "group": "bt-glitch-metal|bt_glitch_metal_bell",
       "candidates": [
-        "bt_detroit_ride_bell"
+        "bt_glitch_metal_bell"
       ]
     },
     {

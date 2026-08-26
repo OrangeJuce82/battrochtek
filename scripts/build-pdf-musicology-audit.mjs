@@ -74,6 +74,8 @@ const aliases = {
   'Bossa Nova': ['bossa nova'], 'Samba Batucada': ['batucada'], 'Samba Partido Alto': ['partido alto'],
   'Ijexá / Afoxê': ['ijexa', 'afoxe'], 'Ewe 12/8 / Agbekor Adaptation': ['agbekor', 'ewe 12 8'],
   'Jùjú / Yoruba-derived Drum-Set': ['juju', 'yoruba'], 'Guaguancó': ['guaguanco'],
+  'Guajira Drum-Set Adaptation': ['guajira'], 'Pilón Drum-Set Adaptation': ['pilon'],
+  'Cáscara Coordination Exercise': ['cascara'], 'Mambo Bell Coordination Exercise': ['mambo bell'],
 };
 
 function identify(row) {

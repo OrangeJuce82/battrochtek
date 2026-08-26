@@ -17,6 +17,9 @@ data shipped with or referenced by the project.
   bundled.
 - **Battrochtek generated electronic/world assets explicitly marked CC0** —
   CC0 1.0; see `samples/LICENSE-CC0-ELECTRONIC.txt` and manifest metadata.
+- **Sounds and Scapes 4 — Drumkit Oneshots, HenKonen** — selected ride-bell
+  recordings and Battrochtek derivatives, CC0 1.0. Source sound URLs and
+  hashes are recorded in the sample manifest and provenance ledger.
 - **Legacy-import audio marked `license: "unspecified"`** — not relicensed by
   the Battrochtek MIT license. These files should be replaced or their origin
   verified before publishing a redistribution that requires fully audited

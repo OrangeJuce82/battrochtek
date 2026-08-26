@@ -655,7 +655,13 @@
           "title": "Breakbeats and big beat in EDM — Cambridge Twentieth-Century Music",
           "url": "https://www.cambridge.org/core/journals/twentieth-century-music/article/breakdowns-and-the-aesthetic-of-disorientation-in-festivalhouse-music/A0748DBC5425594BE0F95D9AE0676DDC"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

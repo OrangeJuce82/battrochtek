@@ -775,7 +775,138 @@
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 6,
+        "sourceCount": 7,
+        "sources": [
+          {
+            "sourceId": "PDF-3187600027fe",
+            "title": "Instant Guide to Drum Grooves",
+            "authors": [
+              "Maria Martinez"
+            ],
+            "publisher": "Hal Leonard",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              3,
+              22
+            ],
+            "sha256": "3187600027fe3e853aacafd7634af8ed745b23c1bba149361174a339016d3b69",
+            "sourcePackPaths": [
+              "BLUES - SHUFFLE/Drum Book — Blues - Swamp - New Orleans.pdf",
+              "GENERAL - HUGE GROOVE COLLECTIONS/Drum Book — Multi-Style Groove Collection.pdf",
+              "HIP-HOP - MODERN GROOVES/Drum Book — Hip-Hop Groove Section.pdf",
+              "NEW ORLEANS - SECOND LINE ⚜️/Drum Book — New Orleans - Second Line - Swamp - Funk.pdf",
+              "REGGAE - SKA - CARIBBEAN 🇯🇲/Drum Book — Reggae One Drop - Ska - Calypso - Soca.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-5b17d3b0173f",
+            "title": "Brazilian Rhythms in the Drums",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "C",
+            "pages": [
+              6
+            ],
+            "sha256": "5b17d3b0173f6869e6394ee4ffe66818c7c9c9a77db781ed9c7466a33e483e84",
+            "sourcePackPaths": [
+              "BRAZIL 🇧🇷/Brazilian Drumming Rhythms.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-36bf5e94d8ea",
+            "title": "Brazilian Rhythms for Drumset",
+            "authors": [
+              "Duduka Da Fonseca",
+              "Bob Weiner"
+            ],
+            "publisher": "Manhattan Music / Alfred Music",
+            "year": 1991,
+            "evidenceGrade": "A",
+            "pages": [
+              4
+            ],
+            "sha256": "36bf5e94d8ea9d419154bad4266d5ab1178cbb92f02d1389da297bf322499009",
+            "sourcePackPaths": [
+              "BRAZIL 🇧🇷/Brazilian Rhythms for Drumset — Duduka Da Fonseca - Bob Weiner.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-f97e3e83bf02",
+            "title": "A Cannibalist's Manifesto: Candomblé Rhythms for Drum Kit",
+            "authors": [
+              "Peter Alastair McGrath-Kerr"
+            ],
+            "publisher": "University of Melbourne",
+            "year": 2019,
+            "evidenceGrade": "A",
+            "pages": [
+              46,
+              87
+            ],
+            "sha256": "f97e3e83bf0298e9b27f3700e2c8135351c85518309e8982964a23578eaa7849",
+            "sourcePackPaths": [
+              "BRAZIL 🇧🇷/Candomblé Rhythm for Drumset.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-7064fe3e54b3",
+            "title": "Méthode de Batterie, Volume II",
+            "authors": [
+              "Dante Agostini"
+            ],
+            "publisher": "École Dante Agostini",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              82
+            ],
+            "sha256": "7064fe3e54b373cb3cb3670765ea89961abd044f225a9187d679087f5e2e7cf6",
+            "sourcePackPaths": [
+              "DANTE AGOSTINI/Methode de Batterie Dante Agostini Vol. 2.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-2792e4f7409a",
+            "title": "Méthode de Batterie, Volume II",
+            "authors": [
+              "Dante Agostini"
+            ],
+            "publisher": "École Dante Agostini",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              81
+            ],
+            "sha256": "2792e4f7409a37fbe87e997d29059e4fe21704727dc22d88e87187bf72f69dd9",
+            "sourcePackPaths": [
+              "DANTE AGOSTINI/Méthode de Batterie - Vol.2.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-a6fb626f326f",
+            "title": "Méthode de Batterie, Volume II",
+            "authors": [
+              "Dante Agostini"
+            ],
+            "publisher": "École Dante Agostini",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              81
+            ],
+            "sha256": "a6fb626f326f798d724bb44e0296abc3f3052b9671a86d160f4cd97ae3f3cf9b",
+            "sourcePackPaths": [
+              "DANTE AGOSTINI/dante agostini 2.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

@@ -211,7 +211,13 @@
           "title": "Iqa‘ Sa‘idi 4/4 — MaqamWorld",
           "url": "https://www.maqamworld.com/en/iqaa/saidi.php"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

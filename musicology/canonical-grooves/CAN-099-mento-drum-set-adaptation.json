@@ -336,7 +336,13 @@
           "title": "Wheel and Turn: Jamaican mento field recording — Smithsonian Folkways",
           "url": "https://folkways.si.edu/wheel-and-turn/african-american-music-islamica/music/track/smithsonian"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

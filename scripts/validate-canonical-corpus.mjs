@@ -33,4 +33,13 @@ const dashboard=JSON.parse(await readFile(new URL('../musicology/validation-dash
 if(dashboard.summary?.count!==213) errors.push('validation dashboard out of sync');
 if(dashboard.summary?.scoreDocumentaryValidated!==213||dashboard.summary?.deskReviewComplete!==213) errors.push('desk review is not complete for all 213 scores');
 if(dashboard.summary?.taxonomyResolved!==213||dashboard.summary?.taxonomyNeedsReview!==0) errors.push('taxonomy adjudication is incomplete');
+const learning=JSON.parse(await readFile(new URL('../musicology/learning-path-v1.json',import.meta.url),'utf8'));
+const lessonNumbers=new Set();
+for(const level of learning.levels||[])for(const lesson of level.lessons||[]){
+  if(!/^\d+\.\d+$/.test(lesson.number)||lessonNumbers.has(lesson.number)) errors.push(`Learning: invalid/duplicate lesson number ${lesson.number}`);
+  lessonNumbers.add(lesson.number);
+  if(!ids.has(lesson.canonicalId)) errors.push(`Learning ${lesson.number}: unknown canonicalId ${lesson.canonicalId}`);
+  if(!lesson.title||/[àâçéèêëîïôùûüÿœ]/i.test(lesson.title)) errors.push(`Learning ${lesson.number}: title must be English`);
+}
+if(lessonNumbers.size!==30) errors.push(`Learning: expected 30 lessons, found ${lessonNumbers.size}`);
 if(errors.length){console.error(errors.join('\n'));process.exit(1);} console.log(`✓ Canonical validation: ${files.length} archetypes, MIDI/event schemas OK, evidence states present, human-feel analysis present.`);

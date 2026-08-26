@@ -639,7 +639,33 @@
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 0,
+        "sourceCount": 1,
+        "sources": [
+          {
+            "sourceId": "PDF-4f2f3846064c",
+            "title": "Progressive 1,000,000 Drum Grooves in 4/4 Time",
+            "authors": [
+              "Craig Lauritsen"
+            ],
+            "publisher": "Progressive Publishing",
+            "year": null,
+            "evidenceGrade": "B+",
+            "pages": [
+              62
+            ],
+            "sha256": "4f2f3846064c45c20193463d12fe1587a3602a66f7567d431205a39add9945b4",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/Progressive 1,000,000 Drum Grooves — Craig Lauritsen.pdf",
+              "HIP-HOP - MODERN GROOVES/Progressive Drum Grooves — Rap - Funk.pdf",
+              "REGGAE - SKA - CARIBBEAN 🇯🇲/Progressive Drum Grooves — Rock - Funk - Rap - Reggae.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

@@ -448,7 +448,32 @@
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 1,
+        "sourceCount": 1,
+        "sources": [
+          {
+            "sourceId": "PDF-2fdfcd6bd899",
+            "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+            "authors": [
+              "Lincoln Goines",
+              "Robby Ameen"
+            ],
+            "publisher": "Manhattan Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              1
+            ],
+            "sha256": "2fdfcd6bd8992b277670b799ee2aa4542dd26905d1b55936e1f2658e0d725aed",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Funkifying the Clave — Afro-Cuban Grooves.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

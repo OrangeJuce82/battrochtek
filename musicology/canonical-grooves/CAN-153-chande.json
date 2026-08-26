@@ -381,7 +381,31 @@
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 1,
+        "sourceCount": 1,
+        "sources": [
+          {
+            "sourceId": "PDF-f40b6fc1f4f1",
+            "title": "Solfège Rythmique, Cahier No. 1",
+            "authors": [
+              "Dante Agostini"
+            ],
+            "publisher": "École Dante Agostini",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              3
+            ],
+            "sha256": "f40b6fc1f4f1a702c96b2001fa6d84927c5a9385435f1e81bf8e280c83706576",
+            "sourcePackPaths": [
+              "DANTE AGOSTINI/Dante Agostini - Solfège Rhythmique Cahier No 1.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

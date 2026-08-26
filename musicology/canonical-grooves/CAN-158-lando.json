@@ -430,7 +430,67 @@
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 2,
+        "sourceCount": 3,
+        "sources": [
+          {
+            "sourceId": "PDF-6e48001c173e",
+            "title": "Afro-Cuban Grooves — Guajira - Son Montuno - Guaguancó - Mambo - Salsa",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "D",
+            "pages": [
+              31
+            ],
+            "sha256": "6e48001c173ec7515eefd9a7f04e49f3ea63d2f98a0d7d153d3d1ee4c94be2e1",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Grooves.pdf",
+              "LATIN - SALSA - CARIBBEAN 🌴/Afro-Cuban Grooves — Guajira - Son Montuno - Guaguancó - Mambo - Salsa.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-73cfc4ffc14c",
+            "title": "Afro-Cuban Rhythms for Drumset",
+            "authors": [
+              "Frank Malabe",
+              "Bob Weiner"
+            ],
+            "publisher": "Manhattan Music / Alfred Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              63
+            ],
+            "sha256": "73cfc4ffc14cf0fcafe1a765984e0a6bc0e09290699e16e7967d711265e482af",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Rhythms for Drumset — Alternate Edition.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-d9d0cc68c73f",
+            "title": "Afro-Cuban Rhythms for Drumset",
+            "authors": [
+              "Frank Malabe",
+              "Bob Weiner"
+            ],
+            "publisher": "Manhattan Music / Alfred Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              62
+            ],
+            "sha256": "d9d0cc68c73fc93d58e71c2581f6bc600f71b26faf97567ac21a9a01447da694",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Rhythms for Drumset — Frank Malabe & Bob Weiner.pdf",
+              "LATIN - SALSA - CARIBBEAN 🌴/Afro-Cuban Rhythms — Bembé - Cascara - Songo - Mozambique.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

@@ -1,0 +1,1557 @@
+{
+  "schema": "battrochtek.pdf-musicology-audit/v1",
+  "generatedAt": "2026-08-25T22:26:10.689Z",
+  "sourcePack": {
+    "suppliedFiles": 74,
+    "uniqueFiles": 57,
+    "uniqueWorks": 50,
+    "pages": 2586
+  },
+  "grading": {
+    "A": "professional or peer-reviewed/academic",
+    "A-": "professional but excerpted",
+    "B": "published pedagogical corroboration",
+    "C": "context only",
+    "D": "not evidence"
+  },
+  "sources": [
+    {
+      "sourceId": "PDF-5d0aaaee12c0",
+      "sha256": "5d0aaaee12c0474fd94fdda203f40441db5a9f834731b0c4cc4596d62301cb43",
+      "relativePaths": [
+        "AFRO-CUBAN 🇨🇺/Afro-Cuban Grooves for Bass & Drums — Alternate Scan.pdf"
+      ],
+      "pageCount": 59,
+      "textLayer": "weak-or-scanned",
+      "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+      "authors": [
+        "Lincoln Goines",
+        "Robby Ameen"
+      ],
+      "publisher": "Manhattan Music",
+      "year": 1990,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A",
+      "workKey": "funkifying the clave afro cuban grooves for bass and drums",
+      "extractedCharacters": 40317,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-92d5ddbcbf60",
+      "sha256": "92d5ddbcbf6004ea76d06acb8cf5abac6fd500db1ef4f18d26b692f77249de7e",
+      "relativePaths": [
+        "AFRO-CUBAN 🇨🇺/Afro-Cuban Grooves for Bass & Drums — Alternate.pdf"
+      ],
+      "pageCount": 68,
+      "textLayer": "weak-or-scanned",
+      "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+      "authors": [
+        "Lincoln Goines",
+        "Robby Ameen"
+      ],
+      "publisher": "Manhattan Music",
+      "year": 1990,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A",
+      "workKey": "funkifying the clave afro cuban grooves for bass and drums",
+      "extractedCharacters": 57214,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-6e48001c173e",
+      "sha256": "6e48001c173ec7515eefd9a7f04e49f3ea63d2f98a0d7d153d3d1ee4c94be2e1",
+      "relativePaths": [
+        "AFRO-CUBAN 🇨🇺/Afro-Cuban Grooves.pdf",
+        "LATIN - SALSA - CARIBBEAN 🌴/Afro-Cuban Grooves — Guajira - Son Montuno - Guaguancó - Mambo - Salsa.pdf"
+      ],
+      "pageCount": 73,
+      "textLayer": "weak-or-scanned",
+      "title": "Afro-Cuban Grooves — Guajira - Son Montuno - Guaguancó - Mambo - Salsa",
+      "authors": [],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "unidentified",
+      "evidenceGrade": "D",
+      "workKey": "afro cuban grooves guajira son montuno guaguanco mambo salsa",
+      "extractedCharacters": 45952,
+      "assessment": "Not accepted as musicological evidence; retained only for corpus completeness."
+    },
+    {
+      "sourceId": "PDF-73cfc4ffc14c",
+      "sha256": "73cfc4ffc14cf0fcafe1a765984e0a6bc0e09290699e16e7967d711265e482af",
+      "relativePaths": [
+        "AFRO-CUBAN 🇨🇺/Afro-Cuban Rhythms for Drumset — Alternate Edition.pdf"
+      ],
+      "pageCount": 65,
+      "textLayer": "weak-or-scanned",
+      "title": "Afro-Cuban Rhythms for Drumset",
+      "authors": [
+        "Frank Malabe",
+        "Bob Weiner"
+      ],
+      "publisher": "Manhattan Music / Alfred Music",
+      "year": 1990,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A",
+      "workKey": "afro cuban rhythms for drumset",
+      "extractedCharacters": 116331,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-d9d0cc68c73f",
+      "sha256": "d9d0cc68c73fc93d58e71c2581f6bc600f71b26faf97567ac21a9a01447da694",
+      "relativePaths": [
+        "AFRO-CUBAN 🇨🇺/Afro-Cuban Rhythms for Drumset — Frank Malabe & Bob Weiner.pdf",
+        "LATIN - SALSA - CARIBBEAN 🌴/Afro-Cuban Rhythms — Bembé - Cascara - Songo - Mozambique.pdf"
+      ],
+      "pageCount": 64,
+      "textLayer": "weak-or-scanned",
+      "title": "Afro-Cuban Rhythms for Drumset",
+      "authors": [
+        "Frank Malabe",
+        "Bob Weiner"
+      ],
+      "publisher": "Manhattan Music / Alfred Music",
+      "year": 1990,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A",
+      "workKey": "afro cuban rhythms for drumset",
+      "extractedCharacters": 116497,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-13c8925b6731",
+      "sha256": "13c8925b6731475e894e5526ee44a0bd3f3ab1422f59d0285c3b0a340d69b94c",
+      "relativePaths": [
+        "AFRO-CUBAN 🇨🇺/DrumGenius — Afro-Cuban Groove Transcriptions.pdf"
+      ],
+      "pageCount": 20,
+      "textLayer": "present",
+      "title": "DrumGenius Afro-Cuban Groove Transcriptions",
+      "authors": [
+        "Mauro Battisti"
+      ],
+      "publisher": "ProJazzLab",
+      "year": null,
+      "sourceKind": "transcription-companion",
+      "evidenceGrade": "B",
+      "workKey": "drumgenius afro cuban groove transcriptions",
+      "extractedCharacters": 5556,
+      "assessment": "Useful pedagogical corroboration; use with stronger sources for historical or cultural claims."
+    },
+    {
+      "sourceId": "PDF-2fdfcd6bd899",
+      "sha256": "2fdfcd6bd8992b277670b799ee2aa4542dd26905d1b55936e1f2658e0d725aed",
+      "relativePaths": [
+        "AFRO-CUBAN 🇨🇺/Funkifying the Clave — Afro-Cuban Grooves.pdf"
+      ],
+      "pageCount": 62,
+      "textLayer": "weak-or-scanned",
+      "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+      "authors": [
+        "Lincoln Goines",
+        "Robby Ameen"
+      ],
+      "publisher": "Manhattan Music",
+      "year": 1990,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A",
+      "workKey": "funkifying the clave afro cuban grooves for bass and drums",
+      "extractedCharacters": 53021,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-81437d754683",
+      "sha256": "81437d754683c17dc101e1da859d34e36770cfb25596237ac11a4b8b452cacc4",
+      "relativePaths": [
+        "AFRO-CUBAN 🇨🇺/Timba-Go — Afro-Latin Hybrid Drum Grooves.pdf",
+        "LATIN - SALSA - CARIBBEAN 🌴/Timba-Go — Cuban Timba - Rockason - Cuban Hip-Hop.pdf"
+      ],
+      "pageCount": 4,
+      "textLayer": "present",
+      "title": "Timba-Go: Afro-Latin Hybrid Grooves for Drumset",
+      "authors": [
+        "James Dreier"
+      ],
+      "publisher": "Percussive Arts Society article",
+      "year": null,
+      "sourceKind": "professional-article",
+      "evidenceGrade": "A-",
+      "workKey": "timba go afro latin hybrid grooves for drumset",
+      "extractedCharacters": 4955,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-6b862dc919a1",
+      "sha256": "6b862dc919a16e310d3b9c8f696e839bac064604a0143470550f9a61dfca7b04",
+      "relativePaths": [
+        "BLUES - SHUFFLE/Basic Course Drummer Notes — Chicago Blues - Shuffle - Half-Time Shuffle.pdf",
+        "GENERAL - HUGE GROOVE COLLECTIONS/Basic Course Drummer Notes — 96 pages.pdf",
+        "HIP-HOP - MODERN GROOVES/Basic Course Drummer Notes — Hip-Hop - Motown - Disco - Soul.pdf"
+      ],
+      "pageCount": 96,
+      "textLayer": "weak-or-scanned",
+      "title": "Basic Course Drummer Notes",
+      "authors": [],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "unidentified-course-notes",
+      "evidenceGrade": "C",
+      "workKey": "basic course drummer notes",
+      "extractedCharacters": 27664,
+      "assessment": "Contextual lead only; incomplete authorship or publication context limits evidential weight."
+    },
+    {
+      "sourceId": "PDF-915091f5c74d",
+      "sha256": "915091f5c74dc241c406d570562650ecbba302ddb32a975eac133c16b03fb832",
+      "relativePaths": [
+        "BLUES - SHUFFLE/Bass & Drum Grooves — Blues.pdf",
+        "FUNK - SOUL - R&B - LINEAR/Bass & Drum Grooves — Funk - R&B - Disco - Dance.pdf",
+        "GENERAL - HUGE GROOVE COLLECTIONS/Bass & Drum Grooves — Multi-Style.pdf",
+        "REGGAE - SKA - CARIBBEAN 🇯🇲/Bass & Drum Grooves — Reggae.pdf"
+      ],
+      "pageCount": 4,
+      "textLayer": "present",
+      "title": "Bass & Drum Grooves",
+      "authors": [],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "unidentified-excerpt",
+      "evidenceGrade": "C",
+      "workKey": "bass drum grooves",
+      "extractedCharacters": 1858,
+      "assessment": "Contextual lead only; incomplete authorship or publication context limits evidential weight."
+    },
+    {
+      "sourceId": "PDF-3187600027fe",
+      "sha256": "3187600027fe3e853aacafd7634af8ed745b23c1bba149361174a339016d3b69",
+      "relativePaths": [
+        "BLUES - SHUFFLE/Drum Book — Blues - Swamp - New Orleans.pdf",
+        "GENERAL - HUGE GROOVE COLLECTIONS/Drum Book — Multi-Style Groove Collection.pdf",
+        "HIP-HOP - MODERN GROOVES/Drum Book — Hip-Hop Groove Section.pdf",
+        "NEW ORLEANS - SECOND LINE ⚜️/Drum Book — New Orleans - Second Line - Swamp - Funk.pdf",
+        "REGGAE - SKA - CARIBBEAN 🇯🇲/Drum Book — Reggae One Drop - Ska - Calypso - Soca.pdf"
+      ],
+      "pageCount": 30,
+      "textLayer": "weak-or-scanned",
+      "title": "Instant Guide to Drum Grooves",
+      "authors": [
+        "Maria Martinez"
+      ],
+      "publisher": "Hal Leonard",
+      "year": null,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A",
+      "workKey": "instant guide to drum grooves",
+      "extractedCharacters": 40699,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-3d5df133b728",
+      "sha256": "3d5df133b728c7c89042ed8509452da593b6e7a4f868d9a428e6393da2d49213",
+      "relativePaths": [
+        "BRAZIL 🇧🇷/Brazilian Coordination for Drumset — Maria Martinez.pdf"
+      ],
+      "pageCount": 80,
+      "textLayer": "weak-or-scanned",
+      "title": "Brazilian Coordination for Drumset",
+      "authors": [
+        "Maria Martinez"
+      ],
+      "publisher": "Hal Leonard",
+      "year": 1999,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A",
+      "workKey": "brazilian coordination for drumset",
+      "extractedCharacters": 32865,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-5b17d3b0173f",
+      "sha256": "5b17d3b0173f6869e6394ee4ffe66818c7c9c9a77db781ed9c7466a33e483e84",
+      "relativePaths": [
+        "BRAZIL 🇧🇷/Brazilian Drumming Rhythms.pdf"
+      ],
+      "pageCount": 10,
+      "textLayer": "present",
+      "title": "Brazilian Rhythms in the Drums",
+      "authors": [],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "unidentified-excerpt",
+      "evidenceGrade": "C",
+      "workKey": "brazilian rhythms in the drums",
+      "extractedCharacters": 19187,
+      "assessment": "Contextual lead only; incomplete authorship or publication context limits evidential weight."
+    },
+    {
+      "sourceId": "PDF-36bf5e94d8ea",
+      "sha256": "36bf5e94d8ea9d419154bad4266d5ab1178cbb92f02d1389da297bf322499009",
+      "relativePaths": [
+        "BRAZIL 🇧🇷/Brazilian Rhythms for Drumset — Duduka Da Fonseca - Bob Weiner.pdf"
+      ],
+      "pageCount": 6,
+      "textLayer": "present",
+      "title": "Brazilian Rhythms for Drumset",
+      "authors": [
+        "Duduka Da Fonseca",
+        "Bob Weiner"
+      ],
+      "publisher": "Manhattan Music / Alfred Music",
+      "year": 1991,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A",
+      "workKey": "brazilian rhythms for drumset",
+      "extractedCharacters": 2078,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-bb2244d5c087",
+      "sha256": "bb2244d5c08713dcde0bcdc2a487a30fab6434b6f9c02bac18c7afc792d33f5b",
+      "relativePaths": [
+        "BRAZIL 🇧🇷/Brazilian Rhythms for Drumset — Vera Figueiredo - Daniel Oliveira.pdf"
+      ],
+      "pageCount": 11,
+      "textLayer": "weak-or-scanned",
+      "title": "Brazilian Rhythms for Drumset",
+      "authors": [
+        "Vera Figueiredo",
+        "Daniel Oliveira"
+      ],
+      "publisher": "Hudson Music",
+      "year": null,
+      "sourceKind": "professional-method-excerpt",
+      "evidenceGrade": "A-",
+      "workKey": "brazilian rhythms for drumset",
+      "extractedCharacters": 6927,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-f97e3e83bf02",
+      "sha256": "f97e3e83bf0298e9b27f3700e2c8135351c85518309e8982964a23578eaa7849",
+      "relativePaths": [
+        "BRAZIL 🇧🇷/Candomblé Rhythm for Drumset.pdf"
+      ],
+      "pageCount": 115,
+      "textLayer": "present",
+      "title": "A Cannibalist's Manifesto: Candomblé Rhythms for Drum Kit",
+      "authors": [
+        "Peter Alastair McGrath-Kerr"
+      ],
+      "publisher": "University of Melbourne",
+      "year": 2019,
+      "sourceKind": "doctoral-thesis",
+      "evidenceGrade": "A",
+      "workKey": "a cannibalist s manifesto candomble rhythms for drum kit",
+      "extractedCharacters": 173058,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-99f49a7f9a15",
+      "sha256": "99f49a7f9a152d958b8127f645c84d9b292dc0259b2d40930b971a70cf97192e",
+      "relativePaths": [
+        "BRAZIL 🇧🇷/The Brazilian Groove Book — Kiko Freitas.pdf"
+      ],
+      "pageCount": 6,
+      "textLayer": "present",
+      "title": "The Brazilian Groove Book",
+      "authors": [
+        "Kiko Freitas"
+      ],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "professional-method-excerpt",
+      "evidenceGrade": "A-",
+      "workKey": "the brazilian groove book",
+      "extractedCharacters": 12097,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-f40b6fc1f4f1",
+      "sha256": "f40b6fc1f4f1a702c96b2001fa6d84927c5a9385435f1e81bf8e280c83706576",
+      "relativePaths": [
+        "DANTE AGOSTINI/Dante Agostini - Solfège Rhythmique Cahier No 1.pdf"
+      ],
+      "pageCount": 68,
+      "textLayer": "weak-or-scanned",
+      "title": "Solfège Rythmique, Cahier No. 1",
+      "authors": [
+        "Dante Agostini"
+      ],
+      "publisher": "École Dante Agostini",
+      "year": null,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A",
+      "workKey": "solfege rythmique cahier no 1",
+      "extractedCharacters": 16787,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-30b03bbca266",
+      "sha256": "30b03bbca26687eda4cd2c2eefcdca3ebd66568f41ea5e198061db587f8925e3",
+      "relativePaths": [
+        "DANTE AGOSTINI/Methode de Batterie Dante Agostini Vol. 1-2.pdf"
+      ],
+      "pageCount": 116,
+      "textLayer": "weak-or-scanned",
+      "title": "Méthode de Batterie, Volumes I–II",
+      "authors": [
+        "Dante Agostini"
+      ],
+      "publisher": "École Dante Agostini",
+      "year": null,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A",
+      "workKey": "methode de batterie volumes i ii",
+      "extractedCharacters": 46136,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-7064fe3e54b3",
+      "sha256": "7064fe3e54b373cb3cb3670765ea89961abd044f225a9187d679087f5e2e7cf6",
+      "relativePaths": [
+        "DANTE AGOSTINI/Methode de Batterie Dante Agostini Vol. 2.pdf"
+      ],
+      "pageCount": 110,
+      "textLayer": "weak-or-scanned",
+      "title": "Méthode de Batterie, Volume II",
+      "authors": [
+        "Dante Agostini"
+      ],
+      "publisher": "École Dante Agostini",
+      "year": null,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A",
+      "workKey": "methode de batterie volume ii",
+      "extractedCharacters": 26407,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-2792e4f7409a",
+      "sha256": "2792e4f7409a37fbe87e997d29059e4fe21704727dc22d88e87187bf72f69dd9",
+      "relativePaths": [
+        "DANTE AGOSTINI/Méthode de Batterie - Vol.2.pdf"
+      ],
+      "pageCount": 110,
+      "textLayer": "weak-or-scanned",
+      "title": "Méthode de Batterie, Volume II",
+      "authors": [
+        "Dante Agostini"
+      ],
+      "publisher": "École Dante Agostini",
+      "year": null,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A",
+      "workKey": "methode de batterie volume ii",
+      "extractedCharacters": 18361,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-474a33d9bfb9",
+      "sha256": "474a33d9bfb9fb5e9e934841e07846e12a56b30cec3e5d83616810afe9e8ae28",
+      "relativePaths": [
+        "DANTE AGOSTINI/Préparation aux Déchiffrages - Vol.1{.pdf"
+      ],
+      "pageCount": 50,
+      "textLayer": "weak-or-scanned",
+      "title": "Preparation for Sight-Reading, Volume I",
+      "authors": [
+        "Dante Agostini"
+      ],
+      "publisher": "École Dante Agostini",
+      "year": null,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A",
+      "workKey": "preparation for sight reading volume i",
+      "extractedCharacters": 16113,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-8f225657efb9",
+      "sha256": "8f225657efb91b9de012cff478e440ceefcdf5d0545cf19b677079f089b33bc5",
+      "relativePaths": [
+        "DANTE AGOSTINI/Préparation aux Déchiffrages - Vol.2.pdf"
+      ],
+      "pageCount": 17,
+      "textLayer": "weak-or-scanned",
+      "title": "Préparation aux Déchiffrages - Vol.2",
+      "authors": [],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "unidentified",
+      "evidenceGrade": "D",
+      "workKey": "preparation aux dechiffrages vol 2",
+      "extractedCharacters": 12464,
+      "assessment": "Not accepted as musicological evidence; retained only for corpus completeness."
+    },
+    {
+      "sourceId": "PDF-fbbdc4070c40",
+      "sha256": "fbbdc4070c40c641da0a236cb2cf506f0181299391d70ca31421d1fa416aca30",
+      "relativePaths": [
+        "DANTE AGOSTINI/Préparation aux Déchiffrages - Vol.3.pdf"
+      ],
+      "pageCount": 41,
+      "textLayer": "weak-or-scanned",
+      "title": "Préparation aux Déchiffrages - Vol.3",
+      "authors": [],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "unidentified",
+      "evidenceGrade": "D",
+      "workKey": "preparation aux dechiffrages vol 3",
+      "extractedCharacters": 7748,
+      "assessment": "Not accepted as musicological evidence; retained only for corpus completeness."
+    },
+    {
+      "sourceId": "PDF-a6fb626f326f",
+      "sha256": "a6fb626f326f798d724bb44e0296abc3f3052b9671a86d160f4cd97ae3f3cf9b",
+      "relativePaths": [
+        "DANTE AGOSTINI/dante agostini 2.pdf"
+      ],
+      "pageCount": 110,
+      "textLayer": "weak-or-scanned",
+      "title": "Méthode de Batterie, Volume II",
+      "authors": [
+        "Dante Agostini"
+      ],
+      "publisher": "École Dante Agostini",
+      "year": null,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A",
+      "workKey": "methode de batterie volume ii",
+      "extractedCharacters": 18349,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-e3da748daa43",
+      "sha256": "e3da748daa43f2bab4c1cfb8f21f1bdafff9a3062a606fc171315899a260e52c",
+      "relativePaths": [
+        "FUNK - SOUL - R&B - LINEAR/Funk Drumming 101 — 2-Bar Grooves.pdf"
+      ],
+      "pageCount": 1,
+      "textLayer": "weak-or-scanned",
+      "title": "Funk Drumming 101",
+      "authors": [
+        "Simone Pannozzo"
+      ],
+      "publisher": "Self-published educational excerpt",
+      "year": null,
+      "sourceKind": "promotional-excerpt",
+      "evidenceGrade": "B-",
+      "workKey": "funk drumming 101",
+      "extractedCharacters": 341,
+      "assessment": "Useful pedagogical corroboration; use with stronger sources for historical or cultural claims."
+    },
+    {
+      "sourceId": "PDF-68a92eedb76b",
+      "sha256": "68a92eedb76b7655ebf6b97233ce2a01640395b243b53fad35ce832d4ea70913",
+      "relativePaths": [
+        "FUNK - SOUL - R&B - LINEAR/Linear Patterns Made Easy.pdf"
+      ],
+      "pageCount": 2,
+      "textLayer": "present",
+      "title": "Linear Patterns Made Easy",
+      "authors": [],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "magazine-excerpt",
+      "evidenceGrade": "C",
+      "workKey": "linear patterns made easy",
+      "extractedCharacters": 2341,
+      "assessment": "Contextual lead only; incomplete authorship or publication context limits evidential weight."
+    },
+    {
+      "sourceId": "PDF-200e835c284b",
+      "sha256": "200e835c284bf6cdf19e1489bae5c5fb1ab3fb6bc9ca109f57b85dfb810bfe95",
+      "relativePaths": [
+        "FUNK - SOUL - R&B - LINEAR/Method for Developing Musical Linear Drum Fills.pdf"
+      ],
+      "pageCount": 6,
+      "textLayer": "present",
+      "title": "Linear Drum Fills",
+      "authors": [
+        "Blake Paulson"
+      ],
+      "publisher": "Alfred Music",
+      "year": 2014,
+      "sourceKind": "professional-method-excerpt",
+      "evidenceGrade": "A-",
+      "workKey": "linear drum fills",
+      "extractedCharacters": 15800,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-4e08590ad53a",
+      "sha256": "4e08590ad53aca2dc0462a3f67c42643e88da3705c530b9927d50757a5cb5baf",
+      "relativePaths": [
+        "FUNK - SOUL - R&B - LINEAR/Mike Clark — Funk Drumming.pdf"
+      ],
+      "pageCount": 51,
+      "textLayer": "weak-or-scanned",
+      "title": "Funk Drumming: Innovative Grooves & Advanced Concepts",
+      "authors": [
+        "Mike Clark"
+      ],
+      "publisher": "Hal Leonard",
+      "year": null,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A",
+      "workKey": "funk drumming innovative grooves advanced concepts",
+      "extractedCharacters": 63257,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-585c2cd39514",
+      "sha256": "585c2cd39514e14a90d8267c722595a3ff540134d7920d06ceb951c61b0a5850",
+      "relativePaths": [
+        "FUNK - SOUL - R&B - LINEAR/Mike Johnston — Linear Drumming (alternate).pdf"
+      ],
+      "pageCount": 84,
+      "textLayer": "weak-or-scanned",
+      "title": "Linear Drumming",
+      "authors": [
+        "Mike Johnston"
+      ],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A-",
+      "workKey": "linear drumming",
+      "extractedCharacters": 31696,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-6b84daa9ee9c",
+      "sha256": "6b84daa9ee9c68623c6e353e5cc33ff79c19673329412ded748ca85bf02f614d",
+      "relativePaths": [
+        "FUNK - SOUL - R&B - LINEAR/Mike Johnston — Linear Drumming.pdf"
+      ],
+      "pageCount": 83,
+      "textLayer": "weak-or-scanned",
+      "title": "Linear Drumming",
+      "authors": [
+        "Mike Johnston"
+      ],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A-",
+      "workKey": "linear drumming",
+      "extractedCharacters": 30465,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-46c92cd8a043",
+      "sha256": "46c92cd8a043885caf59b098297edfe0fd241fd9e125fe6127ba3ea84fa3825b",
+      "relativePaths": [
+        "GENERAL - HUGE GROOVE COLLECTIONS/100 Grooves Every Drummer Needs to Know.pdf"
+      ],
+      "pageCount": 112,
+      "textLayer": "present",
+      "title": "100 Grooves Every Drummer Needs to Know",
+      "authors": [],
+      "publisher": "Musora / Drumeo",
+      "year": null,
+      "sourceKind": "published-method",
+      "evidenceGrade": "B+",
+      "workKey": "100 grooves every drummer needs to know",
+      "extractedCharacters": 185503,
+      "assessment": "Useful pedagogical corroboration; use with stronger sources for historical or cultural claims."
+    },
+    {
+      "sourceId": "PDF-09d278110e3e",
+      "sha256": "09d278110e3e75866c57f8187ae59d2419355eb67a77a7c1df5258d024301838",
+      "relativePaths": [
+        "GENERAL - HUGE GROOVE COLLECTIONS/1000 Drum Grooves — Steve Mansfield.pdf"
+      ],
+      "pageCount": 99,
+      "textLayer": "present",
+      "title": "1000 Drum Grooves",
+      "authors": [
+        "Steve Mansfield"
+      ],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "published-method",
+      "evidenceGrade": "B+",
+      "workKey": "1000 drum grooves",
+      "extractedCharacters": 31106,
+      "assessment": "Useful pedagogical corroboration; use with stronger sources for historical or cultural claims."
+    },
+    {
+      "sourceId": "PDF-98aaa0b03129",
+      "sha256": "98aaa0b031292effd3296e24c648eeff4513fec6d6a4a0f9574fe831552bd0c9",
+      "relativePaths": [
+        "GENERAL - HUGE GROOVE COLLECTIONS/1001 Drum Grooves — Steve Mansfield.pdf"
+      ],
+      "pageCount": 106,
+      "textLayer": "present",
+      "title": "1001 Drum Grooves",
+      "authors": [
+        "Steve Mansfield"
+      ],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "web-reproduced-method",
+      "evidenceGrade": "B-",
+      "workKey": "1001 drum grooves",
+      "extractedCharacters": 20350,
+      "assessment": "Useful pedagogical corroboration; use with stronger sources for historical or cultural claims."
+    },
+    {
+      "sourceId": "PDF-3ecc64b85be9",
+      "sha256": "3ecc64b85be96eba4a53233a4b12738e3ed214461a348c4df85e2ce3796c9247",
+      "relativePaths": [
+        "GENERAL - HUGE GROOVE COLLECTIONS/20 Essential Drum Grooves.pdf"
+      ],
+      "pageCount": 5,
+      "textLayer": "present",
+      "title": "20 Essential Grooves",
+      "authors": [
+        "Jesvin Mathew"
+      ],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "educational-handout",
+      "evidenceGrade": "B-",
+      "workKey": "20 essential grooves",
+      "extractedCharacters": 10038,
+      "assessment": "Useful pedagogical corroboration; use with stronger sources for historical or cultural claims."
+    },
+    {
+      "sourceId": "PDF-d5326b0e4a42",
+      "sha256": "d5326b0e4a4243a290737969dbc6336d6957298484305adaa2fc5129d7bd46aa",
+      "relativePaths": [
+        "GENERAL - HUGE GROOVE COLLECTIONS/Advanced Drum Grooves.pdf"
+      ],
+      "pageCount": 1,
+      "textLayer": "present",
+      "title": "Advanced Drum Grooves",
+      "authors": [],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "anonymous-worksheet",
+      "evidenceGrade": "D",
+      "workKey": "advanced drum grooves",
+      "extractedCharacters": 4949,
+      "assessment": "Not accepted as musicological evidence; retained only for corpus completeness."
+    },
+    {
+      "sourceId": "PDF-a5bdd4a6ddc2",
+      "sha256": "a5bdd4a6ddc2e3d26653db4afcc0d7847f903281662b58a3c76c8712857a0765",
+      "relativePaths": [
+        "GENERAL - HUGE GROOVE COLLECTIONS/Drum Patterns for Musicians.pdf"
+      ],
+      "pageCount": 2,
+      "textLayer": "present",
+      "title": "Drum Patterns for Musicians",
+      "authors": [],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "educational-handout",
+      "evidenceGrade": "C",
+      "workKey": "drum patterns for musicians",
+      "extractedCharacters": 2526,
+      "assessment": "Contextual lead only; incomplete authorship or publication context limits evidential weight."
+    },
+    {
+      "sourceId": "PDF-39ddc4b77dca",
+      "sha256": "39ddc4b77dcaeb4025853d52c635a0a1205d5eca191c9868fc9e011af59267cf",
+      "relativePaths": [
+        "GENERAL - HUGE GROOVE COLLECTIONS/Drumset FUNdamentals.pdf",
+        "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drumset FUNdamentals — Large Recommended Book List.pdf"
+      ],
+      "pageCount": 12,
+      "textLayer": "present",
+      "title": "Drumset FUNdamentals",
+      "authors": [
+        "Dave Black",
+        "Mark Dorr"
+      ],
+      "publisher": "Percussive Arts Society handout",
+      "year": 2001,
+      "sourceKind": "professional-clinic-handout",
+      "evidenceGrade": "A-",
+      "workKey": "drumset fundamentals",
+      "extractedCharacters": 43044,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-2bb56376b3d0",
+      "sha256": "2bb56376b3d0a8730acb6d0c649190e7ba3e3c1baf5ca9d69b207444ab63530c",
+      "relativePaths": [
+        "GENERAL - HUGE GROOVE COLLECTIONS/Essential Drum Grooves — 16 Rhythms.pdf"
+      ],
+      "pageCount": 1,
+      "textLayer": "present",
+      "title": "Essential Drum Grooves: 16 Rhythms",
+      "authors": [],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "educational-handout",
+      "evidenceGrade": "C",
+      "workKey": "essential drum grooves 16 rhythms",
+      "extractedCharacters": 952,
+      "assessment": "Contextual lead only; incomplete authorship or publication context limits evidential weight."
+    },
+    {
+      "sourceId": "PDF-e9fb2404ba25",
+      "sha256": "e9fb2404ba2532d0fef20dbfe9d4d99f4c7a2b386d936789c6609ca998e0c35f",
+      "relativePaths": [
+        "GENERAL - HUGE GROOVE COLLECTIONS/Franck Agulhon — Drumbook.pdf",
+        "WEST AFRICAN - AFRICAN 🌍/Franck Agulhon Drumbook — Afro - Gnawa - Mangambeu - Bembé.pdf"
+      ],
+      "pageCount": 245,
+      "textLayer": "weak-or-scanned",
+      "title": "Drum Book",
+      "authors": [
+        "Franck Agulhon"
+      ],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A",
+      "workKey": "drum book",
+      "extractedCharacters": 166332,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-49294994b537",
+      "sha256": "49294994b537e9e4ed36dbfd9c87e5d15f6bff21cbaf9039e10551bbdd11550c",
+      "relativePaths": [
+        "GENERAL - HUGE GROOVE COLLECTIONS/Free Drum Book — Richard Hemmings.pdf"
+      ],
+      "pageCount": 35,
+      "textLayer": "present",
+      "title": "Free Drum Book",
+      "authors": [
+        "Richard Hemmings"
+      ],
+      "publisher": "Leicester Drum School",
+      "year": 2024,
+      "sourceKind": "teacher-method",
+      "evidenceGrade": "B+",
+      "workKey": "free drum book",
+      "extractedCharacters": 71015,
+      "assessment": "Useful pedagogical corroboration; use with stronger sources for historical or cultural claims."
+    },
+    {
+      "sourceId": "PDF-642c8a4158d5",
+      "sha256": "642c8a4158d567e33677cfbeeadc946aa436f8f3bca2afec42a103916f1eef46",
+      "relativePaths": [
+        "GENERAL - HUGE GROOVE COLLECTIONS/Grooves List.pdf"
+      ],
+      "pageCount": 5,
+      "textLayer": "present",
+      "title": "Grooves List (Bass Drum Focus)",
+      "authors": [],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "anonymous-worksheet",
+      "evidenceGrade": "D",
+      "workKey": "grooves list bass drum focus",
+      "extractedCharacters": 12960,
+      "assessment": "Not accepted as musicological evidence; retained only for corpus completeness."
+    },
+    {
+      "sourceId": "PDF-4f2f3846064c",
+      "sha256": "4f2f3846064c45c20193463d12fe1587a3602a66f7567d431205a39add9945b4",
+      "relativePaths": [
+        "GENERAL - HUGE GROOVE COLLECTIONS/Progressive 1,000,000 Drum Grooves — Craig Lauritsen.pdf",
+        "HIP-HOP - MODERN GROOVES/Progressive Drum Grooves — Rap - Funk.pdf",
+        "REGGAE - SKA - CARIBBEAN 🇯🇲/Progressive Drum Grooves — Rock - Funk - Rap - Reggae.pdf"
+      ],
+      "pageCount": 64,
+      "textLayer": "weak-or-scanned",
+      "title": "Progressive 1,000,000 Drum Grooves in 4/4 Time",
+      "authors": [
+        "Craig Lauritsen"
+      ],
+      "publisher": "Progressive Publishing",
+      "year": null,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "B+",
+      "workKey": "progressive 1 000 000 drum grooves in 4 4 time",
+      "extractedCharacters": 27579,
+      "assessment": "Useful pedagogical corroboration; use with stronger sources for historical or cultural claims."
+    },
+    {
+      "sourceId": "PDF-343bd7b5fc90",
+      "sha256": "343bd7b5fc908f6ec074ea2536efafef2bf15ba3626de54c7ba58c700d39a278",
+      "relativePaths": [
+        "JAZZ - SWING/Billy Hart — Jazz Drumming.pdf"
+      ],
+      "pageCount": 25,
+      "textLayer": "weak-or-scanned",
+      "title": "Jazz Drumming",
+      "authors": [
+        "Billy Hart"
+      ],
+      "publisher": "Advance Music",
+      "year": null,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A",
+      "workKey": "jazz drumming",
+      "extractedCharacters": 37759,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-0fb73c919618",
+      "sha256": "0fb73c9196189b7855f3326f02c14e8f9cd0db9fe72fbc6c0b401ed9bbf6385f",
+      "relativePaths": [
+        "JAZZ - SWING/Drummer Essentials — Jazz Drumming.pdf"
+      ],
+      "pageCount": 49,
+      "textLayer": "present",
+      "title": "Drummer Essentials: Jazz Drumming",
+      "authors": [],
+      "publisher": "DrummerLessons.com",
+      "year": null,
+      "sourceKind": "web-course",
+      "evidenceGrade": "B-",
+      "workKey": "drummer essentials jazz drumming",
+      "extractedCharacters": 60177,
+      "assessment": "Useful pedagogical corroboration; use with stronger sources for historical or cultural claims."
+    },
+    {
+      "sourceId": "PDF-b03d0e54a31f",
+      "sha256": "b03d0e54a31f4afc05435633a87a49b38065ba29c0e12b4153b670f3a9ff393c",
+      "relativePaths": [
+        "JAZZ - SWING/Jazz Comping in 3 - 4.pdf"
+      ],
+      "pageCount": 1,
+      "textLayer": "present",
+      "title": "3/4 Comping: The Basics of Jazz Drumming in 3/4",
+      "authors": [],
+      "publisher": "On Jazz Drumming",
+      "year": null,
+      "sourceKind": "educational-handout",
+      "evidenceGrade": "B-",
+      "workKey": "3 4 comping the basics of jazz drumming in 3 4",
+      "extractedCharacters": 1979,
+      "assessment": "Useful pedagogical corroboration; use with stronger sources for historical or cultural claims."
+    },
+    {
+      "sourceId": "PDF-a68afaab43cc",
+      "sha256": "a68afaab43cc9f136ead1bff38d7f0526da8a4445e3e2df93e79ca145bde52a7",
+      "relativePaths": [
+        "JAZZ - SWING/Jazz Drum Patterns — 32 Patterns.pdf"
+      ],
+      "pageCount": 3,
+      "textLayer": "present",
+      "title": "Jazz Drum Patterns: 32 Patterns",
+      "authors": [],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "unidentified-handout",
+      "evidenceGrade": "C",
+      "workKey": "jazz drum patterns 32 patterns",
+      "extractedCharacters": 2153,
+      "assessment": "Contextual lead only; incomplete authorship or publication context limits evidential weight."
+    },
+    {
+      "sourceId": "PDF-6ce98a5f5591",
+      "sha256": "6ce98a5f5591f975b10d33a87fb64915cca3bff2500e8b417b1caa327c8c013f",
+      "relativePaths": [
+        "JAZZ - SWING/Jazz Drumming Phrases 1–30.pdf"
+      ],
+      "pageCount": 3,
+      "textLayer": "present",
+      "title": "Jazz Drumming Phrases 1–30",
+      "authors": [
+        "Gabor Turi"
+      ],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "educational-handout",
+      "evidenceGrade": "B-",
+      "workKey": "jazz drumming phrases 1 30",
+      "extractedCharacters": 14665,
+      "assessment": "Useful pedagogical corroboration; use with stronger sources for historical or cultural claims."
+    },
+    {
+      "sourceId": "PDF-9e761b1fd58e",
+      "sha256": "9e761b1fd58e72b2d2d1ff56e99464ff577864822efdbb1070ea9dd5cda7fc89",
+      "relativePaths": [
+        "JAZZ - SWING/John Riley — Jazz Drummer's Workshop.pdf",
+        "NEW ORLEANS - SECOND LINE ⚜️/John Riley — The Jazz Drummer's Workshop.pdf"
+      ],
+      "pageCount": 66,
+      "textLayer": "weak-or-scanned",
+      "title": "The Jazz Drummer's Workshop",
+      "authors": [
+        "John Riley"
+      ],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "professional-method",
+      "evidenceGrade": "A",
+      "workKey": "the jazz drummer s workshop",
+      "extractedCharacters": 126321,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-430d67e308d3",
+      "sha256": "430d67e308d3ef28448b3fcbddba8c9a8bb5bb5737f938719052124a1438efd9",
+      "relativePaths": [
+        "LATIN - SALSA - CARIBBEAN 🌴/Afro-Cuban Songs & Rhythms Guide.pdf"
+      ],
+      "pageCount": 3,
+      "textLayer": "present",
+      "title": "Afro-Cuban Songs and Rhythms Guide",
+      "authors": [],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "listening-guide",
+      "evidenceGrade": "C",
+      "workKey": "afro cuban songs and rhythms guide",
+      "extractedCharacters": 2790,
+      "assessment": "Contextual lead only; incomplete authorship or publication context limits evidential weight."
+    },
+    {
+      "sourceId": "PDF-4ef0272514a0",
+      "sha256": "4ef0272514a02e9a9bbe69465fcb35fb9dafa5e4ee087e9c096343f7f1719bbd",
+      "relativePaths": [
+        "NEW ORLEANS - SECOND LINE ⚜️/100 Years of New Orleans Drumming.pdf"
+      ],
+      "pageCount": 16,
+      "textLayer": "weak-or-scanned",
+      "title": "100 Years of New Orleans Drumming",
+      "authors": [
+        "Dan Thress",
+        "Antoon Aukes"
+      ],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "professional-method-excerpt",
+      "evidenceGrade": "A-",
+      "workKey": "100 years of new orleans drumming",
+      "extractedCharacters": 28546,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-5d8d9032aea1",
+      "sha256": "5d8d9032aea1d5b338a992a1336c1857a220474f5a747c163d459b7a50d55946",
+      "relativePaths": [
+        "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Afro-Cuban Drumming Resources — 17 Book Bibliography.pdf"
+      ],
+      "pageCount": 2,
+      "textLayer": "present",
+      "title": "Afro-Cuban Drumming Resources: 17-Book Bibliography",
+      "authors": [],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "bibliography",
+      "evidenceGrade": "C",
+      "workKey": "afro cuban drumming resources 17 book bibliography",
+      "extractedCharacters": 2135,
+      "assessment": "Contextual lead only; incomplete authorship or publication context limits evidential weight."
+    },
+    {
+      "sourceId": "PDF-595703bb31c1",
+      "sha256": "595703bb31c19039683b634ee32e9147f2b05c10f62ad657286ccef4e35b5460",
+      "relativePaths": [
+        "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drums & Percussion — Large Method Catalogue.pdf"
+      ],
+      "pageCount": 48,
+      "textLayer": "present",
+      "title": "Drums & Percussion Method Catalogue",
+      "authors": [],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "publisher-catalog",
+      "evidenceGrade": "B",
+      "workKey": "drums percussion method catalogue",
+      "extractedCharacters": 375628,
+      "assessment": "Useful pedagogical corroboration; use with stronger sources for historical or cultural claims."
+    },
+    {
+      "sourceId": "PDF-9f544947c841",
+      "sha256": "9f544947c841f00f8e5a361c1c3165dca11d515229436e0c3cd70a2a94ccfe90",
+      "relativePaths": [
+        "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drumset Student Book List — Jazz - Funk - Soul - Latin - African.pdf"
+      ],
+      "pageCount": 32,
+      "textLayer": "present",
+      "title": "Drumset Student Book List",
+      "authors": [],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "teacher-reading-list",
+      "evidenceGrade": "B",
+      "workKey": "drumset student book list",
+      "extractedCharacters": 44754,
+      "assessment": "Useful pedagogical corroboration; use with stronger sources for historical or cultural claims."
+    },
+    {
+      "sourceId": "PDF-e584c291e034",
+      "sha256": "e584c291e03427f9b19363222c40d394afb7933250f923b6bf3f0f236806aa6c",
+      "relativePaths": [
+        "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Percussion Repertoire Guide — Drumset - World Percussion.pdf"
+      ],
+      "pageCount": 13,
+      "textLayer": "present",
+      "title": "Percussion Repertoire Guide",
+      "authors": [
+        "James Campbell",
+        "Brad Meyer"
+      ],
+      "publisher": null,
+      "year": null,
+      "sourceKind": "academic-repertoire-guide",
+      "evidenceGrade": "A-",
+      "workKey": "percussion repertoire guide",
+      "extractedCharacters": 17654,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-3eb3fd314955",
+      "sha256": "3eb3fd3149551647c577957bd0382fdb3ba8e522f582726ba567c5f607c83a08",
+      "relativePaths": [
+        "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/UNT Jazz Drumset Curriculum — Brazilian - Jazz - Latin Sources.pdf"
+      ],
+      "pageCount": 9,
+      "textLayer": "present",
+      "title": "UNT Percussion Applied Lesson Syllabus: Drum Set — Jazz",
+      "authors": [],
+      "publisher": "University of North Texas",
+      "year": 2019,
+      "sourceKind": "university-curriculum",
+      "evidenceGrade": "A",
+      "workKey": "unt percussion applied lesson syllabus drum set jazz",
+      "extractedCharacters": 44541,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    },
+    {
+      "sourceId": "PDF-b1eff7499593",
+      "sha256": "b1eff749959303d1c3b44ced4f88c5b6ed26b4b6b849c65f0b0b79a7b3d9921c",
+      "relativePaths": [
+        "WEST AFRICAN - AFRICAN 🌍/West African Rhythms — Hartigan.pdf"
+      ],
+      "pageCount": 7,
+      "textLayer": "present",
+      "title": "West African Rhythms for Drumset",
+      "authors": [
+        "Royal Hartigan",
+        "Abraham Adzenyah",
+        "Freeman Donkor"
+      ],
+      "publisher": "Manhattan Music / Alfred Music",
+      "year": 1995,
+      "sourceKind": "professional-method-excerpt",
+      "evidenceGrade": "A",
+      "workKey": "west african rhythms for drumset",
+      "extractedCharacters": 875,
+      "assessment": "Strong published or academic evidence; suitable for taxonomy and drum-set orchestration corroboration."
+    }
+  ],
+  "works": [
+    {
+      "workKey": "funkifying the clave afro cuban grooves for bass and drums",
+      "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+      "sourceIds": [
+        "PDF-5d0aaaee12c0",
+        "PDF-92d5ddbcbf60",
+        "PDF-2fdfcd6bd899"
+      ],
+      "copies": 3
+    },
+    {
+      "workKey": "afro cuban grooves guajira son montuno guaguanco mambo salsa",
+      "title": "Afro-Cuban Grooves — Guajira - Son Montuno - Guaguancó - Mambo - Salsa",
+      "sourceIds": [
+        "PDF-6e48001c173e"
+      ],
+      "copies": 2
+    },
+    {
+      "workKey": "afro cuban rhythms for drumset",
+      "title": "Afro-Cuban Rhythms for Drumset",
+      "sourceIds": [
+        "PDF-73cfc4ffc14c",
+        "PDF-d9d0cc68c73f"
+      ],
+      "copies": 3
+    },
+    {
+      "workKey": "drumgenius afro cuban groove transcriptions",
+      "title": "DrumGenius Afro-Cuban Groove Transcriptions",
+      "sourceIds": [
+        "PDF-13c8925b6731"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "timba go afro latin hybrid grooves for drumset",
+      "title": "Timba-Go: Afro-Latin Hybrid Grooves for Drumset",
+      "sourceIds": [
+        "PDF-81437d754683"
+      ],
+      "copies": 2
+    },
+    {
+      "workKey": "basic course drummer notes",
+      "title": "Basic Course Drummer Notes",
+      "sourceIds": [
+        "PDF-6b862dc919a1"
+      ],
+      "copies": 3
+    },
+    {
+      "workKey": "bass drum grooves",
+      "title": "Bass & Drum Grooves",
+      "sourceIds": [
+        "PDF-915091f5c74d"
+      ],
+      "copies": 4
+    },
+    {
+      "workKey": "instant guide to drum grooves",
+      "title": "Instant Guide to Drum Grooves",
+      "sourceIds": [
+        "PDF-3187600027fe"
+      ],
+      "copies": 5
+    },
+    {
+      "workKey": "brazilian coordination for drumset",
+      "title": "Brazilian Coordination for Drumset",
+      "sourceIds": [
+        "PDF-3d5df133b728"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "brazilian rhythms in the drums",
+      "title": "Brazilian Rhythms in the Drums",
+      "sourceIds": [
+        "PDF-5b17d3b0173f"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "brazilian rhythms for drumset",
+      "title": "Brazilian Rhythms for Drumset",
+      "sourceIds": [
+        "PDF-36bf5e94d8ea",
+        "PDF-bb2244d5c087"
+      ],
+      "copies": 2
+    },
+    {
+      "workKey": "a cannibalist s manifesto candomble rhythms for drum kit",
+      "title": "A Cannibalist's Manifesto: Candomblé Rhythms for Drum Kit",
+      "sourceIds": [
+        "PDF-f97e3e83bf02"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "the brazilian groove book",
+      "title": "The Brazilian Groove Book",
+      "sourceIds": [
+        "PDF-99f49a7f9a15"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "solfege rythmique cahier no 1",
+      "title": "Solfège Rythmique, Cahier No. 1",
+      "sourceIds": [
+        "PDF-f40b6fc1f4f1"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "methode de batterie volumes i ii",
+      "title": "Méthode de Batterie, Volumes I–II",
+      "sourceIds": [
+        "PDF-30b03bbca266"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "methode de batterie volume ii",
+      "title": "Méthode de Batterie, Volume II",
+      "sourceIds": [
+        "PDF-7064fe3e54b3",
+        "PDF-2792e4f7409a",
+        "PDF-a6fb626f326f"
+      ],
+      "copies": 3
+    },
+    {
+      "workKey": "preparation for sight reading volume i",
+      "title": "Preparation for Sight-Reading, Volume I",
+      "sourceIds": [
+        "PDF-474a33d9bfb9"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "preparation aux dechiffrages vol 2",
+      "title": "Préparation aux Déchiffrages - Vol.2",
+      "sourceIds": [
+        "PDF-8f225657efb9"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "preparation aux dechiffrages vol 3",
+      "title": "Préparation aux Déchiffrages - Vol.3",
+      "sourceIds": [
+        "PDF-fbbdc4070c40"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "funk drumming 101",
+      "title": "Funk Drumming 101",
+      "sourceIds": [
+        "PDF-e3da748daa43"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "linear patterns made easy",
+      "title": "Linear Patterns Made Easy",
+      "sourceIds": [
+        "PDF-68a92eedb76b"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "linear drum fills",
+      "title": "Linear Drum Fills",
+      "sourceIds": [
+        "PDF-200e835c284b"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "funk drumming innovative grooves advanced concepts",
+      "title": "Funk Drumming: Innovative Grooves & Advanced Concepts",
+      "sourceIds": [
+        "PDF-4e08590ad53a"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "linear drumming",
+      "title": "Linear Drumming",
+      "sourceIds": [
+        "PDF-585c2cd39514",
+        "PDF-6b84daa9ee9c"
+      ],
+      "copies": 2
+    },
+    {
+      "workKey": "100 grooves every drummer needs to know",
+      "title": "100 Grooves Every Drummer Needs to Know",
+      "sourceIds": [
+        "PDF-46c92cd8a043"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "1000 drum grooves",
+      "title": "1000 Drum Grooves",
+      "sourceIds": [
+        "PDF-09d278110e3e"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "1001 drum grooves",
+      "title": "1001 Drum Grooves",
+      "sourceIds": [
+        "PDF-98aaa0b03129"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "20 essential grooves",
+      "title": "20 Essential Grooves",
+      "sourceIds": [
+        "PDF-3ecc64b85be9"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "advanced drum grooves",
+      "title": "Advanced Drum Grooves",
+      "sourceIds": [
+        "PDF-d5326b0e4a42"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "drum patterns for musicians",
+      "title": "Drum Patterns for Musicians",
+      "sourceIds": [
+        "PDF-a5bdd4a6ddc2"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "drumset fundamentals",
+      "title": "Drumset FUNdamentals",
+      "sourceIds": [
+        "PDF-39ddc4b77dca"
+      ],
+      "copies": 2
+    },
+    {
+      "workKey": "essential drum grooves 16 rhythms",
+      "title": "Essential Drum Grooves: 16 Rhythms",
+      "sourceIds": [
+        "PDF-2bb56376b3d0"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "drum book",
+      "title": "Drum Book",
+      "sourceIds": [
+        "PDF-e9fb2404ba25"
+      ],
+      "copies": 2
+    },
+    {
+      "workKey": "free drum book",
+      "title": "Free Drum Book",
+      "sourceIds": [
+        "PDF-49294994b537"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "grooves list bass drum focus",
+      "title": "Grooves List (Bass Drum Focus)",
+      "sourceIds": [
+        "PDF-642c8a4158d5"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "progressive 1 000 000 drum grooves in 4 4 time",
+      "title": "Progressive 1,000,000 Drum Grooves in 4/4 Time",
+      "sourceIds": [
+        "PDF-4f2f3846064c"
+      ],
+      "copies": 3
+    },
+    {
+      "workKey": "jazz drumming",
+      "title": "Jazz Drumming",
+      "sourceIds": [
+        "PDF-343bd7b5fc90"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "drummer essentials jazz drumming",
+      "title": "Drummer Essentials: Jazz Drumming",
+      "sourceIds": [
+        "PDF-0fb73c919618"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "3 4 comping the basics of jazz drumming in 3 4",
+      "title": "3/4 Comping: The Basics of Jazz Drumming in 3/4",
+      "sourceIds": [
+        "PDF-b03d0e54a31f"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "jazz drum patterns 32 patterns",
+      "title": "Jazz Drum Patterns: 32 Patterns",
+      "sourceIds": [
+        "PDF-a68afaab43cc"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "jazz drumming phrases 1 30",
+      "title": "Jazz Drumming Phrases 1–30",
+      "sourceIds": [
+        "PDF-6ce98a5f5591"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "the jazz drummer s workshop",
+      "title": "The Jazz Drummer's Workshop",
+      "sourceIds": [
+        "PDF-9e761b1fd58e"
+      ],
+      "copies": 2
+    },
+    {
+      "workKey": "afro cuban songs and rhythms guide",
+      "title": "Afro-Cuban Songs and Rhythms Guide",
+      "sourceIds": [
+        "PDF-430d67e308d3"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "100 years of new orleans drumming",
+      "title": "100 Years of New Orleans Drumming",
+      "sourceIds": [
+        "PDF-4ef0272514a0"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "afro cuban drumming resources 17 book bibliography",
+      "title": "Afro-Cuban Drumming Resources: 17-Book Bibliography",
+      "sourceIds": [
+        "PDF-5d8d9032aea1"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "drums percussion method catalogue",
+      "title": "Drums & Percussion Method Catalogue",
+      "sourceIds": [
+        "PDF-595703bb31c1"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "drumset student book list",
+      "title": "Drumset Student Book List",
+      "sourceIds": [
+        "PDF-9f544947c841"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "percussion repertoire guide",
+      "title": "Percussion Repertoire Guide",
+      "sourceIds": [
+        "PDF-e584c291e034"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "unt percussion applied lesson syllabus drum set jazz",
+      "title": "UNT Percussion Applied Lesson Syllabus: Drum Set — Jazz",
+      "sourceIds": [
+        "PDF-3eb3fd314955"
+      ],
+      "copies": 1
+    },
+    {
+      "workKey": "west african rhythms for drumset",
+      "title": "West African Rhythms for Drumset",
+      "sourceIds": [
+        "PDF-b1eff7499593"
+      ],
+      "copies": 1
+    }
+  ]
+}

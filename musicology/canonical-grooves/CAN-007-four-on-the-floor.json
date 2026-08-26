@@ -385,7 +385,71 @@
           "title": "Backbeats and four-on-the-floor — Ableton Learning Music",
           "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 2,
+        "sourceCount": 3,
+        "sources": [
+          {
+            "sourceId": "PDF-3187600027fe",
+            "title": "Instant Guide to Drum Grooves",
+            "authors": [
+              "Maria Martinez"
+            ],
+            "publisher": "Hal Leonard",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              18,
+              20
+            ],
+            "sha256": "3187600027fe3e853aacafd7634af8ed745b23c1bba149361174a339016d3b69",
+            "sourcePackPaths": [
+              "BLUES - SHUFFLE/Drum Book — Blues - Swamp - New Orleans.pdf",
+              "GENERAL - HUGE GROOVE COLLECTIONS/Drum Book — Multi-Style Groove Collection.pdf",
+              "HIP-HOP - MODERN GROOVES/Drum Book — Hip-Hop Groove Section.pdf",
+              "NEW ORLEANS - SECOND LINE ⚜️/Drum Book — New Orleans - Second Line - Swamp - Funk.pdf",
+              "REGGAE - SKA - CARIBBEAN 🇯🇲/Drum Book — Reggae One Drop - Ska - Calypso - Soca.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-3ecc64b85be9",
+            "title": "20 Essential Grooves",
+            "authors": [
+              "Jesvin Mathew"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "B-",
+            "pages": [
+              2
+            ],
+            "sha256": "3ecc64b85be96eba4a53233a4b12738e3ed214461a348c4df85e2ce3796c9247",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/20 Essential Drum Grooves.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-9e761b1fd58e",
+            "title": "The Jazz Drummer's Workshop",
+            "authors": [
+              "John Riley"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              34
+            ],
+            "sha256": "9e761b1fd58e72b2d2d1ff56e99464ff577864822efdbb1070ea9dd5cda7fc89",
+            "sourcePackPaths": [
+              "JAZZ - SWING/John Riley — Jazz Drummer's Workshop.pdf",
+              "NEW ORLEANS - SECOND LINE ⚜️/John Riley — The Jazz Drummer's Workshop.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

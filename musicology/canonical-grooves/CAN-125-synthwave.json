@@ -367,7 +367,13 @@
           "title": "Reconstructed Nostalgia: Synthwave as a popular-music genre — University of California Press",
           "url": "https://online.ucpress.edu/jpms/article/33/1/70/116330/Reconstructed-NostalgiaAesthetic-Commonalities-and"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

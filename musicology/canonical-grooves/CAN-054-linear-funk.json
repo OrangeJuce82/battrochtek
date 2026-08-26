@@ -439,7 +439,31 @@
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 0,
+        "sourceCount": 1,
+        "sources": [
+          {
+            "sourceId": "PDF-e3da748daa43",
+            "title": "Funk Drumming 101",
+            "authors": [
+              "Simone Pannozzo"
+            ],
+            "publisher": "Self-published educational excerpt",
+            "year": null,
+            "evidenceGrade": "B-",
+            "pages": [
+              1
+            ],
+            "sha256": "e3da748daa43f2bab4c1cfb8f21f1bdafff9a3062a606fc171315899a260e52c",
+            "sourcePackPaths": [
+              "FUNK - SOUL - R&B - LINEAR/Funk Drumming 101 — 2-Bar Grooves.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

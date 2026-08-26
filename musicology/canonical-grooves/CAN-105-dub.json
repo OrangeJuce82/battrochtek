@@ -290,7 +290,13 @@
           "title": "Jamaican dub and the origins of remix practice — Berklee Online",
           "url": "https://online.berklee.edu/takenote/remix-music/"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

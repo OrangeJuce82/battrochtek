@@ -1,0 +1,5833 @@
+{
+  "schema": "battrochtek.pdf-groove-evidence/v1",
+  "generatedAt": "2026-08-25T22:26:10.691Z",
+  "grooves": [
+    {
+      "id": "CAN-001",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "Straight 8ths",
+      "terms": [
+        "straight 8ths"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-9e761b1fd58e",
+          "pages": [
+            16,
+            40
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-002",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "Straight 16ths",
+      "terms": [
+        "straight 16ths"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-003",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "8th-note Shuffle",
+      "terms": [
+        "8th note shuffle",
+        "eighth note shuffle"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-004",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "16th-note Shuffle",
+      "terms": [
+        "16th note shuffle",
+        "sixteenth note shuffle"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-005",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "Half-Time",
+      "terms": [
+        "half time"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-5d0aaaee12c0",
+          "pages": [
+            25,
+            35
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            31,
+            42
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            15
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            14
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            28,
+            39
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-6b862dc919a1",
+          "pages": [
+            1
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            8,
+            11,
+            27
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-bb2244d5c087",
+          "pages": [
+            9,
+            11
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            91
+          ],
+          "evidenceGrade": "B+"
+        },
+        {
+          "sourceId": "PDF-3ecc64b85be9",
+          "pages": [
+            3
+          ],
+          "evidenceGrade": "B-"
+        },
+        {
+          "sourceId": "PDF-e9fb2404ba25",
+          "pages": [
+            116,
+            139,
+            140
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            27,
+            36
+          ],
+          "evidenceGrade": "B"
+        }
+      ],
+      "strongSourceCount": 8,
+      "anySourceCount": 12
+    },
+    {
+      "id": "CAN-006",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "Double-Time",
+      "terms": [
+        "double time"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-5d0aaaee12c0",
+          "pages": [
+            35
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            31,
+            42,
+            43
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            28,
+            39,
+            40
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-bb2244d5c087",
+          "pages": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-9e761b1fd58e",
+          "pages": [
+            15
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 5,
+      "anySourceCount": 5
+    },
+    {
+      "id": "CAN-007",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "Four-on-the-Floor",
+      "terms": [
+        "four on the floor"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            18,
+            20
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3ecc64b85be9",
+          "pages": [
+            2
+          ],
+          "evidenceGrade": "B-"
+        },
+        {
+          "sourceId": "PDF-9e761b1fd58e",
+          "pages": [
+            34
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 2,
+      "anySourceCount": 3
+    },
+    {
+      "id": "CAN-008",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "Linear Groove",
+      "terms": [
+        "linear groove",
+        "linear drumming"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-6b862dc919a1",
+          "pages": [
+            3,
+            84,
+            85
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-200e835c284b",
+          "pages": [
+            4
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-4e08590ad53a",
+          "pages": [
+            5,
+            20,
+            22,
+            41
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-585c2cd39514",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            18,
+            20,
+            22,
+            24,
+            26,
+            28,
+            30,
+            32
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-6b84daa9ee9c",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            19,
+            21,
+            23,
+            25,
+            27,
+            29,
+            31
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-39ddc4b77dca",
+          "pages": [
+            10,
+            11
+          ],
+          "evidenceGrade": "A-"
+        }
+      ],
+      "strongSourceCount": 5,
+      "anySourceCount": 6
+    },
+    {
+      "id": "CAN-009",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "Ghost-Note Pocket",
+      "terms": [
+        "ghost note pocket",
+        "ghost note"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-5d0aaaee12c0",
+          "pages": [
+            27
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            7,
+            33
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            24
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            23
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-13c8925b6731",
+          "pages": [
+            2
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            6,
+            30
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-81437d754683",
+          "pages": [
+            1
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-6b862dc919a1",
+          "pages": [
+            3,
+            81,
+            82,
+            83
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            4,
+            5,
+            6,
+            8,
+            9,
+            11,
+            14,
+            16,
+            19,
+            20,
+            23
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3d5df133b728",
+          "pages": [
+            8
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-5b17d3b0173f",
+          "pages": [
+            7,
+            9
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-4e08590ad53a",
+          "pages": [
+            12
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-585c2cd39514",
+          "pages": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            13,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            31
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-6b84daa9ee9c",
+          "pages": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            30
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            7,
+            36,
+            74,
+            91,
+            92,
+            96,
+            98,
+            99,
+            100,
+            108
+          ],
+          "evidenceGrade": "B+"
+        },
+        {
+          "sourceId": "PDF-e9fb2404ba25",
+          "pages": [
+            47,
+            48,
+            58,
+            101,
+            102,
+            104,
+            106,
+            107,
+            123,
+            132,
+            139,
+            149,
+            196
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-4f2f3846064c",
+          "pages": [
+            5,
+            58,
+            61
+          ],
+          "evidenceGrade": "B+"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            35
+          ],
+          "evidenceGrade": "B"
+        }
+      ],
+      "strongSourceCount": 12,
+      "anySourceCount": 18
+    },
+    {
+      "id": "CAN-010",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "Displaced Backbeat",
+      "terms": [
+        "displaced backbeat"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-011",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "12/8 Ballad",
+      "terms": [
+        "12 8 ballad"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            10
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-012",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "6/8 Compound Groove",
+      "terms": [
+        "6 8 compound groove"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-013",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "3/4 Groove",
+      "terms": [
+        "3 4 groove"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            86
+          ],
+          "evidenceGrade": "B+"
+        }
+      ],
+      "strongSourceCount": 0,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-014",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "5/4 Foundation",
+      "terms": [
+        "5 4 foundation"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-015",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "7/8 Foundation",
+      "terms": [
+        "7 8 foundation"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-016",
+      "family": "Foundations / Concepts",
+      "tradition": "Core time feels",
+      "archetype": "9/8 Foundation",
+      "terms": [
+        "9 8 foundation"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-017",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Early Rock & Roll / Lindy Beat",
+      "terms": [
+        "early rock roll lindy beat"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-018",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Classic Rock 8ths",
+      "terms": [
+        "classic rock 8ths"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-019",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Classic Rock 16ths",
+      "terms": [
+        "classic rock 16ths"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-020",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Rock Shuffle",
+      "terms": [
+        "rock shuffle"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            31
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            28
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            8
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 3,
+      "anySourceCount": 3
+    },
+    {
+      "id": "CAN-021",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Half-Time Rock",
+      "terms": [
+        "half time rock"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            42
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            39
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            8,
+            11
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 3,
+      "anySourceCount": 3
+    },
+    {
+      "id": "CAN-022",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Hard Rock",
+      "terms": [
+        "hard rock"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-6b862dc919a1",
+          "pages": [
+            3,
+            94
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            11
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            16,
+            103
+          ],
+          "evidenceGrade": "B+"
+        },
+        {
+          "sourceId": "PDF-3ecc64b85be9",
+          "pages": [
+            3
+          ],
+          "evidenceGrade": "B-"
+        },
+        {
+          "sourceId": "PDF-4f2f3846064c",
+          "pages": [
+            62
+          ],
+          "evidenceGrade": "B+"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 5
+    },
+    {
+      "id": "CAN-023",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Arena Rock",
+      "terms": [
+        "arena rock"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-024",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Power Ballad",
+      "terms": [
+        "power ballad"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-025",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Pop Rock",
+      "terms": [
+        "pop rock"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            14,
+            36
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-9f544947c841",
+          "pages": [
+            26
+          ],
+          "evidenceGrade": "B"
+        }
+      ],
+      "strongSourceCount": 0,
+      "anySourceCount": 2
+    },
+    {
+      "id": "CAN-026",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Indie Rock",
+      "terms": [
+        "indie rock"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-027",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Alternative / Grunge",
+      "terms": [
+        "alternative grunge"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-028",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Punk Rock",
+      "terms": [
+        "punk rock"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            11
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            70
+          ],
+          "evidenceGrade": "B+"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 2
+    },
+    {
+      "id": "CAN-029",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Pop-Punk",
+      "terms": [
+        "pop punk"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            49
+          ],
+          "evidenceGrade": "B+"
+        }
+      ],
+      "strongSourceCount": 0,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-030",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Post-Punk / New Wave",
+      "terms": [
+        "post punk new wave"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-031",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Surf Rock",
+      "terms": [
+        "surf rock"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            62
+          ],
+          "evidenceGrade": "B+"
+        }
+      ],
+      "strongSourceCount": 0,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-032",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Glam Rock",
+      "terms": [
+        "glam rock"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            53
+          ],
+          "evidenceGrade": "B+"
+        }
+      ],
+      "strongSourceCount": 0,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-033",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Progressive Rock",
+      "terms": [
+        "progressive rock"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            11
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            61,
+            78,
+            90,
+            99,
+            101
+          ],
+          "evidenceGrade": "B+"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            32,
+            39
+          ],
+          "evidenceGrade": "B"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 3
+    },
+    {
+      "id": "CAN-034",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Odd-Meter Rock",
+      "terms": [
+        "odd meter rock"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            36
+          ],
+          "evidenceGrade": "B"
+        }
+      ],
+      "strongSourceCount": 0,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-035",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Metal Straight-8",
+      "terms": [
+        "metal straight 8"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-036",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Metal Half-Time",
+      "terms": [
+        "metal half time"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-037",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Thrash Metal",
+      "terms": [
+        "thrash metal"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-038",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Double-Kick Metal",
+      "terms": [
+        "double kick metal"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-039",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Metalcore Half-Time",
+      "terms": [
+        "metalcore half time"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-040",
+      "family": "Rock / Pop",
+      "tradition": "Foundational rock",
+      "archetype": "Stoner / Heavy Shuffle",
+      "terms": [
+        "stoner heavy shuffle"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-041",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "James Brown Funk",
+      "terms": [
+        "james brown funk"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-042",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "New Orleans Funk / Second Line",
+      "terms": [
+        "new orleans funk second line",
+        "second line",
+        "new orleans funk"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-5d0aaaee12c0",
+          "pages": [
+            23
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            26,
+            27,
+            29
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            25,
+            26
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            13,
+            14,
+            15,
+            16
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            75
+          ],
+          "evidenceGrade": "B+"
+        },
+        {
+          "sourceId": "PDF-9e761b1fd58e",
+          "pages": [
+            4,
+            16,
+            17
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-4ef0272514a0",
+          "pages": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            9,
+            10,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            35,
+            36
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-3eb3fd314955",
+          "pages": [
+            4
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 7,
+      "anySourceCount": 9
+    },
+    {
+      "id": "CAN-043",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Meters-style New Orleans Funk",
+      "terms": [
+        "meters style new orleans funk",
+        "meters",
+        "new orleans funk"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            64
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            60
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            15,
+            16
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-5b17d3b0173f",
+          "pages": [
+            2
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-4e08590ad53a",
+          "pages": [
+            7
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            75
+          ],
+          "evidenceGrade": "B+"
+        },
+        {
+          "sourceId": "PDF-4ef0272514a0",
+          "pages": [
+            5,
+            6,
+            8,
+            10,
+            16
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            7,
+            16,
+            28,
+            29,
+            30,
+            36,
+            37,
+            45
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-9f544947c841",
+          "pages": [
+            21
+          ],
+          "evidenceGrade": "B"
+        }
+      ],
+      "strongSourceCount": 5,
+      "anySourceCount": 9
+    },
+    {
+      "id": "CAN-044",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "P-Funk",
+      "terms": [
+        "p funk"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            54
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            53
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-5b17d3b0173f",
+          "pages": [
+            10
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-9e761b1fd58e",
+          "pages": [
+            16
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            36,
+            41
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-9f544947c841",
+          "pages": [
+            26
+          ],
+          "evidenceGrade": "B"
+        }
+      ],
+      "strongSourceCount": 3,
+      "anySourceCount": 6
+    },
+    {
+      "id": "CAN-045",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Motown",
+      "terms": [
+        "motown"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-6b862dc919a1",
+          "pages": [
+            3,
+            96
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            38,
+            67
+          ],
+          "evidenceGrade": "B+"
+        },
+        {
+          "sourceId": "PDF-4ef0272514a0",
+          "pages": [
+            16
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            30
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-3eb3fd314955",
+          "pages": [
+            8
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 2,
+      "anySourceCount": 5
+    },
+    {
+      "id": "CAN-046",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Stax / Southern Soul",
+      "terms": [
+        "stax southern soul"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-047",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Philly Soul",
+      "terms": [
+        "philly soul"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-048",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Boogaloo Funk",
+      "terms": [
+        "boogaloo funk"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-049",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Go-Go",
+      "terms": [
+        "go go"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-4f2f3846064c",
+          "pages": [
+            62
+          ],
+          "evidenceGrade": "B+"
+        }
+      ],
+      "strongSourceCount": 0,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-050",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Gospel Pocket",
+      "terms": [
+        "gospel pocket"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-051",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Gospel Shout",
+      "terms": [
+        "gospel shout"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-052",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Neo-Soul",
+      "terms": [
+        "neo soul"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-053",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Modern R&B",
+      "terms": [
+        "modern r b"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-4ef0272514a0",
+          "pages": [
+            13,
+            15
+          ],
+          "evidenceGrade": "A-"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-054",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Linear Funk",
+      "terms": [
+        "linear funk"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-e3da748daa43",
+          "pages": [
+            1
+          ],
+          "evidenceGrade": "B-"
+        }
+      ],
+      "strongSourceCount": 0,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-055",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Ghost-Note Funk",
+      "terms": [
+        "ghost note funk"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-056",
+      "family": "Funk / Soul / R&B",
+      "tradition": "African-American groove",
+      "archetype": "Disco-Funk / Chic",
+      "terms": [
+        "disco funk chic"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-057",
+      "family": "Blues / Shuffle",
+      "tradition": "Blues",
+      "archetype": "Chicago Shuffle",
+      "terms": [
+        "chicago shuffle"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            7
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-058",
+      "family": "Blues / Shuffle",
+      "tradition": "Blues",
+      "archetype": "Texas Shuffle",
+      "terms": [
+        "texas shuffle"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            7
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-4e08590ad53a",
+          "pages": [
+            45
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 2,
+      "anySourceCount": 2
+    },
+    {
+      "id": "CAN-059",
+      "family": "Blues / Shuffle",
+      "tradition": "Blues",
+      "archetype": "Slow 12/8 Blues",
+      "terms": [
+        "slow 12 8 blues"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-060",
+      "family": "Blues / Shuffle",
+      "tradition": "Blues",
+      "archetype": "Straight Blues",
+      "terms": [
+        "straight blues"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-061",
+      "family": "Blues / Shuffle",
+      "tradition": "Blues",
+      "archetype": "Jump Blues",
+      "terms": [
+        "jump blues"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-062",
+      "family": "Blues / Shuffle",
+      "tradition": "Blues",
+      "archetype": "Train Shuffle",
+      "terms": [
+        "train shuffle"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-063",
+      "family": "Blues / Shuffle",
+      "tradition": "Blues",
+      "archetype": "Half-Time Shuffle",
+      "terms": [
+        "half time shuffle"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-6b862dc919a1",
+          "pages": [
+            1
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            8
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-e9fb2404ba25",
+          "pages": [
+            116,
+            139,
+            140
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 2,
+      "anySourceCount": 3
+    },
+    {
+      "id": "CAN-064",
+      "family": "Blues / Shuffle",
+      "tradition": "Blues",
+      "archetype": "Blues Rock Shuffle",
+      "terms": [
+        "blues rock shuffle"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-065",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Medium Swing",
+      "terms": [
+        "medium swing"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-9e761b1fd58e",
+          "pages": [
+            38
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-066",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Up-Tempo / Bebop Swing",
+      "terms": [
+        "up tempo bebop swing"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-067",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Two-Feel Swing",
+      "terms": [
+        "two feel swing"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-068",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Jazz Ballad",
+      "terms": [
+        "jazz ballad"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-069",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Brush Ballad",
+      "terms": [
+        "brush ballad"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-070",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Brush Swing",
+      "terms": [
+        "brush swing"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-071",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Jazz Waltz 3/4",
+      "terms": [
+        "jazz waltz 3 4",
+        "jazz waltz",
+        "3 4 comping"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-5d0aaaee12c0",
+          "pages": [
+            25
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            31
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            28
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2bb56376b3d0",
+          "pages": [
+            1
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-b03d0e54a31f",
+          "pages": [
+            1
+          ],
+          "evidenceGrade": "B-"
+        },
+        {
+          "sourceId": "PDF-9e761b1fd58e",
+          "pages": [
+            4,
+            19,
+            20
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            34
+          ],
+          "evidenceGrade": "B"
+        }
+      ],
+      "strongSourceCount": 4,
+      "anySourceCount": 7
+    },
+    {
+      "id": "CAN-072",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Jazz Shuffle",
+      "terms": [
+        "jazz shuffle"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-073",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Big Band Swing",
+      "terms": [
+        "big band swing"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-074",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Bebop Comping",
+      "terms": [
+        "bebop comping",
+        "jazz comping"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-075",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Straight-8 / ECM",
+      "terms": [
+        "straight 8 ecm"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-076",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Jazz-Funk",
+      "terms": [
+        "jazz funk"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            6,
+            69
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            5
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            4
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-4e08590ad53a",
+          "pages": [
+            18
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            40
+          ],
+          "evidenceGrade": "B+"
+        },
+        {
+          "sourceId": "PDF-9f544947c841",
+          "pages": [
+            21
+          ],
+          "evidenceGrade": "B"
+        }
+      ],
+      "strongSourceCount": 4,
+      "anySourceCount": 6
+    },
+    {
+      "id": "CAN-077",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Fusion",
+      "terms": [
+        "fusion"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            5,
+            9,
+            13,
+            15,
+            29,
+            43,
+            54,
+            64
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            4,
+            8,
+            12,
+            14,
+            28,
+            42,
+            53,
+            63
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-81437d754683",
+          "pages": [
+            1
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            4
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3d5df133b728",
+          "pages": [
+            81
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-5b17d3b0173f",
+          "pages": [
+            8
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-4e08590ad53a",
+          "pages": [
+            6,
+            46,
+            51
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            21,
+            40,
+            84,
+            86,
+            89,
+            101,
+            108
+          ],
+          "evidenceGrade": "B+"
+        },
+        {
+          "sourceId": "PDF-39ddc4b77dca",
+          "pages": [
+            9,
+            10,
+            11
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-e9fb2404ba25",
+          "pages": [
+            101,
+            102,
+            103,
+            111
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-49294994b537",
+          "pages": [
+            5
+          ],
+          "evidenceGrade": "B+"
+        },
+        {
+          "sourceId": "PDF-9e761b1fd58e",
+          "pages": [
+            50
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-4ef0272514a0",
+          "pages": [
+            16
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            35,
+            36
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-9f544947c841",
+          "pages": [
+            20,
+            21
+          ],
+          "evidenceGrade": "B"
+        }
+      ],
+      "strongSourceCount": 10,
+      "anySourceCount": 15
+    },
+    {
+      "id": "CAN-078",
+      "family": "Jazz",
+      "tradition": "Swing & modern",
+      "archetype": "Afro-Cuban Jazz 6/8",
+      "terms": [
+        "afro cuban jazz 6 8",
+        "afro cuban 6 8"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            5,
+            31,
+            64,
+            69
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            4,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            17,
+            18,
+            19
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            3,
+            4,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            16,
+            17,
+            18
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            4,
+            28,
+            39,
+            60
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3eb3fd314955",
+          "pages": [
+            4,
+            9
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 5,
+      "anySourceCount": 5
+    },
+    {
+      "id": "CAN-079",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Train Beat",
+      "terms": [
+        "train beat"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-080",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Country Two-Step",
+      "terms": [
+        "country two step"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-081",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Country Shuffle",
+      "terms": [
+        "country shuffle"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-082",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Country Waltz",
+      "terms": [
+        "country waltz"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            9
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-083",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Western Swing",
+      "terms": [
+        "western swing"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-084",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Country Pop / Nashville Straight 8ths",
+      "terms": [
+        "country pop nashville straight 8ths"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-085",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Country Rock",
+      "terms": [
+        "country rock"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            10
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-086",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Country 6/8 Ballad",
+      "terms": [
+        "country 6 8 ballad"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-087",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Modern Bluegrass Drum-Set",
+      "terms": [
+        "modern bluegrass drum set"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-088",
+      "family": "Country / Americana",
+      "tradition": "Country",
+      "archetype": "Rockabilly Shuffle",
+      "terms": [
+        "rockabilly shuffle"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-089",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Old-School Breakbeat",
+      "terms": [
+        "old school breakbeat"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-090",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Boom Bap",
+      "terms": [
+        "boom bap"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-091",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "West Coast / G-Funk",
+      "terms": [
+        "west coast g funk"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-092",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Dilla / Drunk Pocket",
+      "terms": [
+        "dilla drunk pocket"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-093",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Lo-Fi Hip-Hop",
+      "terms": [
+        "lo fi hip hop"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-094",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Trap Half-Time",
+      "terms": [
+        "trap half time"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-095",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Trap Double-Time Hats",
+      "terms": [
+        "trap double time hats"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-096",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Drill",
+      "terms": [
+        "drill"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-9e761b1fd58e",
+          "pages": [
+            54
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-097",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Jersey Club",
+      "terms": [
+        "jersey club"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-098",
+      "family": "Hip-Hop",
+      "tradition": "Hip-Hop",
+      "archetype": "Sample-Break Pocket",
+      "terms": [
+        "sample break pocket"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-099",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Mento Drum-Set Adaptation",
+      "terms": [
+        "mento drum set adaptation"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-100",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Ska",
+      "terms": [],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-101",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Rocksteady",
+      "terms": [
+        "rocksteady"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-102",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Reggae One Drop",
+      "terms": [
+        "reggae one drop"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-103",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Reggae Rockers",
+      "terms": [
+        "reggae rockers"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-104",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Reggae Steppers",
+      "terms": [
+        "reggae steppers"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-105",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Dub",
+      "terms": [],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-106",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Nyabinghi Drum-Set",
+      "terms": [
+        "nyabinghi drum set"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-107",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Early Dancehall",
+      "terms": [
+        "early dancehall"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-108",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Digital Dancehall / Ragga",
+      "terms": [
+        "digital dancehall ragga"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-109",
+      "family": "Jamaica",
+      "tradition": "Jamaican lineage",
+      "archetype": "Modern Dancehall",
+      "terms": [
+        "modern dancehall"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-110",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Disco",
+      "terms": [
+        "disco"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-5d0aaaee12c0",
+          "pages": [
+            57,
+            58,
+            60
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            5,
+            6,
+            43,
+            64,
+            65,
+            66
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            4,
+            5,
+            42,
+            65,
+            66
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            3,
+            4,
+            41,
+            64,
+            65
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            4,
+            5,
+            40,
+            60,
+            61,
+            62
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-6b862dc919a1",
+          "pages": [
+            3,
+            96
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-3d5df133b728",
+          "pages": [
+            4,
+            5,
+            9
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-5b17d3b0173f",
+          "pages": [
+            10
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-f97e3e83bf02",
+          "pages": [
+            35,
+            87
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-f40b6fc1f4f1",
+          "pages": [
+            67
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-30b03bbca266",
+          "pages": [
+            26,
+            46,
+            60,
+            66
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-474a33d9bfb9",
+          "pages": [
+            3,
+            17,
+            18,
+            21,
+            34,
+            36,
+            43
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-8f225657efb9",
+          "pages": [
+            3,
+            9,
+            10,
+            17
+          ],
+          "evidenceGrade": "D"
+        },
+        {
+          "sourceId": "PDF-fbbdc4070c40",
+          "pages": [
+            14
+          ],
+          "evidenceGrade": "D"
+        },
+        {
+          "sourceId": "PDF-4e08590ad53a",
+          "pages": [
+            5,
+            22,
+            47
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            18
+          ],
+          "evidenceGrade": "B+"
+        },
+        {
+          "sourceId": "PDF-e9fb2404ba25",
+          "pages": [
+            81,
+            132
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-343bd7b5fc90",
+          "pages": [
+            25
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-0fb73c919618",
+          "pages": [
+            42
+          ],
+          "evidenceGrade": "B-"
+        },
+        {
+          "sourceId": "PDF-9e761b1fd58e",
+          "pages": [
+            7,
+            32
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            4,
+            5,
+            9,
+            24,
+            37
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-9f544947c841",
+          "pages": [
+            1,
+            15,
+            26
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-e584c291e034",
+          "pages": [
+            6
+          ],
+          "evidenceGrade": "A-"
+        }
+      ],
+      "strongSourceCount": 15,
+      "anySourceCount": 23
+    },
+    {
+      "id": "CAN-111",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Classic House",
+      "terms": [
+        "classic house"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-112",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Deep House",
+      "terms": [
+        "deep house"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-113",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Funky House",
+      "terms": [
+        "funky house"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-114",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Techno",
+      "terms": [
+        "techno"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            80
+          ],
+          "evidenceGrade": "B+"
+        },
+        {
+          "sourceId": "PDF-9e761b1fd58e",
+          "pages": [
+            33
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-4ef0272514a0",
+          "pages": [
+            11
+          ],
+          "evidenceGrade": "A-"
+        }
+      ],
+      "strongSourceCount": 2,
+      "anySourceCount": 3
+    },
+    {
+      "id": "CAN-115",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Detroit Electro",
+      "terms": [
+        "detroit electro"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-116",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Electro-Funk",
+      "terms": [
+        "electro funk"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-117",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "UK Garage / 2-Step",
+      "terms": [
+        "uk garage 2 step"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-118",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Breakbeat / Big Beat",
+      "terms": [
+        "breakbeat big beat"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-119",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Jungle",
+      "terms": [
+        "jungle"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-5d0aaaee12c0",
+          "pages": [
+            58
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            66
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            61,
+            62
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-e9fb2404ba25",
+          "pages": [
+            101,
+            103,
+            106
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            32
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-9f544947c841",
+          "pages": [
+            21
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-e584c291e034",
+          "pages": [
+            7
+          ],
+          "evidenceGrade": "A-"
+        }
+      ],
+      "strongSourceCount": 5,
+      "anySourceCount": 7
+    },
+    {
+      "id": "CAN-120",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Drum & Bass",
+      "terms": [
+        "drum bass"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            5
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            4
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3d5df133b728",
+          "pages": [
+            6,
+            65,
+            72
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-30b03bbca266",
+          "pages": [
+            4,
+            45,
+            91
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-7064fe3e54b3",
+          "pages": [
+            77
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2792e4f7409a",
+          "pages": [
+            3
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-474a33d9bfb9",
+          "pages": [
+            4
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-8f225657efb9",
+          "pages": [
+            4
+          ],
+          "evidenceGrade": "D"
+        },
+        {
+          "sourceId": "PDF-a6fb626f326f",
+          "pages": [
+            3
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            6
+          ],
+          "evidenceGrade": "B+"
+        },
+        {
+          "sourceId": "PDF-0fb73c919618",
+          "pages": [
+            4
+          ],
+          "evidenceGrade": "B-"
+        },
+        {
+          "sourceId": "PDF-9e761b1fd58e",
+          "pages": [
+            15,
+            16,
+            41,
+            43
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            18,
+            20,
+            25
+          ],
+          "evidenceGrade": "B"
+        }
+      ],
+      "strongSourceCount": 9,
+      "anySourceCount": 13
+    },
+    {
+      "id": "CAN-121",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Trip-Hop",
+      "terms": [
+        "trip hop"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-122",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Trance",
+      "terms": [
+        "trance"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            64
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            63
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-f97e3e83bf02",
+          "pages": [
+            13
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-39ddc4b77dca",
+          "pages": [
+            6
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-9e761b1fd58e",
+          "pages": [
+            48
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 5,
+      "anySourceCount": 5
+    },
+    {
+      "id": "CAN-123",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Dubstep Half-Time",
+      "terms": [
+        "dubstep half time"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-124",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Footwork / Juke",
+      "terms": [
+        "footwork juke"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-125",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Synthwave",
+      "terms": [
+        "synthwave"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-126",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Amapiano",
+      "terms": [
+        "amapiano"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-127",
+      "family": "Electronic / Dance",
+      "tradition": "Club music",
+      "archetype": "Afro House",
+      "terms": [
+        "afro house"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-128",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Son",
+      "terms": [],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-129",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Son Montuno",
+      "terms": [
+        "son montuno"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            9
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-6e48001c173e",
+          "pages": [
+            9,
+            16,
+            17,
+            18
+          ],
+          "evidenceGrade": "D"
+        },
+        {
+          "sourceId": "PDF-13c8925b6731",
+          "pages": [
+            16,
+            17
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            8
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 2,
+      "anySourceCount": 4
+    },
+    {
+      "id": "CAN-130",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Mambo",
+      "terms": [
+        "mambo"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-5d0aaaee12c0",
+          "pages": [
+            6,
+            8,
+            34,
+            38
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            4,
+            5,
+            7,
+            8,
+            9,
+            10,
+            12,
+            41,
+            45
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-6e48001c173e",
+          "pages": [
+            2,
+            3,
+            11,
+            26,
+            27,
+            46
+          ],
+          "evidenceGrade": "D"
+        },
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            4,
+            7,
+            8,
+            28,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            52,
+            58,
+            61,
+            63,
+            64
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            3,
+            6,
+            7,
+            27,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            51,
+            57,
+            60,
+            62,
+            63
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-13c8925b6731",
+          "pages": [
+            11,
+            14
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            4,
+            6,
+            7,
+            8,
+            9,
+            11,
+            38,
+            41
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-6b862dc919a1",
+          "pages": [
+            3,
+            92
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            6,
+            15,
+            26
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2bb56376b3d0",
+          "pages": [
+            1
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            24
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-3eb3fd314955",
+          "pages": [
+            3,
+            4,
+            9
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 7,
+      "anySourceCount": 12
+    },
+    {
+      "id": "CAN-131",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Cha-Cha-Cha",
+      "terms": [
+        "cha cha cha"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-6e48001c173e",
+          "pages": [
+            28,
+            29
+          ],
+          "evidenceGrade": "D"
+        },
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            7,
+            8,
+            35,
+            60
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            6,
+            7,
+            34,
+            59
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            25
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-f97e3e83bf02",
+          "pages": [
+            8,
+            52
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3eb3fd314955",
+          "pages": [
+            2,
+            4,
+            9
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 5,
+      "anySourceCount": 6
+    },
+    {
+      "id": "CAN-132",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Bolero Cubano",
+      "terms": [
+        "bolero cubano"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-133",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Songo",
+      "terms": [
+        "songo"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-5d0aaaee12c0",
+          "pages": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            31,
+            34,
+            42
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            4,
+            5,
+            6,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            36,
+            41,
+            49,
+            51,
+            64,
+            69
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-6e48001c173e",
+          "pages": [
+            3,
+            41,
+            42,
+            43,
+            44
+          ],
+          "evidenceGrade": "D"
+        },
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            4,
+            5,
+            9,
+            29,
+            52,
+            53,
+            54,
+            56,
+            59,
+            64
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            3,
+            4,
+            8,
+            28,
+            51,
+            52,
+            53,
+            55,
+            58,
+            63
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-13c8925b6731",
+          "pages": [
+            17,
+            18,
+            19
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            4,
+            5,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            33,
+            38,
+            45,
+            47,
+            60
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-81437d754683",
+          "pages": [
+            1
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-6b862dc919a1",
+          "pages": [
+            3,
+            96
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            26,
+            29
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-a5bdd4a6ddc2",
+          "pages": [
+            2
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-e9fb2404ba25",
+          "pages": [
+            109,
+            112,
+            113
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-0fb73c919618",
+          "pages": [
+            26,
+            27
+          ],
+          "evidenceGrade": "B-"
+        },
+        {
+          "sourceId": "PDF-430d67e308d3",
+          "pages": [
+            1
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            16,
+            37,
+            38
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-3eb3fd314955",
+          "pages": [
+            2,
+            4,
+            9
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 9,
+      "anySourceCount": 16
+    },
+    {
+      "id": "CAN-134",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Timba",
+      "terms": [
+        "timba"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-5d0aaaee12c0",
+          "pages": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            12,
+            33
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            7,
+            8,
+            10,
+            11,
+            12,
+            17,
+            35,
+            36,
+            38,
+            41,
+            64
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-6e48001c173e",
+          "pages": [
+            7,
+            28,
+            41
+          ],
+          "evidenceGrade": "D"
+        },
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            4,
+            5,
+            7,
+            8,
+            25,
+            26,
+            28,
+            29,
+            30,
+            31,
+            32,
+            34,
+            35,
+            36,
+            49,
+            52,
+            60,
+            62,
+            64
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            3,
+            4,
+            6,
+            7,
+            24,
+            25,
+            27,
+            28,
+            29,
+            30,
+            31,
+            33,
+            34,
+            35,
+            48,
+            51,
+            59,
+            61,
+            63
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-13c8925b6731",
+          "pages": [
+            20
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            6,
+            7,
+            9,
+            10,
+            11,
+            16,
+            32,
+            33,
+            35,
+            38,
+            60
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-81437d754683",
+          "pages": [
+            1,
+            2,
+            3
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            6,
+            19,
+            25
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-f97e3e83bf02",
+          "pages": [
+            17,
+            31,
+            91,
+            92
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-39ddc4b77dca",
+          "pages": [
+            12
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-430d67e308d3",
+          "pages": [
+            2
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            22,
+            23,
+            24,
+            38
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-9f544947c841",
+          "pages": [
+            4
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-e584c291e034",
+          "pages": [
+            7
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-3eb3fd314955",
+          "pages": [
+            2,
+            9
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 11,
+      "anySourceCount": 16
+    },
+    {
+      "id": "CAN-135",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Mozambique",
+      "terms": [
+        "mozambique"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-5d0aaaee12c0",
+          "pages": [
+            29,
+            32,
+            33,
+            36,
+            54
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            4,
+            5,
+            6,
+            35,
+            36,
+            37,
+            38,
+            43,
+            61,
+            64,
+            69
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            4,
+            5,
+            6,
+            29,
+            49,
+            50,
+            51,
+            52,
+            58,
+            61,
+            64
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            3,
+            4,
+            5,
+            28,
+            48,
+            49,
+            50,
+            51,
+            57,
+            60,
+            63
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-13c8925b6731",
+          "pages": [
+            12,
+            13,
+            14
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            4,
+            5,
+            32,
+            33,
+            34,
+            35,
+            40,
+            57,
+            60
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-81437d754683",
+          "pages": [
+            1
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            27,
+            30
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-46c92cd8a043",
+          "pages": [
+            95
+          ],
+          "evidenceGrade": "B+"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            37
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-3eb3fd314955",
+          "pages": [
+            2,
+            9
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 8,
+      "anySourceCount": 11
+    },
+    {
+      "id": "CAN-136",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Guaguancó Drum-Set",
+      "terms": [
+        "guaguanco drum set"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-137",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Afro-Cuban 6/8 / Bembé",
+      "terms": [
+        "afro cuban 6 8 bembe"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-138",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Salsa 2-3",
+      "terms": [
+        "salsa 2 3"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-139",
+      "family": "Latin America",
+      "tradition": "Cuba",
+      "archetype": "Salsa 3-2",
+      "terms": [
+        "salsa 3 2"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-140",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Bossa Nova",
+      "terms": [
+        "bossa nova"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-6e48001c173e",
+          "pages": [
+            5,
+            71
+          ],
+          "evidenceGrade": "D"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            21,
+            24
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3d5df133b728",
+          "pages": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            62,
+            65,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            76,
+            77,
+            78,
+            80
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-5b17d3b0173f",
+          "pages": [
+            3,
+            5,
+            6
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-f97e3e83bf02",
+          "pages": [
+            6,
+            9,
+            11,
+            18,
+            29,
+            76,
+            77,
+            82,
+            84,
+            85,
+            89,
+            90,
+            91,
+            92,
+            93
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-30b03bbca266",
+          "pages": [
+            94
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-7064fe3e54b3",
+          "pages": [
+            82
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-09d278110e3e",
+          "pages": [
+            85,
+            86,
+            91
+          ],
+          "evidenceGrade": "B+"
+        },
+        {
+          "sourceId": "PDF-a5bdd4a6ddc2",
+          "pages": [
+            2
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-2bb56376b3d0",
+          "pages": [
+            1
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-343bd7b5fc90",
+          "pages": [
+            4
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-9e761b1fd58e",
+          "pages": [
+            63
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            23,
+            34,
+            37
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-3eb3fd314955",
+          "pages": [
+            2,
+            3,
+            6
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 8,
+      "anySourceCount": 14
+    },
+    {
+      "id": "CAN-141",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Samba Batucada",
+      "terms": [
+        "samba batucada",
+        "batucada"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            22
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-5b17d3b0173f",
+          "pages": [
+            6
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-36bf5e94d8ea",
+          "pages": [
+            4
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-f97e3e83bf02",
+          "pages": [
+            46,
+            87
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-7064fe3e54b3",
+          "pages": [
+            82
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2792e4f7409a",
+          "pages": [
+            81
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-a6fb626f326f",
+          "pages": [
+            81
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 6,
+      "anySourceCount": 7
+    },
+    {
+      "id": "CAN-142",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Samba Partido Alto",
+      "terms": [
+        "samba partido alto",
+        "partido alto"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            21,
+            23
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3d5df133b728",
+          "pages": [
+            4,
+            5,
+            6,
+            7,
+            62,
+            63,
+            64
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-f97e3e83bf02",
+          "pages": [
+            9,
+            47,
+            50,
+            77,
+            81,
+            90,
+            91,
+            92
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3eb3fd314955",
+          "pages": [
+            6
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 4,
+      "anySourceCount": 4
+    },
+    {
+      "id": "CAN-143",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Samba-Reggae",
+      "terms": [
+        "samba reggae"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-f97e3e83bf02",
+          "pages": [
+            31,
+            90,
+            91
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3eb3fd314955",
+          "pages": [
+            6
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 2,
+      "anySourceCount": 2
+    },
+    {
+      "id": "CAN-144",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Baião",
+      "terms": [
+        "baiao"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            21,
+            23
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3d5df133b728",
+          "pages": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            10,
+            14
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-5b17d3b0173f",
+          "pages": [
+            2,
+            8
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-f97e3e83bf02",
+          "pages": [
+            6,
+            8,
+            11,
+            63,
+            65,
+            69,
+            70,
+            71,
+            72,
+            81,
+            89,
+            90,
+            91,
+            93
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            37
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-3eb3fd314955",
+          "pages": [
+            6
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 4,
+      "anySourceCount": 6
+    },
+    {
+      "id": "CAN-145",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Maracatu",
+      "terms": [
+        "maracatu"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-5b17d3b0173f",
+          "pages": [
+            2,
+            9,
+            10
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-bb2244d5c087",
+          "pages": [
+            6,
+            7,
+            9,
+            11
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-f97e3e83bf02",
+          "pages": [
+            17,
+            30,
+            69,
+            85,
+            90,
+            91,
+            93
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            37
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-3eb3fd314955",
+          "pages": [
+            6
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 3,
+      "anySourceCount": 5
+    },
+    {
+      "id": "CAN-146",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Frevo",
+      "terms": [
+        "frevo"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-5b17d3b0173f",
+          "pages": [
+            9,
+            10
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            37
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-3eb3fd314955",
+          "pages": [
+            6
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 3
+    },
+    {
+      "id": "CAN-147",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Ijexá / Afoxê",
+      "terms": [
+        "ijexa afoxe",
+        "ijexa",
+        "afoxe"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-5b17d3b0173f",
+          "pages": [
+            3,
+            9,
+            10
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-f97e3e83bf02",
+          "pages": [
+            5,
+            7,
+            8,
+            11,
+            17,
+            21,
+            28,
+            34,
+            35,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            82,
+            87,
+            91
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            23
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-3eb3fd314955",
+          "pages": [
+            6
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 2,
+      "anySourceCount": 4
+    },
+    {
+      "id": "CAN-148",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Samba-Funk",
+      "terms": [
+        "samba funk"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-149",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Samba-Jazz",
+      "terms": [
+        "samba jazz"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-150",
+      "family": "Latin America",
+      "tradition": "Brazil",
+      "archetype": "Choro / Maxixe Drum-Set Adaptation",
+      "terms": [
+        "choro maxixe drum set adaptation"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-151",
+      "family": "Latin America",
+      "tradition": "Colombia & Venezuela",
+      "archetype": "Traditional Colombian Cumbia",
+      "terms": [
+        "traditional colombian cumbia"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-152",
+      "family": "Latin America",
+      "tradition": "Colombia & Venezuela",
+      "archetype": "Porro / Porro Chocoano",
+      "terms": [
+        "porro porro chocoano"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-153",
+      "family": "Latin America",
+      "tradition": "Colombia & Venezuela",
+      "archetype": "Chandé",
+      "terms": [
+        "chande"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-f40b6fc1f4f1",
+          "pages": [
+            3
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-154",
+      "family": "Latin America",
+      "tradition": "Colombia & Venezuela",
+      "archetype": "Currulao Drum-Set Adaptation",
+      "terms": [
+        "currulao drum set adaptation"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-155",
+      "family": "Latin America",
+      "tradition": "Colombia & Venezuela",
+      "archetype": "Joropo",
+      "terms": [
+        "joropo"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            29
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-156",
+      "family": "Latin America",
+      "tradition": "Colombia & Venezuela",
+      "archetype": "Merengue Venezolano",
+      "terms": [
+        "merengue venezolano"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-157",
+      "family": "Latin America",
+      "tradition": "Peru / Argentina / Uruguay",
+      "archetype": "Festejo",
+      "terms": [
+        "festejo"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-158",
+      "family": "Latin America",
+      "tradition": "Peru / Argentina / Uruguay",
+      "archetype": "Landó",
+      "terms": [
+        "lando"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-6e48001c173e",
+          "pages": [
+            31
+          ],
+          "evidenceGrade": "D"
+        },
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            63
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            62
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 2,
+      "anySourceCount": 3
+    },
+    {
+      "id": "CAN-159",
+      "family": "Latin America",
+      "tradition": "Peru / Argentina / Uruguay",
+      "archetype": "Chacarera",
+      "terms": [
+        "chacarera"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-160",
+      "family": "Latin America",
+      "tradition": "Peru / Argentina / Uruguay",
+      "archetype": "Zamba Argentina",
+      "terms": [
+        "zamba argentina"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-161",
+      "family": "Latin America",
+      "tradition": "Peru / Argentina / Uruguay",
+      "archetype": "Candombe Uruguayo",
+      "terms": [
+        "candombe uruguayo"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-162",
+      "family": "Latin America",
+      "tradition": "Peru / Argentina / Uruguay",
+      "archetype": "Tango",
+      "terms": [
+        "tango"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            7,
+            61
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            6,
+            60
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-f97e3e83bf02",
+          "pages": [
+            89
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-09d278110e3e",
+          "pages": [
+            77,
+            78
+          ],
+          "evidenceGrade": "B+"
+        },
+        {
+          "sourceId": "PDF-a5bdd4a6ddc2",
+          "pages": [
+            2
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            19
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-e584c291e034",
+          "pages": [
+            6
+          ],
+          "evidenceGrade": "A-"
+        }
+      ],
+      "strongSourceCount": 4,
+      "anySourceCount": 7
+    },
+    {
+      "id": "CAN-163",
+      "family": "Latin America",
+      "tradition": "Peru / Argentina / Uruguay",
+      "archetype": "Milonga",
+      "terms": [
+        "milonga"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-164",
+      "family": "Caribbean",
+      "tradition": "Dominican Republic / Puerto Rico",
+      "archetype": "Merengue",
+      "terms": [
+        "merengue"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-6e48001c173e",
+          "pages": [
+            2,
+            3,
+            5,
+            10,
+            30,
+            31,
+            32,
+            33,
+            35,
+            37,
+            71
+          ],
+          "evidenceGrade": "D"
+        },
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            4,
+            5,
+            8,
+            55,
+            56,
+            60,
+            61,
+            62,
+            64,
+            65
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            3,
+            4,
+            7,
+            54,
+            55,
+            59,
+            60,
+            61,
+            63,
+            64
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            28
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            24
+          ],
+          "evidenceGrade": "B"
+        }
+      ],
+      "strongSourceCount": 3,
+      "anySourceCount": 5
+    },
+    {
+      "id": "CAN-165",
+      "family": "Caribbean",
+      "tradition": "Dominican Republic / Puerto Rico",
+      "archetype": "Bachata",
+      "terms": [
+        "bachata"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-166",
+      "family": "Caribbean",
+      "tradition": "Dominican Republic / Puerto Rico",
+      "archetype": "Bomba Drum-Set",
+      "terms": [
+        "bomba drum set"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-167",
+      "family": "Caribbean",
+      "tradition": "Dominican Republic / Puerto Rico",
+      "archetype": "Plena Drum-Set",
+      "terms": [
+        "plena drum set"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-168",
+      "family": "Caribbean",
+      "tradition": "Trinidad & Lesser Antilles",
+      "archetype": "Calypso",
+      "terms": [
+        "calypso"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-92d5ddbcbf60",
+          "pages": [
+            21
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            5,
+            6,
+            29
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            4,
+            5,
+            28
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            20
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-6b862dc919a1",
+          "pages": [
+            3,
+            93
+          ],
+          "evidenceGrade": "C"
+        },
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            19,
+            20
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-39ddc4b77dca",
+          "pages": [
+            12
+          ],
+          "evidenceGrade": "A-"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            21,
+            24,
+            35
+          ],
+          "evidenceGrade": "B"
+        },
+        {
+          "sourceId": "PDF-e584c291e034",
+          "pages": [
+            2
+          ],
+          "evidenceGrade": "A-"
+        }
+      ],
+      "strongSourceCount": 7,
+      "anySourceCount": 9
+    },
+    {
+      "id": "CAN-169",
+      "family": "Caribbean",
+      "tradition": "Trinidad & Lesser Antilles",
+      "archetype": "Soca",
+      "terms": [
+        "soca"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-3187600027fe",
+          "pages": [
+            3,
+            19,
+            20
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3ecc64b85be9",
+          "pages": [
+            5
+          ],
+          "evidenceGrade": "B-"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 2
+    },
+    {
+      "id": "CAN-170",
+      "family": "Caribbean",
+      "tradition": "Trinidad & Lesser Antilles",
+      "archetype": "Kompa",
+      "terms": [
+        "kompa"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-171",
+      "family": "Caribbean",
+      "tradition": "Trinidad & Lesser Antilles",
+      "archetype": "Zouk",
+      "terms": [
+        "zouk"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-172",
+      "family": "Caribbean",
+      "tradition": "Trinidad & Lesser Antilles",
+      "archetype": "Biguine / Beguine",
+      "terms": [
+        "biguine beguine"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-173",
+      "family": "Africa",
+      "tradition": "West Africa",
+      "archetype": "Afrobeat",
+      "terms": [
+        "afrobeat"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-174",
+      "family": "Africa",
+      "tradition": "West Africa",
+      "archetype": "Highlife",
+      "terms": [
+        "highlife"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-9f544947c841",
+          "pages": [
+            21
+          ],
+          "evidenceGrade": "B"
+        }
+      ],
+      "strongSourceCount": 0,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-175",
+      "family": "Africa",
+      "tradition": "West Africa",
+      "archetype": "Kpanlogo Drum-Set",
+      "terms": [
+        "kpanlogo drum set"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-176",
+      "family": "Africa",
+      "tradition": "West Africa",
+      "archetype": "Ewe 12/8 / Agbekor Adaptation",
+      "terms": [
+        "ewe 12 8 agbekor adaptation",
+        "agbekor",
+        "ewe 12 8"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-177",
+      "family": "Africa",
+      "tradition": "West Africa",
+      "archetype": "Fanga Drum-Set Adaptation",
+      "terms": [
+        "fanga drum set adaptation"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-178",
+      "family": "Africa",
+      "tradition": "West Africa",
+      "archetype": "Mbalax",
+      "terms": [
+        "mbalax"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-179",
+      "family": "Africa",
+      "tradition": "West Africa",
+      "archetype": "Jùjú / Yoruba-derived Drum-Set",
+      "terms": [
+        "juju yoruba derived drum set",
+        "juju",
+        "yoruba"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-73cfc4ffc14c",
+          "pages": [
+            7,
+            10,
+            57,
+            60,
+            61,
+            62,
+            65
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-d9d0cc68c73f",
+          "pages": [
+            6,
+            9,
+            56,
+            59,
+            60,
+            61,
+            64
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-f97e3e83bf02",
+          "pages": [
+            12,
+            51,
+            72,
+            89
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-3eb3fd314955",
+          "pages": [
+            2
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 4,
+      "anySourceCount": 4
+    },
+    {
+      "id": "CAN-180",
+      "family": "Africa",
+      "tradition": "Central Africa",
+      "archetype": "Soukous",
+      "terms": [
+        "soukous"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-181",
+      "family": "Africa",
+      "tradition": "Central Africa",
+      "archetype": "Makossa",
+      "terms": [
+        "makossa"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            37
+          ],
+          "evidenceGrade": "B"
+        }
+      ],
+      "strongSourceCount": 0,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-182",
+      "family": "Africa",
+      "tradition": "Central Africa",
+      "archetype": "Bikutsi",
+      "terms": [
+        "bikutsi"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            37
+          ],
+          "evidenceGrade": "B"
+        }
+      ],
+      "strongSourceCount": 0,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-183",
+      "family": "Africa",
+      "tradition": "Central Africa",
+      "archetype": "Mangambe",
+      "terms": [
+        "mangambe"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-e9fb2404ba25",
+          "pages": [
+            109,
+            110
+          ],
+          "evidenceGrade": "A"
+        },
+        {
+          "sourceId": "PDF-595703bb31c1",
+          "pages": [
+            37
+          ],
+          "evidenceGrade": "B"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 2
+    },
+    {
+      "id": "CAN-184",
+      "family": "Africa",
+      "tradition": "Southern Africa",
+      "archetype": "Mbaqanga",
+      "terms": [
+        "mbaqanga"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-185",
+      "family": "Africa",
+      "tradition": "Southern Africa",
+      "archetype": "South African House",
+      "terms": [
+        "south african house"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-186",
+      "family": "Africa",
+      "tradition": "Southern Africa",
+      "archetype": "Amapiano",
+      "terms": [
+        "amapiano"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-187",
+      "family": "Africa",
+      "tradition": "Indian Ocean",
+      "archetype": "Sega",
+      "terms": [
+        "sega"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-188",
+      "family": "Africa",
+      "tradition": "Indian Ocean",
+      "archetype": "Maloya",
+      "terms": [
+        "maloya"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-189",
+      "family": "North Africa / Middle East",
+      "tradition": "North Africa",
+      "archetype": "Gnawa Drum-Set",
+      "terms": [
+        "gnawa drum set"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-190",
+      "family": "North Africa / Middle East",
+      "tradition": "North Africa",
+      "archetype": "Maghreb Chaabi",
+      "terms": [
+        "maghreb chaabi"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-191",
+      "family": "North Africa / Middle East",
+      "tradition": "North Africa",
+      "archetype": "Raï",
+      "terms": [],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-192",
+      "family": "North Africa / Middle East",
+      "tradition": "Arabic rhythmic cycles",
+      "archetype": "Maqsum",
+      "terms": [
+        "maqsum"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-193",
+      "family": "North Africa / Middle East",
+      "tradition": "Arabic rhythmic cycles",
+      "archetype": "Saidi",
+      "terms": [
+        "saidi"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-194",
+      "family": "North Africa / Middle East",
+      "tradition": "Arabic rhythmic cycles",
+      "archetype": "Malfuf",
+      "terms": [
+        "malfuf"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-195",
+      "family": "North Africa / Middle East",
+      "tradition": "Arabic rhythmic cycles",
+      "archetype": "Ayoub",
+      "terms": [
+        "ayoub"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-196",
+      "family": "North Africa / Middle East",
+      "tradition": "Arabic rhythmic cycles",
+      "archetype": "Baladi / Masmoudi Saghir",
+      "terms": [
+        "baladi masmoudi saghir"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-197",
+      "family": "North Africa / Middle East",
+      "tradition": "Arabic rhythmic cycles",
+      "archetype": "Masmoudi Kabir",
+      "terms": [
+        "masmoudi kabir"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-198",
+      "family": "North Africa / Middle East",
+      "tradition": "Arabic rhythmic cycles",
+      "archetype": "Chiftetelli",
+      "terms": [
+        "chiftetelli"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-199",
+      "family": "Balkans / Eastern Europe",
+      "tradition": "Aksak & regional",
+      "archetype": "Balkan 7/8",
+      "terms": [
+        "balkan 7 8"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-200",
+      "family": "Balkans / Eastern Europe",
+      "tradition": "Aksak & regional",
+      "archetype": "Balkan 9/8",
+      "terms": [
+        "balkan 9 8"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-201",
+      "family": "Balkans / Eastern Europe",
+      "tradition": "Aksak & regional",
+      "archetype": "Balkan 11/8",
+      "terms": [
+        "balkan 11 8"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-202",
+      "family": "Balkans / Eastern Europe",
+      "tradition": "Aksak & regional",
+      "archetype": "Čoček / 9/8 Dance",
+      "terms": [
+        "cocek 9 8 dance"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-203",
+      "family": "South Asia",
+      "tradition": "Indian & Punjabi adaptations",
+      "archetype": "Bhangra / Dhol Drum-Set",
+      "terms": [
+        "bhangra dhol drum set"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-204",
+      "family": "South Asia",
+      "tradition": "Indian & Punjabi adaptations",
+      "archetype": "Teentaal 16-beat Drum-Set Adaptation",
+      "terms": [
+        "teentaal 16 beat drum set adaptation"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-205",
+      "family": "South Asia",
+      "tradition": "Indian & Punjabi adaptations",
+      "archetype": "Keherwa / 8-beat Drum-Set Adaptation",
+      "terms": [
+        "keherwa 8 beat drum set adaptation"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-206",
+      "family": "South Asia",
+      "tradition": "Indian & Punjabi adaptations",
+      "archetype": "Dadra / 6-beat Drum-Set Adaptation",
+      "terms": [
+        "dadra 6 beat drum set adaptation"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-207",
+      "family": "Global / Hybrid",
+      "tradition": "Contemporary hybrids",
+      "archetype": "Afro-Cuban Funk",
+      "terms": [
+        "afro cuban funk"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-2fdfcd6bd899",
+          "pages": [
+            1
+          ],
+          "evidenceGrade": "A"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-208",
+      "family": "Global / Hybrid",
+      "tradition": "Contemporary hybrids",
+      "archetype": "Brazilian Funk",
+      "terms": [
+        "brazilian funk"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-209",
+      "family": "Global / Hybrid",
+      "tradition": "Contemporary hybrids",
+      "archetype": "Latin Rock",
+      "terms": [
+        "latin rock"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-210",
+      "family": "Global / Hybrid",
+      "tradition": "Contemporary hybrids",
+      "archetype": "Reggae Rock",
+      "terms": [
+        "reggae rock"
+      ],
+      "sourceHits": [
+        {
+          "sourceId": "PDF-39ddc4b77dca",
+          "pages": [
+            12
+          ],
+          "evidenceGrade": "A-"
+        }
+      ],
+      "strongSourceCount": 1,
+      "anySourceCount": 1
+    },
+    {
+      "id": "CAN-211",
+      "family": "Global / Hybrid",
+      "tradition": "Contemporary hybrids",
+      "archetype": "Jazz-Rock Fusion",
+      "terms": [
+        "jazz rock fusion"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-212",
+      "family": "Global / Hybrid",
+      "tradition": "Contemporary hybrids",
+      "archetype": "Afrobeat-Funk",
+      "terms": [
+        "afrobeat funk"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    },
+    {
+      "id": "CAN-213",
+      "family": "Global / Hybrid",
+      "tradition": "Contemporary hybrids",
+      "archetype": "World 6/8 Fusion",
+      "terms": [
+        "world 6 8 fusion"
+      ],
+      "sourceHits": [],
+      "strongSourceCount": 0,
+      "anySourceCount": 0
+    }
+  ]
+}

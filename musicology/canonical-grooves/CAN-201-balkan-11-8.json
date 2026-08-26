@@ -308,7 +308,13 @@
           "title": "Balkan rhythmic grouping / takt — The Balkan Languages (Cambridge)",
           "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/DF1897CA3A024BFF3AB73392CD28822E/9780521553490AR.pdf/The_Balkan_Languages.pdf?event-type=FTLA"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

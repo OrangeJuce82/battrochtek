@@ -270,7 +270,13 @@
           "title": "Music Theory for Producers: common meters and basic rock beat — Yamaha",
           "url": "https://hub.yamaha.com/proaudio/recording/music-theory-for-producers-part-1/"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

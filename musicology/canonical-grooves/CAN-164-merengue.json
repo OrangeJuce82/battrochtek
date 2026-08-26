@@ -488,7 +488,132 @@
           "title": "Dominican merengue típico: instrumentation and rapid 4/4 — Smithsonian Folkways",
           "url": "https://folkways-media.si.edu/docs/folkways/artwork/SFW40493.pdf"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 3,
+        "sourceCount": 5,
+        "sources": [
+          {
+            "sourceId": "PDF-6e48001c173e",
+            "title": "Afro-Cuban Grooves — Guajira - Son Montuno - Guaguancó - Mambo - Salsa",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "D",
+            "pages": [
+              2,
+              3,
+              5,
+              10,
+              30,
+              31,
+              32,
+              33,
+              35,
+              37,
+              71
+            ],
+            "sha256": "6e48001c173ec7515eefd9a7f04e49f3ea63d2f98a0d7d153d3d1ee4c94be2e1",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Grooves.pdf",
+              "LATIN - SALSA - CARIBBEAN 🌴/Afro-Cuban Grooves — Guajira - Son Montuno - Guaguancó - Mambo - Salsa.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-73cfc4ffc14c",
+            "title": "Afro-Cuban Rhythms for Drumset",
+            "authors": [
+              "Frank Malabe",
+              "Bob Weiner"
+            ],
+            "publisher": "Manhattan Music / Alfred Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              4,
+              5,
+              8,
+              55,
+              56,
+              60,
+              61,
+              62,
+              64,
+              65
+            ],
+            "sha256": "73cfc4ffc14cf0fcafe1a765984e0a6bc0e09290699e16e7967d711265e482af",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Rhythms for Drumset — Alternate Edition.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-d9d0cc68c73f",
+            "title": "Afro-Cuban Rhythms for Drumset",
+            "authors": [
+              "Frank Malabe",
+              "Bob Weiner"
+            ],
+            "publisher": "Manhattan Music / Alfred Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              3,
+              4,
+              7,
+              54,
+              55,
+              59,
+              60,
+              61,
+              63,
+              64
+            ],
+            "sha256": "d9d0cc68c73fc93d58e71c2581f6bc600f71b26faf97567ac21a9a01447da694",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Rhythms for Drumset — Frank Malabe & Bob Weiner.pdf",
+              "LATIN - SALSA - CARIBBEAN 🌴/Afro-Cuban Rhythms — Bembé - Cascara - Songo - Mozambique.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-3187600027fe",
+            "title": "Instant Guide to Drum Grooves",
+            "authors": [
+              "Maria Martinez"
+            ],
+            "publisher": "Hal Leonard",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              3,
+              28
+            ],
+            "sha256": "3187600027fe3e853aacafd7634af8ed745b23c1bba149361174a339016d3b69",
+            "sourcePackPaths": [
+              "BLUES - SHUFFLE/Drum Book — Blues - Swamp - New Orleans.pdf",
+              "GENERAL - HUGE GROOVE COLLECTIONS/Drum Book — Multi-Style Groove Collection.pdf",
+              "HIP-HOP - MODERN GROOVES/Drum Book — Hip-Hop Groove Section.pdf",
+              "NEW ORLEANS - SECOND LINE ⚜️/Drum Book — New Orleans - Second Line - Swamp - Funk.pdf",
+              "REGGAE - SKA - CARIBBEAN 🇯🇲/Drum Book — Reggae One Drop - Ska - Calypso - Soca.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-595703bb31c1",
+            "title": "Drums & Percussion Method Catalogue",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "B",
+            "pages": [
+              24
+            ],
+            "sha256": "595703bb31c19039683b634ee32e9147f2b05c10f62ad657286ccef4e35b5460",
+            "sourcePackPaths": [
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drums & Percussion — Large Method Catalogue.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

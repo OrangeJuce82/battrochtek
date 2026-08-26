@@ -405,7 +405,45 @@
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 0,
+        "sourceCount": 2,
+        "sources": [
+          {
+            "sourceId": "PDF-595703bb31c1",
+            "title": "Drums & Percussion Method Catalogue",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "B",
+            "pages": [
+              14,
+              36
+            ],
+            "sha256": "595703bb31c19039683b634ee32e9147f2b05c10f62ad657286ccef4e35b5460",
+            "sourcePackPaths": [
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drums & Percussion — Large Method Catalogue.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-9f544947c841",
+            "title": "Drumset Student Book List",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "B",
+            "pages": [
+              26
+            ],
+            "sha256": "9f544947c841f00f8e5a361c1c3165dca11d515229436e0c3cd70a2a94ccfe90",
+            "sourcePackPaths": [
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drumset Student Book List — Jazz - Funk - Soul - Latin - African.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

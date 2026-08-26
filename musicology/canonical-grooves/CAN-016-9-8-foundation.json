@@ -361,7 +361,13 @@
           "title": "Drum Set Performance 101: meter, coordination and compound grooves — Berklee Online",
           "url": "https://online.berklee.edu/courses/drum-set-performance-101"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

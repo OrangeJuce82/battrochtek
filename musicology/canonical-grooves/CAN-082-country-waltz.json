@@ -214,7 +214,36 @@
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 1,
+        "sourceCount": 1,
+        "sources": [
+          {
+            "sourceId": "PDF-3187600027fe",
+            "title": "Instant Guide to Drum Grooves",
+            "authors": [
+              "Maria Martinez"
+            ],
+            "publisher": "Hal Leonard",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              3,
+              9
+            ],
+            "sha256": "3187600027fe3e853aacafd7634af8ed745b23c1bba149361174a339016d3b69",
+            "sourcePackPaths": [
+              "BLUES - SHUFFLE/Drum Book — Blues - Swamp - New Orleans.pdf",
+              "GENERAL - HUGE GROOVE COLLECTIONS/Drum Book — Multi-Style Groove Collection.pdf",
+              "HIP-HOP - MODERN GROOVES/Drum Book — Hip-Hop Groove Section.pdf",
+              "NEW ORLEANS - SECOND LINE ⚜️/Drum Book — New Orleans - Second Line - Swamp - Funk.pdf",
+              "REGGAE - SKA - CARIBBEAN 🇯🇲/Drum Book — Reggae One Drop - Ska - Calypso - Soca.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

@@ -392,7 +392,33 @@
           "title": "Music Theory for Producers: common meters and basic rock beat — Yamaha",
           "url": "https://hub.yamaha.com/proaudio/recording/music-theory-for-producers-part-1/"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 1,
+        "sourceCount": 1,
+        "sources": [
+          {
+            "sourceId": "PDF-9e761b1fd58e",
+            "title": "The Jazz Drummer's Workshop",
+            "authors": [
+              "John Riley"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              16,
+              40
+            ],
+            "sha256": "9e761b1fd58e72b2d2d1ff56e99464ff577864822efdbb1070ea9dd5cda7fc89",
+            "sourcePackPaths": [
+              "JAZZ - SWING/John Riley — Jazz Drummer's Workshop.pdf",
+              "NEW ORLEANS - SECOND LINE ⚜️/John Riley — The Jazz Drummer's Workshop.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

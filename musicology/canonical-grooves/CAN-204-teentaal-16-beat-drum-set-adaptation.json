@@ -220,7 +220,13 @@
           "title": "Popular Tabla Thekas — RagaNet",
           "url": "https://www.raganet.com/Issues/8/tabla8.html"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

@@ -384,7 +384,13 @@
           "title": "Quisqueya en el Hudson: Dominican merengue and bachata — Smithsonian Folkways",
           "url": "https://folkways.si.edu/quisqueya-en-el-hudson-dominican-music-in-new-york/caribbean-latin-world/album/smithsonian"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

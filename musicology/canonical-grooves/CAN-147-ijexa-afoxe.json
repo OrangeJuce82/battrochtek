@@ -375,7 +375,101 @@
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 2,
+        "sourceCount": 4,
+        "sources": [
+          {
+            "sourceId": "PDF-5b17d3b0173f",
+            "title": "Brazilian Rhythms in the Drums",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "C",
+            "pages": [
+              3,
+              9,
+              10
+            ],
+            "sha256": "5b17d3b0173f6869e6394ee4ffe66818c7c9c9a77db781ed9c7466a33e483e84",
+            "sourcePackPaths": [
+              "BRAZIL 🇧🇷/Brazilian Drumming Rhythms.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-f97e3e83bf02",
+            "title": "A Cannibalist's Manifesto: Candomblé Rhythms for Drum Kit",
+            "authors": [
+              "Peter Alastair McGrath-Kerr"
+            ],
+            "publisher": "University of Melbourne",
+            "year": 2019,
+            "evidenceGrade": "A",
+            "pages": [
+              5,
+              7,
+              8,
+              11,
+              17,
+              21,
+              28,
+              34,
+              35,
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              82,
+              87,
+              91
+            ],
+            "sha256": "f97e3e83bf0298e9b27f3700e2c8135351c85518309e8982964a23578eaa7849",
+            "sourcePackPaths": [
+              "BRAZIL 🇧🇷/Candomblé Rhythm for Drumset.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-595703bb31c1",
+            "title": "Drums & Percussion Method Catalogue",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "B",
+            "pages": [
+              23
+            ],
+            "sha256": "595703bb31c19039683b634ee32e9147f2b05c10f62ad657286ccef4e35b5460",
+            "sourcePackPaths": [
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drums & Percussion — Large Method Catalogue.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-3eb3fd314955",
+            "title": "UNT Percussion Applied Lesson Syllabus: Drum Set — Jazz",
+            "authors": [],
+            "publisher": "University of North Texas",
+            "year": 2019,
+            "evidenceGrade": "A",
+            "pages": [
+              6
+            ],
+            "sha256": "3eb3fd3149551647c577957bd0382fdb3ba8e522f582726ba567c5f607c83a08",
+            "sourcePackPaths": [
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/UNT Jazz Drumset Curriculum — Brazilian - Jazz - Latin Sources.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

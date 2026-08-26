@@ -472,7 +472,303 @@
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 10,
+        "sourceCount": 15,
+        "sources": [
+          {
+            "sourceId": "PDF-73cfc4ffc14c",
+            "title": "Afro-Cuban Rhythms for Drumset",
+            "authors": [
+              "Frank Malabe",
+              "Bob Weiner"
+            ],
+            "publisher": "Manhattan Music / Alfred Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              5,
+              9,
+              13,
+              15,
+              29,
+              43,
+              54,
+              64
+            ],
+            "sha256": "73cfc4ffc14cf0fcafe1a765984e0a6bc0e09290699e16e7967d711265e482af",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Rhythms for Drumset — Alternate Edition.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-d9d0cc68c73f",
+            "title": "Afro-Cuban Rhythms for Drumset",
+            "authors": [
+              "Frank Malabe",
+              "Bob Weiner"
+            ],
+            "publisher": "Manhattan Music / Alfred Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              4,
+              8,
+              12,
+              14,
+              28,
+              42,
+              53,
+              63
+            ],
+            "sha256": "d9d0cc68c73fc93d58e71c2581f6bc600f71b26faf97567ac21a9a01447da694",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Rhythms for Drumset — Frank Malabe & Bob Weiner.pdf",
+              "LATIN - SALSA - CARIBBEAN 🌴/Afro-Cuban Rhythms — Bembé - Cascara - Songo - Mozambique.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-81437d754683",
+            "title": "Timba-Go: Afro-Latin Hybrid Grooves for Drumset",
+            "authors": [
+              "James Dreier"
+            ],
+            "publisher": "Percussive Arts Society article",
+            "year": null,
+            "evidenceGrade": "A-",
+            "pages": [
+              1
+            ],
+            "sha256": "81437d754683c17dc101e1da859d34e36770cfb25596237ac11a4b8b452cacc4",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Timba-Go — Afro-Latin Hybrid Drum Grooves.pdf",
+              "LATIN - SALSA - CARIBBEAN 🌴/Timba-Go — Cuban Timba - Rockason - Cuban Hip-Hop.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-3187600027fe",
+            "title": "Instant Guide to Drum Grooves",
+            "authors": [
+              "Maria Martinez"
+            ],
+            "publisher": "Hal Leonard",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              4
+            ],
+            "sha256": "3187600027fe3e853aacafd7634af8ed745b23c1bba149361174a339016d3b69",
+            "sourcePackPaths": [
+              "BLUES - SHUFFLE/Drum Book — Blues - Swamp - New Orleans.pdf",
+              "GENERAL - HUGE GROOVE COLLECTIONS/Drum Book — Multi-Style Groove Collection.pdf",
+              "HIP-HOP - MODERN GROOVES/Drum Book — Hip-Hop Groove Section.pdf",
+              "NEW ORLEANS - SECOND LINE ⚜️/Drum Book — New Orleans - Second Line - Swamp - Funk.pdf",
+              "REGGAE - SKA - CARIBBEAN 🇯🇲/Drum Book — Reggae One Drop - Ska - Calypso - Soca.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-3d5df133b728",
+            "title": "Brazilian Coordination for Drumset",
+            "authors": [
+              "Maria Martinez"
+            ],
+            "publisher": "Hal Leonard",
+            "year": 1999,
+            "evidenceGrade": "A",
+            "pages": [
+              81
+            ],
+            "sha256": "3d5df133b728c7c89042ed8509452da593b6e7a4f868d9a428e6393da2d49213",
+            "sourcePackPaths": [
+              "BRAZIL 🇧🇷/Brazilian Coordination for Drumset — Maria Martinez.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-5b17d3b0173f",
+            "title": "Brazilian Rhythms in the Drums",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "C",
+            "pages": [
+              8
+            ],
+            "sha256": "5b17d3b0173f6869e6394ee4ffe66818c7c9c9a77db781ed9c7466a33e483e84",
+            "sourcePackPaths": [
+              "BRAZIL 🇧🇷/Brazilian Drumming Rhythms.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-4e08590ad53a",
+            "title": "Funk Drumming: Innovative Grooves & Advanced Concepts",
+            "authors": [
+              "Mike Clark"
+            ],
+            "publisher": "Hal Leonard",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              6,
+              46,
+              51
+            ],
+            "sha256": "4e08590ad53aca2dc0462a3f67c42643e88da3705c530b9927d50757a5cb5baf",
+            "sourcePackPaths": [
+              "FUNK - SOUL - R&B - LINEAR/Mike Clark — Funk Drumming.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-46c92cd8a043",
+            "title": "100 Grooves Every Drummer Needs to Know",
+            "authors": [],
+            "publisher": "Musora / Drumeo",
+            "year": null,
+            "evidenceGrade": "B+",
+            "pages": [
+              21,
+              40,
+              84,
+              86,
+              89,
+              101,
+              108
+            ],
+            "sha256": "46c92cd8a043885caf59b098297edfe0fd241fd9e125fe6127ba3ea84fa3825b",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/100 Grooves Every Drummer Needs to Know.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-39ddc4b77dca",
+            "title": "Drumset FUNdamentals",
+            "authors": [
+              "Dave Black",
+              "Mark Dorr"
+            ],
+            "publisher": "Percussive Arts Society handout",
+            "year": 2001,
+            "evidenceGrade": "A-",
+            "pages": [
+              9,
+              10,
+              11
+            ],
+            "sha256": "39ddc4b77dcaeb4025853d52c635a0a1205d5eca191c9868fc9e011af59267cf",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/Drumset FUNdamentals.pdf",
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drumset FUNdamentals — Large Recommended Book List.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-e9fb2404ba25",
+            "title": "Drum Book",
+            "authors": [
+              "Franck Agulhon"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              101,
+              102,
+              103,
+              111
+            ],
+            "sha256": "e9fb2404ba2532d0fef20dbfe9d4d99f4c7a2b386d936789c6609ca998e0c35f",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/Franck Agulhon — Drumbook.pdf",
+              "WEST AFRICAN - AFRICAN 🌍/Franck Agulhon Drumbook — Afro - Gnawa - Mangambeu - Bembé.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-49294994b537",
+            "title": "Free Drum Book",
+            "authors": [
+              "Richard Hemmings"
+            ],
+            "publisher": "Leicester Drum School",
+            "year": 2024,
+            "evidenceGrade": "B+",
+            "pages": [
+              5
+            ],
+            "sha256": "49294994b537e9e4ed36dbfd9c87e5d15f6bff21cbaf9039e10551bbdd11550c",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/Free Drum Book — Richard Hemmings.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-9e761b1fd58e",
+            "title": "The Jazz Drummer's Workshop",
+            "authors": [
+              "John Riley"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              50
+            ],
+            "sha256": "9e761b1fd58e72b2d2d1ff56e99464ff577864822efdbb1070ea9dd5cda7fc89",
+            "sourcePackPaths": [
+              "JAZZ - SWING/John Riley — Jazz Drummer's Workshop.pdf",
+              "NEW ORLEANS - SECOND LINE ⚜️/John Riley — The Jazz Drummer's Workshop.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-4ef0272514a0",
+            "title": "100 Years of New Orleans Drumming",
+            "authors": [
+              "Dan Thress",
+              "Antoon Aukes"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A-",
+            "pages": [
+              16
+            ],
+            "sha256": "4ef0272514a02e9a9bbe69465fcb35fb9dafa5e4ee087e9c096343f7f1719bbd",
+            "sourcePackPaths": [
+              "NEW ORLEANS - SECOND LINE ⚜️/100 Years of New Orleans Drumming.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-595703bb31c1",
+            "title": "Drums & Percussion Method Catalogue",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "B",
+            "pages": [
+              35,
+              36
+            ],
+            "sha256": "595703bb31c19039683b634ee32e9147f2b05c10f62ad657286ccef4e35b5460",
+            "sourcePackPaths": [
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drums & Percussion — Large Method Catalogue.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-9f544947c841",
+            "title": "Drumset Student Book List",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "B",
+            "pages": [
+              20,
+              21
+            ],
+            "sha256": "9f544947c841f00f8e5a361c1c3165dca11d515229436e0c3cd70a2a94ccfe90",
+            "sourcePackPaths": [
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drumset Student Book List — Jazz - Funk - Soul - Latin - African.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

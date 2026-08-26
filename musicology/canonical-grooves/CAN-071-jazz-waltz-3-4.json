@@ -304,7 +304,133 @@
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 4,
+        "sourceCount": 7,
+        "sources": [
+          {
+            "sourceId": "PDF-5d0aaaee12c0",
+            "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+            "authors": [
+              "Lincoln Goines",
+              "Robby Ameen"
+            ],
+            "publisher": "Manhattan Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              25
+            ],
+            "sha256": "5d0aaaee12c0474fd94fdda203f40441db5a9f834731b0c4cc4596d62301cb43",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Grooves for Bass & Drums — Alternate Scan.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-92d5ddbcbf60",
+            "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+            "authors": [
+              "Lincoln Goines",
+              "Robby Ameen"
+            ],
+            "publisher": "Manhattan Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              31
+            ],
+            "sha256": "92d5ddbcbf6004ea76d06acb8cf5abac6fd500db1ef4f18d26b692f77249de7e",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Grooves for Bass & Drums — Alternate.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-2fdfcd6bd899",
+            "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+            "authors": [
+              "Lincoln Goines",
+              "Robby Ameen"
+            ],
+            "publisher": "Manhattan Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              28
+            ],
+            "sha256": "2fdfcd6bd8992b277670b799ee2aa4542dd26905d1b55936e1f2658e0d725aed",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Funkifying the Clave — Afro-Cuban Grooves.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-2bb56376b3d0",
+            "title": "Essential Drum Grooves: 16 Rhythms",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "C",
+            "pages": [
+              1
+            ],
+            "sha256": "2bb56376b3d0a8730acb6d0c649190e7ba3e3c1baf5ca9d69b207444ab63530c",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/Essential Drum Grooves — 16 Rhythms.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-b03d0e54a31f",
+            "title": "3/4 Comping: The Basics of Jazz Drumming in 3/4",
+            "authors": [],
+            "publisher": "On Jazz Drumming",
+            "year": null,
+            "evidenceGrade": "B-",
+            "pages": [
+              1
+            ],
+            "sha256": "b03d0e54a31f4afc05435633a87a49b38065ba29c0e12b4153b670f3a9ff393c",
+            "sourcePackPaths": [
+              "JAZZ - SWING/Jazz Comping in 3 - 4.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-9e761b1fd58e",
+            "title": "The Jazz Drummer's Workshop",
+            "authors": [
+              "John Riley"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              4,
+              19,
+              20
+            ],
+            "sha256": "9e761b1fd58e72b2d2d1ff56e99464ff577864822efdbb1070ea9dd5cda7fc89",
+            "sourcePackPaths": [
+              "JAZZ - SWING/John Riley — Jazz Drummer's Workshop.pdf",
+              "NEW ORLEANS - SECOND LINE ⚜️/John Riley — The Jazz Drummer's Workshop.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-595703bb31c1",
+            "title": "Drums & Percussion Method Catalogue",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "B",
+            "pages": [
+              34
+            ],
+            "sha256": "595703bb31c19039683b634ee32e9147f2b05c10f62ad657286ccef4e35b5460",
+            "sourcePackPaths": [
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drums & Percussion — Large Method Catalogue.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

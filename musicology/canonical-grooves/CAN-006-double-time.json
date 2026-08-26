@@ -625,7 +625,111 @@
           "title": "Tempo perception in half-time and double-time — Roland",
           "url": "https://articles.roland.com/mix-it-up-dj-808-serato-dj/"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 5,
+        "sourceCount": 5,
+        "sources": [
+          {
+            "sourceId": "PDF-5d0aaaee12c0",
+            "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+            "authors": [
+              "Lincoln Goines",
+              "Robby Ameen"
+            ],
+            "publisher": "Manhattan Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              35
+            ],
+            "sha256": "5d0aaaee12c0474fd94fdda203f40441db5a9f834731b0c4cc4596d62301cb43",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Grooves for Bass & Drums — Alternate Scan.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-92d5ddbcbf60",
+            "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+            "authors": [
+              "Lincoln Goines",
+              "Robby Ameen"
+            ],
+            "publisher": "Manhattan Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              31,
+              42,
+              43
+            ],
+            "sha256": "92d5ddbcbf6004ea76d06acb8cf5abac6fd500db1ef4f18d26b692f77249de7e",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Grooves for Bass & Drums — Alternate.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-2fdfcd6bd899",
+            "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+            "authors": [
+              "Lincoln Goines",
+              "Robby Ameen"
+            ],
+            "publisher": "Manhattan Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              28,
+              39,
+              40
+            ],
+            "sha256": "2fdfcd6bd8992b277670b799ee2aa4542dd26905d1b55936e1f2658e0d725aed",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Funkifying the Clave — Afro-Cuban Grooves.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-bb2244d5c087",
+            "title": "Brazilian Rhythms for Drumset",
+            "authors": [
+              "Vera Figueiredo",
+              "Daniel Oliveira"
+            ],
+            "publisher": "Hudson Music",
+            "year": null,
+            "evidenceGrade": "A-",
+            "pages": [
+              8,
+              9,
+              10,
+              11
+            ],
+            "sha256": "bb2244d5c08713dcde0bcdc2a487a30fab6434b6f9c02bac18c7afc792d33f5b",
+            "sourcePackPaths": [
+              "BRAZIL 🇧🇷/Brazilian Rhythms for Drumset — Vera Figueiredo - Daniel Oliveira.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-9e761b1fd58e",
+            "title": "The Jazz Drummer's Workshop",
+            "authors": [
+              "John Riley"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              15
+            ],
+            "sha256": "9e761b1fd58e72b2d2d1ff56e99464ff577864822efdbb1070ea9dd5cda7fc89",
+            "sourcePackPaths": [
+              "JAZZ - SWING/John Riley — Jazz Drummer's Workshop.pdf",
+              "NEW ORLEANS - SECOND LINE ⚜️/John Riley — The Jazz Drummer's Workshop.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

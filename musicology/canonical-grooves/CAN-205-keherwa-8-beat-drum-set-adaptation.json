@@ -262,7 +262,13 @@
           "title": "Kaharawa Tal — DigiTabla",
           "url": "https://digitabla.com/reference/tals-and-thekas/kaharawa-tal/"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

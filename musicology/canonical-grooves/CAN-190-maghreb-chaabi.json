@@ -365,7 +365,13 @@
           "title": "Seeing Music in Early Twentieth-Century Colonial Algeria — Cambridge",
           "url": "https://www.cambridge.org/core/journals/twentieth-century-music/article/seeing-music-in-early-twentieth-century-colonial-algeria/70682F4BC3DF1BFB5B6438BFDFABD591"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

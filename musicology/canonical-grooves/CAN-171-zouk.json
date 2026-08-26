@@ -433,7 +433,13 @@
           "title": "Zouk: World Music in the West Indies — University of Chicago Press",
           "url": "https://press.uchicago.edu/ucp/books/book/chicago/Z/bo3619607.html"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

@@ -551,7 +551,13 @@
           "title": "Drumming techniques: 8-beat, 16-beat and shuffle — Yamaha",
           "url": "https://www.yamaha.com/en/musical_instrument_guide/drums/play/play003.html"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

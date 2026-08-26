@@ -21,6 +21,7 @@
     "grooves:validate": "node scripts/validate-canonical-corpus.mjs",
     "grooves:feel": "node scripts/analyze-human-feel.mjs",
     "grooves:evidence": "node scripts/apply-musicology-evidence.mjs",
+    "grooves:pdf-audit": "node scripts/build-pdf-musicology-audit.mjs",
     "grooves:diversity": "node scripts/analyze-canonical-diversity.mjs",
     "grooves:dashboard": "node scripts/build-validation-dashboard.mjs",
     "grooves:completeness": "node scripts/validate-groove-completeness.mjs",

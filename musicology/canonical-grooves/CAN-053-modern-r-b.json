@@ -415,7 +415,33 @@
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 1,
+        "sourceCount": 1,
+        "sources": [
+          {
+            "sourceId": "PDF-4ef0272514a0",
+            "title": "100 Years of New Orleans Drumming",
+            "authors": [
+              "Dan Thress",
+              "Antoon Aukes"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A-",
+            "pages": [
+              13,
+              15
+            ],
+            "sha256": "4ef0272514a02e9a9bbe69465fcb35fb9dafa5e4ee087e9c096343f7f1719bbd",
+            "sourcePackPaths": [
+              "NEW ORLEANS - SECOND LINE ⚜️/100 Years of New Orleans Drumming.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

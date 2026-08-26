@@ -329,7 +329,13 @@
     "evidence": {
       "taxonomyState": "project-defined-exercise",
       "performanceEvidence": "not-mapped",
-      "references": []
+      "references": [],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

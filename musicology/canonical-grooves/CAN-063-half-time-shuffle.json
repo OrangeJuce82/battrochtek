@@ -507,7 +507,73 @@
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 2,
+        "sourceCount": 3,
+        "sources": [
+          {
+            "sourceId": "PDF-6b862dc919a1",
+            "title": "Basic Course Drummer Notes",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "C",
+            "pages": [
+              1
+            ],
+            "sha256": "6b862dc919a16e310d3b9c8f696e839bac064604a0143470550f9a61dfca7b04",
+            "sourcePackPaths": [
+              "BLUES - SHUFFLE/Basic Course Drummer Notes — Chicago Blues - Shuffle - Half-Time Shuffle.pdf",
+              "GENERAL - HUGE GROOVE COLLECTIONS/Basic Course Drummer Notes — 96 pages.pdf",
+              "HIP-HOP - MODERN GROOVES/Basic Course Drummer Notes — Hip-Hop - Motown - Disco - Soul.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-3187600027fe",
+            "title": "Instant Guide to Drum Grooves",
+            "authors": [
+              "Maria Martinez"
+            ],
+            "publisher": "Hal Leonard",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              3,
+              8
+            ],
+            "sha256": "3187600027fe3e853aacafd7634af8ed745b23c1bba149361174a339016d3b69",
+            "sourcePackPaths": [
+              "BLUES - SHUFFLE/Drum Book — Blues - Swamp - New Orleans.pdf",
+              "GENERAL - HUGE GROOVE COLLECTIONS/Drum Book — Multi-Style Groove Collection.pdf",
+              "HIP-HOP - MODERN GROOVES/Drum Book — Hip-Hop Groove Section.pdf",
+              "NEW ORLEANS - SECOND LINE ⚜️/Drum Book — New Orleans - Second Line - Swamp - Funk.pdf",
+              "REGGAE - SKA - CARIBBEAN 🇯🇲/Drum Book — Reggae One Drop - Ska - Calypso - Soca.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-e9fb2404ba25",
+            "title": "Drum Book",
+            "authors": [
+              "Franck Agulhon"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              116,
+              139,
+              140
+            ],
+            "sha256": "e9fb2404ba2532d0fef20dbfe9d4d99f4c7a2b386d936789c6609ca998e0c35f",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/Franck Agulhon — Drumbook.pdf",
+              "WEST AFRICAN - AFRICAN 🌍/Franck Agulhon Drumbook — Afro - Gnawa - Mangambeu - Bembé.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

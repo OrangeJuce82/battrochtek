@@ -360,7 +360,13 @@
           "title": "Finding Your Groove: displacing the backbeat — Berklee Online",
           "url": "https://online.berklee.edu/courses/music-demo-production-for-songwriters"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

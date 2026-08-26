@@ -385,7 +385,33 @@
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 1,
+        "sourceCount": 1,
+        "sources": [
+          {
+            "sourceId": "PDF-39ddc4b77dca",
+            "title": "Drumset FUNdamentals",
+            "authors": [
+              "Dave Black",
+              "Mark Dorr"
+            ],
+            "publisher": "Percussive Arts Society handout",
+            "year": 2001,
+            "evidenceGrade": "A-",
+            "pages": [
+              12
+            ],
+            "sha256": "39ddc4b77dcaeb4025853d52c635a0a1205d5eca191c9868fc9e011af59267cf",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/Drumset FUNdamentals.pdf",
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drumset FUNdamentals — Large Recommended Book List.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

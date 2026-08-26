@@ -502,7 +502,48 @@
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 2,
+        "sourceCount": 2,
+        "sources": [
+          {
+            "sourceId": "PDF-f97e3e83bf02",
+            "title": "A Cannibalist's Manifesto: Candomblé Rhythms for Drum Kit",
+            "authors": [
+              "Peter Alastair McGrath-Kerr"
+            ],
+            "publisher": "University of Melbourne",
+            "year": 2019,
+            "evidenceGrade": "A",
+            "pages": [
+              31,
+              90,
+              91
+            ],
+            "sha256": "f97e3e83bf0298e9b27f3700e2c8135351c85518309e8982964a23578eaa7849",
+            "sourcePackPaths": [
+              "BRAZIL 🇧🇷/Candomblé Rhythm for Drumset.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-3eb3fd314955",
+            "title": "UNT Percussion Applied Lesson Syllabus: Drum Set — Jazz",
+            "authors": [],
+            "publisher": "University of North Texas",
+            "year": 2019,
+            "evidenceGrade": "A",
+            "pages": [
+              6
+            ],
+            "sha256": "3eb3fd3149551647c577957bd0382fdb3ba8e522f582726ba567c5f607c83a08",
+            "sourcePackPaths": [
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/UNT Jazz Drumset Curriculum — Brazilian - Jazz - Latin Sources.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

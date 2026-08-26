@@ -367,7 +367,13 @@
           "title": "Drum Score / Instruction: triplet-derived shuffle — Yamaha",
           "url": "https://data.yamaha.com/download/files/2108295"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

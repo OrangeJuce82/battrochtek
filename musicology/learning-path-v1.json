@@ -1,0 +1,80 @@
+{
+  "schema": "battrochtek.learning-path/v1",
+  "name": "Learning",
+  "language": "en",
+  "status": "curriculum-ready",
+  "designRule": "A pedagogical view over canonical grooves, not a competing genre taxonomy and not duplicated scores.",
+  "progressionBasis": [
+    "PDF-f40b6fc1f4f1",
+    "PDF-30b03bbca266",
+    "PDF-474a33d9bfb9",
+    "PDF-4f2f3846064c",
+    "PDF-39ddc4b77dca",
+    "PDF-585c2cd39514",
+    "PDF-6b84daa9ee9c",
+    "PDF-9e761b1fd58e",
+    "PDF-46c92cd8a043"
+  ],
+  "levels": [
+    {
+      "level": 1,
+      "title": "Timekeeping Foundations",
+      "lessons": [
+        { "number": "1.1", "title": "Quarter-Note Pulse", "canonicalId": "CAN-007", "focus": ["steady pulse", "kick consistency"] },
+        { "number": "1.2", "title": "Straight 8th-Note Backbeat", "canonicalId": "CAN-001", "focus": ["hi-hat eighths", "snare on 2 and 4"] },
+        { "number": "1.3", "title": "Classic Rock 8ths", "canonicalId": "CAN-018", "focus": ["backbeat", "basic kick variation"] },
+        { "number": "1.4", "title": "Four-on-the-Floor", "canonicalId": "CAN-007", "focus": ["four quarter-note kicks", "even dynamics"] },
+        { "number": "1.5", "title": "Half-Time", "canonicalId": "CAN-005", "focus": ["snare on beat 3", "tempo perception"] },
+        { "number": "1.6", "title": "3/4 Foundation", "canonicalId": "CAN-013", "focus": ["triple meter", "bar awareness"] }
+      ]
+    },
+    {
+      "level": 2,
+      "title": "Subdivision and Coordination",
+      "lessons": [
+        { "number": "2.1", "title": "Straight 16th-Note Time", "canonicalId": "CAN-002", "focus": ["sixteenth-note subdivision", "relaxed hands"] },
+        { "number": "2.2", "title": "8th-Note Shuffle", "canonicalId": "CAN-003", "focus": ["triplet-derived spacing", "shuffle consistency"] },
+        { "number": "2.3", "title": "16th-Note Shuffle", "canonicalId": "CAN-004", "focus": ["compound sixteenth feel", "subdivision control"] },
+        { "number": "2.4", "title": "6/8 Compound Groove", "canonicalId": "CAN-012", "focus": ["compound meter", "two dotted-quarter pulses"] },
+        { "number": "2.5", "title": "Rock Shuffle", "canonicalId": "CAN-020", "focus": ["shuffle backbeat", "kick coordination"] },
+        { "number": "2.6", "title": "Country Two-Step", "canonicalId": "CAN-080", "focus": ["two-beat bass foundation", "clean backbeat"] }
+      ]
+    },
+    {
+      "level": 3,
+      "title": "Pocket and Independence",
+      "lessons": [
+        { "number": "3.1", "title": "Ghost-Note Pocket", "canonicalId": "CAN-009", "focus": ["dynamic separation", "protected backbeat"] },
+        { "number": "3.2", "title": "Linear Groove", "canonicalId": "CAN-008", "focus": ["single-surface attacks", "hand-foot flow"] },
+        { "number": "3.3", "title": "Displaced Backbeat", "canonicalId": "CAN-010", "focus": ["syncopated snare", "internal pulse"] },
+        { "number": "3.4", "title": "Half-Time Shuffle", "canonicalId": "CAN-063", "focus": ["ghost-note shuffle lattice", "half-time anchor"] },
+        { "number": "3.5", "title": "Medium Swing", "canonicalId": "CAN-065", "focus": ["ride pattern", "light comping"] },
+        { "number": "3.6", "title": "Jazz Waltz", "canonicalId": "CAN-071", "focus": ["3/4 ride time", "independent comping"] }
+      ]
+    },
+    {
+      "level": 4,
+      "title": "Essential Styles",
+      "lessons": [
+        { "number": "4.1", "title": "Bossa Nova", "canonicalId": "CAN-140", "focus": ["cross-stick role", "bass-drum ostinato"] },
+        { "number": "4.2", "title": "Samba", "canonicalId": "CAN-141", "focus": ["Brazilian subdivision", "surdo-derived bass role"] },
+        { "number": "4.3", "title": "Mambo", "canonicalId": "CAN-130", "focus": ["bell timeline", "clave awareness"] },
+        { "number": "4.4", "title": "Songo", "canonicalId": "CAN-133", "focus": ["Afro-Cuban coordination", "syncopated bass drum"] },
+        { "number": "4.5", "title": "New Orleans Second Line", "canonicalId": "CAN-042", "focus": ["triplet-informed syncopation", "bass-snare conversation"] },
+        { "number": "4.6", "title": "Train Beat", "canonicalId": "CAN-079", "focus": ["accent hierarchy", "continuous snare motion"] }
+      ]
+    },
+    {
+      "level": 5,
+      "title": "Advanced Language",
+      "lessons": [
+        { "number": "5.1", "title": "Bebop Comping", "canonicalId": "CAN-074", "focus": ["four-limb independence", "ride continuity"] },
+        { "number": "5.2", "title": "Fusion", "canonicalId": "CAN-077", "focus": ["ride-led straight time", "funk-derived syncopation"] },
+        { "number": "5.3", "title": "5/4 Foundation", "canonicalId": "CAN-014", "focus": ["asymmetric phrase", "stable subdivision"] },
+        { "number": "5.4", "title": "7/8 Foundation", "canonicalId": "CAN-015", "focus": ["short-long grouping", "bar-line control"] },
+        { "number": "5.5", "title": "Afro-Cuban 6/8", "canonicalId": "CAN-137", "focus": ["compound bell cycle", "limb layering"] },
+        { "number": "5.6", "title": "Timba", "canonicalId": "CAN-134", "focus": ["modern Cuban orchestration", "dynamic transitions"] }
+      ]
+    }
+  ]
+}

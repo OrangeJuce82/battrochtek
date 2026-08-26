@@ -454,7 +454,105 @@
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 1,
+        "sourceCount": 5,
+        "sources": [
+          {
+            "sourceId": "PDF-6b862dc919a1",
+            "title": "Basic Course Drummer Notes",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "C",
+            "pages": [
+              3,
+              94
+            ],
+            "sha256": "6b862dc919a16e310d3b9c8f696e839bac064604a0143470550f9a61dfca7b04",
+            "sourcePackPaths": [
+              "BLUES - SHUFFLE/Basic Course Drummer Notes — Chicago Blues - Shuffle - Half-Time Shuffle.pdf",
+              "GENERAL - HUGE GROOVE COLLECTIONS/Basic Course Drummer Notes — 96 pages.pdf",
+              "HIP-HOP - MODERN GROOVES/Basic Course Drummer Notes — Hip-Hop - Motown - Disco - Soul.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-3187600027fe",
+            "title": "Instant Guide to Drum Grooves",
+            "authors": [
+              "Maria Martinez"
+            ],
+            "publisher": "Hal Leonard",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              11
+            ],
+            "sha256": "3187600027fe3e853aacafd7634af8ed745b23c1bba149361174a339016d3b69",
+            "sourcePackPaths": [
+              "BLUES - SHUFFLE/Drum Book — Blues - Swamp - New Orleans.pdf",
+              "GENERAL - HUGE GROOVE COLLECTIONS/Drum Book — Multi-Style Groove Collection.pdf",
+              "HIP-HOP - MODERN GROOVES/Drum Book — Hip-Hop Groove Section.pdf",
+              "NEW ORLEANS - SECOND LINE ⚜️/Drum Book — New Orleans - Second Line - Swamp - Funk.pdf",
+              "REGGAE - SKA - CARIBBEAN 🇯🇲/Drum Book — Reggae One Drop - Ska - Calypso - Soca.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-46c92cd8a043",
+            "title": "100 Grooves Every Drummer Needs to Know",
+            "authors": [],
+            "publisher": "Musora / Drumeo",
+            "year": null,
+            "evidenceGrade": "B+",
+            "pages": [
+              16,
+              103
+            ],
+            "sha256": "46c92cd8a043885caf59b098297edfe0fd241fd9e125fe6127ba3ea84fa3825b",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/100 Grooves Every Drummer Needs to Know.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-3ecc64b85be9",
+            "title": "20 Essential Grooves",
+            "authors": [
+              "Jesvin Mathew"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "B-",
+            "pages": [
+              3
+            ],
+            "sha256": "3ecc64b85be96eba4a53233a4b12738e3ed214461a348c4df85e2ce3796c9247",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/20 Essential Drum Grooves.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-4f2f3846064c",
+            "title": "Progressive 1,000,000 Drum Grooves in 4/4 Time",
+            "authors": [
+              "Craig Lauritsen"
+            ],
+            "publisher": "Progressive Publishing",
+            "year": null,
+            "evidenceGrade": "B+",
+            "pages": [
+              62
+            ],
+            "sha256": "4f2f3846064c45c20193463d12fe1587a3602a66f7567d431205a39add9945b4",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/Progressive 1,000,000 Drum Grooves — Craig Lauritsen.pdf",
+              "HIP-HOP - MODERN GROOVES/Progressive Drum Grooves — Rap - Funk.pdf",
+              "REGGAE - SKA - CARIBBEAN 🇯🇲/Progressive Drum Grooves — Rock - Funk - Rap - Reggae.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

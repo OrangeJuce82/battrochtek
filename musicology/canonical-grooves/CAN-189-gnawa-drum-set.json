@@ -365,7 +365,13 @@
           "title": "Gnawa as North African musical practice — Cambridge African Studies Review",
           "url": "https://www.cambridge.org/core/journals/african-studies-review/article/sara-nacer-dir-la-rockeuse-du-desert-the-desert-rocker-2022-75-minutes-arabic-and-french-with-english-subtitles-canada-lequipage-no-price-reported-available-to-stream-on-eventive/E034D2505D01ABA9F991819E6D829E37"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

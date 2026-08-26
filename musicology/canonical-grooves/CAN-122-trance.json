@@ -590,7 +590,105 @@
           "title": "Tempo and genre — Ableton Learning Music",
           "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 5,
+        "sourceCount": 5,
+        "sources": [
+          {
+            "sourceId": "PDF-73cfc4ffc14c",
+            "title": "Afro-Cuban Rhythms for Drumset",
+            "authors": [
+              "Frank Malabe",
+              "Bob Weiner"
+            ],
+            "publisher": "Manhattan Music / Alfred Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              64
+            ],
+            "sha256": "73cfc4ffc14cf0fcafe1a765984e0a6bc0e09290699e16e7967d711265e482af",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Rhythms for Drumset — Alternate Edition.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-d9d0cc68c73f",
+            "title": "Afro-Cuban Rhythms for Drumset",
+            "authors": [
+              "Frank Malabe",
+              "Bob Weiner"
+            ],
+            "publisher": "Manhattan Music / Alfred Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              63
+            ],
+            "sha256": "d9d0cc68c73fc93d58e71c2581f6bc600f71b26faf97567ac21a9a01447da694",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Rhythms for Drumset — Frank Malabe & Bob Weiner.pdf",
+              "LATIN - SALSA - CARIBBEAN 🌴/Afro-Cuban Rhythms — Bembé - Cascara - Songo - Mozambique.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-f97e3e83bf02",
+            "title": "A Cannibalist's Manifesto: Candomblé Rhythms for Drum Kit",
+            "authors": [
+              "Peter Alastair McGrath-Kerr"
+            ],
+            "publisher": "University of Melbourne",
+            "year": 2019,
+            "evidenceGrade": "A",
+            "pages": [
+              13
+            ],
+            "sha256": "f97e3e83bf0298e9b27f3700e2c8135351c85518309e8982964a23578eaa7849",
+            "sourcePackPaths": [
+              "BRAZIL 🇧🇷/Candomblé Rhythm for Drumset.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-39ddc4b77dca",
+            "title": "Drumset FUNdamentals",
+            "authors": [
+              "Dave Black",
+              "Mark Dorr"
+            ],
+            "publisher": "Percussive Arts Society handout",
+            "year": 2001,
+            "evidenceGrade": "A-",
+            "pages": [
+              6
+            ],
+            "sha256": "39ddc4b77dcaeb4025853d52c635a0a1205d5eca191c9868fc9e011af59267cf",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/Drumset FUNdamentals.pdf",
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drumset FUNdamentals — Large Recommended Book List.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-9e761b1fd58e",
+            "title": "The Jazz Drummer's Workshop",
+            "authors": [
+              "John Riley"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              48
+            ],
+            "sha256": "9e761b1fd58e72b2d2d1ff56e99464ff577864822efdbb1070ea9dd5cda7fc89",
+            "sourcePackPaths": [
+              "JAZZ - SWING/John Riley — Jazz Drummer's Workshop.pdf",
+              "NEW ORLEANS - SECOND LINE ⚜️/John Riley — The Jazz Drummer's Workshop.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

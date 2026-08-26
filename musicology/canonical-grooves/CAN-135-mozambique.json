@@ -399,7 +399,253 @@
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 8,
+        "sourceCount": 11,
+        "sources": [
+          {
+            "sourceId": "PDF-5d0aaaee12c0",
+            "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+            "authors": [
+              "Lincoln Goines",
+              "Robby Ameen"
+            ],
+            "publisher": "Manhattan Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              29,
+              32,
+              33,
+              36,
+              54
+            ],
+            "sha256": "5d0aaaee12c0474fd94fdda203f40441db5a9f834731b0c4cc4596d62301cb43",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Grooves for Bass & Drums — Alternate Scan.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-92d5ddbcbf60",
+            "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+            "authors": [
+              "Lincoln Goines",
+              "Robby Ameen"
+            ],
+            "publisher": "Manhattan Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              4,
+              5,
+              6,
+              35,
+              36,
+              37,
+              38,
+              43,
+              61,
+              64,
+              69
+            ],
+            "sha256": "92d5ddbcbf6004ea76d06acb8cf5abac6fd500db1ef4f18d26b692f77249de7e",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Grooves for Bass & Drums — Alternate.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-73cfc4ffc14c",
+            "title": "Afro-Cuban Rhythms for Drumset",
+            "authors": [
+              "Frank Malabe",
+              "Bob Weiner"
+            ],
+            "publisher": "Manhattan Music / Alfred Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              4,
+              5,
+              6,
+              29,
+              49,
+              50,
+              51,
+              52,
+              58,
+              61,
+              64
+            ],
+            "sha256": "73cfc4ffc14cf0fcafe1a765984e0a6bc0e09290699e16e7967d711265e482af",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Rhythms for Drumset — Alternate Edition.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-d9d0cc68c73f",
+            "title": "Afro-Cuban Rhythms for Drumset",
+            "authors": [
+              "Frank Malabe",
+              "Bob Weiner"
+            ],
+            "publisher": "Manhattan Music / Alfred Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              3,
+              4,
+              5,
+              28,
+              48,
+              49,
+              50,
+              51,
+              57,
+              60,
+              63
+            ],
+            "sha256": "d9d0cc68c73fc93d58e71c2581f6bc600f71b26faf97567ac21a9a01447da694",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Rhythms for Drumset — Frank Malabe & Bob Weiner.pdf",
+              "LATIN - SALSA - CARIBBEAN 🌴/Afro-Cuban Rhythms — Bembé - Cascara - Songo - Mozambique.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-13c8925b6731",
+            "title": "DrumGenius Afro-Cuban Groove Transcriptions",
+            "authors": [
+              "Mauro Battisti"
+            ],
+            "publisher": "ProJazzLab",
+            "year": null,
+            "evidenceGrade": "B",
+            "pages": [
+              12,
+              13,
+              14
+            ],
+            "sha256": "13c8925b6731475e894e5526ee44a0bd3f3ab1422f59d0285c3b0a340d69b94c",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/DrumGenius — Afro-Cuban Groove Transcriptions.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-2fdfcd6bd899",
+            "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+            "authors": [
+              "Lincoln Goines",
+              "Robby Ameen"
+            ],
+            "publisher": "Manhattan Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              4,
+              5,
+              32,
+              33,
+              34,
+              35,
+              40,
+              57,
+              60
+            ],
+            "sha256": "2fdfcd6bd8992b277670b799ee2aa4542dd26905d1b55936e1f2658e0d725aed",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Funkifying the Clave — Afro-Cuban Grooves.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-81437d754683",
+            "title": "Timba-Go: Afro-Latin Hybrid Grooves for Drumset",
+            "authors": [
+              "James Dreier"
+            ],
+            "publisher": "Percussive Arts Society article",
+            "year": null,
+            "evidenceGrade": "A-",
+            "pages": [
+              1
+            ],
+            "sha256": "81437d754683c17dc101e1da859d34e36770cfb25596237ac11a4b8b452cacc4",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Timba-Go — Afro-Latin Hybrid Drum Grooves.pdf",
+              "LATIN - SALSA - CARIBBEAN 🌴/Timba-Go — Cuban Timba - Rockason - Cuban Hip-Hop.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-3187600027fe",
+            "title": "Instant Guide to Drum Grooves",
+            "authors": [
+              "Maria Martinez"
+            ],
+            "publisher": "Hal Leonard",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              3,
+              27,
+              30
+            ],
+            "sha256": "3187600027fe3e853aacafd7634af8ed745b23c1bba149361174a339016d3b69",
+            "sourcePackPaths": [
+              "BLUES - SHUFFLE/Drum Book — Blues - Swamp - New Orleans.pdf",
+              "GENERAL - HUGE GROOVE COLLECTIONS/Drum Book — Multi-Style Groove Collection.pdf",
+              "HIP-HOP - MODERN GROOVES/Drum Book — Hip-Hop Groove Section.pdf",
+              "NEW ORLEANS - SECOND LINE ⚜️/Drum Book — New Orleans - Second Line - Swamp - Funk.pdf",
+              "REGGAE - SKA - CARIBBEAN 🇯🇲/Drum Book — Reggae One Drop - Ska - Calypso - Soca.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-46c92cd8a043",
+            "title": "100 Grooves Every Drummer Needs to Know",
+            "authors": [],
+            "publisher": "Musora / Drumeo",
+            "year": null,
+            "evidenceGrade": "B+",
+            "pages": [
+              95
+            ],
+            "sha256": "46c92cd8a043885caf59b098297edfe0fd241fd9e125fe6127ba3ea84fa3825b",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/100 Grooves Every Drummer Needs to Know.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-595703bb31c1",
+            "title": "Drums & Percussion Method Catalogue",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "B",
+            "pages": [
+              37
+            ],
+            "sha256": "595703bb31c19039683b634ee32e9147f2b05c10f62ad657286ccef4e35b5460",
+            "sourcePackPaths": [
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drums & Percussion — Large Method Catalogue.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-3eb3fd314955",
+            "title": "UNT Percussion Applied Lesson Syllabus: Drum Set — Jazz",
+            "authors": [],
+            "publisher": "University of North Texas",
+            "year": 2019,
+            "evidenceGrade": "A",
+            "pages": [
+              2,
+              9
+            ],
+            "sha256": "3eb3fd3149551647c577957bd0382fdb3ba8e522f582726ba567c5f607c83a08",
+            "sourcePackPaths": [
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/UNT Jazz Drumset Curriculum — Brazilian - Jazz - Latin Sources.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

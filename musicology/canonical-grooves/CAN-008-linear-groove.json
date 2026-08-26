@@ -423,7 +423,170 @@
     "evidence": {
       "taxonomyState": "family-supported-pedagogical-label",
       "performanceEvidence": "not-mapped",
-      "references": []
+      "references": [],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 5,
+        "sourceCount": 6,
+        "sources": [
+          {
+            "sourceId": "PDF-6b862dc919a1",
+            "title": "Basic Course Drummer Notes",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "C",
+            "pages": [
+              3,
+              84,
+              85
+            ],
+            "sha256": "6b862dc919a16e310d3b9c8f696e839bac064604a0143470550f9a61dfca7b04",
+            "sourcePackPaths": [
+              "BLUES - SHUFFLE/Basic Course Drummer Notes — Chicago Blues - Shuffle - Half-Time Shuffle.pdf",
+              "GENERAL - HUGE GROOVE COLLECTIONS/Basic Course Drummer Notes — 96 pages.pdf",
+              "HIP-HOP - MODERN GROOVES/Basic Course Drummer Notes — Hip-Hop - Motown - Disco - Soul.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-200e835c284b",
+            "title": "Linear Drum Fills",
+            "authors": [
+              "Blake Paulson"
+            ],
+            "publisher": "Alfred Music",
+            "year": 2014,
+            "evidenceGrade": "A-",
+            "pages": [
+              4
+            ],
+            "sha256": "200e835c284bf6cdf19e1489bae5c5fb1ab3fb6bc9ca109f57b85dfb810bfe95",
+            "sourcePackPaths": [
+              "FUNK - SOUL - R&B - LINEAR/Method for Developing Musical Linear Drum Fills.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-4e08590ad53a",
+            "title": "Funk Drumming: Innovative Grooves & Advanced Concepts",
+            "authors": [
+              "Mike Clark"
+            ],
+            "publisher": "Hal Leonard",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              5,
+              20,
+              22,
+              41
+            ],
+            "sha256": "4e08590ad53aca2dc0462a3f67c42643e88da3705c530b9927d50757a5cb5baf",
+            "sourcePackPaths": [
+              "FUNK - SOUL - R&B - LINEAR/Mike Clark — Funk Drumming.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-585c2cd39514",
+            "title": "Linear Drumming",
+            "authors": [
+              "Mike Johnston"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A-",
+            "pages": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              18,
+              20,
+              22,
+              24,
+              26,
+              28,
+              30,
+              32
+            ],
+            "sha256": "585c2cd39514e14a90d8267c722595a3ff540134d7920d06ceb951c61b0a5850",
+            "sourcePackPaths": [
+              "FUNK - SOUL - R&B - LINEAR/Mike Johnston — Linear Drumming (alternate).pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-6b84daa9ee9c",
+            "title": "Linear Drumming",
+            "authors": [
+              "Mike Johnston"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A-",
+            "pages": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              19,
+              21,
+              23,
+              25,
+              27,
+              29,
+              31
+            ],
+            "sha256": "6b84daa9ee9c68623c6e353e5cc33ff79c19673329412ded748ca85bf02f614d",
+            "sourcePackPaths": [
+              "FUNK - SOUL - R&B - LINEAR/Mike Johnston — Linear Drumming.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-39ddc4b77dca",
+            "title": "Drumset FUNdamentals",
+            "authors": [
+              "Dave Black",
+              "Mark Dorr"
+            ],
+            "publisher": "Percussive Arts Society handout",
+            "year": 2001,
+            "evidenceGrade": "A-",
+            "pages": [
+              10,
+              11
+            ],
+            "sha256": "39ddc4b77dcaeb4025853d52c635a0a1205d5eca191c9868fc9e011af59267cf",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/Drumset FUNdamentals.pdf",
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drumset FUNdamentals — Large Recommended Book List.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

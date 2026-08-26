@@ -461,7 +461,13 @@
           "title": "Rolling 2-Step Garage — Attack Magazine",
           "url": "https://www.attackmagazine.com/technique/beat-dissected/rolling-2-step-garage/"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

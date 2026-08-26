@@ -309,7 +309,136 @@
           "title": "Groove MIDI Dataset — Magenta",
           "url": "https://magenta.tensorflow.org/datasets/groove"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 4,
+        "sourceCount": 7,
+        "sources": [
+          {
+            "sourceId": "PDF-73cfc4ffc14c",
+            "title": "Afro-Cuban Rhythms for Drumset",
+            "authors": [
+              "Frank Malabe",
+              "Bob Weiner"
+            ],
+            "publisher": "Manhattan Music / Alfred Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              7,
+              61
+            ],
+            "sha256": "73cfc4ffc14cf0fcafe1a765984e0a6bc0e09290699e16e7967d711265e482af",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Rhythms for Drumset — Alternate Edition.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-d9d0cc68c73f",
+            "title": "Afro-Cuban Rhythms for Drumset",
+            "authors": [
+              "Frank Malabe",
+              "Bob Weiner"
+            ],
+            "publisher": "Manhattan Music / Alfred Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              6,
+              60
+            ],
+            "sha256": "d9d0cc68c73fc93d58e71c2581f6bc600f71b26faf97567ac21a9a01447da694",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Rhythms for Drumset — Frank Malabe & Bob Weiner.pdf",
+              "LATIN - SALSA - CARIBBEAN 🌴/Afro-Cuban Rhythms — Bembé - Cascara - Songo - Mozambique.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-f97e3e83bf02",
+            "title": "A Cannibalist's Manifesto: Candomblé Rhythms for Drum Kit",
+            "authors": [
+              "Peter Alastair McGrath-Kerr"
+            ],
+            "publisher": "University of Melbourne",
+            "year": 2019,
+            "evidenceGrade": "A",
+            "pages": [
+              89
+            ],
+            "sha256": "f97e3e83bf0298e9b27f3700e2c8135351c85518309e8982964a23578eaa7849",
+            "sourcePackPaths": [
+              "BRAZIL 🇧🇷/Candomblé Rhythm for Drumset.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-09d278110e3e",
+            "title": "1000 Drum Grooves",
+            "authors": [
+              "Steve Mansfield"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "B+",
+            "pages": [
+              77,
+              78
+            ],
+            "sha256": "09d278110e3e75866c57f8187ae59d2419355eb67a77a7c1df5258d024301838",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/1000 Drum Grooves — Steve Mansfield.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-a5bdd4a6ddc2",
+            "title": "Drum Patterns for Musicians",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "C",
+            "pages": [
+              2
+            ],
+            "sha256": "a5bdd4a6ddc2e3d26653db4afcc0d7847f903281662b58a3c76c8712857a0765",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/Drum Patterns for Musicians.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-595703bb31c1",
+            "title": "Drums & Percussion Method Catalogue",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "B",
+            "pages": [
+              19
+            ],
+            "sha256": "595703bb31c19039683b634ee32e9147f2b05c10f62ad657286ccef4e35b5460",
+            "sourcePackPaths": [
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drums & Percussion — Large Method Catalogue.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-e584c291e034",
+            "title": "Percussion Repertoire Guide",
+            "authors": [
+              "James Campbell",
+              "Brad Meyer"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A-",
+            "pages": [
+              6
+            ],
+            "sha256": "e584c291e03427f9b19363222c40d394afb7933250f923b6bf3f0f236806aa6c",
+            "sourcePackPaths": [
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Percussion Repertoire Guide — Drumset - World Percussion.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

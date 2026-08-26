@@ -606,7 +606,446 @@
           "title": "Backbeats / four-on-the-floor — Ableton Learning Music",
           "url": "https://learningmusic.ableton.com/make-beats/backbeats.html"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 15,
+        "sourceCount": 23,
+        "sources": [
+          {
+            "sourceId": "PDF-5d0aaaee12c0",
+            "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+            "authors": [
+              "Lincoln Goines",
+              "Robby Ameen"
+            ],
+            "publisher": "Manhattan Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              57,
+              58,
+              60
+            ],
+            "sha256": "5d0aaaee12c0474fd94fdda203f40441db5a9f834731b0c4cc4596d62301cb43",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Grooves for Bass & Drums — Alternate Scan.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-92d5ddbcbf60",
+            "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+            "authors": [
+              "Lincoln Goines",
+              "Robby Ameen"
+            ],
+            "publisher": "Manhattan Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              5,
+              6,
+              43,
+              64,
+              65,
+              66
+            ],
+            "sha256": "92d5ddbcbf6004ea76d06acb8cf5abac6fd500db1ef4f18d26b692f77249de7e",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Grooves for Bass & Drums — Alternate.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-73cfc4ffc14c",
+            "title": "Afro-Cuban Rhythms for Drumset",
+            "authors": [
+              "Frank Malabe",
+              "Bob Weiner"
+            ],
+            "publisher": "Manhattan Music / Alfred Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              4,
+              5,
+              42,
+              65,
+              66
+            ],
+            "sha256": "73cfc4ffc14cf0fcafe1a765984e0a6bc0e09290699e16e7967d711265e482af",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Rhythms for Drumset — Alternate Edition.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-d9d0cc68c73f",
+            "title": "Afro-Cuban Rhythms for Drumset",
+            "authors": [
+              "Frank Malabe",
+              "Bob Weiner"
+            ],
+            "publisher": "Manhattan Music / Alfred Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              3,
+              4,
+              41,
+              64,
+              65
+            ],
+            "sha256": "d9d0cc68c73fc93d58e71c2581f6bc600f71b26faf97567ac21a9a01447da694",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Rhythms for Drumset — Frank Malabe & Bob Weiner.pdf",
+              "LATIN - SALSA - CARIBBEAN 🌴/Afro-Cuban Rhythms — Bembé - Cascara - Songo - Mozambique.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-2fdfcd6bd899",
+            "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+            "authors": [
+              "Lincoln Goines",
+              "Robby Ameen"
+            ],
+            "publisher": "Manhattan Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              4,
+              5,
+              40,
+              60,
+              61,
+              62
+            ],
+            "sha256": "2fdfcd6bd8992b277670b799ee2aa4542dd26905d1b55936e1f2658e0d725aed",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Funkifying the Clave — Afro-Cuban Grooves.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-6b862dc919a1",
+            "title": "Basic Course Drummer Notes",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "C",
+            "pages": [
+              3,
+              96
+            ],
+            "sha256": "6b862dc919a16e310d3b9c8f696e839bac064604a0143470550f9a61dfca7b04",
+            "sourcePackPaths": [
+              "BLUES - SHUFFLE/Basic Course Drummer Notes — Chicago Blues - Shuffle - Half-Time Shuffle.pdf",
+              "GENERAL - HUGE GROOVE COLLECTIONS/Basic Course Drummer Notes — 96 pages.pdf",
+              "HIP-HOP - MODERN GROOVES/Basic Course Drummer Notes — Hip-Hop - Motown - Disco - Soul.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-3d5df133b728",
+            "title": "Brazilian Coordination for Drumset",
+            "authors": [
+              "Maria Martinez"
+            ],
+            "publisher": "Hal Leonard",
+            "year": 1999,
+            "evidenceGrade": "A",
+            "pages": [
+              4,
+              5,
+              9
+            ],
+            "sha256": "3d5df133b728c7c89042ed8509452da593b6e7a4f868d9a428e6393da2d49213",
+            "sourcePackPaths": [
+              "BRAZIL 🇧🇷/Brazilian Coordination for Drumset — Maria Martinez.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-5b17d3b0173f",
+            "title": "Brazilian Rhythms in the Drums",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "C",
+            "pages": [
+              10
+            ],
+            "sha256": "5b17d3b0173f6869e6394ee4ffe66818c7c9c9a77db781ed9c7466a33e483e84",
+            "sourcePackPaths": [
+              "BRAZIL 🇧🇷/Brazilian Drumming Rhythms.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-f97e3e83bf02",
+            "title": "A Cannibalist's Manifesto: Candomblé Rhythms for Drum Kit",
+            "authors": [
+              "Peter Alastair McGrath-Kerr"
+            ],
+            "publisher": "University of Melbourne",
+            "year": 2019,
+            "evidenceGrade": "A",
+            "pages": [
+              35,
+              87
+            ],
+            "sha256": "f97e3e83bf0298e9b27f3700e2c8135351c85518309e8982964a23578eaa7849",
+            "sourcePackPaths": [
+              "BRAZIL 🇧🇷/Candomblé Rhythm for Drumset.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-f40b6fc1f4f1",
+            "title": "Solfège Rythmique, Cahier No. 1",
+            "authors": [
+              "Dante Agostini"
+            ],
+            "publisher": "École Dante Agostini",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              67
+            ],
+            "sha256": "f40b6fc1f4f1a702c96b2001fa6d84927c5a9385435f1e81bf8e280c83706576",
+            "sourcePackPaths": [
+              "DANTE AGOSTINI/Dante Agostini - Solfège Rhythmique Cahier No 1.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-30b03bbca266",
+            "title": "Méthode de Batterie, Volumes I–II",
+            "authors": [
+              "Dante Agostini"
+            ],
+            "publisher": "École Dante Agostini",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              26,
+              46,
+              60,
+              66
+            ],
+            "sha256": "30b03bbca26687eda4cd2c2eefcdca3ebd66568f41ea5e198061db587f8925e3",
+            "sourcePackPaths": [
+              "DANTE AGOSTINI/Methode de Batterie Dante Agostini Vol. 1-2.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-474a33d9bfb9",
+            "title": "Preparation for Sight-Reading, Volume I",
+            "authors": [
+              "Dante Agostini"
+            ],
+            "publisher": "École Dante Agostini",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              3,
+              17,
+              18,
+              21,
+              34,
+              36,
+              43
+            ],
+            "sha256": "474a33d9bfb9fb5e9e934841e07846e12a56b30cec3e5d83616810afe9e8ae28",
+            "sourcePackPaths": [
+              "DANTE AGOSTINI/Préparation aux Déchiffrages - Vol.1{.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-8f225657efb9",
+            "title": "Préparation aux Déchiffrages - Vol.2",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "D",
+            "pages": [
+              3,
+              9,
+              10,
+              17
+            ],
+            "sha256": "8f225657efb91b9de012cff478e440ceefcdf5d0545cf19b677079f089b33bc5",
+            "sourcePackPaths": [
+              "DANTE AGOSTINI/Préparation aux Déchiffrages - Vol.2.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-fbbdc4070c40",
+            "title": "Préparation aux Déchiffrages - Vol.3",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "D",
+            "pages": [
+              14
+            ],
+            "sha256": "fbbdc4070c40c641da0a236cb2cf506f0181299391d70ca31421d1fa416aca30",
+            "sourcePackPaths": [
+              "DANTE AGOSTINI/Préparation aux Déchiffrages - Vol.3.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-4e08590ad53a",
+            "title": "Funk Drumming: Innovative Grooves & Advanced Concepts",
+            "authors": [
+              "Mike Clark"
+            ],
+            "publisher": "Hal Leonard",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              5,
+              22,
+              47
+            ],
+            "sha256": "4e08590ad53aca2dc0462a3f67c42643e88da3705c530b9927d50757a5cb5baf",
+            "sourcePackPaths": [
+              "FUNK - SOUL - R&B - LINEAR/Mike Clark — Funk Drumming.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-46c92cd8a043",
+            "title": "100 Grooves Every Drummer Needs to Know",
+            "authors": [],
+            "publisher": "Musora / Drumeo",
+            "year": null,
+            "evidenceGrade": "B+",
+            "pages": [
+              18
+            ],
+            "sha256": "46c92cd8a043885caf59b098297edfe0fd241fd9e125fe6127ba3ea84fa3825b",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/100 Grooves Every Drummer Needs to Know.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-e9fb2404ba25",
+            "title": "Drum Book",
+            "authors": [
+              "Franck Agulhon"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              81,
+              132
+            ],
+            "sha256": "e9fb2404ba2532d0fef20dbfe9d4d99f4c7a2b386d936789c6609ca998e0c35f",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/Franck Agulhon — Drumbook.pdf",
+              "WEST AFRICAN - AFRICAN 🌍/Franck Agulhon Drumbook — Afro - Gnawa - Mangambeu - Bembé.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-343bd7b5fc90",
+            "title": "Jazz Drumming",
+            "authors": [
+              "Billy Hart"
+            ],
+            "publisher": "Advance Music",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              25
+            ],
+            "sha256": "343bd7b5fc908f6ec074ea2536efafef2bf15ba3626de54c7ba58c700d39a278",
+            "sourcePackPaths": [
+              "JAZZ - SWING/Billy Hart — Jazz Drumming.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-0fb73c919618",
+            "title": "Drummer Essentials: Jazz Drumming",
+            "authors": [],
+            "publisher": "DrummerLessons.com",
+            "year": null,
+            "evidenceGrade": "B-",
+            "pages": [
+              42
+            ],
+            "sha256": "0fb73c9196189b7855f3326f02c14e8f9cd0db9fe72fbc6c0b401ed9bbf6385f",
+            "sourcePackPaths": [
+              "JAZZ - SWING/Drummer Essentials — Jazz Drumming.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-9e761b1fd58e",
+            "title": "The Jazz Drummer's Workshop",
+            "authors": [
+              "John Riley"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              7,
+              32
+            ],
+            "sha256": "9e761b1fd58e72b2d2d1ff56e99464ff577864822efdbb1070ea9dd5cda7fc89",
+            "sourcePackPaths": [
+              "JAZZ - SWING/John Riley — Jazz Drummer's Workshop.pdf",
+              "NEW ORLEANS - SECOND LINE ⚜️/John Riley — The Jazz Drummer's Workshop.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-595703bb31c1",
+            "title": "Drums & Percussion Method Catalogue",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "B",
+            "pages": [
+              4,
+              5,
+              9,
+              24,
+              37
+            ],
+            "sha256": "595703bb31c19039683b634ee32e9147f2b05c10f62ad657286ccef4e35b5460",
+            "sourcePackPaths": [
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drums & Percussion — Large Method Catalogue.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-9f544947c841",
+            "title": "Drumset Student Book List",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "B",
+            "pages": [
+              1,
+              15,
+              26
+            ],
+            "sha256": "9f544947c841f00f8e5a361c1c3165dca11d515229436e0c3cd70a2a94ccfe90",
+            "sourcePackPaths": [
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drumset Student Book List — Jazz - Funk - Soul - Latin - African.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-e584c291e034",
+            "title": "Percussion Repertoire Guide",
+            "authors": [
+              "James Campbell",
+              "Brad Meyer"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A-",
+            "pages": [
+              6
+            ],
+            "sha256": "e584c291e03427f9b19363222c40d394afb7933250f923b6bf3f0f236806aa6c",
+            "sourcePackPaths": [
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Percussion Repertoire Guide — Drumset - World Percussion.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

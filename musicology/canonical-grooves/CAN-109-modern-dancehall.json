@@ -384,7 +384,13 @@
           "title": "Wicked Beats / Jamaican ska, rocksteady and reggae — Modern Drummer",
           "url": "https://www.moderndrummer.com/2011/10/wicked-beatsfeaturing-gil-sharone/"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

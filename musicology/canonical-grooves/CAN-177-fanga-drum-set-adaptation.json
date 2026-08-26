@@ -365,7 +365,13 @@
           "title": "African Rhythms for Drum Set — Berklee",
           "url": "https://college.berklee.edu/courses/ilpd-355"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

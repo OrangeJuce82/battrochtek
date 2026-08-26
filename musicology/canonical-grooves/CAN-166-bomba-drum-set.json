@@ -344,7 +344,13 @@
           "title": "Introduction to Brazilian and Afro-Cuban Drum Set — Berklee",
           "url": "https://college.berklee.edu/courses/ilpd-211"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

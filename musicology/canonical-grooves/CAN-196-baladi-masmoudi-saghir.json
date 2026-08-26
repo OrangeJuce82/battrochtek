@@ -211,7 +211,13 @@
           "title": "Iqa‘ Baladi / Masmudi Saghir 4/4 — MaqamWorld",
           "url": "https://www.maqamworld.com/en/iqaa/baladi.php"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

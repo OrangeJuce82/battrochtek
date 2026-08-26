@@ -398,7 +398,13 @@
           "title": "Tempo and genre — Ableton Learning Music",
           "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

@@ -303,7 +303,65 @@
           "title": "Tempo and genre — Ableton Learning Music",
           "url": "https://learningmusic.ableton.com/make-beats/tempo-and-genre.html"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 2,
+        "sourceCount": 3,
+        "sources": [
+          {
+            "sourceId": "PDF-46c92cd8a043",
+            "title": "100 Grooves Every Drummer Needs to Know",
+            "authors": [],
+            "publisher": "Musora / Drumeo",
+            "year": null,
+            "evidenceGrade": "B+",
+            "pages": [
+              80
+            ],
+            "sha256": "46c92cd8a043885caf59b098297edfe0fd241fd9e125fe6127ba3ea84fa3825b",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/100 Grooves Every Drummer Needs to Know.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-9e761b1fd58e",
+            "title": "The Jazz Drummer's Workshop",
+            "authors": [
+              "John Riley"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              33
+            ],
+            "sha256": "9e761b1fd58e72b2d2d1ff56e99464ff577864822efdbb1070ea9dd5cda7fc89",
+            "sourcePackPaths": [
+              "JAZZ - SWING/John Riley — Jazz Drummer's Workshop.pdf",
+              "NEW ORLEANS - SECOND LINE ⚜️/John Riley — The Jazz Drummer's Workshop.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-4ef0272514a0",
+            "title": "100 Years of New Orleans Drumming",
+            "authors": [
+              "Dan Thress",
+              "Antoon Aukes"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A-",
+            "pages": [
+              11
+            ],
+            "sha256": "4ef0272514a02e9a9bbe69465fcb35fb9dafa5e4ee087e9c096343f7f1719bbd",
+            "sourcePackPaths": [
+              "NEW ORLEANS - SECOND LINE ⚜️/100 Years of New Orleans Drumming.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

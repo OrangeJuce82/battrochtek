@@ -1,5 +1,9 @@
 import { readFile, readdir, writeFile } from 'node:fs/promises';
 const dir=new URL('../musicology/canonical-grooves/',import.meta.url);
+const pdfAudit=JSON.parse(await readFile(new URL('../musicology/pdf-source-audit.json',import.meta.url),'utf8'));
+const pdfEvidence=JSON.parse(await readFile(new URL('../musicology/pdf-groove-evidence-map.json',import.meta.url),'utf8'));
+const pdfSourcesById=new Map(pdfAudit.sources.map(source=>[source.sourceId,source]));
+const pdfEvidenceById=new Map(pdfEvidence.grooves.map(groove=>[groove.id,groove]));
 const refs={
   yamahaDrumFoundations:{title:'Drumming techniques: 8-beat, 16-beat and shuffle — Yamaha',url:'https://www.yamaha.com/en/musical_instrument_guide/drums/play/play003.html',scope:['straight 8ths','straight 16ths','8th-note shuffle','16th-note shuffle']},
   yamahaShuffleNotation:{title:'Drum Score / Instruction: triplet-derived shuffle — Yamaha',url:'https://data.yamaha.com/download/files/2108295',scope:['8th-note shuffle','16th-note shuffle','half-time shuffle']},
@@ -85,6 +89,8 @@ for(const file of files){const url=new URL(`../musicology/canonical-grooves/${fi
   const academic=evidence.filter(e=>!e.title.startsWith('Groove MIDI Dataset')); const gmd=evidence.some(e=>e.title.startsWith('Groove MIDI Dataset'));
   if(academic.length)taxonomyValidated++; if(gmd)gmdSupported++;
   g.metadata??={}; const normalizedName=normalize(g.name); const projectDefined=[...PROJECT_DEFINED].some(x=>normalize(x)===normalizedName); const taxonomyState=g.metadata.taxonomyResolution||(academic.length?'literature-supported':projectDefined?'family-supported-pedagogical-label':'needs-review'); g.metadata.evidence={taxonomyState,performanceEvidence:gmd?'human-dataset-available':'not-mapped',references:evidence};
+  const local=pdfEvidenceById.get(g.id); const localHits=(local?.sourceHits||[]).map(hit=>{const source=pdfSourcesById.get(hit.sourceId);return {sourceId:hit.sourceId,title:source?.title||hit.sourceId,authors:source?.authors||[],publisher:source?.publisher||null,year:source?.year||null,evidenceGrade:hit.evidenceGrade,pages:hit.pages,sha256:source?.sha256||null,sourcePackPaths:source?.relativePaths||[]};});
+  g.metadata.evidence.localPdfPack={state:localHits.length?'explicit-name-match':'not-explicitly-covered',strongSourceCount:local?.strongSourceCount||0,sourceCount:localHits.length,sources:localHits};
   g.metadata.expertReview??={state:'not-performed',reviewer:null,date:null,notes:'Reserved for an external human specialist; documentary review is tracked separately.'};
   // Do not promote the score itself merely because the style name exists in literature.
   g.metadata.scoreState=String(g.metadata.validationState||'').includes('needs-review')?'provisional':(g.metadata.scoreState||'candidate');

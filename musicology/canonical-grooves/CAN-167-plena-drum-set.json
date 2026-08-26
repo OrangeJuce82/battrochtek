@@ -359,7 +359,13 @@
           "title": "Puerto Rican Bomba and Plena: Shared Traditions—Distinct Rhythms — Smithsonian Folkways",
           "url": "https://folkways.si.edu/puerto-rican-bomba-plena-shared-traditions-distinct-rhythms/latin-world/music/article/smithsonian"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

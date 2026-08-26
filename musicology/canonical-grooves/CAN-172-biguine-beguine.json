@@ -343,7 +343,13 @@
           "title": "Le rythme de Biguine en classe — Université de Tours",
           "url": "https://edmus.univ-tours.fr/index.php?Itemid=164&catid=55&id=105&option=com_content&view=article"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

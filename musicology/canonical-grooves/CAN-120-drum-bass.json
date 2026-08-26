@@ -397,7 +397,239 @@
           "title": "Programming jungle and drum & bass grooves — MusicRadar",
           "url": "https://www.musicradar.com/how-to/program-6-different-jungle-6-dnb-grooves"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 9,
+        "sourceCount": 13,
+        "sources": [
+          {
+            "sourceId": "PDF-92d5ddbcbf60",
+            "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+            "authors": [
+              "Lincoln Goines",
+              "Robby Ameen"
+            ],
+            "publisher": "Manhattan Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              5
+            ],
+            "sha256": "92d5ddbcbf6004ea76d06acb8cf5abac6fd500db1ef4f18d26b692f77249de7e",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Grooves for Bass & Drums — Alternate.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-2fdfcd6bd899",
+            "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+            "authors": [
+              "Lincoln Goines",
+              "Robby Ameen"
+            ],
+            "publisher": "Manhattan Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              4
+            ],
+            "sha256": "2fdfcd6bd8992b277670b799ee2aa4542dd26905d1b55936e1f2658e0d725aed",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Funkifying the Clave — Afro-Cuban Grooves.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-3d5df133b728",
+            "title": "Brazilian Coordination for Drumset",
+            "authors": [
+              "Maria Martinez"
+            ],
+            "publisher": "Hal Leonard",
+            "year": 1999,
+            "evidenceGrade": "A",
+            "pages": [
+              6,
+              65,
+              72
+            ],
+            "sha256": "3d5df133b728c7c89042ed8509452da593b6e7a4f868d9a428e6393da2d49213",
+            "sourcePackPaths": [
+              "BRAZIL 🇧🇷/Brazilian Coordination for Drumset — Maria Martinez.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-30b03bbca266",
+            "title": "Méthode de Batterie, Volumes I–II",
+            "authors": [
+              "Dante Agostini"
+            ],
+            "publisher": "École Dante Agostini",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              4,
+              45,
+              91
+            ],
+            "sha256": "30b03bbca26687eda4cd2c2eefcdca3ebd66568f41ea5e198061db587f8925e3",
+            "sourcePackPaths": [
+              "DANTE AGOSTINI/Methode de Batterie Dante Agostini Vol. 1-2.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-7064fe3e54b3",
+            "title": "Méthode de Batterie, Volume II",
+            "authors": [
+              "Dante Agostini"
+            ],
+            "publisher": "École Dante Agostini",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              77
+            ],
+            "sha256": "7064fe3e54b373cb3cb3670765ea89961abd044f225a9187d679087f5e2e7cf6",
+            "sourcePackPaths": [
+              "DANTE AGOSTINI/Methode de Batterie Dante Agostini Vol. 2.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-2792e4f7409a",
+            "title": "Méthode de Batterie, Volume II",
+            "authors": [
+              "Dante Agostini"
+            ],
+            "publisher": "École Dante Agostini",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              3
+            ],
+            "sha256": "2792e4f7409a37fbe87e997d29059e4fe21704727dc22d88e87187bf72f69dd9",
+            "sourcePackPaths": [
+              "DANTE AGOSTINI/Méthode de Batterie - Vol.2.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-474a33d9bfb9",
+            "title": "Preparation for Sight-Reading, Volume I",
+            "authors": [
+              "Dante Agostini"
+            ],
+            "publisher": "École Dante Agostini",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              4
+            ],
+            "sha256": "474a33d9bfb9fb5e9e934841e07846e12a56b30cec3e5d83616810afe9e8ae28",
+            "sourcePackPaths": [
+              "DANTE AGOSTINI/Préparation aux Déchiffrages - Vol.1{.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-8f225657efb9",
+            "title": "Préparation aux Déchiffrages - Vol.2",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "D",
+            "pages": [
+              4
+            ],
+            "sha256": "8f225657efb91b9de012cff478e440ceefcdf5d0545cf19b677079f089b33bc5",
+            "sourcePackPaths": [
+              "DANTE AGOSTINI/Préparation aux Déchiffrages - Vol.2.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-a6fb626f326f",
+            "title": "Méthode de Batterie, Volume II",
+            "authors": [
+              "Dante Agostini"
+            ],
+            "publisher": "École Dante Agostini",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              3
+            ],
+            "sha256": "a6fb626f326f798d724bb44e0296abc3f3052b9671a86d160f4cd97ae3f3cf9b",
+            "sourcePackPaths": [
+              "DANTE AGOSTINI/dante agostini 2.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-46c92cd8a043",
+            "title": "100 Grooves Every Drummer Needs to Know",
+            "authors": [],
+            "publisher": "Musora / Drumeo",
+            "year": null,
+            "evidenceGrade": "B+",
+            "pages": [
+              6
+            ],
+            "sha256": "46c92cd8a043885caf59b098297edfe0fd241fd9e125fe6127ba3ea84fa3825b",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/100 Grooves Every Drummer Needs to Know.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-0fb73c919618",
+            "title": "Drummer Essentials: Jazz Drumming",
+            "authors": [],
+            "publisher": "DrummerLessons.com",
+            "year": null,
+            "evidenceGrade": "B-",
+            "pages": [
+              4
+            ],
+            "sha256": "0fb73c9196189b7855f3326f02c14e8f9cd0db9fe72fbc6c0b401ed9bbf6385f",
+            "sourcePackPaths": [
+              "JAZZ - SWING/Drummer Essentials — Jazz Drumming.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-9e761b1fd58e",
+            "title": "The Jazz Drummer's Workshop",
+            "authors": [
+              "John Riley"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              15,
+              16,
+              41,
+              43
+            ],
+            "sha256": "9e761b1fd58e72b2d2d1ff56e99464ff577864822efdbb1070ea9dd5cda7fc89",
+            "sourcePackPaths": [
+              "JAZZ - SWING/John Riley — Jazz Drummer's Workshop.pdf",
+              "NEW ORLEANS - SECOND LINE ⚜️/John Riley — The Jazz Drummer's Workshop.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-595703bb31c1",
+            "title": "Drums & Percussion Method Catalogue",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "B",
+            "pages": [
+              18,
+              20,
+              25
+            ],
+            "sha256": "595703bb31c19039683b634ee32e9147f2b05c10f62ad657286ccef4e35b5460",
+            "sourcePackPaths": [
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drums & Percussion — Large Method Catalogue.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

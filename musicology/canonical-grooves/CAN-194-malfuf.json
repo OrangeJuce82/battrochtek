@@ -163,7 +163,13 @@
           "title": "Iqa‘ Malfuf 2/4 — MaqamWorld",
           "url": "https://www.maqamworld.com/en/iqaa/malfuf.php"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

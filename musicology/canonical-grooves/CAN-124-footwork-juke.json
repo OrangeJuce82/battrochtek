@@ -678,7 +678,13 @@
           "title": "Hip-Hop and American Culture — Cambridge University Press",
           "url": "https://assets.cambridge.org/97810097/14761/index/9781009714761_index.pdf"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",

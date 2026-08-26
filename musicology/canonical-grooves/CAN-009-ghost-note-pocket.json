@@ -663,7 +663,413 @@
     "evidence": {
       "taxonomyState": "family-supported-pedagogical-label",
       "performanceEvidence": "not-mapped",
-      "references": []
+      "references": [],
+      "localPdfPack": {
+        "state": "explicit-name-match",
+        "strongSourceCount": 12,
+        "sourceCount": 18,
+        "sources": [
+          {
+            "sourceId": "PDF-5d0aaaee12c0",
+            "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+            "authors": [
+              "Lincoln Goines",
+              "Robby Ameen"
+            ],
+            "publisher": "Manhattan Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              27
+            ],
+            "sha256": "5d0aaaee12c0474fd94fdda203f40441db5a9f834731b0c4cc4596d62301cb43",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Grooves for Bass & Drums — Alternate Scan.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-92d5ddbcbf60",
+            "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+            "authors": [
+              "Lincoln Goines",
+              "Robby Ameen"
+            ],
+            "publisher": "Manhattan Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              7,
+              33
+            ],
+            "sha256": "92d5ddbcbf6004ea76d06acb8cf5abac6fd500db1ef4f18d26b692f77249de7e",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Grooves for Bass & Drums — Alternate.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-73cfc4ffc14c",
+            "title": "Afro-Cuban Rhythms for Drumset",
+            "authors": [
+              "Frank Malabe",
+              "Bob Weiner"
+            ],
+            "publisher": "Manhattan Music / Alfred Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              24
+            ],
+            "sha256": "73cfc4ffc14cf0fcafe1a765984e0a6bc0e09290699e16e7967d711265e482af",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Rhythms for Drumset — Alternate Edition.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-d9d0cc68c73f",
+            "title": "Afro-Cuban Rhythms for Drumset",
+            "authors": [
+              "Frank Malabe",
+              "Bob Weiner"
+            ],
+            "publisher": "Manhattan Music / Alfred Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              23
+            ],
+            "sha256": "d9d0cc68c73fc93d58e71c2581f6bc600f71b26faf97567ac21a9a01447da694",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Afro-Cuban Rhythms for Drumset — Frank Malabe & Bob Weiner.pdf",
+              "LATIN - SALSA - CARIBBEAN 🌴/Afro-Cuban Rhythms — Bembé - Cascara - Songo - Mozambique.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-13c8925b6731",
+            "title": "DrumGenius Afro-Cuban Groove Transcriptions",
+            "authors": [
+              "Mauro Battisti"
+            ],
+            "publisher": "ProJazzLab",
+            "year": null,
+            "evidenceGrade": "B",
+            "pages": [
+              2
+            ],
+            "sha256": "13c8925b6731475e894e5526ee44a0bd3f3ab1422f59d0285c3b0a340d69b94c",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/DrumGenius — Afro-Cuban Groove Transcriptions.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-2fdfcd6bd899",
+            "title": "Funkifying the Clave: Afro-Cuban Grooves for Bass and Drums",
+            "authors": [
+              "Lincoln Goines",
+              "Robby Ameen"
+            ],
+            "publisher": "Manhattan Music",
+            "year": 1990,
+            "evidenceGrade": "A",
+            "pages": [
+              6,
+              30
+            ],
+            "sha256": "2fdfcd6bd8992b277670b799ee2aa4542dd26905d1b55936e1f2658e0d725aed",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Funkifying the Clave — Afro-Cuban Grooves.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-81437d754683",
+            "title": "Timba-Go: Afro-Latin Hybrid Grooves for Drumset",
+            "authors": [
+              "James Dreier"
+            ],
+            "publisher": "Percussive Arts Society article",
+            "year": null,
+            "evidenceGrade": "A-",
+            "pages": [
+              1
+            ],
+            "sha256": "81437d754683c17dc101e1da859d34e36770cfb25596237ac11a4b8b452cacc4",
+            "sourcePackPaths": [
+              "AFRO-CUBAN 🇨🇺/Timba-Go — Afro-Latin Hybrid Drum Grooves.pdf",
+              "LATIN - SALSA - CARIBBEAN 🌴/Timba-Go — Cuban Timba - Rockason - Cuban Hip-Hop.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-6b862dc919a1",
+            "title": "Basic Course Drummer Notes",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "C",
+            "pages": [
+              3,
+              81,
+              82,
+              83
+            ],
+            "sha256": "6b862dc919a16e310d3b9c8f696e839bac064604a0143470550f9a61dfca7b04",
+            "sourcePackPaths": [
+              "BLUES - SHUFFLE/Basic Course Drummer Notes — Chicago Blues - Shuffle - Half-Time Shuffle.pdf",
+              "GENERAL - HUGE GROOVE COLLECTIONS/Basic Course Drummer Notes — 96 pages.pdf",
+              "HIP-HOP - MODERN GROOVES/Basic Course Drummer Notes — Hip-Hop - Motown - Disco - Soul.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-3187600027fe",
+            "title": "Instant Guide to Drum Grooves",
+            "authors": [
+              "Maria Martinez"
+            ],
+            "publisher": "Hal Leonard",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              4,
+              5,
+              6,
+              8,
+              9,
+              11,
+              14,
+              16,
+              19,
+              20,
+              23
+            ],
+            "sha256": "3187600027fe3e853aacafd7634af8ed745b23c1bba149361174a339016d3b69",
+            "sourcePackPaths": [
+              "BLUES - SHUFFLE/Drum Book — Blues - Swamp - New Orleans.pdf",
+              "GENERAL - HUGE GROOVE COLLECTIONS/Drum Book — Multi-Style Groove Collection.pdf",
+              "HIP-HOP - MODERN GROOVES/Drum Book — Hip-Hop Groove Section.pdf",
+              "NEW ORLEANS - SECOND LINE ⚜️/Drum Book — New Orleans - Second Line - Swamp - Funk.pdf",
+              "REGGAE - SKA - CARIBBEAN 🇯🇲/Drum Book — Reggae One Drop - Ska - Calypso - Soca.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-3d5df133b728",
+            "title": "Brazilian Coordination for Drumset",
+            "authors": [
+              "Maria Martinez"
+            ],
+            "publisher": "Hal Leonard",
+            "year": 1999,
+            "evidenceGrade": "A",
+            "pages": [
+              8
+            ],
+            "sha256": "3d5df133b728c7c89042ed8509452da593b6e7a4f868d9a428e6393da2d49213",
+            "sourcePackPaths": [
+              "BRAZIL 🇧🇷/Brazilian Coordination for Drumset — Maria Martinez.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-5b17d3b0173f",
+            "title": "Brazilian Rhythms in the Drums",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "C",
+            "pages": [
+              7,
+              9
+            ],
+            "sha256": "5b17d3b0173f6869e6394ee4ffe66818c7c9c9a77db781ed9c7466a33e483e84",
+            "sourcePackPaths": [
+              "BRAZIL 🇧🇷/Brazilian Drumming Rhythms.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-4e08590ad53a",
+            "title": "Funk Drumming: Innovative Grooves & Advanced Concepts",
+            "authors": [
+              "Mike Clark"
+            ],
+            "publisher": "Hal Leonard",
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              12
+            ],
+            "sha256": "4e08590ad53aca2dc0462a3f67c42643e88da3705c530b9927d50757a5cb5baf",
+            "sourcePackPaths": [
+              "FUNK - SOUL - R&B - LINEAR/Mike Clark — Funk Drumming.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-585c2cd39514",
+            "title": "Linear Drumming",
+            "authors": [
+              "Mike Johnston"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A-",
+            "pages": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              13,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              31
+            ],
+            "sha256": "585c2cd39514e14a90d8267c722595a3ff540134d7920d06ceb951c61b0a5850",
+            "sourcePackPaths": [
+              "FUNK - SOUL - R&B - LINEAR/Mike Johnston — Linear Drumming (alternate).pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-6b84daa9ee9c",
+            "title": "Linear Drumming",
+            "authors": [
+              "Mike Johnston"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A-",
+            "pages": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              30
+            ],
+            "sha256": "6b84daa9ee9c68623c6e353e5cc33ff79c19673329412ded748ca85bf02f614d",
+            "sourcePackPaths": [
+              "FUNK - SOUL - R&B - LINEAR/Mike Johnston — Linear Drumming.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-46c92cd8a043",
+            "title": "100 Grooves Every Drummer Needs to Know",
+            "authors": [],
+            "publisher": "Musora / Drumeo",
+            "year": null,
+            "evidenceGrade": "B+",
+            "pages": [
+              7,
+              36,
+              74,
+              91,
+              92,
+              96,
+              98,
+              99,
+              100,
+              108
+            ],
+            "sha256": "46c92cd8a043885caf59b098297edfe0fd241fd9e125fe6127ba3ea84fa3825b",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/100 Grooves Every Drummer Needs to Know.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-e9fb2404ba25",
+            "title": "Drum Book",
+            "authors": [
+              "Franck Agulhon"
+            ],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "A",
+            "pages": [
+              47,
+              48,
+              58,
+              101,
+              102,
+              104,
+              106,
+              107,
+              123,
+              132,
+              139,
+              149,
+              196
+            ],
+            "sha256": "e9fb2404ba2532d0fef20dbfe9d4d99f4c7a2b386d936789c6609ca998e0c35f",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/Franck Agulhon — Drumbook.pdf",
+              "WEST AFRICAN - AFRICAN 🌍/Franck Agulhon Drumbook — Afro - Gnawa - Mangambeu - Bembé.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-4f2f3846064c",
+            "title": "Progressive 1,000,000 Drum Grooves in 4/4 Time",
+            "authors": [
+              "Craig Lauritsen"
+            ],
+            "publisher": "Progressive Publishing",
+            "year": null,
+            "evidenceGrade": "B+",
+            "pages": [
+              5,
+              58,
+              61
+            ],
+            "sha256": "4f2f3846064c45c20193463d12fe1587a3602a66f7567d431205a39add9945b4",
+            "sourcePackPaths": [
+              "GENERAL - HUGE GROOVE COLLECTIONS/Progressive 1,000,000 Drum Grooves — Craig Lauritsen.pdf",
+              "HIP-HOP - MODERN GROOVES/Progressive Drum Grooves — Rap - Funk.pdf",
+              "REGGAE - SKA - CARIBBEAN 🇯🇲/Progressive Drum Grooves — Rock - Funk - Rap - Reggae.pdf"
+            ]
+          },
+          {
+            "sourceId": "PDF-595703bb31c1",
+            "title": "Drums & Percussion Method Catalogue",
+            "authors": [],
+            "publisher": null,
+            "year": null,
+            "evidenceGrade": "B",
+            "pages": [
+              35
+            ],
+            "sha256": "595703bb31c19039683b634ee32e9147f2b05c10f62ad657286ccef4e35b5460",
+            "sourcePackPaths": [
+              "REFERENCE - SOURCES FOR FINDING EVEN MORE BOOKS/Drums & Percussion — Large Method Catalogue.pdf"
+            ]
+          }
+        ]
+      }
     },
     "expertReview": {
       "state": "not-performed",

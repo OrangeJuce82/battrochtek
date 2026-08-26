@@ -288,7 +288,13 @@
           "title": "Mapping Amapiano and Black Aesthetics in Post-Apartheid South Africa",
           "url": "https://www.tandfonline.com/doi/abs/10.1080/13696815.2026.2634896"
         }
-      ]
+      ],
+      "localPdfPack": {
+        "state": "not-explicitly-covered",
+        "strongSourceCount": 0,
+        "sourceCount": 0,
+        "sources": []
+      }
     },
     "expertReview": {
       "state": "not-performed",
